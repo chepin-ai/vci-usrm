@@ -1,0 +1,10 @@
+{
+ "ts": "20260819-011043",
+ "line": "usrm-repo",
+ "vrepo": "vci-usrm",
+ "snapshot": {
+  "registry": "not-registered",
+  "outbox": null
+ },
+ "prev_chain": "3a9c09222461bcc5"
+}
