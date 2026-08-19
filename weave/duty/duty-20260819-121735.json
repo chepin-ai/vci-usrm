@@ -1,0 +1,33 @@
+{
+ "ts": "20260819-121735",
+ "line": "usrm-repo",
+ "checks": {
+  "outbox": "unregistered",
+  "pulse": {
+   "last": "20260819-070617",
+   "age_h": 5.2,
+   "chain_log": "e63935a0efff8d0a"
+  },
+  "chain_match": true,
+  "matrix": [
+   {
+    "id": "shadow-pulse@vci-usrm",
+    "status": "ok"
+   }
+  ],
+  "inbox_unread": 12
+ },
+ "findings": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ]
+}
