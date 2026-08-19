@@ -6,7 +6,8 @@
     "note": "对线未在公面注册表登记 outbox"
    },
    "first": "20260819-012023",
-   "ticks": 2
+   "ticks": 3,
+   "escalate": true
   },
   "1094fa63bf": {
    "finding": {
@@ -14,7 +15,7 @@
     "note": "pulse.log 链头与 status.json 不一致"
    },
    "first": "20260819-024853",
-   "ticks": 1
+   "ticks": 2
   }
  }
 }
