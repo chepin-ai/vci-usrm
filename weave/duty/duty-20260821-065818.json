@@ -1,0 +1,37 @@
+{
+ "ts": "20260821-065818",
+ "line": "usrm-repo",
+ "checks": {
+  "outbox": "unregistered",
+  "pulse": {
+   "last": "20260820-190721",
+   "age_h": 11.8,
+   "chain_log": "bff389a04e7dc739"
+  },
+  "chain_match": true,
+  "matrix": [
+   {
+    "id": "shadow-pulse@vci-usrm",
+    "status": "fail"
+   }
+  ],
+  "inbox_unread": 45
+ },
+ "findings": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  },
+  {
+   "kind": "matrix-fail",
+   "note": "公面矩阵 shadow-pulse@vci-usrm=fail"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ]
+}
