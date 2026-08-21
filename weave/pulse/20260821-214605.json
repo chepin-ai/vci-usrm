@@ -1,0 +1,10 @@
+{
+ "ts": "20260821-214605",
+ "line": "usrm-repo",
+ "outbox": {
+  "url": "https://62q3nd73zxf52.ok.kimi.link/usrm-outbox.json",
+  "http": 200,
+  "sha256": "ae905552aad7115c"
+ },
+ "note": "snapshot ok"
+}
