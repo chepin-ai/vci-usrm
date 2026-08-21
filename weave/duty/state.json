@@ -6,16 +6,8 @@
     "note": "对线未在公面注册表登记 outbox"
    },
    "first": "20260819-012023",
-   "ticks": 46,
+   "ticks": 47,
    "escalate": true
-  },
-  "66db02e4ad": {
-   "finding": {
-    "kind": "matrix-fail",
-    "note": "公面矩阵 shadow-pulse@vci-usrm=fail"
-   },
-   "first": "20260821-065818",
-   "ticks": 1
   }
  }
 }
