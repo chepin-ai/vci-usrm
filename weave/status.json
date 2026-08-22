@@ -2,7 +2,7 @@
  "line": "usrm-repo",
  "vrepo": "vci-usrm",
  "last_pulse": "20260819-011043",
- "chain_head": "76ee0bdcbc0f453e",
+ "chain_head": "a50fb6da288f8d99",
  "pulses_total": 4,
  "snapshot": {
   "registry": "not-registered",
@@ -10,5 +10,5 @@
  },
  "verdict": "ok",
  "spec": "VCI-LOAD-01 波1（心跳/快照/写链/对外验证面）",
- "heal_note": "F2 愈合 2026-08-21T08:27:39Z：status 链头重建对齐 pulse.log"
+ "heal_note": "F2 愈合 2026-08-22T01:39:03Z：status 链头重建对齐 pulse.log"
 }
