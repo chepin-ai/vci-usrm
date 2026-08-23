@@ -18,6 +18,7 @@ jobs:
         env:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p inbox
           python3 scripts/otp_gate_worker.py --loop || true
@@ -47,6 +48,7 @@ jobs:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p inbox
           CODE=$(echo "$ISSUE_TITLE" | grep -oE '[0-9]{4,8}' | head -1)
