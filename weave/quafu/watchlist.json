@@ -1,0 +1,14 @@
+{
+ "jobs": [
+  {
+   "job_id": "8BBB089014802362",
+   "chip": "ScQ-P5",
+   "note": "GHZ-5 首单(1024shots) submitted 2026-08-23"
+  },
+  {
+   "job_id": "8BB169201FA3F5D4",
+   "chip": "ScQ-P5",
+   "note": "考古件(res已清)"
+  }
+ ]
+}
