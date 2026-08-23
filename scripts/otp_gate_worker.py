@@ -4,7 +4,11 @@
 [OTP] xxxxxx issue → 直接验真（旧路兼容）。真码 ::add-mask:: + 即删（PII 闸）。"""
 import asyncio, glob, json, os, sys, datetime, urllib.request
 
-PHONE = os.environ.get("OTP_PHONE", "").strip()
+import re as _re
+_raw = os.environ.get("OTP_PHONE", "").strip()
+_digits = _re.sub(r"\D", "", _raw)
+if len(_digits) == 13 and _digits.startswith("86"): _digits = _digits[2:]
+PHONE = _digits
 GH = os.environ.get("GITHUB_TOKEN", "").strip()
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 ISSUE_N = os.environ.get("ISSUE_NUMBER", "").strip()
@@ -103,10 +107,13 @@ async def main():
             await open_login(pg); await ensure_agree(pg)
             await pg.locator("button", has_text="发送验证码").first.click()
             await pg.wait_for_timeout(3500)
+            await shot(pg, "otp_aftersend")                     # 发码后必截图（诊断面）
             body = await pg.locator("body").inner_text()
-            if "滑块" in body or "安全验证" in body:
-                await shot(pg, "otp_blocked"); write_state("BLOCKED", "发码遇滑块风控"); await b.close(); sys.exit(0)
-            write_state("CODE_SENT", "真短信已发（v3 loop）——请在本 issue 回评 6 位码")
+            neg = [k for k in ["滑块","安全验证","格式","错误","失败","频繁","稍候","稍后","不正确"] if k in body]
+            if neg:
+                write_state("BLOCKED", f"发码受阻:{neg}"); comment(f"🚧 发码受阻:{neg}——见 artifacts 截图")
+                await b.close(); sys.exit(0)
+            write_state("CODE_SENT", "真短信已发（v3c loop）——请在本 issue 回评 6 位码")
             comment("📨 真码已发出——请**直接在本 issue 回评 6 位数字**，CI 在线候评（≤9 分钟）。")
         # —— 取码段 ——
         code = verify_only
