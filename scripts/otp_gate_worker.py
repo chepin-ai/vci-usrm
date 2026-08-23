@@ -54,14 +54,27 @@ async def open_login(pg):
     await pg.get_by_placeholder("手机号").fill(PHONE)
 
 async def ensure_agree(pg):
-    """协议勾选三轨：check → label 点击 → JS 强勾 + 事件。"""
+    """协议勾选四轨：check → label 点击 → 文本邻近点击 → JS 强勾。"""
     try: await pg.check("input[type=checkbox]", timeout=2500)
     except Exception:
         try: await pg.click("label:has-text('已阅读同意')", timeout=2500)
         except Exception: pass
+    try: await pg.click("text=已阅读同意", timeout=2000)
+    except Exception: pass
     await pg.evaluate("""()=>{ for (const c of document.querySelectorAll('input[type=checkbox]')) {
         if (!c.checked) { c.click(); }
         c.dispatchEvent(new Event('input',{bubbles:true})); c.dispatchEvent(new Event('change',{bubbles:true})); } }""")
+
+async def dismiss_agree_modal(pg):
+    """「同意 Kimi 的协议」弹窗：点确定（即同意）。"""
+    try:
+        dlg = pg.locator("text=同意 Kimi 的协议")
+        if await dlg.count() and await dlg.first.is_visible():
+            await pg.click("button:has-text('确定')", timeout=3000)
+            await pg.wait_for_timeout(800)
+            return True
+    except Exception: pass
+    return False
 
 async def fill_code(pg, code):
     box = pg.get_by_placeholder("验证码")
@@ -106,6 +119,9 @@ async def main():
         if loop_mode or not verify_only:
             await open_login(pg); await ensure_agree(pg)
             await pg.locator("button", has_text="发送验证码").first.click()
+            await pg.wait_for_timeout(1500)
+            if await dismiss_agree_modal(pg):
+                await pg.locator("button", has_text="发送验证码").first.click()
             await pg.wait_for_timeout(3500)
             await shot(pg, "otp_aftersend")                     # 发码后必截图（诊断面）
             body = await pg.locator("body").inner_text()
@@ -128,6 +144,7 @@ async def main():
         ok_fill = await fill_code(pg, code)
         if not ok_fill:
             await shot(pg, "otp_fillfail"); write_state("FAILED", "验证码框填充失败（面板变体）"); await b.close(); sys.exit(0)
+        await dismiss_agree_modal(pg)
         try:
             await click_login(pg)
         except Exception as e:
