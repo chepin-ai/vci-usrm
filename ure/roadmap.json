@@ -16,7 +16,7 @@
       "title": "U0 skeleton smoke: sweeper loop self-check (no LLM)",
       "state": "queued",
       "score": 0.6,
-      "issue": null,
+      "issue": 10,
       "deps": [],
       "created": "2026-08-24T00:00:00Z",
       "returned": false
