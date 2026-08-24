@@ -14,8 +14,8 @@
     {
       "id": "U0-000",
       "title": "U0 skeleton smoke: sweeper loop self-check (no LLM)",
-      "state": "queued",
-      "score": 0.6,
+      "state": "running",
+      "score": 0.7,
       "issue": 10,
       "deps": [],
       "created": "2026-08-24T00:00:00Z",
@@ -25,5 +25,8 @@
   "frontier": [
     "U0-000"
   ],
-  "last_session_anchor": null
+  "last_session_anchor": {
+    "ts": "2026-08-24T01:51:39Z",
+    "chain_seq": 1
+  }
 }
