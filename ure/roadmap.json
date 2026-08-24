@@ -138,7 +138,7 @@
   },
   {
    "id": "n7",
-   "title": "帕累托均衡调度引擎入 sweeper（SPEC-PARETO-01 §2 决策规则，零LLM）",
+   "title": "帕累托/Whittle 调度引擎入 sweeper（PARETO-01 §2 + STRAT-02 §1 触发器 + §4 臂生命周期）",
    "state": "queued",
    "score": 0.0,
    "issue": null,
@@ -150,6 +150,12 @@
      "src": "usrm direct",
      "ts": "2026-08-24T06:51:25Z",
      "note": "SPEC-PARETO-01"
+    },
+    {
+     "hash": "10d47fa79b4b",
+     "src": "usrm direct",
+     "ts": "2026-08-24T07:28:44Z",
+     "note": "SPEC-STRAT-02 触发器+不动点+臂流"
     }
    ]
   },
@@ -186,5 +192,18 @@
   "chain_seq": 4
  },
  "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
- "inference": "SPEC-DIAL-01 capsule bus"
+ "inference": "SPEC-DIAL-01 capsule bus",
+ "probation": [],
+ "retired": [],
+ "params": {
+  "beta": 0.5,
+  "gamma": 0.3,
+  "eps": 0.05,
+  "theta1": 0.6,
+  "theta2": 0.5,
+  "theta3": 0.4,
+  "theta4": 0.2,
+  "theta5": 0.1,
+  "K_max": 8
+ }
 }
