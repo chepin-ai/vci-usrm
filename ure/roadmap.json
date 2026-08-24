@@ -140,7 +140,7 @@
    "id": "n7",
    "title": "帕累托/Whittle 调度引擎入 sweeper（PARETO-01 §2 + STRAT-02 §1 触发器 + §4 臂生命周期）",
    "state": "queued",
-   "score": 0.0,
+   "score": 0.2,
    "issue": null,
    "deps": [],
    "created": "2026-08-24T06:51:25Z",
@@ -156,6 +156,12 @@
      "src": "usrm direct",
      "ts": "2026-08-24T07:28:44Z",
      "note": "SPEC-STRAT-02 触发器+不动点+臂流"
+    },
+    {
+     "hash": "mc-32704707537",
+     "src": "kaggle-compute",
+     "ts": "2026-08-24T08:12:47Z",
+     "note": "MC验证: ρ<1停机率0.99池长有界 / ρ=1.2无门禁爆炸 / 链种子PRNG复现 / NW toy自相关≤0.0087"
     }
    ]
   },
