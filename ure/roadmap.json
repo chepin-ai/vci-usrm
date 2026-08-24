@@ -1,0 +1,29 @@
+{
+  "engine": "URE-00",
+  "version": "0.1",
+  "mode": "dry-run",
+  "budget": {
+    "max_parallel": 1,
+    "tick_score_delta": 0.1,
+    "done_threshold": 0.8
+  },
+  "gates": {
+    "human_gate_file": "ure/GATE"
+  },
+  "nodes": [
+    {
+      "id": "U0-000",
+      "title": "U0 skeleton smoke: sweeper loop self-check (no LLM)",
+      "state": "queued",
+      "score": 0.6,
+      "issue": null,
+      "deps": [],
+      "created": "2026-08-24T00:00:00Z",
+      "returned": false
+    }
+  ],
+  "frontier": [
+    "U0-000"
+  ],
+  "last_session_anchor": null
+}
