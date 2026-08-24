@@ -59,10 +59,18 @@
    "id": "n3",
    "title": "N-Must/M-Code/Δ-Base 形式化为简洁公式集（规则必形式）",
    "state": "queued",
-   "score": 0.0,
+   "score": 0.3,
    "issue": 13,
    "deps": [],
-   "created": "2026-08-24T02:14:44Z"
+   "created": "2026-08-24T02:14:44Z",
+   "findings": [
+    {
+     "hash": "05df74d9e4b8",
+     "src": "usrm direct",
+     "ts": "2026-08-24T03:02:42Z",
+     "note": "规则形式化公式集 v0.1 (N8+M7+Δ3, LEAN骨架)"
+    }
+   ]
   },
   {
    "id": "n4",
