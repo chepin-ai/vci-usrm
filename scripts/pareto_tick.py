@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
-"""URE Pareto/Whittle scheduler fast prototype (dry-run mode, no LLM calls).
+"""URE Pareto/Whittle scheduler (live tick + offline simulation, no LLM calls).
 
 Implements SPEC-PARETO-01 §2 (shadow-price decision rule), SPEC-STRAT-02 §1/§4
 (arm lifecycle: probation pool, retirement, K_max cap) and SPEC-LOOP-01 §3
 (cascade counter, level-1 blocking). Parameter-level self-tuning only.
 
 Modes:
-  default      one scheduler tick against ure/roadmap.json + ure/chain.jsonl
-               (mutates working tree; the workflow commits/pushes [skip ci])
+  default      LIVE tick against ure/roadmap.json frontier + ure/chain.jsonl:
+               Whittle shadow prices -> arm selection (70/30 ambiguity band)
+               -> dry-run score increment (no LLM) -> heartbeat issue comment
+               -> done threshold -> agent/done label + RETURN stamp on the
+               vci-inbox issue. Mutates working tree; the workflow
+               commits/pushes [skip ci]. Requires URE_TOKEN/GITHUB_TOKEN.
+  --offline    same decision logic, but every GitHub API call is skipped
+               (local dry-run; no token required).
   --simulate   offline recursive evidence: strategy A ("root guess", static)
                vs strategy B (Whittle adaptive + per-epoch meta-recursive
                refit of (beta, gamma) until a fixed point is declared).
                Writes ure/sim/out.json. Never touches roadmap/chain.
 
-No secrets, no network, no personal identifiers. Pure python3 + numpy.
+Secrets only in env/Authorization headers; no personal identifiers.
+Live/simulate modes are pure python3 stdlib; --simulate also needs numpy.
 """
 import argparse
 import hashlib
@@ -21,7 +28,19 @@ import json
 import os
 import random
 import sys
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
+
+API = "https://api.github.com"
+REPO = os.environ.get("GITHUB_REPOSITORY", "chepin-ai/vci-usrm")
+INBOX_REPO = os.environ.get("URE_INBOX_REPO", "chepin-ai/vci-inbox")
+INBOX_ISSUE = int(os.environ.get("URE_INBOX_ISSUE", "1"))
+TOKEN = os.environ.get("URE_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+
+STATES = ["queued", "running", "blocked", "done"]
+STATE_LABELS = {s: f"agent/{s}" for s in STATES}
+EXTRA_LABELS = ["ure"]
 
 ROADMAP = "ure/roadmap.json"
 CHAIN = "ure/chain.jsonl"
@@ -155,21 +174,77 @@ def shadow_price(u, sigma, b, beta, gamma, c=1.0):
 
 
 # ---------------------------------------------------------------------------
-# Scheduler tick (dry-run)
+# GitHub API helpers (live mode; token only in Authorization header)
 # ---------------------------------------------------------------------------
 
-def scheduler_tick():
+def gh(method, path, payload=None, repo=REPO):
+    url = f"{API}/repos/{repo}{path}"
+    data = json.dumps(payload).encode() if payload is not None else None
+    req = urllib.request.Request(url, data=data, method=method)
+    req.add_header("Authorization", f"Bearer {TOKEN}")
+    req.add_header("Accept", "application/vnd.github+json")
+    req.add_header("X-GitHub-Api-Version", "2022-11-28")
+    if data is not None:
+        req.add_header("Content-Type", "application/json")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            body = r.read().decode() or "{}"
+            return r.status, json.loads(body)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode()[:300]
+        return e.code, {"error": body}
+    except urllib.error.URLError as e:
+        return 0, {"error": str(e.reason)}
+
+
+def ensure_labels():
+    for name in EXTRA_LABELS + [STATE_LABELS[s] for s in STATES]:
+        st, _ = gh("POST", "/labels", {"name": name, "color": "0e8a16"})
+        if st not in (201, 422):  # 422 = already exists
+            print(f"::warning::label {name} create -> {st}")
+
+
+def set_issue_labels(node):
+    if node.get("state") not in STATE_LABELS:
+        return
+    labels = EXTRA_LABELS + [STATE_LABELS[node["state"]]]
+    st, _ = gh("PUT", f"/issues/{node['issue']}/labels", {"labels": labels})
+    if st >= 300 or st == 0:
+        print(f"::warning::set labels issue#{node['issue']} -> {st}")
+
+
+def comment(issue_number, body, repo=REPO):
+    """Post an issue comment; returns (status, comment_id_or_None)."""
+    st, resp = gh("POST", f"/issues/{issue_number}/comments",
+                  {"body": body}, repo=repo)
+    if st >= 300 or st == 0:
+        print(f"::warning::comment issue#{issue_number} -> {st}")
+        return st, None
+    return st, resp.get("id")
+
+
+# ---------------------------------------------------------------------------
+# Scheduler tick (live; --offline skips every GitHub API call)
+# ---------------------------------------------------------------------------
+
+def scheduler_tick(offline=False):
     ts = utcnow()
     if os.path.exists(GATE):
         print("human-gate active (ure/GATE present); read-only tick, no writes")
         return 0
+    if not offline and not TOKEN:
+        print("::error::URE_TOKEN/GITHUB_TOKEN missing (live mode); "
+              "use --offline for a local dry-run")
+        return 1
     with open(ROADMAP) as f:
         roadmap = json.load(f)
     params = dict(DEFAULT_PARAMS)
     params.update(roadmap.get("params", {}))
     beta, gamma, eps = params["beta"], params["gamma"], params["eps"]
     k_max = int(params["K_max"])
-    delta = float(roadmap.get("budget", {}).get("tick_score_delta", 0.1))
+    budget = roadmap.get("budget", {})
+    delta = float(budget.get("tick_score_delta", 0.1))
+    threshold = float(budget.get("done_threshold", 0.8))
 
     prev_seq, _, entries = chain_tail()
     hist = arm_history(entries)
@@ -180,9 +255,12 @@ def scheduler_tick():
     roadmap.setdefault("cascade", {})
     roadmap.setdefault("cascade_log", [])
 
-    # --- arm set: non-terminal nodes, hard-capped at K_max (SPEC-STRAT-02 S-c)
+    # --- arm set: non-terminal FRONTIER nodes, hard-capped at K_max
+    # (SPEC-STRAT-02 S-c; frontier is the live task-board projection)
     terminal = {"done", "blocked", "retired"}
-    arms = [n for n in roadmap["nodes"] if n.get("state") not in terminal]
+    frontier = roadmap.get("frontier", [])
+    arms = [n for n in roadmap["nodes"]
+            if n["id"] in frontier and n.get("state") not in terminal]
     arms = arms[:k_max]  # invariant: |A_active| <= K_max
 
     # --- stats + shadow prices
@@ -200,6 +278,8 @@ def scheduler_tick():
         n, deltas = row["node"], row["deltas"]
         if len(deltas) >= 2 and all(d < eps for d in deltas[-2:]):
             n["state"] = "retired"
+            if n["id"] in roadmap.get("frontier", []):
+                roadmap["frontier"].remove(n["id"])
             if not any(r.get("id") == n["id"] for r in roadmap["retired"]):
                 roadmap["retired"].append(
                     {"id": n["id"], "ts": ts,
@@ -222,9 +302,18 @@ def scheduler_tick():
 
     # --- selection: top shadow price; 70/30 split inside ambiguity band
     if not table:
+        # legal idle: frontier empty or all terminal -> heartbeat only, no error
         entry = append_chain(None, None, None, ts)
-        roadmap["pareto"] = {"ts": ts, "arm": None, "note": "no active arms"}
-        print("no active arms; idle chain entry appended")
+        roadmap["pareto"] = {"ts": ts, "arm": None,
+                             "note": "no active frontier arms "
+                                     "(empty or all done)"}
+        print("no active frontier arms; idle chain entry appended")
+        if not offline:
+            comment(INBOX_ISSUE,
+                    f"[URE-00] pareto heartbeat {ts} — no active frontier "
+                    f"arms (empty or all done); idle tick, "
+                    f"chain seq={entry['seq']}.",
+                    repo=INBOX_REPO)
     else:
         table.sort(key=lambda r: (-r["pi"], r["node"]["id"]))
         if len(table) > 1 and abs(table[0]["pi"] - table[1]["pi"]) < 1e-12:
@@ -241,10 +330,13 @@ def scheduler_tick():
             print(f"ambiguity band: dpi={dpi:.4f} "
                   f"< {AMBIGUITY_BAND} -> 70/30 split "
                   f"{table[0]['node']['id']}/{table[1]['node']['id']}")
+        if not offline:
+            ensure_labels()
         for row, w in pulls:
             n = row["node"]
+            prev_state = n.get("state")
             try:
-                # dry-run simulated pull: no LLM, no issue comments
+                # dry-run simulated pull: score increment only, no LLM
                 n["score"] = round(float(n.get("score", 0)) + delta * w, 6)
                 n["state"] = "running"
                 roadmap["cascade"].pop(n["id"], None)  # clean tick resets k
@@ -258,6 +350,51 @@ def scheduler_tick():
                         {"id": n["id"], "ts": ts, "level": 1,
                          "reason": f"{CASCADE_K} consecutive tick anomalies"})
                     print(f"arm {n['id']} blocked (cascade level 1)")
+                continue
+            # --- done threshold crossing (state/local bookkeeping) --------
+            done_now = n["score"] >= threshold
+            if done_now:
+                n["state"] = "done"
+                if n["id"] in roadmap.get("frontier", []):
+                    roadmap["frontier"].remove(n["id"])
+            if offline:
+                continue
+            # --- live side effects: labels + heartbeat + done/RETURN ------
+            if prev_state != n["state"] and n.get("issue"):
+                set_issue_labels(n)
+            if n.get("issue"):
+                if split:
+                    reason = (f"ambiguity band dpi={dpi} < {AMBIGUITY_BAND} "
+                              f"-> 70/30 split with "
+                              f"`{table[1]['node']['id'] if w == 0.7 else table[0]['node']['id']}`, "
+                              f"weight={w}")
+                elif dpi is None:
+                    reason = "top shadow price (sole active frontier arm)"
+                else:
+                    reason = f"top shadow price (dpi={dpi} over runner-up)"
+                body = (f"[URE-00] heartbeat {ts} — arm `{n['id']}` "
+                        f"pi=`{row['pi']}` (u={row['u']:.4f}, "
+                        f"sigma={row['sigma']:.4f}, b={row['b']:.4f}); "
+                        f"selected: {reason}. score=`{n['score']}` "
+                        f"(+{round(delta * w, 6)} dry-run increment, "
+                        f"no LLM).")
+                st, cid = comment(n["issue"], body)
+                if cid:
+                    print(f"heartbeat comment id={cid} on issue #{n['issue']}")
+            if done_now:
+                print(f"arm {n['id']} DONE (score={n['score']} >= {threshold})")
+                if n.get("issue"):
+                    comment(n["issue"],
+                            f"[URE-00] {ts} arm `{n['id']}` DONE "
+                            f"(score={n['score']} >= {threshold}, "
+                            f"Whittle live tick, dry-run increment no LLM).")
+                if not n.get("returned"):
+                    stamp = (f"[URE-00] RETURN stamp {ts} — arm `{n['id']}` "
+                             f"completed in {REPO} issue #{n.get('issue')} "
+                             f"(score={n['score']}, Whittle live tick, "
+                             f"dry-run increment no LLM).")
+                    comment(INBOX_ISSUE, stamp, repo=INBOX_REPO)
+                    n["returned"] = True
         entry = append_chain(top["node"]["id"], top["pi"],
                              top["node"].get("score"), ts)
         roadmap["pareto"] = {
@@ -522,10 +659,12 @@ def main():
     ap = argparse.ArgumentParser(description="URE Pareto/Whittle scheduler")
     ap.add_argument("--simulate", action="store_true",
                     help="offline recursive evidence -> ure/sim/out.json")
+    ap.add_argument("--offline", action="store_true",
+                    help="local dry-run of the live tick (no GitHub API)")
     args = ap.parse_args()
     if args.simulate:
         return simulate()
-    return scheduler_tick()
+    return scheduler_tick(offline=args.offline)
 
 
 if __name__ == "__main__":

@@ -36,16 +36,28 @@ jobs:
           URE_APP_ID: ${{ secrets.URE_APP_ID }}
           URE_APP_KEY: ${{ secrets.URE_APP_KEY }}
           URE_INSTALLATION_ID: ${{ secrets.URE_INSTALLATION_ID }}
+          ATP_APP_ID: ${{ secrets.ATP_APP_ID }}
+          ATP_APP_PEM: ${{ secrets.ATP_APP_PEM }}
+          ATP_INSTALLATION_ID: ${{ secrets.ATP_INSTALLATION_ID }}
         run: |
           python - <<'PY' > /tmp/tok.out
           import json, os, time, urllib.request
           import jwt
+          # primary: URE app; fallback: ATP app (same minting procedure)
+          if os.environ.get("URE_APP_ID"):
+              app_id = os.environ["URE_APP_ID"]
+              pem = os.environ["URE_APP_KEY"]
+              inst = os.environ["URE_INSTALLATION_ID"]
+          else:
+              app_id = os.environ["ATP_APP_ID"]
+              pem = os.environ["ATP_APP_PEM"]
+              inst = os.environ["ATP_INSTALLATION_ID"]
           now = int(time.time())
           app_jwt = jwt.encode(
-              {"iat": now - 60, "exp": now + 540, "iss": os.environ["URE_APP_ID"]},
-              os.environ["URE_APP_KEY"], algorithm="RS256")
+              {"iat": now - 60, "exp": now + 540, "iss": app_id},
+              pem, algorithm="RS256")
           req = urllib.request.Request(
-              f"https://api.github.com/app/installations/{os.environ['URE_INSTALLATION_ID']}/access_tokens",
+              f"https://api.github.com/app/installations/{inst}/access_tokens",
               method="POST",
               headers={"Authorization": f"Bearer {app_jwt}",
                        "Accept": "application/vnd.github+json"})
@@ -56,11 +68,13 @@ jobs:
           echo "token=$TOK" >> "$GITHUB_OUTPUT"
           rm -f /tmp/tok.out
 
-      - name: URE tick (dry-run, no LLM)
+      - name: URE tick (Whittle live, dry-run increment no LLM)
         env:
           URE_TOKEN: ${{ steps.app.outputs.token }}
           CMD_AUTH: ${{ secrets.CMD_AUTH }}
-        run: python scripts/ure_tick.py
+        # legacy equal-weight tick (superseded 2026-08-24 by Whittle live tick):
+        # run: python scripts/ure_tick.py
+        run: python scripts/pareto_tick.py
 
       - name: Commit & push state ([skip ci])
         env:
@@ -72,7 +86,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "no state changes; skip push"
           else
-            git commit -m "ure: tick $(date -u +%Y%m%d-%H%M%SZ) [skip ci]"
+            git commit -m "ure: pareto tick $(date -u +%Y%m%d-%H%M%SZ) [skip ci]"
+            # drop any checkout-injected auth header before re-pointing origin
+            git config --unset-all http.https://github.com/.extraheader || true
             git remote set-url origin "https://x-access-token:${URE_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
             git push origin HEAD:main
           fi
