@@ -152,6 +152,26 @@
      "note": "SPEC-PARETO-01"
     }
    ]
+  },
+  {
+   "id": "n8",
+   "title": "UCB1遗憾界形式化（STRAT-01 S4·全证明器空白·研究节点非工程承诺）",
+   "state": "queued",
+   "score": 0.0,
+   "issue": null,
+   "deps": [
+    "n3",
+    "n4"
+   ],
+   "created": "2026-08-24T07:18:00Z",
+   "findings": [
+    {
+     "hash": "05cebb8909ae",
+     "src": "usrm direct",
+     "ts": "2026-08-24T07:18:00Z",
+     "note": "SPEC-STRAT-01 v1.0"
+    }
+   ]
   }
  ],
  "frontier": [
