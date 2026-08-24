@@ -25,7 +25,7 @@
       "id": "n1",
       "title": "失忆/断崖/折叠/失察：四语链跨域计算 trouble-shooting 理论方法（广搜-深研-博借）",
       "state": "running",
-      "score": 0.5,
+      "score": 0.6,
       "issue": 11,
       "deps": [],
       "created": "2026-08-24T02:14:44Z",
@@ -216,8 +216,8 @@
     "n7"
   ],
   "last_session_anchor": {
-    "ts": "2026-08-24T13:25:12Z",
-    "chain_seq": 8
+    "ts": "2026-08-24T17:00:12Z",
+    "chain_seq": 9
   },
   "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
   "inference": "SPEC-DIAL-01 capsule bus",
@@ -310,17 +310,17 @@
   "cascade": {},
   "cascade_log": [],
   "pareto": {
-    "ts": "2026-08-24T13:25:12Z",
-    "arm": "n7",
-    "pi": 0.5,
+    "ts": "2026-08-24T17:00:12Z",
+    "arm": "n1",
+    "pi": 0.4625,
     "split": false,
     "prices": {
-      "n7": 0.5,
-      "n1": 0.435714,
+      "n1": 0.4625,
       "n2": 0.35,
       "n6": 0.35,
-      "n5": 0.142857,
-      "n3": 0.1
+      "n7": 0.2,
+      "n5": 0.175,
+      "n3": 0.1375
     },
     "params": {
       "beta": 0.5,
