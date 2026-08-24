@@ -26,7 +26,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install deps
-        run: pip install PyJWT
+        run: pip install PyJWT cryptography
 
       - name: Mint GitHub App installation token
         id: app
