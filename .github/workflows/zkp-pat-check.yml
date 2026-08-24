@@ -1,6 +1,10 @@
 name: zkp-pat-check
 on:
   workflow_dispatch:
+
+permissions:
+  contents: read   # 只读校验 + artifact 上传，无需写仓
+
 jobs:
   zkp:
     runs-on: ubuntu-latest

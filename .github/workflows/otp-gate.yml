@@ -10,6 +10,7 @@ on:
       - "inbox/sendcode-*.json"
       - "inbox/otp-*.json"
   workflow_dispatch:
+# rationale: 仅回写 inbox/.kimi_session.json.enc 密文态（精确路径 + [skip ci] + K7 pub_lint 闸）
 permissions:
   contents: write
 concurrency:

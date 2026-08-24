@@ -7,6 +7,7 @@ on:
   schedule: [{ cron: '9-59/47 * * * *' }]   # 错峰值守（公仓零配额）
   push:
     paths: ['.github/workflows/agent-duty.yml']
+# rationale: duty 台账 weave/duty/ 哈希链需 commit+push 回本仓（[skip ci]）
 permissions:
   contents: write
 jobs:

@@ -7,6 +7,7 @@ on:
     types: [shadow-pulse]
   push:
     paths: ['engine/**']
+# rationale: weave/pulse/ 快照与 pulse.log 哈希链需 commit+push 回本仓（[skip ci]）
 permissions:
   contents: write
 jobs:

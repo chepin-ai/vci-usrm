@@ -6,6 +6,7 @@ name: otp-issue-trigger
 on:
   issues:
     types: [opened]
+# rationale: issues: write 回评 OTP 流程；contents: write 仅回写 inbox/.kimi_session.json.enc（[skip ci] + K7 闸）
 permissions:
   issues: write
   contents: write

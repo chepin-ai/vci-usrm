@@ -68,6 +68,14 @@ jobs:
           echo "token=$TOK" >> "$GITHUB_OUTPUT"
           rm -f /tmp/tok.out
 
+      # N-MUST 覆盖条款（SPEC-NMUST-01 §3/§4）：义务臂优先级 ≥ 研究臂，
+      # oblig_tick 必须先于 Whittle 运行——软优先：本轮先为最老未闭义务记
+      # RPT.OBLIG 清算条目（每轮最多清算 1 项），不阻塞 pareto_tick。
+      - name: Obligation tick (N-MUST arm first, FIFO clear <=1 per round)
+        env:
+          URE_TOKEN: ${{ steps.app.outputs.token }}
+        run: python scripts/oblig_tick.py
+
       - name: URE tick (Whittle live, dry-run increment no LLM)
         env:
           URE_TOKEN: ${{ steps.app.outputs.token }}

@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: "7 * * * *"        # 每小时 :07,错峰
   workflow_dispatch: {}
+# rationale: weave/quafu/status.json 变更需 commit+push 回本仓（[skip ci]）
 permissions:
   contents: write
 jobs:

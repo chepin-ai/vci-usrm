@@ -9,6 +9,7 @@ on:
       items_json:
         description: "DISC-01 件 JSON（对象或数组）"
         required: true
+# rationale: outbox/usrm-outbox.json 追加后需 commit+push 回本仓（[skip ci]）
 permissions:
   contents: write
 concurrency:
