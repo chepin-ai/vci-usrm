@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
-"""CI-OS 端 OTP 工蜂 v3：单 issue 闭环（发码→候评→验真→落态）。
+"""CI-OS 端 OTP 工蜂 v4：单 issue 闭环 + 密文会话跨 run 复用。
 [SENDCODE]/[OTP-LOOP] issue → 发码→轮询本 issue 评论(≤9min)取 4-8 位码→登录→storage_state 工件。
-[OTP] xxxxxx issue → 直接验真（旧路兼容）。真码 ::add-mask:: + 即删（PII 闸）。"""
+[OTP] xxxxxx issue → 直接验真（旧路兼容）。真码 ::add-mask:: + 即删（PII 闸）。
+--reuse → 读 inbox/.kimi_session.json.enc（Fernet 密文）→ 解密注入 context 核活（零短信）。
+安全宪章 I5：公仓零密钥零标识——明文 .kimi_session.json 永不入仓（.gitignore），
+仓内只许 .enc 密文；钥匙 CMD_AUTH 仅经 secrets/env，绝不落日志。"""
 import asyncio, glob, json, os, sys, datetime, urllib.request
 
 import re as _re
@@ -12,9 +15,40 @@ PHONE = _digits
 GH = os.environ.get("GITHUB_TOKEN", "").strip()
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 ISSUE_N = os.environ.get("ISSUE_NUMBER", "").strip()
+CMD_AUTH = os.environ.get("CMD_AUTH", "").strip()
+PLAIN_PATH = "inbox/.kimi_session.json"
+ENC_PATH = "inbox/.kimi_session.json.enc"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 def now(): return datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+# —— 密文会话态（与仓内 vault 同钥匙体系：Fernet key = urlsafe_b64(sha256(bytes.fromhex(CMD_AUTH)))）——
+def _fernet():
+    if not CMD_AUTH: return None
+    import base64, hashlib
+    from cryptography.fernet import Fernet
+    return Fernet(base64.urlsafe_b64encode(hashlib.sha256(bytes.fromhex(CMD_AUTH)).digest()))
+
+def save_session_enc():
+    """登录成功后：明文 storage_state → Fernet 密文 .enc（公仓唯一可携形态）。"""
+    f = _fernet()
+    if not f:
+        print("WARN: CMD_AUTH 未配置，跳过 .enc 落盘（明文仍仅走 artifact）"); return False
+    with open(PLAIN_PATH, "rb") as fh: data = fh.read()
+    with open(ENC_PATH, "wb") as fh: fh.write(f.encrypt(data))
+    print("session encrypted ->", ENC_PATH)
+    return True
+
+def load_session_enc():
+    """.enc → 明文 bytes；缺文件/缺钥匙/密文损坏一律 None（调用方优雅降级 no-session）。"""
+    f = _fernet()
+    if not f: print("no CMD_AUTH: 无法解密复用态"); return None
+    if not os.path.exists(ENC_PATH): print("no .enc: 仓内暂无可复用会话态"); return None
+    try:
+        with open(ENC_PATH, "rb") as fh: return f.decrypt(fh.read())
+    except Exception as e:
+        print("decrypt fail:", type(e).__name__); return None
+
 def write_state(status, note):
     json.dump({"status": status, "note": note, "ts": now(), "worker": "cios-otp-gate-v3"},
               open("inbox/otp_gate_state.json", "w"), ensure_ascii=False, indent=1)
@@ -103,12 +137,49 @@ async def shot(pg, name):
     try: await pg.screenshot(path=f"inbox/{name}.png")
     except Exception: pass
 
+async def reuse_main():
+    """复用路径（零短信）：.enc 密文 → 解密 → 注入 context → 核活。
+    无可复用态（缺 .enc/缺钥匙/密文损坏）优雅报 NO_SESSION，exit 0 不报错。"""
+    data = load_session_enc()
+    if data is None:
+        write_state("NO_SESSION", "无可复用会话态（.enc 缺失或不可解密）——走 [SENDCODE] 大循环重建")
+        return
+    from playwright.async_api import async_playwright
+    with open(PLAIN_PATH, "wb") as fh: fh.write(data)   # 明文仅 runner 临时盘，.gitignore 永不入仓
+    async with async_playwright() as pw:
+        b = await pw.chromium.launch(headless=True, args=["--no-sandbox", "--disable-blink-features=AutomationControlled"])
+        ctx = await b.new_context(storage_state=PLAIN_PATH, user_agent=UA,
+                                  viewport={"width":1440,"height":900}, locale="zh-CN")
+        pg = await ctx.new_page()
+        await pg.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
+        try:
+            await pg.goto("https://www.kimi.com/", wait_until="commit", timeout=90000)
+            await pg.wait_for_timeout(6000)
+            body = await pg.locator("body").inner_text()
+            # 活态信号取反：登录入口 CTA 在场 = 会话已死（登出首页有「登录以同步历史会话」，
+            # 故不能用「历史会话」作活态正信号——沙盒实证其假阳）。
+            if "登录以同步历史会话" in body or "手机号码登录" in body:
+                await pg.wait_for_timeout(5000)      # SPA 慢渲染复查一轮再判
+                body = await pg.locator("body").inner_text()
+            alive = "登录以同步历史会话" not in body and "手机号码登录" not in body
+        except Exception as e:
+            await shot(pg, "reuse_navfail")
+            write_state("EXPIRED", f"复用导航异常：{type(e).__name__}——走 [SENDCODE] 重建"); await b.close(); return
+        if alive:
+            write_state("REUSED", "密文会话复活成功——免短信在线，大循环复用价值已复活")
+        else:
+            await shot(pg, "reuse_expired")
+            write_state("EXPIRED", "密文可解密但会话已过期——走 [SENDCODE] 大循环重建")
+        await b.close()
+
 async def main():
     from playwright.async_api import async_playwright
     verify_only = None
     for a in sys.argv:
         if a.startswith("--verify-only"): verify_only = a.split("=")[-1] if "=" in a else sys.argv[sys.argv.index(a)+1]
     loop_mode = "--loop" in sys.argv
+    if "--reuse" in sys.argv:
+        await reuse_main(); return
     if not PHONE: write_state("FAILED", "OTP_PHONE 未设置"); sys.exit(1)
     async with async_playwright() as pw:
         b = await pw.chromium.launch(headless=True, args=["--no-sandbox", "--disable-blink-features=AutomationControlled"])
@@ -154,9 +225,10 @@ async def main():
         ok = ("我的 Kimi" in body or "历史会话" in body) and "手机号码登录" not in body \
              and not any(k in body for k in ["验证码错误", "不正确", "已过期", "失效", "频繁"])
         if ok:
-            await ctx.storage_state(path="inbox/.kimi_session.json")
-            write_state("DONE", "核对成功·登录态已成（v3）")
-            comment("✅ **OTP 真码大循环闭环实证**：登录态工件已成。")
+            await ctx.storage_state(path=PLAIN_PATH)
+            enc_ok = save_session_enc()
+            write_state("DONE", "核对成功·登录态已成（v4）" + ("·密文态已落 .enc" if enc_ok else "·仅 artifact（CMD_AUTH 缺）"))
+            comment("✅ **OTP 真码大循环闭环实证**：登录态工件已成。" + ("跨 run 复用密文将由 workflow 回写仓（仅 .enc）。" if enc_ok else ""))
         else:
             await shot(pg, "otp_fail")
             write_state("FAILED", "码错误或已过期——重开 [SENDCODE] 再来")

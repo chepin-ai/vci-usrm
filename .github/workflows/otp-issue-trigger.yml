@@ -1,4 +1,8 @@
 name: otp-issue-trigger
+# v4：OTP 会话态以密文形态跨 run 复用——登录成功后 worker 落 inbox/.kimi_session.json.enc
+# （Fernet，钥匙=sha256(bytes.fromhex(CMD_AUTH))，CMD_AUTH 仅经 secrets/env）；
+# 两 job 末尾只 commit .enc（精确路径 + [skip ci] + K7 pub_lint 闸 + 现场铸 URE token）。
+# 安全宪章 I5：公仓零密钥零标识；明文 .kimi_session.json 由 .gitignore 永久拦截。
 on:
   issues:
     types: [opened]
@@ -14,10 +18,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - run: pip install playwright && playwright install --with-deps chromium
-      - name: OTP loop（发码→候评→验真→落态）
+      - run: pip install playwright cryptography PyJWT && playwright install --with-deps chromium
+      - name: OTP loop（发码→候评→验真→落态→密文态 .enc）
         env:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
+          CMD_AUTH: ${{ secrets.CMD_AUTH }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -29,8 +34,48 @@ jobs:
           path: inbox/
           retention-days: 1
           if-no-files-found: ignore
-      # SECURITY (AUDIT-01): inbox/ 状态禁止 commit 进公仓（曾泄漏 live refresh_token 与手机号截图）。
-      # 会话态仅经上方 artifact（retention 1 天，私域）传递；不再回写仓库。
+      # SECURITY (AUDIT-01): inbox/ 明文禁止 commit 进公仓（曾泄漏 live refresh_token 与手机号截图）。
+      # 唯一例外：inbox/.kimi_session.json.enc（Fernet 密文）；明文会话态仅经上方 artifact（1 天留存）传递。
+      - name: 密文态回写（仅 inbox/.kimi_session.json.enc，[skip ci]；K7 lint 闸 + 现场铸 URE token）
+        if: always()
+        env:
+          URE_APP_ID: ${{ secrets.URE_APP_ID }}
+          URE_APP_KEY: ${{ secrets.URE_APP_KEY }}
+          URE_INSTALLATION_ID: ${{ secrets.URE_INSTALLATION_ID }}
+        run: |
+          set -e
+          if [ ! -f inbox/.kimi_session.json.enc ]; then echo "no .enc produced; skip"; exit 0; fi
+          git config user.name "otp-gate[bot]"
+          git config user.email "otp-gate[bot]@users.noreply.github.com"
+          git config --unset-all http.https://github.com/.extraheader || true
+          git add inbox/.kimi_session.json.enc   # 精确路径，严禁 -A
+          if git diff --cached --quiet; then echo ".enc unchanged; skip push"; exit 0; fi
+          python3 scripts/pub_lint.py --staged
+          TOK=$(python3 - <<'PY'
+          import json, os, time, urllib.request
+          import jwt
+          now = int(time.time())
+          app_jwt = jwt.encode(
+              {"iat": now - 60, "exp": now + 540, "iss": os.environ["URE_APP_ID"]},
+              os.environ["URE_APP_KEY"], algorithm="RS256")
+          req = urllib.request.Request(
+              f"https://api.github.com/app/installations/{os.environ['URE_INSTALLATION_ID']}/access_tokens",
+              method="POST",
+              headers={"Authorization": f"Bearer {app_jwt}",
+                       "Accept": "application/vnd.github+json"})
+          print(json.load(urllib.request.urlopen(req))["token"])
+          PY
+          )
+          echo "::add-mask::$TOK"
+          git commit -m "otp-loop: refresh kimi session .enc $(date -u +%Y%m%d-%H%M%SZ) [skip ci]"
+          git remote set-url origin "https://x-access-token:${TOK}@github.com/${GITHUB_REPOSITORY}.git"
+          ok=0
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && { ok=1; break; }
+            echo "push rejected (attempt $i); rebase and retry"
+            sleep $((i*5))
+          done
+          [ "$ok" = "1" ] || { echo "::error::push failed 3x; leaving for next run"; exit 1; }
   verify:
     # SECURITY (AUDIT-01): issues trigger must only run for trusted authors
     if: startsWith(github.event.issue.title, '[OTP]') && (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER')
@@ -39,10 +84,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - run: pip install playwright && playwright install --with-deps chromium
-      - name: 核码（旧路兼容）
+      - run: pip install playwright cryptography PyJWT && playwright install --with-deps chromium
+      - name: 核码（旧路兼容；成功则落密文态 .enc）
         env:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
+          CMD_AUTH: ${{ secrets.CMD_AUTH }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -58,4 +104,44 @@ jobs:
           path: inbox/
           retention-days: 1
           if-no-files-found: ignore
-      # SECURITY (AUDIT-01): inbox/ 状态禁止 commit 进公仓；验真态仅经 artifact（1 天留存）传递。
+      # SECURITY (AUDIT-01): inbox/ 明文禁止 commit 进公仓；验真态明文仅经 artifact（1 天留存）传递。
+      - name: 密文态回写（仅 inbox/.kimi_session.json.enc，[skip ci]；K7 lint 闸 + 现场铸 URE token）
+        if: always()
+        env:
+          URE_APP_ID: ${{ secrets.URE_APP_ID }}
+          URE_APP_KEY: ${{ secrets.URE_APP_KEY }}
+          URE_INSTALLATION_ID: ${{ secrets.URE_INSTALLATION_ID }}
+        run: |
+          set -e
+          if [ ! -f inbox/.kimi_session.json.enc ]; then echo "no .enc produced; skip"; exit 0; fi
+          git config user.name "otp-gate[bot]"
+          git config user.email "otp-gate[bot]@users.noreply.github.com"
+          git config --unset-all http.https://github.com/.extraheader || true
+          git add inbox/.kimi_session.json.enc   # 精确路径，严禁 -A
+          if git diff --cached --quiet; then echo ".enc unchanged; skip push"; exit 0; fi
+          python3 scripts/pub_lint.py --staged
+          TOK=$(python3 - <<'PY'
+          import json, os, time, urllib.request
+          import jwt
+          now = int(time.time())
+          app_jwt = jwt.encode(
+              {"iat": now - 60, "exp": now + 540, "iss": os.environ["URE_APP_ID"]},
+              os.environ["URE_APP_KEY"], algorithm="RS256")
+          req = urllib.request.Request(
+              f"https://api.github.com/app/installations/{os.environ['URE_INSTALLATION_ID']}/access_tokens",
+              method="POST",
+              headers={"Authorization": f"Bearer {app_jwt}",
+                       "Accept": "application/vnd.github+json"})
+          print(json.load(urllib.request.urlopen(req))["token"])
+          PY
+          )
+          echo "::add-mask::$TOK"
+          git commit -m "otp-verify: refresh kimi session .enc $(date -u +%Y%m%d-%H%M%SZ) [skip ci]"
+          git remote set-url origin "https://x-access-token:${TOK}@github.com/${GITHUB_REPOSITORY}.git"
+          ok=0
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && { ok=1; break; }
+            echo "push rejected (attempt $i); rebase and retry"
+            sleep $((i*5))
+          done
+          [ "$ok" = "1" ] || { echo "::error::push failed 3x; leaving for next run"; exit 1; }
