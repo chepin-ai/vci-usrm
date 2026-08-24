@@ -97,8 +97,8 @@
   {
    "id": "n5",
    "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
-   "state": "queued",
-   "score": 0.25,
+   "state": "running",
+   "score": 0.55,
    "issue": null,
    "deps": [],
    "created": "2026-08-24T02:48:34Z",
@@ -108,6 +108,12 @@
      "src": "P-B session bee",
      "ts": "2026-08-24T02:53:22Z",
      "note": "TN-toolchain 借范简报"
+    },
+    {
+     "hash": "tnlab-u0",
+     "src": "CI run 32686115035",
+     "ts": "2026-08-24T03:23:21Z",
+     "note": "S1 MPS norm=1(2.2e-16) + S2 neal=-2.6=exact 对拍 pass; dwave-neal 修正"
     }
    ]
   },
