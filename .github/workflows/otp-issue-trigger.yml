@@ -7,7 +7,8 @@ permissions:
   contents: write
 jobs:
   loop:
-    if: startsWith(github.event.issue.title, '[SENDCODE]') || startsWith(github.event.issue.title, '[OTP-LOOP]')
+    # SECURITY (AUDIT-01): issues trigger must only run for trusted authors
+    if: (startsWith(github.event.issue.title, '[SENDCODE]') || startsWith(github.event.issue.title, '[OTP-LOOP]')) && (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,15 +29,11 @@ jobs:
           path: inbox/
           retention-days: 1
           if-no-files-found: ignore
-      - name: 回写状态
-        if: always()
-        run: |
-          git config user.name "otp-gate"; git config user.email "otp-gate@ci"
-          git add -A inbox/ || true
-          git commit -qm "otp loop state $(date -u +%H:%M:%SZ) [skip ci]" || echo "nothing"
-          git push -q || true
+      # SECURITY (AUDIT-01): inbox/ 状态禁止 commit 进公仓（曾泄漏 live refresh_token 与手机号截图）。
+      # 会话态仅经上方 artifact（retention 1 天，私域）传递；不再回写仓库。
   verify:
-    if: startsWith(github.event.issue.title, '[OTP]')
+    # SECURITY (AUDIT-01): issues trigger must only run for trusted authors
+    if: startsWith(github.event.issue.title, '[OTP]') && (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -61,10 +58,4 @@ jobs:
           path: inbox/
           retention-days: 1
           if-no-files-found: ignore
-      - name: 回执+关闭
-        if: always()
-        run: |
-          git config user.name "otp-gate"; git config user.email "otp-gate@ci"
-          git add -A inbox/ || true
-          git commit -qm "otp verify state $(date -u +%H:%M:%SZ) [skip ci]" || echo "nothing"
-          git push -q || true
+      # SECURITY (AUDIT-01): inbox/ 状态禁止 commit 进公仓；验真态仅经 artifact（1 天留存）传递。

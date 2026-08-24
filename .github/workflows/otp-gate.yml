@@ -29,18 +29,13 @@ jobs:
         env:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
         run: python3 scripts/otp_gate_worker.py
-      - name: 回写状态+清真码残留
-        run: |
-          git config user.name "usrm-otp-gate"
-          git config user.email "otp-gate@usrm.local"
-          git add -A inbox/
-          git commit -qm "otp-gate consume $(date -u +%H:%M:%SZ) [skip ci]" || echo "nothing"
-          git push -q
-      - name: 登录态工件（成功时；1 天留存，仅供后台工作取用）
-        if: success()
+      # SECURITY (AUDIT-01): inbox/ 一律禁止 commit 进公仓（曾泄漏 live refresh_token / 手机号截图）。
+      # 消费态与登录态仅经 artifact 传递（私域、1 天留存）；消费残留不再回写仓库。
+      - name: 会话态工件（1 天留存，仅供后台工作取用；绝不可入 git）
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: kimi-session
-          path: inbox/.kimi_session.json
+          path: inbox/
           retention-days: 1
           if-no-files-found: ignore

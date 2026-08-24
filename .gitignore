@@ -1,0 +1,3 @@
+# AUDIT-01 security: never commit OTP session state or screenshots into this public repo
+inbox/.kimi_session.json
+inbox/*.png
