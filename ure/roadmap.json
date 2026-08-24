@@ -66,12 +66,45 @@
     "n3"
    ],
    "created": "2026-08-24T02:14:44Z"
+  },
+  {
+   "id": "n1a",
+   "title": "FDI式四语链故障隔离矩阵（n1残差FINDING·文献空白攻坚）",
+   "state": "queued",
+   "score": 0.0,
+   "issue": null,
+   "deps": [
+    "n1"
+   ],
+   "created": "2026-08-24T02:48:34Z"
+  },
+  {
+   "id": "n5",
+   "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
+   "state": "queued",
+   "score": 0.0,
+   "issue": null,
+   "deps": [],
+   "created": "2026-08-24T02:48:34Z"
+  },
+  {
+   "id": "n6",
+   "title": "四语链工具链接入（fourlang-01楔·边E1-E5逐条冒烟）",
+   "state": "queued",
+   "score": 0.0,
+   "issue": null,
+   "deps": [
+    "n1"
+   ],
+   "created": "2026-08-24T02:48:34Z"
   }
  ],
  "frontier": [
   "n1",
   "n2",
-  "n3"
+  "n3",
+  "n5",
+  "n6"
  ],
  "last_session_anchor": {
   "ts": "2026-08-24T02:14:57Z",
