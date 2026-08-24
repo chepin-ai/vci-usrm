@@ -14,19 +14,17 @@
     {
       "id": "U0-000",
       "title": "U0 skeleton smoke: sweeper loop self-check (no LLM)",
-      "state": "running",
-      "score": 0.7,
+      "state": "done",
+      "score": 0.8,
       "issue": 10,
       "deps": [],
       "created": "2026-08-24T00:00:00Z",
-      "returned": false
+      "returned": true
     }
   ],
-  "frontier": [
-    "U0-000"
-  ],
+  "frontier": [],
   "last_session_anchor": {
-    "ts": "2026-08-24T01:51:39Z",
-    "chain_seq": 1
+    "ts": "2026-08-24T01:52:47Z",
+    "chain_seq": 2
   }
 }
