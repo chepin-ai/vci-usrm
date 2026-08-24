@@ -42,10 +42,18 @@
    "id": "n2",
    "title": "知识谱系基座同构映射：知识图谱⇔细胞复形⇔超超图⇔同构网络⇔范畴/HoTT⇔LEAN➱LaTeX",
    "state": "queued",
-   "score": 0.0,
+   "score": 0.25,
    "issue": 12,
    "deps": [],
-   "created": "2026-08-24T02:14:44Z"
+   "created": "2026-08-24T02:14:44Z",
+   "findings": [
+    {
+     "hash": "4bb468a01f40",
+     "src": "P-B session bee",
+     "ts": "2026-08-24T02:53:22Z",
+     "note": "N2-pedigree 借范简报"
+    }
+   ]
   },
   {
    "id": "n3",
@@ -82,21 +90,37 @@
    "id": "n5",
    "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
    "state": "queued",
-   "score": 0.0,
+   "score": 0.25,
    "issue": null,
    "deps": [],
-   "created": "2026-08-24T02:48:34Z"
+   "created": "2026-08-24T02:48:34Z",
+   "findings": [
+    {
+     "hash": "5d54489e9b1e",
+     "src": "P-B session bee",
+     "ts": "2026-08-24T02:53:22Z",
+     "note": "TN-toolchain 借范简报"
+    }
+   ]
   },
   {
    "id": "n6",
    "title": "四语链工具链接入（fourlang-01楔·边E1-E5逐条冒烟）",
    "state": "queued",
-   "score": 0.0,
+   "score": 0.25,
    "issue": null,
    "deps": [
     "n1"
    ],
-   "created": "2026-08-24T02:48:34Z"
+   "created": "2026-08-24T02:48:34Z",
+   "findings": [
+    {
+     "hash": "8b59258b916a",
+     "src": "P-B session bee",
+     "ts": "2026-08-24T02:53:22Z",
+     "note": "FL-toolchain 借范简报"
+    }
+   ]
   }
  ],
  "frontier": [
