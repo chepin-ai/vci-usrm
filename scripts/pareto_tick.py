@@ -72,8 +72,10 @@ def chain_tail():
     if os.path.exists(CHAIN):
         with open(CHAIN) as f:
             for line in f:
-                if line.strip():
-                    entries.append(json.loads(line))
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue  # v2 format header comment
+                entries.append(json.loads(line))
     if not entries:
         return 0, "0" * 64, entries
     return entries[-1].get("seq", 0), entries[-1].get("hash", "0" * 64), entries
