@@ -66,7 +66,7 @@
       "id": "n3",
       "title": "N-Must/M-Code/Δ-Base 形式化为简洁公式集（规则必形式）",
       "state": "running",
-      "score": 0.6,
+      "score": 0.63,
       "issue": 13,
       "deps": [],
       "created": "2026-08-24T02:14:44Z",
@@ -111,7 +111,7 @@
       "id": "n5",
       "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
       "state": "running",
-      "score": 0.71,
+      "score": 0.78,
       "issue": 16,
       "deps": [],
       "created": "2026-08-24T02:48:34Z",
@@ -222,8 +222,8 @@
     "n6"
   ],
   "last_session_anchor": {
-    "ts": "2026-08-25T12:53:14Z",
-    "chain_seq": 23
+    "ts": "2026-08-25T13:16:57Z",
+    "chain_seq": 25
   },
   "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
   "inference": "SPEC-DIAL-01 capsule bus",
@@ -322,16 +322,15 @@
   "cascade": {},
   "cascade_log": [],
   "pareto": {
-    "ts": "2026-08-25T12:53:14Z",
-    "arm": "n7",
-    "pi": 0.341795,
+    "ts": "2026-08-25T13:16:57Z",
+    "arm": "n5",
+    "pi": 0.325,
     "split": true,
     "prices": {
-      "n7": 0.341795,
-      "n5": 0.318182,
-      "n3": 0.304545,
-      "n2": 0.213636,
-      "n6": 0.186364
+      "n5": 0.325,
+      "n3": 0.3125,
+      "n2": 0.225,
+      "n6": 0.2
     },
     "params": {
       "beta": 0.5,
