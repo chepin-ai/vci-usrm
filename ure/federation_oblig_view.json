@@ -1,0 +1,74 @@
+{
+ "anchor": "ci-root",
+ "drift_sentinel": {
+  "last_alert_date": "2026-08-25",
+  "sources": {
+   "vci-library": {
+    "age_h": 27.4,
+    "last_ts": "2026-08-23T23:58:01Z",
+    "stale": true
+   },
+   "vci-playground": {
+    "age_h": 19.3,
+    "last_ts": "2026-08-24T08:08:08Z",
+    "stale": true
+   },
+   "vci-usrm": {
+    "age_h": 1.5,
+    "last_ts": "2026-08-25T01:56:29Z",
+    "stale": false
+   }
+  },
+  "stale": true,
+  "threshold_h": 8.0
+ },
+ "per_repo": {
+  "vci-library": {
+   "closed_24h": 0,
+   "closed_total": 0,
+   "escalated": [],
+   "last_ts": "2026-08-23T23:58:01Z",
+   "open": [
+    {
+     "id": "kit-F1",
+     "src": "kit/INDEX.md F-table admonition",
+     "state": "raised"
+    }
+   ],
+   "stale": true
+  },
+  "vci-playground": {
+   "closed_24h": 0,
+   "escalated": [],
+   "last_ts": "2026-08-24T08:08:08Z",
+   "open": [],
+   "stale": true
+  },
+  "vci-usrm": {
+   "closed_24h": 0,
+   "escalated": [],
+   "last_ts": "2026-08-25T01:56:29Z",
+   "open": [
+    {
+     "age_h": 16.9,
+     "domain": "human",
+     "id": "o-root-rotate",
+     "opened": "2026-08-24T10:30:00Z",
+     "src": "root-action account-side credential rotation (human-domain residue of o-incident-116, SPEC-NMUST-01 §5)",
+     "state": "raised"
+    },
+    {
+     "age_h": 3.7,
+     "domain": "machine",
+     "id": "o-kit-F1",
+     "opened": "2026-08-24T23:40:54Z",
+     "src": "kit/INDEX.md F1 admonition: otp-issue-trigger.yml 在**公仓**跑且 `git add -A inbox/ → push`——inbox/ 若含 RAW 会话物即违 CLASSIFY-01；",
+     "state": "raised"
+    }
+   ],
+   "stale": false
+  }
+ },
+ "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
+ "ts": "2026-08-25T03:24:35Z"
+}
