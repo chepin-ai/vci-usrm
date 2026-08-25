@@ -238,7 +238,9 @@ def verify_evidence_existence(o):
     against the local checkout (informational; never fatal)."""
     resolvable, unresolvable = 0, 0
     for ev in o.get("evidence", []):
-        for sha in HEXSHA.findall(ev):
+        if isinstance(ev, dict):
+            ev = " ".join(str(v) for v in ev.values())
+        for sha in HEXSHA.findall(str(ev)):
             r = subprocess.run(["git", "cat-file", "-t", sha],
                                capture_output=True)
             if r.returncode == 0:
