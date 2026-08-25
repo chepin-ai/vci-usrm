@@ -1,337 +1,342 @@
 {
- "engine": "URE-00",
- "version": "0.1",
- "mode": "dry-run",
- "budget": {
-  "max_parallel": 1,
-  "tick_score_delta": 0.1,
-  "done_threshold": 0.8
- },
- "gates": {
-  "human_gate_file": "ure/GATE"
- },
- "nodes": [
-  {
-   "id": "U0-000",
-   "title": "U0 skeleton smoke: sweeper loop self-check (no LLM)",
-   "state": "done",
-   "score": 0.8,
-   "issue": 10,
-   "deps": [],
-   "created": "2026-08-24T00:00:00Z",
-   "returned": true
+  "engine": "URE-00",
+  "version": "0.1",
+  "mode": "dry-run",
+  "budget": {
+    "max_parallel": 1,
+    "tick_score_delta": 0.1,
+    "done_threshold": 0.8
   },
-  {
-   "id": "n1",
-   "title": "失忆/断崖/折叠/失察：四语链跨域计算 trouble-shooting 理论方法（广搜-深研-博借）",
-   "state": "done",
-   "score": 1.03,
-   "issue": 11,
-   "deps": [],
-   "created": "2026-08-24T02:14:44Z",
-   "findings": [
+  "gates": {
+    "human_gate_file": "ure/GATE"
+  },
+  "nodes": [
     {
-     "hash": "80d4f6566fcf",
-     "src": "P-B session",
-     "ts": "2026-08-24T02:38:18Z",
-     "note": "四语链 trouble-shooting 简报; 残差:FDI统一矩阵空白"
+      "id": "U0-000",
+      "title": "U0 skeleton smoke: sweeper loop self-check (no LLM)",
+      "state": "done",
+      "score": 0.8,
+      "issue": 10,
+      "deps": [],
+      "created": "2026-08-24T00:00:00Z",
+      "returned": true
     },
     {
-     "hash": "17c537aa51b1",
-     "src": "P-B capsule n1-fdi-01",
-     "ts": "2026-08-25T11:57:37Z",
-     "note": "FDI统一矩阵: 层×残差类全格有执行件; 传播定理+完备性界; 残留排n4/n9"
-    }
-   ],
-   "returned": true
-  },
-  {
-   "id": "n2",
-   "title": "知识谱系基座同构映射：知识图谱⇔细胞复形⇔超超图⇔同构网络⇔范畴/HoTT⇔LEAN➱LaTeX",
-   "state": "running",
-   "score": 0.35,
-   "issue": 12,
-   "deps": [],
-   "created": "2026-08-24T02:14:44Z",
-   "findings": [
-    {
-     "hash": "4bb468a01f40",
-     "src": "P-B session bee",
-     "ts": "2026-08-24T02:53:22Z",
-     "note": "N2-pedigree 借范简报"
-    }
-   ]
-  },
-  {
-   "id": "n3",
-   "title": "N-Must/M-Code/Δ-Base 形式化为简洁公式集（规则必形式）",
-   "state": "running",
-   "score": 0.6,
-   "issue": 13,
-   "deps": [],
-   "created": "2026-08-24T02:14:44Z",
-   "findings": [
-    {
-     "hash": "05df74d9e4b8",
-     "src": "usrm direct",
-     "ts": "2026-08-24T03:02:42Z",
-     "note": "规则形式化公式集 v0.1 (N8+M7+Δ3, LEAN骨架)"
+      "id": "n1",
+      "title": "失忆/断崖/折叠/失察：四语链跨域计算 trouble-shooting 理论方法（广搜-深研-博借）",
+      "state": "done",
+      "score": 1.03,
+      "issue": 11,
+      "deps": [],
+      "created": "2026-08-24T02:14:44Z",
+      "findings": [
+        {
+          "hash": "80d4f6566fcf",
+          "src": "P-B session",
+          "ts": "2026-08-24T02:38:18Z",
+          "note": "四语链 trouble-shooting 简报; 残差:FDI统一矩阵空白"
+        },
+        {
+          "hash": "17c537aa51b1",
+          "src": "P-B capsule n1-fdi-01",
+          "ts": "2026-08-25T11:57:37Z",
+          "note": "FDI统一矩阵: 层×残差类全格有执行件; 传播定理+完备性界; 残留排n4/n9"
+        }
+      ],
+      "returned": true
     },
     {
-     "hash": "a03764db96ff",
-     "src": "usrm direct",
-     "ts": "2026-08-24T09:09:36Z",
-     "note": "SPEC-KERNEL-01 内核公理集K1-K6+倒推流水账"
-    }
-   ]
-  },
-  {
-   "id": "n4",
-   "title": "ATP-lab 接入评审回灌：命题→Z3/cvc5/Prover9/Mace4 机判",
-   "state": "queued",
-   "score": 0.0,
-   "issue": 14,
-   "deps": [
-    "n3"
-   ],
-   "created": "2026-08-24T02:14:44Z"
-  },
-  {
-   "id": "n1a",
-   "title": "FDI式四语链故障隔离矩阵（n1残差FINDING·文献空白攻坚）",
-   "state": "queued",
-   "score": 0.0,
-   "issue": 15,
-   "deps": [
-    "n1"
-   ],
-   "created": "2026-08-24T02:48:34Z"
-  },
-  {
-   "id": "n5",
-   "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
-   "state": "running",
-   "score": 0.68,
-   "issue": 16,
-   "deps": [],
-   "created": "2026-08-24T02:48:34Z",
-   "findings": [
-    {
-     "hash": "5d54489e9b1e",
-     "src": "P-B session bee",
-     "ts": "2026-08-24T02:53:22Z",
-     "note": "TN-toolchain 借范简报"
+      "id": "n2",
+      "title": "知识谱系基座同构映射：知识图谱⇔细胞复形⇔超超图⇔同构网络⇔范畴/HoTT⇔LEAN➱LaTeX",
+      "state": "running",
+      "score": 0.35,
+      "issue": 12,
+      "deps": [],
+      "created": "2026-08-24T02:14:44Z",
+      "findings": [
+        {
+          "hash": "4bb468a01f40",
+          "src": "P-B session bee",
+          "ts": "2026-08-24T02:53:22Z",
+          "note": "N2-pedigree 借范简报"
+        }
+      ]
     },
     {
-     "hash": "tnlab-u0",
-     "src": "CI run 32686115035",
-     "ts": "2026-08-24T03:23:21Z",
-     "note": "S1 MPS norm=1(2.2e-16) + S2 neal=-2.6=exact 对拍 pass; dwave-neal 修正"
-    }
-   ]
-  },
-  {
-   "id": "n6",
-   "title": "四语链工具链接入（fourlang-01楔·边E1-E5逐条冒烟）",
-   "state": "running",
-   "score": 0.32,
-   "issue": 17,
-   "deps": [
-    "n1"
-   ],
-   "created": "2026-08-24T02:48:34Z",
-   "findings": [
-    {
-     "hash": "8b59258b916a",
-     "src": "P-B session bee",
-     "ts": "2026-08-24T02:53:22Z",
-     "note": "FL-toolchain 借范简报"
-    }
-   ]
-  },
-  {
-   "id": "n7",
-   "title": "帕累托/Whittle 调度引擎入 sweeper（PARETO-01 §2 + STRAT-02 §1 触发器 + §4 臂生命周期）",
-   "state": "running",
-   "score": 0.77,
-   "issue": 18,
-   "deps": [],
-   "created": "2026-08-24T06:51:25Z",
-   "findings": [
-    {
-     "hash": "31f88b257d17",
-     "src": "usrm direct",
-     "ts": "2026-08-24T06:51:25Z",
-     "note": "SPEC-PARETO-01"
+      "id": "n3",
+      "title": "N-Must/M-Code/Δ-Base 形式化为简洁公式集（规则必形式）",
+      "state": "running",
+      "score": 0.6,
+      "issue": 13,
+      "deps": [],
+      "created": "2026-08-24T02:14:44Z",
+      "findings": [
+        {
+          "hash": "05df74d9e4b8",
+          "src": "usrm direct",
+          "ts": "2026-08-24T03:02:42Z",
+          "note": "规则形式化公式集 v0.1 (N8+M7+Δ3, LEAN骨架)"
+        },
+        {
+          "hash": "a03764db96ff",
+          "src": "usrm direct",
+          "ts": "2026-08-24T09:09:36Z",
+          "note": "SPEC-KERNEL-01 内核公理集K1-K6+倒推流水账"
+        }
+      ]
     },
     {
-     "hash": "10d47fa79b4b",
-     "src": "usrm direct",
-     "ts": "2026-08-24T07:28:44Z",
-     "note": "SPEC-STRAT-02 触发器+不动点+臂流"
+      "id": "n4",
+      "title": "ATP-lab 接入评审回灌：命题→Z3/cvc5/Prover9/Mace4 机判",
+      "state": "queued",
+      "score": 0.0,
+      "issue": 14,
+      "deps": [
+        "n3"
+      ],
+      "created": "2026-08-24T02:14:44Z"
     },
     {
-     "hash": "mc-32704707537",
-     "src": "kaggle-compute",
-     "ts": "2026-08-24T08:12:47Z",
-     "note": "MC验证: ρ<1停机率0.99池长有界 / ρ=1.2无门禁爆炸 / 链种子PRNG复现 / NW toy自相关≤0.0087"
+      "id": "n1a",
+      "title": "FDI式四语链故障隔离矩阵（n1残差FINDING·文献空白攻坚）",
+      "state": "queued",
+      "score": 0.0,
+      "issue": 15,
+      "deps": [
+        "n1"
+      ],
+      "created": "2026-08-24T02:48:34Z"
     },
     {
-     "hash": "970a361a4618",
-     "src": "CI run 32714299298",
-     "ts": "2026-08-24T10:01:07Z",
-     "note": "原型+不动点: π*=(0,0.05)@epoch4, regret比0.041, 不变式PASS"
+      "id": "n5",
+      "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
+      "state": "running",
+      "score": 0.71,
+      "issue": 16,
+      "deps": [],
+      "created": "2026-08-24T02:48:34Z",
+      "findings": [
+        {
+          "hash": "5d54489e9b1e",
+          "src": "P-B session bee",
+          "ts": "2026-08-24T02:53:22Z",
+          "note": "TN-toolchain 借范简报"
+        },
+        {
+          "hash": "tnlab-u0",
+          "src": "CI run 32686115035",
+          "ts": "2026-08-24T03:23:21Z",
+          "note": "S1 MPS norm=1(2.2e-16) + S2 neal=-2.6=exact 对拍 pass; dwave-neal 修正"
+        }
+      ]
+    },
+    {
+      "id": "n6",
+      "title": "四语链工具链接入（fourlang-01楔·边E1-E5逐条冒烟）",
+      "state": "running",
+      "score": 0.32,
+      "issue": 17,
+      "deps": [
+        "n1"
+      ],
+      "created": "2026-08-24T02:48:34Z",
+      "findings": [
+        {
+          "hash": "8b59258b916a",
+          "src": "P-B session bee",
+          "ts": "2026-08-24T02:53:22Z",
+          "note": "FL-toolchain 借范简报"
+        }
+      ]
+    },
+    {
+      "id": "n7",
+      "title": "帕累托/Whittle 调度引擎入 sweeper（PARETO-01 §2 + STRAT-02 §1 触发器 + §4 臂生命周期）",
+      "state": "done",
+      "score": 0.84,
+      "issue": 18,
+      "deps": [],
+      "created": "2026-08-24T06:51:25Z",
+      "findings": [
+        {
+          "hash": "31f88b257d17",
+          "src": "usrm direct",
+          "ts": "2026-08-24T06:51:25Z",
+          "note": "SPEC-PARETO-01"
+        },
+        {
+          "hash": "10d47fa79b4b",
+          "src": "usrm direct",
+          "ts": "2026-08-24T07:28:44Z",
+          "note": "SPEC-STRAT-02 触发器+不动点+臂流"
+        },
+        {
+          "hash": "mc-32704707537",
+          "src": "kaggle-compute",
+          "ts": "2026-08-24T08:12:47Z",
+          "note": "MC验证: ρ<1停机率0.99池长有界 / ρ=1.2无门禁爆炸 / 链种子PRNG复现 / NW toy自相关≤0.0087"
+        },
+        {
+          "hash": "970a361a4618",
+          "src": "CI run 32714299298",
+          "ts": "2026-08-24T10:01:07Z",
+          "note": "原型+不动点: π*=(0,0.05)@epoch4, regret比0.041, 不变式PASS"
+        }
+      ],
+      "returned": true
+    },
+    {
+      "id": "n8",
+      "title": "UCB1遗憾界形式化（STRAT-01 S4·全证明器空白·研究节点非工程承诺）",
+      "state": "queued",
+      "score": 0.0,
+      "issue": 19,
+      "deps": [
+        "n3",
+        "n4"
+      ],
+      "created": "2026-08-24T07:18:00Z",
+      "findings": [
+        {
+          "hash": "05cebb8909ae",
+          "src": "usrm direct",
+          "ts": "2026-08-24T07:18:00Z",
+          "note": "SPEC-STRAT-01 v1.0"
+        }
+      ]
+    },
+    {
+      "id": "n9",
+      "title": "技术债滚动清理（AUDIT-01 P2余项，sweeper每轮捎带1项）",
+      "state": "queued",
+      "score": 0.0,
+      "issue": null,
+      "deps": [],
+      "created": "2026-08-24T11:49:41Z"
     }
-   ]
-  },
-  {
-   "id": "n8",
-   "title": "UCB1遗憾界形式化（STRAT-01 S4·全证明器空白·研究节点非工程承诺）",
-   "state": "queued",
-   "score": 0.0,
-   "issue": 19,
-   "deps": [
+  ],
+  "frontier": [
+    "n2",
     "n3",
-    "n4"
-   ],
-   "created": "2026-08-24T07:18:00Z",
-   "findings": [
+    "n5",
+    "n6"
+  ],
+  "last_session_anchor": {
+    "ts": "2026-08-25T12:53:14Z",
+    "chain_seq": 23
+  },
+  "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
+  "inference": "SPEC-DIAL-01 capsule bus",
+  "probation": [
     {
-     "hash": "05cebb8909ae",
-     "src": "usrm direct",
-     "ts": "2026-08-24T07:18:00Z",
-     "note": "SPEC-STRAT-01 v1.0"
+      "hash": "80d4f6566fcf",
+      "node": "n1",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "4bb468a01f40",
+      "node": "n2",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "05df74d9e4b8",
+      "node": "n3",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "a03764db96ff",
+      "node": "n3",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "5d54489e9b1e",
+      "node": "n5",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "tnlab-u0",
+      "node": "n5",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "8b59258b916a",
+      "node": "n6",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "31f88b257d17",
+      "node": "n7",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "10d47fa79b4b",
+      "node": "n7",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "mc-32704707537",
+      "node": "n7",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "970a361a4618",
+      "node": "n7",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "05cebb8909ae",
+      "node": "n8",
+      "ts": "2026-08-24T10:17:55Z",
+      "note": "new possibility entered probation pool"
+    },
+    {
+      "hash": "17c537aa51b1",
+      "node": "n1",
+      "ts": "2026-08-25T12:53:14Z",
+      "note": "new possibility entered probation pool"
     }
-   ]
-  },
-  {
-   "id": "n9",
-   "title": "技术债滚动清理（AUDIT-01 P2余项，sweeper每轮捎带1项）",
-   "state": "queued",
-   "score": 0.0,
-   "issue": null,
-   "deps": [],
-   "created": "2026-08-24T11:49:41Z"
-  }
- ],
- "frontier": [
-  "n2",
-  "n3",
-  "n5",
-  "n6",
-  "n7"
- ],
- "last_session_anchor": {
-  "ts": "2026-08-25T09:03:54Z",
-  "chain_seq": 20
- },
- "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
- "inference": "SPEC-DIAL-01 capsule bus",
- "probation": [
-  {
-   "hash": "80d4f6566fcf",
-   "node": "n1",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "4bb468a01f40",
-   "node": "n2",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "05df74d9e4b8",
-   "node": "n3",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "a03764db96ff",
-   "node": "n3",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "5d54489e9b1e",
-   "node": "n5",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "tnlab-u0",
-   "node": "n5",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "8b59258b916a",
-   "node": "n6",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "31f88b257d17",
-   "node": "n7",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "10d47fa79b4b",
-   "node": "n7",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "mc-32704707537",
-   "node": "n7",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "970a361a4618",
-   "node": "n7",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  },
-  {
-   "hash": "05cebb8909ae",
-   "node": "n8",
-   "ts": "2026-08-24T10:17:55Z",
-   "note": "new possibility entered probation pool"
-  }
- ],
- "retired": [],
- "params": {
-  "beta": 0.5,
-  "gamma": 0.3,
-  "eps": 0.05,
-  "theta1": 0.6,
-  "theta2": 0.5,
-  "theta3": 0.4,
-  "theta4": 0.2,
-  "theta5": 0.1,
-  "K_max": 8
- },
- "cascade": {},
- "cascade_log": [],
- "pareto": {
-  "ts": "2026-08-25T09:03:54Z",
-  "arm": "n1",
-  "pi": 0.332572,
-  "split": true,
-  "prices": {
-   "n1": 0.332572,
-   "n5": 0.305263,
-   "n7": 0.303039,
-   "n3": 0.289474,
-   "n2": 0.192105,
-   "n6": 0.160526
-  },
+  ],
+  "retired": [],
   "params": {
-   "beta": 0.5,
-   "gamma": 0.3,
-   "eps": 0.05
+    "beta": 0.5,
+    "gamma": 0.3,
+    "eps": 0.05,
+    "theta1": 0.6,
+    "theta2": 0.5,
+    "theta3": 0.4,
+    "theta4": 0.2,
+    "theta5": 0.1,
+    "K_max": 8
+  },
+  "cascade": {},
+  "cascade_log": [],
+  "pareto": {
+    "ts": "2026-08-25T12:53:14Z",
+    "arm": "n7",
+    "pi": 0.341795,
+    "split": true,
+    "prices": {
+      "n7": 0.341795,
+      "n5": 0.318182,
+      "n3": 0.304545,
+      "n2": 0.213636,
+      "n6": 0.186364
+    },
+    "params": {
+      "beta": 0.5,
+      "gamma": 0.3,
+      "eps": 0.05
+    }
   }
- }
 }
