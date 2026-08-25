@@ -146,7 +146,7 @@
       "id": "n7",
       "title": "帕累托/Whittle 调度引擎入 sweeper（PARETO-01 §2 + STRAT-02 §1 触发器 + §4 臂生命周期）",
       "state": "running",
-      "score": 0.6,
+      "score": 0.7,
       "issue": 18,
       "deps": [],
       "created": "2026-08-24T06:51:25Z",
@@ -216,8 +216,8 @@
     "n7"
   ],
   "last_session_anchor": {
-    "ts": "2026-08-25T01:42:35Z",
-    "chain_seq": 14
+    "ts": "2026-08-25T01:56:29Z",
+    "chain_seq": 16
   },
   "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
   "inference": "SPEC-DIAL-01 capsule bus",
@@ -310,17 +310,17 @@
   "cascade": {},
   "cascade_log": [],
   "pareto": {
-    "ts": "2026-08-25T01:42:35Z",
-    "arm": "n1",
-    "pi": 0.375641,
+    "ts": "2026-08-25T01:56:29Z",
+    "arm": "n7",
+    "pi": 0.34,
     "split": false,
     "prices": {
-      "n1": 0.375641,
-      "n7": 0.315385,
-      "n5": 0.261538,
-      "n3": 0.238462,
-      "n2": 0.119231,
-      "n6": 0.073077
+      "n7": 0.34,
+      "n5": 0.28,
+      "n1": 0.273625,
+      "n3": 0.26,
+      "n2": 0.15,
+      "n6": 0.11
     },
     "params": {
       "beta": 0.5,
