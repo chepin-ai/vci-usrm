@@ -1,0 +1,83 @@
+name: oblig-monitor
+
+# 联邦级义务聚合监控 · 降级执行件（degraded executor, 2026-08-25）：
+# 规范锚点仍为 ci-root（chepin-ai/ci-control: scripts/oblig_monitor.py +
+# .github/workflows/oblig-monitor.yml, cron 43 */4），但 ci-control 全仓
+# workflow disabled_manually 且 job 实例级秒败（infra 不可用），故执行面
+# 临时落本仓（公仓 Actions 正常）。聚合源三仓皆公仓，可读；视图双写
+# ci-control/federation/oblig_view.json（App token 跨仓，尽力而为）+
+# 本仓 ure/federation_oblig_view.json（匿名可核验镜像）。
+# 漂移哨兵：任一源 >8h 无新条目 -> stale:true + vci-inbox issue#1 告警（每日 <=1）。
+on:
+  schedule:
+    - cron: "53 */4 * * *"   # 错峰：ci-control 43 / ure-sweeper 23 / 本件 53
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [oblig-pulse]
+
+concurrency:
+  group: oblig-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install PyJWT cryptography
+
+      # 现场铸 App token（与 ure-sweeper 同构；URE_APP_* 主用，ATP_APP_* 兜底）。
+      # 铁律：密钥只经 secrets/env/Authorization 头，日志零密钥零标识。
+      - name: Mint GitHub App installation token
+        id: app
+        env:
+          URE_APP_ID: ${{ secrets.URE_APP_ID }}
+          URE_APP_KEY: ${{ secrets.URE_APP_KEY }}
+          URE_INSTALLATION_ID: ${{ secrets.URE_INSTALLATION_ID }}
+          ATP_APP_ID: ${{ secrets.ATP_APP_ID }}
+          ATP_APP_PEM: ${{ secrets.ATP_APP_PEM }}
+          ATP_INSTALLATION_ID: ${{ secrets.ATP_INSTALLATION_ID }}
+        run: |
+          python - <<'PY' > /tmp/tok.out
+          import json, os, time, urllib.request
+          import jwt
+          if os.environ.get("URE_APP_ID"):
+              app_id = os.environ["URE_APP_ID"]
+              pem = os.environ["URE_APP_KEY"]
+              inst = os.environ["URE_INSTALLATION_ID"]
+          else:
+              app_id = os.environ["ATP_APP_ID"]
+              pem = os.environ["ATP_APP_PEM"]
+              inst = os.environ["ATP_INSTALLATION_ID"]
+          now = int(time.time())
+          app_jwt = jwt.encode(
+              {"iat": now - 60, "exp": now + 540, "iss": app_id},
+              pem, algorithm="RS256")
+          req = urllib.request.Request(
+              f"https://api.github.com/app/installations/{inst}/access_tokens",
+              method="POST",
+              headers={"Authorization": f"Bearer {app_jwt}",
+                       "Accept": "application/vnd.github+json"})
+          print(json.load(urllib.request.urlopen(req))["token"])
+          PY
+          TOK=$(cat /tmp/tok.out)
+          echo "::add-mask::$TOK"
+          echo "token=$TOK" >> "$GITHUB_OUTPUT"
+          rm -f /tmp/tok.out
+
+      - name: Aggregate federation obligation view + drift sentinel
+        env:
+          CI_ROOT_TOKEN: ${{ steps.app.outputs.token }}
+        run: python3 scripts/oblig_monitor.py
