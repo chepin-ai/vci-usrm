@@ -117,7 +117,7 @@
    "id": "n5",
    "title": "张量网络工具链接入（tensor-net-01楔·冒烟S1-S3）",
    "state": "running",
-   "score": 0.78,
+   "score": 0.98,
    "issue": 16,
    "deps": [],
    "created": "2026-08-24T02:48:34Z",
@@ -133,6 +133,12 @@
      "src": "CI run 32686115035",
      "ts": "2026-08-24T03:23:21Z",
      "note": "S1 MPS norm=1(2.2e-16) + S2 neal=-2.6=exact 对拍 pass; dwave-neal 修正"
+    },
+    {
+     "hash": "ed5dad9f3ec1",
+     "src": "tnr-lab run 32847097198",
+     "ts": "2026-08-25T14:44:16Z",
+     "note": "S3残差落链: 双快照场ΔF(11节点,max0.53)→秩2 ε0.1633/MPS旁证0.444→n1/n7残差记录; WEDGE S1-S3齐"
     }
    ]
   },
