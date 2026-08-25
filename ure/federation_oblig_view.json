@@ -4,18 +4,18 @@
   "last_alert_date": "2026-08-25",
   "sources": {
    "vci-library": {
-    "age_h": 33.4,
+    "age_h": 37.7,
     "last_ts": "2026-08-23T23:58:01Z",
     "stale": true
    },
    "vci-playground": {
-    "age_h": 4.4,
-    "last_ts": "2026-08-25T05:00:23Z",
+    "age_h": 1.3,
+    "last_ts": "2026-08-25T12:21:31Z",
     "stale": false
    },
    "vci-usrm": {
-    "age_h": 0.3,
-    "last_ts": "2026-08-25T09:03:54Z",
+    "age_h": 0.4,
+    "last_ts": "2026-08-25T13:16:57Z",
     "stale": false
    }
   },
@@ -38,19 +38,34 @@
    "stale": true
   },
   "vci-playground": {
-   "closed_24h": 0,
+   "closed_24h": 1,
    "escalated": [],
-   "last_ts": "2026-08-25T05:00:23Z",
-   "open": [],
+   "last_ts": "2026-08-25T12:21:31Z",
+   "open": [
+    {
+     "age_h": 2.2,
+     "id": "atp@2026-08-25T11:23:17Z",
+     "state": "fail",
+     "ts": "2026-08-25T11:23:17Z"
+    },
+    {
+     "age_h": 2.2,
+     "id": "atp@2026-08-25T11:23:17Z",
+     "state": "fail",
+     "ts": "2026-08-25T11:23:17Z"
+    }
+   ],
    "stale": false
   },
   "vci-usrm": {
    "closed_24h": 0,
-   "escalated": [],
-   "last_ts": "2026-08-25T09:03:54Z",
+   "escalated": [
+    "o-root-rotate"
+   ],
+   "last_ts": "2026-08-25T13:16:57Z",
    "open": [
     {
-     "age_h": 22.9,
+     "age_h": 27.1,
      "domain": "human",
      "id": "o-root-rotate",
      "opened": "2026-08-24T10:30:00Z",
@@ -58,7 +73,7 @@
      "state": "raised"
     },
     {
-     "age_h": 9.7,
+     "age_h": 14.0,
      "domain": "machine",
      "id": "o-kit-F1",
      "opened": "2026-08-24T23:40:54Z",
@@ -70,5 +85,5 @@
   }
  },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
- "ts": "2026-08-25T09:21:33Z"
+ "ts": "2026-08-25T13:38:15Z"
 }
