@@ -81,3 +81,11 @@ jobs:
         env:
           CI_ROOT_TOKEN: ${{ steps.app.outputs.token }}
         run: python3 scripts/oblig_monitor.py
+
+      # NMUST-04 §3 四黄联邦执行件：R3 等价重放(链+叙事链) / R4 对称守恒 /
+      # R6 基演化(basis.jsonl 覆盖扫描, 不自动加基) / R7 deps DAG 环检测。
+      # 结果并入视图 relations 字段；有违例时 chain 追加 RPT.RELATIONS (v2)。
+      - name: Relations check (NMUST-04 §3 R3/R4/R6/R7)
+        env:
+          CI_ROOT_TOKEN: ${{ steps.app.outputs.token }}
+        run: python3 scripts/relations_check.py
