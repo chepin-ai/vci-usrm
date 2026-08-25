@@ -49,7 +49,7 @@
       "id": "n2",
       "title": "知识谱系基座同构映射：知识图谱⇔细胞复形⇔超超图⇔同构网络⇔范畴/HoTT⇔LEAN➱LaTeX",
       "state": "running",
-      "score": 0.58,
+      "score": 0.68,
       "issue": 12,
       "deps": [],
       "created": "2026-08-24T02:14:44Z",
@@ -259,8 +259,8 @@
     "n6"
   ],
   "last_session_anchor": {
-    "ts": "2026-08-25T18:56:17Z",
-    "chain_seq": 29
+    "ts": "2026-08-25T20:50:37Z",
+    "chain_seq": 33
   },
   "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
   "inference": "SPEC-DIAL-01 capsule bus",
@@ -383,14 +383,13 @@
   "cascade": {},
   "cascade_log": [],
   "pareto": {
-    "ts": "2026-08-25T18:56:17Z",
-    "arm": "n5",
-    "pi": 0.312143,
-    "split": true,
+    "ts": "2026-08-25T20:50:37Z",
+    "arm": "n2",
+    "pi": 0.30625,
+    "split": false,
     "prices": {
-      "n5": 0.312143,
-      "n2": 0.292857,
-      "n6": 0.221429
+      "n2": 0.30625,
+      "n6": 0.2375
     },
     "params": {
       "beta": 0.5,
