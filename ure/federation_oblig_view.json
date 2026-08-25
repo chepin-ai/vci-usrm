@@ -4,18 +4,18 @@
   "last_alert_date": "2026-08-25",
   "sources": {
    "vci-library": {
-    "age_h": 43.8,
+    "age_h": 45.3,
     "last_ts": "2026-08-23T23:58:01Z",
     "stale": true
    },
    "vci-playground": {
-    "age_h": 7.4,
+    "age_h": 8.9,
     "last_ts": "2026-08-25T12:21:31Z",
-    "stale": false
+    "stale": true
    },
    "vci-usrm": {
-    "age_h": 0.0,
-    "last_ts": "2026-08-25T19:46:59Z",
+    "age_h": 0.4,
+    "last_ts": "2026-08-25T20:50:37Z",
     "stale": false
    }
   },
@@ -43,29 +43,29 @@
    "last_ts": "2026-08-25T12:21:31Z",
    "open": [
     {
-     "age_h": 8.4,
+     "age_h": 9.8,
      "id": "atp@2026-08-25T11:23:17Z",
      "state": "fail",
      "ts": "2026-08-25T11:23:17Z"
     },
     {
-     "age_h": 8.4,
+     "age_h": 9.8,
      "id": "atp@2026-08-25T11:23:17Z",
      "state": "fail",
      "ts": "2026-08-25T11:23:17Z"
     }
    ],
-   "stale": false
+   "stale": true
   },
   "vci-usrm": {
    "closed_24h": 1,
    "escalated": [
     "o-root-rotate"
    ],
-   "last_ts": "2026-08-25T19:46:59Z",
+   "last_ts": "2026-08-25T20:50:37Z",
    "open": [
     {
-     "age_h": 33.3,
+     "age_h": 34.7,
      "domain": "human",
      "id": "o-root-rotate",
      "opened": "2026-08-24T10:30:00Z",
@@ -73,7 +73,7 @@
      "state": "raised"
     },
     {
-     "age_h": 20.1,
+     "age_h": 21.6,
      "domain": "machine",
      "id": "o-kit-F1",
      "opened": "2026-08-24T23:40:54Z",
@@ -84,90 +84,6 @@
    "stale": false
   }
  },
- "relations": {
-  "basis": {
-   "candidates": [],
-   "class_tally": {
-    "chain-intent": 1,
-    "kit-admonition": 1,
-    "root-action": 1
-   },
-   "counts_refreshed": false,
-   "covers": {
-    "b-001": {
-     "kit-admonition": 1
-    },
-    "b-002": {
-     "chain-intent": 1
-    },
-    "b-003": {
-     "root-action": 1
-    }
-   },
-   "primitives": 3
-  },
-  "basis_candidates": [],
-  "conservation": {
-   "derived": {
-    "legislated": 1,
-    "open": 2,
-    "wontfix": 0
-   },
-   "from_anomalies": [],
-   "ledger": {
-    "legislated": 1,
-    "open": 2,
-    "wontfix": 0
-   },
-   "mismatch": [],
-   "orphan_chain_oids": []
-  },
-  "conservation_ok": true,
-  "dag": {
-   "cycle": [],
-   "missing_deps": [],
-   "nodes": 12,
-   "topo_ok": true,
-   "topo_order": [
-    "U0-000",
-    "n1",
-    "n1a",
-    "n2",
-    "n3",
-    "n10",
-    "n4",
-    "n5",
-    "n6",
-    "n7",
-    "n8",
-    "n9"
-   ]
-  },
-  "dag_ok": true,
-  "replay": {
-   "chains": [
-    {
-     "chain": "./ure/chain.jsonl",
-     "entries": 31,
-     "first_break": null,
-     "rule": "v2 sha256(prev+canon)",
-     "verified": 31
-    },
-    {
-     "chain": "usrm-outbox",
-     "entries": 0,
-     "first_break": null,
-     "hmac_present": 0,
-     "status": "unavailable",
-     "verified": 0
-    }
-   ]
-  },
-  "replay_ok": true,
-  "spec": "NMUST-04 §3 four-yellow federation executables v1 (R3 replay / R4 conservation / R6 basis / R7 deps-DAG)",
-  "ts": "2026-08-25T19:47:27Z",
-  "violations": []
- },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
- "ts": "2026-08-25T19:47:24Z"
+ "ts": "2026-08-25T21:14:03Z"
 }
