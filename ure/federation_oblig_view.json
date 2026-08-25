@@ -4,17 +4,17 @@
   "last_alert_date": "2026-08-25",
   "sources": {
    "vci-library": {
-    "age_h": 27.4,
+    "age_h": 27.6,
     "last_ts": "2026-08-23T23:58:01Z",
     "stale": true
    },
    "vci-playground": {
-    "age_h": 19.3,
+    "age_h": 19.4,
     "last_ts": "2026-08-24T08:08:08Z",
     "stale": true
    },
    "vci-usrm": {
-    "age_h": 1.5,
+    "age_h": 1.6,
     "last_ts": "2026-08-25T01:56:29Z",
     "stale": false
    }
@@ -50,7 +50,7 @@
    "last_ts": "2026-08-25T01:56:29Z",
    "open": [
     {
-     "age_h": 16.9,
+     "age_h": 17.0,
      "domain": "human",
      "id": "o-root-rotate",
      "opened": "2026-08-24T10:30:00Z",
@@ -58,7 +58,7 @@
      "state": "raised"
     },
     {
-     "age_h": 3.7,
+     "age_h": 3.9,
      "domain": "machine",
      "id": "o-kit-F1",
      "opened": "2026-08-24T23:40:54Z",
@@ -70,5 +70,5 @@
   }
  },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
- "ts": "2026-08-25T03:24:35Z"
+ "ts": "2026-08-25T03:32:45Z"
 }
