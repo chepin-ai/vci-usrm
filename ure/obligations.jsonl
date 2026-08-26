@@ -13,3 +13,8 @@
 {"id": "o-pareto-qubo", "src": "cisvr邀② FIELD-01", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "Whittle指数面→Ising哈密顿量, neal对拍价格解; tn4l已半成; 排n6"}
 {"id": "o-qfos-watch-cirepo", "src": "echo自诊断", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "qfos-watch清单缺ci-root→补(74树含toolchain/design/reports); 直移发生时未捕获的教训"}
 {"id": "o-stress03", "src": "USRM-ECHO §3-Q1", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "STRESS-03联合压测: 双向互传/fold-expand保真/感应共振<60s/直移反向演化锚失配"}
+
+{"oid": "o-share-index", "domain": "machine", "state": "raised", "ts": "2026-08-26T11:39:45Z", "note": "共享包确认/索引/文档: KIT.USRM01+OTP大循环共享版存在性核验,建共享库索引(vci-library/kit/INDEX),格式化信息发讨论室"}
+{"oid": "o-genus-review", "domain": "machine", "state": "raised", "ts": "2026-08-26T11:39:45Z", "note": "亏格研究总综述+各线感应收集+讨论室发起(联合cisvr GENUS-REVIEW-01); SPEC-GENUS-01已典"}
+{"oid": "o-bizline-resp", "domain": "machine", "state": "raised", "ts": "2026-08-26T11:39:45Z", "note": "业务线响应不足根因+彻底解决: qgl诉求循环点评/成果实测并入/不积压(root图5训令)"}
+{"oid": "o-qfos-native", "domain": "machine", "state": "raised", "ts": "2026-08-26T11:39:45Z", "note": "QF-OS原生量子载体实例化(脱基工程存在性, SPEC-GENUS-01 §1)"}
