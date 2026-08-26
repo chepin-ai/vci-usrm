@@ -1,0 +1,176 @@
+{
+ "baseline": true,
+ "files": {
+  "chepin-ai/ci-control:bridge/ENCODER-01.md": {
+   "sha": "ddc6325ad29e90f0f5e1d30c35256fc8aeb87728",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/EPHEMERAL-KEY-RELAY-01.md": {
+   "sha": "626ab515e653bd2d2728d324c16e9f38b3d740a4",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/IC-CROSSWALL-01.md": {
+   "sha": "de94ad75e86d94d8506294339368b719e3c27d65",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/adjudications-pending/ADJ-BREAKGLASS.md": {
+   "sha": "258a2dd59e3d4b7d4d984364b1f4f7b4b09c64c8",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/adjudications-pending/ADJ-EXTREAD.md": {
+   "sha": "32b5134872753f218d257fd2c29d1954a6abbd98",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/adjudications-pending/ADJ-TRACK4-GITLAB.md": {
+   "sha": "98ddeb460f34781156179815284abb0794664eea",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/BUS-FACE-01.md": {
+   "sha": "6938de44103686f91ec35e2f7c4162bd2b63fcb1",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/CI-ROOT-LANE-01.md": {
+   "sha": "e2032933c6dab18afb5ddb73a65e3565df491192",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/CI-ROOT-LANE-02.md": {
+   "sha": "a65ee422cf0918b57ac86969348ba64b80a1e30e",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/CODEC-FACE-01.md": {
+   "sha": "9c5e1e5ba8faf7b7ec0b12cb36652c8dd287f8a7",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/GOV-UPGRADE-01.md": {
+   "sha": "f79c735dc7c36d1e9303931ed72c09693f3879e4",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/QRNG-CLOCK-01.md": {
+   "sha": "3aad5edd3e00243c42aea4c83a499fee3a426af7",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/QUANTUM-EMBED-01.md": {
+   "sha": "ff19dde7897ef5c6975d1b886ce647de569e1aa8",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/QUANTUM-EMERGE-01.md": {
+   "sha": "a19a76b9a965a9519cb898460b3c4198f99cf89a",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/design/UML-SYSTEM-01.md": {
+   "sha": "a6c269964b877d1a79f08d7c9a636daf3acdb6b7",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/RATIFICATION.json": {
+   "sha": "f7a9670960cdae2a8cd76c1bf5fdeabc3e9f5b5a",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/census-latest.json": {
+   "sha": "1b5516772db961515df0d47a894c43202545ccd6",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/decision-log.json": {
+   "sha": "16b9eb1808385dd315e9e69afb03823dbe238f23",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/directives-holo.json": {
+   "sha": "111df8d924b253c94832d9a355ca03ff433f42e6",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/exec24-log.json": {
+   "sha": "7eb89120b27628f5e7df252b89a40f983de3ea3b",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/governor-log.json": {
+   "sha": "9cc2b94a4c0e790ebc05ebddebac228fdb34f803",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/wall-manifest.json": {
+   "sha": "5e7737fb12c0b208e4a07a9efd905b0d2c74fab0",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/wall-probe-log.json": {
+   "sha": "41dafd24ad75ed533aaf8a871a51fe4c567ee574",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/ci-control:bridge/governor/wall-state.json": {
+   "sha": "c824dd634a6c0f272941757cbebbf1fdf4959dba",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/ci/qgo_cde.py": {
+   "sha": "878898a3996f579f7ffd3a533104618a4140c3fa",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/ci/qgo_eig.py": {
+   "sha": "f5c3968205e1970cab5a4975582daa98e7255d2b",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/ci/qgo_emerge.py": {
+   "sha": "461031e652127c29fdbd22390636efffa832da36",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/ci/qgo_kg.py": {
+   "sha": "b771b9d0201c6ad376caddc0f034ac745f7e97de",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/ci/qgo_verify.py": {
+   "sha": "3c6413bb100836e38188d82260c4e9061724b22d",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/docs/whitepaper_v3.md": {
+   "sha": "d6c2567b57a0514020920d91c7d1c4186734852d",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/qgo_engine.py": {
+   "sha": "420498d0728adb29afc88468e7447bf74fee2891",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/qgo_engine19.py": {
+   "sha": "afd3512af4776b45efc64dd22e5ecf4d5bb54999",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/vinf_qgo_conway.py": {
+   "sha": "5fe01c69b831652684670baa1b237b308ad3590d",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/qlv-lab:toolchain/distilled/qgo/vinf_qgo_spectral.py": {
+   "sha": "05282e6bc3f650dee161453cec5a18ad2d09b880",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-inbox:disc/QFOS-01-DOCS.md": {
+   "sha": "71ff3412e297a3472a5648dab5ef9f5b6518a906",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-inbox:disc/QFOS-01-cisvr-top5-answers.md": {
+   "sha": "24bfd512039f5d5594326512c1d950cb4f4d6b96",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-inbox:disc/QFOS-01-quantum-fold-os-pilot.md": {
+   "sha": "2d10b18ff4fe887630f3d61dd478797e80954bf5",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-inbox:disc/QFOS-RFC2-core-questions.md": {
+   "sha": "2e674e52f4e6e07a685b40a757713ed812ac6c84",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-root:.github/workflows/root-witness.yml": {
+   "sha": "6e086c8998fb74293b819bc7e2a10caaf1f91608",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-root:README.md": {
+   "sha": "e5f94d2798922fce43aaa9ae77059c48d6c11b42",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-root:bridge/beacon-mirror.json": {
+   "sha": "aa5bc2d340db8e254315db1e88579230f75771e9",
+   "ts": "2026-08-26T02:31:25Z"
+  },
+  "chepin-ai/vci-root:witness-latest.json": {
+   "sha": "8314611d522e60e2991fb54f8c98e9bfdb008eed",
+   "ts": "2026-08-26T02:31:25Z"
+  }
+ },
+ "recent_events": [],
+ "ts": "2026-08-26T02:31:25Z",
+ "version": 1
+}
