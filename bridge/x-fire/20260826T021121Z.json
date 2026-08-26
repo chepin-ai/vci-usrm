@@ -1,0 +1,9 @@
+{
+ "ts": "2026-08-26T02:11:21Z",
+ "op": "file-write",
+ "out": {
+  "written": "inbox/CISVR-COLLIDE-20260826.md",
+  "bytes": 759
+ },
+ "challenge": "6c1728176fc48356"
+}
