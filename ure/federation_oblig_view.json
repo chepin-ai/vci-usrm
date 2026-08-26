@@ -4,18 +4,18 @@
   "last_alert_date": "2026-08-26",
   "sources": {
    "vci-library": {
-    "age_h": 50.0,
+    "age_h": 50.3,
     "last_ts": "2026-08-23T23:58:01Z",
     "stale": true
    },
    "vci-playground": {
-    "age_h": 13.6,
+    "age_h": 13.9,
     "last_ts": "2026-08-25T12:21:31Z",
     "stale": true
    },
    "vci-usrm": {
-    "age_h": 5.1,
-    "last_ts": "2026-08-25T20:50:37Z",
+    "age_h": 0.0,
+    "last_ts": "2026-08-26T02:15:22Z",
     "stale": false
    }
   },
@@ -43,13 +43,13 @@
    "last_ts": "2026-08-25T12:21:31Z",
    "open": [
     {
-     "age_h": 14.5,
+     "age_h": 14.9,
      "id": "atp@2026-08-25T11:23:17Z",
      "state": "fail",
      "ts": "2026-08-25T11:23:17Z"
     },
     {
-     "age_h": 14.5,
+     "age_h": 14.9,
      "id": "atp@2026-08-25T11:23:17Z",
      "state": "fail",
      "ts": "2026-08-25T11:23:17Z"
@@ -63,10 +63,10 @@
     "o-kit-F1",
     "o-root-rotate"
    ],
-   "last_ts": "2026-08-25T20:50:37Z",
+   "last_ts": "2026-08-26T02:15:22Z",
    "open": [
     {
-     "age_h": 39.4,
+     "age_h": 39.8,
      "domain": "human",
      "id": "o-root-rotate",
      "opened": "2026-08-24T10:30:00Z",
@@ -74,101 +74,49 @@
      "state": "raised"
     },
     {
-     "age_h": 26.2,
+     "age_h": 26.6,
      "domain": "machine",
      "id": "o-kit-F1",
      "opened": "2026-08-24T23:40:54Z",
      "src": "kit/INDEX.md F1 admonition: otp-issue-trigger.yml 在**公仓**跑且 `git add -A inbox/ → push`——inbox/ 若含 RAW 会话物即违 CLASSIFY-01；",
+     "state": "raised"
+    },
+    {
+     "age_h": 0.0,
+     "domain": "machine",
+     "id": "o-xsign",
+     "opened": "2026-08-26T02:15:22Z",
+     "src": "UPGRADE-QFOS-01 U1",
+     "state": "raised"
+    },
+    {
+     "age_h": 0.0,
+     "domain": "machine",
+     "id": "o-beacon-ignition",
+     "opened": "2026-08-26T02:15:22Z",
+     "src": "UPGRADE-QFOS-01 U2",
+     "state": "raised"
+    },
+    {
+     "age_h": 0.0,
+     "domain": "machine",
+     "id": "o-breakglass",
+     "opened": "2026-08-26T02:15:22Z",
+     "src": "UPGRADE-QFOS-01 U3",
+     "state": "raised"
+    },
+    {
+     "age_h": 0.0,
+     "domain": "human",
+     "id": "o-cisvr-answers",
+     "opened": "2026-08-26T02:15:22Z",
+     "src": "QFOS-Q1 #2/4/5/13/18/19/20",
      "state": "raised"
     }
    ],
    "stale": false
   }
  },
- "relations": {
-  "basis": {
-   "candidates": [],
-   "class_tally": {
-    "chain-intent": 1,
-    "kit-admonition": 1,
-    "root-action": 1
-   },
-   "counts_refreshed": false,
-   "covers": {
-    "b-001": {
-     "kit-admonition": 1
-    },
-    "b-002": {
-     "chain-intent": 1
-    },
-    "b-003": {
-     "root-action": 1
-    }
-   },
-   "primitives": 3
-  },
-  "basis_candidates": [],
-  "conservation": {
-   "derived": {
-    "legislated": 1,
-    "open": 2,
-    "wontfix": 0
-   },
-   "from_anomalies": [],
-   "ledger": {
-    "legislated": 1,
-    "open": 2,
-    "wontfix": 0
-   },
-   "mismatch": [],
-   "orphan_chain_oids": []
-  },
-  "conservation_ok": true,
-  "dag": {
-   "cycle": [],
-   "missing_deps": [],
-   "nodes": 12,
-   "topo_ok": true,
-   "topo_order": [
-    "U0-000",
-    "n1",
-    "n1a",
-    "n2",
-    "n3",
-    "n10",
-    "n4",
-    "n5",
-    "n6",
-    "n7",
-    "n8",
-    "n9"
-   ]
-  },
-  "dag_ok": true,
-  "replay": {
-   "chains": [
-    {
-     "chain": "./ure/chain.jsonl",
-     "entries": 33,
-     "first_break": null,
-     "rule": "v2 sha256(prev+canon)",
-     "verified": 33
-    },
-    {
-     "chain": "usrm-outbox",
-     "entries": 0,
-     "first_break": null,
-     "hmac_present": 0,
-     "status": "unavailable",
-     "verified": 0
-    }
-   ]
-  },
-  "replay_ok": true,
-  "spec": "NMUST-04 §3 four-yellow federation executables v1 (R3 replay / R4 conservation / R6 basis / R7 deps-DAG)",
-  "ts": "2026-08-26T01:55:52Z",
-  "violations": []
- },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
- "ts": "2026-08-26T01:55:47Z"
+ "ts": "2026-08-26T02:15:46Z"
 }
