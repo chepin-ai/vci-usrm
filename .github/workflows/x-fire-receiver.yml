@@ -48,8 +48,8 @@ jobs:
           rq=urllib.request.Request(f'https://api.github.com/app/installations/{iid}/access_tokens',method='POST',headers=H); rq.data=b'{}'
           IT=json.load(urllib.request.urlopen(rq))['token']
           repo=os.environ.get('GITHUB_REPOSITORY','chepin-ai/vci-usrm').split('/')[-1]
-          path='bridge/x-fire/'+ts.replace(':','').replace('-','')+'.json'
-          u='https://api.github.com/repos/chepin-ai/'+repo+'/contents/'+path
+          path='x-fire-inbox/'+repo+'-'+ts.replace(':','').replace('-','')+'.json'
+          u='https://api.github.com/repos/chepin-ai/usrm-repo/contents/'+path
           bd={'message':'x-fire receipt '+repo+' '+ts,'content':base64.b64encode(json.dumps(rec,ensure_ascii=False,indent=1).encode()).decode()}
           rq=urllib.request.Request(u,headers={'Authorization':'token '+IT,'Accept':'application/vnd.github+json'})
           sha=None
