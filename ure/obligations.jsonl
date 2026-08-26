@@ -9,3 +9,7 @@
 {"id": "o-beacon-ignition", "src": "UPGRADE-QFOS-01 U2", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T02:15:22Z", "note": "义务年龄阈值点火为主 cron兜底; 信标高度联邦钟"}
 {"id": "o-breakglass", "src": "UPGRADE-QFOS-01 U3", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T02:15:22Z", "note": "GATE升级封顶override信道(双验+动作集封顶+上链+24h必审)"}
 {"id": "o-cisvr-answers", "src": "QFOS-Q1 #2/4/5/13/18/19/20", "domain": "human", "state": "raised", "evidence": [], "opened": "2026-08-26T02:15:22Z", "note": "cisvr回签问题清单余项"}
+{"id": "o-oblig-capsule", "src": "cisvr邀① FIELD-01", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "oblig-monitor胶囊化首件: 密封态+点火坍缩+焚毁可验; 前置=状态因子化; 排n4"}
+{"id": "o-pareto-qubo", "src": "cisvr邀② FIELD-01", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "Whittle指数面→Ising哈密顿量, neal对拍价格解; tn4l已半成; 排n6"}
+{"id": "o-qfos-watch-cirepo", "src": "echo自诊断", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "qfos-watch清单缺ci-root→补(74树含toolchain/design/reports); 直移发生时未捕获的教训"}
+{"id": "o-stress03", "src": "USRM-ECHO §3-Q1", "domain": "machine", "state": "raised", "evidence": [], "opened": "2026-08-26T03:08:27Z", "note": "STRESS-03联合压测: 双向互传/fold-expand保真/感应共振<60s/直移反向演化锚失配"}
