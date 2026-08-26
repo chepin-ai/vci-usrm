@@ -136,6 +136,64 @@
    "stale": false
   }
  },
+ "qfos": {
+  "changes_24h": 7,
+  "last_change_ts": "2026-08-26T09:27:07Z",
+  "last_round_events": 7,
+  "last_round_ts": "2026-08-26T09:27:07Z",
+  "latest": [
+   {
+    "kind": "modified",
+    "path": "bridge/governor/census-latest.json",
+    "repo": "chepin-ai/ci-control",
+    "ts": "2026-08-26T09:27:07Z"
+   },
+   {
+    "kind": "modified",
+    "path": "bridge/governor/decision-log.json",
+    "repo": "chepin-ai/ci-control",
+    "ts": "2026-08-26T09:27:07Z"
+   },
+   {
+    "kind": "modified",
+    "path": "bridge/governor/exec24-log.json",
+    "repo": "chepin-ai/ci-control",
+    "ts": "2026-08-26T09:27:07Z"
+   },
+   {
+    "kind": "modified",
+    "path": "bridge/governor/governor-log.json",
+    "repo": "chepin-ai/ci-control",
+    "ts": "2026-08-26T09:27:07Z"
+   },
+   {
+    "kind": "modified",
+    "path": "bridge/governor/wall-probe-log.json",
+    "repo": "chepin-ai/ci-control",
+    "ts": "2026-08-26T09:27:07Z"
+   },
+   {
+    "kind": "modified",
+    "path": "bridge/governor/wall-state.json",
+    "repo": "chepin-ai/ci-control",
+    "ts": "2026-08-26T09:27:07Z"
+   },
+   {
+    "kind": "modified",
+    "path": "witness-latest.json",
+    "repo": "chepin-ai/vci-root",
+    "ts": "2026-08-26T09:27:07Z"
+   }
+  ],
+  "spec": "QF-OS dynamic tracker v1 (qfos-watch): cisvr design surface drift -> residual alarm",
+  "watched_files": 42,
+  "watched_repos": [
+   "chepin-ai/ci-control",
+   "chepin-ai/qlv-lab",
+   "chepin-ai/vci-inbox",
+   "chepin-ai/vci-root"
+  ]
+ },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
  "ts": "2026-08-26T09:27:01Z"
 }
