@@ -1,0 +1,13 @@
+name: cmd-fp-check
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  fp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fp only
+        env:
+          CMD: ${{ secrets.CMD_AUTH }}
+        run: python3 -c "import os,hashlib;print('cmd_fp12=',hashlib.sha256(os.environ['CMD'].encode()).hexdigest()[:12])"
