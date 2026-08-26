@@ -4,18 +4,18 @@
   "last_alert_date": "2026-08-26",
   "sources": {
    "vci-library": {
-    "age_h": 50.6,
+    "age_h": 53.4,
     "last_ts": "2026-08-23T23:58:01Z",
     "stale": true
    },
    "vci-playground": {
-    "age_h": 14.2,
-    "last_ts": "2026-08-25T12:21:31Z",
-    "stale": true
+    "age_h": 0.3,
+    "last_ts": "2026-08-26T05:01:01Z",
+    "stale": false
    },
    "vci-usrm": {
     "age_h": 0.3,
-    "last_ts": "2026-08-26T02:15:22Z",
+    "last_ts": "2026-08-26T05:00:03Z",
     "stale": false
    }
   },
@@ -38,24 +38,11 @@
    "stale": true
   },
   "vci-playground": {
-   "closed_24h": 1,
+   "closed_24h": 3,
    "escalated": [],
-   "last_ts": "2026-08-25T12:21:31Z",
-   "open": [
-    {
-     "age_h": 15.2,
-     "id": "atp@2026-08-25T11:23:17Z",
-     "state": "fail",
-     "ts": "2026-08-25T11:23:17Z"
-    },
-    {
-     "age_h": 15.2,
-     "id": "atp@2026-08-25T11:23:17Z",
-     "state": "fail",
-     "ts": "2026-08-25T11:23:17Z"
-    }
-   ],
-   "stale": true
+   "last_ts": "2026-08-26T05:01:01Z",
+   "open": [],
+   "stale": false
   },
   "vci-usrm": {
    "closed_24h": 1,
@@ -63,10 +50,10 @@
     "o-kit-F1",
     "o-root-rotate"
    ],
-   "last_ts": "2026-08-26T02:15:22Z",
+   "last_ts": "2026-08-26T05:00:03Z",
    "open": [
     {
-     "age_h": 40.0,
+     "age_h": 42.8,
      "domain": "human",
      "id": "o-root-rotate",
      "opened": "2026-08-24T10:30:00Z",
@@ -74,7 +61,7 @@
      "state": "raised"
     },
     {
-     "age_h": 26.9,
+     "age_h": 29.7,
      "domain": "machine",
      "id": "o-kit-F1",
      "opened": "2026-08-24T23:40:54Z",
@@ -82,7 +69,7 @@
      "state": "raised"
     },
     {
-     "age_h": 0.3,
+     "age_h": 3.1,
      "domain": "machine",
      "id": "o-xsign",
      "opened": "2026-08-26T02:15:22Z",
@@ -90,7 +77,7 @@
      "state": "raised"
     },
     {
-     "age_h": 0.3,
+     "age_h": 3.1,
      "domain": "machine",
      "id": "o-beacon-ignition",
      "opened": "2026-08-26T02:15:22Z",
@@ -98,7 +85,7 @@
      "state": "raised"
     },
     {
-     "age_h": 0.3,
+     "age_h": 3.1,
      "domain": "machine",
      "id": "o-breakglass",
      "opened": "2026-08-26T02:15:22Z",
@@ -106,139 +93,49 @@
      "state": "raised"
     },
     {
-     "age_h": 0.3,
+     "age_h": 3.1,
      "domain": "human",
      "id": "o-cisvr-answers",
      "opened": "2026-08-26T02:15:22Z",
      "src": "QFOS-Q1 #2/4/5/13/18/19/20",
+     "state": "raised"
+    },
+    {
+     "age_h": 2.2,
+     "domain": "machine",
+     "id": "o-oblig-capsule",
+     "opened": "2026-08-26T03:08:27Z",
+     "src": "cisvr邀① FIELD-01",
+     "state": "raised"
+    },
+    {
+     "age_h": 2.2,
+     "domain": "machine",
+     "id": "o-pareto-qubo",
+     "opened": "2026-08-26T03:08:27Z",
+     "src": "cisvr邀② FIELD-01",
+     "state": "raised"
+    },
+    {
+     "age_h": 2.2,
+     "domain": "machine",
+     "id": "o-qfos-watch-cirepo",
+     "opened": "2026-08-26T03:08:27Z",
+     "src": "echo自诊断",
+     "state": "raised"
+    },
+    {
+     "age_h": 2.2,
+     "domain": "machine",
+     "id": "o-stress03",
+     "opened": "2026-08-26T03:08:27Z",
+     "src": "USRM-ECHO §3-Q1",
      "state": "raised"
     }
    ],
    "stale": false
   }
  },
- "qfos": {
-  "changes_24h": 0,
-  "last_change_ts": null,
-  "last_round_events": 0,
-  "last_round_ts": "2026-08-26T02:33:01Z",
-  "latest": [],
-  "spec": "QF-OS dynamic tracker v1 (qfos-watch): cisvr design surface drift -> residual alarm",
-  "watched_files": 42,
-  "watched_repos": [
-   "chepin-ai/ci-control",
-   "chepin-ai/qlv-lab",
-   "chepin-ai/vci-inbox",
-   "chepin-ai/vci-root"
-  ]
- },
- "relations": {
-  "basis": {
-   "candidates": [
-    {
-     "class": "unclassified",
-     "obligations": [
-      "o-beacon-ignition",
-      "o-breakglass",
-      "o-cisvr-answers",
-      "o-xsign"
-     ],
-     "suggestion": "基不完备候选: 无基元 covers 'unclassified'; 请经立法流程评估是否加基 (relations_check 不自动加基)"
-    }
-   ],
-   "class_tally": {
-    "chain-intent": 1,
-    "kit-admonition": 1,
-    "root-action": 1,
-    "unclassified": 4
-   },
-   "counts_refreshed": false,
-   "covers": {
-    "b-001": {
-     "kit-admonition": 1
-    },
-    "b-002": {
-     "chain-intent": 1
-    },
-    "b-003": {
-     "root-action": 1
-    }
-   },
-   "primitives": 3
-  },
-  "basis_candidates": [
-   {
-    "class": "unclassified",
-    "obligations": [
-     "o-beacon-ignition",
-     "o-breakglass",
-     "o-cisvr-answers",
-     "o-xsign"
-    ],
-    "suggestion": "基不完备候选: 无基元 covers 'unclassified'; 请经立法流程评估是否加基 (relations_check 不自动加基)"
-   }
-  ],
-  "conservation": {
-   "derived": {
-    "legislated": 1,
-    "open": 6,
-    "wontfix": 0
-   },
-   "from_anomalies": [],
-   "ledger": {
-    "legislated": 1,
-    "open": 6,
-    "wontfix": 0
-   },
-   "mismatch": [],
-   "orphan_chain_oids": []
-  },
-  "conservation_ok": true,
-  "dag": {
-   "cycle": [],
-   "missing_deps": [],
-   "nodes": 12,
-   "topo_ok": true,
-   "topo_order": [
-    "U0-000",
-    "n1",
-    "n1a",
-    "n2",
-    "n3",
-    "n10",
-    "n4",
-    "n5",
-    "n6",
-    "n7",
-    "n8",
-    "n9"
-   ]
-  },
-  "dag_ok": true,
-  "replay": {
-   "chains": [
-    {
-     "chain": "./ure/chain.jsonl",
-     "entries": 36,
-     "first_break": null,
-     "rule": "v2 sha256(prev+canon)",
-     "verified": 36
-    },
-    {
-     "chain": "usrm-outbox",
-     "entries": 0,
-     "first_break": null,
-     "hmac_present": 0,
-     "status": "unavailable",
-     "verified": 0
-    }
-   ]
-  },
-  "replay_ok": true,
-  "spec": "NMUST-04 §3 four-yellow federation executables v1 (R3 replay / R4 conservation / R6 basis / R7 deps-DAG)",
-  "ts": "2026-08-26T02:33:04Z",
-  "violations": []
- },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
- "ts": "2026-08-26T02:32:57Z"
+ "ts": "2026-08-26T05:20:09Z"
 }
