@@ -151,6 +151,121 @@
    "chepin-ai/vci-root"
   ]
  },
+ "relations": {
+  "basis": {
+   "candidates": [
+    {
+     "class": "unclassified",
+     "obligations": [
+      "o-beacon-ignition",
+      "o-breakglass",
+      "o-cisvr-answers",
+      "o-oblig-capsule",
+      "o-pareto-qubo",
+      "o-qfos-watch-cirepo",
+      "o-stress03",
+      "o-xsign"
+     ],
+     "suggestion": "基不完备候选: 无基元 covers 'unclassified'; 请经立法流程评估是否加基 (relations_check 不自动加基)"
+    }
+   ],
+   "class_tally": {
+    "chain-intent": 1,
+    "kit-admonition": 1,
+    "root-action": 1,
+    "unclassified": 8
+   },
+   "counts_refreshed": false,
+   "covers": {
+    "b-001": {
+     "kit-admonition": 1
+    },
+    "b-002": {
+     "chain-intent": 1
+    },
+    "b-003": {
+     "root-action": 1
+    }
+   },
+   "primitives": 3
+  },
+  "basis_candidates": [
+   {
+    "class": "unclassified",
+    "obligations": [
+     "o-beacon-ignition",
+     "o-breakglass",
+     "o-cisvr-answers",
+     "o-oblig-capsule",
+     "o-pareto-qubo",
+     "o-qfos-watch-cirepo",
+     "o-stress03",
+     "o-xsign"
+    ],
+    "suggestion": "基不完备候选: 无基元 covers 'unclassified'; 请经立法流程评估是否加基 (relations_check 不自动加基)"
+   }
+  ],
+  "conservation": {
+   "derived": {
+    "legislated": 1,
+    "open": 10,
+    "wontfix": 0
+   },
+   "from_anomalies": [],
+   "ledger": {
+    "legislated": 1,
+    "open": 10,
+    "wontfix": 0
+   },
+   "mismatch": [],
+   "orphan_chain_oids": []
+  },
+  "conservation_ok": true,
+  "dag": {
+   "cycle": [],
+   "missing_deps": [],
+   "nodes": 12,
+   "topo_ok": true,
+   "topo_order": [
+    "U0-000",
+    "n1",
+    "n1a",
+    "n2",
+    "n3",
+    "n10",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9"
+   ]
+  },
+  "dag_ok": true,
+  "replay": {
+   "chains": [
+    {
+     "chain": "./ure/chain.jsonl",
+     "entries": 38,
+     "first_break": null,
+     "rule": "v2 sha256(prev+canon)",
+     "verified": 38
+    },
+    {
+     "chain": "usrm-outbox",
+     "entries": 0,
+     "first_break": null,
+     "hmac_present": 0,
+     "status": "unavailable",
+     "verified": 0
+    }
+   ]
+  },
+  "replay_ok": true,
+  "spec": "NMUST-04 §3 four-yellow federation executables v1 (R3 replay / R4 conservation / R6 basis / R7 deps-DAG)",
+  "ts": "2026-08-26T05:20:18Z",
+  "violations": []
+ },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
  "ts": "2026-08-26T05:20:09Z"
 }
