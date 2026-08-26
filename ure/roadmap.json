@@ -48,8 +48,8 @@
     {
       "id": "n2",
       "title": "知识谱系基座同构映射：知识图谱⇔细胞复形⇔超超图⇔同构网络⇔范畴/HoTT⇔LEAN➱LaTeX",
-      "state": "running",
-      "score": 0.78,
+      "state": "done",
+      "score": 0.88,
       "issue": 12,
       "deps": [],
       "created": "2026-08-24T02:14:44Z",
@@ -66,7 +66,8 @@
           "ts": "2026-08-25T14:45:30Z",
           "note": "谱系基座链六层全有实例; TransE⇔边界算子接桥; ∂/Cl双算子现役互证"
         }
-      ]
+      ],
+      "returned": true
     },
     {
       "id": "n3",
@@ -255,12 +256,11 @@
     }
   ],
   "frontier": [
-    "n2",
     "n6"
   ],
   "last_session_anchor": {
-    "ts": "2026-08-26T02:02:22Z",
-    "chain_seq": 36
+    "ts": "2026-08-26T05:00:03Z",
+    "chain_seq": 38
   },
   "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
   "inference": "SPEC-DIAL-01 capsule bus",
@@ -383,13 +383,13 @@
   "cascade": {},
   "cascade_log": [],
   "pareto": {
-    "ts": "2026-08-26T02:02:22Z",
+    "ts": "2026-08-26T05:00:03Z",
     "arm": "n2",
-    "pi": 0.447143,
+    "pi": 0.455358,
     "split": false,
     "prices": {
-      "n2": 0.447143,
-      "n6": 0.247143
+      "n2": 0.455358,
+      "n6": 0.252703
     },
     "params": {
       "beta": 0.5,
