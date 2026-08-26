@@ -66,11 +66,11 @@
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/census-latest.json": {
-   "sha": "1b5516772db961515df0d47a894c43202545ccd6",
+   "sha": "2f9db1ab5506eb3b95b211f2df386fd6624b635a",
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/decision-log.json": {
-   "sha": "16b9eb1808385dd315e9e69afb03823dbe238f23",
+   "sha": "3dc54eac59c0a48cd7331385d5c92f57974ed3a2",
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/directives-holo.json": {
@@ -78,11 +78,11 @@
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/exec24-log.json": {
-   "sha": "7eb89120b27628f5e7df252b89a40f983de3ea3b",
+   "sha": "51568c009c92c54209a2ab71387973289ebe6068",
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/governor-log.json": {
-   "sha": "9cc2b94a4c0e790ebc05ebddebac228fdb34f803",
+   "sha": "0660471ef2c2cb2210c602b9c8b3f25db8fee078",
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/wall-manifest.json": {
@@ -90,11 +90,11 @@
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/wall-probe-log.json": {
-   "sha": "41dafd24ad75ed533aaf8a871a51fe4c567ee574",
+   "sha": "36fee5f95d91aa87d4faac42e500ae2665d470ad",
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/ci-control:bridge/governor/wall-state.json": {
-   "sha": "c824dd634a6c0f272941757cbebbf1fdf4959dba",
+   "sha": "5b15a2913984536aec2c4df62895feb25f46cc3a",
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/qlv-lab:toolchain/distilled/qgo/ci/qgo_cde.py": {
@@ -166,11 +166,75 @@
    "ts": "2026-08-26T02:31:25Z"
   },
   "chepin-ai/vci-root:witness-latest.json": {
-   "sha": "8314611d522e60e2991fb54f8c98e9bfdb008eed",
+   "sha": "a4161fec7f2d65136fbab703d320354e2255bab8",
    "ts": "2026-08-26T02:31:25Z"
   }
  },
- "recent_events": [],
- "ts": "2026-08-26T02:31:25Z",
+ "recent_events": [
+  {
+   "kind": "modified",
+   "new_sha": "2f9db1ab5506eb3b95b211f2df386fd6624b635a",
+   "old_sha": "1b5516772db961515df0d47a894c43202545ccd6",
+   "path": "bridge/governor/census-latest.json",
+   "repo": "chepin-ai/ci-control",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  },
+  {
+   "kind": "modified",
+   "new_sha": "3dc54eac59c0a48cd7331385d5c92f57974ed3a2",
+   "old_sha": "16b9eb1808385dd315e9e69afb03823dbe238f23",
+   "path": "bridge/governor/decision-log.json",
+   "repo": "chepin-ai/ci-control",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  },
+  {
+   "kind": "modified",
+   "new_sha": "51568c009c92c54209a2ab71387973289ebe6068",
+   "old_sha": "7eb89120b27628f5e7df252b89a40f983de3ea3b",
+   "path": "bridge/governor/exec24-log.json",
+   "repo": "chepin-ai/ci-control",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  },
+  {
+   "kind": "modified",
+   "new_sha": "0660471ef2c2cb2210c602b9c8b3f25db8fee078",
+   "old_sha": "9cc2b94a4c0e790ebc05ebddebac228fdb34f803",
+   "path": "bridge/governor/governor-log.json",
+   "repo": "chepin-ai/ci-control",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  },
+  {
+   "kind": "modified",
+   "new_sha": "36fee5f95d91aa87d4faac42e500ae2665d470ad",
+   "old_sha": "41dafd24ad75ed533aaf8a871a51fe4c567ee574",
+   "path": "bridge/governor/wall-probe-log.json",
+   "repo": "chepin-ai/ci-control",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  },
+  {
+   "kind": "modified",
+   "new_sha": "5b15a2913984536aec2c4df62895feb25f46cc3a",
+   "old_sha": "c824dd634a6c0f272941757cbebbf1fdf4959dba",
+   "path": "bridge/governor/wall-state.json",
+   "repo": "chepin-ai/ci-control",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  },
+  {
+   "kind": "modified",
+   "new_sha": "a4161fec7f2d65136fbab703d320354e2255bab8",
+   "old_sha": "8314611d522e60e2991fb54f8c98e9bfdb008eed",
+   "path": "witness-latest.json",
+   "repo": "chepin-ai/vci-root",
+   "ts": "2026-08-26T09:27:07Z",
+   "type": "qfos_change"
+  }
+ ],
+ "ts": "2026-08-26T09:27:07Z",
  "version": 1
 }
