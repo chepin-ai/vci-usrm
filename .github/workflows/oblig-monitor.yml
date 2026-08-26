@@ -82,6 +82,17 @@ jobs:
           CI_ROOT_TOKEN: ${{ steps.app.outputs.token }}
         run: python3 scripts/oblig_monitor.py
 
+      # QF-OS 动态追踪器（义务机 Gen 的新感官）：跨仓只读 API 监视 cisvr
+      # QF-OS 设计件（ci-control bridge/* / vci-inbox disc/QFOS* / vci-root
+      # 全树 / qlv-lab qgo+formal），新设计/实现出现即残差报警：状态
+      # ure/qfos_watch_state.json 逐路径 {sha,ts} 对比 -> 事件入视图 qfos
+      # 字段 + 链 RPT.QFOS（同 sha 集幂等）+ 重大新件自动登记
+      # o-qfos-review 机器义务（id+path 幂等）。首轮仅建基线报 clean。
+      - name: QF-OS watch (cisvr design surface drift -> residual alarm)
+        env:
+          CI_ROOT_TOKEN: ${{ steps.app.outputs.token }}
+        run: python3 scripts/qfos_watch.py
+
       # NMUST-04 §3 四黄联邦执行件：R3 等价重放(链+叙事链) / R4 对称守恒 /
       # R6 基演化(basis.jsonl 覆盖扫描, 不自动加基) / R7 deps DAG 环检测。
       # 结果并入视图 relations 字段；有违例时 chain 追加 RPT.RELATIONS (v2)。
