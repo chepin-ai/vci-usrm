@@ -155,7 +155,7 @@
       "id": "n6",
       "title": "四语链工具链接入（fourlang-01楔·边E1-E5逐条冒烟）",
       "state": "running",
-      "score": 0.32,
+      "score": 0.42,
       "issue": 17,
       "deps": [
         "n1"
@@ -259,8 +259,8 @@
     "n6"
   ],
   "last_session_anchor": {
-    "ts": "2026-08-26T05:00:03Z",
-    "chain_seq": 38
+    "ts": "2026-08-26T09:06:43Z",
+    "chain_seq": 40
   },
   "objective": "O（root 2026-08-24 颁）：不间断研究攻坚——知识计算+残差发现，为演化/重构/迁移至 QF-OS 做准备。推理供給走 SPEC-DIAL-01 胶囊路由，key 不过界。",
   "inference": "SPEC-DIAL-01 capsule bus",
@@ -383,13 +383,12 @@
   "cascade": {},
   "cascade_log": [],
   "pareto": {
-    "ts": "2026-08-26T05:00:03Z",
-    "arm": "n2",
-    "pi": 0.455358,
+    "ts": "2026-08-26T09:06:43Z",
+    "arm": "n6",
+    "pi": 0.257692,
     "split": false,
     "prices": {
-      "n2": 0.455358,
-      "n6": 0.252703
+      "n6": 0.257692
     },
     "params": {
       "beta": 0.5,
