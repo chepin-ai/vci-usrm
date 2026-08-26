@@ -85,6 +85,90 @@
    "stale": false
   }
  },
+ "relations": {
+  "basis": {
+   "candidates": [],
+   "class_tally": {
+    "chain-intent": 1,
+    "kit-admonition": 1,
+    "root-action": 1
+   },
+   "counts_refreshed": false,
+   "covers": {
+    "b-001": {
+     "kit-admonition": 1
+    },
+    "b-002": {
+     "chain-intent": 1
+    },
+    "b-003": {
+     "root-action": 1
+    }
+   },
+   "primitives": 3
+  },
+  "basis_candidates": [],
+  "conservation": {
+   "derived": {
+    "legislated": 1,
+    "open": 2,
+    "wontfix": 0
+   },
+   "from_anomalies": [],
+   "ledger": {
+    "legislated": 1,
+    "open": 2,
+    "wontfix": 0
+   },
+   "mismatch": [],
+   "orphan_chain_oids": []
+  },
+  "conservation_ok": true,
+  "dag": {
+   "cycle": [],
+   "missing_deps": [],
+   "nodes": 12,
+   "topo_ok": true,
+   "topo_order": [
+    "U0-000",
+    "n1",
+    "n1a",
+    "n2",
+    "n3",
+    "n10",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9"
+   ]
+  },
+  "dag_ok": true,
+  "replay": {
+   "chains": [
+    {
+     "chain": "./ure/chain.jsonl",
+     "entries": 33,
+     "first_break": null,
+     "rule": "v2 sha256(prev+canon)",
+     "verified": 33
+    },
+    {
+     "chain": "usrm-outbox",
+     "entries": 0,
+     "first_break": null,
+     "hmac_present": 0,
+     "status": "unavailable",
+     "verified": 0
+    }
+   ]
+  },
+  "replay_ok": true,
+  "spec": "NMUST-04 §3 four-yellow federation executables v1 (R3 replay / R4 conservation / R6 basis / R7 deps-DAG)",
+  "ts": "2026-08-26T01:55:52Z",
+  "violations": []
+ },
  "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
  "ts": "2026-08-26T01:55:47Z"
 }
