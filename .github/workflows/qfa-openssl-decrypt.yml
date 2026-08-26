@@ -20,11 +20,18 @@ jobs:
           raw=urllib.request.urlopen('https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/sealed_qfa-ack-20260826.cipher',timeout=20).read()
           open('/tmp/pkg.cipher','wb').write(raw)
           # openssl enc 解密(passphrase=CMD)
-          p=subprocess.run(['openssl','enc','-d','-aes-256-cbc','-pbkdf2','-base64','-in','/tmp/pkg.cipher','-pass','env:CMD'],capture_output=True)
-          if p.returncode!=0:
-              p=subprocess.run(['openssl','enc','-d','-aes-256-cbc','-base64','-in','/tmp/pkg.cipher','-pass','env:CMD'],capture_output=True)
-          pt=p.stdout
-          ok=p.returncode==0 and len(pt)>0
+          variants=[['-pbkdf2','-md','sha256'],['-pbkdf2','-md','sha512'],['-md','md5'],['-md','sha256'],['-md','sha512'],['-pbkdf2','-md','md5']]
+          pt=b'';ok=False;used=None
+          for v in variants:
+              p=subprocess.run(['openssl','enc','-d','-aes-256-cbc','-base64','-in','/tmp/pkg.cipher','-pass','env:CMD']+v,capture_output=True)
+              if p.returncode==0 and len(p.stdout)>0 and (p.stdout[:1] in b'{[<"' or p.stdout[:4]==b'qfa'):
+                  pt=p.stdout;ok=True;used=v;break
+              if p.returncode==0 and len(p.stdout)>len(pt) and ok==False and used is None:
+                  pt0=p.stdout
+                  try:
+                      json.loads(pt0.decode()); pt=pt0;ok=True;used=v;break
+                  except Exception: pass
+          print('variant used:',used)
           fp=hashlib.sha256(pt).hexdigest()[:16] if ok else None
           ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
           print(json.dumps({'decrypt_ok':ok,'bytes':len(pt),'fp':fp,'ts':ts}))
