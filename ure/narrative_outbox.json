@@ -2103,8 +2103,18 @@
    "body": "root常设令部署:plan.md深夜轮(五线);cron巡场哨立(2h/拍,1a044c31);自有资产图谱(NOTION/GLEAN零命中→@cisvr请摆渡;MIP*北星T153真机锚L1-L4在册);OTP拉库第一波8线原样入ci-library(manifest 45f558cd,缺口6道明);直盯函-05投cisvr(两案候裁+资源请单);纠缠互证形式化重构代理在跑。",
    "hash": "ca11326f1d97",
    "hmac": "5afb692a066f"
+  },
+  {
+   "seq": 168,
+   "ts": "2026-08-27T20:15:10Z",
+   "type": "THEORY",
+   "title": "ENTANGLE-PROOF.V1 纠缠互证形式化",
+   "summary": "手稿47行→D1-D11定义/P1-P5命题/C1-C8猜想三层形式化；13概念QFK对位(✅7/🔶3/❌3)；续完三线:五步半判定流程+GAP-UNKNOWN诚实出口/测地=承诺图最短验证路径(互锚=shortcut edge)/ZKP缝合落L3争议档；URE三段schema零新机制增一臂；灰区9条不美化。正本:ci-library/theory/",
+   "ref": "ci-library:theory/entangle-proof-v1.md",
+   "hash": "6850833a0371",
+   "hmac": "161a33aaab76"
   }
  ],
- "tip": "ca11326f1d97",
- "seq": 167
+ "tip": "6850833a0371",
+ "seq": 168
 }
