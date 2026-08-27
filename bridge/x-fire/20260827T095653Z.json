@@ -1,0 +1,10 @@
+{
+ "ts": "2026-08-27T09:56:53Z",
+ "payload": {
+  "beacon_seq": 47,
+  "challenge": "fdbb620484a1a8ac",
+  "kind": "consensus-ping",
+  "round": 2
+ },
+ "challenge": "9a05323d2e775498"
+}
