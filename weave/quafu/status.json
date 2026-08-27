@@ -1,18 +1,16 @@
 {
- "polls": 2,
+ "polls": 3,
  "jobs": {
   "8BBB089014802362": {
-   "status": "POLL_ERR",
-   "err": "HTTP Error 404: NOT FOUND",
+   "status": "TOKEN_MISSING",
    "chip": "ScQ-P5",
-   "updated": "2026-08-23T19:28:51Z"
+   "updated": "2026-08-27T09:24:27Z"
   },
   "8BB169201FA3F5D4": {
-   "status": "POLL_ERR",
-   "err": "HTTP Error 404: NOT FOUND",
+   "status": "TOKEN_MISSING",
    "chip": "ScQ-P5",
-   "updated": "2026-08-23T19:28:51Z"
+   "updated": "2026-08-27T09:24:27Z"
   }
  },
- "ts": "2026-08-23T19:28:51Z"
+ "ts": "2026-08-27T09:24:27Z"
 }
