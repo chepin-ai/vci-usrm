@@ -2,61 +2,34 @@ name: x-fire-receiver
 on:
   repository_dispatch:
     types: [x-fire]
+# rationale: x-fire 回执需 commit+push 回本仓 bridge/x-fire/(teleport 回执链,含FS挑战)
+permissions:
+  contents: write
 jobs:
   receive:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: "teleport-receive v2 标准op组 echo/file-write/beacon-read"
+      - name: teleport-receive (payload落回执链,含FS挑战)
         env:
           PAYLOAD: ${{ toJson(github.event.client_payload) }}
-          LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
-          LINE_ID: ${{ vars.CI_OPS_LINE_ID }}
         run: |
           python3 - <<'PYEOF'
-          import json,os,datetime,hashlib,base64,subprocess,urllib.request
+          import json,os,datetime,hashlib
           pl=json.loads(os.environ.get('PAYLOAD','{}') or '{}')
           ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-          op=pl.get('op','echo'); out=None
-          if op=='echo':
-              out={'echo':pl.get('data')}
-          elif op=='file-write':
-              p=pl.get('path',''); raw=pl.get('content_b64','')
-              if p and raw and '..' not in p and not p.startswith('/') and len(raw)<200000:
-                  os.makedirs(os.path.dirname(p) or '.',exist_ok=True)
-                  open(p,'wb').write(base64.b64decode(raw))
-                  out={'written':p,'bytes':len(raw)//4*3}
-              else: out={'error':'bad-path-or-size'}
-          elif op=='beacon-read':
-              try:
-                  out={'beacon':json.load(open('bridge/beacon-mirror.json'))['seq']}
-              except Exception as e: out={'beacon':'absent','err':str(e)[:40]}
-          else: out={'skipped':'unknown op'}
-          rec={'ts':ts,'op':op,'out':out,'challenge':hashlib.sha256((json.dumps(pl,sort_keys=True)+ts).encode()).hexdigest()[:16]}
+          rec={'ts':ts,'payload':pl,'challenge':hashlib.sha256((json.dumps(pl,sort_keys=True)+ts).encode()).hexdigest()[:16]}
           os.makedirs('bridge/x-fire',exist_ok=True)
           fn='bridge/x-fire/'+ts.replace(':','').replace('-','')+'.json'
           open(fn,'w').write(json.dumps(rec,ensure_ascii=False,indent=1))
-          if op=='file-write' and out and 'written' in (out or {}):
-              pass
-          print(json.dumps(rec,ensure_ascii=False)[:220])
-          import jwt,time
-          now=int(time.time())
-          tk=jwt.encode({'iat':now-90,'exp':now+540,'iss':os.environ['LINE_ID']},os.environ['LINE_KEY'],algorithm='RS256')
-          H={'Authorization':'Bearer '+tk,'Accept':'application/vnd.github+json'}
-          inst=json.load(urllib.request.urlopen(urllib.request.Request('https://api.github.com/app/installations',headers=H)))
-          iid=[i['id'] for i in inst if i['account']['login']=='chepin-ai'][0]
-          rq=urllib.request.Request(f'https://api.github.com/app/installations/{iid}/access_tokens',method='POST',headers=H); rq.data=b'{}'
-          IT=json.load(urllib.request.urlopen(rq))['token']
-          repo=os.environ.get('GITHUB_REPOSITORY','chepin-ai/vci-usrm').split('/')[-1]
-          path='x-fire-inbox/'+repo+'-'+ts.replace(':','').replace('-','')+'.json'
-          u='https://api.github.com/repos/chepin-ai/usrm-repo/contents/'+path
-          bd={'message':'x-fire receipt '+repo+' '+ts,'content':base64.b64encode(json.dumps(rec,ensure_ascii=False,indent=1).encode()).decode()}
-          rq=urllib.request.Request(u,headers={'Authorization':'token '+IT,'Accept':'application/vnd.github+json'})
-          sha=None
-          try:
-              x=urllib.request.urlopen(rq); sha=json.loads(x.read().decode()).get('sha')
-          except Exception: pass
-          if sha: bd['sha']=sha
-          rq=urllib.request.Request(u,method='PUT',headers={'Authorization':'token '+IT,'Accept':'application/vnd.github+json','Content-Type':'application/json'},data=json.dumps(bd).encode())
-          urllib.request.urlopen(rq)
+          print(json.dumps(rec,ensure_ascii=False)[:200])
+          import subprocess
+          subprocess.run(['git','config','user.name','xfire-receiver'],check=True)
+          subprocess.run(['git','config','user.email','xfire@ci-root.local'],check=True)
+          subprocess.run(['git','add',fn],check=True)
+          subprocess.run(['git','commit','-m','x-fire receipt '+ts,'-q'],check=False)
+          for i in range(3):
+              subprocess.run(['git','pull','--rebase','-q','origin','main'],check=False)
+              r=subprocess.run(['git','push','-q'],check=False)
+              if r.returncode==0: break
           PYEOF
