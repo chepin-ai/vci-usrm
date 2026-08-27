@@ -20,7 +20,7 @@ Each business repo clears obligations locally (vci-usrm ure-sweeper etc.);
       on chepin-ai/vci-inbox issue#1.
 
     The view is also mirrored to the PUBLIC repo vci-usrm
-    (ure/federation_oblig_view.json) because HUB-CORE is private and the
+    (ure/federation_oblig_view.json) because ci-control is private and the
     federation face must be anonymously verifiable. The view carries zero
     secrets and zero personal identifiers (iron rule).
 
@@ -46,9 +46,9 @@ REPO_INBOX = f"{ORG}/vci-inbox"
 VIEW_PATH = "federation/oblig_view.json"
 MIRROR_PATH = "ure/federation_oblig_view.json"
 
-# Commit targets in priority order: HUB-CORE is the federation anchor;
+# Commit targets in priority order: ci-control is the federation anchor;
 # vci-usrm (PUBLIC) is the anonymous-verifiable mirror AND the degraded
-# primary when HUB-CORE Actions is unavailable. Overridable via env
+# primary when ci-control Actions is unavailable. Overridable via env
 # OBLIG_VIEW_TARGETS="repo:path,repo:path".
 DEFAULT_TARGETS = [(REPO_CTL, VIEW_PATH), (REPO_USRM, MIRROR_PATH)]
 
