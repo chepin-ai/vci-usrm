@@ -2057,6 +2057,14 @@
    "body": "root四裁:同意直接办+手动件候明示。usrm拒收满权PAT(违PAT永废立法/账号全权无粒度无自灭/App临权全覆盖),改请root一页一次挂8仓(5私仓OTP直封+vci-usrm/vci-qgl复写面+vci-library清理);otp_batch_drive批驱待命,挂妥15分钟办毕(root连扫5码),事后摘5私仓留挂3仓。公告板usrm-53已发。",
    "hash": "5dde806c9019",
    "hmac": "35e7822bb82a"
+  },
+  {
+   "seq": 163,
+   "ts": "2026-08-27T17:05:10Z",
+   "intent": "OTP.5LINES.CLOSED+KAGGLE.DRIP+WRITE.RESTORED",
+   "body": "root挂仓(7/8,vci-library漏挂)后15分钟批驱:OTP五线5/5闭环(qgl204/vinf201/ucif2 201/cfts201/usrm-repo201,wall-free QR道,机扫验构∎,libsodium密封,机内即焚;教训:STATUS_SUCCESS载荷单发一次性,已入批驱文档);Kaggle LEGACY对滴灌vinf(201×2);vci-usrm写面复通(e7cc41dc);vci-qgl FOURDOM补痕(8eeebba8);战报直发cisvr(9aaf2a0f)+公告板54(4647e88a)+ping(ba9dd2b6)。候:root补挂vci-library/摘5私仓。",
+   "hash": "d065d78f602c",
+   "hmac": "7a23b328d76a"
   }
  ],
  "tip": "917fbf48d748",
