@@ -103,7 +103,7 @@ jobs:
           cleared=[v['finding'] for k,v in state['open'].items() if k not in newopen]
           state['open']=newopen
           json.dump(state,open('weave/duty/state.json','w'),ensure_ascii=False,indent=1)
-          rec={'ts':ts,'line':line,'checks':checks,'findings':findings,'cleared':cleared,
+          rec={'ts':ts,'line':{'usrm-repo':'USRM-VAULT'}.get(line,'〈LINE〉'),'checks':checks,'findings':findings,'cleared':cleared,
                'escalated':[v['finding'] for v in newopen.values() if v.get('escalate')]}
           json.dump(rec,open(f'weave/duty/duty-{ts}.json','w'),ensure_ascii=False,indent=1)
           # duty.log 哈希链
