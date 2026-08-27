@@ -8,7 +8,7 @@
 import asyncio, glob, json, os, sys, datetime, urllib.request
 
 import re as _re
-_raw = os.environ.get("OTP_PHONE", "").strip()
+_raw = os.environ.get("〈RED〉", "").strip()
 _digits = _re.sub(r"\D", "", _raw)
 if len(_digits) == 13 and _digits.startswith("86"): _digits = _digits[2:]
 PHONE = _digits
@@ -180,7 +180,7 @@ async def main():
     loop_mode = "--loop" in sys.argv
     if "--reuse" in sys.argv:
         await reuse_main(); return
-    if not PHONE: write_state("FAILED", "OTP_PHONE 未设置"); sys.exit(1)
+    if not PHONE: write_state("FAILED", "〈RED〉 未设置"); sys.exit(1)
     async with async_playwright() as pw:
         b = await pw.chromium.launch(headless=True, args=["--no-sandbox", "--disable-blink-features=AutomationControlled"])
         ctx = await b.new_context(user_agent=UA, viewport={"width":1440,"height":900}, locale="zh-CN")

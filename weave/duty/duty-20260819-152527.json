@@ -1,6 +1,6 @@
 {
  "ts": "20260819-152527",
- "line": "usrm-repo",
+ "line": "USRM-VAULT",
  "checks": {
   "outbox": "unregistered",
   "pulse": {

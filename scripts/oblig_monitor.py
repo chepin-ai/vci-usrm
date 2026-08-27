@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-r"""Federation obligation monitor — ci-root anchored aggregation + drift sentinel.
+r"""Federation obligation monitor — 〈RED〉 anchored aggregation + drift sentinel.
 
 SPEC-NMUST-02 §7: the obligation machine's own health is itself an obligation.
 Each business repo clears obligations locally (vci-usrm ure-sweeper etc.);
-ci-root (this repo, chepin-ai/ci-control) aggregates a federation-level view:
+〈RED〉 (this repo, chepin-ai/ci-control) aggregates a federation-level view:
 
     sources:
       - chepin-ai/vci-usrm     ure/obligations.jsonl (ledger)
@@ -20,7 +20,7 @@ ci-root (this repo, chepin-ai/ci-control) aggregates a federation-level view:
       on chepin-ai/vci-inbox issue#1.
 
     The view is also mirrored to the PUBLIC repo vci-usrm
-    (ure/federation_oblig_view.json) because ci-control is private and the
+    (ure/federation_oblig_view.json) because HUB-CORE is private and the
     federation face must be anonymously verifiable. The view carries zero
     secrets and zero personal identifiers (iron rule).
 
@@ -46,9 +46,9 @@ REPO_INBOX = f"{ORG}/vci-inbox"
 VIEW_PATH = "federation/oblig_view.json"
 MIRROR_PATH = "ure/federation_oblig_view.json"
 
-# Commit targets in priority order: ci-control is the federation anchor;
+# Commit targets in priority order: HUB-CORE is the federation anchor;
 # vci-usrm (PUBLIC) is the anonymous-verifiable mirror AND the degraded
-# primary when ci-control Actions is unavailable. Overridable via env
+# primary when HUB-CORE Actions is unavailable. Overridable via env
 # OBLIG_VIEW_TARGETS="repo:path,repo:path".
 DEFAULT_TARGETS = [(REPO_CTL, VIEW_PATH), (REPO_USRM, MIRROR_PATH)]
 
@@ -317,7 +317,7 @@ def build_view(now=None, prev_view=None, offline_sources=None):
         src["stale"] = st
     last_alert = (prev_view or {}).get("drift_sentinel", {}).get(
         "last_alert_date")
-    view = {"ts": iso(now), "anchor": "ci-root",
+    view = {"ts": iso(now), "anchor": "〈RED〉",
             "spec": "NMUST-02 §7 drift sentinel; federation obligation view v1",
             "per_repo": per_repo,
             "drift_sentinel": {"stale": any_stale,

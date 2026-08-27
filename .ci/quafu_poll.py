@@ -7,7 +7,7 @@ import os, json, time, urllib.request, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]   # .ci/quafu_poll.py → 仓根
 WATCH = ROOT / "weave" / "quafu" / "watchlist.json"   # 蹲守清单：{"jobs":[{"job_id":..,"chip":"ScQ-P5","note":..}]}
 STATE = ROOT / "weave" / "quafu" / "status.json"      # 状态落盘=对表面,会话端 RECON 时读此文件
-TOKEN = os.environ.get("QUAFU_TOKEN", "")              # repo secret,勿硬编码
+TOKEN = os.environ.get("〈RED〉", "")              # repo secret,勿硬编码
 API = "https://quafu.baqis.ac.cn"                      # Quafu 开放云
 
 def http(path, payload=None):
