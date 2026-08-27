@@ -2113,8 +2113,18 @@
    "ref": "ci-library:theory/entangle-proof-v1.md",
    "hash": "6850833a0371",
    "hmac": "161a33aaab76"
+  },
+  {
+   "seq": 169,
+   "ts": "2026-08-27T20:36:36Z",
+   "type": "OTP-HARVEST",
+   "title": "OTP全史拉库WAVE2+ROOT直批传达",
+   "summary": "root直批「我同意直办」：摘5续3+建仓四线已OTP传达cisvr直办(USRMS2CISVR-20260828-01)，时序已自清(5仓深拉先于摘除)。艰巨任务wave2闭环：12件各线对话原样入ci-library/archive/lines-full-20260828/——usrm三仓连贯08-15→08-27(200+R)/cisvr6R/ucif2 48R/vinf 90R/qgl 42R/cfts 15R/lgt 37R/gcml评论串100R；轮次+时间戳全标；QFK绑定链head=dbe692de1118(verify=T)+张量索引digest=8d0018cb0c6f。另函cisvr：报批流帕累托化对接(URE义务臂零新机制)、张量网完成度问询、NOTION/GLEAN预研移交。缺口6条在MANIFEST。",
+   "ref": "ci-library:archive/lines-full-20260828/MANIFEST.json",
+   "hash": "22d6ecf3ac5c",
+   "hmac": "ecbc861c6e1a"
   }
  ],
- "tip": "6850833a0371",
- "seq": 168
+ "tip": "22d6ecf3ac5c",
+ "seq": 169
 }
