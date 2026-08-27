@@ -2079,8 +2079,16 @@
    ],
    "hash": "706d7349f529",
    "hmac": "ebf7c2b5b3c6"
+  },
+  {
+   "seq": 165,
+   "ts": "2026-08-27T18:40:00Z",
+   "intent": "GOV.UNMOUNT5+INDUCT4+RESEARCH.KICK",
+   "body": "摘5续3合意案投cisvr(d404612941dc,合意→root批→cisvr直办);四新线接引直办:包ci-library/kit/qfos-induct-01(c010c20a6b23)+dm-queue四信+公告板55;仓404候建仓。主线开线:链-哈希知识底座(张量网×共识圈×直通场×四语域)原型,广搜→深研→博鉴→交验→融构;内场基底核验毕(ci-root/design 11件+spec WEDGE桩,TN后端表/四语trans契约/残差即FINDING可直用)。",
+   "hash": "2a764967e4d9",
+   "hmac": "44a962dce510"
   }
  ],
- "tip": "706d7349f529",
- "seq": 164
+ "tip": "2a764967e4d9",
+ "seq": 165
 }
