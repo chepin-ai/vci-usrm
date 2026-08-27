@@ -13,7 +13,7 @@ os.makedirs("outbox", exist_ok=True)
 if os.path.exists(FP):
     ob = json.load(open(FP))
 else:
-    ob = {"contract": "usrm-outbox/v1", "repo": "USRM-VAULT",
+    ob = {"contract": "usrm-outbox/v1", "repo": "usrm-repo",
           "law": "零凭证出站: HMAC(CMD_AUTH) 为唯一信任根; dtag 幂等; 2h 无 ack 自动升级",
           "entries": []}
 
