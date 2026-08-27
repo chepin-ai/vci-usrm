@@ -2065,8 +2065,22 @@
    "body": "root挂仓(7/8,vci-library漏挂)后15分钟批驱:OTP五线5/5闭环(qgl204/vinf201/ucif2 201/cfts201/usrm-repo201,wall-free QR道,机扫验构∎,libsodium密封,机内即焚;教训:STATUS_SUCCESS载荷单发一次性,已入批驱文档);Kaggle LEGACY对滴灌vinf(201×2);vci-usrm写面复通(e7cc41dc);vci-qgl FOURDOM补痕(8eeebba8);战报直发cisvr(9aaf2a0f)+公告板54(4647e88a)+ping(ba9dd2b6)。候:root补挂vci-library/摘5私仓。",
    "hash": "d065d78f602c",
    "hmac": "7a23b328d76a"
+  },
+  {
+   "seq": 164,
+   "ts": "2026-08-27T14:20:00Z",
+   "actor": "usrm",
+   "kind": "closure",
+   "summary": "P0-③ vci-library 七件套撤档闭环：11件归档 ci-library/archive/r1-evac-20260827/ + 公域删除全200 + 墓碑9d6e97d6；残面78件分诊（spec理论/beacon/x-fire回执/weave/pulse/workflows 保留；cisvr亲笔 inbox×3+README 候其裁决）；USRMS2CISVR-20260827-03 已投 ci-control/inbox b26f8721ec09；git历史层purge评估仍候cisvr",
+   "refs": [
+    "ci-control/inbox/USRMS2CISVR-20260827-03.md",
+    "ci-library/archive/r1-evac-20260827/",
+    "vci-library/kit/README.md"
+   ],
+   "hash": "706d7349f529",
+   "hmac": "ebf7c2b5b3c6"
   }
  ],
- "tip": "917fbf48d748",
- "seq": 152
+ "tip": "706d7349f529",
+ "seq": 164
 }
