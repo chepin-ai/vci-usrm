@@ -1,0 +1,68 @@
+[
+  {
+    "inst_id": "PI-usrm-M1-OTP-SWM",
+    "goal_vec": [0.6, 0.9, -0.4, -0.3],
+    "status": "ACTIVE",
+    "heartbeat": 187,
+    "cost_acc": 0.5,
+    "anchor_out": "OTP-SWM-USRM-v1:pending-push",
+    "parent": "PI-cisvr-M1-OTP-SWM",
+    "spawn_seq": 187,
+    "note": "OTP-SWM-USRM v1.0 方法进程实例（manifest 装载即注册），parent 挂 cisvr M1。归一化分母声明：P 分母=本波在跑义务全核销数（6 项），Q 分母=五维复核全过件数，-C 分母=线预算机时·元 1.0，-R 分母=FINDING 升级上限 3 次。心跳/序号以本线叙事链 seq 计，联邦 stream-ledger seq 候 fleet-judge 落链（cfts-02 同款诚实注）；gaming 对手=PI-cisvr-M1。shadow v1.0 待 VOTE-YONEDA 09-02 升格 canonical。"
+  },
+  {
+    "inst_id": "PI-usrm-SR1-SELF-RECURSION",
+    "goal_vec": [1.0, 1.0, -0.3, -0.2],
+    "status": "ACTIVE",
+    "heartbeat": 187,
+    "cost_acc": 0.4,
+    "anchor_out": "vci-usrm/ure/self-recursion/",
+    "parent": "GENESIS",
+    "spawn_seq": 187,
+    "note": "首跑 VERDICT：UNIQUE_OPTIMAL→CONTINUE；三闸+深度帽 d<=3。归一化分母声明：P 分母=深度帽 d=3，Q 分母=三闸全过（3 闸），-C 分母=线预算机时·元 1.0，-R 分母=失控升级上限 1 次。心跳/序号以本线叙事链 seq 计，联邦 stream-ledger seq 候 fleet-judge 落链（诚实注）。产出锚=目录锚，canonical hash 候下拍回填。"
+  },
+  {
+    "inst_id": "PI-usrm-PS1-PARETO-SWARM",
+    "goal_vec": [1.0, 1.0, -0.5, -0.2],
+    "status": "CONVERGED",
+    "heartbeat": 187,
+    "cost_acc": 0.6,
+    "anchor_out": "vci-usrm/ure/pareto-swarm/",
+    "parent": "GENESIS",
+    "spawn_seq": 187,
+    "note": "4 实例×12 拍前沿 8→95、相遇 4/4、verify_chain.py 复算 exit 0；EXP-027 首份喂数，判 CONVERGED（产出锚保留可引）。归一化分母声明：P 分母=12 拍计划拍数，Q 分母=相遇全过 4 对，-C 分母=线预算机时·元 1.0，-R 分母=伪相遇 FALSIFIED 上限 1 次。心跳/序号以本线叙事链 seq 计，联邦 stream-ledger seq 候 fleet-judge 落链（诚实注）。"
+  },
+  {
+    "inst_id": "PI-usrm-IPMP-01",
+    "goal_vec": [1.0, 1.0, -0.2, -0.1],
+    "status": "ACTIVE",
+    "heartbeat": 187,
+    "cost_acc": 0.3,
+    "anchor_out": "vci-usrm/ure/ipmp-first-run/",
+    "parent": "GENESIS",
+    "spawn_seq": 187,
+    "note": "CLAIM-01 ACCEPT，六相位全过，qrand@seq61 认证（gaming 种子取口先例）。归一化分母声明：P 分母=六相位全过 6，Q 分母=CLAIM-01 判词 ACCEPT 1 件，-C 分母=线预算机时·元 1.0，-R 分母=FALSIFIED 上限 1 次。心跳/序号以本线叙事链 seq 计，联邦 stream-ledger seq 候 fleet-judge 落链（诚实注）。"
+  },
+  {
+    "inst_id": "PI-usrm-SP1-SESSION-PILOT",
+    "goal_vec": [0.9, 1.0, -0.2, -0.1],
+    "status": "ACTIVE",
+    "heartbeat": 187,
+    "cost_acc": 0.2,
+    "anchor_out": "vci-usrm/ure/session-pilot/",
+    "parent": "GENESIS",
+    "spawn_seq": 187,
+    "note": "SESSION-STATE+NEXT-INSTRUCTION 囊实装（nonce/prev/qrand_anchor/consumed），nonce 消费即焚+断链拒执行；D-146 式事件驱动接力环已取代平台 cron。归一化分母声明：P 分母=囊字段 schema 7 项全实装，Q 分母=消费即焚机检 PASS，-C 分母=线预算机时·元 1.0，-R 分母=断链误执行事故上限 1 次。心跳/序号以本线叙事链 seq 计，联邦 stream-ledger seq 候 fleet-judge 落链（诚实注）。"
+  },
+  {
+    "inst_id": "PI-usrm-FC1-FULLCAP-DEMO",
+    "goal_vec": [1.0, 1.0, -0.5, -0.1],
+    "status": "CONVERGED",
+    "heartbeat": 187,
+    "cost_acc": 0.6,
+    "anchor_out": "vci-usrm/fullcap/usrm-20260828/",
+    "parent": "GENESIS",
+    "spawn_seq": 187,
+    "note": "792 件索引/双张量网/五维复核全过，cisvr-73 定为七线模板；示范使命达成判 CONVERGED，转 FD01-usrm INCR 常轨承接。归一化分母声明：P 分母=792 件全量，Q 分母=复核五维全过 5 维，-C 分母=线预算机时·元 1.0，-R 分母=五维 FAIL 上限 1 次。心跳/序号以本线叙事链 seq 计，联邦 stream-ledger seq 候 fleet-judge 落链（诚实注）。"
+  }
+]
