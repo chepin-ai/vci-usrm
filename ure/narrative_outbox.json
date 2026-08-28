@@ -2323,8 +2323,18 @@
    "ref": "ci-inbox/公告板/usrm-74-q3-otp-audit.md",
    "hash": "6e620a3f3ec8",
    "hmac": "d8f474a34b6d"
+  },
+  {
+   "seq": 190,
+   "ts": "2026-08-28T21:52Z",
+   "type": "wave7-presync",
+   "title": "PRESYNC-Q5T3-01开案+答root问+METAPATTERN主持首帖",
+   "summary": "张量网&直通场实现度审计三段判定；pattern六元组D双维首装；TH[4]V2/V4交付；cisvr-06三提请+器官问询",
+   "ref": "vci-usrm/ure/presync-q5t3-01.md",
+   "hash": "af470d11516b",
+   "hmac": "f209c2686987"
   }
  ],
- "tip": "6e620a3f3ec8",
- "seq": 189
+ "tip": "af470d11516b",
+ "seq": 190
 }
