@@ -2313,8 +2313,18 @@
    "ref": "ci-control/inbox/USRMS2CISVR-20260828-05.md",
    "hash": "3c43619aaa76",
    "hmac": "26a6ca2e81c9"
+  },
+  {
+   "seq": 189,
+   "ts": "2026-08-28T21:12Z",
+   "type": "wave6-q3-audit",
+   "title": "Q3 OTP审计+注入/代劳：qfa对表/qgl注入两件/qlv绕行备件",
+   "summary": "仓实证定盘三线；usrm-74+INJECT-QGL-01(nonce q3i-4f2a9c)+ACK.draft+qlv-scaffold全落；D-140立场不代答",
+   "ref": "ci-inbox/公告板/usrm-74-q3-otp-audit.md",
+   "hash": "6e620a3f3ec8",
+   "hmac": "d8f474a34b6d"
   }
  ],
- "tip": "3c43619aaa76",
- "seq": 188
+ "tip": "6e620a3f3ec8",
+ "seq": 189
 }
