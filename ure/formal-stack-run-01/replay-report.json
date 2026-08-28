@@ -1,0 +1,86 @@
+{
+ "run_id": "FORMAL-STACK-RUN-01-E1",
+ "tool": "replay-regression",
+ "target": "genealogy-run-01/（GENEALOGY-RUN-01-E1 全工件独立重放）",
+ "independence_decl": "本器重算逻辑独立编写，不 import/复用 genealogy-run-01/run.py 任何函数",
+ "checks_total": 12,
+ "checks_pass": 12,
+ "checks_fail": 0,
+ "regression": "REGRESSION-GREEN",
+ "fail_locations": [],
+ "checks": [
+  {
+   "id": "R1.1",
+   "desc": "transcript 六节哈希链自 GENESIS 逐节复算连续",
+   "result": "PASS",
+   "detail": "entries=6 bad_at=None"
+  },
+  {
+   "id": "R1.2",
+   "desc": "transcript tip 与登记值一致",
+   "result": "PASS",
+   "detail": "recomputed_tip=8fc607888bece60f expect=8fc607888bece60f"
+  },
+  {
+   "id": "R1.3",
+   "desc": "锚件：全程 anchor.qrand_seq==61 且 stale=true（停滞声明随锚）",
+   "result": "PASS",
+   "detail": "top_anchor={'qrand_seq': 61, 'stale': True, 'note': '锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚'}"
+  },
+  {
+   "id": "R2.1",
+   "desc": "verdict_hash 独立重算与存储值一致",
+   "result": "PASS",
+   "detail": "recomputed=ae6c6c1cff7c stored=ae6c6c1cff7c"
+  },
+  {
+   "id": "R2.2",
+   "desc": "verdict_hash 与登记值一致",
+   "result": "PASS",
+   "detail": "expect=ae6c6c1cff7c"
+  },
+  {
+   "id": "R2.3",
+   "desc": "obligations.closure.verdict_hash 与判词一致",
+   "result": "PASS",
+   "detail": "closure=ae6c6c1cff7c"
+  },
+  {
+   "id": "R2.4",
+   "desc": "三命题 verdict_ref 全与判词一致",
+   "result": "PASS",
+   "detail": "refs=['ae6c6c1cff7c', 'ae6c6c1cff7c', 'ae6c6c1cff7c']"
+  },
+  {
+   "id": "R2.5",
+   "desc": "transcript J 相位 extra.verdict_hash 与判词一致",
+   "result": "PASS",
+   "detail": "J_extra=ae6c6c1cff7c"
+  },
+  {
+   "id": "R3.1",
+   "desc": "三命题 obligations status 全 closed（I3 闭账）",
+   "result": "PASS",
+   "detail": "statuses=['closed', 'closed', 'closed']"
+  },
+  {
+   "id": "R3.2",
+   "desc": "certificates 三证书全 PASS 且与判词结果一致",
+   "result": "PASS",
+   "detail": "cert_results={'OBL-1': 'PASS', 'OBL-2': 'PASS', 'OBL-3': 'PASS'} verdict={'OBL-1': 'PASS', 'OBL-2': 'PASS', 'OBL-3': 'PASS'}"
+  },
+  {
+   "id": "R3.3",
+   "desc": "z3 双 UNSAT 记录在案且 holds=true",
+   "result": "PASS",
+   "detail": "z3=[('I1', 'unsat'), ('I2', 'unsat')] backend=z3 5.1.0"
+  },
+  {
+   "id": "R4.1",
+   "desc": "挑战种子=int(sha256(qrand‖str(61))[:8]hex,16) 与证书/转录一致",
+   "result": "PASS",
+   "detail": "recomputed=3712427753 cert=3712427753 A_extra=3712427753"
+  }
+ ],
+ "determinism": "本报告无 ts 字段，全量可复算"
+}
