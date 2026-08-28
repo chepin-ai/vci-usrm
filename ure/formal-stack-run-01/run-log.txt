@@ -1,0 +1,18 @@
+=== FORMAL-STACK-RUN-01-E1 自指规约实测 run-log ===
+ts_start=2026-08-28T21:58:22.342452Z
+anchor=last-good qrand@seq61（锚停滞在案，降级声明随锚）
+--- 器一 manifest-builder ---
+[manifest] tools=13 GREEN=2 GRAY=11 manifest_hash=285164e8ff917ca5 谱系=v0.1(prev=null) gap_ledger=11 条
+exit=0
+--- 器二 replay-regression ---
+[replay] REGRESSION-GREEN  checks=12/12 PASS
+exit=0
+--- 器三 cex-hunt ---
+[cex-hunt] ARM-FLAWED=sat(expect sat)  ARM-SOUND=unsat(expect unsat)  closed_loop=HOLDS
+[cex-hunt] 反例猎获：prop1 path=[0, 0, 2, 3] commit_ts=2>=challenge_ts=2 → 负样本 NEG-I2-INVERSION-01
+exit=0
+--- 器四 self-contract-check ---
+[contract] CONTRACT-PASS  写入点=13 字段=71 checks=84/84 PASS  diff=0
+exit=0
+ts_end=2026-08-28T21:58:22.555050Z
+=== 全器通过：replay REGRESSION-GREEN / cex closed_loop HOLDS / contract diff=0 ===
