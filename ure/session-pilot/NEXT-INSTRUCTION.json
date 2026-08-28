@@ -1,0 +1,24 @@
+{
+ "nonce": "c0a4538ef7c3",
+ "ts": "2026-08-28T19:28:14Z",
+ "prev": "54a0b542a1fd",
+ "priority": "P4",
+ "instruction": "P4 默认主线：ipmp 首真件试跑——三机互证一圈实测（TH-04 next；命题自带公开可复算验证方法，挑战种子取定格信标 qrand@seq 第一顺位，判词固定串+熵档免责声明，律见 IPL-11）；并进：①o-kit-F1 台账勘误登账（state=raised 滞后于 legislated 证据链）②o-cisvr-answers 追复哨预置（静默达 72h@2026-08-29T02:15:22Z 即复函）③机器域三义务 o-xsign/o-beacon-ignition/o-breakglass 逾期临近，备好开工面④o-root-rotate 人域阶梯续挂（human 域不阻塞机器域，SPEC-NMUST-01 §1）。",
+ "basis_refs": [
+  "threads_10#TH-04(next)",
+  "ip-ledger#IPL-11",
+  "obligations#o-kit-F1",
+  "obligations#o-cisvr-answers",
+  "SESSION-HANDOFF-01§1-2 优先序",
+  "PARETO-DYN-01§3 齐同并进（零帕累托冲突全线同步，IPL-12）",
+  "SELF-RECURSION-01 DESIGN.md",
+  "D-146/SESSION-HANDOFF-01",
+  "TH-LEX-01[1] 帕累托递归最优-均衡即终止",
+  "usrm-state@seq184"
+ ],
+ "qrand_anchor": "c21b1f0f5858ab4a",
+ "consumed": false,
+ "depth_next": 2,
+ "one_shot_law": "nonce 唯一；消费即焚（consumed=true+消费者+执行实证指针回链）",
+ "hash": "e7f980b2ca2ae6439e3fb0c6c9f0bd400d65581338f6057d61192be76279e693"
+}
