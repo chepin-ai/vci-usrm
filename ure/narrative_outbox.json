@@ -2193,8 +2193,18 @@
    "ref": "ci-inbox:讨论室/threads/TH-ENTANGLE-01.md",
    "hash": "f060240c38fe",
    "hmac": "4a6248ae7ec7"
+  },
+  {
+   "seq": 177,
+   "ts": "2026-08-28T16:10:10Z",
+   "type": "IMPL",
+   "title": "QFK v0.2八模块34测绿+ATP-lab P5骨架",
+   "summary": "全量推进首批实装双闭环：①QFK v0.2=ipmp第八模块(六相位状态机/7dataclass/迁移表无静默降级/judge_verdict纯函数/collusion_probe默认检测/熵档免责声明固定串)+四处小改(findings+mutual-proof域/beacon entropy_grade/circle sign_verdict/init v0.2.0)+tensor factor_forecast(EWMA·AR1工程灰件标)；pytest 34/34绿+模块runner 23 OK，主控独立复验同绿；判词MIP无星结构同构不升格照录；串谋负例T-06探针命中→REJECT+人工闸。②ATP-lab P5双骨架(Lean4+SMT-LIB)，sorry=6诚实律(#print axioms钩)，强度锁none，未证明未证伪P5。打包qfk-v0.2.tar.gz。",
+   "ref": "output/qfk-v0.2.tar.gz",
+   "hash": "a887101f316a",
+   "hmac": "bee411fb58ea"
   }
  ],
- "tip": "f060240c38fe",
- "seq": 176
+ "tip": "a887101f316a",
+ "seq": 177
 }
