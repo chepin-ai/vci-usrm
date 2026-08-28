@@ -1,39 +1,44 @@
 {
  "v": 1,
- "ts": "2026-08-28T01:39:02Z",
+ "ts": "2026-08-28T01:57:26Z",
  "threads": [
   {
    "id": "TH-01",
    "name": "TensorCast 模式",
-   "state": "附件数字未证实标灰在案",
-   "next": "模式提炼+可复算性复验（研究机 A1）",
+   "state": "A1复验毕：重大定性纠正——真TensorCast=LLM基建张量生命周期层(arXiv:2608.06007)，「分解预测」定性证伪已更；228.6×/93.2%第一方声称续灰；4项直复用+factor_forecast()最小新增",
+   "next": "按未闭合项排期",
    "artifacts": [
-    "research/qf-know_attach_review.md"
+    "research/qf-know_attach_review.md",
+    "research/ipc-tensorcast-01.md"
    ]
   },
   {
    "id": "TH-02",
    "name": "KG 类型学",
-   "state": "附件 HoTT/立方/UML/Petri 长串已评",
-   "next": "类型分类学×四语域函子绑定（A2）",
+   "state": "A2毕：四语域分层+KG四构件单源真相矩阵+6边SHACL转换表(4边接口承诺)；未闭合6",
+   "next": "按未闭合项排期",
    "artifacts": [
-    "research/qf-know_attach_review.md"
+    "research/qf-know_attach_review.md",
+    "research/ipc-kg-typology-01.md"
    ]
   },
   {
    "id": "TH-03",
    "name": "超空间流+QFK",
-   "state": "概念线索",
-   "next": "超空间流×field/beacon/tensor 形式化（A3）",
-   "artifacts": []
+   "state": "A3毕：D-HSF v0.1——无守恒量驳回；最强诚实宣称=可验证离散耗散动力系统(P1/P2/P3可检验)；总判定未闭合",
+   "next": "并入主线合订",
+   "artifacts": [
+    "research/ipc-hyperspace-01.md"
+   ]
   },
   {
    "id": "TH-04",
    "name": "MIP* 北星",
-   "state": "T153 梯 L1/L2✅ L3🔶 立法在案",
-   "next": "三机绑定协议化（A4）；正本已抢救入 vci-usrm/ure/",
+   "state": "A4毕：三机角色映射+六消息协议+4禁4合法+挂接表；判词=MIP(无星)结构同构不升格；A档6/B档3升级清单；新灰区#10 NP双帽",
+   "next": "并入主线合订",
    "artifacts": [
-    "vci-usrm/ure/T153_mip_re_northstar.canonical.md"
+    "vci-usrm/ure/T153_mip_re_northstar.canonical.md",
+    "research/ipc-three-machine-01.md"
    ]
   },
   {
