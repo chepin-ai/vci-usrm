@@ -1,0 +1,141 @@
+{
+  "bases": [
+    {
+      "anchor_evidence": "derived",
+      "anchor_note": "占位=sha256(\"T58\")[:12] 现算（derived）；正本 T58 knowledge_ledger.py 在 usrm-repo，本机无仓，未读真链头",
+      "base_id": "usrm-k-ledger",
+      "chain_anchor": "5e4bf6eb50fe",
+      "collab_iface": [
+        "P1"
+      ],
+      "kind": "hash-chain-ledger",
+      "self_ops": [
+        "VERIFY",
+        "RESIDUAL",
+        "CLOSURE"
+      ],
+      "status": "active"
+    },
+    {
+      "anchor_evidence": "recorded",
+      "anchor_note": "在案 tip：survey §3.1 narrative_outbox.json(ure/) seq192 tip=78f5464a04a0",
+      "base_id": "usrm-narrative",
+      "chain_anchor": "78f5464a04a0",
+      "collab_iface": [
+        "P1",
+        "P3"
+      ],
+      "kind": "narrative-chain",
+      "self_ops": [
+        "VERIFY",
+        "RESIDUAL",
+        "CLOSURE"
+      ],
+      "status": "active"
+    },
+    {
+      "anchor_evidence": "derived",
+      "anchor_note": "sha256(\"quantum-go-knowledge-genealogy\")[:12] 现算；五子基座名列表照录 survey §3.2 genealogy/v1.json",
+      "base_id": "qgl-genealogy",
+      "chain_anchor": "2f2a631c60ee",
+      "collab_iface": [
+        "P2",
+        "P3"
+      ],
+      "kind": "multi-base-group",
+      "self_ops": [
+        "VERIFY",
+        "CLOSURE"
+      ],
+      "status": "active",
+      "sub_bases": [
+        "knowledge_graph",
+        "cell_complex",
+        "hyperhypergraph",
+        "iso_network",
+        "lean"
+      ]
+    },
+    {
+      "anchor_evidence": "derived",
+      "anchor_note": "占位=sha256(\"ucif2-kg-lean\")[:12]（derived）；正本 KnowledgeGraph/*.lean 七件在 ucif2 仓，本机无仓",
+      "base_id": "ucif2-kg-lean",
+      "chain_anchor": "4ebef31bdde4",
+      "collab_iface": [
+        "P3"
+      ],
+      "kind": "lean-formalized-kg",
+      "self_ops": [
+        "VERIFY",
+        "CLOSURE"
+      ],
+      "status": "active"
+    },
+    {
+      "anchor_evidence": "derived",
+      "anchor_note": "占位=sha256(\"vinf-formal-tex\")[:12]（derived）；正本 形式化谱系.tex 在 vinf 仓，本机无仓",
+      "base_id": "vinf-formal-tex",
+      "chain_anchor": "7f4cd4072c26",
+      "collab_iface": [
+        "P2"
+      ],
+      "kind": "latex-genealogy",
+      "self_ops": [
+        "CLOSURE"
+      ],
+      "status": "active"
+    },
+    {
+      "anchor_evidence": "derived",
+      "anchor_note": "占位=sha256(\"cfts-alms-daemon\")[:12]（derived）；正本 alms/auto_knowledge_acquisition.py + tools/auto_search_daemon.py 在 cfts 仓，本机无仓",
+      "base_id": "cfts-alms-daemon",
+      "chain_anchor": "eecc239cfe76",
+      "collab_iface": [
+        "P1",
+        "P2"
+      ],
+      "kind": "auto-acquisition+search-daemon",
+      "self_ops": [
+        "RESIDUAL",
+        "FORECAST"
+      ],
+      "status": "active"
+    },
+    {
+      "anchor_evidence": "derived",
+      "anchor_note": "占位=sha256(\"qlv-temperament\")[:12]（derived）；qlv 档已 evac 至 ci-inbox/mailbox-vault/test-evac-20260821/qlv-lab/（survey §1）",
+      "base_id": "qlv-temperament",
+      "chain_anchor": "a60f2de3fbb7",
+      "collab_iface": [],
+      "kind": "quantum-encoding-genealogy",
+      "self_ops": [
+        "CLOSURE"
+      ],
+      "status": "EVAC-候复活"
+    },
+    {
+      "anchor_evidence": "computed",
+      "anchor_note": "qfk.chain 实际建 3 entry 取链头（真算）, head=690e4739b6732da9…, verify()=True",
+      "base_id": "qfk-chain-self",
+      "chain_anchor": "690e4739b673",
+      "collab_iface": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "kind": "qfk-native",
+      "self_ops": [
+        "VERIFY",
+        "RESIDUAL",
+        "CLOSURE",
+        "FORECAST"
+      ],
+      "status": "active"
+    }
+  ],
+  "doc": "BASE-REG",
+  "reg_hash": "cd7a4ec446e6",
+  "reg_hash_rule": "sha256(canon(bases))[:12]，canon=json sort_keys/utf-8/紧凑分隔（qfk.chain.canon 同式）",
+  "run": "QKSA-RUN-01",
+  "test": "base-reg-builder"
+}
