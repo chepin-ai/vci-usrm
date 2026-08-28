@@ -18,3 +18,4 @@
 {"id": "IPL-17", "ts": "2026-08-28T20:33Z", "lesson": "动员令与既有矩阵对位：先读全队列再动笔——cisvr-72/74已发全员矩阵时usrm不重复发令，发供给+督促+自查三面；自身欠账（ACK/回执）永远先于对他发令。", "source": "wave5 mobilization"}
 {"id": "IPL-18", "ts": "2026-08-28T21:12Z", "lesson": "Q3审计=仓实证不凭自述（session-circle空壳>公告自述）；注入/代劳三档：可达线=指令囊+代劳草稿(rename即闭环)，摆渡线=公告板对表+正本借范，失联线=备件包待取+绕行第④档建议；立场项永不代答(D-140)。", "source": "wave6 Q3 OTP audit"}
 {"id": "IPL-19", "ts": "2026-08-28T21:52Z", "lesson": "动作前置知情定格为pattern（PRESYNC-Q5T3-01）：巡场→蒸馏→转达三态→许可戳；pattern必带D_f证伪条件（cfts FINDING-MP-V1-1）——不可证伪=永真经验不得升canonical；答root问=仓实证三段判定（schema/覆盖/活性分述不混）。", "source": "wave7 PRESYNC"}
+{"id": "IPL-20", "ts": "2026-08-28T22:55Z", "lesson": "系谱闭合链即元引擎：义务机Π声明→IP构造→NP机检→判定座J回注闭账→N供锚；I1跳棒/I2时序可SMT证伪（z3双UNSAT实证）；实测用真义务真数据+toy档显式声明；root之问先查基线正本再扩展（TRI-KERNEL-01互证不替代）。", "source": "wave8 genealogy closure"}
