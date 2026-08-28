@@ -1,0 +1,90 @@
+{
+ "v": 1,
+ "ts": "2026-08-28T01:39:02Z",
+ "threads": [
+  {
+   "id": "TH-01",
+   "name": "TensorCast 模式",
+   "state": "附件数字未证实标灰在案",
+   "next": "模式提炼+可复算性复验（研究机 A1）",
+   "artifacts": [
+    "research/qf-know_attach_review.md"
+   ]
+  },
+  {
+   "id": "TH-02",
+   "name": "KG 类型学",
+   "state": "附件 HoTT/立方/UML/Petri 长串已评",
+   "next": "类型分类学×四语域函子绑定（A2）",
+   "artifacts": [
+    "research/qf-know_attach_review.md"
+   ]
+  },
+  {
+   "id": "TH-03",
+   "name": "超空间流+QFK",
+   "state": "概念线索",
+   "next": "超空间流×field/beacon/tensor 形式化（A3）",
+   "artifacts": []
+  },
+  {
+   "id": "TH-04",
+   "name": "MIP* 北星",
+   "state": "T153 梯 L1/L2✅ L3🔶 立法在案",
+   "next": "三机绑定协议化（A4）；正本已抢救入 vci-usrm/ure/",
+   "artifacts": [
+    "vci-usrm/ure/T153_mip_re_northstar.canonical.md"
+   ]
+  },
+  {
+   "id": "TH-05",
+   "name": "URE",
+   "state": "引擎vendored+三段schema备+ip-ledger+4",
+   "next": "义务臂 domain=approval/mutual-proof 实装排期；与 cisvr EXPECT-REG 对接",
+   "artifacts": [
+    "research/URE-00-skeleton.md"
+   ]
+  },
+  {
+   "id": "TH-06",
+   "name": "OTP 套件",
+   "state": "wave1/2 闭环+FULLCAP-01 动员发出",
+   "next": "候各线首件→复核律执行（完整/正确/唯一）",
+   "artifacts": [
+    "ci-library/archive/lines-full-20260828/"
+   ]
+  },
+  {
+   "id": "TH-07",
+   "name": "WEDGE 桩",
+   "state": "spec 楔子在 ci-root（目录制）",
+   "next": "桩清点+与 QFK 七模块对位表",
+   "artifacts": []
+  },
+  {
+   "id": "TH-08",
+   "name": "ATP-lab",
+   "state": "未启",
+   "next": "自动定理证明实验台设计（Lean 骨架接续 ucif2 十二件 sorry）",
+   "artifacts": []
+  },
+  {
+   "id": "TH-09",
+   "name": "worm 虫群",
+   "state": "套件在 ci-control/worms/；四仓候 root 一键建",
+   "next": "仓立即接引包自动写入（cisvr armed）；我侧监控",
+   "artifacts": [
+    "ci-library/kit/qfos-induct-01/"
+   ]
+  },
+  {
+   "id": "TH-10",
+   "name": "纠缠互证",
+   "state": "双正本+disc起贴+四邀点",
+   "next": "候 cisvr 回帖成环；C5'/映射闭合/ZKP默认档/不动点三性",
+   "artifacts": [
+    "research/entangle-proof-v1.md"
+   ]
+  }
+ ]
+}
