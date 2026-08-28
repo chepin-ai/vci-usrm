@@ -1,0 +1,76 @@
+{
+ "run_id": "GENEALOGY-RUN-01-E1",
+ "challenge_seed_formula": "int(sha256(qrand‖str(61))[:8]hex,16)",
+ "challenge_seed": 3712427753,
+ "certificates": [
+  {
+   "prop_id": "OBL-1",
+   "evidence_file": "evidence-obl1.json",
+   "challenge_seed": 3712427753,
+   "challenge_order": [
+    "OBL-1",
+    "OBL-2",
+    "OBL-3"
+   ],
+   "independent_verifier": true,
+   "result": "PASS",
+   "recalc": {
+    "n_recomputed_ok": 21,
+    "n_recomputed_bad": 0,
+    "tip_final_hash": "af470d11516b",
+    "tip_matches_evidence": true
+   },
+   "checks": {
+    "entries_recomputed": 21,
+    "cross_checks": 4
+   }
+  },
+  {
+   "prop_id": "OBL-2",
+   "evidence_file": "evidence-obl2.json",
+   "challenge_seed": 3712427753,
+   "challenge_order": [
+    "OBL-1",
+    "OBL-2",
+    "OBL-3"
+   ],
+   "independent_verifier": true,
+   "result": "PASS",
+   "recalc": {
+    "unique_independent": true,
+    "dim_independent": true,
+    "n_instances": 27
+   },
+   "checks": {
+    "instances_scanned": 27,
+    "cross_checks": 4
+   }
+  },
+  {
+   "prop_id": "OBL-3",
+   "evidence_file": "evidence-obl3.json",
+   "challenge_seed": 3712427753,
+   "challenge_order": [
+    "OBL-1",
+    "OBL-2",
+    "OBL-3"
+   ],
+   "independent_verifier": true,
+   "result": "PASS",
+   "recalc": {
+    "qrand_match_independent": true,
+    "seq_match_independent": true
+   },
+   "checks": {
+    "fields_compared": 2,
+    "cross_checks": 2
+   },
+   "stale_decl": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+  }
+ ],
+ "anchor": {
+  "qrand_seq": 61,
+  "stale": true,
+  "note": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+ }
+}
