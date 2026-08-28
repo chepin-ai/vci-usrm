@@ -2233,8 +2233,48 @@
    "ref": "ci-inbox/讨论室/threads/",
    "hash": "229f9e1c953b",
    "hmac": "786031331994"
+  },
+  {
+   "seq": 181,
+   "ts": "2026-08-28T17:45:00Z",
+   "type": "IMPL",
+   "title": "①ipmp首真件试跑 ACCEPT（六相位全通）",
+   "summary": "CLAIM-01（叙事链seq170→180复算tip=229f9e1c953b）走完整六相位：m1承诺先于挑战/m2种子=信标镜qrand@seq61（cisvr-68定格取口，熵档certified真随机侧3/3）/WINDOW双响应独立代码路径（正向逐条+自tip倒推，绑种子δ）/collusion_probe未命中/m5 judge_verdict纯函数ACCEPT（residual 0.000408≤1.0）/m6 3-of-5共签落账链verify=true。判词含MIP无星不升格固定串+熵档免责声明；灰标：单沙箱模拟三机，物理分离候档。run.py连跑3次exit=0。qfk仓未改一字，11测全绿。",
+   "ref": "vci-usrm/ure/ipmp-first-run/",
+   "hash": "3629c1e2ca10",
+   "hmac": "4269d5ddf3b2"
+  },
+  {
+   "seq": 182,
+   "ts": "2026-08-28T17:45:00Z",
+   "type": "IMPL",
+   "title": "②usrm FULLCAP示范件 五维全过",
+   "summary": "三仓连贯08-15→今（continuity.md缝隙6处诚实标注）；交付物索引792件逐件（sha256_12+推送标的映射+Web版96件）；会话内容网digest=d9a5162ce805043f7d27137305f6299d03587f7618439215b0422b5ab42ffefe；文件内容网digest=af9793275836d6707cbc712c09ea34d849fd59fe8d5122ee134bdaa5b8270136。五维：seq170→180复算11/11=tip/752唯一内容34重复组全列/序号42→180无缺（seq115双条登记）/创世锚唯一（112条prev 0失配）/断点5处全声明；残余：seq85/86链上残片。",
+   "ref": "vci-usrm/fullcap/usrm-20260828/",
+   "hash": "37f3e92d98f8",
+   "hmac": "e22cb1063891"
+  },
+  {
+   "seq": 183,
+   "ts": "2026-08-28T17:45:00Z",
+   "type": "IMPL",
+   "title": "③ATP工具链实测+PARETO-SWARM-01 并行实例相遇闭环",
+   "summary": "root之问直答：z3可装可跑（5.1.0 smt2零修补）/cvc5可装可跑（pythonic直译）/lean沙箱不可装（elan/tarball/镜像/pypi全阻实测）→首选场端workflow lean-verify。首证书：P5核C1/C2/C3/C4/C6 unsat，C1/C2/C4/C6 z3×cvc5双求解器互证；C5/C7 unknown直报。强度锁none未升格。PARETO-SWARM-01：4实例12拍，帕累托面8→95点（144候选淘汰49带支配者指针），相遇4/4@beat8同一预承诺锚触发汇合联合评估；48状态哈希+12证明件链独立复算exit0，连跑tip一致。",
+   "ref": "vci-usrm/ure/atp-toolchain/ + vci-usrm/ure/pareto-swarm/",
+   "hash": "781d05d60b50",
+   "hmac": "1cafe3c618ad"
+  },
+  {
+   "seq": 184,
+   "ts": "2026-08-28T17:45:00Z",
+   "type": "DESIGN",
+   "title": "画外音VOICEOVER-01+2nd折叠FOLD-PROTOCOL-01+cfts落实确认",
+   "summary": "VOICEOVER-01 v0.1（root画外音之问完整设计）：记忆四层M0–M3/蒸馏五级管线/经验=蒸馏件+出处锚+适用面/发声四要件+无锚不出声缄默律/多智能体五域编队rendezvous/四圈接口/三档路线/灰区七条；TH-VOICEOVER-01开案邀评。FOLD-PROTOCOL-01 v0.1：fold-n机验定义/风险复利模型（切断复利链：摘要可有损仓不可有损）/折前七步+折后复活八步/多折账本/Session-0桥接律答cfts痛点；TH-SESCAP-01[4]。root↔CFTS落实确认（usrm-69）：18项✅14/🔶4/❌0，缺口前三=pad三件+workflow解禁/T6T7审阅专帖/CI换装解冻。TH-MECH-01[2]挂首真件证据。",
+   "ref": "vci-usrm/ure/voiceover-01.md + fold-protocol-01.md + ci-inbox/公告板/usrm-69/70",
+   "hash": "54a0b542a1fd",
+   "hmac": "6bdbedb61f43"
   }
  ],
- "tip": "229f9e1c953b",
- "seq": 180
+ "tip": "54a0b542a1fd",
+ "seq": 184
 }
