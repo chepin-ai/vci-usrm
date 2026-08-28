@@ -1,6 +1,6 @@
 {
  "v": 1,
- "ts": "2026-08-28T09:17:11Z",
+ "ts": "2026-08-28T16:10:10Z",
  "threads": [
   {
    "id": "TH-01",
@@ -34,12 +34,15 @@
   {
    "id": "TH-04",
    "name": "MIP* 北星",
-   "state": "A4毕：三机角色映射+六消息协议+4禁4合法+挂接表；判词=MIP(无星)结构同构不升格；A档6/B档3升级清单；新灰区#10 NP双帽；B2 ipmp.py 设计毕(六相位/7 dataclass/A档6落接口/M1-M3窗口/测试T-01~T-11)，判词维持 MIP 无星同构不升格",
-   "next": "ipmp.py 实装+test_ipmp.py（候令）",
+   "state": "A4毕：三机角色映射+六消息协议+4禁4合法+挂接表；判词=MIP(无星)结构同构不升格；A档6/B档3升级清单；新灰区#10 NP双帽；B2 ipmp.py 设计毕(六相位/7 dataclass/A档6落接口/M1-M3窗口/测试T-01~T-11)，判词维持 MIP 无星同构不升格；C1 实装毕：QFK v0.2 八模块，34/34 全绿（旧23测未破），ipmp.py 30157B+test_ipmp.py T-01~T-11（串谋负例探针命中→REJECT+人工闸）",
+   "next": "ipmp 首真件试跑（三机互证一圈实测）",
    "artifacts": [
     "vci-usrm/ure/T153_mip_re_northstar.canonical.md",
     "research/ipc-three-machine-01.md",
-    "research/ipc-ipmp-design-01.md"
+    "research/ipc-ipmp-design-01.md",
+    "qfk/ipmp.py",
+    "qfk/test_ipmp.py",
+    "output/qfk-v0.2.tar.gz"
    ]
   },
   {
@@ -70,10 +73,11 @@
   {
    "id": "TH-08",
    "name": "ATP-lab",
-   "state": "B1 设计毕：NP机实体化五站台架(登记→编译sorry骨架→跑证#print axioms诚实律→入链→残差分流)；三档强度锁死；首批3试件P5/C5派生引理/C2扫荡；声明未证未伪任何C/P件",
-   "next": "qfk v0.2 扩域+P5 骨架（候令/自我修炼节拍）",
+   "state": "B1 设计毕：NP机实体化五站台架(登记→编译sorry骨架→跑证#print axioms诚实律→入链→残差分流)；三档强度锁死；首批3试件P5/C5派生引理/C2扫荡；声明未证未伪任何C/P件；C2 首试件 P5 双骨架毕（Lean6489B+SMT6802B+试件卡），sorry=6 诚实律，强度锁 none，工具链接入为阻塞项",
+   "next": "工具链(z3/lean)接入径→首轮跑证",
    "artifacts": [
-    "research/ipc-atp-lab-01.md"
+    "research/ipc-atp-lab-01.md",
+    "output/atp-lab/"
    ]
   },
   {
