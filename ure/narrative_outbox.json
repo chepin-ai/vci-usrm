@@ -2333,8 +2333,18 @@
    "ref": "vci-usrm/ure/presync-q5t3-01.md",
    "hash": "af470d11516b",
    "hmac": "f209c2686987"
+  },
+  {
+   "seq": 191,
+   "ts": "2026-08-28T22:54Z",
+   "type": "wave8-genealogy",
+   "title": "五机系谱闭合理论+RUN-01-E1全绿+多人格论+M3排期",
+   "summary": "GENEALOGY-CLOSURE-01/RUN-01(3PASS,z3双UNSAT,verdict ae6c6c1cff7c)/PERSONA-MIPSTAR-01/命名会签/INST-REG+GEN1/qfa66回应",
+   "ref": "vci-usrm/ure/genealogy-closure-01.md",
+   "hash": "b9c391af4af3",
+   "hmac": "376da3279e3a"
   }
  ],
- "tip": "af470d11516b",
- "seq": 190
+ "tip": "b9c391af4af3",
+ "seq": 191
 }
