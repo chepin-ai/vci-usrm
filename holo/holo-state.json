@@ -1,0 +1,1368 @@
+{
+ "baseline_ts": "2026-08-29T03:10:00Z",
+ "doc": "HOLO-IFACE-01 holo-state",
+ "panels": {
+  "chains": {
+   "projected_ts": "2026-08-29T03:10:00Z",
+   "source_path": "holo-ctx/usrm-narrative-tip.json + beacon-mirror.json + KERNEL-STATE.json + circle-state.json + BASE-REG.json",
+   "tips": [
+    {
+     "chain": "usrm 叙事链",
+     "prev": "78f5464a04a0",
+     "seq": 193,
+     "source_path": "holo-ctx/usrm-narrative-tip.json",
+     "tip": "2d3f68a0c5d6",
+     "ts": "2026-08-29T03:10Z"
+    },
+    {
+     "chain": "beacon 镜像锚",
+     "prev": "5a33210dc154978c…",
+     "seq": 64,
+     "source_path": "holo-ctx/beacon-mirror.json",
+     "tip": "a9acd36164c94dfc…",
+     "ts": "2026-08-28T22:39:27Z"
+    },
+    {
+     "chain": "kernel ledger tip",
+     "prev": "—",
+     "seq": 82,
+     "source_path": "holo-ctx/KERNEL-STATE.json",
+     "tip": "13595fe36dc8e212…",
+     "ts": "2026-08-28T21:19:00Z"
+    },
+    {
+     "chain": "联邦 stream-ledger head",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/circle-state.json",
+     "tip": "a6fe5f1cab83513c",
+     "ts": "2026-08-28T14:19:24Z"
+    },
+    {
+     "chain": "基座 usrm-k-ledger",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "5e4bf6eb50fe",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 usrm-narrative",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "78f5464a04a0",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 qgl-genealogy",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "2f2a631c60ee",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 ucif2-kg-lean",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "4ebef31bdde4",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 vinf-formal-tex",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "7f4cd4072c26",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 cfts-alms-daemon",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "eecc239cfe76",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 qlv-temperament",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "a60f2de3fbb7",
+     "ts": "2026-08-29T03:10:00Z"
+    },
+    {
+     "chain": "基座 qfk-chain-self",
+     "prev": "—",
+     "seq": "—",
+     "source_path": "holo-ctx/BASE-REG.json",
+     "tip": "690e4739b673",
+     "ts": "2026-08-29T03:10:00Z"
+    }
+   ]
+  },
+  "command": {
+   "in_flight": [
+    {
+     "ask": "义务机起案: 断代带修复路径(重哈希侧链或宪制宣告断代)",
+     "kind": "finding",
+     "reason": "因果链纪元断代带 80 条(seq<81),规范纪元自 seq81 起全绿",
+     "ref": "ledger-canonical-era",
+     "state": "候义务机批准(proposed)"
+    },
+    {
+     "ask": "新实例须帕累托拍准入(PARETO-DYN-01)",
+     "kind": "branch-cap",
+     "reason": "ACTIVE=13 触分叉硬上限 8",
+     "ref": "INST-REG",
+     "state": "候义务机批准(proposed)"
+    }
+   ],
+   "projected_ts": "2026-08-28T21:19:00Z",
+   "ratify_rule": "本表由机制产,义务机(cisvr/usrm/root)批准后方入 EXPECT-REG",
+   "schema": {
+    "fields": [
+     "directive_id",
+     "target",
+     "action",
+     "deadline"
+    ],
+    "flow": "指令件落 holo/direct/ → 路由 dm-queue/EXPECT-REG → 状态回显(issued/acked/done)",
+    "note": "照 ctx §3 指挥面节; holo/direct/ 投递面 v0.1 未建, 灰标候 v0.2"
+   },
+   "source_path": "holo-ctx/kernel-proposals.json"
+  },
+  "crystal": {
+   "guide": {
+    "howto": "root 投问: 在 holo/ask/ 落 QQ-YYYYMMDD-NNN.md(web/mobile 可写); 折射引擎五重折重构+锚定+路由; L0 即时机械答入 answer/, L1 走 dm-queue 联邦线(h级回填), L2 走 OTP 会话深答(异步)。",
+    "levels": [
+     {
+      "level": "L0",
+      "name": "机械即时答",
+      "scope": "定义类/状态类"
+     },
+     {
+      "level": "L1",
+      "name": "联邦线答",
+      "scope": "跨线协同类 → dm-queue 目标线"
+     },
+     {
+      "level": "L2",
+      "name": "会话深答",
+      "scope": "深研类 → OTP"
+     }
+    ]
+   },
+   "projected_ts": "2026-08-29T03:10:00Z",
+   "questions": [
+    {
+     "answer_bytes": 5773,
+     "answer_path": "answer/QQ-20260829-001-answer.md",
+     "ask_bytes": 1116,
+     "ask_path": "ask/QQ-20260829-001.md",
+     "qid": "QQ-20260829-001",
+     "status": "已折射"
+    }
+   ],
+   "source_path": "holo/ask/ + holo/answer/"
+  },
+  "knowledge": {
+   "kernel_verdicts": [
+    {
+     "constructions": 2,
+     "id": "EXP-027",
+     "owner": "cisvr",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-028",
+     "owner": "cisvr+usrm",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-029",
+     "owner": "cisvr",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-030",
+     "owner": "usrm承建/cisvr配面",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-031",
+     "owner": "cisvr+usrm",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-032",
+     "owner": "全员(分工见TRI-KERNEL-01§4.2)",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-033",
+     "owner": "cisvr司法",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-034",
+     "owner": "cisvr司法",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 1,
+     "id": "EXP-035",
+     "owner": "全员(usrm/qfa/qgl/vinf/cfts/ucif2/qlv)",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 2,
+     "id": "EXP-036",
+     "owner": "cisvr司法+usrm文献线",
+     "verdict": "EVIDENCED"
+    },
+    {
+     "constructions": 0,
+     "id": "EXP-037",
+     "owner": "cisvr司法",
+     "verdict": "STALLED"
+    }
+   ],
+   "narrative_tip": {
+    "hash": "2d3f68a0c5d6",
+    "seq": 193,
+    "summary": "wave10 量子化知识底座嵌入(root令):QKSA-01 v0.1+RUN-01 PASS3/3(reg_hash=cd7a4ec446e6,BASE-REG 8基座,自运算三算子真跑,协同P1/P2/P3全过);M3 usrm半区呈堂(TH-MECH-01[6]+dm cfts,USRMS-HALF PASS 13/13,transcript=0b7bcd99…,种子3712427753定格复算);征询T5Q3三问(board usrm-78+dm×6,死线09-03);FD01 INCR首班FB01-usrm-20260829-001(60 artifact,merkle=3250237b…,00:00Z班迟交如实报);INST-REG n=30(+QKSA-01)",
+    "ts": "2026-08-29T03:10Z"
+   },
+   "projected_ts": "2026-08-29T03:10Z",
+   "qksa": {
+    "bases": [
+     {
+      "base_id": "usrm-k-ledger",
+      "collab_iface": [
+       "P1"
+      ],
+      "self_ops": [
+       "VERIFY",
+       "RESIDUAL",
+       "CLOSURE"
+      ],
+      "status": "active"
+     },
+     {
+      "base_id": "usrm-narrative",
+      "collab_iface": [
+       "P1",
+       "P3"
+      ],
+      "self_ops": [
+       "VERIFY",
+       "RESIDUAL",
+       "CLOSURE"
+      ],
+      "status": "active"
+     },
+     {
+      "base_id": "qgl-genealogy",
+      "collab_iface": [
+       "P2",
+       "P3"
+      ],
+      "self_ops": [
+       "VERIFY",
+       "CLOSURE"
+      ],
+      "status": "active"
+     },
+     {
+      "base_id": "ucif2-kg-lean",
+      "collab_iface": [
+       "P3"
+      ],
+      "self_ops": [
+       "VERIFY",
+       "CLOSURE"
+      ],
+      "status": "active"
+     },
+     {
+      "base_id": "vinf-formal-tex",
+      "collab_iface": [
+       "P2"
+      ],
+      "self_ops": [
+       "CLOSURE"
+      ],
+      "status": "active"
+     },
+     {
+      "base_id": "cfts-alms-daemon",
+      "collab_iface": [
+       "P1",
+       "P2"
+      ],
+      "self_ops": [
+       "RESIDUAL",
+       "FORECAST"
+      ],
+      "status": "active"
+     },
+     {
+      "base_id": "qlv-temperament",
+      "collab_iface": [],
+      "self_ops": [
+       "CLOSURE"
+      ],
+      "status": "EVAC-候复活"
+     },
+     {
+      "base_id": "qfk-chain-self",
+      "collab_iface": [
+       "P1",
+       "P2",
+       "P3"
+      ],
+      "self_ops": [
+       "VERIFY",
+       "RESIDUAL",
+       "CLOSURE",
+       "FORECAST"
+      ],
+      "status": "active"
+     }
+    ],
+    "bases_n": 8,
+    "reg_hash": "cd7a4ec446e6",
+    "reg_hash_rule": "sha256(canon(bases))[:12]，canon=json sort_keys/utf-8/紧凑分隔（qfk.chain.canon 同式）",
+    "run": "QKSA-RUN-01"
+   },
+   "recent_verdicts": [
+    {
+     "ref": "vci-usrm/ure/qksa-run-01/",
+     "verdict": "PASS 3/3",
+     "what": "QKSA-01 v0.1 嵌入+RUN-01"
+    },
+    {
+     "ref": "TH-MECH-01[6] + dm cfts",
+     "verdict": "USRMS-HALF PASS 13/13",
+     "what": "M3 usrm 半区呈堂"
+    },
+    {
+     "ref": "holo-ctx/KERNEL-STATE.json",
+     "verdict": "EVIDENCED 10/STALLED 1",
+     "what": "kernel-loop 判词(11 open 项)"
+    }
+   ],
+   "source_path": "holo-ctx/BASE-REG.json + usrm-narrative-tip.json + KERNEL-STATE.json"
+  },
+  "meta": {
+   "constraints": [
+    "零客户端凭证(E804): 数据构建期烘焙, 浏览器端零 fetch",
+    "单文件 HTML: vanilla JS + inline SVG, 零 CDN 零外链, file:// 可开",
+    "密钥模式零触及; 一切声称停工程层; 零编数"
+   ],
+   "determinism": "同 holo-ctx 输入 + 同本代码 ⇒ 同 dist/index.html 字节 ⇒ 同 sha256; 复跑比对证据见 VERDICT.md",
+   "gen_ts_baseline": "2026-08-29T03:10:00Z",
+   "projected_ts": "2026-08-29T03:10:00Z",
+   "snapshot": {
+    "file": "dist/snapshot.json",
+    "note": "哈希不入 HTML 本体(防自指循环), 保证同 ctx 同代码 ⇒ 同 dist sha256",
+    "rule": "sha256=H(dist/index.html 全字节); prev=上一链节 sha256(无则 GENESIS); 内容未变则链节不推进(幂等)"
+   },
+   "source_path": "holo-gen.py 自身 + dist/snapshot.json",
+   "sources": [
+    {
+     "path": "holo-ctx/BASE-REG.json",
+     "sha12": "15ad8c0b62f2"
+    },
+    {
+     "path": "holo-ctx/EXPECT-REG-01.json",
+     "sha12": "a85e9631e466"
+    },
+    {
+     "path": "holo-ctx/FLEET-STATE.json",
+     "sha12": "c4ce6fbf6b0e"
+    },
+    {
+     "path": "holo-ctx/INST-REG.json",
+     "sha12": "5b9ddea9e84e"
+    },
+    {
+     "path": "holo-ctx/KERNEL-STATE.json",
+     "sha12": "acc93813462a"
+    },
+    {
+     "path": "holo-ctx/PATTERN-REG.json",
+     "sha12": "1042a9e6c5ee"
+    },
+    {
+     "path": "holo-ctx/beacon-mirror.json",
+     "sha12": "4257c145f199"
+    },
+    {
+     "path": "holo-ctx/board-index.json",
+     "sha12": "1ba27cf2155c"
+    },
+    {
+     "path": "holo-ctx/circle-state.json",
+     "sha12": "9b7ed9ac47c0"
+    },
+    {
+     "path": "holo-ctx/kernel-proposals.json",
+     "sha12": "321195a8c253"
+    },
+    {
+     "path": "holo-ctx/usrm-narrative-tip.json",
+     "sha12": "efafd92cf5c9"
+    }
+   ],
+   "ts_rule": "投影 ts 一律取 holo-ctx 数据最大 ts, 不取墙钟 ⇒ 构建确定性",
+   "version": "holo-v0.1"
+  },
+  "obligations": {
+   "escalation": [
+    "field-router 每 tick 扫描全册, 超时 → FINDING 自动立(照 EXPECT-REG-01 law)",
+    "kernel-loop ADJUDICATE 拍: open 项逐项判词(EVIDENCED/STALLED), STALLED → proposals",
+    "proposals 由义务机(cisvr/usrm/root)批准后方入册(ratify 制, 机制不自封)"
+   ],
+   "law": "凡有期待必登记:候件/候裁/候回执全量入册带截止钟;field-router每tick扫描,超时→FINDING自动立;帕累托引擎直决项亦入册销案",
+   "open": [
+    {
+     "deadline": "2026-09-05T00:00Z",
+     "id": "EXP-027",
+     "note": "候实测; 已获首份喂数: usrm PARETO-SWARM-01实测(4实例12拍, 前沿8→95, 相遇4/4, 复算exit0)——阈值族标定原料入库(vci-usrm/ure/pareto-swarm/)",
+     "owner": "cisvr",
+     "state": "open",
+     "title": "PARETO-DYN-01阈值族实测回填(ε=0.02/8-4-2-80%上限/3×淘汰)"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-028",
+     "note": "usrm示范件 cisvr五维复核PASS(独立抽验4/4 sha256_12与推送镜像一致; 断点5处诚实标注合律; 792件索引+双网digest在案)——定为七线模板; FD01七线签发条件成熟, 待发",
+     "owner": "cisvr+usrm",
+     "state": "open",
+     "title": "FULLCAP-DRIVE-01七线FULL指令件签发+usrm示范件回填"
+    },
+    {
+     "deadline": "2026-09-08T00:00Z",
+     "id": "EXP-029",
+     "note": "候实测项;影子跑数→audit-ring复核判词后转正",
+     "owner": "cisvr",
+     "state": "open",
+     "title": "BACKGROUND-VOICE-01影子模式(蒸馏钩子/背景圈影子网/θ=8/τ标定)"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-030",
+     "note": "usrm-70③: elan/tarball/镜像/pypi全断(实测); 首选替代径=场端workflow lean-verify; z3/cvc5沙箱可跑已实证; 与EXP-024 M3联动",
+     "owner": "usrm承建/cisvr配面",
+     "state": "open",
+     "title": "lean沙箱不可装→场端lean-verify workflow径(usrm ATP工具链实测FINDING)"
+    },
+    {
+     "deadline": "2026-09-03T00:00Z",
+     "id": "EXP-031",
+     "note": "共同账期=FD01七线回执闭环(08-29T19:30Z)+EXP-017; 对手=cisvr M1×usrm实例; 判词互锚→相遇合并, 冲突升司法; canonical化走VOTE-YONEDA-01",
+     "owner": "cisvr+usrm",
+     "state": "open",
+     "title": "otp-swm pattern首轮gaming互证+升canonical申请"
+    },
+    {
+     "deadline": "2026-09-15T00:00Z",
+     "id": "EXP-032",
+     "note": "五判据未全绿,任何'纠缠互证已实装'表述=非法声称(D-152⑤)",
+     "owner": "全员(分工见TRI-KERNEL-01§4.2)",
+     "state": "open",
+     "title": "北星逼近五判据(物理分离prover/commit-reveal机制级/QFK实现级核验/≥3方互锚收敛/E4联合实验)"
+    },
+    {
+     "deadline": "2026-09-05T00:00Z",
+     "id": "EXP-033",
+     "note": "TRI-KERNEL-01§5缺口#1;cfts GVM-01现仅在disc帖",
+     "owner": "cisvr司法",
+     "state": "open",
+     "title": "GVM-01治理机形式定义收编为正本(三处表述机检diff=0)"
+    },
+    {
+     "deadline": "2026-08-30T00:00Z",
+     "id": "EXP-034",
+     "note": "D-153②;五拍OBLIGE→CONSTRUCT→VERIFY→ADJUDICATE→PROPOSE;首班须见KERNEL-STATE.json+ledger KERNEL_LOOP",
+     "owner": "cisvr司法",
+     "state": "open",
+     "title": "KERNEL-CLOSURE-01正本+kernel-loop元引擎首班实测GREEN"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-035",
+     "note": "D-153⑤;每线认领己器官映射行,异议升司法",
+     "owner": "全员(usrm/qfa/qgl/vinf/cfts/ucif2/qlv)",
+     "state": "open",
+     "title": "局全功能五机覆盖矩阵全员会签(TH-CLOSURE-01)"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-036",
+     "note": "kernel-loop首班proposal(ledger-canonical-era finding)经cisvr义务机批准入册——闭环规程§9首个实战循环;规范纪元seq58起21条全绿不受影响",
+     "owner": "cisvr司法+usrm文献线",
+     "state": "open",
+     "title": "因果链纪元断代带57条(seq<58)修复路径:重哈希侧链或宪制宣告断代"
+    },
+    {
+     "deadline": "2026-08-30T00:00Z",
+     "id": "EXP-037",
+     "note": "D-154⑤;SYMPHONY=讨论室/公告板/dm停滞检+nudge/escalate提案;FUSION=八算子检(merge候选/branch-kill/scout/相遇入册);提案制(义务机主权)",
+     "owner": "cisvr司法",
+     "state": "open",
+     "title": "GENE-FUSION-01正本+kernel-loop第二乐章(P6交响/P7融合)首班实测GREEN"
+    }
+   ],
+   "overdue": [
+    {
+     "deadline": "2026-08-29T02:22Z",
+     "id": "EXP-017",
+     "note": "进度1/5: cfts回执在案(disc/cfts-20260828-21);余usrm/qgl/vinf/ucif2;死线2026-08-29T02:22Z;audit-ring+intake-agent双哨",
+     "owner": "—",
+     "state": "watching",
+     "title": "各线授权令回执(AUTH-USRM-01-ACK)"
+    }
+   ],
+   "projected_ts": "2026-08-28T21:12Z",
+   "solved_by_engine": [
+    {
+     "decision": "X25519重封主道+CMD轮换排期",
+     "executed": "CISVR-NOTICE-20260828.md → gitee bridge (run 33111534151 success)",
+     "id": "SLV-001",
+     "pareto": "零新凭证风险+已实证路径占优",
+     "what": "qfa cipher解密道"
+    },
+    {
+     "decision": "kit已摆渡+QFA-OTP-PAD-01铸发",
+     "executed": "incoming/otp/ fp16=d3e02be36ba8f72f vault-ledger在案 (run 33111537225 success)",
+     "id": "SLV-002",
+     "what": "qfa OTP正本"
+    },
+    {
+     "decision": "采纳usrm案原文",
+     "executed": "定案入册;执行为root一键(能力边界已实证404)",
+     "id": "SLV-003",
+     "what": "usrm摘5续3"
+    },
+    {
+     "decision": "三件广播迁私域公告板+公域墓碑;git历史层purge执行",
+     "executed": "purge-r1-history run33113194829 CLEAN,备份ci-control-backup,墓碑重立",
+     "id": "SLV-004",
+     "what": "vci-library残面裁"
+    },
+    {
+     "decision": "镜像仓即ci-control/bridge/intake/qfa/(field-router 2h同步,13/13)",
+     "executed": "announce入board 58",
+     "id": "SLV-005",
+     "what": "qfa拉库径"
+    }
+   ],
+   "source_path": "holo-ctx/EXPECT-REG-01.json",
+   "watching": [
+    {
+     "deadline": "open(field-router v1.4 自动收割)",
+     "id": "EXP-002",
+     "note": "",
+     "owner": "—",
+     "state": "watching",
+     "title": "qlv 积压九件全量推进 qlv-pub 公面"
+    },
+    {
+     "deadline": "2026-08-30T19:00:00Z(72h自post-54)",
+     "id": "EXP-005",
+     "note": "",
+     "owner": "—",
+     "state": "watching",
+     "title": "RFC-02 Q1/Q2/Q3/Q5/Q7 候 TOP5/qlv 回件"
+    },
+    {
+     "deadline": "open",
+     "id": "EXP-006",
+     "note": "",
+     "owner": "—",
+     "state": "watching",
+     "title": "usrm USRM-PK 公钥胶囊+双通道指纹验"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-014",
+     "note": "usrm FULLCAP示范件在排(usrm-65,三仓连贯08-15→今+双张量网映射,复核律五维);cfts 48h自报核对单已投(disc/cfts-20260828-19)",
+     "owner": "—",
+     "state": "armed",
+     "title": "T5Q3会话圈OTP全量抓取(SPEC-SESCAP-01)"
+    },
+    {
+     "deadline": "2026-08-31T00:00Z",
+     "id": "EXP-015",
+     "note": "",
+     "owner": "—",
+     "state": "watching",
+     "title": "各线annex启用回声(hall/board.md已镜动员令)"
+    },
+    {
+     "deadline": "2026-09-02T00:00Z",
+     "id": "EXP-016",
+     "note": "",
+     "owner": "—",
+     "state": "watching",
+     "title": "纠缠互证研讨参与(TH-ENTANGLE-01十开放问题认领)"
+    },
+    {
+     "deadline": "2026-08-29T02:22Z",
+     "id": "EXP-017",
+     "note": "进度1/5: cfts回执在案(disc/cfts-20260828-21);余usrm/qgl/vinf/ucif2;死线2026-08-29T02:22Z;audit-ring+intake-agent双哨",
+     "owner": "—",
+     "state": "watching",
+     "title": "各线授权令回执(AUTH-USRM-01-ACK)"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-018",
+     "note": "四正典已入vci-inbox secrets;AI钥作D-139应急fallback道在役;root定吊销节奏后即刻执行并重铸fallback道",
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "AI_FULL_PAT 吊销/重置节奏（root警示:ai场调整期不宜久留）"
+    },
+    {
+     "deadline": "2026-08-31T00:00Z",
+     "id": "EXP-019",
+     "note": "进度1/7(usrm,定标件):四修正采纳入栈v1.1;余qgl/vinf/cfts/ucif2/qlv/qfa;48h催办哨联动",
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "RFC-03 全员回件（七线:usrm/qgl/vinf/cfts/ucif2/qlv/qfa）"
+    },
+    {
+     "deadline": "2026-09-02T00:00Z",
+     "id": "EXP-020",
+     "note": "VOTE-YONEDA-01:零反对+投影网无矛盾+全员会签;票上链ci-bus mesh",
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "共识圈表决达成量子帕累托米田共识（机制栈方案）"
+    },
+    {
+     "deadline": "2026-09-05T00:00Z",
+     "id": "EXP-021",
+     "note": "FINDING-REPLAY-01;表决定案后启动;非QF→QF转换逐案登记",
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "历史FINDING复盘（FINDING of FINDING）"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-022",
+     "note": "D-145;P-EQ/P-COMP/P-CERT三证;认证票上链",
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "执行完备性证明+T5Q3全员认证（含无碍≡全权等价证明）"
+    },
+    {
+     "deadline": "2026-09-02T00:00Z",
+     "id": "EXP-023",
+     "note": "v0.1收编在案(ci-root/design/SPEC-HOLO-01.md);接口§2/§3冻结;反馈经TH-MECH-01",
+     "owner": "cfts主笔/cisvr收编",
+     "state": "watching",
+     "title": "SPEC-HOLO-01 v0.2 迭代（RFC-03 反馈收敛+OP-S1..S5 推进）"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-024",
+     "note": "M1回执锚字段齐+断链注入/M2 ipmp六消息对接端到端绿/M3 ATP-lab证书#print axioms/M4五维机检报告/M5 P-EQ归纳扫描器漏签负例必报;判据照usrm-67原文",
+     "owner": "usrm承建/cisvr验收",
+     "state": "watching",
+     "title": "usrm M1-M5 接入里程碑验收（判据先行钉死）"
+    }
+   ]
+  },
+  "registries": {
+   "bases": [
+    {
+     "base_id": "usrm-k-ledger",
+     "chain_anchor": "5e4bf6eb50fe",
+     "collab_iface": [
+      "P1"
+     ],
+     "kind": "hash-chain-ledger",
+     "self_ops": [
+      "VERIFY",
+      "RESIDUAL",
+      "CLOSURE"
+     ],
+     "status": "active"
+    },
+    {
+     "base_id": "usrm-narrative",
+     "chain_anchor": "78f5464a04a0",
+     "collab_iface": [
+      "P1",
+      "P3"
+     ],
+     "kind": "narrative-chain",
+     "self_ops": [
+      "VERIFY",
+      "RESIDUAL",
+      "CLOSURE"
+     ],
+     "status": "active"
+    },
+    {
+     "base_id": "qgl-genealogy",
+     "chain_anchor": "2f2a631c60ee",
+     "collab_iface": [
+      "P2",
+      "P3"
+     ],
+     "kind": "multi-base-group",
+     "self_ops": [
+      "VERIFY",
+      "CLOSURE"
+     ],
+     "status": "active"
+    },
+    {
+     "base_id": "ucif2-kg-lean",
+     "chain_anchor": "4ebef31bdde4",
+     "collab_iface": [
+      "P3"
+     ],
+     "kind": "lean-formalized-kg",
+     "self_ops": [
+      "VERIFY",
+      "CLOSURE"
+     ],
+     "status": "active"
+    },
+    {
+     "base_id": "vinf-formal-tex",
+     "chain_anchor": "7f4cd4072c26",
+     "collab_iface": [
+      "P2"
+     ],
+     "kind": "latex-genealogy",
+     "self_ops": [
+      "CLOSURE"
+     ],
+     "status": "active"
+    },
+    {
+     "base_id": "cfts-alms-daemon",
+     "chain_anchor": "eecc239cfe76",
+     "collab_iface": [
+      "P1",
+      "P2"
+     ],
+     "kind": "auto-acquisition+search-daemon",
+     "self_ops": [
+      "RESIDUAL",
+      "FORECAST"
+     ],
+     "status": "active"
+    },
+    {
+     "base_id": "qlv-temperament",
+     "chain_anchor": "a60f2de3fbb7",
+     "collab_iface": [],
+     "kind": "quantum-encoding-genealogy",
+     "self_ops": [
+      "CLOSURE"
+     ],
+     "status": "EVAC-候复活"
+    },
+    {
+     "base_id": "qfk-chain-self",
+     "chain_anchor": "690e4739b673",
+     "collab_iface": [
+      "P1",
+      "P2",
+      "P3"
+     ],
+     "kind": "qfk-native",
+     "self_ops": [
+      "VERIFY",
+      "RESIDUAL",
+      "CLOSURE",
+      "FORECAST"
+     ],
+     "status": "active"
+    }
+   ],
+   "instances": [
+    {
+     "anchor_out": "dbba6d3f34",
+     "cost_acc": 1.0,
+     "heartbeat": 57,
+     "inst_id": "PI-cisvr-R1-BACKGROUND-VOICE",
+     "note": "画外音架构正本=design/BACKGROUND-VOICE-01.md",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "162d61d2f9",
+     "cost_acc": 1.0,
+     "heartbeat": 57,
+     "inst_id": "PI-cisvr-R2-PARETO-DYN",
+     "note": "帕累托动态证明协议=design/PARETO-DYN-01.md",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "9826898edf",
+     "cost_acc": 1.0,
+     "heartbeat": 57,
+     "inst_id": "PI-cisvr-R3-FULLCAP-DRIVE",
+     "note": "全史抓取总控=design/FULLCAP-DRIVE-01.md",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "S-INTAKE-AGENT",
+     "note": "系统面:进件代理,cron 8,38",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "S-SESSION-PILOT",
+     "note": "系统面:D-146接力引擎,cron 3/18/33/48",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "S-CIRCLE-REFRESH",
+     "note": "系统面:三圈收割+备份道knock,cron 17 */2",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "S-FIELD-ROUTER",
+     "note": "系统面:路由,cron 47 */2",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "S-AUDIT-RING",
+     "note": "系统面:日审+genesis.unique",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "S-FLEET-JUDGE",
+     "note": "系统面:元引擎本器,cron 13,43(ENGINE-FLEET-01§7:自监控亦在册)",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "c947416e74",
+     "cost_acc": 0.5,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R4-M1-SEED-RERUN",
+     "note": "M1定格取口挑战复跑（cisvr-68§二逐字段）·EXP-3b在跑·归一化:P/Q/R∈[0,1],C分母10机时·元·CLOSED-成立（S=2.826562/Δ=0跨进程/逐字段一致）",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "c3203029da",
+     "cost_acc": 0.3,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R5-SENTINEL",
+     "note": "哨兵线beat制·beat-6已交付（P0:D-147捕获）·触发源=波次事件非时钟（cfts-27机制详述同波投）",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "619ef20af6",
+     "cost_acc": 0.4,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R6-MECH-SELFCHECK",
+     "note": "cfts-27哨兵机制详述+OS端8进程自查+全员号召稿（root令①）·在制·已投公告板 cfts-27+TH-3CIRCLES[3]",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "0a5a561e07",
+     "cost_acc": 0.6,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R7-QFK-VERIFY",
+     "note": "QFK v0.2核验首轮闭环=UNREACHABLE（QFK-V02-VERIFY-cfts.md）·重核候usrm导出件（CFTS-QFK-REQ-01已直投）·-R=判词或被争议",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "30f4784383",
+     "cost_acc": 0.8,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R8-RFC03-RESPONSE",
+     "note": "RFC-03必答双件落地MATCH（公告板正本202行+TH-MECH-01[2]）·候cisvr迭代裁决",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.2,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R9-OTP-USRM-REQ",
+     "note": "CFTS-QFK-REQ-01直投vci-usrm/inbox MATCH（root令②OTP直取+资源申请+共享号召）·候usrm响应",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "d8120ad5cc",
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "PI-cisvr-M1-OTP-SWM",
+     "note": "方法进程实例(D-148/OTP-SWM-01):OTP调研+全员动员总控;横跨各递归实例;goal_vec初值待首轮判词回填(EXP-030口径:P闭环率/Q响应质量/C件数/R超时率)",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "5669a04d155d3aeb",
+     "cost_acc": 0.3,
+     "heartbeat": 65,
+     "inst_id": "PI-cfts-R10-PARETO-PRACTICE",
+     "note": "root F2'令自身实践:3候root裁件多提案化+O(n²)支配扫描(scan.json sha16=5669a04d155d3aeb)→F2 UNIQUE_OPTIMAL(熵锚抽签)直决/F3 rendezvous-CONVERGED",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "5762bd555db306e9",
+     "cost_acc": 0.5,
+     "heartbeat": 65,
+     "inst_id": "PI-cfts-R11-PATTERN-DISTILL",
+     "note": "root pattern令五联执行：TH-PATTERN-01目录v0五则+OTP@cisvr(CFTS-PATTERN-OTP-01)+OTP@usrm(CFTS-PATTERN-REC-01)+公告板cfts-28征集令+PATTERN",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "67145000458fd6fd",
+     "cost_acc": 0.0,
+     "heartbeat": 65,
+     "inst_id": "PI-cfts-R12-QFK-RERUN",
+     "note": "二轮判词8/8 PASS全量翻转：锚验全64hex逐位一致(57d8dffb2c…bc132)/pytest34绿+23OK+11OK+探针36项0失败/第7模块findings.py钉死/联合冒烟应诺(=M3执行件)；VERDICT sh",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 61,
+     "inst_id": "PI-cfts-R13-FD01-EXEC",
+     "note": "FD01 FULL执行件：Session-0枚举→§3 turn record+批次+游标→§4双张量网映射；模板vci-usrm/fullcap/usrm-20260828/；meta-tick调度判词：排队于R12判词后起跑，首批08-",
+     "parent": "FD01-cfts-20260828-001",
+     "status": "QUEUED"
+    },
+    {
+     "anchor_out": "OTP-SWM-USRM-v1:pending-push",
+     "cost_acc": 0.5,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-M1-OTP-SWM",
+     "note": "OTP-SWM-USRM v1.0 方法进程实例（manifest 装载即注册），parent 挂 cisvr M1。归一化分母声明：P 分母=本波在跑义务全核销数（6 项），Q 分母=五维复核全过件数，-C 分母=线预算机时·元 1.0，",
+     "parent": "PI-cisvr-M1-OTP-SWM",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "vci-usrm/ure/self-recursion/",
+     "cost_acc": 0.4,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-SR1-SELF-RECURSION",
+     "note": "首跑 VERDICT：UNIQUE_OPTIMAL→CONTINUE；三闸+深度帽 d<=3。归一化分母声明：P 分母=深度帽 d=3，Q 分母=三闸全过（3 闸），-C 分母=线预算机时·元 1.0，-R 分母=失控升级上限 1 次。心跳",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "vci-usrm/ure/pareto-swarm/",
+     "cost_acc": 0.6,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-PS1-PARETO-SWARM",
+     "note": "4 实例×12 拍前沿 8→95、相遇 4/4、verify_chain.py 复算 exit 0；EXP-027 首份喂数，判 CONVERGED（产出锚保留可引）。归一化分母声明：P 分母=12 拍计划拍数，Q 分母=相遇全过 4 对，",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "vci-usrm/ure/ipmp-first-run/",
+     "cost_acc": 0.3,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-IPMP-01",
+     "note": "CLAIM-01 ACCEPT，六相位全过，qrand@seq61 认证（gaming 种子取口先例）。归一化分母声明：P 分母=六相位全过 6，Q 分母=CLAIM-01 判词 ACCEPT 1 件，-C 分母=线预算机时·元 1.0，-",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": "vci-usrm/ure/session-pilot/",
+     "cost_acc": 0.2,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-SP1-SESSION-PILOT",
+     "note": "SESSION-STATE+NEXT-INSTRUCTION 囊实装（nonce/prev/qrand_anchor/consumed），nonce 消费即焚+断链拒执行；D-146 式事件驱动接力环已取代平台 cron。归一化分母声明：P",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "vci-usrm/fullcap/usrm-20260828/",
+     "cost_acc": 0.6,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-FC1-FULLCAP-DEMO",
+     "note": "792 件索引/双张量网/五维复核全过，cisvr-73 定为七线模板；示范使命达成判 CONVERGED，转 FD01-usrm INCR 常轨承接。归一化分母声明：P 分母=792 件全量，Q 分母=复核五维全过 5 维，-C 分母=线",
+     "parent": "GENESIS",
+     "status": "CONVERGED"
+    },
+    {
+     "anchor_out": null,
+     "cost_acc": 0.0,
+     "heartbeat": 79,
+     "inst_id": "S-KERNEL-LOOP",
+     "note": "系统面:系谱闭合元引擎,cron 23,53(D-153);首班 run 33210138363 GREEN/LOOP_CLOSED;义务机主权=只产proposals",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "ae6c6c1cff7c",
+     "cost_acc": 0.4,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-GEN1-GENEALOGY-ENGINE",
+     "note": "五机系谱闭合元引擎：判词回注义务台账自吞尾；RUN-01-E1全绿(3PASS/z3双UNSAT/确定性两跑)；心跳口径=本线叙事链seq，联邦ledger seq候fleet-judge落链（cfts-02例）；归一化分母P/Q/R∈[0",
+     "parent": "GENESIS",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "vci-usrm/ure/formal-stack-01.md + ure/formal-stack-run-01/(manifest=285164e8ff917ca5)",
+     "cost_acc": 0.0,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-FS1-FORMAL-STACK",
+     "note": "FORMAL-STACK-01 v0.1 shadow; RUN-01-E1 全绿(replay12/12,cex FLAWED=sat/SOUND=unsat,contract84/84 diff=0); 心跳口径:本线叙事链seq计,联",
+     "parent": "PI-usrm-GEN1-GENEALOGY-ENGINE",
+     "status": "ACTIVE"
+    },
+    {
+     "anchor_out": "vci-usrm/ure/qksa-01.md + ure/qksa-run-01/(reg_hash=cd7a4ec446e6, PASS 3/3)",
+     "cost_acc": 0.0,
+     "heartbeat": 193,
+     "inst_id": "PI-usrm-QKSA-01",
+     "note": "QKSA-01 v0.1 shadow; 量子化知识底座嵌入+BASE-REG 8基座+自运算四算子+协同三协议; T5Q3三问征询发出(死线09-03); 心跳口径:line_seq=193,双轨提案候fleet-judge(信09§五)",
+     "parent": "PI-usrm-FS1-FORMAL-STACK",
+     "status": "ACTIVE"
+    }
+   ],
+   "instances_n": 30,
+   "projected_ts": "2026-08-28T22:50Z",
+   "reg_hash": "cd7a4ec446e6",
+   "source_path": "holo-ctx/INST-REG.json + BASE-REG.json"
+  },
+  "sitrep": {
+   "beacon": {
+    "ext_ok": [
+     "drand",
+     "nist",
+     "anu"
+    ],
+    "mode": "full",
+    "qrand16": "80e7a9a71badc730",
+    "seq": 64,
+    "stale_declaration": "锚镜像 seq=64 ts=2026-08-28T22:39:27Z; 落后投影基线(2026-08-29T03:10:00Z)约 4.5h ⇒ 按降级声明制标注为停滞窗口, 不作实时锚声称",
+    "ts": "2026-08-28T22:39:27Z"
+   },
+   "deadlines": [
+    {
+     "deadline": "2026-08-29T02:22Z",
+     "id": "EXP-017",
+     "overdue": true,
+     "owner": "—",
+     "state": "watching",
+     "title": "各线授权令回执(AUTH-USRM-01-ACK)"
+    },
+    {
+     "deadline": "2026-08-30T00:00Z",
+     "id": "EXP-034",
+     "overdue": false,
+     "owner": "cisvr司法",
+     "state": "open",
+     "title": "KERNEL-CLOSURE-01正本+kernel-loop元引擎首班实测GREEN"
+    },
+    {
+     "deadline": "2026-08-30T00:00Z",
+     "id": "EXP-037",
+     "overdue": false,
+     "owner": "cisvr司法",
+     "state": "open",
+     "title": "GENE-FUSION-01正本+kernel-loop第二乐章(P6交响/P7融合)首班实测GREEN"
+    },
+    {
+     "deadline": "2026-08-30T19:00:00Z(72h自post-54)",
+     "id": "EXP-005",
+     "overdue": false,
+     "owner": "—",
+     "state": "watching",
+     "title": "RFC-02 Q1/Q2/Q3/Q5/Q7 候 TOP5/qlv 回件"
+    },
+    {
+     "deadline": "2026-08-31T00:00Z",
+     "id": "EXP-015",
+     "overdue": false,
+     "owner": "—",
+     "state": "watching",
+     "title": "各线annex启用回声(hall/board.md已镜动员令)"
+    },
+    {
+     "deadline": "2026-08-31T00:00Z",
+     "id": "EXP-019",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "RFC-03 全员回件（七线:usrm/qgl/vinf/cfts/ucif2/qlv/qfa）"
+    },
+    {
+     "deadline": "2026-09-02T00:00Z",
+     "id": "EXP-016",
+     "overdue": false,
+     "owner": "—",
+     "state": "watching",
+     "title": "纠缠互证研讨参与(TH-ENTANGLE-01十开放问题认领)"
+    },
+    {
+     "deadline": "2026-09-02T00:00Z",
+     "id": "EXP-020",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "共识圈表决达成量子帕累托米田共识（机制栈方案）"
+    },
+    {
+     "deadline": "2026-09-02T00:00Z",
+     "id": "EXP-023",
+     "overdue": false,
+     "owner": "cfts主笔/cisvr收编",
+     "state": "watching",
+     "title": "SPEC-HOLO-01 v0.2 迭代（RFC-03 反馈收敛+OP-S1..S5 推进）"
+    },
+    {
+     "deadline": "2026-09-03T00:00Z",
+     "id": "EXP-031",
+     "overdue": false,
+     "owner": "cisvr+usrm",
+     "state": "open",
+     "title": "otp-swm pattern首轮gaming互证+升canonical申请"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-014",
+     "overdue": false,
+     "owner": "—",
+     "state": "armed",
+     "title": "T5Q3会话圈OTP全量抓取(SPEC-SESCAP-01)"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-018",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "AI_FULL_PAT 吊销/重置节奏（root警示:ai场调整期不宜久留）"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-028",
+     "overdue": false,
+     "owner": "cisvr+usrm",
+     "state": "open",
+     "title": "FULLCAP-DRIVE-01七线FULL指令件签发+usrm示范件回填"
+    },
+    {
+     "deadline": "2026-09-04T00:00Z",
+     "id": "EXP-035",
+     "overdue": false,
+     "owner": "全员(usrm/qfa/qgl/vinf/cfts/ucif2/qlv)",
+     "state": "open",
+     "title": "局全功能五机覆盖矩阵全员会签(TH-CLOSURE-01)"
+    },
+    {
+     "deadline": "2026-09-05T00:00Z",
+     "id": "EXP-021",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "历史FINDING复盘（FINDING of FINDING）"
+    },
+    {
+     "deadline": "2026-09-05T00:00Z",
+     "id": "EXP-027",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "open",
+     "title": "PARETO-DYN-01阈值族实测回填(ε=0.02/8-4-2-80%上限/3×淘汰)"
+    },
+    {
+     "deadline": "2026-09-05T00:00Z",
+     "id": "EXP-033",
+     "overdue": false,
+     "owner": "cisvr司法",
+     "state": "open",
+     "title": "GVM-01治理机形式定义收编为正本(三处表述机检diff=0)"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-022",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "watching",
+     "title": "执行完备性证明+T5Q3全员认证（含无碍≡全权等价证明）"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-024",
+     "overdue": false,
+     "owner": "usrm承建/cisvr验收",
+     "state": "watching",
+     "title": "usrm M1-M5 接入里程碑验收（判据先行钉死）"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-030",
+     "overdue": false,
+     "owner": "usrm承建/cisvr配面",
+     "state": "open",
+     "title": "lean沙箱不可装→场端lean-verify workflow径(usrm ATP工具链实测FINDING)"
+    },
+    {
+     "deadline": "2026-09-06T00:00Z",
+     "id": "EXP-036",
+     "overdue": false,
+     "owner": "cisvr司法+usrm文献线",
+     "state": "open",
+     "title": "因果链纪元断代带57条(seq<58)修复路径:重哈希侧链或宪制宣告断代"
+    },
+    {
+     "deadline": "2026-09-08T00:00Z",
+     "id": "EXP-029",
+     "overdue": false,
+     "owner": "cisvr",
+     "state": "open",
+     "title": "BACKGROUND-VOICE-01影子模式(蒸馏钩子/背景圈影子网/θ=8/τ标定)"
+    },
+    {
+     "deadline": "2026-09-15T00:00Z",
+     "id": "EXP-032",
+     "overdue": false,
+     "owner": "全员(分工见TRI-KERNEL-01§4.2)",
+     "state": "open",
+     "title": "北星逼近五判据(物理分离prover/commit-reveal机制级/QFK实现级核验/≥3方互锚收敛/E4联合实验)"
+    },
+    {
+     "deadline": "open",
+     "id": "EXP-006",
+     "overdue": false,
+     "owner": "—",
+     "state": "watching",
+     "title": "usrm USRM-PK 公钥胶囊+双通道指纹验"
+    },
+    {
+     "deadline": "open(field-router v1.4 自动收割)",
+     "id": "EXP-002",
+     "overdue": false,
+     "owner": "—",
+     "state": "watching",
+     "title": "qlv 积压九件全量推进 qlv-pub 公面"
+    }
+   ],
+   "instances_by_status": {
+    "ACTIVE": 15,
+    "CONVERGED": 14,
+    "QUEUED": 1
+   },
+   "kernel_loop": {
+    "certs": [
+     {
+      "name": "ledger-chain-eras",
+      "pass": true
+     },
+     {
+      "name": "expect-evidence-anchors",
+      "pass": true
+     },
+     {
+      "name": "fleet-state-structural",
+      "pass": true
+     }
+    ],
+    "counts": {
+     "ledger_tip_seq": 82,
+     "open": 11,
+     "overdue": 0,
+     "solved": 7
+    },
+    "evolution": [
+     "open:9→11",
+     "ledger_tip_seq:78→82"
+    ],
+    "loop_verdict": "LOOP_CLOSED"
+   },
+   "line_cards": [
+    {
+     "counts": {
+      "active": 10,
+      "findings_open": 5,
+      "instances": 16,
+      "ledger_tip_seq": 65
+     },
+     "frontier": [
+      "S-FLEET-JUDGE",
+      "PI-cisvr-M1-OTP-SWM"
+     ],
+     "organ": "fleet-judge",
+     "ts": "2026-08-28T19:15:21Z",
+     "verdict": "FRONTIER_SET"
+    },
+    {
+     "certs_pass": true,
+     "counts": {
+      "ledger_tip_seq": 82,
+      "open": 11,
+      "overdue": 0,
+      "solved": 7
+     },
+     "organ": "kernel-loop",
+     "run": "33212008147",
+     "ts": "2026-08-28T21:19:00Z",
+     "verdict": "LOOP_CLOSED"
+    },
+    {
+     "counts": {
+      "session_circle_present": 5
+     },
+     "organ": "circle-refresh",
+     "ts": "2026-08-28T14:19:24Z",
+     "verdict": "收割 20 件/班"
+    }
+   ],
+   "projected_ts": "2026-08-29T03:10:00Z",
+   "source_path": "holo-ctx/FLEET-STATE.json + KERNEL-STATE.json + beacon-mirror.json + circle-state.json + EXPECT-REG-01.json"
+  }
+ },
+ "version": "holo-v0.1"
+}
