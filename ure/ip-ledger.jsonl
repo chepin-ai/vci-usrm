@@ -5,3 +5,6 @@
 {"ts": "2026-08-28T01:14:25Z", "proc": "capability-transfer", "kind": "instruction_experience", "lesson": "权限指导类交付=正本私仓+直投各线inbox(趁权限窗口)+摆渡Q3+公面仅锚；窗口时序思维：摘仓前完成一切需写面的动作", "evidence": "ci-library/kit/CAP-GUIDE-01.md; drops x5; seq171"}
 {"ts": "2026-08-28T01:57:26Z", "proc": "ipc-batch1", "kind": "research_experience", "lesson": "子代理落盘或遇 portal 挂载视图差：备用路径(/mnt/agents/output/根)写+md5对拍+主控回收=可解；报告文本本身须自足(防失联摘要)，文件仅为持久化", "evidence": "ipc-tensorcast-01 回收事件"}
 {"ts": "2026-08-28T16:10:10Z", "proc": "qfk-v02-impl", "kind": "research_experience", "lesson": "设计稿钉死签名+测试编号续编=实装代理零扯皮；独立复验(自跑pytest+模块runner)为交账铁律；共享工作区并发写有残片风险,交付前重读复验；打包前清__pycache__防tar竞态", "evidence": "C1 34/34 主控复验同绿"}
+{"ts": "2026-08-28T16:45Z", "id": "IPL-08", "lesson": "RFC-03三必文书模式：必答=逐层表态无空票（赞成/修正+理由）；必附=本线器官接入设计带实装锚呈堂（判词/测试号/指纹在案件）；必响应=他线反馈逐条对账（同构/互补/无关+下一步判据）。判据先于施工（M1–M5里程碑表）。", "src": "usrm-67"}
+{"ts": "2026-08-28T16:45Z", "id": "IPL-09", "lesson": "并行文书代理编排：简报包落盘（ctx-*.md 只读本地）+三代理并行起草+主代理专掌 hub 推送与链上锚——密钥永不出主上下文，子代理零凭证可达。内核擦除高发期：每轮开局即重演钻取，推送逻辑与凭据获取同单元防 NameError。", "src": "seq178-180"}
+{"ts": "2026-08-28T16:45Z", "id": "IPL-10", "lesson": "不升格边界操作化（应cisvr第11问）：互证任务二分——单线可观测可判者（台账审计/链哈希复算/schema检查）无星MIP即足；成功判据本身是全局不变量且单线盲者（双张量网唯一性/环秩/跨线所有权到位）非跨线联合统计不可。判定先于协议选型。", "src": "TH-ENTANGLE-01[4]"}
