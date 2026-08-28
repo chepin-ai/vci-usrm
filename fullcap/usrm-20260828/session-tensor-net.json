@@ -1,0 +1,287 @@
+{
+ "net": "session-tensor-net/v1",
+ "line": "usrm",
+ "generated_at": "2026-08-28T17:30:00Z",
+ "generation_rules": {
+  "canon": "json.dumps(entry去hash/hmac, ensure_ascii=False, sort_keys=True)",
+  "chain_rule": "hash = sha256(prev.hash + canon)；seq42-86 取全 64hex，seq87 起取 [:12]（截断点 seq87=27d7780c6767）",
+  "node_rule": "节点=会话段/叙事链段（seq 区间锚+边界 hash+ts 区间）；仓态节点=三仓当前树快照（名录锚）",
+  "edge_rule": "边=链式 prev 关系（type=chain_prev，含创世锚→seq42 与跨段衔接）+跨仓引用关系（type=cross_repo_ref）",
+  "digest_rule": "state_digest = sha256(json.dumps({nodes,edges}去digest字段, ensure_ascii=False, sort_keys=True)) 全 64hex"
+ },
+ "nodes": [
+  {
+   "id": "genesis-anchor",
+   "kind": "chain_anchor",
+   "seq": 41,
+   "hash": "bae267eb6b20dd0751971de7beff6d5cb9d68f453193ade23d378d8b118ba41e",
+   "note": "seq1-41 已全渡并焚毁覆写(D7-R1 焚毁律+PII 立法#13：旧件含手机号明文,清除);链连续性自此锚起",
+   "coverage": "seq1-41（已全渡焚毁，仅存锚）"
+  },
+  {
+   "id": "wave2-archive",
+   "kind": "session_segment",
+   "coverage": "2026-08-15→2026-08-27",
+   "anchors": {
+    "manifest": "ci-library/archive/lines-full-20260828/（12件+MANIFEST）",
+    "chain_head_sha256": "dbe692de11185c2f76b89bc2e8cb3b633997425eb1ff5758d240cf728355397c",
+    "chain_verify": true,
+    "tensor_digest": "8d0018cb0c6f933908436c0b6b3679044d042a175947523aeba3ebfe890c3616",
+    "rounds": {
+     "usrm": "5件(36R/30R/29R/128R/7R)",
+     "cisvr": "6R",
+     "ucif2": "48R",
+     "vinf": "90R",
+     "qgl": "42R",
+     "cfts": "15R",
+     "lgt": "37R",
+     "gcml": "100R评论"
+    }
+   },
+   "note": "wave-2 八线全量摘取档案层"
+  },
+  {
+   "id": "seq42-43",
+   "kind": "narrative_segment",
+   "seq_range": [
+    42,
+    43
+   ],
+   "entry_count": 2,
+   "ts_range": [
+    "2026-08-21T20:53:53.126551+00:00",
+    "2026-08-21T20:53:53.126885+00:00"
+   ],
+   "first_hash": "04de9884f0a306d9c547c805f12005515afb508cd84179dcdb30a3fb36b1b419",
+   "last_hash": "3b79ed39d79da585be9831ea848f7f294b54bac227ce567b0c909ab17e6590a5",
+   "hash_format": "64hex"
+  },
+  {
+   "id": "seq44-56",
+   "kind": "narrative_segment",
+   "seq_range": [
+    44,
+    56
+   ],
+   "entry_count": 13,
+   "ts_range": [
+    "2026-08-22T20:27:18.909758+00:00",
+    "2026-08-22T23:16:38.577507+00:00"
+   ],
+   "first_hash": "f217bd9f0dec605a95901c39bf1c4532e6dcd266aee4956470ebf825f3022009",
+   "last_hash": "a500752701c9628f6383ff88b49e66b25eacf518a992527e9f70c2a799e06642",
+   "hash_format": "64hex"
+  },
+  {
+   "id": "seq57-86",
+   "kind": "narrative_segment",
+   "seq_range": [
+    57,
+    86
+   ],
+   "entry_count": 30,
+   "ts_range": [
+    "2026-08-23T00:15:43.766315+00:00",
+    "2026-08-23T23:40:13Z"
+   ],
+   "first_hash": "9bbd20b720ca0592ba69c7b5abea7af624a2b9bd9e3a6c8e2a544108f1867704",
+   "last_hash": "a27fdb59338a7bfdaea0d10fb80ad434eacc82942d1c05b970e53648ab2bbc22",
+   "hash_format": "64hex"
+  },
+  {
+   "id": "seq87-118",
+   "kind": "narrative_segment",
+   "seq_range": [
+    87,
+    118
+   ],
+   "entry_count": 33,
+   "ts_range": [
+    "2026-08-24T00:04:51Z",
+    "2026-08-24T16:29:20Z"
+   ],
+   "first_hash": "27d7780c6767",
+   "last_hash": "b1fa6c570342",
+   "hash_format": "mixed(64hex→12hex@seq87)"
+  },
+  {
+   "id": "seq119-138",
+   "kind": "narrative_segment",
+   "seq_range": [
+    119,
+    138
+   ],
+   "entry_count": 20,
+   "ts_range": [
+    "2026-08-25T00:40:46Z",
+    "2026-08-25T23:57:23Z"
+   ],
+   "first_hash": "86e3d4dcb9f7",
+   "last_hash": "046d1ee97036",
+   "hash_format": "12hex"
+  },
+  {
+   "id": "seq139-151",
+   "kind": "narrative_segment",
+   "seq_range": [
+    139,
+    151
+   ],
+   "entry_count": 13,
+   "ts_range": [
+    "2026-08-26T02:15:22Z",
+    "2026-08-26T14:20:45Z"
+   ],
+   "first_hash": "250dd5b20bc8",
+   "last_hash": "eaf2c7807368",
+   "hash_format": "12hex"
+  },
+  {
+   "id": "seq152-170",
+   "kind": "narrative_segment",
+   "seq_range": [
+    152,
+    170
+   ],
+   "entry_count": 19,
+   "ts_range": [
+    "2026-08-27T09:39:22Z",
+    "2026-08-27T23:29:07Z"
+   ],
+   "first_hash": "917fbf48d748",
+   "last_hash": "c1577b1236e2",
+   "hash_format": "12hex"
+  },
+  {
+   "id": "seq171-180",
+   "kind": "narrative_segment",
+   "seq_range": [
+    171,
+    180
+   ],
+   "entry_count": 10,
+   "ts_range": [
+    "2026-08-28T01:14:25Z",
+    "2026-08-28T16:45:00Z"
+   ],
+   "first_hash": "ab39c23a4816",
+   "last_hash": "229f9e1c953b",
+   "hash_format": "12hex"
+  },
+  {
+   "id": "repo-usrm-repo",
+   "kind": "repo_state",
+   "anchors": {
+    "tree": "wave3/ls-usrm-repo.json",
+    "root_entries": 409,
+    "dirs": 19
+   },
+   "note": "usrm-repo 当前树（根名录 409 项；bundle 前史锚 ci-library/archive/usrm-repo-full-20260828.bundle HEAD dcf53a16）"
+  },
+  {
+   "id": "repo-vci-usrm",
+   "kind": "repo_state",
+   "anchors": {
+    "tree": "wave3/ls-vci-usrm.json",
+    "root_entries": 16
+   },
+   "note": "vci-usrm 当前树（QF-OS/bridge/guard/inbox/outbox/ure/weave/workers 等）"
+  },
+  {
+   "id": "repo-ci-library",
+   "kind": "repo_state",
+   "anchors": {
+    "tree": "wave3/ls-ci-library.json",
+    "root_entries": 11
+   },
+   "note": "ci-library 当前树（archive/bridge/ci-control/kit/lines/scripts/theory/weave 等）"
+  }
+ ],
+ "edges": [
+  {
+   "from": "genesis-anchor",
+   "to": "seq42-43",
+   "type": "chain_prev",
+   "evidence": "entries[0].prev == chain_anchor.hash；entries[0].hash=sha256(anchor.hash+canon) 复算一致"
+  },
+  {
+   "from": "seq42-43",
+   "to": "seq44-56",
+   "type": "chain_prev",
+   "evidence": "seq44.prev == seq43 末条 hash（3b79ed39d79d…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "seq44-56",
+   "to": "seq57-86",
+   "type": "chain_prev",
+   "evidence": "seq57.prev == seq56 末条 hash（a500752701c9…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "seq57-86",
+   "to": "seq87-118",
+   "type": "chain_prev",
+   "evidence": "seq87.prev == seq86 末条 hash（a27fdb59338a…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "seq87-118",
+   "to": "seq119-138",
+   "type": "chain_prev",
+   "evidence": "seq119.prev == seq118 末条 hash（b1fa6c570342…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "seq119-138",
+   "to": "seq139-151",
+   "type": "chain_prev",
+   "evidence": "seq139.prev == seq138 末条 hash（046d1ee97036…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "seq139-151",
+   "to": "seq152-170",
+   "type": "chain_prev",
+   "evidence": "seq152.prev == seq151 末条 hash（eaf2c7807368…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "seq152-170",
+   "to": "seq171-180",
+   "type": "chain_prev",
+   "evidence": "seq171.prev == seq170 末条 hash（c1577b1236e2…）；全链 87→180 复算 95/95 通过"
+  },
+  {
+   "from": "wave2-archive",
+   "to": "genesis-anchor",
+   "type": "chain_prev",
+   "evidence": "档案覆盖 08-15→08-27 与叙事链 08-21 起相叠；08-15→08-21 前史仅 bundle 层（usrm-repo-full-20260828.bundle HEAD dcf53a16）"
+  },
+  {
+   "from": "seq42-43",
+   "to": "repo-vci-usrm",
+   "type": "cross_repo_ref",
+   "evidence": "T171 包投 vci-inbox/disc/；outbox 公面=ure/narrative_outbox.json"
+  },
+  {
+   "from": "seq57-86",
+   "to": "repo-ci-library",
+   "type": "cross_repo_ref",
+   "evidence": "seq86 KIT.USRM01.PUB → ci-library/kit/"
+  },
+  {
+   "from": "seq171-180",
+   "to": "repo-ci-library",
+   "type": "cross_repo_ref",
+   "evidence": "seq171 CAP-GUIDE-01 五仓直投=ci-library/kit/CAP-GUIDE-01.md；rfc03 帖 → ci-inbox/讨论室/threads/（seq178-180 ref 在链）"
+  },
+  {
+   "from": "seq171-180",
+   "to": "repo-usrm-repo",
+   "type": "cross_repo_ref",
+   "evidence": "seq174 摘前抢救 usrm-repo 鲜 bundle；根级 T* 工件与 ls-usrm-repo 名录互证"
+  },
+  {
+   "from": "wave2-archive",
+   "to": "repo-ci-library",
+   "type": "cross_repo_ref",
+   "evidence": "archive/lines-full-20260828/ 落 ci-library；MANIFEST 12件"
+  }
+ ],
+ "state_digest": "d9a5162ce805043f7d27137305f6299d03587f7618439215b0422b5ab42ffefe"
+}
