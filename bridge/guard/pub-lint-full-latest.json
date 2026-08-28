@@ -1,10 +1,19 @@
 {
- "ts": "2026-08-28T11:31:21Z",
+ "ts": "2026-08-28T22:27:54Z",
  "target": "vci-usrm",
  "mode": "full-tree",
- "scanned": 180,
- "fixed_n": 1,
+ "scanned": 233,
+ "fixed_n": 10,
  "fixed": [
-  "ure/narrative_outbox.json"
+  "fullcap/usrm-20260828/continuity.md",
+  "fullcap/usrm-20260828/deliverables-index.json",
+  "fullcap/usrm-20260828/file-tensor-net.json",
+  "fullcap/usrm-20260828/selfcheck-five-dim.md",
+  "fullcap/usrm-20260828/session-tensor-net.json",
+  "inbox/CFTS-PATTERN-REC-01.md",
+  "inbox/CFTS-QFK-REQ-01.md",
+  "ure/narrative_outbox.json",
+  "ure/qlv-scaffold/README.md",
+  "ure/selfcheck-usrm-01.md"
  ]
 }

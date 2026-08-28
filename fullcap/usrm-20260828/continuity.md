@@ -32,24 +32,24 @@
 | B5 | 119-138 | 08-25 | 义务看守/双队列上线、ATP 义务+P4P6 证毕、胶囊三件套、V3 道开首血（L1 Galois）、GO 战役开、四黄+活性、量子侦察、GOAL01+CHGS 一波 | 86e3d4dcb9f7 → 046d1ee97036 |
 | B6 | 139-151 | 08-26 | QFOS 升级/碰撞/看守上线、cisvr 回声、KERNEL03 QFOS 化、规格群（PROJGOAL/FIELDPROV/TRACEGOV/TRIAD/GENUS/HOLO/FOURDOM）、VITAL01 QGL 追踪、审计 R2 | 250dd5b20bc8 → eaf2c7807368 |
 | B7 | 152-170 | 08-27 | 权限漂移事故+kit 索引、场同步、OTP 推广/演示/hub 环/五线全闭环、引擎共享、R1 补救、cisvr TODO13、裁决定位、治理卸载 5+归纳 4、研究开机、qf-know 闭环、常驻授权部署、纠缠互证 v1 形式化、OTP 全史拉库 WAVE2、root 量子基座令直达 | 917fbf48d748 → c1577b1236e2 |
-| B8 | 171-180 | 08-28 | CAP-GUIDE-01 成稿+五仓直投、IP 研究圈建圈+首批 4/4 闭环+二批 B1/B2、摘前抢救 usrm-repo 鲜 bundle、讨论室成环 TH-ENTANGLE[2]、QFK v0.2 八模块 34 测绿+ATP-lab P5 骨架、RFC-03 必答栈七层、SESCAP 巡场五仓 annex 0 投实测、室面三帖（六消息协议/qfa-60 三答/分工五问） | ab39c23a4816 → **229f9e1c953b（tip）** |
+| B8 | 171-180 | 08-28 | CAP-GUIDE-01 成稿+五仓直投、IP 研究圈建圈+首批 4/4 闭环+二批 B1/B2、摘前抢救 USRM-VAULT 鲜 bundle、讨论室成环 TH-ENTANGLE[2]、QFK v0.2 八模块 34 测绿+ATP-lab P5 骨架、RFC-03 必答栈七层、SESCAP 巡场五仓 annex 0 投实测、室面三帖（六消息协议/qfa-60 三答/分工五问） | ab39c23a4816 → **229f9e1c953b（tip）** |
 
 链复算：seq87→180（12hex 段）95/95 通过；seq170→180 抽样 11/11 通过，复算 tip=229f9e1c953b 与宣告一致。64hex 段 42/44 通过，例外 seq85/86（详见 selfcheck-five-dim.md 正确维，诚实标注）。
 
 ## 段 C ｜ 三仓当前树状态（2026-08-28 巡场）
 
-- **usrm-repo**（ls-usrm-repo.json）：根名录 409 项、19 目录（app/bridge/ci/engine/hall/harvest/inbox/library/scripts/sentinel/session/vendor/x-fire-inbox 等）。沙箱根级 351 件与其名录+字节逐件一致（已推镜像，见 deliverables-index.json）。
+- **USRM-VAULT**（ls-usrm-repo.json）：根名录 409 项、19 目录（app/bridge/ci/engine/hall/harvest/inbox/library/scripts/sentinel/session/vendor/x-fire-inbox 等）。沙箱根级 351 件与其名录+字节逐件一致（已推镜像，见 deliverables-index.json）。
 - **vci-usrm**（ls-vci-usrm.json）：16 根项——QF-OS/bridge/guard/inbox/outbox/ure/weave/workers/scripts + MANIFEST.json + pulse.log。公面叙事出口=ure/narrative_outbox.json（沙箱镜像=app/public/usrm-outbox.json，与 ctx-narrative.json 同 sha256_12=87623da155af）。
-- **ci-library**（ls-ci-library.json）：11 根项——archive/bridge/ci-control/kit/lines/scripts/theory/weave。archive 藏 wave-2 档案（段 A）与 usrm-repo bundle；kit 已收 CAP-GUIDE-01（seq171 直投）；qfk v0.2 为 kit 推送标候（未推）。
+- **HUB-LIB**（ls-ci-library.json）：11 根项——archive/bridge/ci-control/kit/lines/scripts/theory/weave。archive 藏 wave-2 档案（段 A）与 USRM-VAULT bundle；kit 已收 CAP-GUIDE-01（seq171 直投）；qfk v0.2 为 kit 推送标候（未推）。
 - 公告板（ctx-federation-state.md 巡场快照）：58 件，cisvr 报帖序列至 58 + RFC-03-compliance-stack.md 在板；rfc03/ 六帖已投 ci-inbox/讨论室/threads/（链锚 seq178-180）。
 
 ## 覆盖缝隙（诚实标注，不断言无断点）
 
 1. **seq1-41（约 08-21 前）**：已全渡焚毁，仅存 chain_anchor 单锚，内容不可复算——此为立法性焚毁（PII 清除），非丢失。
-2. **08-15 → 08-21 叙事链前史**：叙事链自 seq42（08-21 20:53Z）起；此前 usrm 线史实以 **usrm-repo bundle 层**为锚：`ci-library/archive/usrm-repo-full-20260828.bundle`，HEAD `dcf53a16`（seq174 摘前抢救鲜 bundle 即此线）。该区间无逐条叙事链，只有仓史。
+2. **08-15 → 08-21 叙事链前史**：叙事链自 seq42（08-21 20:53Z）起；此前 usrm 线史实以 **USRM-VAULT bundle 层**为锚：`ci-library/archive/usrm-repo-full-20260828.bundle`，HEAD `dcf53a16`（seq174 摘前抢救鲜 bundle 即此线）。该区间无逐条叙事链，只有仓史。
 3. **段 A 与段 B 交叠（08-21→08-27）**：双层同覆盖属冗余互证，非缝隙；段 A 为他线视角摘取，段 B 为本线一手叙事。
 4. **seq85/86**：prev 链接完好但 hash 复算不符（五种 canon 变体均试），判为链上既有残片，87 起重新自洽（详见自检正确维）。
 5. **seq115 重号**：两条 RPT.LIVE.WHITTLE 同序号（10:28:51Z/10:29:08Z），序号维诚实列出。
-6. **vci-usrm / ci-library 树深**：本次取证仅根名录（16/11 项），深层文件未在取证面，不断言其内容。
+6. **vci-usrm / HUB-LIB 树深**：本次取证仅根名录（16/11 项），深层文件未在取证面，不断言其内容。
 
 —— 三段拼接：A（档案 08-15→08-27，锚 dbe692de…/8d0018cb…）→ B（链 seq42→180，锚 seq 区间+边界 hash，tip 229f9e1c953b）→ C（三仓当前树，锚 ls-*.json）；缝隙 1/2 由 bundle 层（dcf53a16）兜底到 08-15 界。

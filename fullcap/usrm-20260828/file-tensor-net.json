@@ -219,7 +219,7 @@
     "T151_dashboard_archaeology.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -247,7 +247,7 @@
     "T167_lobby_post.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -275,7 +275,7 @@
     "SPEC-STRAT-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -429,7 +429,7 @@
     "T169_pw_5_final.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -471,7 +471,7 @@
     "SPEC-GOAL-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -695,7 +695,7 @@
     "T170_lobby_post.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -709,7 +709,7 @@
     "SPEC-TRACE-GOV-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -737,7 +737,7 @@
     "T173_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -793,7 +793,7 @@
     "SPEC-STRAT-02.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -849,7 +849,7 @@
     "T153_qpu_job.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -947,7 +947,7 @@
     "T166_login_form.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -961,7 +961,7 @@
     "T119_rereview_v12.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -989,7 +989,7 @@
     "SPEC-WALL-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -1087,7 +1087,7 @@
     "T177_qr_crop.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1428,7 +1428,7 @@
     "app/public/T163_body_proof.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）",
+    "USRM-VAULT（会话工件/数据件）",
     "公面站点静态托管（仪表盘数据面）"
    ],
    "push_status": [
@@ -1472,7 +1472,7 @@
     "T174_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1570,7 +1570,7 @@
     "T153b_harvest.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1642,7 +1642,7 @@
     "app/public/fieldkit/T176_ci_autonomy.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+    "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
     "公面 fieldkit 静态托管（站点）"
    ],
    "push_status": [
@@ -1658,7 +1658,7 @@
     "T118_rereview_v11.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1700,7 +1700,7 @@
     "T177_qr3.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1728,7 +1728,7 @@
     "SPEC-KERNEL-03.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -1812,7 +1812,7 @@
     "T177_qr.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1840,7 +1840,7 @@
     "T167_atlas.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1940,7 +1940,7 @@
     "T178_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -1968,7 +1968,7 @@
     "T163_dm_003.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2041,7 +2041,7 @@
     "SPEC-PARETO-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -2139,7 +2139,7 @@
     "T139_ci_bridge.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2153,7 +2153,7 @@
     "T153_submit_qpu.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2209,7 +2209,7 @@
     "T165_dm_005.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2265,7 +2265,7 @@
     "T169_verify_ui.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2366,7 +2366,7 @@
     "T168_otp.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2380,7 +2380,7 @@
     "SPEC-KERNEL-02.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -2394,7 +2394,7 @@
     "SPEC-FOURDOM-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -2436,7 +2436,7 @@
     "SPEC-LOOP-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -2464,7 +2464,7 @@
     "T153_poll.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2649,7 +2649,7 @@
     "T169_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2691,7 +2691,7 @@
     "SPEC-DREAM-02.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -2719,7 +2719,7 @@
     "T155_rings128_smoke.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2775,7 +2775,7 @@
     "T93_seg_start_times.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2873,7 +2873,7 @@
     "T163_chsh_rings.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2887,7 +2887,7 @@
     "T177_qr_full.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2915,7 +2915,7 @@
     "SPEC-CONV-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -2957,7 +2957,7 @@
     "T170_capture_endpoint.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2985,7 +2985,7 @@
     "T162_nine_answers.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -2999,7 +2999,7 @@
     "SPEC-FIELD-PROV-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -3013,7 +3013,7 @@
     "T175_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3041,7 +3041,7 @@
     "T164_temporal_anchor_engine.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3126,7 +3126,7 @@
     "app/public/fieldkit/LOCAL_SEQ71-74.json"
    ],
    "github_targets": [
-    "公面 fieldkit 镜像；正本候 usrm-repo",
+    "公面 fieldkit 镜像；正本候 USRM-VAULT",
     "公面 fieldkit 静态托管（站点）"
    ],
    "push_status": [
@@ -3438,7 +3438,7 @@
     "T177_qr_live.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3452,7 +3452,7 @@
     "T152_quantum_rings_smoke.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3466,7 +3466,7 @@
     "T173_D7_review.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3495,7 +3495,7 @@
     "app/public/fieldkit/BACKFILL_SEQ42-69.json"
    ],
    "github_targets": [
-    "公面 fieldkit 镜像；正本候 usrm-repo",
+    "公面 fieldkit 镜像；正本候 USRM-VAULT",
     "公面 fieldkit 静态托管（站点）"
    ],
    "push_status": [
@@ -3524,7 +3524,7 @@
     "T155_selftest_curve.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3566,7 +3566,7 @@
     "T168_gates.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3594,7 +3594,7 @@
     "T153b_wall_jobs.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3608,7 +3608,7 @@
     "atp-lab/p5_phase_ignition.smt2"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（ATP 证明件）"
+    "ci-library/theory/ 或 USRM-VAULT（ATP 证明件）"
    ],
    "push_status": [
     "候"
@@ -3650,7 +3650,7 @@
     "SPEC-NMUST-04.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -3807,7 +3807,7 @@
     "T169_lobby_fixed.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3835,7 +3835,7 @@
     "T167_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3849,7 +3849,7 @@
     "T169_sendcode.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -3891,7 +3891,7 @@
     "T155_rings128.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4059,7 +4059,7 @@
     "SPEC-TRIAD-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -4101,7 +4101,7 @@
     "T124_beats.jsonl"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4213,7 +4213,7 @@
     "T168b_knock.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4269,7 +4269,7 @@
     "T153_resubmit_raw.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4423,7 +4423,7 @@
     "T153b_ms_wall.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4849,7 +4849,7 @@
     "T177_qr_pure.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4919,7 +4919,7 @@
     "T170_sendcode_capture.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4933,7 +4933,7 @@
     "T153_mip_re_research_brief.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -4989,7 +4989,7 @@
     "T153b_run.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5087,7 +5087,7 @@
     "T177_qr_status.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5353,7 +5353,7 @@
     "T152_quantum_rings.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5439,7 +5439,7 @@
     "T170_sendcode.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5467,7 +5467,7 @@
     "T152_probe.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5779,7 +5779,7 @@
     "T166_dashboard_verify.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5821,7 +5821,7 @@
     "T169_pw_2_filled.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5877,7 +5877,7 @@
     "T169_lobby_fixed2.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5933,7 +5933,7 @@
     "T170_verifycode.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -5975,7 +5975,7 @@
     "SPEC-RANDMIP-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -5989,7 +5989,7 @@
     "T177_qr2.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -6325,7 +6325,7 @@
     "atp-lab/p5_phase_ignition.lean"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（ATP 证明件）"
+    "ci-library/theory/ 或 USRM-VAULT（ATP 证明件）"
    ],
    "push_status": [
     "候"
@@ -6493,7 +6493,7 @@
     "T170_report.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -6577,7 +6577,7 @@
     "T170_otp_clicked.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -6619,7 +6619,7 @@
     "SPEC-KERNEL-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -6664,7 +6664,7 @@
     "T153_run_sim.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -6678,7 +6678,7 @@
     "SPEC-DIAL-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -6751,7 +6751,7 @@
     "T161_lobby_post.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -6793,7 +6793,7 @@
     "T164_dm_004.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -6821,7 +6821,7 @@
     "SPEC-UNIFY-02.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -6952,7 +6952,7 @@
     "T164_lobby_post.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7092,7 +7092,7 @@
     "atp-lab/trial-card.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（ATP 证明件）"
+    "ci-library/theory/ 或 USRM-VAULT（ATP 证明件）"
    ],
    "push_status": [
     "候"
@@ -7291,7 +7291,7 @@
     "SPEC-NMUST-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -7404,7 +7404,7 @@
     "SPEC-UNIFY-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -7432,7 +7432,7 @@
     "T153b_sub_wall.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7460,7 +7460,7 @@
     "SPEC-GENUS-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -7502,7 +7502,7 @@
     "T163_lobby_post.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7558,7 +7558,7 @@
     "T168_path2.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7785,7 +7785,7 @@
     "T170_capture.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7827,7 +7827,7 @@
     "T167_dm_006.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7967,7 +7967,7 @@
     "T161_visibility_vci.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -7981,7 +7981,7 @@
     "SPEC-NMUST-02.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -8055,7 +8055,7 @@
     "app/public/fieldkit/T141_outbox.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+    "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
     "公面 fieldkit 静态托管（站点）"
    ],
    "push_status": [
@@ -8072,7 +8072,7 @@
     "app/public/fieldkit/T178_campaign_plan.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+    "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
     "公面 fieldkit 静态托管（站点）"
    ],
    "push_status": [
@@ -8102,7 +8102,7 @@
     "T126_rel_net.json.bak"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8130,7 +8130,7 @@
     "SPEC-HOLO-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -8158,7 +8158,7 @@
     "SPEC-REVP-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -8172,7 +8172,7 @@
     "T169_pw_3_after_send.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8186,7 +8186,7 @@
     "T170_otp_instant.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8256,7 +8256,7 @@
     "T171_otp_cios.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8383,7 +8383,7 @@
     "T161_dm_reply_002.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8411,7 +8411,7 @@
     "T170_sendcode_last.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8425,7 +8425,7 @@
     "T170_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8481,7 +8481,7 @@
     "T97_rereview_v3.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8492,7 +8492,7 @@
    "kind": "deliverable_content",
    "bytes": 18292283,
    "instances": [
-    "usrm-repo.bundle"
+    "USRM-VAULT.bundle"
    ],
    "github_targets": [
     "候"
@@ -8593,7 +8593,7 @@
     "T168_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -8680,7 +8680,7 @@
     "CONSOL-PLAN.md"
    ],
    "github_targets": [
-    "usrm-repo（整合计划）"
+    "USRM-VAULT（整合计划）"
    ],
    "push_status": [
     "候"
@@ -8722,7 +8722,7 @@
     "T163_body_boundary_hologram.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9100,7 +9100,7 @@
     "T167_overview.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9114,7 +9114,7 @@
     "SPEC-PROJ-GOAL-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -9170,7 +9170,7 @@
     "T169_pw_1_login_dialog.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9408,7 +9408,7 @@
     "SPEC-DUAL-01.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -9465,7 +9465,7 @@
     "T177_qr3.log"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9633,7 +9633,7 @@
     "T153_qpu_raw_result.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9774,7 +9774,7 @@
     "app/public/fieldkit/T175_capsules_usrm.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+    "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
     "公面 fieldkit 静态托管（站点）"
    ],
    "push_status": [
@@ -9790,7 +9790,7 @@
     "T177_qr_session.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9804,7 +9804,7 @@
     "T170_verify_last.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -9874,7 +9874,7 @@
     "SESSION_PROTOCOL.md"
    ],
    "github_targets": [
-    "usrm-repo（会话协议）"
+    "USRM-VAULT（会话协议）"
    ],
    "push_status": [
     "候"
@@ -9961,7 +9961,7 @@
     "T177_qr_login.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10087,7 +10087,7 @@
     "T169_e2e_sendcode.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10101,7 +10101,7 @@
     "T169_otp_sendcode.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10115,7 +10115,7 @@
     "T153b_sub_ms.py"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10171,7 +10171,7 @@
     "SPEC-NMUST-03.md"
    ],
    "github_targets": [
-    "ci-library/theory/ 或 usrm-repo（规格正本）"
+    "ci-library/theory/ 或 USRM-VAULT（规格正本）"
    ],
    "push_status": [
     "候"
@@ -10311,7 +10311,7 @@
     "T171_bundle.tar.gz"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10339,7 +10339,7 @@
     "T149_user_voice_seen.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10423,7 +10423,7 @@
     "T168_path.png"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10493,7 +10493,7 @@
     "T162_lobby_post.md"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10507,7 +10507,7 @@
     "T163_zkp_schnorr.json"
    ],
    "github_targets": [
-    "usrm-repo（会话工件/数据件）"
+    "USRM-VAULT（会话工件/数据件）"
    ],
    "push_status": [
     "候"
@@ -10642,12 +10642,12 @@
   {
    "id": "ext:ci-inbox/讨论室/threads/",
    "kind": "external_target",
-   "note": "ci-inbox 公告板讨论串（rfc03 六帖已投）"
+   "note": "HUB-MAIL 公告板讨论串（rfc03 六帖已投）"
   },
   {
    "id": "ext:ci-inbox/公告板",
    "kind": "external_target",
-   "note": "ci-inbox 公告板帖（20260827 波日期件）"
+   "note": "HUB-MAIL 公告板帖（20260827 波日期件）"
   },
   {
    "id": "ext:ci-library/kit/CAP-GUIDE-01.md",
@@ -10662,7 +10662,7 @@
   {
    "id": "ext:usrm-repo/*",
    "kind": "external_target",
-   "note": "usrm-repo 已推镜像 351 件（名录+字节一致，聚合边）"
+   "note": "USRM-VAULT 已推镜像 351 件（名录+字节一致，聚合边）"
   },
   {
    "id": "ext:ci-library/kit/(候)",

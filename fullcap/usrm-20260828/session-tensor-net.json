@@ -176,7 +176,7 @@
     "root_entries": 409,
     "dirs": 19
    },
-   "note": "usrm-repo 当前树（根名录 409 项；bundle 前史锚 ci-library/archive/usrm-repo-full-20260828.bundle HEAD dcf53a16）"
+   "note": "USRM-VAULT 当前树（根名录 409 项；bundle 前史锚 ci-library/archive/usrm-repo-full-20260828.bundle HEAD dcf53a16）"
   },
   {
    "id": "repo-vci-usrm",
@@ -194,7 +194,7 @@
     "tree": "wave3/ls-ci-library.json",
     "root_entries": 11
    },
-   "note": "ci-library 当前树（archive/bridge/ci-control/kit/lines/scripts/theory/weave 等）"
+   "note": "HUB-LIB 当前树（archive/bridge/ci-control/kit/lines/scripts/theory/weave 等）"
   }
  ],
  "edges": [
@@ -274,13 +274,13 @@
    "from": "seq171-180",
    "to": "repo-usrm-repo",
    "type": "cross_repo_ref",
-   "evidence": "seq174 摘前抢救 usrm-repo 鲜 bundle；根级 T* 工件与 ls-usrm-repo 名录互证"
+   "evidence": "seq174 摘前抢救 USRM-VAULT 鲜 bundle；根级 T* 工件与 ls-usrm-repo 名录互证"
   },
   {
    "from": "wave2-archive",
    "to": "repo-ci-library",
    "type": "cross_repo_ref",
-   "evidence": "archive/lines-full-20260828/ 落 ci-library；MANIFEST 12件"
+   "evidence": "archive/lines-full-20260828/ 落 HUB-LIB；MANIFEST 12件"
   }
  ],
  "state_digest": "d9a5162ce805043f7d27137305f6299d03587f7618439215b0422b5ab42ffefe"

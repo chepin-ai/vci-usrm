@@ -8,10 +8,10 @@
 
 **断点清单（诚实标注）：**
 1. seq1-41 已立法焚毁（PII 清除），仅存 chain_anchor（bae267eb…a41e）——内容层断点，锚层不断。
-2. 08-15→08-21 无逐条叙事链；该区间由 usrm-repo bundle 层兜底：ci-library/archive/usrm-repo-full-20260828.bundle HEAD dcf53a16。
+2. 08-15→08-21 无逐条叙事链；该区间由 USRM-VAULT bundle 层兜底：ci-library/archive/usrm-repo-full-20260828.bundle HEAD dcf53a16。
 3. seq85/86 hash 复算不符（见正确维）——链上有残片，prev 链接未断。
 4. seq115 重号双条（见序号维）。
-5. vci-usrm / ci-library 本次仅根名录取证（16/11 项），深层未覆盖，不断言。
+5. vci-usrm / HUB-LIB 本次仅根名录取证（16/11 项），深层未覆盖，不断言。
 
 结论：叙事面 08-15→今无未声明断点；声明断点 5 处如上。
 

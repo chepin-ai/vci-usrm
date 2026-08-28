@@ -21,13 +21,13 @@
   ]
  },
  "mapping_rules": [
-  "rfc03/*.md → ci-inbox 公告板/threads（已投，链锚 seq178-180 ref=ci-inbox/讨论室/threads/）",
+  "rfc03/*.md → HUB-MAIL 公告板/threads（已投，链锚 seq178-180 ref=ci-inbox/讨论室/threads/）",
   "app/public/usrm-outbox.json → vci-usrm/ure/narrative_outbox.json 公面镜像（Web 版；与 wave3/ctx-narrative.json 同 sha256_12）",
   "qfk/ → 候 ci-library/kit 推送（未推标候；seq177 QFK v0.2 34测绿）",
   "research/*.md → 正本候 ci-library/theory 或 vci-usrm（部分已推，如 entangle-proof seq168 上链）",
   "atp-lab/ → 候（ATP-lab P5 骨架 seq177）",
   "wave3/ → 本波施工面",
-  "根级散件逐件判：与 ls-usrm-repo.json 名录+字节一致者=usrm-repo 已推镜像；名录在册字节异=同名异版候；公告板日期件按链锚标已投；余标候不编造"
+  "根级散件逐件判：与 ls-usrm-repo.json 名录+字节一致者=USRM-VAULT 已推镜像；名录在册字节异=同名异版候；公告板日期件按链锚标已投；余标候不编造"
  ],
  "counts": {
   "files_indexed": 792,
@@ -95,7 +95,7 @@
    "bytes": 59409,
    "sha256_12": "54ff4b73a060",
    "mtime_utc": "2026-08-23T15:10:28Z",
-   "github_target": "公面 fieldkit 镜像；正本候 usrm-repo",
+   "github_target": "公面 fieldkit 镜像；正本候 USRM-VAULT",
    "push_status": "已发布-Web",
    "map_note": "fieldkit 同 hash 54ff4b73a060；seq42-69 回填件",
    "web_dashboard_version": "有（与 app/public/fieldkit/BACKFILL_SEQ42-69.json 同 sha256_12=54ff4b73a060 的公面镜像）"
@@ -175,7 +175,7 @@
    "bytes": 1717,
    "sha256_12": "d0427e14b7c4",
    "mtime_utc": "2026-08-24T10:41:31Z",
-   "github_target": "usrm-repo（整合计划）",
+   "github_target": "USRM-VAULT（整合计划）",
    "push_status": "候",
    "map_note": "seq117 RPT.CONSOL.DONE 对应件",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -225,7 +225,7 @@
    "bytes": 6064,
    "sha256_12": "4c85c36a94af",
    "mtime_utc": "2026-08-23T17:21:16Z",
-   "github_target": "公面 fieldkit 镜像；正本候 usrm-repo",
+   "github_target": "公面 fieldkit 镜像；正本候 USRM-VAULT",
    "push_status": "已发布-Web",
    "map_note": "fieldkit 同 hash 4c85c36a94af",
    "web_dashboard_version": "有（与 app/public/fieldkit/LOCAL_SEQ71-74.json 同 sha256_12=4c85c36a94af 的公面镜像）"
@@ -355,7 +355,7 @@
    "bytes": 1947,
    "sha256_12": "ed55fc428655",
    "mtime_utc": "2026-08-19T01:17:51Z",
-   "github_target": "usrm-repo（会话协议）",
+   "github_target": "USRM-VAULT（会话协议）",
    "push_status": "候",
    "map_note": "08-19 会话协议件；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -365,7 +365,7 @@
    "bytes": 6575,
    "sha256_12": "47f5a6936030",
    "mtime_utc": "2026-08-24T07:39:20Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -375,7 +375,7 @@
    "bytes": 4961,
    "sha256_12": "a14fbe25b16b",
    "mtime_utc": "2026-08-24T02:34:53Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -385,7 +385,7 @@
    "bytes": 4634,
    "sha256_12": "41bf20449a5a",
    "mtime_utc": "2026-08-24T08:48:24Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -395,7 +395,7 @@
    "bytes": 4494,
    "sha256_12": "e2ce201817c0",
    "mtime_utc": "2026-08-24T07:32:24Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -405,7 +405,7 @@
    "bytes": 4929,
    "sha256_12": "4ad202e337b1",
    "mtime_utc": "2026-08-26T03:44:31Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -415,7 +415,7 @@
    "bytes": 6355,
    "sha256_12": "3a24d7999a02",
    "mtime_utc": "2026-08-26T14:16:59Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -425,7 +425,7 @@
    "bytes": 5371,
    "sha256_12": "b53f24f1543a",
    "mtime_utc": "2026-08-26T11:38:05Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -435,7 +435,7 @@
    "bytes": 3947,
    "sha256_12": "0893f7883361",
    "mtime_utc": "2026-08-25T23:09:44Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -445,7 +445,7 @@
    "bytes": 4927,
    "sha256_12": "c2283646dbaf",
    "mtime_utc": "2026-08-26T12:11:56Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -455,7 +455,7 @@
    "bytes": 5809,
    "sha256_12": "a03764db96ff",
    "mtime_utc": "2026-08-24T09:08:43Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -465,7 +465,7 @@
    "bytes": 3614,
    "sha256_12": "3a0c905e227b",
    "mtime_utc": "2026-08-24T11:47:39Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -475,7 +475,7 @@
    "bytes": 5409,
    "sha256_12": "2bbd7cb24d47",
    "mtime_utc": "2026-08-26T03:28:18Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -485,7 +485,7 @@
    "bytes": 4300,
    "sha256_12": "3b605796e260",
    "mtime_utc": "2026-08-24T09:28:14Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -495,7 +495,7 @@
    "bytes": 4144,
    "sha256_12": "b175e5a622bd",
    "mtime_utc": "2026-08-24T15:37:46Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -505,7 +505,7 @@
    "bytes": 9659,
    "sha256_12": "bf9495468aa7",
    "mtime_utc": "2026-08-24T23:26:53Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -515,7 +515,7 @@
    "bytes": 6261,
    "sha256_12": "f79a854ba6ed",
    "mtime_utc": "2026-08-25T01:19:13Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -525,7 +525,7 @@
    "bytes": 5886,
    "sha256_12": "589b2a1dd754",
    "mtime_utc": "2026-08-25T02:55:03Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -535,7 +535,7 @@
    "bytes": 3111,
    "sha256_12": "31f88b257d17",
    "mtime_utc": "2026-08-24T06:49:42Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -545,7 +545,7 @@
    "bytes": 4497,
    "sha256_12": "da6015387a60",
    "mtime_utc": "2026-08-26T03:38:38Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -555,7 +555,7 @@
    "bytes": 4822,
    "sha256_12": "9178db2a7fef",
    "mtime_utc": "2026-08-24T07:47:27Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -565,7 +565,7 @@
    "bytes": 5411,
    "sha256_12": "c279eb3771f0",
    "mtime_utc": "2026-08-24T07:56:23Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -575,7 +575,7 @@
    "bytes": 5734,
    "sha256_12": "05cebb8909ae",
    "mtime_utc": "2026-08-24T07:17:38Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -585,7 +585,7 @@
    "bytes": 5595,
    "sha256_12": "10d47fa79b4b",
    "mtime_utc": "2026-08-24T07:23:51Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -595,7 +595,7 @@
    "bytes": 4510,
    "sha256_12": "0dd55a7d0bcb",
    "mtime_utc": "2026-08-26T03:49:21Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -605,7 +605,7 @@
    "bytes": 3686,
    "sha256_12": "622b22270082",
    "mtime_utc": "2026-08-26T03:55:05Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -615,7 +615,7 @@
    "bytes": 6464,
    "sha256_12": "b3e414a08b64",
    "mtime_utc": "2026-08-25T03:25:16Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -625,7 +625,7 @@
    "bytes": 8404,
    "sha256_12": "a4a8c3625ccf",
    "mtime_utc": "2026-08-25T19:27:15Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -635,7 +635,7 @@
    "bytes": 6077,
    "sha256_12": "1383a912f26c",
    "mtime_utc": "2026-08-25T09:01:00Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（规格正本）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（规格正本）",
    "push_status": "候",
    "map_note": "SPEC 规格件（seq96-113/137-151 起稿链）；推送标的候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -855,7 +855,7 @@
    "bytes": 3728,
    "sha256_12": "298086dd63d4",
    "mtime_utc": "2026-08-12T09:28:39Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -875,7 +875,7 @@
    "bytes": 3322,
    "sha256_12": "12e8cf91262f",
    "mtime_utc": "2026-08-12T09:30:56Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -945,7 +945,7 @@
    "bytes": 1603,
    "sha256_12": "62b6aea07a23",
    "mtime_utc": "2026-08-13T11:29:45Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -995,7 +995,7 @@
    "bytes": 21176,
    "sha256_12": "c1b326c43df7",
    "mtime_utc": "2026-08-18T19:15:20Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1335,7 +1335,7 @@
    "bytes": 6253,
    "sha256_12": "34079714333c",
    "mtime_utc": "2026-08-14T17:47:24Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1365,7 +1365,7 @@
    "bytes": 5058,
    "sha256_12": "c16bd474bfbc",
    "mtime_utc": "2026-08-16T08:57:08Z",
-   "github_target": "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+   "github_target": "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候；公面镜像在场",
    "web_dashboard_version": "有（与 app/public/fieldkit/T141_outbox.py 同 sha256_12=c16bd474bfbc 的公面镜像）"
@@ -1495,7 +1495,7 @@
    "bytes": 210,
    "sha256_12": "f998f10c16ac",
    "mtime_utc": "2026-08-18T19:16:11Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1555,7 +1555,7 @@
    "bytes": 1622,
    "sha256_12": "04c32e067851",
    "mtime_utc": "2026-08-16T19:38:35Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1565,7 +1565,7 @@
    "bytes": 348,
    "sha256_12": "84a08c73e335",
    "mtime_utc": "2026-08-17T00:52:02Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1575,7 +1575,7 @@
    "bytes": 395,
    "sha256_12": "82585c5368bc",
    "mtime_utc": "2026-08-17T00:52:39Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1585,7 +1585,7 @@
    "bytes": 1028,
    "sha256_12": "53e3e8f3b20d",
    "mtime_utc": "2026-08-17T00:52:16Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1605,7 +1605,7 @@
    "bytes": 24828,
    "sha256_12": "78b540c6ffdd",
    "mtime_utc": "2026-08-17T02:15:26Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1615,7 +1615,7 @@
    "bytes": 1527,
    "sha256_12": "3c31be5fea83",
    "mtime_utc": "2026-08-17T01:59:26Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1625,7 +1625,7 @@
    "bytes": 118,
    "sha256_12": "11a2e90577e2",
    "mtime_utc": "2026-08-17T01:56:06Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1635,7 +1635,7 @@
    "bytes": 548,
    "sha256_12": "e7100389d2eb",
    "mtime_utc": "2026-08-17T01:59:28Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1645,7 +1645,7 @@
    "bytes": 1352,
    "sha256_12": "671a266eb3be",
    "mtime_utc": "2026-08-17T01:58:42Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1655,7 +1655,7 @@
    "bytes": 1232,
    "sha256_12": "a11af0249f25",
    "mtime_utc": "2026-08-17T01:54:41Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1665,7 +1665,7 @@
    "bytes": 912,
    "sha256_12": "3435c1df564d",
    "mtime_utc": "2026-08-17T01:56:05Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1675,7 +1675,7 @@
    "bytes": 1541,
    "sha256_12": "27f2893d96e8",
    "mtime_utc": "2026-08-17T02:21:12Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1685,7 +1685,7 @@
    "bytes": 345,
    "sha256_12": "691ae63e244e",
    "mtime_utc": "2026-08-17T02:23:41Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1695,7 +1695,7 @@
    "bytes": 1802,
    "sha256_12": "7a94a7e4f9ab",
    "mtime_utc": "2026-08-17T02:19:01Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1705,7 +1705,7 @@
    "bytes": 771,
    "sha256_12": "f3f9baca36c3",
    "mtime_utc": "2026-08-17T02:20:17Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1715,7 +1715,7 @@
    "bytes": 784,
    "sha256_12": "b500e66d902e",
    "mtime_utc": "2026-08-17T02:20:41Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1725,7 +1725,7 @@
    "bytes": 248,
    "sha256_12": "5750ee75099e",
    "mtime_utc": "2026-08-17T02:20:56Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1745,7 +1745,7 @@
    "bytes": 539,
    "sha256_12": "5db6c5a6c428",
    "mtime_utc": "2026-08-18T12:52:45Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1755,7 +1755,7 @@
    "bytes": 59,
    "sha256_12": "438a45976948",
    "mtime_utc": "2026-08-18T12:52:49Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1765,7 +1765,7 @@
    "bytes": 1182,
    "sha256_12": "5505f53c1e1d",
    "mtime_utc": "2026-08-18T12:52:20Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1945,7 +1945,7 @@
    "bytes": 2819,
    "sha256_12": "c74c3cf11260",
    "mtime_utc": "2026-08-19T00:42:16Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1955,7 +1955,7 @@
    "bytes": 1913,
    "sha256_12": "a247c82bc105",
    "mtime_utc": "2026-08-19T00:45:17Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1965,7 +1965,7 @@
    "bytes": 4504,
    "sha256_12": "bec45795f0b6",
    "mtime_utc": "2026-08-19T00:45:01Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1975,7 +1975,7 @@
    "bytes": 1735,
    "sha256_12": "fc4e00153dff",
    "mtime_utc": "2026-08-19T01:20:56Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1985,7 +1985,7 @@
    "bytes": 4484,
    "sha256_12": "4a19633b550c",
    "mtime_utc": "2026-08-19T01:20:20Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -1995,7 +1995,7 @@
    "bytes": 3606,
    "sha256_12": "d0d4634b21ca",
    "mtime_utc": "2026-08-19T07:42:57Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2005,7 +2005,7 @@
    "bytes": 395,
    "sha256_12": "216d1768aa30",
    "mtime_utc": "2026-08-19T08:25:04Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "有（与 app/public/T163_body_proof.json 同 sha256_12=216d1768aa30 的公面镜像）"
@@ -2015,7 +2015,7 @@
    "bytes": 286,
    "sha256_12": "475a9e44a625",
    "mtime_utc": "2026-08-19T07:41:44Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2025,7 +2025,7 @@
    "bytes": 2272,
    "sha256_12": "3182f53e4cda",
    "mtime_utc": "2026-08-19T07:42:20Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2035,7 +2035,7 @@
    "bytes": 1453,
    "sha256_12": "b59564e3ea2e",
    "mtime_utc": "2026-08-19T07:43:18Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2045,7 +2045,7 @@
    "bytes": 268,
    "sha256_12": "fd1690487148",
    "mtime_utc": "2026-08-19T07:35:17Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2055,7 +2055,7 @@
    "bytes": 1817,
    "sha256_12": "a35ac811de56",
    "mtime_utc": "2026-08-19T08:20:06Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2065,7 +2065,7 @@
    "bytes": 1759,
    "sha256_12": "a78eefa55df3",
    "mtime_utc": "2026-08-19T08:21:14Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2075,7 +2075,7 @@
    "bytes": 5153,
    "sha256_12": "4b5f947a8efe",
    "mtime_utc": "2026-08-19T08:19:45Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2085,7 +2085,7 @@
    "bytes": 2010,
    "sha256_12": "354d2d3e9499",
    "mtime_utc": "2026-08-19T09:29:13Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2095,7 +2095,7 @@
    "bytes": 260043,
    "sha256_12": "8b8d37ea9b37",
    "mtime_utc": "2026-08-19T14:24:25Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2105,7 +2105,7 @@
    "bytes": 100698,
    "sha256_12": "12d2f642a262",
    "mtime_utc": "2026-08-19T14:28:57Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2115,7 +2115,7 @@
    "bytes": 330236,
    "sha256_12": "2eb96641dc68",
    "mtime_utc": "2026-08-19T16:08:27Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2125,7 +2125,7 @@
    "bytes": 1003905,
    "sha256_12": "5cdf13e6c3da",
    "mtime_utc": "2026-08-19T16:15:28Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2135,7 +2135,7 @@
    "bytes": 2795,
    "sha256_12": "bcda66c489d0",
    "mtime_utc": "2026-08-19T15:56:41Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2145,7 +2145,7 @@
    "bytes": 1935,
    "sha256_12": "050b610db8a6",
    "mtime_utc": "2026-08-19T16:09:48Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2155,7 +2155,7 @@
    "bytes": 702828,
    "sha256_12": "da3f114b0f2f",
    "mtime_utc": "2026-08-19T16:08:25Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2165,7 +2165,7 @@
    "bytes": 867087,
    "sha256_12": "cc4647daaa18",
    "mtime_utc": "2026-08-19T19:31:45Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2175,7 +2175,7 @@
    "bytes": 226134,
    "sha256_12": "56441d88a9c6",
    "mtime_utc": "2026-08-19T19:02:46Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2185,7 +2185,7 @@
    "bytes": 341704,
    "sha256_12": "39efc5128196",
    "mtime_utc": "2026-08-19T18:54:40Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2195,7 +2195,7 @@
    "bytes": 285394,
    "sha256_12": "fb88fa1bc8e6",
    "mtime_utc": "2026-08-19T18:54:41Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2205,7 +2205,7 @@
    "bytes": 307679,
    "sha256_12": "b6f8cdfa1196",
    "mtime_utc": "2026-08-19T19:02:45Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2215,7 +2215,7 @@
    "bytes": 319014,
    "sha256_12": "65645ec90f1e",
    "mtime_utc": "2026-08-19T19:51:30Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2225,7 +2225,7 @@
    "bytes": 1170188,
    "sha256_12": "410b433d76f0",
    "mtime_utc": "2026-08-19T21:15:06Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2235,7 +2235,7 @@
    "bytes": 5611,
    "sha256_12": "f2d02ad43a72",
    "mtime_utc": "2026-08-19T20:21:11Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2245,7 +2245,7 @@
    "bytes": 277713,
    "sha256_12": "5cbe9da27d89",
    "mtime_utc": "2026-08-19T20:30:18Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2255,7 +2255,7 @@
    "bytes": 297402,
    "sha256_12": "8e0a5d27917b",
    "mtime_utc": "2026-08-19T20:33:10Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2265,7 +2265,7 @@
    "bytes": 347813,
    "sha256_12": "f31013c9047b",
    "mtime_utc": "2026-08-19T20:26:02Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2275,7 +2275,7 @@
    "bytes": 95658,
    "sha256_12": "dcf2906eb18c",
    "mtime_utc": "2026-08-19T20:21:35Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2285,7 +2285,7 @@
    "bytes": 96367,
    "sha256_12": "8c1288beb3cf",
    "mtime_utc": "2026-08-19T20:21:38Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2295,7 +2295,7 @@
    "bytes": 95741,
    "sha256_12": "c338ab64338f",
    "mtime_utc": "2026-08-19T20:21:41Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2305,7 +2305,7 @@
    "bytes": 95442,
    "sha256_12": "07a866169f29",
    "mtime_utc": "2026-08-19T20:21:42Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2315,7 +2315,7 @@
    "bytes": 198143,
    "sha256_12": "5d0506bccecd",
    "mtime_utc": "2026-08-19T20:19:28Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2325,7 +2325,7 @@
    "bytes": 1544,
    "sha256_12": "364f6c3afc84",
    "mtime_utc": "2026-08-19T20:24:05Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2355,7 +2355,7 @@
    "bytes": 735853,
    "sha256_12": "c871808a3ff3",
    "mtime_utc": "2026-08-20T06:49:08Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2365,7 +2365,7 @@
    "bytes": 7666,
    "sha256_12": "bbc9211995d2",
    "mtime_utc": "2026-08-20T06:35:28Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2375,7 +2375,7 @@
    "bytes": 2833,
    "sha256_12": "49a8df9c5fab",
    "mtime_utc": "2026-08-20T06:34:37Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2385,7 +2385,7 @@
    "bytes": 1140,
    "sha256_12": "0d314efe31a7",
    "mtime_utc": "2026-08-20T06:47:50Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2395,7 +2395,7 @@
    "bytes": 333396,
    "sha256_12": "9f35f3f1b124",
    "mtime_utc": "2026-08-20T06:45:24Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2405,7 +2405,7 @@
    "bytes": 333712,
    "sha256_12": "c37d41db8272",
    "mtime_utc": "2026-08-20T06:45:23Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2415,7 +2415,7 @@
    "bytes": 2839,
    "sha256_12": "9e15091ef972",
    "mtime_utc": "2026-08-20T06:47:49Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2425,7 +2425,7 @@
    "bytes": 2324,
    "sha256_12": "8455bc8dc3ef",
    "mtime_utc": "2026-08-20T07:23:02Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2435,7 +2435,7 @@
    "bytes": 84059,
    "sha256_12": "78ac234f4898",
    "mtime_utc": "2026-08-20T06:35:28Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2445,7 +2445,7 @@
    "bytes": 87774,
    "sha256_12": "c7df5b1dab79",
    "mtime_utc": "2026-08-21T19:14:58Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2455,7 +2455,7 @@
    "bytes": 90771,
    "sha256_12": "ebb2992d1751",
    "mtime_utc": "2026-08-21T18:27:34Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2465,7 +2465,7 @@
    "bytes": 3092,
    "sha256_12": "90a5e2b48beb",
    "mtime_utc": "2026-08-20T07:23:02Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2475,7 +2475,7 @@
    "bytes": 269798,
    "sha256_12": "f915a11637d0",
    "mtime_utc": "2026-08-21T16:45:56Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2485,7 +2485,7 @@
    "bytes": 268742,
    "sha256_12": "c4e60ea3b9f2",
    "mtime_utc": "2026-08-20T07:32:11Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2495,7 +2495,7 @@
    "bytes": 4453,
    "sha256_12": "53ffef04b8be",
    "mtime_utc": "2026-08-21T17:09:22Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2505,7 +2505,7 @@
    "bytes": 272434,
    "sha256_12": "0ebac23c4d6c",
    "mtime_utc": "2026-08-21T17:11:26Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2515,7 +2515,7 @@
    "bytes": 13790,
    "sha256_12": "236a541ee1b3",
    "mtime_utc": "2026-08-21T17:37:06Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2525,7 +2525,7 @@
    "bytes": 19850,
    "sha256_12": "4b4226c3d606",
    "mtime_utc": "2026-08-21T19:19:52Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2535,7 +2535,7 @@
    "bytes": 1648,
    "sha256_12": "eae050f62627",
    "mtime_utc": "2026-08-21T18:31:00Z",
-   "github_target": "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+   "github_target": "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候；公面镜像在场",
    "web_dashboard_version": "有（与 app/public/fieldkit/T175_capsules_usrm.json 同 sha256_12=eae050f62627 的公面镜像）"
@@ -2545,7 +2545,7 @@
    "bytes": 6541,
    "sha256_12": "28e4de59dab1",
    "mtime_utc": "2026-08-21T20:52:55Z",
-   "github_target": "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+   "github_target": "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候；公面镜像在场",
    "web_dashboard_version": "有（与 app/public/fieldkit/T176_ci_autonomy.md 同 sha256_12=28e4de59dab1 的公面镜像）"
@@ -2555,7 +2555,7 @@
    "bytes": 0,
    "sha256_12": "e3b0c44298fc",
    "mtime_utc": "2026-08-23T00:12:58Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2565,7 +2565,7 @@
    "bytes": 6414,
    "sha256_12": "2e1836dc7c07",
    "mtime_utc": "2026-08-23T00:14:40Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2575,7 +2575,7 @@
    "bytes": 1369,
    "sha256_12": "918670baafb9",
    "mtime_utc": "2026-08-23T00:24:49Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2585,7 +2585,7 @@
    "bytes": 0,
    "sha256_12": "e3b0c44298fc",
    "mtime_utc": "2026-08-23T00:25:29Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2595,7 +2595,7 @@
    "bytes": 2582,
    "sha256_12": "2a775231d3df",
    "mtime_utc": "2026-08-23T00:25:29Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2605,7 +2605,7 @@
    "bytes": 150175,
    "sha256_12": "151d86b680ac",
    "mtime_utc": "2026-08-23T00:27:28Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2615,7 +2615,7 @@
    "bytes": 208875,
    "sha256_12": "4769392ace3b",
    "mtime_utc": "2026-08-23T00:24:59Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2625,7 +2625,7 @@
    "bytes": 208437,
    "sha256_12": "53d2c4bdc315",
    "mtime_utc": "2026-08-23T00:25:38Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2635,7 +2635,7 @@
    "bytes": 3927,
    "sha256_12": "f0b97b488a73",
    "mtime_utc": "2026-08-23T00:12:48Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2645,7 +2645,7 @@
    "bytes": 1340,
    "sha256_12": "76da23c5c8d7",
    "mtime_utc": "2026-08-23T14:46:51Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2655,7 +2655,7 @@
    "bytes": 166,
    "sha256_12": "eb5de947c9ad",
    "mtime_utc": "2026-08-23T14:46:51Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2665,7 +2665,7 @@
    "bytes": 89,
    "sha256_12": "7cd4f96f1e7f",
    "mtime_utc": "2026-08-23T00:25:38Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2675,7 +2675,7 @@
    "bytes": 16560,
    "sha256_12": "3134ad1bf3a9",
    "mtime_utc": "2026-08-23T02:02:55Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -2685,7 +2685,7 @@
    "bytes": 5411,
    "sha256_12": "c18892a72679",
    "mtime_utc": "2026-08-23T02:00:46Z",
-   "github_target": "usrm-repo（会话工件/数据件）；另：公面 fieldkit 已发布同件",
+   "github_target": "USRM-VAULT（会话工件/数据件）；另：公面 fieldkit 已发布同件",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候；公面镜像在场",
    "web_dashboard_version": "有（与 app/public/fieldkit/T178_campaign_plan.md 同 sha256_12=c18892a72679 的公面镜像）"
@@ -4345,7 +4345,7 @@
    "bytes": 2,
    "sha256_12": "44136fa355b3",
    "mtime_utc": "2026-08-13T09:23:26Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -4385,7 +4385,7 @@
    "bytes": 2914,
    "sha256_12": "c9bda748e699",
    "mtime_utc": "2026-08-11T16:51:46Z",
-   "github_target": "usrm-repo（会话工件/数据件）",
+   "github_target": "USRM-VAULT（会话工件/数据件）",
    "push_status": "候",
    "map_note": "根级工作件；不在 ls-usrm-repo 名录或版异，推送候",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -5755,7 +5755,7 @@
    "bytes": 6489,
    "sha256_12": "991cdb4536df",
    "mtime_utc": "2026-08-28T15:49:44Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（ATP 证明件）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（ATP 证明件）",
    "push_status": "候",
    "map_note": "ATP-lab P5 骨架(seq177)；推送标的未定",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -5765,7 +5765,7 @@
    "bytes": 6802,
    "sha256_12": "575be8a49139",
    "mtime_utc": "2026-08-28T15:47:56Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（ATP 证明件）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（ATP 证明件）",
    "push_status": "候",
    "map_note": "ATP-lab P5 骨架(seq177)；推送标的未定",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -5775,7 +5775,7 @@
    "bytes": 5256,
    "sha256_12": "aad3eeac8fee",
    "mtime_utc": "2026-08-28T15:49:44Z",
-   "github_target": "ci-library/theory/ 或 usrm-repo（ATP 证明件）",
+   "github_target": "ci-library/theory/ 或 USRM-VAULT（ATP 证明件）",
    "push_status": "候",
    "map_note": "ATP-lab P5 骨架(seq177)；推送标的未定",
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
@@ -7351,7 +7351,7 @@
    "web_dashboard_version": "无（纯仓/施工面件，未见公面镜像）"
   },
   {
-   "sandbox_path": "usrm-repo.bundle",
+   "sandbox_path": "USRM-VAULT.bundle",
    "bytes": 18292283,
    "sha256_12": "c9cb3e84cf4d",
    "mtime_utc": "2026-08-12T08:28:30Z",
@@ -8145,7 +8145,7 @@
    "dir_listing_sha256_12": "472b51973225",
    "github_target": "候",
    "push_status": "候",
-   "map_note": "usrm-repo 本地工作树（3029 件）；目录级聚合条目，未逐件索引",
+   "map_note": "USRM-VAULT 本地工作树（3029 件）；目录级聚合条目，未逐件索引",
    "web_dashboard_version": "无"
   },
   {

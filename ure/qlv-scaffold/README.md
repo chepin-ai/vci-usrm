@@ -11,7 +11,7 @@ law: D-136 / D-140 / FULLCAP-DRIVE-01
 
 ## ① 绕行缘起
 
-qlv-lab 仓 **404**（Not Found），**>72h 静默已起案在案**（cfts-27）；HALL-01 接入面=line-push.yml 摆渡，仓不在则摆渡无源。按 FULLCAP-DRIVE-01 四档绕行制，usrm 备件包落本目录待取——**备件只备格式，不代立场**（D-140 在案）。
+QLV-VAULT 仓 **404**（Not Found），**>72h 静默已起案在案**（cfts-27）；HALL-01 接入面=line-push.yml 摆渡，仓不在则摆渡无源。按 FULLCAP-DRIVE-01 四档绕行制，usrm 备件包落本目录待取——**备件只备格式，不代立场**（D-140 在案）。
 
 ## ② 备件清单三件（完整内嵌文本）
 
