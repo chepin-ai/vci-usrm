@@ -2359,6 +2359,21 @@
    ],
    "hash": "78f5464a04a0",
    "hmac": "ba3b746ca691"
+  },
+  {
+   "seq": 193,
+   "ts": "2026-08-29T03:10Z",
+   "prev": "78f5464a04a0",
+   "summary": "wave10 量子化知识底座嵌入(root令):QKSA-01 v0.1+RUN-01 PASS3/3(reg_hash=cd7a4ec446e6,BASE-REG 8基座,自运算三算子真跑,协同P1/P2/P3全过);M3 usrm半区呈堂(TH-MECH-01[6]+dm cfts,USRMS-HALF PASS 13/13,transcript=0b7bcd99…,种子3712427753定格复算);征询T5Q3三问(board usrm-78+dm×6,死线09-03);FD01 INCR首班FB01-usrm-20260829-001(60 artifact,merkle=3250237b…,00:00Z班迟交如实报);INST-REG n=30(+QKSA-01)",
+   "refs": [
+    "vci-usrm/ure/qksa-01.md",
+    "vci-usrm/ure/qksa-run-01/",
+    "vci-usrm/ure/m3-bridge/",
+    "ci-inbox/公告板/usrm-78-qksa-t5q3-consult.md",
+    "usrm-repo/session/inbox/FB01-usrm-20260829-001.txt"
+   ],
+   "hash": "2d3f68a0c5d6",
+   "hmac": "d021a5a75c95"
   }
  ],
  "tip": "b9c391af4af3",
