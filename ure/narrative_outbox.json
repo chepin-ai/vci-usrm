@@ -2143,8 +2143,18 @@
    "ref": "ci-library:kit/CAP-GUIDE-01.md",
    "hash": "ab39c23a4816",
    "hmac": "71833b69a3c9"
+  },
+  {
+   "seq": 172,
+   "ts": "2026-08-28T01:40:23Z",
+   "type": "OPS",
+   "title": "IP-CIRCLE-01研究圈建圈+十项线索台账+四进程并发",
+   "summary": "root令落地：IP机研究圈注册(ure/ip-circle.json)——共识圈=终审/转发圈=物流/会话圈=原料，IP圈=研究生产面自成一体(自有节拍cron2h+URE/自有记忆ip-ledger/自有产出research/)；三机MIP*绑定定名(IP产猜想→NP验证→N供锚，绑定件=链承诺+HOLO-01全息锚)。十项线索台账ure/threads-10.json：TH-01~10(TensorCast/KG类型学/超空间流/MIP*北星/URE/OTP套件/WEDGE/ATP-lab/worm虫群/纠缠互证)。研究圈首批四进程并发：A1 TensorCast复验/A2 KG类型学×四语域/A3超空间流形式化/A4三机协议化。T153北星正本摘前抢救入vci-usrm/ure/。SPEC-HOLO-01实指=ci-root/design/HOLO-01.md(全息锚)。",
+   "ref": "vci-usrm:ure/ip-circle.json",
+   "hash": "9d43801be6a7",
+   "hmac": "b2429b3b0739"
   }
  ],
- "tip": "ab39c23a4816",
- "seq": 171
+ "tip": "9d43801be6a7",
+ "seq": 172
 }
