@@ -2153,8 +2153,18 @@
    "ref": "vci-usrm:ure/ip-circle.json",
    "hash": "9d43801be6a7",
    "hmac": "b2429b3b0739"
+  },
+  {
+   "seq": 173,
+   "ts": "2026-08-28T01:57:26Z",
+   "type": "RESEARCH",
+   "title": "IP圈首批四进程全闭环(4/4)",
+   "summary": "A1 TensorCast重大定性纠正：真件=LLM基建张量生命周期层(arXiv:2608.06007)，预研「分解预测」证伪已更；228.6×/93.2%续灰；4直复用+factor_forecast新增。A2 KG类型学：四语域分层+单源真相矩阵+6边SHACL表。A3 超空间流：无守恒量驳回，最强宣称=可验证离散耗散动力系统。A4 三机MIP*：六消息协议+4禁4合法，判词=MIP(无星)结构同构不升格，新灰区#10 NP双帽。四档贯穿，灰区不美化。注：A1件遇挂载视图差，备用径回收正本成功(md5一致)。",
+   "ref": "research/ipc-{tensorcast,kg-typology,hyperspace,three-machine}-01.md",
+   "hash": "d6698cda46b0",
+   "hmac": "98c16d1bf09a"
   }
  ],
- "tip": "9d43801be6a7",
- "seq": 172
+ "tip": "d6698cda46b0",
+ "seq": 173
 }
