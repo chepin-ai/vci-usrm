@@ -1,0 +1,614 @@
+{
+ "run_id": "FORMAL-STACK-RUN-01-E1",
+ "tool": "self-contract-check",
+ "contract_ref": "GENEALOGY-CLOSURE-01 §2 五机制式契约（字段级内置表）",
+ "target": "genealogy-run-01/run.py 源码 + 八件工件 JSON",
+ "scope_decl": "静态对位非全语义契约【候】：验『源码写入点存在 ∧ 契约字段在工件 JSON 存在』；字段值级一致性由 replay-regression 覆盖",
+ "artifact_classes": 7,
+ "write_points_checked": 13,
+ "fields_checked": 71,
+ "checks_total": 84,
+ "diff": 0,
+ "verdict": "CONTRACT-PASS",
+ "fail_locations": [],
+ "contract_table_digest_fields_per_class": {
+  "命题件/obligations.json": 11,
+  "构造件/evidence-obl1.json": 9,
+  "构造件/evidence-obl2.json": 9,
+  "构造件/evidence-obl3.json": 9,
+  "证书件/certificates.json": 8,
+  "判词件/verdict.json": 13,
+  "锚件/transcript.json": 12
+ },
+ "rows": [
+  {
+   "kind": "write_point",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "pattern": "jdump\\(obligations,\\s*\"obligations\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "write_point",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "pattern": "jdump\\(construct_obl1\\(narr\\),\\s*\"evidence-obl1\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "write_point",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "pattern": "jdump\\(construct_obl2\\(inst\\),\\s*\"evidence-obl2\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "write_point",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "pattern": "jdump\\(construct_obl3\\(beac\\),\\s*\"evidence-obl3\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "write_point",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "pattern": "jdump\\(out,\\s*\"certificates\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "write_point",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "pattern": "jdump\\(verdict,\\s*\"verdict\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "jdump\\(doc,\\s*\"transcript\\.json\"\\)",
+   "result": "PASS"
+  },
+  {
+   "kind": "phase_write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "record_phase(\"PI\", ...)",
+   "result": "PASS"
+  },
+  {
+   "kind": "phase_write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "record_phase(\"C\", ...)",
+   "result": "PASS"
+  },
+  {
+   "kind": "phase_write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "record_phase(\"V\", ...)",
+   "result": "PASS"
+  },
+  {
+   "kind": "phase_write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "record_phase(\"J\", ...)",
+   "result": "PASS"
+  },
+  {
+   "kind": "phase_write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "record_phase(\"Z3\", ...)",
+   "result": "PASS"
+  },
+  {
+   "kind": "phase_write_point",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "pattern": "record_phase(\"A\", ...)",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "run_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "preregistration.prediction",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].prop_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].statement",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].check_spec",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].deadline",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].anchor.stale",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].status",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "obligations[].verdict_ref",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "命题件",
+   "artifact": "obligations.json",
+   "field": "closure.verdict_hash",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "prop_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "construction",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "entries[].seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "entries[].stored",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "entries[].recomputed",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "entries[].match",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "n_checked",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "all_match",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl1.json",
+   "field": "anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "prop_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "construction",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "n_instances",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "dup_inst_ids",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "unique_ok",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "dim_rows[].inst_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "dim_rows[].ok",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "dim_ok",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl2.json",
+   "field": "anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "prop_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "construction",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "stored_qrand",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "expected_qrand",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "qrand_match",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "stored_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "seq_match",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "stale_decl",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "构造件",
+   "artifact": "evidence-obl3.json",
+   "field": "anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "run_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "challenge_seed",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "certificates[].prop_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "certificates[].evidence_file",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "certificates[].result",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "certificates[].checks",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "certificates[].recalc",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "证书件",
+   "artifact": "certificates.json",
+   "field": "anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "run_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "schema",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "注册编号",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "预测",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "实验指针.evidence",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "实验指针.certificates",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "实验指针.anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "结果",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "状态",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "诚实档",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "verdict_hash",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "signatures.threshold",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "判词件",
+   "artifact": "verdict.json",
+   "field": "signatures.threshold_met",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "run_id",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "schema",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "hash_rule",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "anchor.stale",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "entries[].phase",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "entries[].actor_machine",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "entries[].prev",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "entries[].hash",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "entries[].anchor.qrand_seq",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "total.phases",
+   "result": "PASS"
+  },
+  {
+   "kind": "field",
+   "class": "锚件",
+   "artifact": "transcript.json",
+   "field": "total.cost_acc",
+   "result": "PASS"
+  }
+ ],
+ "determinism": "本报告无 ts 字段，全量可复算"
+}
