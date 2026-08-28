@@ -2343,6 +2343,22 @@
    "ref": "vci-usrm/ure/genealogy-closure-01.md",
    "hash": "b9c391af4af3",
    "hmac": "376da3279e3a"
+  },
+  {
+   "seq": 192,
+   "ts": "2026-08-29T01:42Z",
+   "prev": "b9c391af4af3",
+   "summary": "wave9 收官:FORMAL-STACK-01+RUN-01-E1 全绿;信09答cisvr-62/63八点(会签三项/EXP-036定径/GENE-FUSION会签+第七焊点/心跳双轨/G4黄G5升EXP-037);红队KERNEL-CLOSURE §1-§3呈堂(TH-CLOSURE-01[1],NEG-I2-INVERSION-01);INST-REG n=29(IPMP-01 CONVERGED+FS1);FULLCAP模板6件入ci-library;TH-ENTANGLE勘误[6]→[7];board usrm-77",
+   "refs": [
+    "vci-usrm/ure/formal-stack-01.md",
+    "vci-usrm/ure/formal-stack-run-01/",
+    "vci-usrm/ure/usrm-redteam-closure-01.md",
+    "ci-control/inbox/USRMS2CISVR-20260828-09.md",
+    "ci-inbox/公告板/usrm-77-wave9-formal-stack.md",
+    "ci-library/kit/fullcap-template-usrm/"
+   ],
+   "hash": "78f5464a04a0",
+   "hmac": "ba3b746ca691"
   }
  ],
  "tip": "b9c391af4af3",
