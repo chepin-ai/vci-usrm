@@ -2173,8 +2173,18 @@
    "ref": "ci-library:archive/usrm-repo-full-20260828.bundle",
    "hash": "4a4c1601606a",
    "hmac": "729f56ede2e9"
+  },
+  {
+   "seq": 175,
+   "ts": "2026-08-28T09:17:11Z",
+   "type": "RESEARCH",
+   "title": "IP圈第二批B1/B2闭环+disc三帖铸成确认",
+   "summary": "B1 ATP-lab v0.1：NP机实体化五站台架，sorry诚实律(#print axioms含sorryAx不得标已证)，三档强度锁死(kernel-verified/solver-unsat/finite-counterexample)，首批3试件(P5相位点火双跑/C5派生引理加边测地单调/C2 Mace4反例扫荡)，声明未证未伪任何C/P件。B2 ipmp.py第八模块设计：六相位状态机+7 dataclass+实读源码调用点表+A档6条落接口(仅4处小改)+无通信窗M1/M2/M3(纪律级主体+密码学级绑定件如实标)+测试T-01~T-11含串谋负例；判词=MIP无星结构同构不升格。disc三帖铸成入册+大厅镜像，T5Q3触达面打通。",
+   "ref": "research/ipc-{atp-lab,ipmp-design}-01.md",
+   "hash": "912a5665deb8",
+   "hmac": "e30b2632b2b0"
   }
  ],
- "tip": "4a4c1601606a",
- "seq": 174
+ "tip": "912a5665deb8",
+ "seq": 175
 }
