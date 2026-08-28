@@ -1,0 +1,170 @@
+{
+ "run_id": "GENEALOGY-RUN-01-E1",
+ "schema": "transcript/hash-chain v1",
+ "hash_rule": "hash=sha256(prev+canon({phase,actor_machine,inputs_hash,outputs_hash,anchor,prev}))[:16]；ts/cost 不入哈希（确定性比对归一化项）",
+ "anchor": {
+  "qrand_seq": 61,
+  "stale": true,
+  "note": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+ },
+ "entries": [
+  {
+   "phase": "PI",
+   "actor_machine": "Π义务机",
+   "inputs_hash": "245ff4b9724f/b379b9c87a9d/f9593fd78af8",
+   "outputs_hash": "b1ed913e54bb",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true
+   },
+   "prev": "GENESIS",
+   "ts": "2026-08-28T21:17:01.554854Z",
+   "cost": {
+    "wall_ms": 5.16,
+    "out_bytes": 1637,
+    "cost_acc": 5.2e-05,
+    "rate_decl": "toy名义费率 0.01 元/机时秒"
+   },
+   "extra": {
+    "n_obligations": 3,
+    "preregistered_prediction": "三命题 OBL-1/OBL-2/OBL-3 可望全 PASS"
+   },
+   "hash": "9aad32f223d7b1d8"
+  },
+  {
+   "phase": "C",
+   "actor_machine": "C递归机",
+   "inputs_hash": "b1ed913e54bb",
+   "outputs_hash": "ac02cf70bc1a/39afc072200c/e3e6939c1a4d",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true
+   },
+   "prev": "9aad32f223d7b1d8",
+   "ts": "2026-08-28T21:17:01.557952Z",
+   "cost": {
+    "wall_ms": 2.83,
+    "out_bytes": 5676,
+    "cost_acc": 2.8e-05,
+    "rate_decl": "toy名义费率 0.01 元/机时秒"
+   },
+   "extra": {
+    "constructions": [
+     "recompute-chain",
+     "scan-inst-reg",
+     "compare-qrand"
+    ]
+   },
+   "hash": "42debd30dd81263e"
+  },
+  {
+   "phase": "V",
+   "actor_machine": "V-NP机",
+   "inputs_hash": "ac02cf70bc1a/39afc072200c/e3e6939c1a4d",
+   "outputs_hash": "e96fb09fdaf5",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true
+   },
+   "prev": "42debd30dd81263e",
+   "ts": "2026-08-28T21:17:01.560663Z",
+   "cost": {
+    "wall_ms": 2.58,
+    "out_bytes": 1671,
+    "cost_acc": 2.6e-05,
+    "rate_decl": "toy名义费率 0.01 元/机时秒"
+   },
+   "extra": {
+    "results": {
+     "OBL-1": "PASS",
+     "OBL-2": "PASS",
+     "OBL-3": "PASS"
+    }
+   },
+   "hash": "f4b41551a4ad5272"
+  },
+  {
+   "phase": "J",
+   "actor_machine": "J治理机",
+   "inputs_hash": "e96fb09fdaf5",
+   "outputs_hash": "6922b070ddbc/88af1e4f2a11",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true
+   },
+   "prev": "f4b41551a4ad5272",
+   "ts": "2026-08-28T21:17:01.562831Z",
+   "cost": {
+    "wall_ms": 2.0,
+    "out_bytes": 3282,
+    "cost_acc": 2e-05,
+    "rate_decl": "toy名义费率 0.01 元/机时秒"
+   },
+   "extra": {
+    "verdict_hash": "ae6c6c1cff7c",
+    "threshold_met": true,
+    "i3_closure": {
+     "OBL-1": "PASS",
+     "OBL-2": "PASS",
+     "OBL-3": "PASS"
+    }
+   },
+   "hash": "197089d65cd363f6"
+  },
+  {
+   "phase": "Z3",
+   "actor_machine": "V/J 不变量机检",
+   "inputs_hash": "e96fb09fdaf5",
+   "outputs_hash": "16d02e906312",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true
+   },
+   "prev": "197089d65cd363f6",
+   "ts": "2026-08-28T21:17:01.669792Z",
+   "cost": {
+    "wall_ms": 106.8,
+    "out_bytes": 2224,
+    "cost_acc": 0.001068,
+    "rate_decl": "toy名义费率 0.01 元/机时秒"
+   },
+   "extra": {
+    "I1": "unsat",
+    "I2": "unsat",
+    "backend": "z3 5.1.0"
+   },
+   "hash": "bfe0aaa2a1cd9e4f"
+  },
+  {
+   "phase": "A",
+   "actor_machine": "A-N机(全程供锚)",
+   "inputs_hash": "transcript-prev-chain",
+   "outputs_hash": "transcript.json",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true
+   },
+   "prev": "bfe0aaa2a1cd9e4f",
+   "ts": "2026-08-28T21:17:01.670882Z",
+   "cost": {
+    "wall_ms": 0.0,
+    "out_bytes": 0,
+    "cost_acc": 0.0,
+    "rate_decl": "toy名义费率 0.01 元/机时秒"
+   },
+   "extra": {
+    "challenge_seed": 3712427753,
+    "seed_formula": "int(sha256(qrand‖str(61))[:8]hex,16)",
+    "stale_decl": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+   },
+   "hash": "8fc607888bece60f"
+  }
+ ],
+ "total": {
+  "phases": 6,
+  "wall_ms": 119.37,
+  "out_bytes": 14490,
+  "cost_acc": 0.001194,
+  "rate_decl": "toy名义费率 0.01 元/机时秒（非真实计费）"
+ }
+}
