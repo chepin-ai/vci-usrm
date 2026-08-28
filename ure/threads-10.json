@@ -1,6 +1,6 @@
 {
  "v": 1,
- "ts": "2026-08-28T01:57:26Z",
+ "ts": "2026-08-28T09:17:11Z",
  "threads": [
   {
    "id": "TH-01",
@@ -34,11 +34,12 @@
   {
    "id": "TH-04",
    "name": "MIP* 北星",
-   "state": "A4毕：三机角色映射+六消息协议+4禁4合法+挂接表；判词=MIP(无星)结构同构不升格；A档6/B档3升级清单；新灰区#10 NP双帽",
-   "next": "并入主线合订",
+   "state": "A4毕：三机角色映射+六消息协议+4禁4合法+挂接表；判词=MIP(无星)结构同构不升格；A档6/B档3升级清单；新灰区#10 NP双帽；B2 ipmp.py 设计毕(六相位/7 dataclass/A档6落接口/M1-M3窗口/测试T-01~T-11)，判词维持 MIP 无星同构不升格",
+   "next": "ipmp.py 实装+test_ipmp.py（候令）",
    "artifacts": [
     "vci-usrm/ure/T153_mip_re_northstar.canonical.md",
-    "research/ipc-three-machine-01.md"
+    "research/ipc-three-machine-01.md",
+    "research/ipc-ipmp-design-01.md"
    ]
   },
   {
@@ -62,16 +63,18 @@
   {
    "id": "TH-07",
    "name": "WEDGE 桩",
-   "state": "spec 楔子在 ci-root（目录制）",
-   "next": "桩清点+与 QFK 七模块对位表",
+   "state": "WEDGE 桩清查：hub 可及 21 仓全树零命中；疑在 qfa(gitee)/vci-library 已 purge 面——列入问 cisvr 清单",
+   "next": "候 cisvr 答出处；qfa 径开后再查",
    "artifacts": []
   },
   {
    "id": "TH-08",
    "name": "ATP-lab",
-   "state": "未启",
-   "next": "自动定理证明实验台设计（Lean 骨架接续 ucif2 十二件 sorry）",
-   "artifacts": []
+   "state": "B1 设计毕：NP机实体化五站台架(登记→编译sorry骨架→跑证#print axioms诚实律→入链→残差分流)；三档强度锁死；首批3试件P5/C5派生引理/C2扫荡；声明未证未伪任何C/P件",
+   "next": "qfk v0.2 扩域+P5 骨架（候令/自我修炼节拍）",
+   "artifacts": [
+    "research/ipc-atp-lab-01.md"
+   ]
   },
   {
    "id": "TH-09",
