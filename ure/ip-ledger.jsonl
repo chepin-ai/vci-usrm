@@ -4,3 +4,4 @@
 {"ts": "2026-08-27T23:28:39Z", "proc": "kernel-drill", "kind": "instruction_experience", "lesson": "内核每轮必擦：vault钻+jwt+helpers 须单cell可重放；dataclass 加载须 sys.modules 预注册；qfk tensor 相对导入须包桩(qfk.__path__)", "evidence": "本轮三次 ModuleNotFound/AttributeError/ImportError 修复链"}
 {"ts": "2026-08-28T01:14:25Z", "proc": "capability-transfer", "kind": "instruction_experience", "lesson": "权限指导类交付=正本私仓+直投各线inbox(趁权限窗口)+摆渡Q3+公面仅锚；窗口时序思维：摘仓前完成一切需写面的动作", "evidence": "ci-library/kit/CAP-GUIDE-01.md; drops x5; seq171"}
 {"ts": "2026-08-28T01:57:26Z", "proc": "ipc-batch1", "kind": "research_experience", "lesson": "子代理落盘或遇 portal 挂载视图差：备用路径(/mnt/agents/output/根)写+md5对拍+主控回收=可解；报告文本本身须自足(防失联摘要)，文件仅为持久化", "evidence": "ipc-tensorcast-01 回收事件"}
+{"ts": "2026-08-28T16:10:10Z", "proc": "qfk-v02-impl", "kind": "research_experience", "lesson": "设计稿钉死签名+测试编号续编=实装代理零扯皮；独立复验(自跑pytest+模块runner)为交账铁律；共享工作区并发写有残片风险,交付前重读复验；打包前清__pycache__防tar竞态", "evidence": "C1 34/34 主控复验同绿"}
