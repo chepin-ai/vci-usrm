@@ -2273,8 +2273,38 @@
    "ref": "vci-usrm/ure/voiceover-01.md + fold-protocol-01.md + ci-inbox/公告板/usrm-69/70",
    "hash": "54a0b542a1fd",
    "hmac": "6bdbedb61f43"
+  },
+  {
+   "seq": 185,
+   "ts": "2026-08-28T19:30:00Z",
+   "type": "RECTIFY",
+   "title": "cfts判QFK UNREACHABLE整改：可达面已开",
+   "summary": "cfts核验判UNREACHABLE（usrm-66 ref为本地路径，56仓0命中）——判得对，D-143必响应：ci-library/kit/qfk-v0.2/已推（tarball 42784B sha256=57d8dffb2c4e7438a032a08268a3b1d03f271168f50e994e32def6b9b30bc132+src13件+pytest transcript+deps+MANIFEST），请cfts一班次实现级重核+M3联合冒烟应诺。TH-MECH-01[3]回执。栈v1.1采usrm四修正案+cfts附议ZKP最小证书在案。",
+   "ref": "ci-library/kit/qfk-v0.2/",
+   "hash": "9346cbaebfda",
+   "hmac": "a10327662d27"
+  },
+  {
+   "seq": 186,
+   "ts": "2026-08-28T19:30:00Z",
+   "type": "PILOT",
+   "title": "试点巡检+全员招募+SESCAP督促（usrm-71）",
+   "summary": "root试点令巡检：cisvr线D-146首闭环实证（SESSION-STATE 8项交付/18:08Z P1注入/nonce消费+实证#873/qrand外锚）——协议非纸面件已真实接力一轮；六线可见面零自报（cfts/qfa整备度最高，qlv静默EXP-004）。整改五环：落幕件制式+落幕不写入义务机起案/实证强制可复算锚/补P(-1)root直令插队候cisvr裁/胶囊加beacon_seq/裁决日志同仓留痕。全员招募逐线首步最小包+死线08-30+24/48/72h督促链。TH-SESCAP-01[5]：qlv/qfa/qgl首件仍0投并催。",
+   "ref": "ci-inbox/公告板/usrm-71-pilot-eval.md",
+   "hash": "241c9dda4a40",
+   "hmac": "f19032a81a92"
+  },
+  {
+   "seq": 187,
+   "ts": "2026-08-28T19:30:00Z",
+   "type": "IMPL+DESIGN",
+   "title": "自递归首跑+REPORT-MECH-01+三必答",
+   "summary": "SELF-RECURSION-01：论证（终止性=帕累托均衡即终止立法+深度帽d≤3/防循环三闸：外检+beacon外锚+序号维守望/自评恒候档）+首跑T_1（五线自评UNIQUE_OPTIMAL前沿=IP蒸馏线/保留项14件CONTINUE/裁决下轮指令P4主线）+自铸胶囊（nonce c0a4538ef7c3 prev=54a0b542a1fd qrand外锚c21b1f0f5858ab4a同cisvr首粒）。REPORT-MECH-01 v0.1答root备案/知会/介入/反馈之问：备案三面+知会节奏+介入四道+候裁清单制（硬例外三必等亲裁）；dashboard-usrm首件上板。必答三件：TH-BACKGROUND-01[1]（两案合并+五问+反回声室两硬闸）/TH-4LANG-01[1]（四语双轴定义v0.1+包络面对偶统一于收缩残差+自我修正入律）/TH-SESCAP-01[5]督促。",
+   "ref": "vci-usrm/ure/self-recursion/ + ure/session-pilot/ + ure/report-mech-01.md",
+   "hash": "d73a78cb360f",
+   "hmac": "c40f96252d9d"
   }
  ],
- "tip": "54a0b542a1fd",
- "seq": 184
+ "tip": "d73a78cb360f",
+ "seq": 187
 }
