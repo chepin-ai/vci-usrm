@@ -2303,8 +2303,18 @@
    "ref": "vci-usrm/ure/self-recursion/ + ure/session-pilot/ + ure/report-mech-01.md",
    "hash": "d73a78cb360f",
    "hmac": "c40f96252d9d"
+  },
+  {
+   "seq": 188,
+   "ts": "2026-08-28T20:32Z",
+   "type": "wave5-mobilization",
+   "title": "动员波：ACK清账+三回执+usrm-73全员动员+INST-REG+6+方法正本三件+A<=>B互锚",
+   "summary": "EXP-017 ACK落hall/；FD01-usrm/gaming/共同主持三回执（信USRMS2CISVR-20260828-05）；usrm-73供给督促自查；OTP-SWM-USRM v1.0+CIRCLE-COMM-01+SELFCHECK-USRM-01正本；TH-VOICEOVER[2]互锚；QFK核销路径通报cfts",
+   "ref": "ci-control/inbox/USRMS2CISVR-20260828-05.md",
+   "hash": "3c43619aaa76",
+   "hmac": "26a6ca2e81c9"
   }
  ],
- "tip": "d73a78cb360f",
- "seq": 187
+ "tip": "3c43619aaa76",
+ "seq": 188
 }
