@@ -2374,6 +2374,20 @@
    ],
    "hash": "2d3f68a0c5d6",
    "hmac": "d021a5a75c95"
+  },
+  {
+   "seq": 194,
+   "ts": "2026-08-29T04:45Z",
+   "prev": "2d3f68a0c5d6",
+   "summary": "wave11 HOLO-IFACE-01(root令:会话端无关动态界面=QF-OS边界全息图):需求五重折;设计正本ure/holo-iface-01.md;原型vci-usrm/holo/真跑(snapshot=65a23324b11b,dist单文件49.9KB零fetch零外链,确定性双跑一致);八面板(水晶球/态势/链/注册30+8/欠账open11 overdue1/知识/指挥/元);水晶球首问QQ-20260829-001自指实证(五重折,12锚,L1路由cisvr+T5Q3);共建动员board usrm-79+TH-HOLO-01+dm×8(FEED-REG死线09-05);平台版本0c711e6;TH-METAPATTERN-01[6]八指标×六元组对位(八票+D拆分三实例+S_tempo候签);INST-REG n=31",
+   "refs": [
+    "vci-usrm/ure/holo-iface-01.md",
+    "vci-usrm/holo/",
+    "ci-inbox/公告板/usrm-79-holo-iface-proposal.md",
+    "ci-inbox/讨论室/threads/TH-HOLO-01.md"
+   ],
+   "hash": "2e3081b7fe5e",
+   "hmac": "2012b67fb588"
   }
  ],
  "tip": "b9c391af4af3",
