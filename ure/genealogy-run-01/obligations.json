@@ -1,0 +1,54 @@
+{
+ "run_id": "GENEALOGY-RUN-01-E1",
+ "preregistration": {
+  "prediction": "三命题 OBL-1/OBL-2/OBL-3 可望全 PASS",
+  "declared_before": "C/V/J 相位执行前于 Π 相位登记",
+  "predicted_at_logical": "anchor seq61"
+ },
+ "obligations": [
+  {
+   "prop_id": "OBL-1",
+   "statement": "验证 narrative 链 seq170→tip 连续可复算",
+   "check_spec": "hash=sha256(prev.hash+canon)[:12], canon=json.dumps(剔除hash/hmac,ensure_ascii=False,sort_keys=True)；自 seq169 之 hash 起逐条复算 seq170..tip(190)，比对存储值",
+   "deadline": "2026-08-29T00:00:00Z",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true,
+    "note": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+   },
+   "status": "closed",
+   "verdict_ref": "ae6c6c1cff7c"
+  },
+  {
+   "prop_id": "OBL-2",
+   "statement": "INST-REG 无重复 inst_id 且 goal_vec 四维",
+   "check_spec": "inst_id 全集唯一；goal_vec 为 null（CONVERGED 终态豁免）或长度恰为 4 的数值列表",
+   "deadline": "2026-08-29T00:00:00Z",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true,
+    "note": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+   },
+   "status": "closed",
+   "verdict_ref": "ae6c6c1cff7c"
+  },
+  {
+   "prop_id": "OBL-3",
+   "statement": "beacon-mirror qrand 字段与定格值一致",
+   "check_spec": "ctx-beacon-mirror.json 的 qrand==c21b1f0f5858ab4acba2fba54b5e84bd7ea30234dbc4e43cb2304735c5e20eeb 且 seq==61（锚停滞在案）",
+   "deadline": "2026-08-29T00:00:00Z",
+   "anchor": {
+    "qrand_seq": 61,
+    "stale": true,
+    "note": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+   },
+   "status": "closed",
+   "verdict_ref": "ae6c6c1cff7c"
+  }
+ ],
+ "closure": {
+  "verdict_hash": "ae6c6c1cff7c",
+  "closed_at_logical": "anchor seq61",
+  "i3": "J 回注 Π：全部关闭或升级，闭账"
+ }
+}
