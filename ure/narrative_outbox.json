@@ -2163,8 +2163,18 @@
    "ref": "research/ipc-{tensorcast,kg-typology,hyperspace,three-machine}-01.md",
    "hash": "d6698cda46b0",
    "hmac": "98c16d1bf09a"
+  },
+  {
+   "seq": 174,
+   "ts": "2026-08-28T08:55:17Z",
+   "type": "OPS",
+   "title": "摘前抢救usrm-repo鲜bundle+disc-relay兼容修复+WEDGE零命中",
+   "summary": "窗口三连：①usrm-repo 鲜 git bundle（HEAD dcf53a16=08-28T04:05Z，18.5MB，完整史校验okay）已入 ci-library/archive/usrm-repo-full-20260828.bundle——摘5后我面不失此线全史；存量bundle(08-10)陈旧18天弃用；含token克隆即焚。②disc-relay 实证只认 items 键：usrm-canon 公面 outbox 已补 items 兼容面（三帖重投），relay 已 dispatch(204)，铸帖+大厅镜像候巡。③WEDGE 桩清查：hub 可及 21 仓全树零命中（ci-root/usrm-repo/ci-library/vci-usrm 皆无 WEDGE.md）——疑在 qfa(gitee)/已 purge 面，列入问 cisvr 清单。",
+   "ref": "ci-library:archive/usrm-repo-full-20260828.bundle",
+   "hash": "4a4c1601606a",
+   "hmac": "729f56ede2e9"
   }
  ],
- "tip": "d6698cda46b0",
- "seq": 173
+ "tip": "4a4c1601606a",
+ "seq": 174
 }
