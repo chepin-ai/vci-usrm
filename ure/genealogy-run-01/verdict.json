@@ -1,0 +1,42 @@
+{
+ "run_id": "GENEALOGY-RUN-01-E1",
+ "schema": "H7.2",
+ "注册编号": "GENEALOGY-RUN-01-E1",
+ "预测": "开跑前声明：三命题 OBL-1/OBL-2/OBL-3 可望全 PASS（Π 相位 preregistration 在案）",
+ "实验指针": {
+  "evidence": [
+   "evidence-obl1.json",
+   "evidence-obl2.json",
+   "evidence-obl3.json"
+  ],
+  "certificates": "certificates.json",
+  "anchor": {
+   "qrand_seq": 61,
+   "stale": true,
+   "note": "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚"
+  }
+ },
+ "结果": {
+  "OBL-1": "PASS",
+  "OBL-2": "PASS",
+  "OBL-3": "PASS"
+ },
+ "状态": "全命题 PASS，判闭合（I3 回注 obligations.json status=closed）",
+ "诚实档": [
+  "toy 签名档：role_i_sig=sha256(qrand‖role_i‖verdict_hash)[:12]，非密码学签名",
+  "锚停滞在案：beacon-mirror 定格 seq61，全程用 last-good qrand，降级声明随锚",
+  "z3 小型状态机编码非全链形式化【候】"
+ ],
+ "verdict_hash": "ae6c6c1cff7c",
+ "signatures": {
+  "role_1_sig": "884a81baafae",
+  "role_2_sig": "ac91bb9e671d",
+  "role_3_sig": "6fa4e8e82f2c",
+  "role_4_sig": "4ab86ed9056c",
+  "role_5_sig": "8c1871e27eab",
+  "scheme": "toy: sha256(qrand‖role_i‖verdict_hash)[:12]（非密码学签名）",
+  "threshold": "3-of-5",
+  "valid_sigs": 5,
+  "threshold_met": true
+ }
+}
