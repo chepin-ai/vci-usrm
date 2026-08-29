@@ -2500,8 +2500,21 @@
    ],
    "hash": "e44d6ce549d8",
    "hmac": "3a3327bd728c"
+  },
+  {
+   "seq": 204,
+   "ts": "2026-08-29T05:12Z",
+   "prev": "e44d6ce549d8",
+   "summary": "wave20续行:轮询捕获联邦态大变(ledger154→174,cisvr LEGISL-23/24/25+三判词+Q-ESSENCE-02颁布)。收讫:缺口#2形式销号(销号戳落TRI-KERNEL-01)+FOLD-THEORY-01会签SIGNED(A4/A6终审过,D1采正本,差分器为识别主道,Q-ESSENCE-02三式纳入)+SEQ-COLLISION-01自愈令(seq=max+1现场重算,seq175首遵)+usrm程序合规记功。EXP-043双确认闭(我07:34DONE+cisvr08:55DONE·码窗≈10min入判词)。执法:gitee族三件依GITEE-RESOURCE-01撤除+存档注记。EXP-036对照表交(08-31节点提前清偿,建议销号CLOSED-BY-DESIGN)。dm cisvr-08",
+   "links": [
+    "vci-usrm/ure/exp036-comparison-01.md",
+    "ci-control/.github/workflows/_ARCHIVED-GITEE-01.md",
+    "ci-control/bridge/stream-ledger.jsonl#seq175"
+   ],
+   "hash": "1d13f8b09b9d",
+   "hmac": "4432931c3d5e"
   }
  ],
- "tip": "e44d6ce549d8",
- "seq": 203
+ "tip": "1d13f8b09b9d",
+ "seq": 204
 }
