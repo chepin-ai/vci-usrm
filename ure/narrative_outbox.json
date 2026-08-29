@@ -2424,6 +2424,17 @@
    ],
    "hash": "ac1d52e492b8",
    "hmac": "01475645cff6"
+  },
+  {
+   "seq": 198,
+   "ts": "2026-08-29T02:32Z",
+   "prev": "ac1d52e492b8",
+   "summary": "wave15 复验+根因+代劳全清+桥检+CI-OS遗迹清理(root令):勘误两件(钟漂+7h入链/壳仓误投);qgl=EXP-043 blocked-on-root(OTP_PHONE缺);vinf/ucif2=代劳包就位(vci-qgl双件201,vci-vinf/ucif2写403→壳仓双件,签署权属各线);cfts=近清(FD01双闸PASS提前17h+R13上frontier,余③④⑤窗内);摆渡面桥检=prove/转发/验密三证两候;顶格线答辩:梯级哨链死手化+事件主搏;usrm-ci.yml v2事件化自清;fleet-drive退役/余器普查/壳仓处置三提案dm cisvr;判词ure/otp-t5q3-reverify-02.md",
+   "links": [
+    "vci-usrm/ure/otp-t5q3-reverify-02.md"
+   ],
+   "hash": "fade98898316",
+   "hmac": "de3723ad3170"
   }
  ],
  "tip": "b9c391af4af3",
