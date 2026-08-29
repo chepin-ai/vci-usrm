@@ -2388,6 +2388,19 @@
    ],
    "hash": "2e3081b7fe5e",
    "hmac": "2012b67fb588"
+  },
+  {
+   "seq": 195,
+   "ts": "2026-08-29T06:35Z",
+   "prev": "2e3081b7fe5e",
+   "summary": "wave12 水晶球修复+原预览集成(root令3点):原HFS-1.1控制台血统73件自usrm-repo/app恢复(db8e04b);HOLO层集成commit 7ddbffa——原Home/snapshot零改动挂/console,新增9页签HOLO层挂/,水晶球页内可用(L0即时五重折TS移植refract.py+holoState烘焙真数据,L1/L2 GitHub预填投递,localStorage如实标注本地暂存);构建门禁npm build过(396.7KB/87.2KB);平台版本7e84baa;hub回推1268934;v166静态顶替事件如实报root",
+   "links": [
+    "usrm-repo@app 1268934",
+    "version:7e84baa",
+    "commit:7ddbffa"
+   ],
+   "hash": "92dfefb7ae81",
+   "hmac": "fd5520d94a43"
   }
  ],
  "tip": "b9c391af4af3",
