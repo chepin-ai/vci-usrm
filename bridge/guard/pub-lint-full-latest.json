@@ -1,18 +1,11 @@
 {
- "ts": "2026-08-29T07:10:39Z",
+ "ts": "2026-08-29T13:52:12Z",
  "target": "vci-usrm",
  "mode": "full-tree",
- "scanned": 266,
- "fixed_n": 9,
+ "scanned": 269,
+ "fixed_n": 2,
  "fixed": [
-  "ure/holo-iface-01.md",
-  "ure/narrative_outbox.json",
-  "ure/otp-t5q3-reverify-02.md",
-  "ure/qksa-01.md",
-  "ure/qksa-run-01/BASE-REG.json",
-  "ure/qksa-run-01/base-reg-builder.py",
-  "ure/qksa-run-01/collab-compute.py",
-  "ure/qksa-run-01/collab-report.json",
-  "ure/split-brain-cure-01.md"
+  "ure/mip-fold-sweep-01.md",
+  "ure/otp-qfa-cios-04.md"
  ]
 }

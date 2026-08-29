@@ -7,18 +7,18 @@
 - 改造令已下：fetch 流加 schedule 死手 + qf-beat 主搏，到件自动 fan-out。
 
 ## ② 「dm cisvr 提案流检＝在途未达即时；在队未路由——事件总线自身由定时驱动？」—— 判：【证】于入口沿
-- 实证：**ci-inbox 仓 .github/workflows 为空**——dm-queue 投件不产生任何 qf-beat；路由依赖 vci-inbox field-router 班次（定时/死手）。故：qf-beat 总线**本体事件原生**（repository_dispatch），但**入口沿无人值守、定时捡拾**——root 之问在入口沿成立，在本体不成立。
-- 处方（已随 D-usrm-002 请 qfa 会签，治理机场域）：ci-inbox 植 push-on-dm-queue 的 beat 发射器，投递即路由；cron 降死手兜底。正合 D-157 模型补齐最后一沿。
+- 实证：**HUB-MAIL 仓 .github/workflows 为空**——dm-queue 投件不产生任何 qf-beat；路由依赖 vci-inbox field-router 班次（定时/死手）。故：qf-beat 总线**本体事件原生**（repository_dispatch），但**入口沿无人值守、定时捡拾**——root 之问在入口沿成立，在本体不成立。
+- 处方（已随 D-usrm-002 请 qfa 会签，治理机场域）：HUB-MAIL 植 push-on-dm-queue 的 beat 发射器，投递即路由；cron 降死手兜底。正合 D-157 模型补齐最后一沿。
 
 ## ③ OTP@cisvr：「事项已完成，请其完成App写Scope」—— 判：请办已正式送达【证】
-- 实证：installation 154355791 现 21 仓，**缺 vci-vinf / vci-ucif2 / qlv-lib**（读可写 403，B6 凭证scope分裂脑之源）。
+- 实证：installation 〈RED〉 现 21 仓，**缺 vci-vinf / vci-ucif2 / qlv-lib**（读可写 403，B6 凭证scope分裂脑之源）。
 - 已发 dm USRM2CISVR-OTP-20260829-04 请 cisvr（或转 root）将三仓加入安装实例。usrm 收权即日回迁代理包、销 B6 候案。
 
 ## ④ 未收到验证码 —— 全链法医，四级反转，终局【证：码已离站】
 | 时刻(GitHub wall) | 事件 | 判定 |
 |---|---|---|
 | 02:19–02:20Z | 首码 run 33228672295：旧工蜂「无滑块即 CODE_SENT」乐观回执 | **冲**：收据≠送达，首码「已发」档撤 |
-| 07:10Z | v2.1 正向回执版重发（issue#2）：FAILED·截图实证 kimi.com 红字「手机号格式不正确」 | **证**：root 未收码之技术根因 = OTP_PHONE 值格式 |
+| 07:10Z | v2.1 正向回执版重发（issue#2）：FAILED·截图实证 kimi.com 红字「手机号格式不正确」 | **证**：root 未收码之技术根因 = 〈RED〉 值格式 |
 | 07:16Z | v2.2 归一化（去非数字/去86前缀，实测 len=11）重发（issue#3）：回执 FAILED，但 artifact 截图示发码钮**倒数「88 s」** | **证+自纠**：短信确已离站；FAILED 系 v2.2 关键词表误将页面固有词「手机号（登录页签）」当报错 |
 | 07:16:30Z | v2.3 修复关键词表；issue#3 与 otp_gate_state.json 法医更正为 **CODE_SENT_CONFIRMED** | 终局：码已离站，候 root 递码 |
 

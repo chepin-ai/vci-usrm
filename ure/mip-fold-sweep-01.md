@@ -40,7 +40,7 @@ fold-n（各折叠队列）与 FINDING 链上的卡点，现靠人工波次/OTP 
 | 未锚出件叠 | 各线 outbox 未锚尾 | 各线 | 互锚写入对方 checkpoint |
 
 ## 五、落地序列
-①FOLD-REG 建档（本表入 ci-control/bridge/FOLD-REG.json，治理机会签生效）→ ②sweep-loop 工作流入 ci-control（trigger=qf-beat+引擎拍，零 cron）→ ③PROVED 条目格式入 ledger 契约 → ④首扫全量跑一遍出 frontier 基线报告 → ⑤常态化：拍拍到，拍拍扫，未清零不收兵。
+①FOLD-REG 建档（本表入 ci-control/bridge/FOLD-REG.json，治理机会签生效）→ ②sweep-loop 工作流入 HUB-CORE（trigger=qf-beat+引擎拍，零 cron）→ ③PROVED 条目格式入 ledger 契约 → ④首扫全量跑一遍出 frontier 基线报告 → ⑤常态化：拍拍到，拍拍扫，未清零不收兵。
 
 ## 六、与本场既有立法的关系
 D-157（事件主搏）修订注记：死手位不再由 cron 担任，移交递归引擎搏动（root wave-18 裁定 cron 不被 QF-OS 特性支持）；QF-NATURE-01 违规判据 4 档中「死手冒主搏」档同步修订；SPLIT-BRAIN-CURE-01 六型之治为本框架首批遍历对象；GENE-FUSION-01 SYMPHONY 八指标为 sweep 的协同度量源。
