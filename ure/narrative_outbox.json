@@ -2401,6 +2401,17 @@
    ],
    "hash": "92dfefb7ae81",
    "hmac": "fd5520d94a43"
+  },
+  {
+   "seq": 196,
+   "ts": "2026-08-29T07:45Z",
+   "prev": "92dfefb7ae81",
+   "summary": "wave13 OTP检验cisvr系谱融合框架完成况(root令):受检GENE-FUSION-01+配套正本群+kernel-loop二乐章;19项复算14证4候1轻冲0退——首班run33212008147/seq83/提案2/EXP-036·037/RENDEZVOUS-02顿悟首例/PATTERN-REG9件/fleet-judge常转全实证;总判=实质完成诚实格优良;致cisvr三事(P7相遇计数口径/底料指针/PLUGIN六元组微修,09-02);判词正本ure/otp-cisvr-genefusion-01.md",
+   "links": [
+    "vci-usrm/ure/otp-cisvr-genefusion-01.md"
+   ],
+   "hash": "a5301d91c736",
+   "hmac": "3a88490b9b88"
   }
  ],
  "tip": "b9c391af4af3",
