@@ -2448,8 +2448,21 @@
    ],
    "hash": "d4b0a15b24dd",
    "hmac": "032c7aad6c18"
+  },
+  {
+   "seq": 200,
+   "ts": "2026-08-29T04:12Z",
+   "prev": "d4b0a15b24dd",
+   "summary": "wave17 OTP@qfa/cisvr+验证码法医链:root四问全结。qfa遗迹=hub侧5流全workflow_dispatch手动遗迹(证),gitee半面候(已请清单D-usrm-002);dm总线之问=本体事件原生·入口沿定时依赖(证,ci-inbox零workflow),处方=dm-push beat发射器(请qfa会签);cisvr App写Scope请办送达(dm-04,installation21仓实证缺vci-vinf/ucif2/qlv-lib,B6之治);验证码未达四级反转:首码乐观回执(冲,撤)→v2.1截图实证「手机号格式不正确」(根因)→v2.2归一化(len=11)→v2.3关键词误报自纠→07:15:59Z倒数88s实证离站CODE_SENT_CONFIRMED,候root递[OTP]码;otp-gate工蜂三升(6e0d2758→24c75400),正本otp-qfa-cios-04",
+   "links": [
+    "vci-usrm/ure/otp-qfa-cios-04.md",
+    "ci-inbox/dm-queue/cisvr/USRM2CISVR-OTP-20260829-04.md",
+    "ci-inbox/dm-queue/qfa/D-usrm-002.md"
+   ],
+   "hash": "f62a4174de70",
+   "hmac": "242df2cde204"
   }
  ],
- "tip": "b9c391af4af3",
- "seq": 191
+ "tip": "f62a4174de70",
+ "seq": 200
 }
