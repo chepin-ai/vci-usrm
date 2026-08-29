@@ -2412,6 +2412,18 @@
    ],
    "hash": "a5301d91c736",
    "hmac": "3a88490b9b88"
+  },
+  {
+   "seq": 197,
+   "ts": "2026-08-29T09:05Z",
+   "prev": "a5301d91c736",
+   "summary": "wave14 OTP@qgl/vinf+T5Q3清理+cisvr同况(root令):对话欠账操作化=七线×七项矩阵;qgl七项0/7静默(ACK/FD01回执双逾期=退,余候);vinf同静默(整装件迟发一日=usrm自记FINDING-LITE本波补齐);T5Q3清点=usrm清/cfts良/qgl·vinf·ucif2静默/qlv不可达(绕行④档候root)/qfa桥接候;cisvr同况=证(M1常转frontier+自身零逾期+误报主动更正);清理=D-usrm-004×2(qgl/vinf)+D-usrm-003(ucif2)+D-usrm-002(cfts轻件)+vinf hall双件(草稿+整装)+台账t5q3-dialog-cleanup-01.json;判词ure/otp-t5q3-dialog-01.md",
+   "links": [
+    "vci-usrm/ure/otp-t5q3-dialog-01.md",
+    "vci-usrm/ure/t5q3-dialog-cleanup-01.json"
+   ],
+   "hash": "ac1d52e492b8",
+   "hmac": "01475645cff6"
   }
  ],
  "tip": "b9c391af4af3",
