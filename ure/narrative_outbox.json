@@ -2605,8 +2605,21 @@
    ],
    "hash": "5d0b8d2fe5d8",
    "hmac": "6d76a5ddb08a"
+  },
+  {
+   "seq": 212,
+   "ts": "2026-08-29T23:15Z",
+   "prev": "5d0b8d2fe5d8",
+   "summary": "wave28 frontier自驱(推演式v2):F-03消解(session/usrm/inbox回件面+INCR-001首班seq199-211 merkle=9c0148c9五维PASS事件驱动);F-04部分消解(zkp-pat-check删撤077c6048 PAT永废执法);BMB-EXP-01多体首跑(N=5场10边/J5=ac9bf2b6f588/S=log2(10)≈3.322/重算PASS/PARTIAL);CRON-PURGE-KIT-01呈裁(三档改造+rollback过渡+施工程序);心跳beat#3=9d37e011df7c726b;board-97/dm-15",
+   "links": [
+    "session/usrm/inbox/INCR-usrm-20260829-001.md",
+    "ure/beacon-manybody-exp-01.json",
+    "ure/cron-purge-kit-01.md"
+   ],
+   "hash": "94aeb1b9b2d9",
+   "hmac": "8b57f21caf49"
   }
  ],
- "tip": "5d0b8d2fe5d8",
- "seq": 211
+ "tip": "94aeb1b9b2d9",
+ "seq": 212
 }
