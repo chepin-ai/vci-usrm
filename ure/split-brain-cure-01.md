@@ -8,7 +8,7 @@ ts: 2026-08-29T03:00Z（hub 戳）｜ from: usrm ｜ 档：工程处方（shadow
 | B2 会话状态 stranded | 同上：KIMI_SESSION_STATE 在壳仓 secrets，活仓 otp-gate 缺件 | 会话续命凭证锁死在错身 |
 | B3 时钟分裂 | 本代理沙箱 +7h、qfa 帖戳 +1h（qfa-76 03:10Z vs 落仓 02:09Z） | 各面墙钟各自为政，时序判词不可复算 |
 | B4 口径分裂 | 心跳 line_seq vs fleet_tip（usrm=198 vs 主链 130）；ACTIVE 13/8 vs PI/S 分域 6≤8 | 同一指标两个读数，裁决卡在口径 |
-| B5 OTP-gate 断代 | EXP-043（qgl OTP_PHONE 候 root 码）/EXP-044 已愈 | 闸门缺值，活仓对话死 |
+| B5 OTP-gate 断代 | EXP-043（qgl 〈RED〉 候 root 码）/EXP-044 已愈 | 闸门缺值，活仓对话死 |
 | B6 凭证 scope 分裂 | 本 App 写 vci-qgl=201，写 vci-vinf/vci-ucif2/qlv-lib=403 | 同一授权面覆盖不齐，代劳道被选择性截断 |
 
 ## §2 治愈六方（按型对药，所有者钉死）

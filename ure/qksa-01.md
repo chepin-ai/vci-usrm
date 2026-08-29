@@ -46,7 +46,7 @@
 
 | # | base_id | kind | chain_anchor | self_ops | collab_iface |
 |---|---|---|---|---|---|
-| 1 | usrm-K-ledger | 追加式哈希知识链（T58，entry_hash=sha256(type\|ref\|prev\|content_hash)，谱系 T/B 引用 DAG） | usrm-repo 锚 | VERIFY·CLOSURE·RESIDUAL·FORECAST | P1·P2·P3 |
+| 1 | usrm-K-ledger | 追加式哈希知识链（T58，entry_hash=sha256(type\|ref\|prev\|content_hash)，谱系 T/B 引用 DAG） | USRM-VAULT 锚 | VERIFY·CLOSURE·RESIDUAL·FORECAST | P1·P2·P3 |
 | 2 | usrm-narrative | 叙事链（narrative_outbox seq192 tip 78f5464a04a0） | ure 锚 | VERIFY·CLOSURE·RESIDUAL | P1·P2 |
 | 3 | qgl-genealogy | 五基座组（knowledge_graph/cell_complex/hyperhypergraph/iso_network/lean）**作 1 组登记** | genealogy/v1.json 锚 | VERIFY·CLOSURE·RESIDUAL | P1·P2·P3 |
 | 4 | ucif2-KG-lean | KG Lean 形式化层七件 | formalization 锚 | VERIFY·CLOSURE | P1·P3 |

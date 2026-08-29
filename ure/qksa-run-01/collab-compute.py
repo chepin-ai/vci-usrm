@@ -65,7 +65,7 @@ def p1_three_hop() -> dict:
         "result": "PASS" if ok else "FAIL",
         "evidence": {
             "toy": True,
-            "toy_note": "mailbox 为 dict 模拟（本机无 ci-control mailbox 真件）；三跳消息结构与 dtag 幂等语义照 T142 协议面",
+            "toy_note": "mailbox 为 dict 模拟（本机无 HUB-CORE mailbox 真件）；三跳消息结构与 dtag 幂等语义照 T142 协议面",
             "hops": ["REQ.RES.SEARCH(search-repos)", "清单manifest", "REQ.RES.FETCH(read-file-enc)", "RES.REPLY"],
             "send_results": [r1, r2, r3], "replay_hop2": r2_dup,
             "mailbox_size": len(mailbox), "log": log,

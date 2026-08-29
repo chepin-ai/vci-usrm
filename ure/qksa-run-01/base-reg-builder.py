@@ -42,7 +42,7 @@ def build_registry() -> list[dict]:
             "kind": "hash-chain-ledger",
             "chain_anchor": sha256_12("T58"),
             "anchor_evidence": "derived",
-            "anchor_note": '占位=sha256("T58")[:12] 现算（derived）；正本 T58 knowledge_ledger.py 在 usrm-repo，本机无仓，未读真链头',
+            "anchor_note": '占位=sha256("T58")[:12] 现算（derived）；正本 T58 knowledge_ledger.py 在 USRM-VAULT，本机无仓，未读真链头',
             "self_ops": ["VERIFY", "RESIDUAL", "CLOSURE"],
             "collab_iface": ["P1"],
             "status": "active",

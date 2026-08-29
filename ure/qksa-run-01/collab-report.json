@@ -23,7 +23,7 @@
           "delivered"
         ],
         "toy": true,
-        "toy_note": "mailbox 为 dict 模拟（本机无 ci-control mailbox 真件）；三跳消息结构与 dtag 幂等语义照 T142 协议面"
+        "toy_note": "mailbox 为 dict 模拟（本机无 HUB-CORE mailbox 真件）；三跳消息结构与 dtag 幂等语义照 T142 协议面"
       },
       "name": "T142 三段式检索模拟",
       "protocol": "P1",

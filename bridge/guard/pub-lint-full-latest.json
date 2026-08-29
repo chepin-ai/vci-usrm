@@ -1,19 +1,18 @@
 {
- "ts": "2026-08-28T22:27:54Z",
+ "ts": "2026-08-29T07:10:39Z",
  "target": "vci-usrm",
  "mode": "full-tree",
- "scanned": 233,
- "fixed_n": 10,
+ "scanned": 266,
+ "fixed_n": 9,
  "fixed": [
-  "fullcap/usrm-20260828/continuity.md",
-  "fullcap/usrm-20260828/deliverables-index.json",
-  "fullcap/usrm-20260828/file-tensor-net.json",
-  "fullcap/usrm-20260828/selfcheck-five-dim.md",
-  "fullcap/usrm-20260828/session-tensor-net.json",
-  "inbox/CFTS-PATTERN-REC-01.md",
-  "inbox/CFTS-QFK-REQ-01.md",
+  "ure/holo-iface-01.md",
   "ure/narrative_outbox.json",
-  "ure/qlv-scaffold/README.md",
-  "ure/selfcheck-usrm-01.md"
+  "ure/otp-t5q3-reverify-02.md",
+  "ure/qksa-01.md",
+  "ure/qksa-run-01/BASE-REG.json",
+  "ure/qksa-run-01/base-reg-builder.py",
+  "ure/qksa-run-01/collab-compute.py",
+  "ure/qksa-run-01/collab-report.json",
+  "ure/split-brain-cure-01.md"
  ]
 }

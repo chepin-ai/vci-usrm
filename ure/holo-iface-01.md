@@ -44,7 +44,7 @@
 | 注册面 | INST-REG(n=30) / BASE-REG(cd7a4ec446e6) | 实例/基座登记格，reg_hash 可复算 | 未登记件不入格 |
 | 讨论面 | 讨论室话题索引 | 话题+状态（open/FCP/裁决） | v0.2【候】 |
 | 欠账面 | EXPECT-REG-01（open11/overdue0/solved7） | 欠账格 + 死线倒计时排序 | overdue>0 置顶红标 |
-| 知识面 | PATTERN-REG / ci-library 研究栈 | 模式卡片 + 来源指针 | 无源模式不上卡 |
+| 知识面 | PATTERN-REG / HUB-LIB 研究栈 | 模式卡片 + 来源指针 | 无源模式不上卡 |
 | 北星面 | 北星目标件（待登记） | 目标-里程碑投影 | v0.2【候】 |
 | 指挥面 | holo/direct/ + dm-queue 回执 | 指令格 + issued/acked/done 三态 | 无回执指令挂 ack 超时 |
 | 元面 | 生成器自态（版本/输入哈希/投影规则版） | 自指投影：全息图自身的体侧锚 | 生成器版本漂移即标 |
