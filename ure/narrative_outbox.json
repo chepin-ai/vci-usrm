@@ -2461,8 +2461,21 @@
    ],
    "hash": "f62a4174de70",
    "hmac": "242df2cde204"
+  },
+  {
+   "seq": 201,
+   "ts": "2026-08-29T04:32Z",
+   "prev": "f62a4174de70",
+   "summary": "wave17b EXP-043闭(码07:31:22Z离站→07:34:41Z核DONE·3m19s)+root三令执法:R1裁定qfa五流公域违规→撤清vci-inbox并迁ci-control事件化(qf-beat主搏穿墙+6h死手+密钥闸,inputs保留);所有卡点登FINDING seq146-150(dm入口沿/R1违规/B6scope/乐观回执/时效窗);dm cisvr-05(EXP-043闭+秘钥迁配GITEE_MIRROR_PAT等+PAT遗类改App道+扩列仍候)+dm qfa-003(裁定升级通报+gitee清单仍候)",
+   "links": [
+    "ci-control/.github/workflows/qfa-gitee-fetch.yml",
+    "ci-inbox/dm-queue/cisvr/USRM2CISVR-OTP-20260829-05.md",
+    "ci-control/bridge/stream-ledger.jsonl#seq146-150"
+   ],
+   "hash": "9d65da8646aa",
+   "hmac": "a8b433f75453"
   }
  ],
- "tip": "f62a4174de70",
- "seq": 200
+ "tip": "9d65da8646aa",
+ "seq": 201
 }
