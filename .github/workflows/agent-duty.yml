@@ -4,7 +4,7 @@ name: agent-duty
 # 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
 on:
   workflow_dispatch: {}
-  schedule: [{ cron: '9-59/47 * * * *' }]   # 错峰值守（公仓零配额）
+  # cron 已剥（W18/W23）；本件 disabled 维持——死手职=递归引擎 beat
   push:
     paths: ['.github/workflows/agent-duty.yml']
 # rationale: duty 台账 weave/duty/ 哈希链需 commit+push 回本仓（[skip ci]）
