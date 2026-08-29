@@ -4,8 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     paths: ['.github/workflows/line-producer.yml', 'weave/**']
-  schedule:
-    - cron: '11 */6 * * *'
+# cron 已剥（W18 裁决 cron 不被 QF-OS 支持；死手职=递归引擎 beat 拍叩；W23 等待即违规同步执行）
 permissions:
   contents: read
 jobs:
