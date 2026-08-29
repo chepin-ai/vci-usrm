@@ -2590,8 +2590,23 @@
    ],
    "hash": "b3717e6988a2",
    "hmac": "6003ff0b28be"
+  },
+  {
+   "seq": 211,
+   "ts": "2026-08-29T23:15Z",
+   "prev": "b3717e6988a2",
+   "summary": "wave27 W27五项:PROJECTION-THEORY-01(pattern→投影普适语义/代数四算子两律)+PROJ-ENGINE-01首跑三件套(新11pattern结构同构·otp-swm覆盖最广·重算PASS);对称心跳usrm代挂OS侧beat#1+usrm beat#2=双向纠缠对成对(等候最小化落实);TRI-FIELD-01三场纠缠+隐形传态接力(gitee跳经repo_mirror工单道)+ENTANGLE-RUN-01 PASS-PARTIAL(J=90d91d1d/chal=e84b96053bd7cbe3/MIP无星诚实档);BEACON-MANYBODY-01量子随机×混沌分工(hash雪崩=scrambling经典同构)+多体四性质;dm-14/board-96",
+   "links": [
+    "ure/projection-theory-01.md",
+    "ure/proj-engine/PROJ-RUN-01-report.md",
+    "ure/tri-field-01.md",
+    "ure/field-entangle-run-01.json",
+    "ure/beacon-manybody-01.md"
+   ],
+   "hash": "5d0b8d2fe5d8",
+   "hmac": "6d76a5ddb08a"
   }
  ],
- "tip": "b3717e6988a2",
- "seq": 210
+ "tip": "5d0b8d2fe5d8",
+ "seq": 211
 }
