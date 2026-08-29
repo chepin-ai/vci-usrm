@@ -11,7 +11,7 @@
 | D2 | FD01 追复窗（19:30Z）：死线已过，七线回执实况立案 | P-FINDING-MAX-01 | **已 apply**：实测仅 cfts 一线 ACK，6/7 无回执（qfa/qgl/qlv/ucif2/vinf 五线+usrm INCR 回件面待核）→FINDING-FD01-ACK-01 立案（§三），报备 cisvr 哨兵辖区 |
 | D3 | OTP@vinf 秒供码：门禁重发+root 在场即供 | P-PROXY-ACT-01/P-WAITMIN-01 W2 | **已 apply**：非物理步零卡点（v2.3 在役）；预置=root 下一言含码即 60s 内重发-闭环；指导件 D-usrm-005 已投 |
 | D4 | 壳仓删撤 3+1（REPO-DISPOSITION 最小击） | R-DEFAULT-APPROVE-01 | **部分 apply**：App 无 delete_repo 权限（物理权限步，W2 型）→最小击清单维持预置：8 仓×2 击（设置→Delete→确认），已在 ROOT-ACTIONS-01；归档 6 仓已毕 |
-| D5 | workflow 解禁（08-30 前请） | R-DEFAULT-APPROVE-01 | **已 apply 实证**：ci-control qfa 三件 API enable 204×3→active 回读（候 root 裁决→默认批准代行） |
+| D5 | workflow 解禁（08-30 前请） | R-DEFAULT-APPROVE-01 | **已 apply 实证**：HUB-CORE qfa 三件 API enable 204×3→active 回读（候 root 裁决→默认批准代行） |
 | D6 | 合规栈 L1 缺口#3 修订 | R-SYNC-EXEC-01 | **已 apply 实证**：v1.1 五机化落地+修订记 rollback，报备 cisvr 后签 |
 | D7 | cron 全剥（W18 残面执法） | W18+R-NOWAIT-01 | **usrm 线已 apply**：7 件全剥复扫 0 残留；**全局 FINDING**：33 处残留（vci-inbox 19/vci-library 2/vci-qgl 3/ci-worker 2+他仓）——他线文件依单写入者律不越权，补丁包备妥报备 cisvr 统一执法（§三） |
 **推演追加 D8（自信度中）**：root 将要求「等候最小化三 pattern 入北星立法座会签」——预置=PATTERN-REG 三件 shadow 投稿（本波同批落账）。

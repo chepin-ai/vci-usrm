@@ -1,10 +1,11 @@
 {
- "ts": "2026-08-29T19:26:17Z",
+ "ts": "2026-08-29T22:41:28Z",
  "target": "vci-usrm",
  "mode": "full-tree",
- "scanned": 272,
- "fixed_n": 1,
+ "scanned": 281,
+ "fixed_n": 2,
  "fixed": [
-  "ure/wave22-deduce-01.md"
+  "ure/wave23-antifold-01.md",
+  "ure/wave23-deduce-apply-01.md"
  ]
 }

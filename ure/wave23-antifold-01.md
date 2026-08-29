@@ -34,7 +34,7 @@
 ## 三、执行转换表（本波已 apply）
 | # | 事项 | 原态 | 执行 | 态 |
 |---|---|---|---|---|
-| E1 | ci-control qfa 三件 workflow 解禁 | 候 root 裁决 | API enable 204×3→active 回读 | 证 |
+| E1 | HUB-CORE qfa 三件 workflow 解禁 | 候 root 裁决 | API enable 204×3→active 回读 | 证 |
 | E2 | vci-usrm cron×7 剥除（W18 全剥令自辖先行） | 活面 5+disabled 2 | 全剥，复扫 0 残留 | 证 |
 | E3 | 合规栈 L1 缺口#3（N机语义冲突） | 候 cisvr 会签（两请未果） | v1.1 五机化同步落地+修订记 rollback | 证（候后签） |
 | E4 | REPO-DISPOSITION 删撤 8仓×2击 | 候 root 之手 | 物理权限步（App 无 delete_repo）→最小击清单预置维持 | 候（W2 物理） |
