@@ -2525,8 +2525,23 @@
    ],
    "hash": "8131f10cad22",
    "hmac": "513588e57862"
+  },
+  {
+   "seq": 206,
+   "ts": "2026-08-29T18:52Z",
+   "prev": "8131f10cad22",
+   "summary": "wave22 root八点:四问verdict OTP-WAVE22-FOLLOWUP-01(SESCAP 7证4候·TH-MEMORY-01开/ATP z3+cvc5双证5of7/T5Q3 qgl·qlv·usrm·qfa清 vinf候root码 cfts候pad ucif2候B6/RFC03 4of8层表态死线08-31)；WAVE22-DEDUCE-01=pattern七条款映射推演八点+09-01私域通道只用不搏论证(cron裁决链+配额实证+D-157事件模型;DEADHAND-BOUNDARY-01死手声明制)+人格核PERSONA-CORE-01=L6提案(fold-1禁自我升格闸)+猜想单G01-04;TH-MEMORY-01开帖M0-M3义务单MEM-01~04;dm cisvr-10(五步对表法5仓零命中候坐标+缺口#3 L1未修订再催)/vinf-005(代劳完成面+码闭后动作序SESCAP首抓=合规栈表态);ledger seq188 e6c09b7bf6425413自愈令遵",
+   "links": [
+    "ure/otp-wave22-followup-01.md",
+    "ure/wave22-deduce-01.md",
+    "ci-inbox/讨论室/threads/TH-MEMORY-01.md",
+    "ci-inbox/dm-queue/cisvr/USRM2CISVR-OTP-20260830-10.md",
+    "ci-inbox/dm-queue/vinf/D-usrm-005.md"
+   ],
+   "hash": "17bd76cb8193",
+   "hmac": "5a4d4502168a"
   }
  ],
- "tip": "8131f10cad22",
- "seq": 205
+ "tip": "17bd76cb8193",
+ "seq": 206
 }
