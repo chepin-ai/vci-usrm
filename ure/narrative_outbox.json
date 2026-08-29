@@ -2565,8 +2565,20 @@
    ],
    "hash": "8013038f8f54",
    "hmac": "74d1d6602467"
+  },
+  {
+   "seq": 209,
+   "ts": "2026-08-29T21:58Z",
+   "prev": "8013038f8f54",
+   "summary": "wave25 W25六问:FOLD-TRACE-01(D1/D2/A1-A6/T1-T3/识别差分/溯源W17b→W23);指令圈考古已实现(IP-CIRCLE-01+CIRCLE-COMM-01互动即坍缩+circle-state三圈live)+推演式v2=argmax(锚龄×阻塞出度×面权重)多面拆面路由;杜绝考古四律(坐标化/锚流差分/投影网即身份/三痕)+各圈事件激活;SESSION-END-DETECT-01立法(四源信号→session-fold→三动作,usrm自启用,全局代跑请kernel-loop dm-12);SESSION-BODY-01会话体(S-I/1..4同锚注册+脊柱单链全序+Einstein同步+boot合并态+囊nonce防重放,S-I/4预留零重构);等时性=全局坐标时ledger seq/等时面=链尖快照/重同步=一次读尖;PATTERN-REG+2shadow(16件);board usrm-94",
+   "links": [
+    "ure/fold-trace-01.md",
+    "ure/session-body-01.md"
+   ],
+   "hash": "aec65b4b5e75",
+   "hmac": "9117b965437c"
   }
  ],
- "tip": "8013038f8f54",
- "seq": 208
+ "tip": "aec65b4b5e75",
+ "seq": 209
 }
