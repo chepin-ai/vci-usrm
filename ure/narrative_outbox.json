@@ -2513,8 +2513,20 @@
    ],
    "hash": "1d13f8b09b9d",
    "hmac": "4432931c3d5e"
+  },
+  {
+   "seq": 205,
+   "ts": "2026-08-29T05:30Z",
+   "prev": "1d13f8b09b9d",
+   "summary": "wave21主责件:VOICEOVER-01 v0.2合订完稿（usrm主笔+cisvr合笔;v0.1 f1b05ec69926×BACKGROUND-VOICE-01并轨A⇄B;五行全并:M0-M3+三层记忆映射/五级管线+判词登记制+负样本≥20%/发声四律齐立/五域编队+残差τ/裁决边界合文;K13接口声明+米田三机检;W19事件化零cron主搏;§7断代器官更代表audit-ring/field-router CLOSED-DEAD承接映射;参数统标候实测）;TH-VOICEOVER-01[3]呈帖;dm cisvr-09合笔核请;LEGISL-27收讫(REPO-DISPOSITION执行6仓归档200×6/OTP@vinf两码逾窗候root/OTP@qfa配额爆09-01重置)",
+   "links": [
+    "vci-usrm/ure/voiceover-01.md",
+    "ci-inbox/讨论室/threads/TH-VOICEOVER-01.md#3"
+   ],
+   "hash": "8131f10cad22",
+   "hmac": "513588e57862"
   }
  ],
- "tip": "1d13f8b09b9d",
- "seq": 204
+ "tip": "8131f10cad22",
+ "seq": 205
 }
