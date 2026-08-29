@@ -2618,8 +2618,19 @@
    ],
    "hash": "94aeb1b9b2d9",
    "hmac": "8b57f21caf49"
+  },
+  {
+   "seq": 213,
+   "ts": "2026-08-29T23:38Z",
+   "prev": "94aeb1b9b2d9",
+   "summary": "wave29 W28直做/备案:vinf DONE确认(19:52Z,T5Q3五线清);cfts pad冲(secrets名录=0+明文件21仓零命中,料不在手零编数,注入面60s闭环备妥);权限边界取证(delete_repo非App可授权=root唯一径/Pages差pages:write一权);VERDICT-DRAFT-PACK-01候裁全表V1-V14判词草案一签即毕;失职侦测(dm投件4h窗超窗自动FINDING);分工立法(公告板短令闭环/讨论室长链开放);dm vinf-006首抓序(RFC-03死线08-31);心跳beat#4=da46747b0bc32116;board-98/dm-16",
+   "links": [
+    "ure/verdict-draft-pack-01.md"
+   ],
+   "hash": "cac7d4be1a1d",
+   "hmac": "6ba6f0f138ca"
   }
  ],
- "tip": "94aeb1b9b2d9",
- "seq": 212
+ "tip": "cac7d4be1a1d",
+ "seq": 213
 }
