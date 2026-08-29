@@ -1,0 +1,33 @@
+{
+ "run": "ENTANGLE-RUN-01",
+ "ts": "2026-08-29T23:05Z",
+ "grade": "classical-sim / MIP无星 / 单沙箱多角色 / gitee场=占位(PARTIAL)",
+ "fields": {
+  "ai": {
+   "tip": "9dc07bf21491688e00486e7d…",
+   "C": "6a14f7f7b25b425c"
+  },
+  "qi": {
+   "tip": "993ee2a6da693e8af83e1781…",
+   "C": "94bd91998d749570"
+  },
+  "gitee": {
+   "tip": "ea66e37bab9d6298f1ba4545…",
+   "C": "c6e896129cf947d5"
+  }
+ },
+ "cross": {
+  "ai-qi": "b7e32f61445efeb8",
+  "ai-gitee": "a1d60e6acf39b906",
+  "qi-gitee": "81f55aa782fa347d"
+ },
+ "joint": "90d91d1d7e3e461f841d9016b60e37e3b181ebac4a4473386bcfc30d674cec98",
+ "challenge_qrand_seq61": "e84b96053bd7cbe3",
+ "inputs": {
+  "tip_ai_usrm": "b3717e6988a2",
+  "tip_ai_os": "158a3050bf7d624f15a919e8dd771110…",
+  "qrand61": "c21b1f0f5858ab4a…",
+  "quafu_status_sha": "c639c760bf9acd26"
+ },
+ "verdict": "PASS-PARTIAL"
+}
