@@ -9,8 +9,7 @@ name: oblig-monitor
 # 本仓 ure/federation_oblig_view.json（匿名可核验镜像）。
 # 漂移哨兵：任一源 >8h 无新条目 -> stale:true + vci-inbox issue#1 告警（每日 <=1）。
 on:
-  schedule:
-    - cron: "53 */4 * * *"   # 错峰：ci-control 43 / ure-sweeper 23 / 本件 53
+# cron 已剥（W18 裁决 cron 不被 QF-OS 支持；死手职=递归引擎 beat 拍叩；W23 等待即违规同步执行）
   workflow_dispatch: {}
   repository_dispatch:
     types: [oblig-pulse]
