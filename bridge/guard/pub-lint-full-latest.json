@@ -1,11 +1,10 @@
 {
- "ts": "2026-08-29T13:52:12Z",
+ "ts": "2026-08-29T19:26:17Z",
  "target": "vci-usrm",
  "mode": "full-tree",
- "scanned": 269,
- "fixed_n": 2,
+ "scanned": 272,
+ "fixed_n": 1,
  "fixed": [
-  "ure/mip-fold-sweep-01.md",
-  "ure/otp-qfa-cios-04.md"
+  "ure/wave22-deduce-01.md"
  ]
 }
