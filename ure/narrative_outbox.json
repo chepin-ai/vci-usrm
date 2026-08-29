@@ -2487,8 +2487,21 @@
    ],
    "hash": "9a5db5ebea7d",
    "hmac": "1fda30776919"
+  },
+  {
+   "seq": 203,
+   "ts": "2026-08-29T04:52Z",
+   "prev": "9a5db5ebea7d",
+   "summary": "wave19 root三问：①不扫不判之诘=识别/定位层隐缺→答:识别=命题×锚流常开差分(义务机spec自带坐标×N机锚流逐拍比对,失配即识别/锚坐标即定位/缺席即信号),SWEEP降为差分器批量补课,已回注MIP-FOLD-SWEEP-01§二前置;②缺口#2闭合核验=证(TRI-KERNEL-01§1.1五机闭环逐字在册,形式销号请cisvr司法落笔)登ledger seq153 VERIFY;③fold-n情景理论正本FOLD-THEORY-01(D1未闭态唯一合法持久化/D2阶=卡点套卡点/A1-A6公理/T1-T3工程定理/本场活标本);F-W19-01登链seq154;dm cisvr-07",
+   "links": [
+    "vci-usrm/ure/fold-theory-01.md",
+    "vci-usrm/ure/mip-fold-sweep-01.md",
+    "ci-control/bridge/stream-ledger.jsonl#seq153-154"
+   ],
+   "hash": "e44d6ce549d8",
+   "hmac": "3a3327bd728c"
   }
  ],
- "tip": "9a5db5ebea7d",
- "seq": 202
+ "tip": "e44d6ce549d8",
+ "seq": 203
 }
