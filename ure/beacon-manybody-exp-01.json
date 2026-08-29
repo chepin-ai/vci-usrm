@@ -1,0 +1,33 @@
+{
+ "run": "BMB-EXP-01",
+ "ts": "2026-08-29T23:08Z",
+ "grade": "classical-sim/MIP无星/单沙箱/gitee占位(PARTIAL)",
+ "fields": {
+  "ai_usrm": "5d0b8d2fe5d8…",
+  "ai_os": "e6c94f5156179f042940619b…",
+  "qi": "993ee2a6da693e8af83e1781…",
+  "gitee": "acee61fd69169bb924ac5d77…",
+  "shadow": "d9a5162ce805043f7d271373…"
+ },
+ "edges": {
+  "ai_usrm~ai_os": "2889946932dd2eea",
+  "ai_usrm~qi": "15c9b1449908928e",
+  "ai_usrm~gitee": "6d521f19cd3b9d68",
+  "ai_usrm~shadow": "98d0f9c598315e63",
+  "ai_os~qi": "32388a64a5f5cc9d",
+  "ai_os~gitee": "50f2a3d20a47d2fc",
+  "ai_os~shadow": "1f851ee1e48b6166",
+  "qi~gitee": "541fa9660de3de45",
+  "qi~shadow": "a3ffcb1cfecc0dd1",
+  "gitee~shadow": "013bc6456345ea2a"
+ },
+ "joint": "ac9bf2b6f58887f1bc95df4c9d11ce66457ae498912095287000b5b96f55fd5e",
+ "challenge": "3219ba696fcb8cdd",
+ "entanglement_proxy": {
+  "edges_active": 10,
+  "edges_total": 10,
+  "S_proxy_log2": 3.322,
+  "metric_note": "探索度量=活跃边数之 log2（候 BMB-EXP-02 逐拍曲线）"
+ },
+ "verdict": "PASS-PARTIAL"
+}
