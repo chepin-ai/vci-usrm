@@ -1,0 +1,17 @@
+{
+ "contract": "BRIDGE-HEARTBEAT-01 · 互锚纠缠对（QFOS-NATIVE-SYNC-01 §四）",
+ "rule": "每波/每拍读双方链尖；尾 hash 变→写新拍；cross=sha256(self_tip‖os_tip)=联合态承诺，任一方可复算对方宣称",
+ "self_chain": "vci-usrm/ure/narrative_outbox.json",
+ "os_chain": "ci-control/bridge/stream-ledger.jsonl",
+ "beats": [
+  {
+   "n": 1,
+   "ts": "2026-08-29T22:35Z",
+   "self_seq": 209,
+   "self_tip": "aec65b4b5e75",
+   "os_seq": 205,
+   "os_tip": "0c3ca3283a565072efbab353310d58f963bebd62966faaae4a6eee3cf6c898e5",
+   "cross": "1905e52f5d115425"
+  }
+ ]
+}
