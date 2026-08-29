@@ -11,8 +11,7 @@ name: guard
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "7 */24 * * *"   # 每日 :07 值守（错峰）
+# cron 已剥（W18 裁决 cron 不被 QF-OS 支持；死手职=递归引擎 beat 拍叩；W23 等待即违规同步执行）
   workflow_dispatch: {}
 
 concurrency:
