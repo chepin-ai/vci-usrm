@@ -121,5 +121,47 @@
   "top_line": "72h FINDING (AUTH-USRM-01§3)",
   "qgl_anchor": "2026-08-30T21:00Z"
  },
- "verdict": "vci-usrm/ure/otp-t5q3-dialog-01.md"
+ "verdict": "vci-usrm/ure/otp-t5q3-dialog-01.md",
+ "wave15": {
+  "ts": "2026-08-29T02:32Z(hub戳)",
+  "errata": [
+   "钟漂+7h入链(判词/seq197戳)",
+   "壳仓误投(wave-14代劳件)"
+  ],
+  "qgl": {
+   "state": "blocked-on-root",
+   "ref": "EXP-043(OTP_PHONE缺,备件全齐)",
+   "proxy_kit": "vci-qgl/hall/双件已投"
+  },
+  "vinf": {
+   "state": "proxy-armed",
+   "proxy_kit": "壳仓hall双件;vci-vinf写403候凭证scope"
+  },
+  "ucif2": {
+   "state": "proxy-armed",
+   "proxy_kit": "壳仓hall双件;vci-ucif2写403候凭证scope"
+  },
+  "cfts": {
+   "state": "near-clear",
+   "evidence": "FD01 closed dual-gate PASS(v2.7.0,提前17h)+PI-cfts-R13-FD01-EXEC frontier",
+   "open": [
+    "RFC-03(08-31)",
+    "TH-DIVISION(08-31)",
+    "TH-VOICEOVER(09-01)"
+   ]
+  },
+  "qfa": {
+   "state": "bridge-verified",
+   "evidence": "qfa-76 T22 RESPONDED 候核;sink16件同秒201;候FD01-qfa"
+  },
+  "cios_relics": {
+   "usrm-ci.yml": "v2事件化已清",
+   "proposals": [
+    "fleet-drive退役评审",
+    "余器事件化普查",
+    "壳仓处置(root之手)"
+   ]
+  },
+  "verdict": "vci-usrm/ure/otp-t5q3-reverify-02.md"
+ }
 }
