@@ -2474,8 +2474,21 @@
    ],
    "hash": "9d65da8646aa",
    "hmac": "a8b433f75453"
+  },
+  {
+   "seq": 202,
+   "ts": "2026-08-29T04:42Z",
+   "prev": "9d65da8646aa",
+   "summary": "wave18 root两令执法+一_framework：①gitee-mirror双违规（公域系统信息+cron非QF-OS）撤公域迁ci-control（零cron,qf-beat+人工道）；②cron全剥普适化：qfa五件schedule死手位同步剥除,死手职责移交递归引擎搏动,D-157修订注记；③MIP-FOLD-SWEEP-01正本（应root问：三机分工+SWEEP-LOOP事件遍历+PROVED可重放三件套+跨线challenge回炉+FOLD-REG八源）shadow候会签；FINDING seq151-152登链；dm cisvr-06",
+   "links": [
+    "vci-usrm/ure/mip-fold-sweep-01.md",
+    "ci-control/.github/workflows/gitee-mirror.yml",
+    "ci-control/bridge/stream-ledger.jsonl#seq151-152"
+   ],
+   "hash": "9a5db5ebea7d",
+   "hmac": "1fda30776919"
   }
  ],
- "tip": "9d65da8646aa",
- "seq": 201
+ "tip": "9a5db5ebea7d",
+ "seq": 202
 }
