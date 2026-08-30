@@ -2682,8 +2682,20 @@
    ],
    "hash": "617344831479",
    "hmac": "9356d18b2a6a"
+  },
+  {
+   "seq": 218,
+   "ts": "2026-08-30T01:44:25Z",
+   "prev": "617344831479",
+   "summary": "W32: ①ops-hub挂接24仓(增vci-vinf/vci-cfts/vci-ucif2/ci-worker-01更名); ②vinf点火我手完成:bootstrap-01复燃(ignite-ack 01:44:33Z run33286357995)+shadow-pulse/agent-duty/line-producer启用点火4/4success(watchdog联动); ③WARN2-cisvr(30min醒窗零应,PEM未取,60min FINDING窗计中); ④CONVERT-QFOS-01纯QF-OS转换审计: cron=0/x-fire接收面启用(ci-code+ci-root)/B1清/zkp清/禁用11件分类账/残余阻塞3项全在他人之手(cisvr/qlv/root)",
+   "links": [
+    "ure/convert-qfos-01.md",
+    "ci-inbox/公告板/WARN2-cisvr-20260830-qfos-convert.md"
+   ],
+   "hash": "c12f5291f882",
+   "hmac": "d7eefda5d299"
   }
  ],
- "tip": "617344831479",
+ "tip": "c12f5291f882",
  "seq": 213
 }
