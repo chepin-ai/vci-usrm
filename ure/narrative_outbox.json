@@ -2694,6 +2694,19 @@
    ],
    "hash": "c12f5291f882",
    "hmac": "d7eefda5d299"
+  },
+  {
+   "seq": 219,
+   "ts": "2026-08-30T02:18:48Z",
+   "prev": "c12f5291f882",
+   "summary": "wave-35(W33)收束：qgl投诉分诊=STALL-TRIAGE-01入册(PATTERN-REG#18+TRIG-STALL-TRIAGE)；kernel.py根治(HUB-CORE遗物→ci-control/全dict .get化)02:12:52 success；内核裁定：vinf探针愈/G-N8·G-M2·G-BOX真findings归cisvr/G-N1-lgt归lgt/300件G-DIR陈案>72h；5哨兵workflow_run链格传动实证；OTP遗物3件删除；四线outbox改址repo-canonical(kimi.link冻结立碑)+genesis脚手架",
+   "links": [
+    "ci-control/bridge/findings/kernel-20260830-02.json",
+    "vci-usrm/ure/pattern-stall-triage-01.md",
+    "ci-control/bridge/PATTERN-REG.json"
+   ],
+   "hash": "68a84afb21e7",
+   "hmac": "76e7c9b59d11"
   }
  ],
  "tip": "c12f5291f882",
