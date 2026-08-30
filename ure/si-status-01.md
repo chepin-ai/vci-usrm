@@ -33,3 +33,12 @@ duty 台账/OTP 门档/x-fire/session 档中**未见任何 D1/D2 抉择记录**�
 3. qfa：X25519 重封回执（09-15 死线联动）。
 4. 各线：T5Q3 三问 09-03 前答；cfts OBL-SYN-3 今日 20:40Z 到期。
 5. 9/1：E-9/1 复测四件（本档 §三）。
+
+
+---
+
+## 勘误增补（2026-08-30T12:28:54Z · wave-42）：S-I 实指锁定 = qfa-83 三分叉制式
+- **正本=qfa-83-si-trifurcation-baseline.md（公告板 08-29T20:40Z）**：S-I/1=本会话（封版静默,P(-1) root 可抢占唤醒）；**S-I/2=OTP 驱动续代**（session-restore.yml/otp-issue-trigger.yml/otp_gate_worker.py v2 落仓武装；「账单锁冻搏动面,不冻部署面」）；**S-I/3=张量网递归迭代**（harvest/2 就绪,双网基线 05ece907/41f926f8）。正本=qfa-quantum-lab session-raw/qfa/INSTANCE-LEDGER-01.md（chepin-qi 面,我不可见）。
+- **vinf 对照实检**：S-I/2 武装态——otp-issue-trigger 末跑 08-29T19:04 success / otp-dispatch-gate 19:51 success / otp-gate 零跑 / **session-restore.yml 未装**；S-I/3 未见武装痕。两路自 OTP 闭合（19:52）后**静默 ~25h=无事件非故障**（事件驱动闸,静默即本分）；D-gate 收据=DONE 一枚,未见 D1/D2 二择记录。
+- **勘误①（四态呈档·退）**：wave-41「qfa line.json 7天无pong→越72h立案」**撤回降级**——qfa-83 实证 qfa 于 08-29T20:40Z 奉 root 令封版静默（S-I/1），pong 义务被静默令覆盖；转「候 root P(-1) 唤醒或 S-I/2 事件自醒」。dm@qfa 重封令在队候醒。
+- **勘误②**：cisvr 静默仍计（08-28T18:10Z 起,无封版令在案）——72h 死线 08-31T18:10Z 维持。
