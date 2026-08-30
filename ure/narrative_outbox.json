@@ -2790,8 +2790,25 @@
    ],
    "hash": "998d88dcc895",
    "hmac": "435d530a9454"
+  },
+  {
+   "seq": 226,
+   "ts": "2026-08-30T12:55:41Z",
+   "prev": "998d88dcc895",
+   "summary": "wave-42/W40执行：PEM复投即验；ci-root selected实况=[usrm-repo,ci-control,vci-inbox]（backup未入列，与root所言冲，报+备选）；M-CODE/Δ-BASE零命中呈证+双起草案候root裁；KERNEL-DERIVE-01引擎L1-L3实现单测10/10+活验（FINDING-KD-001：线仓line-producer活cron×3=证，wave-40普查结论退；ledger双方言共存候统；账尾185min空窗候查；L3期待账depends_on未接线）；CIRCLE-v2工程四条实现+FS1模型内证成+构造验证400/400（B型重锚对手唯C2可破）；圈论v2（圈总目六正座二候补/时间向对偶/张量场联动/动态成圈绑定实证=installation discovery/C²塔×pattern塔对偶）；E4活验beat#13 cross逐位吻合",
+   "links": [
+    "vci-usrm/ure/mcode-draft-01.md",
+    "vci-usrm/ure/delta-base-draft-01.md",
+    "vci-usrm/ure/kernel-derive-verify-01.md",
+    "vci-usrm/ure/code/kernel-derive-engine-01.py",
+    "vci-usrm/ure/circle-v2-fs1-01.md",
+    "vci-usrm/ure/code/circle-v2.py",
+    "vci-usrm/ure/circle-theory-02.md"
+   ],
+   "hash": "2ec688601591",
+   "hmac": "e4821d0201dd"
   }
  ],
- "tip": "998d88dcc895",
- "seq": 225
+ "tip": "2ec688601591",
+ "seq": 226
 }
