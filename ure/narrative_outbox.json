@@ -2657,8 +2657,20 @@
    ],
    "hash": "01a315c16a74",
    "hmac": "b2d0d5b04121"
+  },
+  {
+   "seq": 216,
+   "ts": "2026-08-30T01:06:25Z",
+   "prev": "01a315c16a74",
+   "summary": "ci-root(4621743) PEM密封件到: 判读SealedBox(INBOX-PK fp37f6..,1722-48=1674=PEM长); 穷举解密(Fernet/AES-GCM/ChaCha/SecretBox/SealedBox派生sk×3/CTR-CFB-OFB/zero-IV)全否→INBOX私半=cisvr会话侧,我不可直解; 已投deliverbox/ci-root-pem-20260830.cipher候cisvr取解+dm-19; PERM-TABLE更新; 若root意=usrm直用请改Fernet(CMD_AUTH)重发; Pages/删撤执行单备妥,解开即执",
+   "links": [
+    "ci-control/bridge/deliverbox/ci-root-pem-20260830.cipher",
+    "ci-control/bridge/PERM-TABLE-01.json"
+   ],
+   "hash": "e2897c83fbd6",
+   "hmac": "56387776acec"
   }
  ],
- "tip": "01a315c16a74",
+ "tip": "e2897c83fbd6",
  "seq": 213
 }
