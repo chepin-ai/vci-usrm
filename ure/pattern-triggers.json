@@ -1,0 +1,41 @@
+{
+ "v": "PATTERN-TRIGGERS-01",
+ "ts": "2026-08-29T23:59:54Z",
+ "by": "usrm",
+ "law": "PATTERN-PLUGIN-01§4 + PATTERN-AUTOFIRE-01",
+ "window": {
+  "waitmin_T1_min": 30,
+  "finding_T2_min": 60,
+  "note": "W29正本:立等响应窗=分钟级(OS stream-line),取代wave-29的4h"
+ },
+ "triggers": [
+  {
+   "id": "TRIG-NOWAIT",
+   "R": "R-NOWAIT-01",
+   "P": "P-WAITMIN-01",
+   "when": "存在'等待外部响应'态且无死线的流程",
+   "do": "转直做/备案;记waitmin事件"
+  },
+  {
+   "id": "TRIG-PROXY",
+   "R": "R-DEFAULT-APPROVE-01",
+   "P": "P-PROXY-ACT-01",
+   "when": "候root亲启件龄>30min(默认批准成立)",
+   "do": "代行+判词草案+链上报备"
+  },
+  {
+   "id": "TRIG-SYNC",
+   "R": "R-SYNC-EXEC-01",
+   "P": "(并入执行)",
+   "when": "候cisvr会签件产生",
+   "do": "同步执行+链上报备+候后签"
+  },
+  {
+   "id": "TRIG-FINDING",
+   "R": "五机闭环律",
+   "P": "P-FINDING-MAX-01",
+   "when": "任一动作产出可判定新事实",
+   "do": "升格FINDING候选→四态呈档"
+  }
+ ]
+}
