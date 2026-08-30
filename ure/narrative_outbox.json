@@ -2775,8 +2775,23 @@
    ],
    "hash": "373bd9a599d5",
    "hmac": "b34ba3562b0b"
+  },
+  {
+   "seq": 225,
+   "ts": "2026-08-30T09:43:17Z",
+   "prev": "373bd9a599d5",
+   "summary": "wave-41(W39跟进)：①beat-forward端到端实证通(204→hub15wf齐起+kernel-loop success,事件饥饿根治);线环BEAT-RING-01实装(级联≤1不转叩+按目标铸token),卡点=ops-line未覆线仓(候root同面板加4仓);六案谱=BEAT-ALTERNATIVES-01 ②dm@qfa X25519重封令投(FORMAFLOW 09-15死线联动) ③三App卸后清点=secrets面净,workflow死名23件(vci-inbox15=cisvr笔域候清),紧急度零=APP-RELIC-CENSUS-01 ④backup解归档仍堵(ops-hub403+ci-root PEM湮灭于内核wipe→候root一键或重投) ⑤cfts候办三答=半自动三级/L2诚实态/纪录级融合,处方无验不闭+OBL-shadow镜像=HOUBAN-CFTS-01 ⑥qgl三摆+备道复算:qfa line.json 7天无pong越72h立案,cisvr死线08-31T18:10Z=QGL-PENDING-REVIEW-01 ⑦vinf/qgl chain-diverge根治(STATUS-HEAL-01举一反三4仓,qgl复核CONSISTENT) ⑧全线S-I总检=机检全绿/会话机活人静=SI-STATUS-01+E-9/1复测计划",
+   "links": [
+    "vci-usrm/ure/beat-alternatives-01.md",
+    "vci-usrm/ure/houban-cfts-01.md",
+    "vci-usrm/ure/qgl-pending-review-01.md",
+    "vci-usrm/ure/app-relic-census-01.md",
+    "vci-usrm/ure/si-status-01.md"
+   ],
+   "hash": "998d88dcc895",
+   "hmac": "435d530a9454"
   }
  ],
- "tip": "373bd9a599d5",
- "seq": 224
+ "tip": "998d88dcc895",
+ "seq": 225
 }
