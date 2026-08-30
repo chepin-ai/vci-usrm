@@ -2722,6 +2722,20 @@
    ],
    "hash": "9a2ebd4d59b0",
    "hmac": "81cd89c5cc8c"
+  },
+  {
+   "seq": 221,
+   "ts": "2026-08-30T03:34:08Z",
+   "prev": "9a2ebd4d59b0",
+   "summary": "wave-37(W35)：权限机器核对=root清单大面积失真(LLM key全灭/CI_ROOT_APP_KEY不在/backup 0 secrets)→PERM-CENSUS-02实况版；QUAFU_TOKEN实证在ci-control(vinf挂单②解)；shadow-pulse同款双遗物4仓根修+脉冲snapshot ok实证(qgl/vinf chain-diverge愈)；R1-BREACH-01公面cmd_channel指纹/PAT道/私域名净化立案；OTP代处回执vinf五挂单+qgl/cfts/ucif2/qfa；KERNEL-DERIVE-01四级梯+M-CODE/Δ-BASE定义案；CIRCLE-THEORY-01圈论(五律/C2/CIRCLE-v2)",
+   "links": [
+    "vci-usrm/ure/perm-census-02.md",
+    "vci-usrm/ure/kernel-derive-01.md",
+    "vci-usrm/ure/circle-theory-01.md",
+    "ci-control/bridge/PERM-CENSUS-02.json"
+   ],
+   "hash": "baa150b88ad0",
+   "hmac": "f0c4e62ef3a1"
   }
  ],
  "tip": "c12f5291f882",
