@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+# KERNEL-DERIVE-01-ENGINE ｜ 核心机自动推演引擎 L1-L3 ｜ usrm 2026-08-30 (wave-42)
+# 设计正本: vci-usrm/ure/kernel-derive-01.md（L0手工→L1立法机读→L2不变量挖掘→L3反事实推演）
+# 四态判词: 证(直接观测成立)/候(待裁决)/冲(与既有档冲突)/退(已撤回)
+# 零编数律: 本引擎只输出由输入数据可复算的判词; 无数据即输出「未测」, 绝不编造。
+import hashlib, json, datetime
+
+V_ZHENG, V_HOU, V_CHONG, V_TUI = '证', '候', '冲', '退'
+
+def canon(o):
+    return json.dumps(o, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+
+def finding(state, checker, subject, evidence, note=''):
+    return {'state': state, 'checker': checker, 'subject': subject,
+            'evidence': evidence, 'note': note,
+            'ts': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'id': hashlib.sha256(canon({'c': checker, 's': subject, 'e': evidence}).encode()).hexdigest()[:12]}
+
+# ============ L1: 立法机读 → 规则自生（N-MUST 机器可判定子集） ============
+
+def check_M12_cron(workflows_by_repo, whitelist):
+    """M12/SENTINEL-01: 全 org 仅白名单内 (repo,workflow) 可含 schedule 触发器。
+    workflows_by_repo: {repo: [{name, path, state, cron:[...]}]}  cron 由调用方解析 yaml 提供。
+    返回判词列表：每发现一个白名单外 cron = 证(违规直接观测)。"""
+    out = []
+    for repo, wfs in workflows_by_repo.items():
+        for w in wfs:
+            for c in (w.get('cron') or []):
+                key = (repo, w['name'])
+                if key not in whitelist:
+                    out.append(finding(V_ZHENG, 'M12-CRON', f"{repo}/{w['name']}",
+                                       {'cron': c, 'path': w.get('path')}, '白名单外 schedule 触发器'))
+    return out
+
+def check_M3_disabled(workflows_by_repo, expected_active):
+    """M3: 立法/注册表声明应活跃的 workflow 不得处于 disabled 态。
+    expected_active: set of (repo, workflow_name)。disabled_manually 且被期待 = 证。"""
+    out = []
+    for repo, wfs in workflows_by_repo.items():
+        for w in wfs:
+            if (repo, w['name']) in expected_active and str(w.get('state','')).startswith('disabled'):
+                out.append(finding(V_ZHENG, 'M3-DISABLED', f"{repo}/{w['name']}",
+                                   {'state': w['state']}, '被期待活跃但处于 disabled'))
+    return out
+
+def check_M14_crossface(faces, registry_expect):
+    """M14 四面勾稽: 注册表声明的锚尖 vs 实际链尖。faces={面名: 实际tip}; registry_expect={面名: 声明tip}。
+    不一致 = 冲(与注册表冲突); 面缺失于注册表 = 候。"""
+    out = []
+    for face, tip in faces.items():
+        exp = registry_expect.get(face)
+        if exp is None:
+            out.append(finding(V_HOU, 'M14-CROSSFACE', face, {'actual_tip': tip}, '注册表未登记该面'))
+        elif exp != tip:
+            out.append(finding(V_CHONG, 'M14-CROSSFACE', face,
+                               {'actual_tip': tip, 'registry_tip': exp}, '锚尖不一致'))
+    return out
+
+# ============ L2: 不变量挖掘（Δ-BASE 运行面：基线包络 + 出包络即候选） ============
+
+def mine_baseline(entries, wallclock_utc):
+    """entries: stream-ledger 式 [{seq, ts, hash, ...}]（已按 seq 排序）。
+    产出: 基线度量 + 链完整性核验 + 出包络判词。
+    阈值 PROVISIONAL（候 root 标定）: max_gap_min=90, min_chain_ok=1.0。"""
+    MAX_GAP_MIN, res = 90, {'n': len(entries)}
+    if not entries:
+        return {'metrics': res, 'findings': [finding(V_HOU, 'L2-BASELINE', 'stream-ledger', {}, '空账：未测')]}
+    # 链完整性（sha256(prev+canon) 全 64 位）
+    ok, bad, dialects = 0, [], set()
+    for i in range(1, len(entries)):
+        prev, cur = entries[i-1], entries[i]
+        body = {k:v for k,v in cur.items() if k!='hash'}
+        hit = None
+        for dia, kw in (('ascii', {}), ('utf8', {'ensure_ascii': False})):
+            expect = hashlib.sha256((prev.get('hash','') + json.dumps(body, sort_keys=True, separators=(',', ':'), **kw)).encode()).hexdigest()
+            if cur.get('hash') == expect: hit = dia; break
+        if hit: ok += 1; dialects.add(hit)
+        else: bad.append(cur.get('seq'))
+    res['chain_dialects'] = sorted(dialects)
+    res['chain_ok_ratio'] = ok / max(1, len(entries)-1)
+    # 时间间隔
+    def pt(ts): return datetime.datetime.fromisoformat(ts.replace('Z','+00:00'))
+    gaps = [(pt(entries[i]['ts']) - pt(entries[i-1]['ts'])).total_seconds()/60 for i in range(1,len(entries))]
+    res['max_gap_min'] = round(max(gaps),1) if gaps else 0
+    res['rate_per_hour'] = round(len(entries) / max(1/60,(pt(entries[-1]['ts'])-pt(entries[0]['ts'])).total_seconds()/3600),2) if len(entries)>1 else None
+    res['clock_drift_min'] = round((wallclock_utc - pt(entries[-1]['ts'])).total_seconds()/60,1)
+    f = []
+    if bad: f.append(finding(V_ZHENG, 'L2-CHAIN', 'stream-ledger', {'bad_seq': bad[:8]}, '链哈希核验失败条目'))
+    if res['max_gap_min'] and res['max_gap_min'] > MAX_GAP_MIN:
+        f.append(finding(V_HOU, 'L2-ENVELOPE', 'stream-ledger', {'max_gap_min': res['max_gap_min'], 'threshold': MAX_GAP_MIN}, '出包络：间隔超阈（阈值候 root 标定）'))
+    return {'metrics': res, 'findings': f}
+
+# ============ L3: 反事实推演（阻塞图反演：若 X 沉默，何件阻塞） ============
+
+def counterfactual_stall(expect_items, silent):
+    """expect_items: [{id, owner, depends_on:[owner...], deadline}]（EXPECT-REG-01 形）。
+    silent: set(owner)。返回: 每个沉默主体造成的传递阻塞闭包 + 预警判词。"""
+    by_owner = {}
+    for it in expect_items: by_owner.setdefault(it['owner'], []).append(it)
+    out = []
+    for s in silent:
+        blocked, frontier, seen = [], [s], {s}
+        while frontier:
+            cur = frontier.pop()
+            for it in expect_items:
+                if cur in (it.get('depends_on') or []) and it['id'] not in seen:
+                    seen.add(it['id']); blocked.append(it['id'])
+                    frontier.append(it['owner'])
+        out.append({'silent_owner': s, 'transitively_blocked': sorted(blocked)})
+    findings = [finding(V_HOU, 'L3-STALL', r['silent_owner'], {'blocked': r['transitively_blocked']},
+                        '反事实：该主体沉默将阻塞以上期待件') for r in out if r['transitively_blocked']]
+    return {'simulation': out, 'findings': findings}
+
+# ============ 总装 ============
+
+def derive(workflows_by_repo=None, whitelist_cron=None, expected_active=None,
+           faces=None, registry_expect=None, ledger_entries=None, expect_items=None, silent=None,
+           wallclock_utc=None):
+    rep = {'L1': [], 'L2': None, 'L3': None}
+    if workflows_by_repo is not None:
+        rep['L1'] += check_M12_cron(workflows_by_repo, whitelist_cron or set())
+        rep['L1'] += check_M3_disabled(workflows_by_repo, expected_active or set())
+    if faces is not None:
+        rep['L1'] += check_M14_crossface(faces, registry_expect or {})
+    if ledger_entries is not None:
+        rep['L2'] = mine_baseline(ledger_entries, wallclock_utc or datetime.datetime.now(datetime.timezone.utc))
+    if expect_items is not None and silent is not None:
+        rep['L3'] = counterfactual_stall(expect_items, silent)
+    rep['summary'] = {'L1_findings': len(rep['L1']),
+                      'L2_findings': len(rep['L2']['findings']) if rep['L2'] else '未测',
+                      'L3_blocked_groups': sum(1 for r in (rep['L3']['simulation'] if rep['L3'] else []) if r['transitively_blocked']) if rep['L3'] else '未测'}
+    return rep
+
+if __name__ == '__main__':
+    print('KERNEL-DERIVE-01-ENGINE loaded: L1(M3/M12/M14) + L2(Δ-BASE miner) + L3(counterfactual stall)')
