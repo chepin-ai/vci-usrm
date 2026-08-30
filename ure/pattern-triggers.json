@@ -36,6 +36,14 @@
    "P": "P-FINDING-MAX-01",
    "when": "任一动作产出可判定新事实",
    "do": "升格FINDING候选→四态呈档"
+  },
+  {
+   "id": "TRIG-STALL-TRIAGE",
+   "R": "FINDING-WAIT-STALL-01",
+   "P": "P-STALL-TRIAGE-01",
+   "when": "任一pending/投诉件出现",
+   "do": "先分诊三问(谁的手/最小动作/执行或升级)→按手执行;子模式:哨件staleness先查事件链"
   }
- ]
+ ],
+ "updated": "2026-08-30T01:56:47Z"
 }
