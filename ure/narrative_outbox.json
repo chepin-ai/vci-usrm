@@ -2629,8 +2629,25 @@
    ],
    "hash": "cac7d4be1a1d",
    "hmac": "6ba6f0f138ca"
+  },
+  {
+   "seq": 214,
+   "ts": "2026-08-29T23:59:54Z",
+   "prev": "cac7d4be1a1d",
+   "summary": "W29十项执行:①②③④PATTERN-AUTOFIRE-01(R×3嵌入P×3,触发器注册,首跑4/4命中)+REG#17;⑨SPACETIME-BODY-01(时空体=n4阶张量场,缩并=验证,蒸馏=约束对偶);⑩CHSH-SENSITIVITY-01+首测(S=0.0界守PASS,雪崩0.9358≈nibble理想15/16);删撤/Pages全权执行→403实证冲(REPO-EXEC-SHEET备好,remediation二途报root);cfts pad全org零命中维持冲;正本:窗4h→分钟级/分工立法收回(属cisvr职)",
+   "links": [
+    "ure/pattern-autofire-01.md",
+    "ure/pattern-triggers.json",
+    "ure/pattern-autofire-run-01.json",
+    "ure/spacetime-body-01.md",
+    "ure/chsh-sensitivity-01.md",
+    "ure/chsh-sensitivity-run-01.json",
+    "ure/repo-exec-sheet-01.json"
+   ],
+   "hash": "a2af331c07f3",
+   "hmac": "e708b3c6b120"
   }
  ],
- "tip": "cac7d4be1a1d",
+ "tip": "a2af331c07f3",
  "seq": 213
 }
