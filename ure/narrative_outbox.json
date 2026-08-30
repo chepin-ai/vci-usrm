@@ -2646,8 +2646,19 @@
    ],
    "hash": "a2af331c07f3",
    "hmac": "e708b3c6b120"
+  },
+  {
+   "seq": 215,
+   "ts": "2026-08-30T00:32:54Z",
+   "prev": "a2af331c07f3",
+   "summary": "W30九项:①pattern-autofire=元pattern裁定(REG注,selfref-meta配对)+REPLAY-01复盘5/5PASS;②qfa三问判词@TH-PATTERN-01[2](并联/账户域直入v0.1/搏源集vs接续面分层)+审计(qfa锚面外不可复算)+T25我面0命中请投件;③cron全废27剥(残留0,空触发0,事件道在位),qlv-lib面外403备案,公告usrm-100一跟到底48h;④OTP@vinf/qgl双DONE在案;⑤⑥ci-root(4621743)五RW入PERM-TABLE-01,凭证未到手(同PEM401),ops-hub不动;⑦各级自动触发复盘实测=REPLAY;⑧OS端并行实证(kernel-loop 22:20/23:27/00:16三拍+ledger并发)",
+   "links": [
+    "ure/pattern-autofire-replay-01.json"
+   ],
+   "hash": "01a315c16a74",
+   "hmac": "b2d0d5b04121"
   }
  ],
- "tip": "a2af331c07f3",
+ "tip": "01a315c16a74",
  "seq": 213
 }
