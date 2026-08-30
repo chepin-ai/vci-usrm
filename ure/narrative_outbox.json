@@ -2707,6 +2707,21 @@
    ],
    "hash": "68a84afb21e7",
    "hmac": "76e7c9b59d11"
+  },
+  {
+   "seq": 220,
+   "ts": "2026-08-30T02:53:03Z",
+   "prev": "68a84afb21e7",
+   "summary": "wave-36(W34)：发布遗物根因=注册表迁移码不随(ci-control私仓404/LINE键错位)4仓根修实证registry-down愈；cron补剥9+disabled全启用7+qlv外全org活cron=0；PEM通道v2纯净件+ping试通+CHAN-FIX-01；BACKUP-SYNC-01双保险落ci-bus(backup仓归档候解)；WARN3+PROXY-CISVR-01三轴；LLM-BENCH-U6双臂重构+R2会话臂首跑；SWEEP-NMUST-01十二项(7愈5在案)+GRAPH-01v1；ARCHAEOLOGY-FREE-01考古替代机制",
+   "links": [
+    "vci-usrm/ure/sweep-nmust-01.md",
+    "vci-usrm/ure/proxy-cisvr-01.md",
+    "vci-usrm/ure/llm-bench-u6.md",
+    "vci-usrm/ure/archaeology-free-01.md",
+    "vci-usrm/ure/chan-fix-01.md"
+   ],
+   "hash": "9a2ebd4d59b0",
+   "hmac": "81cd89c5cc8c"
   }
  ],
  "tip": "c12f5291f882",
