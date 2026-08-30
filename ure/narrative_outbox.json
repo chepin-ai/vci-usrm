@@ -2761,8 +2761,22 @@
    ],
    "hash": "b499f455477b",
    "hmac": "05047fe91a67"
+  },
+  {
+   "seq": 224,
+   "ts": "2026-08-30T09:14:21Z",
+   "prev": "b499f455477b",
+   "summary": "wave-40(W38)：①定时哨兵裁决=M12/SENTINEL-01+D-157立法内生合规(全局普查108wf唯一定时器)；beat-forward纯血替代实装4线仓×8wf，实证唯一卡点=ops-line未覆盖vci-inbox(候root一键扩面) ②OTP×3退役清点完成(8仓24项删讫GET复核；保留qgl/inbox两摆渡点) ③FORMAFLOW=EXT-KEK-A零live消费实证，高度限制令+09-15缓撤维持 ④三App卸载=root一键卡(无钥不可代执) ⑤backup解归档仍root侧(403/404实证) ⑥BACKUP-SYNC-01合规核验=镜像无损+零副作用",
+   "links": [
+    "vci-usrm/ure/sentinel-qfos-01.md",
+    "vci-usrm/ure/otp-retire-01.md",
+    "vci-usrm/ure/formaflow-restrict-01.md",
+    "vci-usrm/ure/app-uninstall-card-01.md"
+   ],
+   "hash": "373bd9a599d5",
+   "hmac": "b34ba3562b0b"
   }
  ],
- "tip": "c12f5291f882",
- "seq": 213
+ "tip": "373bd9a599d5",
+ "seq": 224
 }
