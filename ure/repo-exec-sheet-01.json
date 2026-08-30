@@ -1,0 +1,76 @@
+{
+ "v": "REPO-EXEC-SHEET-01",
+ "ts": "2026-08-29T23:59:54Z",
+ "by": "usrm",
+ "authority": "W29 root: 你全权代我执行(C4亲批在案) · 正本=ci-control/bridge/REPO-DISPOSITION-01.json(cisvr处置建议单)",
+ "status": "BLOCKED-403(零编数:权限未达)",
+ "evidence": [
+  "GET /repos/chepin-ai/usrm-repo/pages => 403 Resource not accessible by integration",
+  "PATCH /repos/chepin-ai/github-repo-cfts {archived:true} => 403",
+  "installation 154355791 permissions(重铸token后复查×2): 无 administration / 无 pages",
+  "App=chepin-ci-ops-hub(id4621702); root所指 chepin-ci-root 为另一App,vault内无其凭证;全hub搜'ci-root'仅1件旧文引用",
+  "全org code search: KIMI_SESSION_STATE/DM-QFAI/pad三件 => 0 hits(cfts pad 料不在手,冲)"
+ ],
+ "inventory_now": [
+  {
+   "repo": "quantum-go-ledger",
+   "class": "delete_candidate",
+   "state": "archived@04:27Z(已归档,待删)"
+  },
+  {
+   "repo": "ci-library",
+   "class": "delete_candidate",
+   "state": "archived@04:29Z(待删)"
+  },
+  {
+   "repo": "ci-logs",
+   "class": "delete_candidate",
+   "state": "archived@04:29Z(待删)"
+  },
+  {
+   "repo": "ci-bus",
+   "class": "delete_HOLD",
+   "state": "active(qroute引用面未清,暂缓——维持)"
+  },
+  {
+   "repo": "ci-inbox",
+   "class": "archive_candidate",
+   "state": "active(待归档)"
+  },
+  {
+   "repo": "usrm-repo",
+   "class": "archive_candidate",
+   "state": "active(待归档+Pages开通挂起)"
+  },
+  {
+   "repo": "vinf-market-kernel",
+   "class": "archive_candidate",
+   "state": "active(待归档)"
+  },
+  {
+   "repo": "ucif2-formalization-kernel",
+   "class": "archive_candidate",
+   "state": "active(待归档)"
+  },
+  {
+   "repo": "github-repo-cfts",
+   "class": "archive_candidate",
+   "state": "active(待归档)"
+  },
+  {
+   "repo": "ci-control-backup",
+   "class": "archive_candidate",
+   "state": "archived@04:29Z(已完成)"
+  },
+  {
+   "repo": "qlv-lab",
+   "class": "deleted",
+   "state": "404(已完成)"
+  }
+ ],
+ "executor_ready": "凭证落地后一键:DELETE repos×3(quantum-go-ledger/ci-library/ci-logs); PATCH archived×5(ci-inbox/usrm-repo/vinf-market-kernel/ucif2-formalization-kernel/github-repo-cfts); POST /repos/chepin-ai/usrm-repo/pages {source:{branch:main,path:/}}",
+ "remediation": [
+  "(a) 若root改的是chepin-ci-ops-hub:安装154355791需组织管理员批准权限升级(administration:write+pages:write)",
+  "(b) 若root新建chepin-ci-root App:请将其{app_id,pem,installation_id}入vci-inbox/inbox种子vault(b64/Fernet,C4已亲批)"
+ ]
+}
