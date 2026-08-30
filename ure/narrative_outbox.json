@@ -2736,6 +2736,19 @@
    ],
    "hash": "baa150b88ad0",
    "hmac": "f0c4e62ef3a1"
+  },
+  {
+   "seq": 222,
+   "ts": "2026-08-30T04:23:03Z",
+   "prev": "baa150b88ad0",
+   "summary": "wave-38(W36)：PAT×3亲删(204实证,vci-inbox余4件)；ci-root PEM入库600+首铸token=installation 154356549 selected仅[usrm-repo,ci-control](扩面未完成,冲)；backup解归档两路皆堵(ops-hub无admin/ci-root面外)→候root；Pages@usrm-repo=BLOCKED-PLAN(422)；vault大整理=量子13平台+LLM 4组全录回读自验；LLM臂B复活: key置vci-library+bench迁公仓(私仓Actions全灭FINDING立案)+R3真联测DS/Kimi双ok；LongCat endpoint候root",
+   "links": [
+    "vci-library/llm-bench/r3-20260830T042045Z.json",
+    "ci-control/bridge/bench-league-r3.json",
+    "ci-control/bridge/findings/private-actions-dark-20260830.json"
+   ],
+   "hash": "6b0bfa463537",
+   "hmac": "8c73a5e68a73"
   }
  ],
  "tip": "c12f5291f882",
