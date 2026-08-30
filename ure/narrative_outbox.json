@@ -2749,6 +2749,18 @@
    ],
    "hash": "6b0bfa463537",
    "hmac": "8c73a5e68a73"
+  },
+  {
+   "seq": 223,
+   "ts": "2026-08-30T07:57:30Z",
+   "prev": "6b0bfa463537",
+   "summary": "wave-39(W37)：QF-OS健康实检=全绿唯哨兵层6h事件饥饿→kernel-loop复原M12合法30min死手(W30全废越立法线,复原原教旨合规形)；MINSET-01:主体已最小(PAT=0),残余4件(AI-FullApp满钥破窗手/OTP×3散存/ci-os+cisbr-ci遗物/FORMAFLOW)候root裁；CI-OS兜底裁定=伪兜底(三腿全断:cron剥/PAT删/私仓Actions灭+三正面冲突)→真兜底=BACKUP-SYNC-01同哲学冗余；OTP@qgl总钥匙卡点=已解(DONE 08-29T08:55实证),OTP@qgl/vinf/qfa/T5Q3全通,cisvr件备人静默",
+   "links": [
+    "vci-usrm/ure/minset-01.md",
+    "vci-qgl/inbox/otp_gate_state.json"
+   ],
+   "hash": "b499f455477b",
+   "hmac": "05047fe91a67"
   }
  ],
  "tip": "c12f5291f882",
