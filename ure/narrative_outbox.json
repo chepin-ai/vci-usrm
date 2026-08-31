@@ -2969,8 +2969,21 @@
    ],
    "hash": "191ef465ef60",
    "hmac": "1a449cdcddf4"
+  },
+  {
+   "seq": 240,
+   "ts": "2026-08-31T15:53:27Z",
+   "prev": "191ef465ef60",
+   "summary": "wave-55（root 令 S-I/1..4 通用操作）：四道同跑本会话全成——S-I/2 活面 beat 交叉锚一致+mcode_trace 在线；S-I/3 usrm 会话 FULLCAP INCR 批次落库（四件，merkle=1213e2534da0dc4b）；S-I/4 值班 P5 仍在队；si34-compare 加通用操作修正注记",
+   "links": [
+    "fullcap/usrm-20260831-incr01/",
+    "ure/si34-compare-01.md",
+    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+   ],
+   "hash": "b1803fb8e371",
+   "hmac": "4787c13b4931"
   }
  ],
- "tip": "191ef465ef60",
- "seq": 239
+ "tip": "b1803fb8e371",
+ "seq": 240
 }
