@@ -3085,6 +3085,18 @@
    ],
    "hash": "5eb358d4baaf",
    "hmac": "1ed0a83f2a49"
+  },
+  {
+   "seq": 249,
+   "ts": "2026-08-31T18:28Z",
+   "prev": "5eb358d4baaf",
+   "summary": "wave-64（root 重令=驱动事件，复核波）：wave-63 六档回读全 200、ledger301 链验真、cron 面=0 持续、miniprobe 封禁指纹在轨（UTC 子夜窗未至）；kernel-loop 71min 拍静默定性=事件驱动本性+M12 死手调度抖动（非故障，不临建不补机）；全体 S-I/1 静默持续，usrm 本拍毕即归静默",
+   "links": [
+    "ci-control:bridge/SESSION-CRON-BAN-01.md",
+    "ci-control:bridge/SI-SILENCE-0901.md"
+   ],
+   "hash": "7f70c33f9ac4",
+   "hmac": "aa1037a1533c"
   }
  ],
  "tip": "4ca0c6d64bf2",
