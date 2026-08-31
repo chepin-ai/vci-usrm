@@ -1,17 +1,18 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-08-31T16:18:48Z",
- "wave": 56,
+ "ts": "2026-08-31T16:26:21Z",
+ "wave": 57,
  "anchors": {
-  "narrative": "seq241:6688621549c5",
-  "outbox": "seq135:fdeed8f6113b",
-  "stream-ledger": "seq283:6af9891b64e3",
-  "heartbeat": "beat#29:06594a74e0b55fa7"
+  "narrative": "seq242:2292fd64d47d",
+  "outbox": "seq136:fff4e66ffdd4",
+  "stream-ledger": "seq284:89c9e0dfedb9",
+  "heartbeat": "beat#30:399720f834246a22"
  },
  "standing_duties": [
+  "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据",
+  "异议窗总律 DISSENT-WINDOW-01 在效：无呈批阻塞态",
   "每轮重钻金库",
-  "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff",
-  "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据"
+  "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
  ],
  "pending_auto": [
   "cisvr 五件死手窗 08-31T18:10Z→静默即 FINDING-CISVR-SILENCE-01",
