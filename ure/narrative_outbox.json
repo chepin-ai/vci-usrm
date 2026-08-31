@@ -2807,8 +2807,23 @@
    ],
    "hash": "2ec688601591",
    "hmac": "e4821d0201dd"
+  },
+  {
+   "seq": 227,
+   "ts": "2026-08-31T10:31:02Z",
+   "prev": "2ec688601591",
+   "summary": "wave-43/W41实飞令执行：FLIGHT-DECK-01甲板立法（四站一锚管线+S1-S6自束）；M-CODE/Δ-BASE判词证转正；kernel-loop挂影子拍（KD+CIRCLE-v2常任审计）实证success（初班SyntaxError→修）；c2-bus.jsonl首条bus_root=dc811a78033385e9；RING毂扇出line-beat×4实证（vinf/qgl agent-duty 10:28Z success）；DIALECT-UNIFY-01微叉重锚261/261全绿0gap（内容零改动+sidecar）；FINDING-KD-001「活cron」判词退（注释误报，W34已废，wave-40普查复权）；vci-library重复秘钥×3清；EXPECT-REG depends_on接线L3首次活产出；F7候PEM重投；FLIGHT-VERDICT-01十三判词入册",
+   "links": [
+    "vci-usrm/ure/flight-deck-01.md",
+    "ci-control/bridge/FLIGHT-VERDICT-01.jsonl",
+    "ci-control/bridge/findings/dialect-unify-01-map.json",
+    "ci-control/bridge/findings/flight-f8b-purge.json",
+    "ci-control/bridge/c2-bus.jsonl"
+   ],
+   "hash": "d8e7218d462c",
+   "hmac": "009dcee346d5"
   }
  ],
- "tip": "2ec688601591",
- "seq": 226
+ "tip": "d8e7218d462c",
+ "seq": 227
 }
