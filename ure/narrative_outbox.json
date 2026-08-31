@@ -2957,8 +2957,20 @@
    ],
    "hash": "d13057c605f1",
    "hmac": "f130a30ae311"
+  },
+  {
+   "seq": 239,
+   "ts": "2026-08-31T15:38:24Z",
+   "prev": "d13057c605f1",
+   "summary": "wave-54（root 令 S-I/1..4 全自主迭代）：S-I/3 vs S-I/4 区别实测定谳——3=实例道结构并发（轻负载计算并发 0.17× 负增益），4=场道执行并发（2.2× 正增益，QR 并发全成/quafu 并发降级）；S-I/4 准入证（CHSH 三引擎 S>2）→INST-REG CANDIDATE→ARMED（判词+sidecar 跨线写）",
+   "links": [
+    "ure/si34-compare-01.md",
+    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+   ],
+   "hash": "191ef465ef60",
+   "hmac": "1a449cdcddf4"
   }
  ],
- "tip": "d13057c605f1",
- "seq": 238
+ "tip": "191ef465ef60",
+ "seq": 239
 }
