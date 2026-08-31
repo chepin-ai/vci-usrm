@@ -1,12 +1,12 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-08-31T17:16:17Z",
- "wave": 60,
+ "ts": "2026-08-31T17:31:41Z",
+ "wave": 61,
  "anchors": {
-  "narrative": "seq245:c87624a0a6ff",
-  "outbox": "seq139:df5b42dd1d3c",
-  "stream-ledger": "seq297:89c22a8377d2",
-  "heartbeat": "beat#33:e66c0fdedaee8477"
+  "narrative": "seq246:4ca0c6d64bf2",
+  "outbox": "seq140:d56998ec47b2",
+  "stream-ledger": "seq298:23ef9ba01f40",
+  "heartbeat": "beat#34:67c74b48bc0984bc"
  },
  "standing_duties": [
   "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据",
@@ -15,9 +15,12 @@
   "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
  ],
  "pending_auto": [
-  "once-cron 1a058cc8 → 09-01T00:10Z wave-61 自动续拍（复通核验/OTP@qfa dispatch/WARN3 核验/M3 站岗/收波链）",
-  "kernel-loop KD-ENG 拍每 30min 自动巡",
-  "P5 8C650D1015ADCA17 续轮询"
+  "kernel-loop 金丝雀拍 9/1 复通自动序列（canary→revived→ci-root-runner all→接续单 revival-sequence-0901.json）",
+  "OTP@qfa gitee 自证死线 09-03（FINDING-SESSION-RESTORE-GHOST-01）",
+  "OTP@UCIF2 候 root 值 OTP_PHONE→vci-ucif2（值到全自动）",
+  "M3 双签 09-01T12:00Z 死手",
+  "P5 8C650D1015ADCA17 续轮询",
+  "WARN3 18:10Z 过窗核验→FINDING-CISVR-SILENCE-01"
  ],
  "key_files": {
   "engine": "vci-usrm/ure/code/kernel-derive-engine-01.py",
