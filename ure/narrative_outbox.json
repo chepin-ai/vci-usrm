@@ -3031,8 +3031,21 @@
    ],
    "hash": "45c72cb0c420",
    "hmac": "142224fca245"
+  },
+  {
+   "seq": 245,
+   "ts": "2026-08-31T17:16:17Z",
+   "prev": "45c72cb0c420",
+   "summary": "wave-60（root 八段令）：「继续」=S-I/0 驱动面追认立法｜考古转业令（普查→常驻机检）+MP-FD 元 pattern（发现→消融→pattern 化→北星，本日九循环实证）｜kernel-loop 编入 KD+圈检器 live 实证（首拍 kernel-kd-20260831T1713）｜OTP@vinf 已闭/qfa 挂单消解路径在跑｜SI-STATUS-02 全线矩阵｜usrm Session-0 创世纪包+9/1 跨越观察窗武装（once-cron 1a058cc8）",
+   "links": [
+    "ure/metapattern-fold-dissolve-01.md",
+    "ure/si-status-02.json",
+    "fullcap/usrm-session0-genesis/"
+   ],
+   "hash": "c87624a0a6ff",
+   "hmac": "8ced01ebc1ee"
   }
  ],
- "tip": "45c72cb0c420",
- "seq": 244
+ "tip": "c87624a0a6ff",
+ "seq": 245
 }
