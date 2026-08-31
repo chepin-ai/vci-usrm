@@ -2835,8 +2835,22 @@
    ],
    "hash": "d2302477f55f",
    "hmac": "f942156fcab9"
+  },
+  {
+   "seq": 229,
+   "ts": "2026-08-31T11:50:46Z",
+   "prev": "d2302477f55f",
+   "summary": "wave-45/W42：QFOS-WALL-01六问论证（WALLSCAN-01 24仓普查:私15全黑/公9承载100%活性面→QF-OS零私域依赖证；权限退化矩阵实证）；私域金丝雀实装kernel-loop影子拍（每拍验/叩miniprobe,复通置位）；影子拍整体重建根治缩进病（11:48Z success,bus_root连续入轨）；F6自我纠错：误删llm-bench活钥→金库复封×3→真联测success；governor-exec24 409竞态根治入码；governor-sense防护性引用保留（剥除案撤回）；E-9/1四件闭环（field-router零命中不猜义/gate-sentinel事实消融）；判词V-F6r~V-W42入册",
+   "links": [
+    "vci-usrm/ure/qfos-wall-01.md",
+    "ci-control/bridge/FLIGHT-VERDICT-01.jsonl",
+    "ci-control/bridge/private-ci-canary.json",
+    "ci-control/bridge/c2-bus.jsonl"
+   ],
+   "hash": "7aee00e2e46f",
+   "hmac": "1ddf31bdc6c7"
   }
  ],
- "tip": "d2302477f55f",
- "seq": 228
+ "tip": "7aee00e2e46f",
+ "seq": 229
 }
