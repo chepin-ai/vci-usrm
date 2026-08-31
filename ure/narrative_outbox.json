@@ -2946,8 +2946,19 @@
    ],
    "hash": "4c7a642150a4",
    "hmac": "b0a1080b6ab4"
+  },
+  {
+   "seq": 238,
+   "ts": "2026-08-31T15:25:44Z",
+   "prev": "4c7a642150a4",
+   "summary": "wave-53：QAOA-01 变分管线端到端证（numpy 精确寻优 <C>=2.99999→QR <C>=2.9951/quafu <C>=3.0137，最优串 0101/1010 双主导）；节拍活性监控（事件环完整，cron 饥饿敞口在册）；P5 仍在队",
+   "links": [
+    "ci-control:bridge/quantum/qaoa-01-wave53.json"
+   ],
+   "hash": "d13057c605f1",
+   "hmac": "f130a30ae311"
   }
  ],
- "tip": "4c7a642150a4",
- "seq": 237
+ "tip": "d13057c605f1",
+ "seq": 238
 }
