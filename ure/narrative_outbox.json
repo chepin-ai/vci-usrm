@@ -2982,8 +2982,20 @@
    ],
    "hash": "b1803fb8e371",
    "hmac": "4787c13b4931"
+  },
+  {
+   "seq": 241,
+   "ts": "2026-08-31T16:18:48Z",
+   "prev": "b1803fb8e371",
+   "summary": "wave-56（root 三问）：①cisvr 三案在法（替代=视同副署/绕过=死手FINDING/模拟=机器会签+LLM复核），呈 root 改制议=批准门→异议窗；②ScQ-P5=北量子院5q超导真机Online队635，驻队件In Queue=队列深度非故障；③fieldqkit v1 共享库正本立（ure/qkit/），三引擎 smoke 全 PASS（CHSH S=2.8174>2）",
+   "links": [
+    "ure/qkit/",
+    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+   ],
+   "hash": "6688621549c5",
+   "hmac": "e3877491033a"
   }
  ],
- "tip": "b1803fb8e371",
- "seq": 240
+ "tip": "6688621549c5",
+ "seq": 241
 }
