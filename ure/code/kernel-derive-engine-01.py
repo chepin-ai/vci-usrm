@@ -115,7 +115,7 @@ def counterfactual_stall(expect_items, silent):
             for it in expect_items:
                 if cur in (it.get('depends_on') or []) and it['id'] not in seen:
                     seen.add(it['id']); blocked.append(it['id'])
-                    frontier.append(it['owner'])
+                    frontier.append(it.get('owner','?'))
         out.append({'silent_owner': s, 'transitively_blocked': sorted(blocked)})
     findings = [finding(V_HOU, 'L3-STALL', r['silent_owner'], {'blocked': r['transitively_blocked']},
                         '反事实：该主体沉默将阻塞以上期待件') for r in out if r['transitively_blocked']]
