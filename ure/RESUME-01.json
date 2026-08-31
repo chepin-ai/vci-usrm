@@ -1,12 +1,12 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-08-31T16:26:21Z",
- "wave": 57,
+ "ts": "2026-08-31T16:33:48Z",
+ "wave": 58,
  "anchors": {
-  "narrative": "seq242:2292fd64d47d",
-  "outbox": "seq136:fff4e66ffdd4",
-  "stream-ledger": "seq284:89c9e0dfedb9",
-  "heartbeat": "beat#30:399720f834246a22"
+  "narrative": "seq243:83d7f51acc2e",
+  "outbox": "seq137:561da67ad23e",
+  "stream-ledger": "seq285:b23201280de1",
+  "heartbeat": "beat#31:ed96f480298f978d"
  },
  "standing_duties": [
   "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据",
