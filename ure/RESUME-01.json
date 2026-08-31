@@ -1,12 +1,12 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-08-31T15:54:16Z",
- "wave": 55,
+ "ts": "2026-08-31T16:18:48Z",
+ "wave": 56,
  "anchors": {
-  "narrative": "seq240:b1803fb8e371",
-  "outbox": "seq134:64db004ac164",
-  "stream-ledger": "seq280:bd336550899e",
-  "heartbeat": "beat#28:626a7ad6a1184043"
+  "narrative": "seq241:6688621549c5",
+  "outbox": "seq135:fdeed8f6113b",
+  "stream-ledger": "seq283:6af9891b64e3",
+  "heartbeat": "beat#29:06594a74e0b55fa7"
  },
  "standing_duties": [
   "每轮重钻金库",
@@ -25,7 +25,8 @@
   "qbench": "vci-usrm/ure/code/quantum-bench-01.py",
   "mcode": "vci-usrm/ure/code/mcode-01.json",
   "delta_base": "ci-control/bridge/delta-base-01.json",
-  "auth_manifest": "ci-control/bridge/AUTH-MANIFEST-01.json"
+  "auth_manifest": "ci-control/bridge/AUTH-MANIFEST-01.json",
+  "quantum_lib": "vci-usrm:ure/qkit/fieldqkit.py (fieldqkit v1, wave-56)"
  },
  "quantum_state": {
   "engines": [
@@ -38,7 +39,8 @@
    "CHSH": "S=2.825/2.854/2.891 三路违背",
    "GHZ": "三路 PASS"
   },
-  "p5_task": "8C650D1015ADCA17 In Queue(wave-55 轮询)",
-  "si_univ": "S-I/1..4 通用操作 wave-55 实拍全成 V-SI-UNIV"
+  "p5_task": "8C650D1015ADCA17 In Queue(wave-56 轮询,队635)",
+  "si_univ": "S-I/1..4 通用操作 wave-55 实拍全成 V-SI-UNIV",
+  "fieldqkit": "v1 立,三引擎 smoke PASS"
  }
 }
