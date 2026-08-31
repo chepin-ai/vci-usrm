@@ -1,7 +1,7 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-08-31T17:31:41Z",
- "wave": 62,
+ "wave": 63,
  "anchors": {
   "narrative": "seq246:4ca0c6d64bf2",
   "outbox": "seq140:d56998ec47b2",
@@ -15,16 +15,17 @@
   "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
  ],
  "pending_auto": [
-  "kernel-loop 金丝雀拍：miniprobe 成功→revived 置位+dispatch ci-root-runner task=all+revival-sequence-0901.json（9/1 UTC 子夜额度重置窗）",
-  "WARN3 cisvr 死手窗 08-31T18:10Z→silent 即 FINDING-CISVR-SILENCE-01（通报性）",
+  "kernel-loop 金丝雀拍→9/1 UTC 子夜复通链（revived→ci-root-runner task=all→revival-sequence-0901.json）",
+  "POSTCROSS-REVIEW-01：复通确认后首拍执行评比",
   "M3 双签死手窗 09-01T12:00Z",
-  "OTP@qfa 自证死线 09-03（逾期重建）",
-  "OTP@UCIF2 候 root 值 OTP_PHONE（零阻塞）",
-  "P5 8C650D1015ADCA17 队列轮询（S-I/4 义务）",
-  "EXP-014 T5Q3 09-04（usrm incr02 已推进；cfts/qgl/ucif2/vinf 线内义务）",
-  "EXP-020 米田共识表决 09-02",
+  "OTP@qfa 自证 09-03",
+  "EXP-018 物理原子 09-04（root 一击）",
+  "EXP-014 T5Q3 09-04",
+  "EXP-020 表决 09-02",
   "TH-METAPATTERN 会签 09-02",
-  "ucif2 72h 异议窗（教会包+代偿三件）"
+  "ucif2 72h 异议窗",
+  "P5 队列轮询",
+  "义务机轮检新增：list_cron_jobs 非零即拆+FINDING"
  ],
  "key_files": {
   "engine": "vci-usrm/ure/code/kernel-derive-engine-01.py",
@@ -54,13 +55,14 @@
   "law": "S-I/0 驱动事件面（V-CONTINUE-SI0）",
   "last_wave_tip": "c87624a0a6ff"
  },
- "updated": "2026-08-31T17:53Z",
+ "updated": "2026-08-31T18:30Z",
  "chains": {
-  "narrative": "247@5b99cd527d97",
-  "outbox": "141@5464815c7ae8",
-  "ledger": "299@5e55caa6a6d5",
-  "beat": "35@7f5657d535ac7edd"
+  "narrative": "248@5eb358d4baaf",
+  "outbox": "142@12e0e2e2b19c",
+  "ledger": "301@a37cf3d75c75",
+  "beat": "36@b814377bd3b2d81e"
  },
- "last_incident": "F10 HOME挂载坏死→/tmp/.keys 代偿（凭证钻模板已内化）",
- "credential_drill": "/tmp/gh.py 模板+vault 重钻律（kernel wipe 即重跑；HOME 不可写落 /tmp/.keys）"
+ "last_incident": "SESSION-CRON-BAN-01：存量2件（UCIF2-OS 遗留）拆除，list=0 实证",
+ "credential_drill": "/tmp/gh.py 模板+vault 重钻律（kernel wipe 即重跑；HOME 不可写落 /tmp/.keys）",
+ "si_mode": "S-I/1 静默（全体线；ucif2 S-I/1 特许独运）——S-I/0 驱动事件唤醒"
 }
