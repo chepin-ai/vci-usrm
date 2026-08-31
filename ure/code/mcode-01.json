@@ -1,0 +1,83 @@
+{
+ "doc": "M-CODE-01 · 核心机推演指令码正本表",
+ "status": "ACTIVE（FLIGHT-DECK 判词 2026-08-31T10:02:21Z 转正，DIRECTIVES 级）",
+ "ts_instantiated": "2026-08-31T14:34:49Z",
+ "invariants": {
+  "INV-M1": "code 全局唯一，只增不改（语义变更=新 code+旧 code superseded_by）",
+  "INV-M2": "op 必可机械执行或显式 det:false",
+  "INV-M3": "核心机推演步必引已登记 code，未登记 op 拒绝执行（拒绝即呈证）"
+ },
+ "opcodes": [
+  {
+   "code": "M-001",
+   "op": "LOAD-AXIOM",
+   "arity": 1,
+   "pre": [],
+   "post": [
+    "context_ready"
+   ],
+   "det": true
+  },
+  {
+   "code": "M-002",
+   "op": "APPLY-RULE",
+   "arity": 2,
+   "pre": [
+    "context_ready"
+   ],
+   "post": [
+    "rule_applied"
+   ],
+   "det": true
+  },
+  {
+   "code": "M-003",
+   "op": "CHECK-INV",
+   "arity": 1,
+   "pre": [
+    "context_ready"
+   ],
+   "post": [
+    "inv_verified|HALT+呈证"
+   ],
+   "det": true
+  },
+  {
+   "code": "M-004",
+   "op": "EMIT-FINDING",
+   "arity": 1,
+   "pre": [],
+   "post": [
+    "finding_emitted(证/候/冲/退)"
+   ],
+   "det": true
+  },
+  {
+   "code": "M-005",
+   "op": "COMMIT-LEDGER",
+   "arity": 1,
+   "pre": [
+    "finding_emitted"
+   ],
+   "post": [
+    "ledger_anchored",
+    "delta_base_appended"
+   ],
+   "det": true
+  },
+  {
+   "code": "M-006",
+   "op": "REQUEST-ORACLE",
+   "arity": 1,
+   "pre": [
+    "充分尝试证据齐"
+   ],
+   "post": [
+    "oracle_verdict"
+   ],
+   "det": false,
+   "note": "升级 root/cisvr；前置=AUTH-MANIFEST 先查律（wave-49 立法）"
+  }
+ ],
+ "implementation": "kernel-derive-engine-01.py derive() 自 wave-49 起逐步落 mcode_trace；正本表即本档，INV-M3 由引擎引用检查承载"
+}
