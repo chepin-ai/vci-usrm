@@ -16,6 +16,16 @@ def finding(state, checker, subject, evidence, note=''):
             'ts': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
             'id': hashlib.sha256(canon({'c': checker, 's': subject, 'e': evidence}).encode()).hexdigest()[:12]}
 
+
+def extract_cron(yaml_text):
+    """从 workflow yaml 抽取活 cron 表达式——剥注释行/行内注释（FINDING-KD-001 教训：正则裸扫会把已废注释行当活 cron）。"""
+    import re as _re
+    out = []
+    for line in (yaml_text or '').splitlines():
+        code = line.split('#', 1)[0]
+        out += _re.findall(r"cron:\s*'([^']+)'", code)
+    return out
+
 # ============ L1: 立法机读 → 规则自生（N-MUST 机器可判定子集） ============
 
 def check_M12_cron(workflows_by_repo, whitelist):
