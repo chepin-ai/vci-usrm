@@ -2924,8 +2924,19 @@
    ],
    "hash": "4016d6284516",
    "hmac": "e9ddc930270e"
+  },
+  {
+   "seq": 236,
+   "ts": "2026-08-31T15:12:57Z",
+   "prev": "4016d6284516",
+   "summary": "wave-52：QuantumRings 真 SDK 激活（quantumrings-cpu extra，V-QR-STUB 退态更正，QR_KEY_64 鉴权过，scarlet 后端 Bell {00:481,11:543}）；GHZ 三体纠缠三引擎互证全 PASS（numpy/QR/quafu）；P5 真机仍在队；Δ-BASE 随尖追加机制首跑",
+   "links": [
+    "ci-control:bridge/quantum/bell-ghz-wave52.json"
+   ],
+   "hash": "5924b6639415",
+   "hmac": "29ca40862000"
   }
  ],
- "tip": "4016d6284516",
- "seq": 235
+ "tip": "5924b6639415",
+ "seq": 236
 }
