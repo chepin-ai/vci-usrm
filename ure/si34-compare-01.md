@@ -29,3 +29,10 @@ CHSH 四项×双引擎（QR scarlet + quafu ScQ-Sim10）共 8 任务：
 1. 两路并发不可互替：S-I/3=结构并发（采编环），轻负载计算并发负增益；S-I/4=执行并发（场道并行），云时延负载下 2.2× 正增益。
 2. S-I/4 引擎策略：并发主引擎=QuantumRings（并发全成）；quafu 走顺序路或异步提交+轮询。
 3. S-I/4 准入判据已达成（CHSH 三引擎 S=2.825/2.854/2.891 皆>2）——准入判词另立 V-SI4-ADMIT。
+
+---
+
+## 四、wave-55 修正注记（root 令：SI1～4 都是通用操作）
+- root wave-55 裁决：S-I/1..4 为**通用操作族**，非 cfts 会话绑定。各道可作用于任意实例本体（cfts 会话、usrm 会话、引擎内核、仓链等）。
+- 本波实证：S-I/1 复役本体=**本会话（usrm 端）**；S-I/2 引擎 beat 直接作用于活面三链（narrative/stream-ledger/heartbeat 交叉锚重算一致）；S-I/3 以 usrm 会话 W46-W55 十拍为对象跑 FULLCAP INCR 批次（cursor `usrm:usrm-session-wave-20260831:seq239@191ef465ef60`，merkle=1213e2534da0dc4b，产物四件入 vci-usrm/fullcap/usrm-20260831-incr01/）。
+- 本文一、二节 cfts 对照实测数据不变，仅适用范围表述修正为"以 cfts 会话为样本的通用操作实测"。
