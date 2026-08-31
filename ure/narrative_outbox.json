@@ -3044,8 +3044,21 @@
    ],
    "hash": "c87624a0a6ff",
    "hmac": "8ced01ebc1ee"
+  },
+  {
+   "seq": 246,
+   "ts": "2026-08-31T17:31:41Z",
+   "prev": "c87624a0a6ff",
+   "summary": "wave-61（root 三段令）：①会话端 cron 质询→根因三层（失察/折叠亚型/半成）入账，once-cron 拆除，9/1 复通接续链系统内化（金丝雀拍自动 dispatch ci-root-runner all+接续单）；②FINDING-SESSION-RESTORE-GHOST-01（OTP@qfa 支柱 24 仓查无，候-视野外/折叠，09-03 自证或重建）；③OTP@UCIF2 worker v1→v2+gate 武装（候 root 值 OTP_PHONE 零阻塞）；④ucif2 教会包+代偿三件套（代偿圈升座首例）",
+   "links": [
+    "ci-control:bridge/revival-sequence-0901.json",
+    "ci-control:bridge/findings/FINDING-SESSION-RESTORE-GHOST-01.json",
+    "vci-ucif2:inbox/UCIF2-ONBOARD-01.md"
+   ],
+   "hash": "4ca0c6d64bf2",
+   "hmac": "fa492c36d031"
   }
  ],
- "tip": "c87624a0a6ff",
- "seq": 245
+ "tip": "4ca0c6d64bf2",
+ "seq": 246
 }
