@@ -3057,6 +3057,19 @@
    ],
    "hash": "4ca0c6d64bf2",
    "hmac": "fa492c36d031"
+  },
+  {
+   "seq": 247,
+   "ts": "2026-08-31T17:53Z",
+   "prev": "4ca0c6d64bf2",
+   "summary": "wave-62（root「继续」=S-I/0 驱动）：kernel 第五次猝死自愈（HOME 挂载坏死→/tmp 代偿，F10 入账）｜9/1 跨越前夜：miniprobe 仍 failure（echo hello 级=计费封禁指纹，额度重置在 UTC 子夜）金丝雀在轨｜P5 仍 In Queue（635 深公共队）｜EXP-014 推进：usrm incr02 五件套落地（wave55-61，merkle 53653637e863babe）｜kernel-loop 5 连拍=FLIGHT-DECK 环形扇出设计内非级联",
+   "links": [
+    "fullcap/usrm-20260831-incr02/",
+    "ci-control:bridge/findings/EXP014-INCR02-01.json",
+    "ci-control:bridge/findings/F10-HOME-MOUNT-BROKEN-01.json"
+   ],
+   "hash": "5b99cd527d97",
+   "hmac": "0ff555b1d06f"
   }
  ],
  "tip": "4ca0c6d64bf2",
