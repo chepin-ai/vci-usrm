@@ -3018,8 +3018,21 @@
    ],
    "hash": "83d7f51acc2e",
    "hmac": "376ea55588d8"
+  },
+  {
+   "seq": 244,
+   "ts": "2026-08-31T16:48:56Z",
+   "prev": "83d7f51acc2e",
+   "summary": "wave-59（root 多段令）：F8 更正执行（重删13/13，下游零影响实证，无需重跑）｜逆向米田首执行：断点6处+wave-42候单13件追账+沉默实例7+沉默机制6件全录｜圈×pattern塔×米田统一论 v1 立（圈总目v3/C²传动/四层塔/五机闭环递归自作用+防自激）",
+   "links": [
+    "ure/circle-pattern-yoneda-unify-01.md",
+    "ci-control:bridge/findings/breakpoint-census-01.json",
+    "ci-control:bridge/findings/dormant-census-01.json"
+   ],
+   "hash": "45c72cb0c420",
+   "hmac": "142224fca245"
   }
  ],
- "tip": "83d7f51acc2e",
- "seq": 243
+ "tip": "45c72cb0c420",
+ "seq": 244
 }
