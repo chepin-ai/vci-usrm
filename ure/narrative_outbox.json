@@ -2901,8 +2901,20 @@
    ],
    "hash": "a6918bb13c74",
    "hmac": "b9e8a50af298"
+  },
+  {
+   "seq": 234,
+   "ts": "2026-08-31T14:44:09Z",
+   "prev": "a6918bb13c74",
+   "summary": "wave-50：root 令撤销 F8 删除——13/13 workflow 按父提交原文恢复回树；relay-keymig 名源考定（vci-inbox 遗物 workflow 名被物化为仓=折叠亚型）；立法：文件级删除唯 root 令可执行",
+   "links": [
+    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
+    "ci-control:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md"
+   ],
+   "hash": "f8d34ee73962",
+   "hmac": "11d73a5d3e16"
   }
  ],
- "tip": "a6918bb13c74",
- "seq": 233
+ "tip": "f8d34ee73962",
+ "seq": 234
 }
