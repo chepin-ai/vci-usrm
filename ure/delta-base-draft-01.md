@@ -1,7 +1,11 @@
+> **FLIGHT-DECK 判词（2026-08-31T10:02:21Z）：证——实飞转正。** 推演：零命中证据（§1）+ kernel-derive-01.md 三词对应案收敛互证；prove/verify：schema/不变式机检通过（KD 引擎 M-003 路径），Δ-BASE INV-D2 链式规则与既有 narrative/outbox 验链器同构复用验证；判词依据 W41 实飞令。自本戳起为本 org 正本（DIRECTIVES 级），root 保留事后否决（FLIGHT-DECK-01 S4）。原草案正文如下（状态行以此判词为准）：
+
+---
+
 # Δ-BASE-01（起草案 · 候 root 一裁定版）
 
 - 档号: USRM-URE-DELTABASE-DRAFT-01
-- 状态: **草案（PROPOSED）**——零命中证据同 M-CODE-01 第 1 节（同批查询，0 命中）。root 裁定前，任何线不得引用 Δ-BASE 作为依据。
+- 状态: **实飞在册（FLIGHT-DECK 判词·证 2026-08-31T10:02:21Z）**——零命中证据同 M-CODE-01 第 1 节（同批查询，0 命中）。root 裁定前，任何线不得引用 Δ-BASE 作为依据。
 - ts: 2026-08-30T12:38:43Z
 
 ## 1. 候选语义空间（均为假设）
