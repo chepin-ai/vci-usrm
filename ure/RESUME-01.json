@@ -1,12 +1,12 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-08-31T16:48:56Z",
- "wave": 59,
+ "ts": "2026-08-31T17:16:17Z",
+ "wave": 60,
  "anchors": {
-  "narrative": "seq244:45c72cb0c420",
-  "outbox": "seq138:be838a76ff9e",
-  "stream-ledger": "seq286:42e0c28cebe5",
-  "heartbeat": "beat#32:600784b73c09adb7"
+  "narrative": "seq245:c87624a0a6ff",
+  "outbox": "seq139:df5b42dd1d3c",
+  "stream-ledger": "seq297:89c22a8377d2",
+  "heartbeat": "beat#33:e66c0fdedaee8477"
  },
  "standing_duties": [
   "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据",
@@ -15,10 +15,9 @@
   "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
  ],
  "pending_auto": [
-  "cisvr 五件死手窗 08-31T18:10Z→静默即 FINDING-CISVR-SILENCE-01",
-  "M3 双签死手窗 09-01T12:00Z",
-  "9/1 私域CI复通自动序列（canary→revival flag→ci-root-runner all→WC-4→P5 backfill）",
-  "beat 静默>1h 补扣值班"
+  "once-cron 1a058cc8 → 09-01T00:10Z wave-61 自动续拍（复通核验/OTP@qfa dispatch/WARN3 核验/M3 站岗/收波链）",
+  "kernel-loop KD-ENG 拍每 30min 自动巡",
+  "P5 8C650D1015ADCA17 续轮询"
  ],
  "key_files": {
   "engine": "vci-usrm/ure/code/kernel-derive-engine-01.py",
@@ -43,5 +42,9 @@
   "p5_task": "8C650D1015ADCA17 In Queue(wave-56 轮询,队635)",
   "si_univ": "S-I/1..4 通用操作 wave-55 实拍全成 V-SI-UNIV",
   "fieldqkit": "v1 立,三引擎 smoke PASS"
+ },
+ "root_drive": {
+  "law": "S-I/0 驱动事件面（V-CONTINUE-SI0）",
+  "last_wave_tip": "c87624a0a6ff"
  }
 }
