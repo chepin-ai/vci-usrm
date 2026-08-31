@@ -2849,8 +2849,21 @@
    ],
    "hash": "7aee00e2e46f",
    "hmac": "1ddf31bdc6c7"
+  },
+  {
+   "seq": 230,
+   "ts": "2026-08-31T13:02:55Z",
+   "prev": "7aee00e2e46f",
+   "summary": "wave-46/W43 收束：量子双路实测（without-base 本地态矢 Bell PASS 4096 发 {00:2074,11:2022}；with-base quafu 云 ScQ-Sim10 PASS 1024 发 {00:527,11:497}，真机 ScQ-P5 已入队 task 8C650D1015ADCA17）；QR pip 二重证 stub 退；LongCat 端点自闭环（openai/v1 真联 200）；候 root/cisvr 清零表定谳（V-HOU-ZERO）；教义修正 SHADOW-REVERSE-DRIVE（admin 类亦可公域影子反向驱动）；CI-OS 地面全通零私额",
+   "links": [
+    "ure/qfos-wall-01.md",
+    "ure/code/circle-v2.py",
+    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+   ],
+   "hash": "f4fe78b3adcb",
+   "hmac": "ebf0e2c80ae8"
   }
  ],
- "tip": "7aee00e2e46f",
- "seq": 229
+ "tip": "f4fe78b3adcb",
+ "seq": 230
 }
