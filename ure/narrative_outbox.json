@@ -2822,8 +2822,21 @@
    ],
    "hash": "d8e7218d462c",
    "hmac": "009dcee346d5"
+  },
+  {
+   "seq": 228,
+   "ts": "2026-08-31T11:21:32Z",
+   "prev": "d8e7218d462c",
+   "summary": "wave-44：root投PEM绑usrm-repo secrets(APP_ROOT_ID/KEY)→ci-root-runner跑腿器立（逐步落档双sink,零回显）；实证usrm-repo私仓Actions暗黑（runner×3+miniprobe hello-world皆failure零步骤=仓级不可用非语法）；判词V-F7b双轨（9/1额度复位金丝雀自愈 或 改绑vci-usrm公仓活道）；relay-keymig AI_FULL_PAT与backup unarchive排队待通道复役",
+   "links": [
+    "usrm-repo/.github/workflows/ci-root-runner.yml",
+    "usrm-repo/.github/workflows/miniprobe.yml",
+    "ci-control/bridge/FLIGHT-VERDICT-01.jsonl"
+   ],
+   "hash": "d2302477f55f",
+   "hmac": "f942156fcab9"
   }
  ],
- "tip": "d8e7218d462c",
- "seq": 227
+ "tip": "d2302477f55f",
+ "seq": 228
 }
