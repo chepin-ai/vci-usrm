@@ -2874,8 +2874,20 @@
    ],
    "hash": "765139618554",
    "hmac": "d5dbe2a65796"
+  },
+  {
+   "seq": 232,
+   "ts": "2026-08-31T13:31:31Z",
+   "prev": "765139618554",
+   "summary": "wave-48：F7 锐化（root 最小动作=一次访问两 toggle：ops-hub+ci-root 各加 relay-keymig；ops-hub 实测 secrets:write 在权可即刻直删；archived 分叉由 ci-root administration RW 9/1 兜底）；Pages 三裁收窄（422=计费档非权限；②转公破 R1→实质二选一；默认飞 ③弃，root 事后否决窗）；两精确件入 findings",
+   "links": [
+    "ci-control:bridge/findings/f7-relay-keymig-root-action.md",
+    "ci-control:bridge/findings/pages-trichotomy-adjudication.md"
+   ],
+   "hash": "dd28ca7f9bbf",
+   "hmac": "a1b62addeab4"
   }
  ],
- "tip": "765139618554",
- "seq": 231
+ "tip": "dd28ca7f9bbf",
+ "seq": 232
 }
