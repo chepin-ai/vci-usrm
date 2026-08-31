@@ -1,0 +1,29 @@
+{
+ "doc": "RESUME-01 · 会话恢复态",
+ "ts": "2026-08-31T14:36:24Z",
+ "wave": 49,
+ "anchors": {
+  "narrative": "seq232:dd28ca7f9bbf",
+  "outbox": "seq126:7fa8c9244406",
+  "stream-ledger": "seq272:688dadbe4850",
+  "heartbeat": "beat#20:561c023238cc6217"
+ },
+ "standing_duties": [
+  "每轮重钻金库",
+  "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff",
+  "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据"
+ ],
+ "pending_auto": {
+  "18:10Z": "cisvr五件死手窗→FINDING-CISVR-SILENCE-01",
+  "09-01T12:00Z": "M3双签死手窗",
+  "09-01复通": "canary→ci-root-runner all→WC-4→P5回填(8C650D1015ADCA17)"
+ },
+ "key_files": {
+  "engine": "vci-usrm/ure/code/kernel-derive-engine-01.py",
+  "circle": "vci-usrm/ure/code/circle-v2.py",
+  "qbench": "vci-usrm/ure/code/quantum-bench-01.py",
+  "mcode": "vci-usrm/ure/code/mcode-01.json",
+  "delta_base": "ci-control/bridge/delta-base-01.json",
+  "auth_manifest": "ci-control/bridge/AUTH-MANIFEST-01.json"
+ }
+}
