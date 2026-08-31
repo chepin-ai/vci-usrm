@@ -2913,8 +2913,19 @@
    ],
    "hash": "f8d34ee73962",
    "hmac": "11d73a5d3e16"
+  },
+  {
+   "seq": 235,
+   "ts": "2026-08-31T14:53:18Z",
+   "prev": "f8d34ee73962",
+   "summary": "wave-51 值班：节拍面 3h 静默发现+补扣复跳（平台调度饥饿+事件链断；V-BEAT-STALL-01，静默>1h 补扣入 duty）；F8 复归 13 件合规审计证（无活 cron，死名惰性；初查误报自纠）；LongCat 端点探活 200；真机 P5 仍在队",
+   "links": [
+    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+   ],
+   "hash": "4016d6284516",
+   "hmac": "e9ddc930270e"
   }
  ],
- "tip": "f8d34ee73962",
- "seq": 234
+ "tip": "4016d6284516",
+ "seq": 235
 }
