@@ -2935,8 +2935,19 @@
    ],
    "hash": "5924b6639415",
    "hmac": "29ca40862000"
+  },
+  {
+   "seq": 237,
+   "ts": "2026-08-31T15:16:24Z",
+   "prev": "5924b6639415",
+   "summary": "wave-52b：CHSH QuantumRings 路证（scarlet S=2.890625>2）——CHSH 三引擎面齐（numpy 2.825/quafu 2.854/QR 2.891）；量子线 with/without 基座三引擎全通",
+   "links": [
+    "ci-control:bridge/quantum/bell-ghz-wave52.json"
+   ],
+   "hash": "4c7a642150a4",
+   "hmac": "b0a1080b6ab4"
   }
  ],
- "tip": "5924b6639415",
- "seq": 236
+ "tip": "4c7a642150a4",
+ "seq": 237
 }
