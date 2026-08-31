@@ -1,7 +1,7 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-08-31T17:31:41Z",
- "wave": 63,
+ "wave": 64,
  "anchors": {
   "narrative": "seq246:4ca0c6d64bf2",
   "outbox": "seq140:d56998ec47b2",
@@ -55,14 +55,14 @@
   "law": "S-I/0 驱动事件面（V-CONTINUE-SI0）",
   "last_wave_tip": "c87624a0a6ff"
  },
- "updated": "2026-08-31T18:30Z",
+ "updated": "2026-08-31T18:28Z",
  "chains": {
-  "narrative": "248@5eb358d4baaf",
-  "outbox": "142@12e0e2e2b19c",
-  "ledger": "301@a37cf3d75c75",
-  "beat": "36@b814377bd3b2d81e"
+  "narrative": "249@7f70c33f9ac4",
+  "outbox": "143@30c09de42661",
+  "ledger": "302@fb9369676587",
+  "beat": "37@79e8f32d7c1ecddb"
  },
- "last_incident": "SESSION-CRON-BAN-01：存量2件（UCIF2-OS 遗留）拆除，list=0 实证",
+ "last_incident": "wave-64 重令复核：六档全证；拍静默=M12 抖动非故障",
  "credential_drill": "/tmp/gh.py 模板+vault 重钻律（kernel wipe 即重跑；HOME 不可写落 /tmp/.keys）",
  "si_mode": "S-I/1 静默（全体线；ucif2 S-I/1 特许独运）——S-I/0 驱动事件唤醒"
 }
