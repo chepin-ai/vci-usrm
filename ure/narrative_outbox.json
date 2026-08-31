@@ -2886,8 +2886,23 @@
    ],
    "hash": "dd28ca7f9bbf",
    "hmac": "a1b62addeab4"
+  },
+  {
+   "seq": 233,
+   "ts": "2026-08-31T14:37:24Z",
+   "prev": "dd28ca7f9bbf",
+   "summary": "wave-49/root七问总答：F7 关闭（目标灭失，root 视野权威；幻觉病例触发 REGISTRY-LIVENESS-01 类式消解）；Pages 折叠解除飞④影子径（零 root）；AUTH-MANIFEST-01 立册=零新增授权（授权早足，缺在盘点）；N-MUST/M-CODE/Δ-BASE 名实分离根治（码表+引擎轨迹+首批基线全实例化）；八失消解矩阵立；QF/CI 同跑=一栈双平面三阀两环；RESUME-01 立",
+   "links": [
+    "ci-control:bridge/AUTH-MANIFEST-01.json",
+    "ure/eight-failures-matrix-01.md",
+    "ure/qfos-cios-coduplex-01.md",
+    "ci-control:bridge/delta-base-01.json",
+    "ure/code/mcode-01.json"
+   ],
+   "hash": "a6918bb13c74",
+   "hmac": "b9e8a50af298"
   }
  ],
- "tip": "dd28ca7f9bbf",
- "seq": 232
+ "tip": "a6918bb13c74",
+ "seq": 233
 }
