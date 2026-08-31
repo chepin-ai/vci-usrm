@@ -71,8 +71,8 @@ def check_M14_crossface(faces, registry_expect):
 def mine_baseline(entries, wallclock_utc):
     """entries: stream-ledger 式 [{seq, ts, hash, ...}]（已按 seq 排序）。
     产出: 基线度量 + 链完整性核验 + 出包络判词。
-    阈值 PROVISIONAL（候 root 标定）: max_gap_min=90, min_chain_ok=1.0。"""
-    MAX_GAP_MIN, res = 90, {'n': len(entries)}
+    阈值 wave-58 自标定（root wave-57 自治令+DISSENT-WINDOW-01，异议窗72h）: MAX_GAP_MIN=720 = 2×max_observed(363.7min, wave-55 实测) 取整; min_chain_ok=1.0。数据驱动, 随 Δ-BASE 累积再收敛。"""
+    MAX_GAP_MIN, res = 720, {'n': len(entries)}
     if not entries:
         return {'metrics': res, 'findings': [finding(V_HOU, 'L2-BASELINE', 'stream-ledger', {}, '空账：未测')]}
     # 链完整性（sha256(prev+canon) 全 64 位）
@@ -97,7 +97,7 @@ def mine_baseline(entries, wallclock_utc):
     f = []
     if bad: f.append(finding(V_ZHENG, 'L2-CHAIN', 'stream-ledger', {'bad_seq': bad[:8]}, '链哈希核验失败条目'))
     if res['max_gap_min'] and res['max_gap_min'] > MAX_GAP_MIN:
-        f.append(finding(V_HOU, 'L2-ENVELOPE', 'stream-ledger', {'max_gap_min': res['max_gap_min'], 'threshold': MAX_GAP_MIN}, '出包络：间隔超阈（阈值候 root 标定）'))
+        f.append(finding(V_HOU, 'L2-ENVELOPE', 'stream-ledger', {'max_gap_min': res['max_gap_min'], 'threshold': MAX_GAP_MIN}, '出包络：间隔超阈（wave-58 自标定 720min）'))
     return {'metrics': res, 'findings': f}
 
 # ============ L3: 反事实推演（阻塞图反演：若 X 沉默，何件阻塞） ============
