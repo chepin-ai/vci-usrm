@@ -106,7 +106,7 @@ def counterfactual_stall(expect_items, silent):
     """expect_items: [{id, owner, depends_on:[owner...], deadline}]（EXPECT-REG-01 形）。
     silent: set(owner)。返回: 每个沉默主体造成的传递阻塞闭包 + 预警判词。"""
     by_owner = {}
-    for it in expect_items: by_owner.setdefault(it['owner'], []).append(it)
+    for it in expect_items: by_owner.setdefault(it.get('owner','?'), []).append(it)
     out = []
     for s in silent:
         blocked, frontier, seen = [], [s], {s}
