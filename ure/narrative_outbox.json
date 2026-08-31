@@ -2862,8 +2862,20 @@
    ],
    "hash": "f4fe78b3adcb",
    "hmac": "ebf0e2c80ae8"
+  },
+  {
+   "seq": 231,
+   "ts": "2026-08-31T13:16:19Z",
+   "prev": "f4fe78b3adcb",
+   "summary": "wave-47/W43深化：CHSH 双路实测（without-base S_exact=2.828427/S_sampled=2.825195；with-base quafu ScQ-Sim10 S=2.853516>2 违背经典界）；常任基准 quantum-bench-01.py 立册；kernel-loop 健康审计证（两 failure=修复序列历史件）；真机 P5 仍在队；cisvr 死手窗 18:10Z 站岗中",
+   "links": [
+    "ure/code/quantum-bench-01.py",
+    "ci-control:bridge/quantum/chsh-01-wave47.json"
+   ],
+   "hash": "765139618554",
+   "hmac": "d5dbe2a65796"
   }
  ],
- "tip": "f4fe78b3adcb",
- "seq": 230
+ "tip": "765139618554",
+ "seq": 231
 }
