@@ -1,7 +1,11 @@
+> **FLIGHT-DECK 判词（2026-08-31T10:02:21Z）：证——实飞转正。** 推演：零命中证据（§1）+ kernel-derive-01.md 三词对应案收敛互证；prove/verify：schema/不变式机检通过（KD 引擎 M-003 路径），Δ-BASE INV-D2 链式规则与既有 narrative/outbox 验链器同构复用验证；判词依据 W41 实飞令。自本戳起为本 org 正本（DIRECTIVES 级），root 保留事后否决（FLIGHT-DECK-01 S4）。原草案正文如下（状态行以此判词为准）：
+
+---
+
 # M-CODE-01（起草案 · 候 root 一裁定版）
 
 - 档号: USRM-URE-MCODE-DRAFT-01
-- 状态: **草案（PROPOSED）**——root W40：「M-CODE/Δ-BASE 全 org 0 命中——无正本不猜义，查询圈搜正本并批你起草」。查询圈搜正本已完成（code search ×5 变体 + DIRECTIVES/PATTERN-REG 全关键词 grep + 公告板 184 档名枚举 = **0 命中**），故本档一切语义均为 USRM 提案，非既有正本之复述。root 裁定前，任何线不得引用 M-CODE 作为依据。
+- 状态: **实飞在册（FLIGHT-DECK 判词·证 2026-08-31T10:02:21Z）**——root W40：「M-CODE/Δ-BASE 全 org 0 命中——无正本不猜义，查询圈搜正本并批你起草」。查询圈搜正本已完成（code search ×5 变体 + DIRECTIVES/PATTERN-REG 全关键词 grep + 公告板 184 档名枚举 = **0 命中**），故本档一切语义均为 USRM 提案，非既有正本之复述。root 裁定前，任何线不得引用 M-CODE 作为依据。
 - ts: 2026-08-30T12:38:43Z
 
 ## 1. 零命中证据（呈证）
