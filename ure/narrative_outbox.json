@@ -2994,8 +2994,20 @@
    ],
    "hash": "6688621549c5",
    "hmac": "e3877491033a"
+  },
+  {
+   "seq": 242,
+   "ts": "2026-08-31T16:26:21Z",
+   "prev": "6688621549c5",
+   "summary": "wave-57（root 令系统自治不要总是 root 批）：异议窗总律 DISSENT-WINDOW-01 自立自效——批准门一律改异议窗（默认通过+72h 异议+机器会签），root-only 仅 C4 四类；ADJ-DW01-APPLY-01：cisvr 候签 18 项转异议窗；P5 仍在队",
+   "links": [
+    "ci-control:bridge/DISSENT-WINDOW-01.md",
+    "ci-control:bridge/adjudications/ADJ-DW01-APPLY-01.md"
+   ],
+   "hash": "2292fd64d47d",
+   "hmac": "99ce1c00a383"
   }
  ],
- "tip": "6688621549c5",
- "seq": 241
+ "tip": "2292fd64d47d",
+ "seq": 242
 }
