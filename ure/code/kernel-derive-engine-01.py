@@ -127,15 +127,24 @@ def derive(workflows_by_repo=None, whitelist_cron=None, expected_active=None,
            faces=None, registry_expect=None, ledger_entries=None, expect_items=None, silent=None,
            wallclock_utc=None):
     rep = {'L1': [], 'L2': None, 'L3': None}
+    trace = ['M-001 LOAD-AXIOM: derive() 上下文装配']  # M-CODE-01 指令轨迹（INV-M3: 步必引已登记码）
     if workflows_by_repo is not None:
+        trace.append('M-003 CHECK-INV: M12/M3 (workflows_by_repo)')
         rep['L1'] += check_M12_cron(workflows_by_repo, whitelist_cron or set())
         rep['L1'] += check_M3_disabled(workflows_by_repo, expected_active or set())
     if faces is not None:
+        trace.append('M-003 CHECK-INV: M14 crossface')
         rep['L1'] += check_M14_crossface(faces, registry_expect or {})
     if ledger_entries is not None:
+        trace.append('M-003 CHECK-INV: L2 baseline (Δ-BASE 同构验链)')
         rep['L2'] = mine_baseline(ledger_entries, wallclock_utc or datetime.datetime.now(datetime.timezone.utc))
     if expect_items is not None and silent is not None:
+        trace.append('M-002 APPLY-RULE: L3 counterfactual stall')
         rep['L3'] = counterfactual_stall(expect_items, silent)
+    for f in rep['L1']:
+        trace.append('M-004 EMIT-FINDING: ' + str(f.get('id', '?')))
+    trace.append('M-005 COMMIT-LEDGER: 由调用方(kernel-loop P5)落 stream-ledger + Δ-BASE delta')
+    rep['mcode_trace'] = trace
     rep['summary'] = {'L1_findings': len(rep['L1']),
                       'L2_findings': len(rep['L2']['findings']) if rep['L2'] else '未测',
                       'L3_blocked_groups': sum(1 for r in (rep['L3']['simulation'] if rep['L3'] else []) if r['transitively_blocked']) if rep['L3'] else '未测'}
