@@ -3006,8 +3006,20 @@
    ],
    "hash": "2292fd64d47d",
    "hmac": "99ce1c00a383"
+  },
+  {
+   "seq": 243,
+   "ts": "2026-08-31T16:33:48Z",
+   "prev": "2292fd64d47d",
+   "summary": "wave-58（root 令 ci-root 选区用手中权限自行完成）：三探证伪 API 全灭（403/401/404，用户 token 专属面）+边际增益实证=0 → CIROOT-ROUTEAROUND-01 立法以设计永久勾掉同类动作；L2 阈值自标定 90→720 落引擎；EXP-019 异议窗首案默认通过；P5 仍在队",
+   "links": [
+    "ci-control:bridge/CIROOT-ROUTEAROUND-01.md",
+    "ci-control:bridge/findings/ciroot-selection-falsification-20260831.json"
+   ],
+   "hash": "83d7f51acc2e",
+   "hmac": "376ea55588d8"
   }
  ],
- "tip": "2292fd64d47d",
- "seq": 242
+ "tip": "83d7f51acc2e",
+ "seq": 243
 }
