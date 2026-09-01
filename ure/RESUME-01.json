@@ -1,18 +1,22 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-08-31T17:31:41Z",
- "wave": 70,
+ "ts": "2026-09-01T10:51:03Z",
+ "wave": 71,
  "anchors": {
-  "narrative": "seq246:4ca0c6d64bf2",
-  "outbox": "seq140:d56998ec47b2",
-  "stream-ledger": "seq298:23ef9ba01f40",
-  "heartbeat": "beat#34:67c74b48bc0984bc"
+  "narrative": "seq256:33ff4ce64e3a",
+  "outbox": "seq150:33a38fd8331c",
+  "stream-ledger": "seq59:ea710aa17bc3c43906cea11fe705918b",
+  "heartbeat": "beat#44:cc37cf19980b112d"
  },
  "standing_duties": [
-  "判词前置：ADJ完备性两默认项+AUTH-MANIFEST查询证据",
-  "异议窗总律 DISSENT-WINDOW-01 在效：无呈批阻塞态",
-  "每轮重钻金库",
-  "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
+  "OTP_PHONE 值×3线=root 原子（ucif2/vinf/cfts SELFTEST phone_len=0 在档）",
+  "ucif2 LONGCAT_API_KEY 未配（wave-69 仅配 vinf/cfts/qgl）→ 候 REST 窗口 NaCl 密封箱补配",
+  "vinf SI2→SI1 点火班已派发候 runner（weave/awake/ 落物=证）",
+  "M5 PENDING-ORDER-M5-0902 今日触发：09-02 重算全收盘后执行轮动（卖红利买医疗+证券）",
+  "EXP-020 票仓路径待定位（raw 盲探 404）",
+  "REST 二级限流常态化：写走 git 协议通道，读走 raw 独立池",
+  "P5 QR：wait_for_final_state 立法禁用；JobV1.status 守卫轮询待做",
+  "lgt 身份候 root；qfa Path A 建仓候 root（org administration）"
  ],
  "pending_auto": [
   "M5挂单09-02触发(全量收盘重算)",

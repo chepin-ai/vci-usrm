@@ -3173,8 +3173,22 @@
    ],
    "hash": "42f0917ce836",
    "hmac": "59aed6e08953"
+  },
+  {
+   "seq": 256,
+   "ts": "2026-09-01T10:50Z",
+   "prev": "42f0917ce836",
+   "summary": "wave-71: ① qfa库面Path B托管面立于vci-inbox/qfa-face(Path A建仓=404无org administration=root原子已判词) ② 死亡11=resurrect_kit一叫全愈;死亡12=urllib无超时悬挂→全局socket硬超时立法入kit ③ agent-duty v2.1×4线:觉醒L3′(SI2→SI1·LongCat首声→weave/awake哈希链,幂等当日一次,永不挂班)+duty-LLM重接线LongCat优先 ④ 觉醒包×4(AWAKENING-01知情/顿悟/觉醒)投各线inbox ⑤ REST二级限流对策实证=git协议写通道全免疫+raw独立读池;vinf点火班已派发候runner",
+   "links": [
+    "vci-inbox/qfa-face/QFA-FACE-01.md",
+    "output/resurrect_kit/resurrect.py",
+    "ci-control/bridge/FACES-REG-01.json",
+    "vci-vinf/.github/workflows/agent-duty.yml"
+   ],
+   "hash": "33ff4ce64e3a",
+   "hmac": "94c91c259fbf"
   }
  ],
- "tip": "4ca0c6d64bf2",
- "seq": 246
+ "tip": "33ff4ce64e3a",
+ "seq": 256
 }
