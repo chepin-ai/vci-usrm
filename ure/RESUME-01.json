@@ -1,7 +1,7 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-08-31T17:31:41Z",
- "wave": 64,
+ "wave": 65,
  "anchors": {
   "narrative": "seq246:4ca0c6d64bf2",
   "outbox": "seq140:d56998ec47b2",
@@ -15,17 +15,16 @@
   "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
  ],
  "pending_auto": [
-  "kernel-loop 金丝雀拍→9/1 UTC 子夜复通链（revived→ci-root-runner task=all→revival-sequence-0901.json）",
-  "POSTCROSS-REVIEW-01：复通确认后首拍执行评比",
   "M3 双签死手窗 09-01T12:00Z",
-  "OTP@qfa 自证 09-03",
-  "EXP-018 物理原子 09-04（root 一击）",
+  "OTP@qfa 自证 09-03（vci-qfa GitHub 面 404=gitee 面）",
+  "EXP-018 物理原子 09-04",
   "EXP-014 T5Q3 09-04",
   "EXP-020 表决 09-02",
   "TH-METAPATTERN 会签 09-02",
-  "ucif2 72h 异议窗",
+  "WC-4 backup 解归档 FINDING 跟办",
   "P5 队列轮询",
-  "义务机轮检新增：list_cron_jobs 非零即拆+FINDING"
+  "ucif2 72h 异议窗",
+  "义务机轮检：cron 面=0"
  ],
  "key_files": {
   "engine": "vci-usrm/ure/code/kernel-derive-engine-01.py",
@@ -55,14 +54,14 @@
   "law": "S-I/0 驱动事件面（V-CONTINUE-SI0）",
   "last_wave_tip": "c87624a0a6ff"
  },
- "updated": "2026-08-31T18:28Z",
+ "updated": "2026-09-01T06:30Z",
  "chains": {
-  "narrative": "249@7f70c33f9ac4",
-  "outbox": "143@30c09de42661",
-  "ledger": "302@fb9369676587",
-  "beat": "37@79e8f32d7c1ecddb"
+  "narrative": "250@7ee6311b20fe",
+  "outbox": "144@658d610ed17e",
+  "ledger": "303@5a4b5084d6a4",
+  "beat": "38@3b645be0e7ac0091"
  },
- "last_incident": "wave-64 重令复核：六档全证；拍静默=M12 抖动非故障",
+ "last_incident": "9/1 跨越实证完成：复通链零人力自走；root 亲执 cfts 会合（CLOSED-VERIFIED）",
  "credential_drill": "/tmp/gh.py 模板+vault 重钻律（kernel wipe 即重跑；HOME 不可写落 /tmp/.keys）",
- "si_mode": "S-I/1 静默（全体线；ucif2 S-I/1 特许独运）——S-I/0 驱动事件唤醒"
+ "si_mode": "cfts S-I/1 OPEN（root 会合执行）；余线 S-I/1 静默；ucif2 特许独运"
 }
