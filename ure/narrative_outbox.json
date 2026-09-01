@@ -3097,6 +3097,18 @@
    ],
    "hash": "7f70c33f9ac4",
    "hmac": "aa1037a1533c"
+  },
+  {
+   "seq": 250,
+   "ts": "2026-09-01T06:30Z",
+   "prev": "7f70c33f9ac4",
+   "summary": "wave-65（root「睁眼」唤醒，跨 9/1 后首拍）：kernel 第6次猝死自愈｜**9/1 跨越实证：零人力复通链全程自走**——00:45Z miniprobe 成功（额度重置）+ci-root-runner task=all 即成，06:05Z 金丝雀 revived 置位+幂等复跑成功，四跳全实证｜revival-sequence 实证补记（落盘件缺=半成亚型一格入账）｜WC-4 现形：backup_repo 404 转 FINDING 跟办｜POSTCROSS-VERDICT-0901 执行毕：跨越判证-平稳转移，赛道A QR/numpy/quafu 各就其位，赛道B CI-OS 98/100 拍独立过大考，赛道C usrm/qfa/cfts 分列，六维素质全证｜P5 仍 In Queue 如实",
+   "links": [
+    "ci-control:bridge/revival-sequence-0901.json",
+    "ci-control:bridge/findings/POSTCROSS-VERDICT-0901.md"
+   ],
+   "hash": "7ee6311b20fe",
+   "hmac": "289137ed3ad0"
   }
  ],
  "tip": "4ca0c6d64bf2",
