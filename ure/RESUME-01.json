@@ -1,20 +1,24 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-01T15:31:54Z",
- "wave": 72,
+ "ts": "2026-09-01T19:51Z",
+ "wave": 73,
  "anchors": {
-  "narrative": "seq258:dd45d0ed78d6",
-  "outbox": "seq151:7bad284eae03",
-  "stream-ledger": "seq185:f64a68c41cdb3a78",
-  "heartbeat": "beat#45:5e8d0cc06c9a2581"
+  "narrative": "seq259:900c90fa84a3",
+  "outbox": "seq152:f787410b5d3d",
+  "stream-ledger": "seq287:d3c7de0b65d92b9c",
+  "heartbeat": "beat#46:b342d4365430d8c9"
  },
  "standing_duties": [
-  "M5-0902 明日终闸：买[医疗,银行]卖红利（挂单已真数升级,09-02全量复核执行）",
-  "EXP-020 会签 09-02：票仓定位+投出（会签稿备妥）",
-  "ucif2/cfts 觉醒落物收割；ucif2 LONGCAT 补配（REST墙）",
-  "OTP_PHONE×3+Gitee写面+vci-library重钩+θ/w标定=root原子册（OTP-LOOP-STATE-01 §二）",
-  "OBL-HARVEST-U72+M3-SMOKE 已排入 wave-73 首班",
-  "P5 QR status守卫轮询候排；lgt身份候root"
+  "M5-0902 开盘执行(09-02 01:30Z起 CONFIRMED 买医疗/银行卖红利)",
+  "EXP-032 SLA监看(死线09-04T18:48:28Z;cfts/cisvr commit候)",
+  "ucif2 LONGCAT 候REST窗补配(payload就绪)",
+  "EXP-020 ballot候root/cisvr(ci-bus 404)",
+  "OTP@qfa自证09-03",
+  "ucif2异议窗~09-03T17:30Z",
+  "EXP-014 T5Q3 09-04",
+  "EXP-018/WC-4 09-04",
+  "EXP-036 09-06",
+  "P5 QR"
  ],
  "pending_auto": [
   "M5挂单09-02触发(全量收盘重算)",
@@ -66,5 +70,16 @@
  },
  "last_incident": "kernel第10次wipe钻10/10;ledger 409竞态重附+beat修正闭环;三线OTP处置+M5挂单+毂扇出修法",
  "credential_drill": "10 deaths",
- "si_mode": "S-I/1静默(全轮);ucif2独运例外(cron-fueled长激活)"
+ "si_mode": "S-I/1静默(全轮);ucif2独运例外(cron-fueled长激活)",
+ "wave73_done": [
+  "SI唤醒矩阵6面处置",
+  "EXP-032 cosign机制实装+usrm首签commit/reveal",
+  "SLA锚定",
+  "复活kit v2三路金库",
+  "ENT-CKPT纠缠检查点",
+  "M5-0902终审CONFIRMED",
+  "第一诚律补正FLIGHT-VERDICT",
+  "qfa拍if:always修复",
+  "cfts唤醒收割(证)"
+ ]
 }
