@@ -5,8 +5,8 @@
  "anchors": {
   "narrative": "seq258:dd45d0ed78d6",
   "outbox": "seq151:7bad284eae03",
-  "stream-ledger": "候推（fleet竞速）",
-  "heartbeat": "beat#45 候推"
+  "stream-ledger": "seq185:f64a68c41cdb3a78",
+  "heartbeat": "beat#45:5e8d0cc06c9a2581"
  },
  "standing_duties": [
   "M5-0902 明日终闸：买[医疗,银行]卖红利（挂单已真数升级,09-02全量复核执行）",
