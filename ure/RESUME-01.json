@@ -55,11 +55,11 @@
  "updated": "2026-09-01T07:38Z",
  "chains": {
   "narrative": "seq253@4019834bcfbf",
-  "outbox": "seq147@d64fc76dfa5f",
+  "outbox": "seq147@1a0eae963954",
   "ledger": "seq313@38bce57e163e",
   "beat": "#41@099e9fb10800a6c3"
  },
- "last_incident": "kernel第8次 wipe 已再演练(凭证钻8/8);longcat原子消解+L4/L5上线+唤醒三级律",
+ "last_incident": "kernel第8次wipe已再演练(钻8/8);longcat消解+L4/L5上线+唤醒三级律;out147 tip约定自改正(sans-tip)",
  "credential_drill": "8 deaths; /tmp/.keys(HOME挂载坏,F10); jwt importlib 加载; vault retry 8x",
  "si_mode": "S-I/1静默(全轮);ucif2独运例外(cron-fueled长激活)"
 }
