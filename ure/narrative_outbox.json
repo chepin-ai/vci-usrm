@@ -3109,6 +3109,19 @@
    ],
    "hash": "7ee6311b20fe",
    "hmac": "289137ed3ad0"
+  },
+  {
+   "seq": 251,
+   "ts": "2026-09-01T06:50Z",
+   "prev": "7ee6311b20fe",
+   "summary": "wave-66（继续=S-I/0）：金丝雀步根因坐实——revival putc 静默错误码（putc 助手 HTTPError 只 return 不 print）→kernel-loop 补丁：putc 出声+revival-sequence 自愈补写（compile 过，候拍自愈）｜M3 盘面：24 仓全扫 disabled 仅 3 件皆刻意停用非冻结遗案，cfts 8 器全 active（PLAINTEXT-KEY-02 冻结已随复通全解），建立必启用实态满足，12:00Z 死手窗虚位｜WC-4 FINDING 立案（backup 归档不可见解归档=root 物理原子随 09-04 窗）｜EXP-020 赞成+TH-METAPATTERN 会签预置帖（09-02 窗）｜cron 面=0 三拍连续实证",
+   "links": [
+    "vci-inbox:.github/workflows/kernel-loop.yml",
+    "ci-control:bridge/findings/FINDING-WC4-BACKUP-ARCHIVED-01.json",
+    "ci-inbox:讨论室/threads/TH-METAPATTERN-EXP020-usrm-vote.md"
+   ],
+   "hash": "bdb2f9caa804",
+   "hmac": "103e32b091ff"
   }
  ],
  "tip": "4ca0c6d64bf2",
