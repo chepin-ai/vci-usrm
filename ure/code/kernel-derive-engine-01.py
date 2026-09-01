@@ -182,20 +182,84 @@ def check_L4_refnet(faces, ledger_entries):
         out.append(finding(V_HOU, 'L4-ERROR', 'refnet', {'err': str(e)[:80]}, 'L4 复算异常'))
     return out
 
+def _gate_context(scene, f):
+    """语境环: 发现来自何方(checker/organ/subject/state)——源流不合即不开火; exclude_checker 抑噪音面"""
+    c = scene.get('context', {})
+    if not c: return True, 'ctx-free'
+    if f.get('checker') in (c.get('exclude_checker') or []): return False, 'ctx-excluded:'+str(f.get('checker'))
+    if c.get('checker') and c['checker'] != f.get('checker'): return False, 'ctx-checker-mismatch'
+    if c.get('subject') and c['subject'] != f.get('subject'): return False, 'ctx-subject-mismatch'
+    if c.get('state') and c['state'] != f.get('state'): return False, 'ctx-state-mismatch'
+    return True, 'ctx-ok'
+
+def _gate_syntax(scene, f):
+    """语法环: 结构形——必需字段路径/ id 前缀"""
+    sy = scene.get('syntax', {})
+    if not sy: return True, 'syn-free'
+    for fld in sy.get('has_fields', []):
+        cur = f
+        for part in fld.split('.'):
+            if isinstance(cur, dict) and part in cur: cur = cur[part]
+            else: return False, 'syn-missing:'+fld
+    if sy.get('id_prefix') and not str(f.get('id', '')).startswith(sy['id_prefix']): return False, 'syn-id-prefix'
+    return True, 'syn-ok'
+
+def _gate_semantic(scene, p, f):
+    """语义环: 意义命中——trigger.keyword/class(历史兼容) + scene.semantic.keywords/classes 同义群"""
+    blob = json.dumps(f, ensure_ascii=False)
+    trg = p.get('trigger', {})
+    sem = scene.get('semantic', {})
+    kws = ([trg['keyword']] if trg.get('keyword') else []) + (sem.get('keywords') or [])
+    cls = ([trg['class']] if trg.get('class') else []) + (sem.get('classes') or [])
+    kind = str(f.get('kind', '') or f.get('class', ''))
+    hit = any(k in blob for k in kws) or any(c in kind for c in cls)
+    if not kws and not cls: return True, 'sem-free'
+    return hit, ('sem-hit' if hit else 'sem-miss')
+
+def _gate_pragmatic(scene, f, fires):
+    """语用环: 行事条件——最小重复计数/升级阈; 过则开火并允消融"""
+    pr = scene.get('pragmatic', {})
+    if not pr: return True, 'prag-free'
+    mr = pr.get('min_repeat', 1)
+    if mr > 1:
+        n = sum(1 for x in fires if x.get('finding') == f.get('id'))
+        if n + 1 < mr: return False, 'prag-below-min-repeat'
+    return True, 'prag-ok'
+
 def autofire_L5(patterns, findings_new):
-    """L5 pattern 自动触发：FINDING 类式命中 pattern 触发条件→自动开火记录。
-    patterns: [{'id','trigger':{'class'|'keyword'},'action'}...]
-    findings_new: [{'id','kind','what'/'observation'}...]
-    返回 fires: [{'pattern','finding','action','verdict'}]。全息米田量子场消融之机械面：
-    消融=把 FINDING 的引用网改写入 pattern 归档（fires 即消融锚）。"""
+    """L5 v2 场景识别四层管（wave-69 root令: 语境→语法→语义→语用, 四环全过方开火）。
+    fold-n 统一: kind 属 fold 族(fold-n/eight-failures)的 fire 追加 dissolution 记录——
+    多重折叠发现经四层管识别, 于语用环执行消融 D=Y(F) 重写(场论 v2.1 算子 D 的机械面)。
+    patterns 无 scene 字段→退化 wave-68 语义单环(向后兼容)。"""
     fires = []
     for f in findings_new or []:
         blob = json.dumps(f, ensure_ascii=False)
         for p in patterns or []:
-            trg = p.get('trigger', {})
-            hit = (trg.get('class') and trg['class'] in str(f.get('kind',''))) or                   (trg.get('keyword') and trg['keyword'] in blob)
-            if hit:
-                fires.append({'pattern': p.get('id'), 'finding': f.get('id'),
-                              'action': p.get('action', 'archive-scaffold'),
-                              'verdict': V_HOU, 'note': '自动触发：消融锚入引用网'})
+            scene = p.get('scene') or {}
+            if not scene:
+                trg = p.get('trigger', {})
+                hit = (trg.get('class') and trg['class'] in str(f.get('kind', ''))) or \
+                    (trg.get('keyword') and trg['keyword'] in blob)
+                if hit:
+                    fires.append({'pattern': p.get('id'), 'finding': f.get('id'),
+                                  'action': p.get('action', 'archive-scaffold'),
+                                  'verdict': V_HOU, 'pipeline': 'legacy-semantic',
+                                  'note': '自动触发: 消融锚入引用网'})
+                continue
+            g1, r1 = _gate_context(scene, f)
+            g2, r2 = _gate_syntax(scene, f) if g1 else (False, 'short')
+            g3, r3 = _gate_semantic(scene, p, f) if g2 else (False, 'short')
+            g4, r4 = _gate_pragmatic(scene, f, fires) if g3 else (False, 'short')
+            if g1 and g2 and g3 and g4:
+                rec = {'pattern': p.get('id'), 'finding': f.get('id'),
+                       'action': p.get('action', 'archive-scaffold'),
+                       'verdict': V_HOU, 'pipeline': 'scene-4gate',
+                       'gates': {'context': r1, 'syntax': r2, 'semantic': r3, 'pragmatic': r4},
+                       'note': '四层管全过: 自动触发'}
+                kind = str(f.get('kind', '') or f.get('class', ''))
+                if 'fold' in kind or 'eight-failures' in kind:
+                    rec['dissolution'] = {'D': 'Y(F)-rewrite', 'target': f.get('id'),
+                        'note': 'fold-n 多重折叠发现→消融: FINDING 引用网改写入 pattern 归档'}
+                fires.append(rec)
     return fires
+
