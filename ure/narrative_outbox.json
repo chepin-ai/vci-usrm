@@ -3199,8 +3199,21 @@
    ],
    "hash": "4403365d6c44",
    "hmac": "38a7cedfa2e4"
+  },
+  {
+   "seq": 258,
+   "ts": "2026-09-01T15:31Z",
+   "prev": "4403365d6c44",
+   "summary": "wave-72 五线候项系统级解决：① ucif2 待机件=线内收割候（觉醒已点火14:50Z降级首声ef5c9d016da2;LONGCAT候补配） ② vinf 挂单证级升级：六ETF真收补齐+原冻结引擎复算top2=[医疗11.80,银行8.05]翻转已核→改买医疗/银行,nav诚实盯市1.088828（vmk d0641e0） ③ qgl 候件=OBL-SYN-2路由件在匣+线已觉醒,候自收割 ④ cfts 18项候裁全判词:XLINE-DISPOSITION-W72-01（SYN-1支架证/SYN-3已闭/四项root原子精确化/PATTERN-1实质闭合/HARVEST-U72+M3-SMOKE排期入册） ⑤ usrm候项:EXP-020票仓候定位会签稿备妥;FLIGHT-VERDICT判未入库佚于/tmp;M5引擎丢失系克隆残损误报已更正 ⑥ OTP-LOOP-STATE-01四环证档+root原子精确单+OTP-DEGRADE-01降级立法 ⑦ 死亡#14四愈",
+   "links": [
+    "ci-control/bridge/OTP-LOOP-STATE-01.md",
+    "ci-control/bridge/adjudications/XLINE-DISPOSITION-W72-01.md",
+    "vinf-market-kernel d0641e0"
+   ],
+   "hash": "dd45d0ed78d6",
+   "hmac": "8ae573647a05"
   }
  ],
- "tip": "4403365d6c44",
- "seq": 257
+ "tip": "dd45d0ed78d6",
+ "seq": 258
 }

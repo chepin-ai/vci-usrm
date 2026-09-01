@@ -1,22 +1,20 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-01T13:35:04Z",
- "wave": 71,
+ "ts": "2026-09-01T15:31:54Z",
+ "wave": 72,
  "anchors": {
-  "narrative": "seq257:4403365d6c44",
-  "outbox": "seq150:33a38fd8331c",
-  "stream-ledger": "seq59:ea710aa17bc3c43906cea11fe705918b",
-  "heartbeat": "beat#44:cc37cf19980b112d"
+  "narrative": "seq258:dd45d0ed78d6",
+  "outbox": "seq151:7bad284eae03",
+  "stream-ledger": "候推（fleet竞速）",
+  "heartbeat": "beat#45 候推"
  },
  "standing_duties": [
-  "OTP_PHONE 值×3线=root 原子（ucif2/vinf/cfts SELFTEST phone_len=0 在档）",
-  "ucif2 LONGCAT_API_KEY 未配（wave-69 仅配 vinf/cfts/qgl）→ 候 REST 窗口 NaCl 密封箱补配",
-  "ucif2/cfts SI2→SI1 再点火已发（13:22Z，6eef5d8/523cebc）候 runner；vinf/qgl 已证",
-  "M5 PENDING-ORDER-M5-0902 今日触发：09-02 重算全收盘后执行轮动（卖红利买医疗+证券）",
-  "EXP-020 票仓路径待定位（raw 盲探 404）",
-  "REST 二级限流常态化：写走 git 协议通道，读走 raw 独立池",
-  "P5 QR：wait_for_final_state 立法禁用；JobV1.status 守卫轮询待做",
-  "lgt 身份候 root；qfa Path A 建仓候 root（org administration）"
+  "M5-0902 明日终闸：买[医疗,银行]卖红利（挂单已真数升级,09-02全量复核执行）",
+  "EXP-020 会签 09-02：票仓定位+投出（会签稿备妥）",
+  "ucif2/cfts 觉醒落物收割；ucif2 LONGCAT 补配（REST墙）",
+  "OTP_PHONE×3+Gitee写面+vci-library重钩+θ/w标定=root原子册（OTP-LOOP-STATE-01 §二）",
+  "OBL-HARVEST-U72+M3-SMOKE 已排入 wave-73 首班",
+  "P5 QR status守卫轮询候排；lgt身份候root"
  ],
  "pending_auto": [
   "M5挂单09-02触发(全量收盘重算)",
