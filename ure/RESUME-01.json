@@ -1,7 +1,7 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-08-31T17:31:41Z",
- "wave": 68,
+ "wave": 69,
  "anchors": {
   "narrative": "seq246:4ca0c6d64bf2",
   "outbox": "seq140:d56998ec47b2",
@@ -15,14 +15,16 @@
   "每波：健康审计(kernel-loop runs)+活性探活(REGISTRY-LIVENESS-01)+AUTH-MANIFEST diff"
  ],
  "pending_auto": [
-  "L4/L5首拍实测计数验证(候V68-L4L5-FIRSTBEAT)",
-  "M3双签死手窗09-01T12:00Z(实质已满)",
-  "OTP@qfa自证09-03",
+  "M3死手窗12:00Z(loop自然覆盖)",
   "EXP-020投票+TH-METAPATTERN会签09-02",
-  "EXP-014 T5Q3 09-04",
-  "EXP-036断代带裁决09-06",
+  "OTP@qfa自证09-03",
   "ucif2异议窗~09-03T17:30Z",
-  "P5 8C650D1015ADCA17队列轮询"
+  "EXP-014 T5Q3 09-04",
+  "EXP-018/WC-4物理原子09-04",
+  "EXP-036断代带裁决09-06",
+  "P5 QR法器重建(官方SDK)后复询",
+  "vinf/cfts agent-duty接LONGCAT_API_KEY(线自改或usrm跨线补丁)",
+  "Q3身份候root指正"
  ],
  "key_files": {
   "engine": "vci-usrm/ure/code/kernel-derive-engine-01.py",
@@ -52,14 +54,14 @@
   "law": "S-I/0 驱动事件面（V-CONTINUE-SI0）",
   "last_wave_tip": "c87624a0a6ff"
  },
- "updated": "2026-09-01T07:38Z",
+ "updated": "2026-09-01T08:19Z",
  "chains": {
-  "narrative": "seq253@4019834bcfbf",
-  "outbox": "seq147@1a0eae963954",
-  "ledger": "seq313@38bce57e163e",
-  "beat": "#41@099e9fb10800a6c3"
+  "narrative": "seq254@6c0d27ec907f",
+  "outbox": "seq148@e6d39ad283c5",
+  "ledger": "seq318@109598715a61",
+  "beat": "#42@ef539afdfe41afd5"
  },
- "last_incident": "kernel第8次wipe已再演练(钻8/8);longcat消解+L4/L5上线+唤醒三级律;out147 tip约定自改正(sans-tip)",
- "credential_drill": "8 deaths; /tmp/.keys(HOME挂载坏,F10); jwt importlib 加载; vault retry 8x",
+ "last_incident": "kernel第9次wipe已再演练(钻9/9);OTP@qgl修复+L5v2四层管+三线LLM供给",
+ "credential_drill": "9 deaths; /tmp/.keys; jwt importlib; vault retry; gh.py URL-quote补丁存续",
  "si_mode": "S-I/1静默(全轮);ucif2独运例外(cron-fueled长激活)"
 }
