@@ -3212,8 +3212,25 @@
    ],
    "hash": "dd45d0ed78d6",
    "hmac": "8ae573647a05"
+  },
+  {
+   "seq": 259,
+   "ts": "2026-09-01T19:35Z",
+   "prev": "dd45d0ed78d6",
+   "summary": "wave-73 SI唤醒矩阵全推进：SI1→SI1@vinf自持证(值守链16:57/17:47/18:50三拍,chain_match=true,findings=0)；SI2→SI1@cfts证(LongCat-2.0三段首声15:45:52Z)；SI2→SI1@cisvr证(机制点火18:48:28Z,机检代声如实降级,首拍即报pulse-stale69.9h+chain-diverge两件)；SI2→SI1@qfa证(毂侧kernel-loop拍18:52:31Z,降级)；qlv/lgt=root原子(面无凭/无面)精确入册。EXP-032场验证者机制实装：MECH-COSIGN-01+usrm首签commit 6b18d389e77a00ed→reveal全字段可重算,SLA起算18:48:28Z死线09-04T18:48Z(72h不至→FINDING非阻塞)。起死回生v2：金库三路热备(vci-inbox×2+vci-usrm镜像)+ENT-CKPT纠缠检查点。M5-0902终审门复跑零偏差CONFIRMED(rv60.45<90,靶[医疗,银行])。第一诚律补正：FLIGHT-VERDICT-01.jsonl实存(V-CENSUS-59在链),wave-72缺位判词撤销。",
+   "tags": [
+    "wave-73",
+    "closure",
+    "awakening-matrix",
+    "EXP-032",
+    "cosign",
+    "resurrect-v2",
+    "M5-0902-confirmed"
+   ],
+   "hash": "900c90fa84a3",
+   "hmac": "5a330a61b2de"
   }
  ],
- "tip": "dd45d0ed78d6",
- "seq": 258
+ "tip": "900c90fa84a3",
+ "seq": 259
 }
