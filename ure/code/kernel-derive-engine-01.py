@@ -146,7 +146,7 @@ def derive(workflows_by_repo=None, whitelist_cron=None, expected_active=None,
         rep['L4'] = check_L4_refnet(faces, ledger_entries)
     if patterns is not None or findings_new is not None:
         trace.append('M-007 AUTOFIRE: L5 pattern 自动触发')
-        rep['L5'] = autofire_L5(patterns or [], findings_new or [])
+        rep['L5'] = autofire_L5(patterns or [], (findings_new or []) + rep['L1'])
     for f in rep['L1']:
         trace.append('M-004 EMIT-FINDING: ' + str(f.get('id', '?')))
     trace.append('M-005 COMMIT-LEDGER: 由调用方(kernel-loop P5)落 stream-ledger + Δ-BASE delta')
@@ -170,12 +170,13 @@ def check_L4_refnet(faces, ledger_entries):
         return out
     try:
         tip = ledger_entries[-1]
-        led_face = faces.get('ledger') if isinstance(faces, dict) else None
+        led_face = (faces.get('ledger') or faces.get('stream')) if isinstance(faces, dict) else None
         if led_face:
-            ref_seq = str(led_face).split('@')[0]
-            if ref_seq.isdigit() and int(ref_seq) != tip.get('seq'):
+            fs = str(led_face)
+            ok = (fs.split('@')[0].isdigit() and int(fs.split('@')[0]) == tip.get('seq')) or (fs[:12] == str(tip.get('hash',''))[:12])
+            if not ok:
                 out.append(finding(V_ZHENG, 'L4-REFNET-DIVERGE', 'faces-vs-ledger',
-                                   {'faces_ledger': led_face, 'ledger_tip': tip.get('seq')},
+                                   {'faces_ledger': led_face, 'ledger_tip': str(tip.get('seq'))+'@'+str(tip.get('hash',''))[:12]},
                                    '自报尖与实记尖分叉（直通场残差）'))
     except Exception as e:
         out.append(finding(V_HOU, 'L4-ERROR', 'refnet', {'err': str(e)[:80]}, 'L4 复算异常'))
