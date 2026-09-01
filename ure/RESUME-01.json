@@ -1,7 +1,7 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-08-31T17:31:41Z",
- "wave": 66,
+ "wave": 67,
  "anchors": {
   "narrative": "seq246:4ca0c6d64bf2",
   "outbox": "seq140:d56998ec47b2",
@@ -54,14 +54,14 @@
   "law": "S-I/0 驱动事件面（V-CONTINUE-SI0）",
   "last_wave_tip": "c87624a0a6ff"
  },
- "updated": "2026-09-01T06:50Z",
+ "updated": "2026-09-01T07:10Z",
  "chains": {
-  "narrative": "251@bdb2f9caa804",
-  "outbox": "145@f044d41ced81",
-  "ledger": "304@29ee2b529110",
-  "beat": "39@16370776c76a204a"
+  "narrative": "252@eb95917d5a1b",
+  "outbox": "146@e48c782b1c61",
+  "ledger": "305@48678cd9a40e",
+  "beat": "40@09e69d9749342e8e"
  },
- "last_incident": "金丝雀步 putc 静默错误码根因坐实+补丁（出声+自愈）；M3 盘面实证满足",
+ "last_incident": "双塔v2+七峰路线落地；LLM实验实况=provider 0（longcat 候 root 一值）",
  "credential_drill": "/tmp/gh.py 模板+vault 重钻律（kernel wipe 即重跑；HOME 不可写落 /tmp/.keys）",
  "si_mode": "cfts S-I/1 OPEN（root 会合执行）；余线 S-I/1 静默；ucif2 特许独运"
 }
