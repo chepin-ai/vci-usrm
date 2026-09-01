@@ -125,8 +125,8 @@ def counterfactual_stall(expect_items, silent):
 
 def derive(workflows_by_repo=None, whitelist_cron=None, expected_active=None,
            faces=None, registry_expect=None, ledger_entries=None, expect_items=None, silent=None,
-           wallclock_utc=None):
-    rep = {'L1': [], 'L2': None, 'L3': None}
+           wallclock_utc=None, patterns=None, findings_new=None):
+    rep = {'L1': [], 'L2': None, 'L3': None, 'L4': None, 'L5': None}
     trace = ['M-001 LOAD-AXIOM: derive() 上下文装配']  # M-CODE-01 指令轨迹（INV-M3: 步必引已登记码）
     if workflows_by_repo is not None:
         trace.append('M-003 CHECK-INV: M12/M3 (workflows_by_repo)')
@@ -141,6 +141,12 @@ def derive(workflows_by_repo=None, whitelist_cron=None, expected_active=None,
     if expect_items is not None and silent is not None:
         trace.append('M-002 APPLY-RULE: L3 counterfactual stall')
         rep['L3'] = counterfactual_stall(expect_items, silent)
+    if faces is not None and ledger_entries is not None:
+        trace.append('M-006 CHECK-REFNET: L4 直通场读出')
+        rep['L4'] = check_L4_refnet(faces, ledger_entries)
+    if patterns is not None or findings_new is not None:
+        trace.append('M-007 AUTOFIRE: L5 pattern 自动触发')
+        rep['L5'] = autofire_L5(patterns or [], findings_new or [])
     for f in rep['L1']:
         trace.append('M-004 EMIT-FINDING: ' + str(f.get('id', '?')))
     trace.append('M-005 COMMIT-LEDGER: 由调用方(kernel-loop P5)落 stream-ledger + Δ-BASE delta')
@@ -151,4 +157,44 @@ def derive(workflows_by_repo=None, whitelist_cron=None, expected_active=None,
     return rep
 
 if __name__ == '__main__':
-    print('KERNEL-DERIVE-01-ENGINE loaded: L1(M3/M12/M14) + L2(Δ-BASE miner) + L3(counterfactual stall)')
+    print('KERNEL-DERIVE-01-ENGINE loaded: L1+L2+L3 + L4(refnet 直通场) + L5(pattern autofire)')
+
+
+# ============ wave-68 扩展：L4 全息米田直通场 + L5 pattern 自动触发 ============
+def check_L4_refnet(faces, ledger_entries):
+    """L4 引用网一致性：直通场读出器雏形。
+    判据：faces 自报尖 vs ledger 实记尖——自报与引用不符即 FINDING（M14 场化）。
+    faces 期望含 {'narrative': 'seq@hash', 'ledger': 'seq@hash'} 形。"""
+    out = []
+    if not faces or not ledger_entries:
+        return out
+    try:
+        tip = ledger_entries[-1]
+        led_face = faces.get('ledger') if isinstance(faces, dict) else None
+        if led_face:
+            ref_seq = str(led_face).split('@')[0]
+            if ref_seq.isdigit() and int(ref_seq) != tip.get('seq'):
+                out.append(finding(V_ZHENG, 'L4-REFNET-DIVERGE', 'faces-vs-ledger',
+                                   {'faces_ledger': led_face, 'ledger_tip': tip.get('seq')},
+                                   '自报尖与实记尖分叉（直通场残差）'))
+    except Exception as e:
+        out.append(finding(V_HOU, 'L4-ERROR', 'refnet', {'err': str(e)[:80]}, 'L4 复算异常'))
+    return out
+
+def autofire_L5(patterns, findings_new):
+    """L5 pattern 自动触发：FINDING 类式命中 pattern 触发条件→自动开火记录。
+    patterns: [{'id','trigger':{'class'|'keyword'},'action'}...]
+    findings_new: [{'id','kind','what'/'observation'}...]
+    返回 fires: [{'pattern','finding','action','verdict'}]。全息米田量子场消融之机械面：
+    消融=把 FINDING 的引用网改写入 pattern 归档（fires 即消融锚）。"""
+    fires = []
+    for f in findings_new or []:
+        blob = json.dumps(f, ensure_ascii=False)
+        for p in patterns or []:
+            trg = p.get('trigger', {})
+            hit = (trg.get('class') and trg['class'] in str(f.get('kind',''))) or                   (trg.get('keyword') and trg['keyword'] in blob)
+            if hit:
+                fires.append({'pattern': p.get('id'), 'finding': f.get('id'),
+                              'action': p.get('action', 'archive-scaffold'),
+                              'verdict': V_HOU, 'note': '自动触发：消融锚入引用网'})
+    return fires
