@@ -1,9 +1,9 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-01T10:51:03Z",
+ "ts": "2026-09-01T13:35:04Z",
  "wave": 71,
  "anchors": {
-  "narrative": "seq256:33ff4ce64e3a",
+  "narrative": "seq257:4403365d6c44",
   "outbox": "seq150:33a38fd8331c",
   "stream-ledger": "seq59:ea710aa17bc3c43906cea11fe705918b",
   "heartbeat": "beat#44:cc37cf19980b112d"
@@ -11,7 +11,7 @@
  "standing_duties": [
   "OTP_PHONE 值×3线=root 原子（ucif2/vinf/cfts SELFTEST phone_len=0 在档）",
   "ucif2 LONGCAT_API_KEY 未配（wave-69 仅配 vinf/cfts/qgl）→ 候 REST 窗口 NaCl 密封箱补配",
-  "vinf SI2→SI1 点火班已派发候 runner（weave/awake/ 落物=证）",
+  "ucif2/cfts SI2→SI1 再点火已发（13:22Z，6eef5d8/523cebc）候 runner；vinf/qgl 已证",
   "M5 PENDING-ORDER-M5-0902 今日触发：09-02 重算全收盘后执行轮动（卖红利买医疗+证券）",
   "EXP-020 票仓路径待定位（raw 盲探 404）",
   "REST 二级限流常态化：写走 git 协议通道，读走 raw 独立池",
