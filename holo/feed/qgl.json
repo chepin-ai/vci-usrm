@@ -1,0 +1,14 @@
+{
+ "history": [
+  {
+   "ts": "2026-09-02T03:50Z",
+   "ev": "3e995a8c622e"
+  }
+ ],
+ "line": "qgl",
+ "ts": "2026-09-02T03:50Z",
+ "awake": "证(LongCat 12:50:07Z+00:01Z)",
+ "duty": "v2.4",
+ "evidence": "3e995a8c622e",
+ "feed_law": "W77-L6"
+}

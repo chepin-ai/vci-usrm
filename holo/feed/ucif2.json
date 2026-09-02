@@ -1,0 +1,14 @@
+{
+ "history": [
+  {
+   "ts": "2026-09-02T03:50Z",
+   "ev": "ef5c9d016da2;LONGCAT候REST窗"
+  }
+ ],
+ "line": "ucif2",
+ "ts": "2026-09-02T03:50Z",
+ "awake": "弱证 degraded(14:50:56Z+00:01Z)",
+ "duty": "v2.4",
+ "evidence": "ef5c9d016da2;LONGCAT候REST窗",
+ "feed_law": "W77-L6"
+}

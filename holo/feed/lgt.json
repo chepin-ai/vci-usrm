@@ -1,0 +1,14 @@
+{
+ "history": [
+  {
+   "ts": "2026-09-02T03:50Z",
+   "ev": "HOU-QLVWRITE"
+  }
+ ],
+ "line": "lgt",
+ "ts": "2026-09-02T03:50Z",
+ "awake": "结构性候root(正名仓)",
+ "duty": "—",
+ "evidence": "HOU-QLVWRITE",
+ "feed_law": "W77-L6"
+}

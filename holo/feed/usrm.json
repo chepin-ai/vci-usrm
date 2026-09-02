@@ -1,6 +1,6 @@
 {
  "line": "usrm",
- "ts": "2026-09-02T01:43Z",
+ "ts": "2026-09-02T03:50Z",
  "panels": {
   "exp032_cosign": {
    "mech": "MECH-COSIGN-01 ACTIVE",
@@ -36,6 +36,16 @@
    "id": "qlv-lgt-structural-root",
    "sev": "P2",
    "note": "双通道证伪留候root(AUTONOMY-MANDATE-W74-01)"
+  }
+ ],
+ "awake": "证(会话自治常跑)",
+ "duty": "usrm会话制",
+ "evidence": "本会话",
+ "feed_law": "W77-L6",
+ "history": [
+  {
+   "ts": "2026-09-02T03:50Z",
+   "ev": "本会话"
   }
  ]
 }

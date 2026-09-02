@@ -1,6 +1,6 @@
 {
  "line": "cfts",
- "ts": "2026-08-30T00:23Z",
+ "ts": "2026-09-02T03:50Z",
  "panels": {
   "rfc03_chain": {
    "M1": "CLOSED-成立(S=2.826562,种子定格)",
@@ -37,6 +37,16 @@
    "id": "RFC-03-deadline",
    "sev": "P1",
    "note": "08-31T00:00Z,余~23.5h"
+  }
+ ],
+ "awake": "证(LongCat 15:45:52Z+00:01Z)",
+ "duty": "v2.4",
+ "evidence": "awake-20260902",
+ "feed_law": "W77-L6",
+ "history": [
+  {
+   "ts": "2026-09-02T03:50Z",
+   "ev": "awake-20260902"
   }
  ]
 }
