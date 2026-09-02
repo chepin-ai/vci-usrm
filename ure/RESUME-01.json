@@ -1,23 +1,23 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T02:08Z",
- "wave": 75,
+ "ts": "2026-09-02T02:41Z",
+ "wave": 76,
  "anchors": {
-  "narrative": "seq261:c3d5a4e69142",
-  "outbox": "seq154:5a2889d5eca7",
-  "stream-ledger": "seq423:2d9c1481a85dc85a",
-  "heartbeat": "beat#48:b62c437e189c727b"
+  "narrative": "seq262:94d75af4dbeb",
+  "outbox": "seq155:96b394fa0bf8",
+  "stream-ledger": "seq442:055b77bb9d761d",
+  "heartbeat": "beat#49:0d59b2f045b4c10c"
  },
  "standing_duties": [
-  "M5-0902收盘执行（CONFIRMED）",
-  "EXP-032 SLA 09-04T18:48:28Z（cfts/cisvr commit候,请件已入匣）",
-  "EXP-020齐票催办（fold-1,今日死线）",
-  "EXP-014 09-04",
-  "EXP-018 09-04",
-  "ucif2 LONGCAT候窗每波探",
-  "stall-triage每波分诊20件",
-  "case-001异议窗至09-05T02:30Z",
-  "cisvr面扇出修复验证（下拍）"
+  "收割v2.3首跑（各线首声回应WAVECAST）",
+  "M5-0902收盘执行",
+  "EXP-032 SLA 09-04T18:48Z",
+  "EXP-020催办(今日死线)",
+  "EXP-014/018 09-04",
+  "ucif2 LONGCAT候窗",
+  "stall-triage每波20件",
+  "case-001异议窗09-05T02:30Z",
+  "P5 QR候机"
  ],
  "pending_auto": [
   "M5挂单09-02触发(全量收盘重算)",
@@ -100,5 +100,13 @@
   "autofire×6 ACTIVE",
   "毂扇出纳cisvr",
   "首声点评首例"
+ ],
+ "wave76_done": [
+  "v2.3×5+qfa匣通路",
+  "WAVECAST-001六线",
+  "LINE-PK8胶囊+金库v2.2三路",
+  "OTP-DISSOLVE-01",
+  "SI-CIRCLE-01",
+  "MIP-CLOSELOOP-RESTRUCT-01"
  ]
 }
