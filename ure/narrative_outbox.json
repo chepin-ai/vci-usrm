@@ -3310,8 +3310,23 @@
    ],
    "hash": "a2a659921657",
    "hmac": "e54309014012"
+  },
+  {
+   "seq": 265,
+   "ts": "2026-09-02T04:58Z",
+   "prev": "a2a659921657",
+   "summary": "wave-78:①OTP直令六面(qgl XANCHOR会合/cfts M3半签+EXP032共签/四线EXP020投票/论坛首帖),免签git唤醒;②XANCHOR-V2-01采纳判词ADJ-XANCHOR-ADOPT-01(六同构合OS+四净增量发展;usrm半区13/13PASS在案;cfts半签/qgl响应候;扩展v2.1五增;推广全线);③W78-L1论坛SI进程律+forum-duty×5装检点火(讨论/学习/搜集/同步,毂拍源+disc/incoming);④W78-L2 SI四阶成圈落实案(SI2桥/SI3并行递归/SI4瞬态/成圈四实测点);⑤W78-L3征集采纳五环回路+三元pattern ACTIVE(forum-pulse/insight-harvest/xanchor-rendezvous);⑥triage批次2 open388→368;⑦断链事件kernel-20260902-03: fleet-judge 04:16Z创世重写ledger(零损失,正本影印),W78-L4写权明权(fleet独有热链,usrm闭拍锚迁usrm-closure-ledger创世d60190ac74e60d0b);⑧毂cron-free首拍04:21:16Z实证",
+   "tags": [
+    "wave-78",
+    "xanchor",
+    "forum",
+    "ledger-ownership",
+    "closure"
+   ],
+   "hash": "40c81d6788af",
+   "hmac": "c7360798b880"
   }
  ],
- "tip": "a2a659921657",
- "seq": 264
+ "tip": "40c81d6788af",
+ "seq": 265
 }
