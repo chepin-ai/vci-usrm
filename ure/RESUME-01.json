@@ -1,12 +1,12 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T03:10Z",
- "wave": 76,
+ "ts": "2026-09-02T04:00Z",
+ "wave": 77,
  "anchors": {
-  "narrative": "seq263:65aafdb17e86",
-  "outbox": "seq156:0aa61b7f7723",
-  "ledger": "seq443:ed7d715c6f39226f",
-  "beat": "50:ea499c6c19d123a2"
+  "narrative": "seq264:a2a659921657",
+  "outbox": "seq157:38c0dd497b19",
+  "ledger": "seq467:6cc511fe158a9d54",
+  "beat": "51:efd17f18cb69cf4f"
  },
  "standing_duties": [
   "收割v2.3首跑（各线首声回应WAVECAST）",
@@ -109,6 +109,6 @@
   "SI-CIRCLE-01",
   "MIP-CLOSELOOP-RESTRUCT-01"
  ],
- "stage": "wave-76续段闭",
- "next": "收割v2.3首跑/07:00Z后M5-0902执行/EXP-032共签SLA/EXP-020催票/ucif2-LONGCAT候窗/stall-triage批次2"
+ "stage": "wave-77闭(八法cron禁绝)",
+ "next": "收割v2.4五线首跑+毂cron后首事件拍/07:00Z后M5-0902/EXP-032·020催办/stall-triage批次2/ledger写权明权案"
 }
