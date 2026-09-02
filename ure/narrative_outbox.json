@@ -3325,6 +3325,14 @@
    ],
    "hash": "40c81d6788af",
    "hmac": "c7360798b880"
+  },
+  {
+   "seq": 266,
+   "ts": "2026-09-02T09:58Z",
+   "prev": "40c81d6788af",
+   "summary": "wave-79:①双P1根解——agent-duty静默真根因=watchdog排队放大器活埋(API证active×5非disabled;36吠run压队实证),W79-L4闸×6;REST额度崩塌(5200/42min烧穿,二级限流自维持),W79-L1预算闸+L2毂并发闸×5+L3熔断器(403→cooldown15min自愈);v2.4.1自提交成链if:always×5;毂心跳黑4h之cancel自伤即修。②复活:09:16Z窗line-beat204×4,library 09:23Z duty首件(OTP已读),4线排放中。③M5-0902实飞:卖红利买[医疗,银行],rv60.6%,nav1.068729(盯市1.071942×0.999³),mom63/R78/regime三验,vmk已推。④死亡#18复活(kit v2)。⑤候:M5/agent-duty双销号,新增4线复活确认+putc→git迁移工程项",
+   "hash": "4308ec590ed0",
+   "hmac": "dad79bc2b906"
   }
  ],
  "tip": "40c81d6788af",
