@@ -1,0 +1,41 @@
+{
+ "line": "usrm",
+ "ts": "2026-09-02T01:43Z",
+ "panels": {
+  "exp032_cosign": {
+   "mech": "MECH-COSIGN-01 ACTIVE",
+   "usrm": "commit+reveal毕(6b18d389e77a00ed)",
+   "sla": "2026-09-04T18:48:28Z",
+   "cfts": "请件已入.ci-inbox",
+   "cisvr": "请件已入.ci-inbox"
+  },
+  "t5q3": {
+   "fb02": "26件增量已上链",
+   "cisvr面": "首开FB01(5件)",
+   "v2.2": "自抓轨×5线滚装落main"
+  },
+  "m5": {
+   "0902": "CONFIRMED rv60.45<90 靶[医疗,银行] 待收盘执行"
+  }
+ },
+ "metrics": {
+  "narrative_tip": "seq260:5fa61db9a8ad",
+  "outbox_tip": "seq153:3f38006b2fdf",
+  "ledger_tip": "seq422:ff220d13b9d57fa9",
+  "beat": "#47:1a547e69bedcaaec",
+  "awake_faces": "6面(4证2降级证)",
+  "vault": "三路v2.1"
+ },
+ "alerts": [
+  {
+   "id": "ucif2-longcat-rest-wall",
+   "sev": "P2",
+   "note": "secrets端点403×5候窗,payload就绪"
+  },
+  {
+   "id": "qlv-lgt-structural-root",
+   "sev": "P2",
+   "note": "双通道证伪留候root(AUTONOMY-MANDATE-W74-01)"
+  }
+ ]
+}
