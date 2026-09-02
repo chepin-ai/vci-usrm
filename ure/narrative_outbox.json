@@ -3246,8 +3246,26 @@
    ],
    "hash": "5fa61db9a8ad",
    "hmac": "44cfacf0c0c9"
+  },
+  {
+   "seq": 261,
+   "ts": "2026-09-02T02:08Z",
+   "prev": "5fa61db9a8ad",
+   "summary": "wave-75 自治机制群波：root大令17项全处置。EVAL-W75-01(唤醒轮四分之三满绿:LongCat×3线满绿/降级×2/结构性候×2;9·1CI额度重置证健康,REST二级墙独立机制;各线SI1~4详表;系统链群全绿;核心机:M5在飞/DIRECTIVES407积压立案)。AUDIT-W75-01+FINDING×2(kernel-20260902-01 DIRECTIVES积压P1/02回件超窗P2)+fold-1..7归册。RCA-W75-01三失察根因+杜绝L1-L3(环状态二因子/凡机制必有主+候窗主动重试/pattern-autofire激活)。AUTO-GOV-W75-01:决策圈DECIDE-CIRCLE-01设立+case-001(最小值守面过渡态,72h异议窗);CI/Cron限用立法(QF-OS原则不用,CI-OS只用通道不用额度,ai-bi-qi同);pattern-autofire六件ACTIVE;SI2自驱不等SI1+SI3/4全自主立法;cisvr面入毂扇出(083f9be治稀拍缺口)。",
+   "tags": [
+    "wave-75",
+    "autonomy",
+    "EVAL",
+    "AUDIT",
+    "RCA",
+    "AUTO-GOV",
+    "decide-circle",
+    "closure"
+   ],
+   "hash": "c3d5a4e69142",
+   "hmac": "da5471f5c12d"
   }
  ],
- "tip": "5fa61db9a8ad",
- "seq": 260
+ "tip": "c3d5a4e69142",
+ "seq": 261
 }

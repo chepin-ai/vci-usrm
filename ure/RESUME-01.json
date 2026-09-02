@@ -1,22 +1,23 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T01:35Z",
- "wave": 74,
+ "ts": "2026-09-02T02:08Z",
+ "wave": 75,
  "anchors": {
-  "narrative": "seq260:5fa61db9a8ad",
-  "outbox": "seq153:3f38006b2fdf",
-  "stream-ledger": "seq422:ff220d13b9d57fa9",
-  "heartbeat": "beat#47:1a547e69bedcaaec"
+  "narrative": "seq261:c3d5a4e69142",
+  "outbox": "seq154:5a2889d5eca7",
+  "stream-ledger": "seq423:2d9c1481a85dc85a",
+  "heartbeat": "beat#48:b62c437e189c727b"
  },
  "standing_duties": [
-  "M5-0902 收盘数据到即引擎step执行（CONFIRMED 买医疗/银行卖红利）",
-  "EXP-032 SLA监看(09-04T18:48:28Z)",
-  "EXP-014 T5Q3 死线09-04（毂侧已实装,线侧原文面候各线）",
-  "EXP-020 七线齐票催办钟",
-  "ucif2 LONGCAT 候REST窗",
+  "M5-0902收盘执行（CONFIRMED）",
+  "EXP-032 SLA 09-04T18:48:28Z（cfts/cisvr commit候,请件已入匣）",
+  "EXP-020齐票催办（fold-1,今日死线）",
+  "EXP-014 09-04",
   "EXP-018 09-04",
-  "EXP-036 cisvr复核候",
-  "EXP-021/022/023/024/027/029/030/031/033/035/038/039/041/042/047原钟"
+  "ucif2 LONGCAT候窗每波探",
+  "stall-triage每波分诊20件",
+  "case-001异议窗至09-05T02:30Z",
+  "cisvr面扇出修复验证（下拍）"
  ],
  "pending_auto": [
   "M5挂单09-02触发(全量收盘重算)",
@@ -89,5 +90,15 @@
   "EXP-036备忘录",
   "金库v2.1三路",
   "qlv/lgt双通道证伪留候"
+ ],
+ "wave75_done": [
+  "EVAL-W75-01",
+  "AUDIT-W75-01+FINDING×2+fold1-7",
+  "RCA-W75-01三杜绝",
+  "AUTO-GOV-W75-01",
+  "决策圈+case-001",
+  "autofire×6 ACTIVE",
+  "毂扇出纳cisvr",
+  "首声点评首例"
  ]
 }
