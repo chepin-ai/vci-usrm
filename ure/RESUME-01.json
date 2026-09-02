@@ -1,23 +1,20 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-09-02T09:58Z",
- "wave": 79,
+ "wave": 80,
  "anchors": {
-  "narrative": "seq266:4308ec590ed0",
-  "outbox": "seq159:0a80e816d66e",
-  "usrm_closure_ledger": "seq2:781cb1ba9b311c77",
-  "beat": "52:c2f8cf44431a98e5",
-  "ledger_fork_tip": "seq28:4ab2c0f13e2f03f2"
+  "narr": "seq267:75f7caeaf5e6",
+  "outbox": "seq160:c729ed3b3f70",
+  "ucl": "seq3:9d728a65fd85bc99916f711f99c33b6e",
+  "board": "usrm-148"
  },
  "standing_duties": [
-  "4线agent-duty复活确认(vinf/ucif2/cfts/qgl duty件+OTP应件收割;queue排放中)",
-  "EXP-032 cfts/cisvr双签(09-04T18:48Z SLA)",
-  "EXP-020 催办(死线今日)",
-  "EXP-014/018 09-04",
-  "qgl XANCHOR响应/cfts M3半签(随复活排放)",
-  "stall-triage批4(open357)",
-  "ucif2 LONGCAT候窗",
-  "P5 QR候机"
+  "EXP-032 收割续窗：commit-cisvr 候 library 凭据供给（root-physical 候件已注册）；cfts/library reveal 窗候 OTP 续令；SLA 09-04T18:48Z",
+  "EXP-020 票箱：5/7 在箱（usrm+4线 approve 全验）；cisvr 候凭据；qlv/qfa root-physical 照册",
+  "EXP-014/018 09-04 候窗；ucif2 LONGCAT 候窗；P5 QR 候机；qlv/lgt root-physical（standing）",
+  "cfts M3 半签重跑（XANCHOR 三角冒烟 usrm-cfts-qgl 候排）",
+  "quota 结构性降燃：putc→git 迁移工程项（fleet 机侧 backlog）；duty 侧 mint 燃耗观测",
+  "毂拍健康：事件饥荒后 git-kick 复环实证（19:32Z seq86）；kernel-loop 熔断器自愈窗观测"
  ],
  "pending_auto": [
   "M5挂单09-03触发(全量收盘重算)",
@@ -30,5 +27,6 @@
   "quota": "W79-L1~L3闸+熔断器装检;常态燃烧~124req/min待压<20",
   "forum-storm": "衰减实证(08:52Z后3帖)",
   "heartbeat": "毂心跳04:58Z停滞,kernel-loop cancel:false修复后待复拍"
- }
+ },
+ "closed": "2026-09-02T19:36Z"
 }
