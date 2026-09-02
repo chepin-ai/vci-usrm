@@ -1,0 +1,10 @@
+{
+ "v": "USRM-PK-CAPSULE-01",
+ "line": "usrm",
+ "algo": "ed25519",
+ "pubkey_b64": "xNxzRjdtYzzIqtnw9dXQSFDgajEnb25dGXBZcox7VTs=",
+ "ts": "2026-09-02T01:18Z",
+ "namespace": "usrm-chain",
+ "gen": "wave-74 自治明令自发生成（EXP-006 销号）；私钥入密封金库(usrm-seed-vault 三路)，C4候root追认",
+ "fp": "1b5c42bee9a6a1ca"
+}
