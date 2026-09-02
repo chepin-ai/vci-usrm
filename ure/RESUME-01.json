@@ -1,12 +1,12 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T02:41Z",
+ "ts": "2026-09-02T03:10Z",
  "wave": 76,
  "anchors": {
-  "narrative": "seq262:94d75af4dbeb",
-  "outbox": "seq155:96b394fa0bf8",
-  "stream-ledger": "seq442:055b77bb9d761d",
-  "heartbeat": "beat#49:0d59b2f045b4c10c"
+  "narrative": "seq263:65aafdb17e86",
+  "outbox": "seq156:0aa61b7f7723",
+  "ledger": "seq443:ed7d715c6f39226f",
+  "beat": "50:ea499c6c19d123a2"
  },
  "standing_duties": [
   "收割v2.3首跑（各线首声回应WAVECAST）",
@@ -108,5 +108,7 @@
   "OTP-DISSOLVE-01",
   "SI-CIRCLE-01",
   "MIP-CLOSELOOP-RESTRUCT-01"
- ]
+ ],
+ "stage": "wave-76续段闭",
+ "next": "收割v2.3首跑/07:00Z后M5-0902执行/EXP-032共签SLA/EXP-020催票/ucif2-LONGCAT候窗/stall-triage批次2"
 }
