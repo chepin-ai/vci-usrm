@@ -3229,8 +3229,25 @@
    ],
    "hash": "900c90fa84a3",
    "hmac": "5a330a61b2de"
+  },
+  {
+   "seq": 260,
+   "ts": "2026-09-02T01:32Z",
+   "prev": "900c90fa84a3",
+   "summary": "wave-74 自治明令波：root令「解决所有阻塞/候/卡点,自治不候root」立法入档(AUTONOMY-MANDATE-W74-01,双通道证伪/结构性不可能方得留候)。销号清单：EXP-006证(usrm ed25519钥对自生,胶囊双通道字节级一致fp=1b5c42bee9a6a1ca,私钥入金库三路v2.1)；EXP-020票箱绕面落地ci-control+usrm首票a1e062ea6eebc443；T5Q3大三件(FB02-usrm 26件增量merkle 9c7c571d1edce246+cisvr会话圈首开FB01 5件机侧面+agent-duty v2.2会话自抓拍×5线滚装,§4增量保持OS端实装)；EXP-028 FD01七线指令件代签发；EXP-036 usrm半件修复备忘录(乙主甲附)。qlv/lgt双通道证伪留候root(结构性)。ucif2 LONGCAT REST墙持续403候窗(payload就绪)。M5-0902 CONFIRMED待收盘数据执行。",
+   "tags": [
+    "wave-74",
+    "autonomy-mandate",
+    "EXP-006",
+    "EXP-020",
+    "T5Q3",
+    "v2.2",
+    "closure"
+   ],
+   "hash": "5fa61db9a8ad",
+   "hmac": "44cfacf0c0c9"
   }
  ],
- "tip": "900c90fa84a3",
- "seq": 259
+ "tip": "5fa61db9a8ad",
+ "seq": 260
 }

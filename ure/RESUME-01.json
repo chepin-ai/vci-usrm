@@ -1,24 +1,22 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-01T19:51Z",
- "wave": 73,
+ "ts": "2026-09-02T01:35Z",
+ "wave": 74,
  "anchors": {
-  "narrative": "seq259:900c90fa84a3",
-  "outbox": "seq152:f787410b5d3d",
-  "stream-ledger": "seq287:d3c7de0b65d92b9c",
-  "heartbeat": "beat#46:b342d4365430d8c9"
+  "narrative": "seq260:5fa61db9a8ad",
+  "outbox": "seq153:3f38006b2fdf",
+  "stream-ledger": "seq422:ff220d13b9d57fa9",
+  "heartbeat": "beat#47:1a547e69bedcaaec"
  },
  "standing_duties": [
-  "M5-0902 开盘执行(09-02 01:30Z起 CONFIRMED 买医疗/银行卖红利)",
-  "EXP-032 SLA监看(死线09-04T18:48:28Z;cfts/cisvr commit候)",
-  "ucif2 LONGCAT 候REST窗补配(payload就绪)",
-  "EXP-020 ballot候root/cisvr(ci-bus 404)",
-  "OTP@qfa自证09-03",
-  "ucif2异议窗~09-03T17:30Z",
-  "EXP-014 T5Q3 09-04",
-  "EXP-018/WC-4 09-04",
-  "EXP-036 09-06",
-  "P5 QR"
+  "M5-0902 收盘数据到即引擎step执行（CONFIRMED 买医疗/银行卖红利）",
+  "EXP-032 SLA监看(09-04T18:48:28Z)",
+  "EXP-014 T5Q3 死线09-04（毂侧已实装,线侧原文面候各线）",
+  "EXP-020 七线齐票催办钟",
+  "ucif2 LONGCAT 候REST窗",
+  "EXP-018 09-04",
+  "EXP-036 cisvr复核候",
+  "EXP-021/022/023/024/027/029/030/031/033/035/038/039/041/042/047原钟"
  ],
  "pending_auto": [
   "M5挂单09-02触发(全量收盘重算)",
@@ -81,5 +79,15 @@
   "第一诚律补正FLIGHT-VERDICT",
   "qfa拍if:always修复",
   "cfts唤醒收割(证)"
+ ],
+ "wave74_done": [
+  "自治明令入法",
+  "EXP-006证",
+  "EXP-020绕面+首票",
+  "T5Q3 cisvr面+FB02+v2.2×5",
+  "EXP-028 FD01×8",
+  "EXP-036备忘录",
+  "金库v2.1三路",
+  "qlv/lgt双通道证伪留候"
  ]
 }
