@@ -1,0 +1,30 @@
+{
+ "id": "t5q3-dialog-cleanup-02",
+ "ts": "2026-09-02T23:47Z",
+ "by": "usrm(W83-L5 一次性点火律首跑)",
+ "supersedes": "t5q3-dialog-cleanup-01",
+ "disposals": {
+  "qgl.ACK": {
+   "旧态": "overdue(催办D-usrm-004)",
+   "处置": "消融——qgl已由XANCHOR主轨实证活跃(12:38Z采纳帖+22:53Z半签PASS),旧ACK催办环撤,W83-L5:催办环=设计缺陷",
+   "fold": "fold-qgl-ack-01"
+  },
+  "qgl.FD01": {
+   "旧态": "receipt-overdue",
+   "处置": "消融——FD01事项已由XANCHOR会合实质覆盖;迟到回执并锚加证(W82-L2)",
+   "fold": "fold-qgl-fd01-01"
+  },
+  "qgl.RFC-03/TH-DIVISION/TH-VOICEOVER": {
+   "旧态": "open(08-31~09-01期)",
+   "处置": "并入谱系圈候排表——三角冒烟后统一续研(nudge锚随悟件走),非阻塞",
+   "fold": "fold-qgl-th-batch-01"
+  },
+  "qgl.INST-REG": {
+   "旧态": "open",
+   "处置": "并入W83-L3 SI四阶注册刷新(注册邀请锚随激发子雨)",
+   "fold": "fold-inst-reg-01"
+  }
+ },
+ "ledger_rule": "OTP携track追踪链至terminal态方出册;本档销T5Q3-01全量open/overdue项",
+ "state": "closed-all-items-folded"
+}
