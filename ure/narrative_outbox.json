@@ -3341,8 +3341,16 @@
    "summary": "wave-80 闭波：执手 H1 装检×5线（v2.5→v2.5.4，有耳有口无手根治 FINDING-08）。收割：EXP-020 四线票落箱（vinf/ucif2/cfts/qgl approve，hash 全验 PASS，链 vinf→ucif2→{cfts,qgl} 并发分支如实）；EXP-032 commit-cfts 锚定 36c9801b682e4af7（线侧 reveal 材料交叉验 PASS）；XANCHOR qgl 会合响应落地（disc 采纳帖，T0 可证伪标注）。cisvr 两令凭据未供（LINE/AI_FULL 双空，run 33670859769 实证）→ root-physical 候件已注册。毂侧代投通道 bridge-drop-relay 实装（首航 403 额度墙实证+usrm 手动 relay 绕行）。14:04Z 全舰队静默断因=事件饥荒（额度墙后事件源尽，非机坏），git 道踢环复拍（19:32Z fleet seq86 实证）。v2.5.3 space-form rebase 在 runner 窄 refspec 下 invalid upstream（回执 stranded）→v2.5.4 FETCH_HEAD 修，回执复落×9。death#19/#20 复活。W80-L2 事件饥荒律立法。",
    "hash": "75f7caeaf5e6",
    "hmac": "799680047ee1"
+  },
+  {
+   "seq": "268",
+   "ts": "2026-09-02T21:31Z",
+   "prev": "75f7caeaf5e6",
+   "summary": "wave-81 闭波：XANCHOR M3 cfts半签落地——wave-78令①全偿。OTP-v3机读令→执手v2.7确定性复跑：脚本hash闸过(a0a3e113逐字节)、钉版依赖(numpy2.2.5/cryptography44.0.2)、runner路径重建(sudo,21:17Z PermissionError13实证后v2.7.2根治),transcript=0b7bcd99ea526877d5577b2d419bc3c2bc2136bb7dd67e2d18d43426d9a7bec8 与usrm半区三度在案值逐字节一致(match=True,rc=0)。产物成链 vci-cfts/weave/xanchor/m3/,halfsign-cfts.json 经bridge-drop代投+relay自动入正本 ci-control/bridge/xanchor/M3/(两岸sha256=8c9c1ca7…一致,relay-log 212359零错误)。三灰标照带不升格(单仓CI非真隔离/探针未命中≠清白/classical-sim档)。侦破:20:09Z起cfts成链零落链疑案——v2.7.1取证注记装检后首跑即愈,根因候=次级限流窗内git写节流(churn风暴期),未完全定论如实记候。qgl会合响应在案(disc 12:38Z)。EXP-020四线票齐(cisvr候root-physical凭据);EXP-032 cfts commit已锚,cisvr同候,SLA 09-04T18:48Z。W81-D1 v2.6设计候选在匣(reveal白名单+relay预扩+幂等前置闸降燃)。",
+   "hash": "e30cdaba4ff2",
+   "hmac": "c5a4da2f8d1e"
   }
  ],
- "tip": "40c81d6788af",
- "seq": 265
+ "tip": "e30cdaba4ff2",
+ "seq": "268"
 }
