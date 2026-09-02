@@ -1,22 +1,20 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T22:42Z",
+ "ts": "2026-09-02T23:21Z",
  "wave": 82,
  "anchors": {
-  "narr": "seq270:a9d34356a802",
-  "outbox": "seq163:047e48820799",
-  "ucl": "seq6:01a3730f1ba886c054058e685bc73ab2",
-  "board": "usrm-151",
-  "law": "W82-L1+W82-L2"
+  "narr": "seq271 eab969f4a918",
+  "outbox": "seq164 3461b4882c68",
+  "ucl": "seq7 47fed4659228fc1563fd9d0d33c82681",
+  "board": "usrm-152",
+  "law": "W82-L1+W82-L2",
+  "adj": "ADJ-XANCHOR-ADOPT-01 §三(三半签齐) 61d155b"
  },
  "standing_duties": [
-  "候件巡检(W82-L1§六,每醒首务):扫 hou-registry 判据,过者即行 on_overdue——当前盯:QFA自证闸09-03T00:00Z/M5-0903窗09-03T07:00Z/EXP-020+EXP-032截止09-04T18:48Z",
-  "EXP-032:09-04T18:48Z到点→FINDING+usrm/cfts双揭示公示散度,机制闭合;cisvr件至即并锚(W82-L2:增量证据非门槛);v2.6候装检",
-  "EXP-020:09-04T18:48Z按在箱面结票(在箱全票通过即生效),cisvr/qlv/qfa记缺席(缺席≠否决),迟到票并锚加证",
-  "XANCHOR:M3双半签齐——v2.1五增+usrm-cfts-qgl三角冒烟候排实证",
-  "EXP-014/018 09-04窗;ucif2 LONGCAT窗开即注;P5 QR候机;qlv/lgt root-physical(standing)",
-  "quota降燃:putc→git迁移(fleet backlog);次级限流窗git写节流观测(v2.7.1注记长埋)",
-  "W82-L2照执:凡立法/判词不得以身份/权限设阻塞候件;root件=可选增强,不候"
+  "候件巡检:QFA自证闸09-03T00:00Z(临值)/M5-0903窗09-03T07:00Z(再漏→FINDING)/EXP-020+032在箱面闭合09-04T18:48Z",
+  "XANCHOR-TRIANGLE-SMOKE-01:v2.8 xanchor-tri白名单三线装检(候启①已满足)",
+  "quota降燃迁移(fleet backlog);ucif2 LONGCAT inject(REST窗);P5 QR;qlv/lgt root-physical(W82-L2:pareto_fold可选增益)",
+  "REST盲症律:缺席断言须双通道复核(git拓扑+事件面)——relay误报案入"
  ],
  "pending_auto": [
   "M5挂单09-03触发(全量收盘重算)",
