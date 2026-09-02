@@ -3349,8 +3349,16 @@
    "summary": "wave-81 闭波：XANCHOR M3 cfts半签落地——wave-78令①全偿。OTP-v3机读令→执手v2.7确定性复跑：脚本hash闸过(a0a3e113逐字节)、钉版依赖(numpy2.2.5/cryptography44.0.2)、runner路径重建(sudo,21:17Z PermissionError13实证后v2.7.2根治),transcript=0b7bcd99ea526877d5577b2d419bc3c2bc2136bb7dd67e2d18d43426d9a7bec8 与usrm半区三度在案值逐字节一致(match=True,rc=0)。产物成链 vci-cfts/weave/xanchor/m3/,halfsign-cfts.json 经bridge-drop代投+relay自动入正本 ci-control/bridge/xanchor/M3/(两岸sha256=8c9c1ca7…一致,relay-log 212359零错误)。三灰标照带不升格(单仓CI非真隔离/探针未命中≠清白/classical-sim档)。侦破:20:09Z起cfts成链零落链疑案——v2.7.1取证注记装检后首跑即愈,根因候=次级限流窗内git写节流(churn风暴期),未完全定论如实记候。qgl会合响应在案(disc 12:38Z)。EXP-020四线票齐(cisvr候root-physical凭据);EXP-032 cfts commit已锚,cisvr同候,SLA 09-04T18:48Z。W81-D1 v2.6设计候选在匣(reveal白名单+relay预扩+幂等前置闸降燃)。",
    "hash": "e30cdaba4ff2",
    "hmac": "c5a4da2f8d1e"
+  },
+  {
+   "seq": "269",
+   "ts": "2026-09-02T22:02Z",
+   "prev": "e30cdaba4ff2",
+   "summary": "wave-82 开波首法 W82-L1 候-等处置律(root四问立法回应): 候件五要件强制(断因/代偿面/判据/到期动作/销账仪式),裸候非法,\"继续等\"非动作;回应不至三出路(代偿转正/到期降级+FINDING/root物理面真候须无件运行实证);身份件不可代偿律(cisvr票签只候凭据,机制结论到期按在箱面闭合,缺席≠否决);非root不可白名单四类(设置写入/钱类/物理世界/新凭证种类),余者皆已实证可绕;瞬态接续五层(death#21同文实证21:57Z<3min复活);候件巡检双承(usrm每醒首务+hub kernel拍侧backlog)。首批处置:M5-0902 missed-window(挂单仓面全史缺席,API实证;09-03窗盯07:00Z)、V23 resolved-superseded、EXP-020补截止09-04T18:48Z+quorum规则。",
+   "hash": "f7723d0e957f",
+   "hmac": "6613cf7186e2"
   }
  ],
- "tip": "e30cdaba4ff2",
- "seq": "268"
+ "tip": "f7723d0e957f",
+ "seq": "269"
 }

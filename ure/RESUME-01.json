@@ -1,20 +1,21 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T21:31Z",
- "wave": 81,
+ "ts": "2026-09-02T22:02Z",
+ "wave": 82,
  "anchors": {
-  "narr": "seq268:e30cdaba4ff2",
-  "outbox": "seq161:b38d50f82d56",
-  "ucl": "seq4:94ef5da511d2dc5018d46af73fb43c50",
-  "board": "usrm-149"
+  "narr": "seq269:f7723d0e957f",
+  "outbox": "seq162:aaf936577966",
+  "ucl": "seq5:c9d0949bd9dd87da14e6cc81d9bd2ff4",
+  "board": "usrm-150",
+  "law": "W82-L1"
  },
  "standing_duties": [
-  "EXP-032 收割续窗:commit-cisvr 候 library 凭据供给(root-physical 候件 hou-registry 在案);cfts/usrm reveal 窗持——SLA 09-04T18:48Z 逾期则 FINDING G-DIR-stale-open + 双揭示公示散度(MECH §二/§三);v2.6(reveal白名单+relay预扩+幂等前置闸)设计候选在匣候装检(W81-D1)",
-  "EXP-020 票箱:5/7 在箱(usrm+4线 approve 全验 PASS,链 vinf→ucif2→{cfts,qgl}并发支如实);cisvr 候凭据;qlv/qfa root-physical 照册",
-  "XANCHOR:M3双半签齐(usrm三度+cfts复跑逐字节一致)——三角会合冒烟 usrm-cfts-qgl 与 v2.1五增候排实证(身份层LINE-PK/熵源QuantumRings/事件拍窗/breach→FINDING/三角)",
-  "EXP-014/018 09-04 候窗;ucif2 LONGCAT 候窗;P5 QR 候机;qlv/lgt root-physical(standing)",
-  "quota 结构性降燃:putc→git 迁移工程项(fleet 机侧 backlog);v2.6 增项③幂等前置闸;次级限流窗 git写节流 观测(20:09-20:38Z cfts零落链疑案,记候)",
-  "毂拍健康:git-kick复环后环稳(seq88);事件饥荒律 W80-L2 照执:静默>4h先查事件源"
+  "候件巡检(W82-L1§六,每醒首务):扫 hou-registry 判据,过者即行 on_overdue——当前盯:QFA自证闸09-03T00:00Z/M5-0903窗09-03T07:00Z/EXP-020+EXP-032截止09-04T18:48Z",
+  "EXP-032:截止到点→FINDING G-DIR-stale-open+usrm/cfts双揭示公示散度;v2.6(reveal白名单+relay预扩+幂等前置闸)候装检(W81-D1)",
+  "EXP-020:09-04T18:48Z结票——quorum以BALLOT-BOX明载为准,无明载则在箱多数生效,cisvr/qlv/qfa记缺席(缺席≠否决,W82-L1§三)",
+  "XANCHOR:M3双半签齐——v2.1五增+usrm-cfts-qgl三角冒烟候排实证",
+  "EXP-014/018 09-04窗;ucif2 LONGCAT窗开即注;P5 QR候机;qlv/lgt root-physical(standing)",
+  "quota降燃:putc→git迁移(fleet backlog);次级限流窗git写节流观测(v2.7.1注记长埋)"
  ],
  "pending_auto": [
   "M5挂单09-03触发(全量收盘重算)",
