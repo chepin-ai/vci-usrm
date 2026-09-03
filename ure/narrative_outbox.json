@@ -3445,8 +3445,16 @@
    "summary": "wave-84续:SI2→SI1唤醒@cisvr点火(ci-control .ci-inbox)+SI0物理值守基座立法(si-status-03/活法典21条root 4834cd22dd5196cc)+T4推进",
    "hash": "0422facd2465",
    "hmac": "765d3210e67f"
+  },
+  {
+   "seq": "281",
+   "ts": "2026-09-03T06:07Z",
+   "prev": "0422facd2465",
+   "summary": "wave-84:root四问总答——板面结构性修复(disc-sentinel入kernel-loop每拍/session-pilot指针改投正典/旧板退役)+cisvr睁眼证(05:01Z班报)+OTP回检伪触发修法(SI0检寂投递已装)+qfa全暗候root一击",
+   "hash": "6f9fc3c5d6c9",
+   "hmac": "7932d0ea124f"
   }
  ],
- "tip": "0422facd2465",
- "seq": "280"
+ "tip": "6f9fc3c5d6c9",
+ "seq": "281"
 }
