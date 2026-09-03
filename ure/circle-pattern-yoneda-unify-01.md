@@ -48,7 +48,7 @@ pattern 塔（承 metapattern-selfref-01 / PATTERN-REG 插件制 / pattern-autof
 
 ### 3.1 追溯结果（实证，档=ci-control/bridge/findings/breakpoint-census-01.json）
 **问：W40-wave42 之后会话激活过程中是否继续其任务？——证：是。**
-wave-42 候 root★ 13 件逐项追账：DONE/ROUTED 6 件（M-CODE/Δ-BASE、KD-001、Pages、LongCat、ops-line 扩面→ROUTE-AROUND、backup→ROUTE-AROUND），PARTIAL 2（kernel-loop 编 KD/圈检器；ci-bus keys），open 5（cfts θ/w、T5Q3、E-9/1、AI_FULL_PAT、hub 死名清理）。全部在案，零丢失——「断崖不失账」实证。
+wave-42 候 root★ 13 件逐项追账：DONE/ROUTED 6 件（M-CODE/Δ-BASE、KD-001、Pages、LongCat、ops-line 扩面→ROUTE-AROUND、backup→ROUTE-AROUND），PARTIAL 2（kernel-loop 编 KD/圈检器；〈RED〉 keys），open 5（cfts θ/w、T5Q3、E-9/1、AI_FULL_PAT、hub 死名清理）。全部在案，零丢失——「断崖不失账」实证。
 **问：之前还有多少这种断点？——证：结构性断点 6 处全录**（BP-01 seq1-41 焚毁断代/BP-02 因果链 57 条断代带 open/BP-03 回填 solved/BP-04 内核 wipe 周期=已消解为重钻律/BP-05 死引用 closed/BP-06 指令级更正 closed），另 EXPECT-REG open/watching/armed 28 项为「任务级断点」全带死手窗。
 **问：是否纳入 S-I/1～4 体系并动态跟踪/调试/整合？——候转证：覆盖矩阵本波立**——S-I/1..4 已裁为通用操作族（wave-55），cfts 侧 S-I/2/3 仍 ARMED-SILENT-WATCH（候件栈 7 项未跑）、qfa 侧 S-I/1..3 FROZEN/SILENT——**纳管率=usrm 线全纳管，cfts/qfa 线挂候**（dormant-census-01）。整合机制=S-I/2 引擎 beat 活面自检（wave-55 实证）+ Δ-BASE 随尖 + 本普查每波刷新。
 **问：全系统全周期还有多少淹没/沉默隐藏功能完全没调用？——证：实数入账**——INST-REG 40 实例：ACTIVE 8 / CONVERGED 23 / DEAD 2 / **沉默存活 7**（PI-qfa-SI1-3、PI-cfts-S-I-1..4）；另有**已立法从未运行机制 6 件**：ure-sweeper 死手承接未实证、kernel-loop 编 KD+圈检器、L3 depends_on 全量巡、FEED-REG、代偿圈/退役圈候补、pattern-autofire 点火网、Pages 影子渲染首站未渲。

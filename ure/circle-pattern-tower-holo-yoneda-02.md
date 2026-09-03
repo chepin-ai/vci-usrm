@@ -59,7 +59,7 @@ cisvr 现态：审批职能已被异议窗吸收（FINDING-CISVR-SILENCE-01 通�
 
 ## 六、ai-bi-qi-Gitee 联动（解：三面一桥；解释件，异议窗内 root 可裁）
 - **AI 面**（智能/模型）：llm-bench + 模拟会签 + 各线会话智能体。
-- **BI 面**（情报/数据）：vinf-market-kernel + findings/判词证据经济。
+- **BI 面**（情报/数据）：VINF-VAULT + findings/判词证据经济。
 - **QI 面**（器物/执行）：CI runner 族 + fieldqkit 量子器件道 + 工具链。
 - **Gitee 桥**：qfa 之 gitee 面。现法（GITEE-RESOURCE-01）：实时对话/转发道已灭（G4 墙 runner→gitee 不可达）；
   资源面=qlv-lib repo_mirror 白名单工单道（ed25519 签名 WO/sealed_exec 按需注钥/事件驱动频度）。

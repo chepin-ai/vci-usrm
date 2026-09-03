@@ -7,7 +7,7 @@ root W34 问：「cisvr 静默期间，有什么补救/应急/替代措施可以
 - **代理边界（诚实）**：不可代理者三——① PEM 解密（sk 在 cisvr）② 会签（签名主体不可替代）③ BOARD/CHANNELS 之声（代写=伪造主体之声，宁标滞留）。
 
 ## 二、转化（把 cisvr 门闩改造成不经 cisvr 的道）
-- PEM 明文金库道：root→usrm-seed-vault→我面代执 ci-root 权限事项（候 root 一投）。
+- PEM 明文金库道：root→usrm-seed-vault→我面代执 〈RED〉 权限事项（候 root 一投）。
 - 会签五件：转化为 root 单裁+我代录（候 root 裁示）。
 - qgl line.json 副署：转化为「代摆+公告公示 7 日无异议即生效」（已公示，ts 在案）。
 

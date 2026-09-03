@@ -9,9 +9,9 @@ kernel-loop/check/bridge-guard/fleet-judge 全 success；五线 duty+pulse 全 s
 **已最小**：PAT=0（三件亲删）；私仓 LLM key=0；每仓 secrets≤4。
 **非最小残余（建议修）**：
 1. **AI-FullApp（4691638）满钥 38+17 项**——非最小，定性=root 破窗手（break-glass），建议：平时卸载/仅留 1 仓，用时再挂（root 一键）。
-2. **OTP×3 散存 4 处**（ci-playground 已归档=死重、ci-control-backup variables、线私仓×5 variables、vci-vinf/qgl secrets）——OTP 时代残余；除 qgl OTP_PHONE=摆渡轨总钥匙（在用）外，余者建议清点退役。
-3. **ci-os App（4585121）/cisbr-ci（4675286）**——CI-OS 时代遗物，功能面已被 ops-hub/ops-line 覆盖，建议卸载（候 root）。
-4. FORMAFLOW_CMD_AUTH（ci-control）——formaflow 线 dormant，留档待裁。
+2. **OTP×3 散存 4 处**（〈RED〉 已归档=死重、〈RED〉 variables、线私仓×5 variables、vci-vinf/qgl secrets）——OTP 时代残余；除 qgl 〈RED〉=摆渡轨总钥匙（在用）外，余者建议清点退役。
+3. **ci-os App（〈RED〉）/cisbr-ci（〈RED〉）**——CI-OS 时代遗物，功能面已被 ops-hub/ops-line 覆盖，建议卸载（候 root）。
+4. 〈RED〉（HUB-CORE）——formaflow 线 dormant，留档待裁。
 **最小集判词：主体已达最小；四件残余待 root 亲裁（均不阻塞运行）。**
 
 ## 三、CI-OS 兜底 vs 纯血 QF-OS：冲突裁定
@@ -26,7 +26,7 @@ kernel-loop/check/bridge-guard/fleet-judge 全 success；五线 duty+pulse 全 s
 **裁定：CI-OS 兜底=伪兜底。真兜底=QF-OS 双保险（BACKUP-SYNC-01 已立）+M12 死手+镜像回灌——同一哲学的冗余，而非旧哲学的复活。**
 
 ## 四、OTP@qgl「全量原文升级唯一卡点=OTP 总钥匙」——已解
-- **实证**：vci-qgl/inbox/otp_gate_state.json=**DONE 2026-08-29T08:55:35Z「核对成功·登录态已成」**；otp-issue-trigger 08-29 08:52/08:54 双 success；OTP_PHONE secret 在仓。
+- **实证**：vci-qgl/inbox/otp_gate_state.json=**DONE 2026-08-29T08:55:35Z「核对成功·登录态已成」**；otp-issue-trigger 08-29 08:52/08:54 双 success；〈RED〉 secret 在仓。
 - **OTP 全功能检验**：OTP@qgl DONE(08-29 08:55)｜OTP@vinf DONE(08-29 19:52, ledger seq191)｜OTP@qfa 备道闭合（同 seq191）｜T5Q3 OTP 全通（早前我代劳，root W31 确认）。
 - **cisvr OTP**：功能件已备（协调件在 vci-inbox），主体静默——件在手、人未动，非卡点。
 **判词：OTP 总钥匙卡点已全部不存在；「全量原文升级」之剩余工作=线内作业（qgl 之手），非 OTP 卡点。**

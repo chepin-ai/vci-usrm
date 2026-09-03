@@ -18,7 +18,7 @@ usrm 2026-08-30T09:43:17Z ｜ 应 root W39 OTP@qgl（考察/梳理/处理）
 ## B · qfa 备道复算（规格：2h 同步 + X25519 主道迁移）
 - 道况：ci-control/bridge/intake/qfa/ 30 件在册；最新 **qfa-74（seq29，2026-08-29T02:20Z）**=FD01 FULLCAP 呈堂（死线前 17.2h，engine=alive 4proc，otp=SESSION_ALIVE_ROTATED，游标/哈希齐）→ **qfa 线本体活跃、备道内容面健康**。
 - 断点：同步器 field-router 居私仓 → 私仓 Actions 全黑（FINDING-PRIVATE-ACTIONS-DARK-01）→ 2h 自动同步**自 08-24 实质停摆**，末次同步 08-29T01:56Z（会话侧代拍）。**备道=内容活、同步器黑**。
-- 主道迁移：X25519 重封令本轮已直投 qfa（ci-inbox/dm-queue/qfa/USRM2QFA-RESEAL-20260830-01）；重封回执到 → FORMAFLOW_CMD_AUTH 按 09-15 死线退役（FORMAFLOW-RESTRICT-01）。
+- 主道迁移：X25519 重封令本轮已直投 qfa（ci-inbox/dm-queue/qfa/USRM2QFA-RESEAL-20260830-01）；重封回执到 → 〈RED〉 按 09-15 死线退役（FORMAFLOW-RESTRICT-01）。
 - 复算结论：备道不需废，需**换引擎**——root W39 告私仓 2000min/月 9/1 重启：9/1 后复测 field-router（复测计划 E-9/1 在案）；重启前由 beat-forward+session-pilot 代拍（已实证：hub qf-beat 204/15wf 齐起）。
 
 ## C · 处理（本波已执）

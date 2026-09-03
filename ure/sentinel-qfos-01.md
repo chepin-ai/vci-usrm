@@ -19,7 +19,7 @@ usrm 2026-08-30T08:59:59Z ｜ 应 root W38 第一问
 
 ## 四、实证卡点（唯一）：ops-line 未覆盖 vci-inbox
 - vci-vinf 实跑日志：`beat-forward: ops-line 未覆盖 vci-inbox HTTP 404 → 候 root 扩面,跳过`——step 按设计优雅降级，班次本体 success。
-- 根因：线仓只持 CI_OPS_LINE_KEY（ops-line App 4685074），该 App 安装面不含 vci-inbox；跨仓扣门必须经鉴权，无第三条纯血路径（GITHUB_TOKEN 不出仓、workflow_run 不跨仓、公仓 raw 无写）。
+- 根因：线仓只持 〈RED〉（ops-line App 〈RED〉），该 App 安装面不含 vci-inbox；跨仓扣门必须经鉴权，无第三条纯血路径（GITHUB_TOKEN 不出仓、workflow_run 不跨仓、公仓 raw 无写）。
 - **候 root 一键**：GitHub → Settings → Applications → chepin-ci-ops-line → Configure → Repository access → 增加 `vci-inbox`（App 级 actions 权限已具，无需改权限）。
 - 扩面生效后：线班结束 → qf-beat → 哨兵层事件唤醒，事件驱动为主 + cron 死手兜底 = **完全 D-157 形**。
 

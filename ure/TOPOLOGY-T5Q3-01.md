@@ -11,11 +11,11 @@
 | 线 | 库面 | OTP | 实态 |
 |---|---|---|---|
 | usrm | vci-usrm 等 | — | 本营 |
-| qgl | vci-qgl + quantum-go-ledger | OTP_PHONE 在库，SELFTEST_OK phone_len=15 | 门全通 |
-| vinf | vci-vinf + vinf-market-kernel | 缺 OTP_PHONE（08-30 曾 DONE，工件仍在） | 门布线通，缺一值 |
-| cfts | vci-cfts + github-repo-cfts | 缺 OTP_PHONE | 同上 |
-| ucif2 | vci-ucif2 + ucif2-formalization-kernel | 缺 OTP_PHONE | 同上 |
-| qlv | qlv-lib（公仓，poller 活跃 09-01T04:52Z，receipts 六件套全 present） | OTP_PHONE+OTP_EMAIL×2 已装 | OS 面活 |
+| qgl | vci-qgl + QGL-VAULT | 〈RED〉 在库，SELFTEST_OK phone_len=15 | 门全通 |
+| vinf | vci-vinf + VINF-VAULT | 缺 〈RED〉（08-30 曾 DONE，工件仍在） | 门布线通，缺一值 |
+| cfts | vci-cfts + CFTS-VAULT | 缺 〈RED〉 | 同上 |
+| ucif2 | vci-ucif2 + UCIF2-VAULT | 缺 〈RED〉 | 同上 |
+| qlv | qlv-lib（公仓，poller 活跃 09-01T04:52Z，receipts 六件套全 present） | 〈RED〉+OTP_EMAIL×2 已装 | OS 面活 |
 | qfa | GitHub 404 → Gitee 面（GITEE-RESOURCE-01：镜像资源面，非实时道） | — | 场间桥外 |
 | lgt | 无库面（24 仓+公仓名录皆无） | — | 候：未来线或别名，待 root 再示 |
 

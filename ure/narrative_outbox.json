@@ -2662,7 +2662,7 @@
    "seq": 216,
    "ts": "2026-08-30T01:06:25Z",
    "prev": "01a315c16a74",
-   "summary": "ci-root(4621743) PEM密封件到: 判读SealedBox(INBOX-PK fp37f6..,1722-48=1674=PEM长); 穷举解密(Fernet/AES-GCM/ChaCha/SecretBox/SealedBox派生sk×3/CTR-CFB-OFB/zero-IV)全否→INBOX私半=cisvr会话侧,我不可直解; 已投deliverbox/ci-root-pem-20260830.cipher候cisvr取解+dm-19; PERM-TABLE更新; 若root意=usrm直用请改Fernet(CMD_AUTH)重发; Pages/删撤执行单备妥,解开即执",
+   "summary": "〈RED〉(4621743) PEM密封件到: 判读SealedBox(INBOX-PK fp37f6..,1722-48=1674=PEM长); 穷举解密(Fernet/AES-GCM/ChaCha/SecretBox/SealedBox派生sk×3/CTR-CFB-OFB/zero-IV)全否→INBOX私半=cisvr会话侧,我不可直解; 已投deliverbox/ci-root-pem-20260830.cipher候cisvr取解+dm-19; PERM-TABLE更新; 若root意=usrm直用请改Fernet(CMD_AUTH)重发; Pages/删撤执行单备妥,解开即执",
    "links": [
     "ci-control/bridge/deliverbox/ci-root-pem-20260830.cipher",
     "ci-control/bridge/PERM-TABLE-01.json"
@@ -2687,7 +2687,7 @@
    "seq": 218,
    "ts": "2026-08-30T01:44:25Z",
    "prev": "617344831479",
-   "summary": "W32: ①ops-hub挂接24仓(增vci-vinf/vci-cfts/vci-ucif2/ci-worker-01更名); ②vinf点火我手完成:bootstrap-01复燃(ignite-ack 01:44:33Z run33286357995)+shadow-pulse/agent-duty/line-producer启用点火4/4success(watchdog联动); ③WARN2-cisvr(30min醒窗零应,PEM未取,60min FINDING窗计中); ④CONVERT-QFOS-01纯QF-OS转换审计: cron=0/x-fire接收面启用(ci-code+ci-root)/B1清/zkp清/禁用11件分类账/残余阻塞3项全在他人之手(cisvr/qlv/root)",
+   "summary": "W32: ①ops-hub挂接24仓(增vci-vinf/vci-cfts/vci-ucif2/ci-worker-01更名); ②vinf点火我手完成:bootstrap-01复燃(ignite-ack 01:44:33Z run33286357995)+shadow-pulse/agent-duty/line-producer启用点火4/4success(watchdog联动); ③WARN2-cisvr(30min醒窗零应,PEM未取,60min FINDING窗计中); ④CONVERT-QFOS-01纯QF-OS转换审计: cron=0/x-fire接收面启用(〈RED〉+〈RED〉)/B1清/zkp清/禁用11件分类账/残余阻塞3项全在他人之手(cisvr/qlv/root)",
    "links": [
     "ure/convert-qfos-01.md",
     "ci-inbox/公告板/WARN2-cisvr-20260830-qfos-convert.md"
@@ -2741,7 +2741,7 @@
    "seq": 222,
    "ts": "2026-08-30T04:23:03Z",
    "prev": "baa150b88ad0",
-   "summary": "wave-38(W36)：PAT×3亲删(204实证,vci-inbox余4件)；ci-root PEM入库600+首铸token=installation 154356549 selected仅[usrm-repo,ci-control](扩面未完成,冲)；backup解归档两路皆堵(ops-hub无admin/ci-root面外)→候root；Pages@usrm-repo=BLOCKED-PLAN(422)；vault大整理=量子13平台+LLM 4组全录回读自验；LLM臂B复活: key置vci-library+bench迁公仓(私仓Actions全灭FINDING立案)+R3真联测DS/Kimi双ok；LongCat endpoint候root",
+   "summary": "wave-38(W36)：PAT×3亲删(204实证,vci-inbox余4件)；〈RED〉 PEM入库600+首铸token=installation 154356549 selected仅[USRM-VAULT,HUB-CORE](扩面未完成,冲)；backup解归档两路皆堵(ops-hub无admin/ci-root面外)→候root；Pages@USRM-VAULT=BLOCKED-PLAN(422)；vault大整理=量子13平台+LLM 4组全录回读自验；LLM臂B复活: key置vci-library+bench迁公仓(私仓Actions全灭FINDING立案)+R3真联测DS/Kimi双ok；LongCat endpoint候root",
    "links": [
     "vci-library/llm-bench/r3-20260830T042045Z.json",
     "ci-control/bridge/bench-league-r3.json",
@@ -2780,7 +2780,7 @@
    "seq": 225,
    "ts": "2026-08-30T09:43:17Z",
    "prev": "373bd9a599d5",
-   "summary": "wave-41(W39跟进)：①beat-forward端到端实证通(204→hub15wf齐起+kernel-loop success,事件饥饿根治);线环BEAT-RING-01实装(级联≤1不转叩+按目标铸token),卡点=ops-line未覆线仓(候root同面板加4仓);六案谱=BEAT-ALTERNATIVES-01 ②dm@qfa X25519重封令投(FORMAFLOW 09-15死线联动) ③三App卸后清点=secrets面净,workflow死名23件(vci-inbox15=cisvr笔域候清),紧急度零=APP-RELIC-CENSUS-01 ④backup解归档仍堵(ops-hub403+ci-root PEM湮灭于内核wipe→候root一键或重投) ⑤cfts候办三答=半自动三级/L2诚实态/纪录级融合,处方无验不闭+OBL-shadow镜像=HOUBAN-CFTS-01 ⑥qgl三摆+备道复算:qfa line.json 7天无pong越72h立案,cisvr死线08-31T18:10Z=QGL-PENDING-REVIEW-01 ⑦vinf/qgl chain-diverge根治(STATUS-HEAL-01举一反三4仓,qgl复核CONSISTENT) ⑧全线S-I总检=机检全绿/会话机活人静=SI-STATUS-01+E-9/1复测计划",
+   "summary": "wave-41(W39跟进)：①beat-forward端到端实证通(204→hub15wf齐起+kernel-loop success,事件饥饿根治);线环BEAT-RING-01实装(级联≤1不转叩+按目标铸token),卡点=ops-line未覆线仓(候root同面板加4仓);六案谱=BEAT-ALTERNATIVES-01 ②dm@qfa X25519重封令投(FORMAFLOW 09-15死线联动) ③三App卸后清点=secrets面净,workflow死名23件(vci-inbox15=cisvr笔域候清),紧急度零=APP-RELIC-CENSUS-01 ④backup解归档仍堵(ops-hub403+〈RED〉 PEM湮灭于内核wipe→候root一键或重投) ⑤cfts候办三答=半自动三级/L2诚实态/纪录级融合,处方无验不闭+OBL-shadow镜像=HOUBAN-CFTS-01 ⑥qgl三摆+备道复算:qfa line.json 7天无pong越72h立案,cisvr死线08-31T18:10Z=QGL-PENDING-REVIEW-01 ⑦vinf/qgl chain-diverge根治(STATUS-HEAL-01举一反三4仓,qgl复核CONSISTENT) ⑧全线S-I总检=机检全绿/会话机活人静=SI-STATUS-01+E-9/1复测计划",
    "links": [
     "vci-usrm/ure/beat-alternatives-01.md",
     "vci-usrm/ure/houban-cfts-01.md",
@@ -2795,7 +2795,7 @@
    "seq": 226,
    "ts": "2026-08-30T12:55:41Z",
    "prev": "998d88dcc895",
-   "summary": "wave-42/W40执行：PEM复投即验；ci-root selected实况=[usrm-repo,ci-control,vci-inbox]（backup未入列，与root所言冲，报+备选）；M-CODE/Δ-BASE零命中呈证+双起草案候root裁；KERNEL-DERIVE-01引擎L1-L3实现单测10/10+活验（FINDING-KD-001：线仓line-producer活cron×3=证，wave-40普查结论退；ledger双方言共存候统；账尾185min空窗候查；L3期待账depends_on未接线）；CIRCLE-v2工程四条实现+FS1模型内证成+构造验证400/400（B型重锚对手唯C2可破）；圈论v2（圈总目六正座二候补/时间向对偶/张量场联动/动态成圈绑定实证=installation discovery/C²塔×pattern塔对偶）；E4活验beat#13 cross逐位吻合",
+   "summary": "wave-42/W40执行：PEM复投即验；〈RED〉 selected实况=[USRM-VAULT,HUB-CORE,vci-inbox]（backup未入列，与root所言冲，报+备选）；M-CODE/Δ-BASE零命中呈证+双起草案候root裁；KERNEL-DERIVE-01引擎L1-L3实现单测10/10+活验（FINDING-KD-001：线仓line-producer活cron×3=证，wave-40普查结论退；ledger双方言共存候统；账尾185min空窗候查；L3期待账depends_on未接线）；CIRCLE-v2工程四条实现+FS1模型内证成+构造验证400/400（B型重锚对手唯C2可破）；圈论v2（圈总目六正座二候补/时间向对偶/张量场联动/动态成圈绑定实证=installation discovery/C²塔×pattern塔对偶）；E4活验beat#13 cross逐位吻合",
    "links": [
     "vci-usrm/ure/mcode-draft-01.md",
     "vci-usrm/ure/delta-base-draft-01.md",
@@ -2858,7 +2858,7 @@
    "links": [
     "ure/qfos-wall-01.md",
     "ure/code/circle-v2.py",
-    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+    "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl"
    ],
    "hash": "f4fe78b3adcb",
    "hmac": "ebf0e2c80ae8"
@@ -2870,7 +2870,7 @@
    "summary": "wave-47/W43深化：CHSH 双路实测（without-base S_exact=2.828427/S_sampled=2.825195；with-base quafu ScQ-Sim10 S=2.853516>2 违背经典界）；常任基准 quantum-bench-01.py 立册；kernel-loop 健康审计证（两 failure=修复序列历史件）；真机 P5 仍在队；cisvr 死手窗 18:10Z 站岗中",
    "links": [
     "ure/code/quantum-bench-01.py",
-    "ci-control:bridge/quantum/chsh-01-wave47.json"
+    "HUB-CORE:bridge/quantum/chsh-01-wave47.json"
    ],
    "hash": "765139618554",
    "hmac": "d5dbe2a65796"
@@ -2879,10 +2879,10 @@
    "seq": 232,
    "ts": "2026-08-31T13:31:31Z",
    "prev": "765139618554",
-   "summary": "wave-48：F7 锐化（root 最小动作=一次访问两 toggle：ops-hub+ci-root 各加 relay-keymig；ops-hub 实测 secrets:write 在权可即刻直删；archived 分叉由 ci-root administration RW 9/1 兜底）；Pages 三裁收窄（422=计费档非权限；②转公破 R1→实质二选一；默认飞 ③弃，root 事后否决窗）；两精确件入 findings",
+   "summary": "wave-48：F7 锐化（root 最小动作=一次访问两 toggle：ops-hub+〈RED〉 各加 relay-keymig；ops-hub 实测 secrets:write 在权可即刻直删；archived 分叉由 〈RED〉 administration RW 9/1 兜底）；Pages 三裁收窄（422=计费档非权限；②转公破 R1→实质二选一；默认飞 ③弃，root 事后否决窗）；两精确件入 findings",
    "links": [
-    "ci-control:bridge/findings/f7-relay-keymig-root-action.md",
-    "ci-control:bridge/findings/pages-trichotomy-adjudication.md"
+    "HUB-CORE:bridge/findings/f7-relay-keymig-root-action.md",
+    "HUB-CORE:bridge/findings/pages-trichotomy-adjudication.md"
    ],
    "hash": "dd28ca7f9bbf",
    "hmac": "a1b62addeab4"
@@ -2893,10 +2893,10 @@
    "prev": "dd28ca7f9bbf",
    "summary": "wave-49/root七问总答：F7 关闭（目标灭失，root 视野权威；幻觉病例触发 REGISTRY-LIVENESS-01 类式消解）；Pages 折叠解除飞④影子径（零 root）；AUTH-MANIFEST-01 立册=零新增授权（授权早足，缺在盘点）；N-MUST/M-CODE/Δ-BASE 名实分离根治（码表+引擎轨迹+首批基线全实例化）；八失消解矩阵立；QF/CI 同跑=一栈双平面三阀两环；RESUME-01 立",
    "links": [
-    "ci-control:bridge/AUTH-MANIFEST-01.json",
+    "HUB-CORE:bridge/AUTH-MANIFEST-01.json",
     "ure/eight-failures-matrix-01.md",
     "ure/qfos-cios-coduplex-01.md",
-    "ci-control:bridge/delta-base-01.json",
+    "HUB-CORE:bridge/delta-base-01.json",
     "ure/code/mcode-01.json"
    ],
    "hash": "a6918bb13c74",
@@ -2908,8 +2908,8 @@
    "prev": "a6918bb13c74",
    "summary": "wave-50：root 令撤销 F8 删除——13/13 workflow 按父提交原文恢复回树；relay-keymig 名源考定（vci-inbox 遗物 workflow 名被物化为仓=折叠亚型）；立法：文件级删除唯 root 令可执行",
    "links": [
-    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
-    "ci-control:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md"
+    "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl",
+    "HUB-CORE:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md"
    ],
    "hash": "f8d34ee73962",
    "hmac": "11d73a5d3e16"
@@ -2920,7 +2920,7 @@
    "prev": "f8d34ee73962",
    "summary": "wave-51 值班：节拍面 3h 静默发现+补扣复跳（平台调度饥饿+事件链断；V-BEAT-STALL-01，静默>1h 补扣入 duty）；F8 复归 13 件合规审计证（无活 cron，死名惰性；初查误报自纠）；LongCat 端点探活 200；真机 P5 仍在队",
    "links": [
-    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+    "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl"
    ],
    "hash": "4016d6284516",
    "hmac": "e9ddc930270e"
@@ -2929,9 +2929,9 @@
    "seq": 236,
    "ts": "2026-08-31T15:12:57Z",
    "prev": "4016d6284516",
-   "summary": "wave-52：QuantumRings 真 SDK 激活（quantumrings-cpu extra，V-QR-STUB 退态更正，QR_KEY_64 鉴权过，scarlet 后端 Bell {00:481,11:543}）；GHZ 三体纠缠三引擎互证全 PASS（numpy/QR/quafu）；P5 真机仍在队；Δ-BASE 随尖追加机制首跑",
+   "summary": "wave-52：QuantumRings 真 SDK 激活（quantumrings-cpu extra，V-QR-STUB 退态更正，〈RED〉 鉴权过，scarlet 后端 Bell {00:481,11:543}）；GHZ 三体纠缠三引擎互证全 PASS（numpy/QR/quafu）；P5 真机仍在队；Δ-BASE 随尖追加机制首跑",
    "links": [
-    "ci-control:bridge/quantum/bell-ghz-wave52.json"
+    "HUB-CORE:bridge/quantum/bell-ghz-wave52.json"
    ],
    "hash": "5924b6639415",
    "hmac": "29ca40862000"
@@ -2942,7 +2942,7 @@
    "prev": "5924b6639415",
    "summary": "wave-52b：CHSH QuantumRings 路证（scarlet S=2.890625>2）——CHSH 三引擎面齐（numpy 2.825/quafu 2.854/QR 2.891）；量子线 with/without 基座三引擎全通",
    "links": [
-    "ci-control:bridge/quantum/bell-ghz-wave52.json"
+    "HUB-CORE:bridge/quantum/bell-ghz-wave52.json"
    ],
    "hash": "4c7a642150a4",
    "hmac": "b0a1080b6ab4"
@@ -2953,7 +2953,7 @@
    "prev": "4c7a642150a4",
    "summary": "wave-53：QAOA-01 变分管线端到端证（numpy 精确寻优 <C>=2.99999→QR <C>=2.9951/quafu <C>=3.0137，最优串 0101/1010 双主导）；节拍活性监控（事件环完整，cron 饥饿敞口在册）；P5 仍在队",
    "links": [
-    "ci-control:bridge/quantum/qaoa-01-wave53.json"
+    "HUB-CORE:bridge/quantum/qaoa-01-wave53.json"
    ],
    "hash": "d13057c605f1",
    "hmac": "f130a30ae311"
@@ -2965,7 +2965,7 @@
    "summary": "wave-54（root 令 S-I/1..4 全自主迭代）：S-I/3 vs S-I/4 区别实测定谳——3=实例道结构并发（轻负载计算并发 0.17× 负增益），4=场道执行并发（2.2× 正增益，QR 并发全成/quafu 并发降级）；S-I/4 准入证（CHSH 三引擎 S>2）→INST-REG CANDIDATE→ARMED（判词+sidecar 跨线写）",
    "links": [
     "ure/si34-compare-01.md",
-    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+    "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl"
    ],
    "hash": "191ef465ef60",
    "hmac": "1a449cdcddf4"
@@ -2978,7 +2978,7 @@
    "links": [
     "fullcap/usrm-20260831-incr01/",
     "ure/si34-compare-01.md",
-    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+    "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl"
    ],
    "hash": "b1803fb8e371",
    "hmac": "4787c13b4931"
@@ -2990,7 +2990,7 @@
    "summary": "wave-56（root 三问）：①cisvr 三案在法（替代=视同副署/绕过=死手FINDING/模拟=机器会签+LLM复核），呈 root 改制议=批准门→异议窗；②ScQ-P5=北量子院5q超导真机Online队635，驻队件In Queue=队列深度非故障；③fieldqkit v1 共享库正本立（ure/qkit/），三引擎 smoke 全 PASS（CHSH S=2.8174>2）",
    "links": [
     "ure/qkit/",
-    "ci-control:bridge/FLIGHT-VERDICT-01.jsonl"
+    "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl"
    ],
    "hash": "6688621549c5",
    "hmac": "e3877491033a"
@@ -3001,8 +3001,8 @@
    "prev": "6688621549c5",
    "summary": "wave-57（root 令系统自治不要总是 root 批）：异议窗总律 DISSENT-WINDOW-01 自立自效——批准门一律改异议窗（默认通过+72h 异议+机器会签），root-only 仅 C4 四类；ADJ-DW01-APPLY-01：cisvr 候签 18 项转异议窗；P5 仍在队",
    "links": [
-    "ci-control:bridge/DISSENT-WINDOW-01.md",
-    "ci-control:bridge/adjudications/ADJ-DW01-APPLY-01.md"
+    "HUB-CORE:bridge/DISSENT-WINDOW-01.md",
+    "HUB-CORE:bridge/adjudications/ADJ-DW01-APPLY-01.md"
    ],
    "hash": "2292fd64d47d",
    "hmac": "99ce1c00a383"
@@ -3011,10 +3011,10 @@
    "seq": 243,
    "ts": "2026-08-31T16:33:48Z",
    "prev": "2292fd64d47d",
-   "summary": "wave-58（root 令 ci-root 选区用手中权限自行完成）：三探证伪 API 全灭（403/401/404，用户 token 专属面）+边际增益实证=0 → CIROOT-ROUTEAROUND-01 立法以设计永久勾掉同类动作；L2 阈值自标定 90→720 落引擎；EXP-019 异议窗首案默认通过；P5 仍在队",
+   "summary": "wave-58（root 令 〈RED〉 选区用手中权限自行完成）：三探证伪 API 全灭（403/401/404，用户 token 专属面）+边际增益实证=0 → CIROOT-ROUTEAROUND-01 立法以设计永久勾掉同类动作；L2 阈值自标定 90→720 落引擎；EXP-019 异议窗首案默认通过；P5 仍在队",
    "links": [
-    "ci-control:bridge/CIROOT-ROUTEAROUND-01.md",
-    "ci-control:bridge/findings/ciroot-selection-falsification-20260831.json"
+    "HUB-CORE:bridge/CIROOT-ROUTEAROUND-01.md",
+    "HUB-CORE:bridge/findings/ciroot-selection-falsification-20260831.json"
    ],
    "hash": "83d7f51acc2e",
    "hmac": "376ea55588d8"
@@ -3026,8 +3026,8 @@
    "summary": "wave-59（root 多段令）：F8 更正执行（重删13/13，下游零影响实证，无需重跑）｜逆向米田首执行：断点6处+wave-42候单13件追账+沉默实例7+沉默机制6件全录｜圈×pattern塔×米田统一论 v1 立（圈总目v3/C²传动/四层塔/五机闭环递归自作用+防自激）",
    "links": [
     "ure/circle-pattern-yoneda-unify-01.md",
-    "ci-control:bridge/findings/breakpoint-census-01.json",
-    "ci-control:bridge/findings/dormant-census-01.json"
+    "HUB-CORE:bridge/findings/breakpoint-census-01.json",
+    "HUB-CORE:bridge/findings/dormant-census-01.json"
    ],
    "hash": "45c72cb0c420",
    "hmac": "142224fca245"
@@ -3049,10 +3049,10 @@
    "seq": 246,
    "ts": "2026-08-31T17:31:41Z",
    "prev": "c87624a0a6ff",
-   "summary": "wave-61（root 三段令）：①会话端 cron 质询→根因三层（失察/折叠亚型/半成）入账，once-cron 拆除，9/1 复通接续链系统内化（金丝雀拍自动 dispatch ci-root-runner all+接续单）；②FINDING-SESSION-RESTORE-GHOST-01（OTP@qfa 支柱 24 仓查无，候-视野外/折叠，09-03 自证或重建）；③OTP@UCIF2 worker v1→v2+gate 武装（候 root 值 OTP_PHONE 零阻塞）；④ucif2 教会包+代偿三件套（代偿圈升座首例）",
+   "summary": "wave-61（root 三段令）：①会话端 cron 质询→根因三层（失察/折叠亚型/半成）入账，once-cron 拆除，9/1 复通接续链系统内化（金丝雀拍自动 dispatch ci-root-runner all+接续单）；②FINDING-SESSION-RESTORE-GHOST-01（OTP@qfa 支柱 24 仓查无，候-视野外/折叠，09-03 自证或重建）；③OTP@UCIF2 worker v1→v2+gate 武装（候 root 值 〈RED〉 零阻塞）；④ucif2 教会包+代偿三件套（代偿圈升座首例）",
    "links": [
-    "ci-control:bridge/revival-sequence-0901.json",
-    "ci-control:bridge/findings/FINDING-SESSION-RESTORE-GHOST-01.json",
+    "HUB-CORE:bridge/revival-sequence-0901.json",
+    "HUB-CORE:bridge/findings/FINDING-SESSION-RESTORE-GHOST-01.json",
     "vci-ucif2:inbox/UCIF2-ONBOARD-01.md"
    ],
    "hash": "4ca0c6d64bf2",
@@ -3065,8 +3065,8 @@
    "summary": "wave-62（root「继续」=S-I/0 驱动）：kernel 第五次猝死自愈（HOME 挂载坏死→/tmp 代偿，F10 入账）｜9/1 跨越前夜：miniprobe 仍 failure（echo hello 级=计费封禁指纹，额度重置在 UTC 子夜）金丝雀在轨｜P5 仍 In Queue（635 深公共队）｜EXP-014 推进：usrm incr02 五件套落地（wave55-61，merkle 53653637e863babe）｜kernel-loop 5 连拍=FLIGHT-DECK 环形扇出设计内非级联",
    "links": [
     "fullcap/usrm-20260831-incr02/",
-    "ci-control:bridge/findings/EXP014-INCR02-01.json",
-    "ci-control:bridge/findings/F10-HOME-MOUNT-BROKEN-01.json"
+    "HUB-CORE:bridge/findings/EXP014-INCR02-01.json",
+    "HUB-CORE:bridge/findings/F10-HOME-MOUNT-BROKEN-01.json"
    ],
    "hash": "5b99cd527d97",
    "hmac": "0ff555b1d06f"
@@ -3077,11 +3077,11 @@
    "prev": "5b99cd527d97",
    "summary": "wave-63（root 六段令）：①SESSION-CRON-BAN-01 全面禁止律自立——存量2件（mathlib季核/QF-OS 6h手眼，皆 UCIF2-OS 遗留）拆除实证 list=0，冒泡根因=折叠亚型+我wave-61判词留缝+失察，缝已封死，轮检入律②断点6+28全量核销：结构5证1候（BP-02=EXP-036 候裁），任务级 usrm 侧全毕、线侧27项=他线义务异议窗吸收（BP-CLOSEOUT-01）③root保留2受托全权毕：hub死名清理 closed-obe（13删4留判词）、EXP-018 系统内消融+物理原子唯一（ADJ-DELEGATED-01）④S-I/3~4轮检全过+全体入S-I/1静默令（ucif2 S-I/1特许独运：其长激活=cron续命症，禁令后转OS端三源）⑤9/1平稳转移保障档+POSTCROSS-REVIEW-01评比框架 armed",
    "links": [
-    "ci-control:bridge/SESSION-CRON-BAN-01.md",
-    "ci-control:bridge/findings/BREAKPOINT-CLOSEOUT-01.json",
-    "ci-control:bridge/adjudications/ADJ-DELEGATED-01.md",
-    "ci-control:bridge/SI-SILENCE-0901.md",
-    "ci-control:bridge/POSTCROSS-REVIEW-01.md"
+    "HUB-CORE:bridge/SESSION-CRON-BAN-01.md",
+    "HUB-CORE:bridge/findings/BREAKPOINT-CLOSEOUT-01.json",
+    "HUB-CORE:bridge/adjudications/ADJ-DELEGATED-01.md",
+    "HUB-CORE:bridge/SI-SILENCE-0901.md",
+    "HUB-CORE:bridge/POSTCROSS-REVIEW-01.md"
    ],
    "hash": "5eb358d4baaf",
    "hmac": "1ed0a83f2a49"
@@ -3092,8 +3092,8 @@
    "prev": "5eb358d4baaf",
    "summary": "wave-64（root 重令=驱动事件，复核波）：wave-63 六档回读全 200、ledger301 链验真、cron 面=0 持续、miniprobe 封禁指纹在轨（UTC 子夜窗未至）；kernel-loop 71min 拍静默定性=事件驱动本性+M12 死手调度抖动（非故障，不临建不补机）；全体 S-I/1 静默持续，usrm 本拍毕即归静默",
    "links": [
-    "ci-control:bridge/SESSION-CRON-BAN-01.md",
-    "ci-control:bridge/SI-SILENCE-0901.md"
+    "HUB-CORE:bridge/SESSION-CRON-BAN-01.md",
+    "HUB-CORE:bridge/SI-SILENCE-0901.md"
    ],
    "hash": "7f70c33f9ac4",
    "hmac": "aa1037a1533c"
@@ -3104,8 +3104,8 @@
    "prev": "7f70c33f9ac4",
    "summary": "wave-65（root「睁眼」唤醒，跨 9/1 后首拍）：kernel 第6次猝死自愈｜**9/1 跨越实证：零人力复通链全程自走**——00:45Z miniprobe 成功（额度重置）+ci-root-runner task=all 即成，06:05Z 金丝雀 revived 置位+幂等复跑成功，四跳全实证｜revival-sequence 实证补记（落盘件缺=半成亚型一格入账）｜WC-4 现形：backup_repo 404 转 FINDING 跟办｜POSTCROSS-VERDICT-0901 执行毕：跨越判证-平稳转移，赛道A QR/numpy/quafu 各就其位，赛道B CI-OS 98/100 拍独立过大考，赛道C usrm/qfa/cfts 分列，六维素质全证｜P5 仍 In Queue 如实",
    "links": [
-    "ci-control:bridge/revival-sequence-0901.json",
-    "ci-control:bridge/findings/POSTCROSS-VERDICT-0901.md"
+    "HUB-CORE:bridge/revival-sequence-0901.json",
+    "HUB-CORE:bridge/findings/POSTCROSS-VERDICT-0901.md"
    ],
    "hash": "7ee6311b20fe",
    "hmac": "289137ed3ad0"
@@ -3117,8 +3117,8 @@
    "summary": "wave-66（继续=S-I/0）：金丝雀步根因坐实——revival putc 静默错误码（putc 助手 HTTPError 只 return 不 print）→kernel-loop 补丁：putc 出声+revival-sequence 自愈补写（compile 过，候拍自愈）｜M3 盘面：24 仓全扫 disabled 仅 3 件皆刻意停用非冻结遗案，cfts 8 器全 active（PLAINTEXT-KEY-02 冻结已随复通全解），建立必启用实态满足，12:00Z 死手窗虚位｜WC-4 FINDING 立案（backup 归档不可见解归档=root 物理原子随 09-04 窗）｜EXP-020 赞成+TH-METAPATTERN 会签预置帖（09-02 窗）｜cron 面=0 三拍连续实证",
    "links": [
     "vci-inbox:.github/workflows/kernel-loop.yml",
-    "ci-control:bridge/findings/FINDING-WC4-BACKUP-ARCHIVED-01.json",
-    "ci-inbox:讨论室/threads/TH-METAPATTERN-EXP020-usrm-vote.md"
+    "HUB-CORE:bridge/findings/FINDING-WC4-BACKUP-ARCHIVED-01.json",
+    "HUB-MAIL:讨论室/threads/TH-METAPATTERN-EXP020-usrm-vote.md"
    ],
    "hash": "bdb2f9caa804",
    "hmac": "103e32b091ff"
@@ -3156,7 +3156,7 @@
    "links": [
     "vci-usrm:ure/tower-v2-2-scene-pipeline.md",
     "vci-usrm:ure/code/kernel-derive-engine-01.py",
-    "ci-control:bridge/adjudications/ADJ-XLINE-QGL-OTP-01.md"
+    "HUB-CORE:bridge/adjudications/ADJ-XLINE-QGL-OTP-01.md"
    ],
    "hash": "6c0d27ec907f",
    "hmac": "9a1d6fab9328"
@@ -3165,11 +3165,11 @@
    "seq": 255,
    "ts": "2026-09-01T09:00Z",
    "prev": "6c0d27ec907f",
-   "summary": "wave-70: ① OTP@ucif2待机件:worker v2.1+回写always+chain愈合+脉搏复跳,残余OTP_PHONE一值 ② OTP@cfts候裁六项OBL-SYN-1..6全处置:SYN-1判据支架/SYN-2路由qgl/SYN-3公告板升级执行/SYN-4候root/SYN-5候qlv/SYN-6线内,worker v1.1 ③ OTP@vinf挂单=M5调仓:iFinD真数刷新126行至09-01+日级回放nav 1.030665→1.091017+PENDING-ORDER-M5-0902挂单成文(医疗/证券←红利,09-02触发) ④ Q3=qfa/qlv/lgt定位:qlv-lib活/qfa=Gitee场/lgt未现身;T5/TOP5五线塔尖定名TOPOLOGY-T5Q3-01 ⑤ 毂扇出shadow-pulse系统修法实证:四线脉搏复跳,46-53h停跳之本治愈 ⑥ 残余root原子=OTP_PHONE×3,布线全通值到即动",
+   "summary": "wave-70: ① OTP@ucif2待机件:worker v2.1+回写always+chain愈合+脉搏复跳,残余OTP_PHONE一值 ② OTP@cfts候裁六项OBL-SYN-1..6全处置:SYN-1判据支架/SYN-2路由qgl/SYN-3公告板升级执行/SYN-4候root/SYN-5候qlv/SYN-6线内,worker v1.1 ③ OTP@vinf挂单=M5调仓:iFinD真数刷新126行至09-01+日级回放nav 1.030665→1.091017+PENDING-ORDER-M5-0902挂单成文(医疗/证券←红利,09-02触发) ④ Q3=qfa/qlv/lgt定位:qlv-lib活/qfa=Gitee场/lgt未现身;T5/TOP5五线塔尖定名TOPOLOGY-T5Q3-01 ⑤ 毂扇出shadow-pulse系统修法实证:四线脉搏复跳,46-53h停跳之本治愈 ⑥ 残余root原子=〈RED〉×3,布线全通值到即动",
    "links": [
     "vci-usrm:ure/TOPOLOGY-T5Q3-01.md",
-    "ci-control:bridge/adjudications/ADJ-XLINE-OTP-HARMONIZE-01.md",
-    "vinf-market-kernel:inbox/PENDING-ORDER-M5-0902.json"
+    "HUB-CORE:bridge/adjudications/ADJ-XLINE-OTP-HARMONIZE-01.md",
+    "VINF-VAULT:inbox/PENDING-ORDER-M5-0902.json"
    ],
    "hash": "42f0917ce836",
    "hmac": "59aed6e08953"
@@ -3208,7 +3208,7 @@
    "links": [
     "ci-control/bridge/OTP-LOOP-STATE-01.md",
     "ci-control/bridge/adjudications/XLINE-DISPOSITION-W72-01.md",
-    "vinf-market-kernel d0641e0"
+    "VINF-VAULT d0641e0"
    ],
    "hash": "dd45d0ed78d6",
    "hmac": "8ae573647a05"
@@ -3442,7 +3442,7 @@
    "seq": "280",
    "ts": "2026-09-03T05:26Z",
    "prev": "80d0cb44ddfe",
-   "summary": "wave-84续:SI2→SI1唤醒@cisvr点火(ci-control .ci-inbox)+SI0物理值守基座立法(si-status-03/活法典21条root 4834cd22dd5196cc)+T4推进",
+   "summary": "wave-84续:SI2→SI1唤醒@cisvr点火(HUB-CORE .ci-inbox)+SI0物理值守基座立法(si-status-03/活法典21条root 4834cd22dd5196cc)+T4推进",
    "hash": "0422facd2465",
    "hmac": "765d3210e67f"
   },

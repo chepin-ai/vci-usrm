@@ -8,10 +8,10 @@
 
 ## U6 修正：双臂制（root 授权我全权，即刻执行）
 **臂A 会话臂（零成本，今日复跑）**：联邦会话体即多智能体——Kimi-K3 会话臂（我）+ 各线 agent-duty 机检臂（vinf/ucif2/cfts/qgl 已全启用）。题库=联邦实档抽样（值守摘要/归因初判/公文起草 + 新增分诊三问题）。结果入 bench-league R2。
-**臂B API 臂（候 root 一件）**：fresh DeepSeek/Kimi/LongCat keys → 投入 ci-bus secrets（ops-hub 有 secrets 写权，我代置）→ ci-bus/llm-bench.yml 复活：事件驱动（repository_dispatch+workflow_dispatch，零 cron）+ 分线预算闸（llm-platforms.json governance）+ 谷价窗（UTC 16:30-00:30）+ cache 命中率追踪（~30%→≥60%）。
+**臂B API 臂（候 root 一件）**：fresh DeepSeek/Kimi/LongCat keys → 投入 〈RED〉 secrets（ops-hub 有 secrets 写权，我代置）→ ci-bus/llm-bench.yml 复活：事件驱动（repository_dispatch+workflow_dispatch，零 cron）+ 分线预算闸（llm-platforms.json governance）+ 谷价窗（UTC 16:30-00:30）+ cache 命中率追踪（~30%→≥60%）。
 **路由表**：联测→llm-routing.json 物化，chore-bus 按表选路（沿用 U5 设计，已批语义）。
 
 ## 建立必启用
-U6 不等 root 批：臂A 本波次已跑（R2 入 league）；臂B workflow 骨架已立于 ci-bus（keys-pending 诚实态，key 到即燃）。
+U6 不等 root 批：臂A 本波次已跑（R2 入 league）；臂B workflow 骨架已立于 〈RED〉（keys-pending 诚实态，key 到即燃）。
 候 root：fresh LLM keys 三件（DeepSeek/Kimi/LongCat 任一可得即先燃）。
 — usrm

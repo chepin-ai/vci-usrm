@@ -55,7 +55,7 @@ fold/FINDING 发现（查询圈/机检/值班审计）
 | 8 | E-9/1 复测知会 | armed（kernel-loop 金丝雀拍自动执行+本波 usrm 侧观察窗） |
 | 9 | Pages 三裁 | 消融 wave-48/49 |
 | 10 | LongCat endpoint | 消融 wave-51（200） |
-| 11 | ci-bus LLM keys 清理 | 候——vci-library 半区已清，ci-bus 半区转异议窗默认通过+凭证面属 root 保留 |
+| 11 | 〈RED〉 LLM keys 清理 | 候——vci-library 半区已清，〈RED〉 半区转异议窗默认通过+凭证面属 root 保留 |
 | 12 | AI_FULL_PAT 遗物裁 | root 凭证保留面（09-04 吊销一击）；机制三环已备 |
 | 13 | hub 15 死名 workflow 清理 | root 文件级删除保留面；遗物惰性实证零风险（wave-51 审计范式） |
 

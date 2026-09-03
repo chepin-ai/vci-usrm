@@ -10,18 +10,18 @@
 |---|---|---|---|
 | 1 | M3 建立必启用 | 7 件 disabled（usrm/ucif2/cfts agent-duty+shadow-pulse, vci-inbox fast-door） | 全启用+点火实证 204 |
 | 2 | M12 资源必省 | cron 残留 9 件（vinf/ucif2/cfts ×3，W32 新增仓漏扫） | 全剥，活 cron=0 |
-| 3 | M14 漂移必钩 | agent-duty 读 ci-control(私仓404) 注册表；cisvr 08-22 已立 MOVED 碑而代码未随 | 4 仓 URL 根修→vci-inbox 正本；实证 registry-down 愈 |
-| 4 | M14 | LINE env=仓名≠注册表键（vinf-market-kernel 等 ×3） | env 对齐 vinf/ucif2/qgl |
+| 3 | M14 漂移必钩 | agent-duty 读 HUB-CORE(私仓404) 注册表；cisvr 08-22 已立 MOVED 碑而代码未随 | 4 仓 URL 根修→vci-inbox 正本；实证 registry-down 愈 |
+| 4 | M14 | LINE env=仓名≠注册表键（VINF-VAULT 等 ×3） | env 对齐 vinf/ucif2/qgl |
 | 5 | M13 全局必图 | GRAPH-01 滞留 08-22（cron 时代图） | v1 重建（普查实据） |
 | 6 | M14 | kimi.link 遗物 6 件（*-VAULT×4+lgt+brg-selftest） | 公面注册表立碑冻结 |
-| 7 | M10 预案必先 | ci-control 脊柱无双保险 | BACKUP-SYNC-01（ci-bus 镜像+sha16 锚；ci-control-backup 归档候解） |
+| 7 | M10 预案必先 | HUB-CORE 脊柱无双保险 | BACKUP-SYNC-01（〈RED〉 镜像+sha16 锚；〈RED〉 归档候解） |
 
 ## 二、在案未愈（四态呈档）
 - **证** G-BOX PEM 未取 / G-N8 G-M2 岗报滞留 / 会签五件 → cisvr（WARN3+M4 立案）
 - **证** qlv-lib-poller */15 cron → qlv 面外（M12 违法，候 qlv 自剥）
 - **证** 300 件 G-DIR stale-open 陈案（M2 跟进必闭环 群体欠账）→ 建议 STALL-TRIAGE 分批清
 - **证** vinf chain-diverge（pulse.log↔status.json 链头不一）→ vinf 线内
-- **候** LLM API 臂 keys → root；ci-control-backup 解归档 → root/ci-root
+- **候** LLM API 臂 keys → root；〈RED〉 解归档 → root/ci-root
 
 ## 三、举一反三→多级 pattern（已触发）
 1. **TRIG-STALL-TRIAGE**（W35 已立）：陈案分诊

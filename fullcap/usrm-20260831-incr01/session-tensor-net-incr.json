@@ -93,15 +93,15 @@
  },
  "file_net": {
   "nodes": [
-   "ci-control:bridge/AUTH-MANIFEST-01.json",
-   "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
-   "ci-control:bridge/delta-base-01.json",
-   "ci-control:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md",
-   "ci-control:bridge/findings/f7-relay-keymig-root-action.md",
-   "ci-control:bridge/findings/pages-trichotomy-adjudication.md",
-   "ci-control:bridge/quantum/bell-ghz-wave52.json",
-   "ci-control:bridge/quantum/chsh-01-wave47.json",
-   "ci-control:bridge/quantum/qaoa-01-wave53.json",
+   "HUB-CORE:bridge/AUTH-MANIFEST-01.json",
+   "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl",
+   "HUB-CORE:bridge/delta-base-01.json",
+   "HUB-CORE:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md",
+   "HUB-CORE:bridge/findings/f7-relay-keymig-root-action.md",
+   "HUB-CORE:bridge/findings/pages-trichotomy-adjudication.md",
+   "HUB-CORE:bridge/quantum/bell-ghz-wave52.json",
+   "HUB-CORE:bridge/quantum/chsh-01-wave47.json",
+   "HUB-CORE:bridge/quantum/qaoa-01-wave53.json",
    "ure/code/circle-v2.py",
    "ure/code/mcode-01.json",
    "ure/code/quantum-bench-01.py",
@@ -123,7 +123,7 @@
    },
    {
     "from": "W46",
-    "to": "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
+    "to": "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl",
     "rel": "PRODUCED_BY"
    },
    {
@@ -133,22 +133,22 @@
    },
    {
     "from": "W47",
-    "to": "ci-control:bridge/quantum/chsh-01-wave47.json",
+    "to": "HUB-CORE:bridge/quantum/chsh-01-wave47.json",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W48",
-    "to": "ci-control:bridge/findings/f7-relay-keymig-root-action.md",
+    "to": "HUB-CORE:bridge/findings/f7-relay-keymig-root-action.md",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W48",
-    "to": "ci-control:bridge/findings/pages-trichotomy-adjudication.md",
+    "to": "HUB-CORE:bridge/findings/pages-trichotomy-adjudication.md",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W49",
-    "to": "ci-control:bridge/AUTH-MANIFEST-01.json",
+    "to": "HUB-CORE:bridge/AUTH-MANIFEST-01.json",
     "rel": "PRODUCED_BY"
    },
    {
@@ -163,7 +163,7 @@
    },
    {
     "from": "W49",
-    "to": "ci-control:bridge/delta-base-01.json",
+    "to": "HUB-CORE:bridge/delta-base-01.json",
     "rel": "PRODUCED_BY"
    },
    {
@@ -173,32 +173,32 @@
    },
    {
     "from": "W50",
-    "to": "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
+    "to": "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W50",
-    "to": "ci-control:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md",
+    "to": "HUB-CORE:bridge/findings/FINDING-REGISTRY-LIVENESS-01.md",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W51",
-    "to": "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
+    "to": "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W52",
-    "to": "ci-control:bridge/quantum/bell-ghz-wave52.json",
+    "to": "HUB-CORE:bridge/quantum/bell-ghz-wave52.json",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W53",
-    "to": "ci-control:bridge/quantum/bell-ghz-wave52.json",
+    "to": "HUB-CORE:bridge/quantum/bell-ghz-wave52.json",
     "rel": "PRODUCED_BY"
    },
    {
     "from": "W54",
-    "to": "ci-control:bridge/quantum/qaoa-01-wave53.json",
+    "to": "HUB-CORE:bridge/quantum/qaoa-01-wave53.json",
     "rel": "PRODUCED_BY"
    },
    {
@@ -208,7 +208,7 @@
    },
    {
     "from": "W55",
-    "to": "ci-control:bridge/FLIGHT-VERDICT-01.jsonl",
+    "to": "HUB-CORE:bridge/FLIGHT-VERDICT-01.jsonl",
     "rel": "PRODUCED_BY"
    }
   ]

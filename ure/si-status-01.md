@@ -22,13 +22,13 @@ duty 台账/OTP 门档/x-fire/session 档中**未见任何 D1/D2 抉择记录**�
 
 ## 三、Q3 / T5Q3 / OS 侧
 - T5Q3 三问（usrm 08-29T03:05 呈堂 QKSA-01+RUN-01 PASS 3/3）：死线 **09-03**，各线应答候件中（三问=基座五元组/自运算算子认领/协同接口）。
-- OS 侧（QF-OS 本体）：qf-beat 事件面已通（15wf 齐起+kernel-loop success）；死手唯一 cron 合规；私仓 Actions 黑待 9/1（2000min/月）复测——**E-9/1 复测计划**：field-router 2h 同步、ci-bus llm-bench 回迁评估、gate-sentinel/spool-drain 复拍、私仓配额用量入账。
+- OS 侧（QF-OS 本体）：qf-beat 事件面已通（15wf 齐起+kernel-loop success）；死手唯一 cron 合规；私仓 Actions 黑待 9/1（2000min/月）复测——**E-9/1 复测计划**：field-router 2h 同步、〈RED〉 llm-bench 回迁评估、gate-sentinel/spool-drain 复拍、私仓配额用量入账。
 
 ## 四、总体评估
 **机检层=全绿且比昨日更强**（beat-forward 主道通+线环武装+chain-diverge 四仓根治+OTP×3 退役）；**会话层=机活人静**：qfa/vinf/qgl 登录态在位而业务流稀，cisvr 静默逼近 72h 死线；**制度层=卡点全在 root 一键/一线回执**（见下）。
 
 ## 五、建议（优先级序）
-1. root：ops-line 再扩 4 线仓（线环即通）；ci-control-backup 一键 Unarchive（我 PEM 湮灭不可代执，或重投 PEM）。
+1. root：ops-line 再扩 4 线仓（线环即通）；〈RED〉 一键 Unarchive（我 PEM 湮灭不可代执，或重投 PEM）。
 2. cisvr 08-31T18:10Z 前露面签收 WARN3 五件+qgl line.json 副署，否则按 §3 升级。
 3. qfa：X25519 重封回执（09-15 死线联动）。
 4. 各线：T5Q3 三问 09-03 前答；cfts OBL-SYN-3 今日 20:40Z 到期。

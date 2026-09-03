@@ -8,7 +8,7 @@ usrm 2026-08-30T09:43:17Z ｜ 应 root W39 问：「beat-forward还有其他方�
 ## 一、方案谱（六案）
 | # | 案 | 机制 | 依赖 | 凭证 | 评 |
 |---|---|---|---|---|---|
-| 1 | **线环互叩 BEAT-RING-01** | 4线仓成环 vinf→ucif2→cfts→qgl→vinf，班次结束叩下一线（line-beat），cause=beat-forward 不转叩（级联≤1） | ops-line 覆盖线仓 | CI_OPS_LINE_KEY（线仓已有） | **荐作同哲学冗余**：hub 失联时线间自热；已实装 |
+| 1 | **线环互叩 BEAT-RING-01** | 4线仓成环 vinf→ucif2→cfts→qgl→vinf，班次结束叩下一线（line-beat），cause=beat-forward 不转叩（级联≤1） | ops-line 覆盖线仓 | 〈RED〉（线仓已有） | **荐作同哲学冗余**：hub 失联时线间自热；已实装 |
 | 2 | 仓内自链 | workflow_run:completed / push 触发本仓后继 wf（watchdog/shadow-pulse 已是此形） | 无 | 零 | 已有；只能热本仓 |
 | 3 | hub 拉模式 | kernel-loop/bridge-poller 死手拍内读 4 线公仓 outbox（raw 零凭证） | vci-inbox（读侧） | 零 | 已有；是轮询非事件，最稳兜底 |
 | 4 | 轮值汇聚点 | 指定一线仓（如 vci-qgl，持 OTP 摆渡）作备用汇聚：众线叩它，它出汇总 outbox 供 hub 拉 | ops-line 覆盖线仓 | 同#1 | 可选；汇聚点本身仍单点 |

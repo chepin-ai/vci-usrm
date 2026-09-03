@@ -20,7 +20,7 @@
   },
   "PI-cisvr-S-I-0-SUBSTRATE": {
    "status": "ACTIVE",
-   "note": "ci-control kernel-loop/heartbeat拍在案(05:16Z wall-probe实证),点火件载体活"
+   "note": "HUB-CORE kernel-loop/heartbeat拍在案(05:16Z wall-probe实证),点火件载体活"
   },
   "usrm-S-I-0": {
    "status": "ACTIVE",

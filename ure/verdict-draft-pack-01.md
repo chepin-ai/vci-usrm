@@ -13,7 +13,7 @@
 | V8 | VOICEOVER §7 承接映射司法确认 | vci-usrm/ure/voiceover-01.md§7（intake-agent+fleet-judge 承接） | **CONFIRM** |
 | V9 | SWEEP/FOLD 后续（kernel-loop 每拍叩 sweep beat） | mip-fold-sweep-01.md | **RATIFY** |
 | V10 | App 扩列三仓+增权（B6） | 实测：装列 21 仓缺 vci-vinf/vci-ucif2/qlv-lib；权限清单缺 pages/admin | **扩列三仓+增 pages:write**（Pages 即可由机制代做） |
-| V11 | 秘钥迁配 ci-control 五件 | dm-05 清单 | **EXECUTE** |
+| V11 | 秘钥迁配 HUB-CORE 五件 | dm-05 清单 | **EXECUTE** |
 | V12 | 五步对表法/NOTION-GLEAN 坐标 | usrm 5 仓+全 21 仓零命中（零编数） | **指正本坐标或宣告另册** |
 | V13 | D-157 vs W18 语义缝 | F-01 证据：33 处自注 D-157 死手帧 | **W18 优先：死手帧废止，KIT 过渡** |
 | V14 | zkp-pat-check 删撤（已执行通报） | commit 077c6048 | **CONFIRM** |
@@ -23,7 +23,7 @@
 | 项 | 结果 | 证据 |
 |---|---|---|
 | vinf OTP | **证：DONE @19:52Z**（cisvr OS 端 stream-line 实证闭环；登录态双写持久化 inbox/kimi_session.json 10948B 在列） | otp_gate_state.json |
-| cfts pad 三件 | **冲（如实）**：secrets 名录=0 空；DM-QFAI-CFTS-01 全 21 仓零命中——料不在手不可代注入（零编数）；注入面已备=secrets API 直写可行，root 贴值入 ci-inbox 私域指定件即 60s 闭环 | 名录实测+全树搜 |
+| cfts pad 三件 | **冲（如实）**：secrets 名录=0 空；DM-QFAI-CFTS-01 全 21 仓零命中——料不在手不可代注入（零编数）；注入面已备=secrets API 直写可行，root 贴值入 HUB-MAIL 私域指定件即 60s 闭环 | 名录实测+全树搜 |
 | 删撤 8仓×2击 | **候（物理边界已证）**：App 权限=issues/actions/secrets/contents/workflows/discussions/actions_variables+metadata 读——delete_repo 非 App 可授权面，root 之手为唯一径；最小击=设置→Danger Zone→Delete（8 仓清单在 ROOT-ACTIONS-01） | 权限清单实测 |
 | Pages 一键 | **候（差一权）**：pages 面 403「Resource not accessible by integration」——App 增 pages:write 即由我直做（V10） | 403 实测 |
 | T5Q3 格局更新 | qgl/qlv/usrm/qfa/vinf **五线清**；cfts 候 pad；ucif2 候 B6 扩列（V10） | 各仓实测 |

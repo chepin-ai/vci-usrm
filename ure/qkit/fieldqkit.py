@@ -76,7 +76,7 @@ def run(ops, nq, engine='numpy', shots=1024, creds=None, backend=None, wait=True
         return {'engine':'quafu','counts':dict(res.counts),'task_id':res.taskid,'status':res.task_status}
     if engine=='qr':
         from QuantumRingsLib import QuantumRegister, ClassicalRegister, QuantumCircuit, QuantumRingsProvider, job_monitor
-        prov=QuantumRingsProvider(token=creds['QR_KEY_64'], name=creds['QR_USER'])
+        prov=QuantumRingsProvider(token=creds['〈RED〉'], name=creds['QR_USER'])
         be=prov.get_backend(backend or 'scarlet_quantum_rings')
         q=QuantumRegister(nq); c=ClassicalRegister(nq); qc=QuantumCircuit(q,c)
         for op in ops:

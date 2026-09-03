@@ -12,7 +12,7 @@
 
 ## 公用化标准（立法建议，即刻起我面执行）
 **SEAL-MULTI-01**：一切密封交付件 = 多收件人封装（INBOX-PK + 当值执行线公钥/金库），杜绝单点静默锁死；信封文件**只含密文**，注解一律另件。
-- 候 root：PEM 明文另道（金库道）投 usrm-seed-vault → 我即可在面内代理执行 ci-root 权限事项（P-PROXY-ACT-01 + AUTH-USRM-01），cisvr 静默不再阻塞。
+- 候 root：PEM 明文另道（金库道）投 usrm-seed-vault → 我即可在面内代理执行 〈RED〉 权限事项（P-PROXY-ACT-01 + AUTH-USRM-01），cisvr 静默不再阻塞。
 - 候 cisvr：开 v2 + pong 试通件 + 执 REPO-EXEC-SHEET-01。
 
 ## 诚实档（零编数律）

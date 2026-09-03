@@ -3,68 +3,68 @@
  "ts": "2026-08-29T23:59:54Z",
  "by": "usrm",
  "authority": "W29 root: 你全权代我执行(C4亲批在案) · 正本=ci-control/bridge/REPO-DISPOSITION-01.json(cisvr处置建议单)",
- "status": "PARTIAL: Pages@usrm-repo=BLOCKED-PLAN(422 plan不支持私仓Pages——root裁: 升级/转公/弃Pages)；ci-root 面实证=usrm-repo+ci-control(扩面未完成,与root所述不符,冲)",
+ "status": "PARTIAL: Pages@USRM-VAULT=BLOCKED-PLAN(422 plan不支持私仓Pages——root裁: 升级/转公/弃Pages)；〈RED〉 面实证=USRM-VAULT+HUB-CORE(扩面未完成,与root所述不符,冲)",
  "evidence": [
   "GET /repos/chepin-ai/usrm-repo/pages => 403 Resource not accessible by integration",
   "PATCH /repos/chepin-ai/github-repo-cfts {archived:true} => 403",
-  "installation 154355791 permissions(重铸token后复查×2): 无 administration / 无 pages",
-  "App=chepin-ci-ops-hub(id4621702); root所指 chepin-ci-root 为另一App,vault内无其凭证;全hub搜'ci-root'仅1件旧文引用",
+  "installation 〈RED〉 permissions(重铸token后复查×2): 无 administration / 无 pages",
+  "App=chepin-ci-ops-hub(id4621702); root所指 chepin-ci-root 为另一App,vault内无其凭证;全hub搜'〈RED〉'仅1件旧文引用",
   "全org code search: KIMI_SESSION_STATE/DM-QFAI/pad三件 => 0 hits(cfts pad 料不在手,冲)",
-  "2026-08-30T04:23:03Z ci-root token 实证: installation 154356549, selected=[usrm-repo,ci-control]; POST usrm-repo/pages=422 plan"
+  "2026-08-30T04:23:03Z 〈RED〉 token 实证: installation 154356549, selected=[USRM-VAULT,HUB-CORE]; POST usrm-repo/pages=422 plan"
  ],
  "inventory_now": [
   {
-   "repo": "quantum-go-ledger",
+   "repo": "QGL-VAULT",
    "class": "delete_candidate",
    "state": "archived@04:27Z(已归档,待删)"
   },
   {
-   "repo": "ci-library",
+   "repo": "HUB-LIB",
    "class": "delete_candidate",
    "state": "archived@04:29Z(待删)"
   },
   {
-   "repo": "ci-logs",
+   "repo": "〈RED〉",
    "class": "delete_candidate",
    "state": "archived@04:29Z(待删)"
   },
   {
-   "repo": "ci-bus",
+   "repo": "〈RED〉",
    "class": "delete_HOLD",
    "state": "active(qroute引用面未清,暂缓——维持)"
   },
   {
-   "repo": "ci-inbox",
+   "repo": "HUB-MAIL",
    "class": "archive_candidate",
    "state": "active(待归档)"
   },
   {
-   "repo": "usrm-repo",
+   "repo": "USRM-VAULT",
    "class": "archive_candidate",
    "state": "active(待归档+Pages开通挂起)"
   },
   {
-   "repo": "vinf-market-kernel",
+   "repo": "VINF-VAULT",
    "class": "archive_candidate",
    "state": "active(待归档)"
   },
   {
-   "repo": "ucif2-formalization-kernel",
+   "repo": "UCIF2-VAULT",
    "class": "archive_candidate",
    "state": "active(待归档)"
   },
   {
-   "repo": "github-repo-cfts",
+   "repo": "CFTS-VAULT",
    "class": "archive_candidate",
    "state": "active(待归档)"
   },
   {
-   "repo": "ci-control-backup",
+   "repo": "〈RED〉",
    "class": "archive_candidate",
    "state": "archived@04:29Z(已完成)"
   },
   {
-   "repo": "qlv-lab",
+   "repo": "QLV-VAULT",
    "class": "deleted",
    "state": "404(已完成)"
   }

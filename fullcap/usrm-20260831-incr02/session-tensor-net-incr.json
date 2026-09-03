@@ -113,11 +113,11 @@
   "ure/metapattern-fold-dissolve-01.md(w60)",
   "ure/si-status-02.json(w60)",
   "fullcap/usrm-session0-genesis/genesis.json(w60)",
-  "ci-control:DISSENT-WINDOW-01.md(w57)",
-  "ci-control:CIROOT-ROUTEAROUND-01.md(w58)",
-  "ci-control:findings/breakpoint-census-01.json(w59)",
-  "ci-control:findings/dormant-census-01.json(w59)",
-  "ci-control:findings/FINDING-SESSION-RESTORE-GHOST-01.json(w61)",
+  "HUB-CORE:DISSENT-WINDOW-01.md(w57)",
+  "HUB-CORE:CIROOT-ROUTEAROUND-01.md(w58)",
+  "HUB-CORE:findings/breakpoint-census-01.json(w59)",
+  "HUB-CORE:findings/dormant-census-01.json(w59)",
+  "HUB-CORE:findings/FINDING-SESSION-RESTORE-GHOST-01.json(w61)",
   "vci-ucif2:inbox/UCIF2-ONBOARD-01.md(w61)"
  ]
 }

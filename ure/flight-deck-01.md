@@ -24,6 +24,6 @@
 - S6 凭证纪律不变：绝不入库/回显/入快照。
 
 ## 四、首批飞行序列（本波执行）
-F1 M-CODE-01(H1) 转正｜F2 Δ-BASE-01(H1) 转正｜F3 kernel-loop 挂常任审计影子拍｜F4 C2 bus_root 每拍入 c2-bus.jsonl｜F5 line-producer cron 事件化（M12 合规）｜F6 vci-library LLM 重复秘钥清除（留 ci-bus 正本）｜F7 relay-keymig AI_FULL_PAT 遗物清除｜F8 hub 死名 workflow 遗物清除｜F9 backup=防篡改冷备判词落档｜F10 EXPECT-REG depends_on 接线（保守推断+标注）｜F11 BEAT-RING-01 ops-hub 直道｜F12 E-9/1 复测排队次波
+F1 M-CODE-01(H1) 转正｜F2 Δ-BASE-01(H1) 转正｜F3 kernel-loop 挂常任审计影子拍｜F4 C2 bus_root 每拍入 c2-bus.jsonl｜F5 line-producer cron 事件化（M12 合规）｜F6 vci-library LLM 重复秘钥清除（留 〈RED〉 正本）｜F7 relay-keymig AI_FULL_PAT 遗物清除｜F8 hub 死名 workflow 遗物清除｜F9 backup=防篡改冷备判词落档｜F10 EXPECT-REG depends_on 接线（保守推断+标注）｜F11 BEAT-RING-01 ops-hub 直道｜F12 E-9/1 复测排队次波
 判词逐条见 ci-control/bridge/FLIGHT-VERDICT-01.jsonl。
 — usrm
