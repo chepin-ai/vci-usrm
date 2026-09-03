@@ -3621,8 +3621,16 @@
    "summary": "wave108: OTP目标校正(root截图指认)——正主=机器意识&律吕1a0669f0,四信封注入完毕;误燃会话停手(零机时,侦察备忘qlv-misfire-recon.md);wake-router改正主+misfire_log立案+按名索骥新规",
    "hash": "08d821f67c32",
    "hmac": "fe04b3ceeeb0"
+  },
+  {
+   "seq": "303",
+   "ts": "2026-09-03T23:16Z",
+   "prev": "08d821f67c32",
+   "summary": "wave109: 正名——机器意识&律吕(1a0669f0)≠qlv(1a01f827易经数理);两线分立入册;称谓校正件投正主;qlv正线休眠候令",
+   "hash": "65c1344b652a",
+   "hmac": "134f9639304b"
   }
  ],
- "tip": "08d821f67c32",
- "seq": "302"
+ "tip": "65c1344b652a",
+ "seq": "303"
 }
