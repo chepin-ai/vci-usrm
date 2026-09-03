@@ -3485,8 +3485,16 @@
    "summary": "wave-88:root六问结构性回答——#144在场ACK(09:30Z)+OTP布尔普查续评(09:52Z,usrm/cisvr/vinf/ucif2/cfts无OTP_PHONE,建议org级一次放置)+board usrm-167+kernel-loop挂ack-sentinel/request-router两拍(commit 2b3a539已推);git受阻REST putc补位usrm-167(b7246d7ee42d)",
    "hash": "e942b209e2ec",
    "hmac": "f1e696ca3fca"
+  },
+  {
+   "seq": "286",
+   "ts": "2026-09-03T10:38Z",
+   "prev": "e942b209e2ec",
+   "summary": "wave-89圈协同九令:RESOLUTION-ADMIN-005(三修法升圈规+七峰执行表+峰八九十提案)+SKELETON-AUDIT-01(qfa-duty 0runs/15件脚手架/bridge-poller竞态/usrm-repo再禁用)+16件disable+ferry修法6dc5fff+SYSTEM-SYNC-01开链+大会帖usrm-20260903-12+board168",
+   "hash": "c02f5b7a4062",
+   "hmac": "a30d2258cb2a"
   }
  ],
- "tip": "e942b209e2ec",
- "seq": 285
+ "tip": "c02f5b7a4062",
+ "seq": 286
 }
