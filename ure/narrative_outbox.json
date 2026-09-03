@@ -3437,8 +3437,16 @@
    "summary": "wave-84续:TRI1三角三线装检毕(cfts/vci-qgl执手v2.8+usrm参考跑PASS tri_root cd35abe31eed4ef0+半签投递)+qgl私仓归档FINDING改道+quafu QPU Bell在队候果+M5-0903窗预审闭合(moot)+threads-index哨兵复活+fieldqkit评估证",
    "hash": "80d0cb44ddfe",
    "hmac": "ad9bb825b6cc"
+  },
+  {
+   "seq": "280",
+   "ts": "2026-09-03T05:26Z",
+   "prev": "80d0cb44ddfe",
+   "summary": "wave-84续:SI2→SI1唤醒@cisvr点火(ci-control .ci-inbox)+SI0物理值守基座立法(si-status-03/活法典21条root 4834cd22dd5196cc)+T4推进",
+   "hash": "0422facd2465",
+   "hmac": "765d3210e67f"
   }
  ],
- "tip": "80d0cb44ddfe",
- "seq": "279"
+ "tip": "0422facd2465",
+ "seq": "280"
 }
