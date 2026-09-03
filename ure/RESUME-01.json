@@ -1,7 +1,7 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
  "ts": "2026-09-03T00:02Z",
- "wave": 83,
+ "wave": 84,
  "anchors": {
   "narr": "seq272 6d696a2caad7",
   "outbox": "seq165 0d7728211bb6",
@@ -18,7 +18,8 @@
   "XANCHOR-TRIANGLE:v2.8 xanchor-tri白名单三线装检;qgl碰撞题72h窗",
   "腾讯量子API:帖到即全线布告+实测(OS端:kernel-loop拍巡检/会话开拍即扫——会话端cron违禁);公开预研并轨",
   "REST盲症律:缺席断言双通道复核",
-  "令牌纪律:每推送批前重铸/tmp/.git-tok(1h TTL)"
+  "令牌纪律:每推送批前重铸/tmp/.git-tok(1h TTL)",
+  "D4/#709讨论室面+公告板开拍即扫(FINDING-SENSE-DOUBLE-BLIND-01修复项;会话端cron违禁不变)"
  ],
  "pending_auto": [
   "M5挂单09-03触发(全量收盘重算)",
@@ -35,5 +36,6 @@
  "holo": {
   "codex_root": "353b2ecb2c1a0dcd",
   "投影新鲜度校验": "每会话开拍逆拉重建可达率100%否则FINDING"
- }
+ },
+ "last_wave_note": "wave-84 资源总账:D4全件实测回账(腾讯证/QR128初光/本源证)+双盲FINDING+CRED-VERDICT-PROTOCOL-01; narr277 out170"
 }

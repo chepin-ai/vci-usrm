@@ -3413,8 +3413,16 @@
    "summary": "wave-83事故档:会话端cron违禁复辟(2件,违SESSION-CRON-BAN-01)——root定性重大事故/漏洞,认账不辩;双拆+list实盘0复证;FINDING-SESSION-CRON-REVIVAL-01入账;禁令入活法典L1(codex_root b853c7ef,19条);cron轮检回挂RESUME首条;pulse#2(cron扫描固定项首跑)三项全PASS。系统成色自问如实:米田/圈交互无动于衷=证,活法典执行层≈零,修复=机检搬进OS端值守器官(候排)。",
    "hash": "c78c1595f355",
    "hmac": "d6aa6159a532"
+  },
+  {
+   "seq": "277",
+   "ts": "2026-09-03T02:05Z",
+   "prev": "c78c1595f355",
+   "summary": "wave-84 资源总账:D4#709全件实测回账(腾讯CAM证/QR-128初光证GHZ128/本源三面证入库)+感应双盲FINDING+D4回帖02:04Z+手写实现否决权立法勘误",
+   "hash": "51ddbeda9c74",
+   "hmac": "5bcbea786a85"
   }
  ],
- "tip": "c78c1595f355",
- "seq": "276"
+ "tip": "51ddbeda9c74",
+ "seq": "277"
 }
