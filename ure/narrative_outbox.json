@@ -3517,8 +3517,16 @@
    "summary": "wave-92:root令「QR你自己搞定」回执(wave-91已闭环,board usrm-172)+全维盘点(quafu哨401→FINDING-QUAFU-AUTH-01候;窗群09-04/09-06巡)+sync seq12+board usrm-172+#144回执",
    "hash": "1442cc03fd4c",
    "hmac": "0fa20374a8bc"
+  },
+  {
+   "seq": "290",
+   "ts": "2026-09-03T12:25Z",
+   "prev": "1442cc03fd4c",
+   "summary": "wave-93:EXP-048噪声刻划档SIM-03(chord阈p*1.0-1.5e-3脆/arp稳/禁泄新见证,峰六L4前置)+TC-CRED-0903收存登记(E805,root型,SMS-OTP道证否,轮换建议最高优先)+quafu401持续两波升级",
+   "hash": "475703c2c17a",
+   "hmac": "41d3accf2d82"
   }
  ],
- "tip": "1442cc03fd4c",
- "seq": 289
+ "tip": "475703c2c17a",
+ "seq": 290
 }
