@@ -3373,8 +3373,16 @@
    "summary": "wave-82续闭:QGL-HALF PASS收割入正——v2.7.2-qgl移植+OTP-v4机读令→qgl 22:53Z同种子复跑逐字节一致(0b7bcd99…),usrm/cfts/qgl三半签齐(classical-sim档最强跨进程确定性证据,三灰标照带);relay实证正常(22:54:01Z自动入正本6ea437d),初报\"relay未触发\"系unauth REST盲症误报,勘误入relay-log-20260902-225600(第一诚律);ADJ-XANCHOR-ADOPT-01 §三qgl候→证;三角冒烟XANCHOR-TRIANGLE-SMOKE-01候启条件①满足。",
    "hash": "eab969f4a918",
    "hmac": "e6ef8d982efa"
+  },
+  {
+   "seq": "272",
+   "ts": "2026-09-03T00:02Z",
+   "prev": "eab969f4a918",
+   "summary": "wave-83首波:root十问总令——活法典五法立法(W83-L1活法典/L2全息米田传态双向/L3自激互激圈塔/L4顿悟登记nudge/L5 OTP一次性点火+会话末回检);living-codex v0 18条 codex_root 353b2ecb;insight-ledger开册seq1=qgl XANCHOR-V2-01;T5Q3旧项全量消融(t5q3-02);qgl OTP-v5(App挂接授权+三角判据互检)+cfts钩沉激发子已下;cisvr SI1唤醒胶囊WAKE-CISVR-SI1-01备妥;事件荒实证在案(24h内容件18全单源);腾讯量子API帖未见=候,watch+公开预研并行。",
+   "hash": "6d696a2caad7",
+   "hmac": "aaf21404d9ad"
   }
  ],
- "tip": "eab969f4a918",
- "seq": "271"
+ "tip": "6d696a2caad7",
+ "seq": "272"
 }

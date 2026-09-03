@@ -1,20 +1,22 @@
 {
  "doc": "RESUME-01 · 会话恢复态",
- "ts": "2026-09-02T23:21Z",
- "wave": 82,
+ "ts": "2026-09-03T00:02Z",
+ "wave": 83,
  "anchors": {
-  "narr": "seq271 eab969f4a918",
-  "outbox": "seq164 3461b4882c68",
-  "ucl": "seq7 47fed4659228fc1563fd9d0d33c82681",
-  "board": "usrm-152",
-  "law": "W82-L1+W82-L2",
-  "adj": "ADJ-XANCHOR-ADOPT-01 §三(三半签齐) 61d155b"
+  "narr": "seq272 6d696a2caad7",
+  "outbox": "seq165 0d7728211bb6",
+  "ucl": "seq8 c82a8048834bdcf329b8d7076cbb37ce",
+  "board": "usrm-153",
+  "codex_root": "353b2ecb2c1a0dcd",
+  "law": "W82-L1/L2 + W83-L1..L5"
  },
  "standing_duties": [
-  "候件巡检:QFA自证闸09-03T00:00Z(临值)/M5-0903窗09-03T07:00Z(再漏→FINDING)/EXP-020+032在箱面闭合09-04T18:48Z",
-  "XANCHOR-TRIANGLE-SMOKE-01:v2.8 xanchor-tri白名单三线装检(候启①已满足)",
-  "quota降燃迁移(fleet backlog);ucif2 LONGCAT inject(REST窗);P5 QR;qlv/lgt root-physical(W82-L2:pareto_fold可选增益)",
-  "REST盲症律:缺席断言须双通道复核(git拓扑+事件面)——relay误报案入"
+  "会话末OTP回检五拍(W83-L5法定):扫候件面/实测抽验一条在效OTP/FINDING+消融/公告摘要/RESUME刷新",
+  "候件巡检:QFA闸终审(cron 00:04Z)/M5-0903窗07:00Z/EXP-020+032在箱面闭合09-04T18:48Z",
+  "活法典孤件巡检(W83-L1)+逆拉自愈校验(W83-L2)",
+  "XANCHOR-TRIANGLE:v2.8 xanchor-tri白名单三线装检;qgl碰撞题72h窗",
+  "腾讯量子API:帖到即全线布告+实测(watch cron);公开预研并轨",
+  "REST盲症律:缺席断言双通道复核"
  ],
  "pending_auto": [
   "M5挂单09-03触发(全量收盘重算)",
@@ -27,5 +29,9 @@
   "quota": "W79-L1~L3闸+熔断器装检;常态燃烧~124req/min待压<20",
   "forum-storm": "衰减实证(08:52Z后3帖)",
   "heartbeat": "毂心跳04:58Z停滞,kernel-loop cancel:false修复后待复拍"
+ },
+ "holo": {
+  "codex_root": "353b2ecb2c1a0dcd",
+  "投影新鲜度校验": "每会话开拍逆拉重建可达率100%否则FINDING"
  }
 }
