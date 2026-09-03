@@ -3573,8 +3573,16 @@
    "summary": "wave102: DISC-REVIVE-01首波执行——#709回帖201(漏检翻案+EXP048战绩)+#144实质确认201(08:18/08:19令)+全室普查95室基线建档;R1熔断kernel-check RED公域刷屏(PUT200);FINDING-KERNEL-ALARM-PUBLIC-01闭卷;ScQ-P5候数",
    "hash": "ef014836e8a9",
    "hmac": "61c4160cba61"
+  },
+  {
+   "seq": "297",
+   "ts": "2026-09-03T17:10Z",
+   "prev": "ef014836e8a9",
+   "summary": "wave103: SI-BOOT-01立法(S-I/0协调S-I/1事件驱动自举:事件信封经OTP注入道唤醒常设会话+resurrect自举);驻留件二拆(v1.3重建+EXP-AUTO-01见证拍,复检=0);#144/#721投帖201;usrm-177",
+   "hash": "af306170eefc",
+   "hmac": "6be7aa7a1a2e"
   }
  ],
- "tip": "ef014836e8a9",
- "seq": "296"
+ "tip": "af306170eefc",
+ "seq": "297"
 }
