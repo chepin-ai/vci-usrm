@@ -3525,8 +3525,16 @@
    "summary": "wave-93:EXP-048噪声刻划档SIM-03(chord阈p*1.0-1.5e-3脆/arp稳/禁泄新见证,峰六L4前置)+TC-CRED-0903收存登记(E805,root型,SMS-OTP道证否,轮换建议最高优先)+quafu401持续两波升级",
    "hash": "475703c2c17a",
    "hmac": "41d3accf2d82"
+  },
+  {
+   "seq": "291",
+   "ts": "2026-09-03T13:43Z",
+   "prev": "475703c2c17a",
+   "summary": "wave-94-97合锚:OTP真码闭环(qgl DONE→usrm铸.enc渡五线→usrm REUSED实证)+明文泄漏应急(PLAINTEXT-LEAK-01 contained,v2.2闸五线齐)+EXP049风暴熔断+EXP-048-SIM-03/04入仓(分体协议阈升2.1x)+TC凭证自轮换毕(旧对Inactive作废)+RES-006全权在圈禁琐请律立法传达",
+   "hash": "3009b69bf61b",
+   "hmac": "534a15559a3d"
   }
  ],
- "tip": "475703c2c17a",
- "seq": 290
+ "tip": "3009b69bf61b",
+ "seq": 291
 }
