@@ -11,13 +11,14 @@
   "law": "W82-L1/L2 + W83-L1..L5"
  },
  "standing_duties": [
-  "令牌纪律:每推送批前 G.token() 重铸 /tmp/.git-tok(1h TTL,勿凭mtime猜)",
+  "cron轮检(SESSION-CRON-BAN-01 §五原条款):每波list_cron_jobs实盘,非零即拆+FINDING——违禁事故FINDING-SESSION-CRON-REVIVAL-01在案",
   "会话末OTP回检五拍(W83-L5法定):扫候件面/实测抽验一条在效OTP/FINDING+消融/公告摘要/RESUME刷新",
   "候件巡检:QFA闸终审(cron 00:04Z)/M5-0903窗07:00Z/EXP-020+032在箱面闭合09-04T18:48Z",
   "活法典孤件巡检(W83-L1)+逆拉自愈校验(W83-L2)",
   "XANCHOR-TRIANGLE:v2.8 xanchor-tri白名单三线装检;qgl碰撞题72h窗",
-  "腾讯量子API:帖到即全线布告+实测(watch cron);公开预研并轨",
-  "REST盲症律:缺席断言双通道复核"
+  "腾讯量子API:帖到即全线布告+实测(OS端:kernel-loop拍巡检/会话开拍即扫——会话端cron违禁);公开预研并轨",
+  "REST盲症律:缺席断言双通道复核",
+  "令牌纪律:每推送批前重铸/tmp/.git-tok(1h TTL)"
  ],
  "pending_auto": [
   "M5挂单09-03触发(全量收盘重算)",
