@@ -3589,8 +3589,16 @@
    "summary": "wave104: OTP@辅导qlv(机器意识&律吕)——接引包v2点火就绪:四档引用核验+种子一致+SIM-01基线在案;quafu道直通+三坑标注+任务三选一;root唯一动作=转贴点火",
    "hash": "ce434bb0abcb",
    "hmac": "98ba2b0880b1"
+  },
+  {
+   "seq": "299",
+   "ts": "2026-09-03T18:49Z",
+   "prev": "ce434bb0abcb",
+   "summary": "wave105: OTP@qlv亲自点燃——SMS道×2+投码登录闭环+会话态回渡;qlv自举开工;读单15件28.9KB三信封摆渡;wake-router首件入册(SI-BOOT-01注入段实证);cron三波再犯拆1;P5仍status0",
+   "hash": "072bddb070e0",
+   "hmac": "40c991718a21"
   }
  ],
- "tip": "ce434bb0abcb",
- "seq": "298"
+ "tip": "072bddb070e0",
+ "seq": "299"
 }
