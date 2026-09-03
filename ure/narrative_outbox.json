@@ -3421,8 +3421,16 @@
    "summary": "wave-84 资源总账:D4#709全件实测回账(腾讯CAM证/QR-128初光证GHZ128/本源三面证入库)+感应双盲FINDING+D4回帖02:04Z+手写实现否决权立法勘误",
    "hash": "51ddbeda9c74",
    "hmac": "5bcbea786a85"
+  },
+  {
+   "seq": "278",
+   "ts": "2026-09-03T03:57Z",
+   "prev": "51ddbeda9c74",
+   "summary": "wave-84续:GHZ128双栈交叉锚证(QR采样∧TC幅收缩)+ucif2改写闭合收悉+root候件×3登记(QR轮换/GH缓存/腾讯用途)+LONGCAT质询独立复核成立+公告板160",
+   "hash": "dd6ef4c1f1ff",
+   "hmac": "054f47b85002"
   }
  ],
- "tip": "51ddbeda9c74",
- "seq": "277"
+ "tip": "dd6ef4c1f1ff",
+ "seq": "278"
 }
