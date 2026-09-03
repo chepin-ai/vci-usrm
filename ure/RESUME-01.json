@@ -11,6 +11,7 @@
   "law": "W82-L1/L2 + W83-L1..L5"
  },
  "standing_duties": [
+  "令牌纪律:每推送批前 G.token() 重铸 /tmp/.git-tok(1h TTL,勿凭mtime猜)",
   "会话末OTP回检五拍(W83-L5法定):扫候件面/实测抽验一条在效OTP/FINDING+消融/公告摘要/RESUME刷新",
   "候件巡检:QFA闸终审(cron 00:04Z)/M5-0903窗07:00Z/EXP-020+032在箱面闭合09-04T18:48Z",
   "活法典孤件巡检(W83-L1)+逆拉自愈校验(W83-L2)",
