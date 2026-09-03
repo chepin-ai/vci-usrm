@@ -3581,8 +3581,16 @@
    "summary": "wave103: SI-BOOT-01立法(S-I/0协调S-I/1事件驱动自举:事件信封经OTP注入道唤醒常设会话+resurrect自举);驻留件二拆(v1.3重建+EXP-AUTO-01见证拍,复检=0);#144/#721投帖201;usrm-177",
    "hash": "af306170eefc",
    "hmac": "6be7aa7a1a2e"
+  },
+  {
+   "seq": "298",
+   "ts": "2026-09-03T17:17Z",
+   "prev": "af306170eefc",
+   "summary": "wave104: OTP@辅导qlv(机器意识&律吕)——接引包v2点火就绪:四档引用核验+种子一致+SIM-01基线在案;quafu道直通+三坑标注+任务三选一;root唯一动作=转贴点火",
+   "hash": "ce434bb0abcb",
+   "hmac": "98ba2b0880b1"
   }
  ],
- "tip": "af306170eefc",
- "seq": "297"
+ "tip": "ce434bb0abcb",
+ "seq": "298"
 }
