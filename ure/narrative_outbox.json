@@ -3389,8 +3389,16 @@
    "summary": "wave-83浪涌(全局令):codex-pulse #1 首拍机检7项——6 PASS+1 FAIL(候件五要件缺2件)现场修复复点PASS=活法典自愈首例实证(核心机消化法条→发现缺陷→修复→复点全绿);全息同步包(holo-anchor/1首用)四线齐投cfts/qgl/vinf/ucif2(各带专属义务:SI注册自报/逆拉自检/内省实名);cfts零落链钩沉题/qgl三角判据碰撞题在途;线册实证:GitHub面5线(usrm/cfts/qgl/vinf/ucif2),qfa gitee盲,余线无仓(公告板锚达)。",
    "hash": "2b6a0cf64b46",
    "hmac": "2fe645dfb1c3"
+  },
+  {
+   "seq": "274",
+   "ts": "2026-09-03T00:37Z",
+   "prev": "2b6a0cf64b46",
+   "summary": "wave-83续:①QFA闸终审落地——闸过未应三通道复点(inbox零件/github 404三试/gitee Not Found),按预案改判【冲】,FINDING-QFA-SELFPROOF-WINDOW-01 open-verdict,qfa缺如记,我侧重建=resurrect kit+会话胶囊(usrm线覆盖如实,不代偿qfa自有面);registry missed-window(2)。②腾讯量子API:公开侦察成档(TENCENT-QUANTUM-API-RECON-01,tensorcircuit-ng SDK/Bearer token/邀请制/quk端点族/设备目录,未证实项如实);实测——tensorcircuit 1.9.1装机+本地Bell采样PASS/云端匿名device/find=unauthorized(闸候token);tencent_backend.py v0预置入仓(dry-run自验PASS);root帖仍候,watch cron在拍。",
+   "hash": "c251e6939940",
+   "hmac": "6c4f69b1b7ed"
   }
  ],
- "tip": "2b6a0cf64b46",
- "seq": "273"
+ "tip": "c251e6939940",
+ "seq": "274"
 }
