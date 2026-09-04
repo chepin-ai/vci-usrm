@@ -1,6 +1,0 @@
-# URE 规则基元台账 (SPEC-NMUST-04 §3 R6 基演化): 最小基版本追踪, 每行一个基元.
-# 基元 = {id, rule, introduced, covers{义务类: 计数}}; covers 计数由 relations_check 簿记刷新.
-# 铁则: 不自动加基 —— 未覆盖的义务类只输出"基不完备候选"建议, 加基须经立法流程.
-{"id": "b-001", "rule": "Gen: kit/INDEX.md F表告诫 → 义务 (oblig_tick.discover_from_kit)", "introduced": "2026-08-24", "covers": {"kit-admonition": 1}}
-{"id": "b-002", "rule": "Gen: 链上 INCIDENT/WARN/FINDING 条目 → 义务 (oblig_tick.discover_from_chain)", "introduced": "2026-08-24", "covers": {"chain-intent": 1}}
-{"id": "b-003", "rule": "Gen: root-action 人域残差 → 义务 (SPEC-NMUST-01 §5)", "introduced": "2026-08-24", "covers": {"root-action": 1}}
