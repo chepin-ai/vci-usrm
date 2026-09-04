@@ -44,7 +44,7 @@ from datetime import datetime, timezone
 import yaml
 
 WF_DIR = ".github/workflows"
-REPORT_DIR = "guard"
+REPORT_DIR = "guard/quarantine"  # R1: report落隔离区, hub classify-sweep定期迁私仓 (ADMIN-R1Q-SWEEP-01)
 GATE_FILE = "guard/GATE"
 JUSTIFY_WINDOW = 4  # comment lines above permissions block counted as rationale
 # a rationale comment must say *why* write is needed, not just be any comment
