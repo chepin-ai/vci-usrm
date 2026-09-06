@@ -1,0 +1,41 @@
+# LINE-INBOX-ACK-01 · 线侧仓内收执进程(SI2-AUTO-OTP-01 可选件,零跨仓凭证)
+name: line-inbox-ack
+on:
+  push:
+    paths: ['inbox/**', '.ci-inbox/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: line-inbox-ack
+  cancel-in-progress: true
+jobs:
+  ack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: inbox 新件收执→outbox/ack
+        run: |
+          set -e
+          python3 - <<'PYEOF'
+          import json,subprocess,datetime,os
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+          r=subprocess.run(['git','-c','core.quotepath=false','diff','--name-only','HEAD~1','HEAD'],capture_output=True,text=True)
+          files=[f for f in r.stdout.split() if f.startswith(('inbox/','.ci-inbox/')) and f.endswith(('.json','.md'))]
+          acks=[]
+          for f in files:
+              try:
+                  head=open(f,encoding='utf-8').read()[:600]
+              except Exception:
+                  head='(unreadable)'
+              acks.append({'file':f,'head_excerpt':head})
+          os.makedirs('outbox',exist_ok=True)
+          fn='outbox/ack-%s.json'%ts.replace(':','').replace('-','')[:15]
+          json.dump({'v':'LINE-INBOX-ACK-01','ts':ts,'n':len(acks),'acks':acks,'next':'线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)'},open(fn,'w'),ensure_ascii=False,indent=1)
+          print('acked',len(acks),'files ->',fn)
+          PYEOF
+          git config user.name "line-inbox-ack"; git config user.email "ack@ci-os.local"
+          git add outbox/
+          if git diff --cached --quiet; then echo no-change; else git commit -m "inbox收执 $(date -u +%H:%M:%SZ) [skip ci]"; BR=$(git rev-parse --abbrev-ref HEAD); git pull --rebase -q origin "$BR"; git push -q origin HEAD:"$BR"; fi
