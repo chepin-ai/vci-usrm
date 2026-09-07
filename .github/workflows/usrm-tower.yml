@@ -1,25 +1,39 @@
-name: usrm-tower
+name: USRM-TOWER-01
 on:
+  push:
+    paths: ['inbox/**', 'ci/usrm_tower.py']
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
   repository_dispatch:
-    types: [qf-beat, board-beat]
+    types: [usrm-tower-cascade, usrm-tower-kick]
   workflow_dispatch:
-  schedule:
-    - cron: "11,41 * * * *"  # 死手兜底30min错峰; 主驱=事件道(纯事件优先,C6同轨)
-permissions: {contents: write}
+    inputs:
+      selftest:
+        description: 'selftest=1 干跑(不级联)'
+        required: false
+        default: '0'
+concurrency:
+  group: ${{ github.event_name == 'repository_dispatch' && 'usrm-tower-chain' || 'usrm-tower-edge' }}
+  cancel-in-progress: ${{ github.event_name != 'repository_dispatch' }}
 jobs:
-  poll:
+  tower:
     runs-on: ubuntu-latest
+    timeout-minutes: 18
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: deps
-        run: pip install -q pyjwt cryptography
-      - name: run tower poller
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: beat
         env:
-          CMD_AUTH: ${{ secrets.CMD_AUTH }}
-        run: python3 ci/tower/usrm_tower.py
-      - name: push receipts
-        run: |
-          git config user.email "usrm-tower-ci@usrm.local"; git config user.name "usrm-tower-ci"
-          git add ci/tower/
-          git diff --cached --quiet || git commit -m "tower receipts [skip ci]"
-          git push
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINE_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          CASCADE_PAYLOAD: ${{ github.event.client_payload && toJSON(github.event.client_payload) || '' }}
+          CASCADE_SLEEP_S: ${{ inputs.selftest == '1' && '1' || '600' }}
+          SELFTEST: ${{ inputs.selftest || '0' }}
+        run: python3 ci/usrm_tower.py
