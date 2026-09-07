@@ -1,0 +1,23 @@
+name: usrm-tower
+on:
+  repository_dispatch:
+    types: [qf-beat, board-beat]
+  workflow_dispatch:
+  schedule:
+    - cron: "11,41 * * * *"  # 死手兜底30min错峰; 主驱=事件道(纯事件优先,C6同轨)
+permissions: {contents: write}
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: run tower poller
+        env:
+          GH_TOWER_READ: ${{ secrets.GH_TOWER_READ }}
+        run: python3 ci/tower/usrm_tower.py
+      - name: push receipts
+        run: |
+          git config user.email "usrm-tower-ci@usrm.local"; git config user.name "usrm-tower-ci"
+          git add ci/tower/
+          git diff --cached --quiet || git commit -m "tower receipts seq [skip ci]"
+          git push
