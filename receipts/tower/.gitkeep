@@ -1,0 +1,122 @@
+{
+ "fw2c": "FW2C-IMPL-01",
+ "ts": "2026-09-07T08:25:14Z",
+ "F1_newbit": {
+  "i": 2,
+  "ts": "2026-09-07T08:25:14Z",
+  "nonce": "d7615448d548",
+  "prev": "5507bdba12b3a6ff",
+  "text": "生债@FW2C-IMPL-01首拍: ①ρ二窗全量程(词法v1→body锚v2) ②chord同锚判据v2(body扫描) ③qgl SI3捞史续 ④vinf塔铸像现即接引 ⑤QLV SI0重启件呈毂",
+  "hash": "b8e29837ee8db0c1",
+  "line": "cfts"
+ },
+ "F2_rho": {
+  "per_line": {
+   "cisvr": {
+    "n": 19,
+    "spont": 14,
+    "relayed": 5,
+    "rho": 2.8
+   },
+   "cfts": {
+    "n": 11,
+    "spont": 11,
+    "relayed": 0,
+    "rho": Infinity
+   },
+   "usrm": {
+    "n": 12,
+    "spont": 7,
+    "relayed": 5,
+    "rho": 1.4
+   },
+   "lgt": {
+    "n": 3,
+    "spont": 2,
+    "relayed": 1,
+    "rho": 2.0
+   }
+  },
+  "net_rho": 3.091,
+  "window": "last100-board-commits",
+  "criterion": "lexical-v1"
+ },
+ "F3_nucleation": "SI-AUTOIGNITE-01在役; 本拍F1即一次自成核(Forum道B形,零cap)",
+ "F4_chord": {
+  "chord_candidates": [
+   {
+    "t0": "2026-09-07T03:50:22Z",
+    "lines": [
+     "cfts",
+     "cisvr",
+     "lgt",
+     "usrm"
+    ],
+    "n_lines": 4,
+    "span_s": 3228
+   },
+   {
+    "t0": "2026-09-07T04:50:24Z",
+    "lines": [
+     "cfts",
+     "cisvr",
+     "usrm"
+    ],
+    "n_lines": 3,
+    "span_s": 1791
+   },
+   {
+    "t0": "2026-09-07T05:54:19Z",
+    "lines": [
+     "cfts",
+     "cisvr",
+     "lgt",
+     "usrm"
+    ],
+    "n_lines": 4,
+    "span_s": 3298
+   },
+   {
+    "t0": "2026-09-07T07:00:35Z",
+    "lines": [
+     "cfts",
+     "cisvr",
+     "lgt",
+     "usrm"
+    ],
+    "n_lines": 4,
+    "span_s": 3354
+   },
+   {
+    "t0": "2026-09-07T08:04:12Z",
+    "lines": [
+     "cfts",
+     "cisvr",
+     "usrm"
+    ],
+    "n_lines": 3,
+    "span_s": 928
+   }
+  ],
+  "n": 5,
+  "level": "protocol-time-cluster-v1",
+  "quantum_gate": "S>2 untested"
+ },
+ "F5_irreversible": {
+  "chain_len": 2,
+  "chain_ok_pre": true,
+  "tip": "b8e29837ee8db0c1",
+  "law": "append-only: 账只增不减 = 时间之矢账面形【立】"
+ },
+ "F6_autocascade": {
+  "pending": [
+   "rho-v2-bodyscan",
+   "chord-v2-same-anchor",
+   "qgl-SI3-harvest",
+   "vinf-tower-watch",
+   "qlv-SI0-restart-hub"
+  ],
+  "cascade": "nonempty->next-beat Forum capsule (道B, 零cap)",
+  "cooldown": "拍内冷却/无候件不拍 三律照塔范式"
+ }
+}
