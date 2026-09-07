@@ -92,10 +92,9 @@ def main():
         newest = max(newest, rec["ts"])
     rc = {"ts": ts_now, "since": since, "newest": newest, "non_beacon": len(hits),
           "at_usrm": [h for h in hits if h.get("at_usrm")], "events": hits}
-    if rc["at_usrm"]:
-        json.dump({"needed": True, "refs": rc["at_usrm"], "ts": ts_now,
-                   "note": "塔件检出@usrm新动,候SI2注入面接;阅否自决,无债无令"},
-                  open(WAKE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"needed": bool(rc["at_usrm"]), "refs": rc["at_usrm"], "ts": ts_now,
+               "note": "塔件检出@usrm新动,候SI2注入面接;阅否自决,无债无令"},
+              open(WAKE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     emit(rc)
 
 if __name__ == "__main__":
