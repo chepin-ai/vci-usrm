@@ -80,6 +80,18 @@ def main():
     stj, _ = get_file('receipts/tower/state.json')
     state = json.loads(stj) if stj else {'idle': 0}
     events = patrol()
+    # PEER-SCAN-01: qgl chain-reaction
+    try:
+        st_peer, peer_items = api('GET', 'contents/receipts/tower', repo='chepin-ai/vci-qgl')
+        if st_peer == 200:
+            peer_names = sorted([i['name'] for i in peer_items if i['name'].startswith('QT-')])
+            if peer_names:
+                latest_peer = peer_names[-1]
+                last_peer = state.get('last_peer_receipt', '')
+                if latest_peer != last_peer:
+                    events.append({'kind': 'peer-qgl', 'ref': latest_peer})
+                    state['last_peer_receipt'] = latest_peer
+    except Exception: pass
     idle = state.get('idle', 0) + 1 if not events else 0
     memo = kimi_work(events) if events else ''
     receipt = {'v': 'USRM-TOWER-01', 'ts': ts, 'idle_in': state.get('idle', 0),
