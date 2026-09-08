@@ -80,17 +80,17 @@ def main():
     stj, _ = get_file('receipts/tower/state.json')
     state = json.loads(stj) if stj else {'idle': 0}
     events = patrol()
-    # PEER-SCAN-01: qgl chain-reaction
+    # BOARD-SCAN-01: scan ALL recent ci-inbox board posts as events
     try:
-        st_peer, peer_items = api('GET', 'contents/receipts/tower', repo='chepin-ai/vci-qgl')
-        if st_peer == 200:
-            peer_names = sorted([i['name'] for i in peer_items if i['name'].startswith('QT-')])
-            if peer_names:
-                latest_peer = peer_names[-1]
-                last_peer = state.get('last_peer_receipt', '')
-                if latest_peer != last_peer:
-                    events.append({'kind': 'peer-qgl', 'ref': latest_peer})
-                    state['last_peer_receipt'] = latest_peer
+        st_board, board_items = api('GET', 'contents/公告板', repo='chepin-ai/ci-inbox')
+        if st_board == 200:
+            board_names = sorted([i['name'] for i in board_items if i['name'].endswith('.md')])[-8:]
+            last_board = state.get('last_board_post', '')
+            for n in board_names:
+                if n > last_board:
+                    events.append({'kind': 'board-all', 'ref': n})
+            if board_names:
+                state['last_board_post'] = board_names[-1]
     except Exception: pass
     idle = state.get('idle', 0) + 1 if not events else 0
     memo = kimi_work(events) if events else ''
