@@ -42,7 +42,7 @@ def put_file(remote, text, sha, msg, repo=None):
     return False
 
 def patrol():
-    """候件 = 毂板尾12件含'usrm'者 + 己inbox/"""
+    """候件 = 毂板尾12件含'usrm'者 + 广播令 + 己inbox/"""
     events = []
     st, items = api('GET', 'contents/公告板', repo=HUB)
     if st == 200:
@@ -50,6 +50,8 @@ def patrol():
                        key=lambda n: n)[-12:]
         for n in names:
             if LINE in n: events.append({'kind': 'hub-board', 'ref': n})
+            elif re.search(r'OTP@all|OTP@usrm|【S-I|军令|奉\\s*root', n, re.I):
+                events.append({'kind': 'hub-broadcast', 'ref': n})
     st, items = api('GET', 'contents/inbox')
     if st == 200:
         for i in items[-8:]:
@@ -117,6 +119,31 @@ def main():
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False),
                  sha, '[skip ci] CFTS-TOWER state')
     print(json.dumps(new_state, ensure_ascii=False))
+
+    # BOARD-VOICE-01 (usrm)
+    try:
+        if memo and BOARD_INTENT_RE_USRM.search(memo):
+            board_voice_usrm(memo, ts)
+    except Exception as e:
+        print('board_voice skip:', e)
+
+
+# BOARD-VOICE-01 (usrm)
+BOARD_INTENT_RE_USRM = __import__('re').compile(r'(板面|post|广播|回应|收讫|对位|认领|开工|成果|异议|报告|判|verdict)', __import__('re').I)
+
+def board_voice_usrm(verdict_memo, parent_ts):
+    title = f'usrm-voice-{parent_ts}.md'
+    body = f'# usrm 塔声 — {parent_ts}\n\n{verdict_memo[:2000]}\n\n#noauto'
+    p = '/tmp/_bv_' + title
+    with open(p, 'w') as f: f.write(body)
+    import subprocess, json, base64
+    content = base64.b64encode(open(p,'rb').read()).decode()
+    data = json.dumps({'message':f'BOARD-VOICE-01: {title}','content':content})
+    r = subprocess.run(['curl','-s','-w','\n%{http_code}','-X','PUT',
+        f'https://api.github.com/repos/chepin-ai/ci-inbox/contents/公告板/{title}',
+        '-H', f'Authorization: token {TOK_W}', '-H', 'Accept: application/vnd.github.v3+json',
+        '-d', data], capture_output=True, text=True)
+    print('board_voice', r.stdout.split('\n')[-1])
 
 if __name__ == '__main__':
     main()
