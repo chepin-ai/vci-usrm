@@ -23,6 +23,7 @@ jobs:
     timeout-minutes: 18
     permissions:
       contents: write
+      actions: write   # 自醒链：塔内 dispatch 自唤下一拍
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
