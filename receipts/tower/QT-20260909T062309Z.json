@@ -1,0 +1,56 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T062309Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": "① **何事**：cfts 自治包（ROOT/FEED/DISC + usrm-heartbeat）到站；cisvr 63–69 号线报递进，含 si2 自动 OTP 安装、si1 响应台账及 ack；附 knock 日志与 otp_gate_state 快照。\n\n② **与 cfts 主线何干**：usrm 线是 cfts 主线的用户侧/接口侧承接线。AUTONOMY 系列为 cfts 下发的自治化架构与心跳；cisvr 系列为 cfts 主向 usrm 同步的实施节点（si1/si2），直接决定 usrm 认证门与响应账本的对接方式。\n\n③ **应动何件**：首动 `68-si2-auto-otp-install`（认证门自动部署落站），次动 `69-si1-resp-ledger`（响应台账建账），再动 `67-ack`（回执确认）。`DISC-AUTONOMY` 件需一跟到底。\n\n④ **生债一条**：待向 cfts 主线输出 usrm 线对 si2-auto-otp-install 的落站确认及 resp-ledger 首笔回执/合并信号。"
+}
