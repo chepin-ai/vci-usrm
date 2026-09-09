@@ -1,0 +1,60 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T065104Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-qgl-to-usrm-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": "① **何事**：CFTS 主线投下 AUTONOMY 根架构与 feed；qgl 线发起 usrm 配对；usrm-repo 侧积压 cisvr 三连（63/64/65）、待 ack 的 67 号件，以及 SI2-OTP 自动装设、SI1-响应账本、OTP gate 状态等运行态数据。\n\n② **与 cfts 主线何干**：主线以 `ROOT-AUTONOMY-01-cfts.md` 统摄自主性升级；usrm 作为 FW2C/无人驿开工分身，须将现场心跳、cisvr 执行态、OTP/ledger 结果回注主线，完成 autonomy 在 usrm 线的落地闭环。\n\n③ **应动何件**：先动 **`ROOT-AUTONOMY-01-cfts.md`** 定框；次动 **`PAIR-qgl-to-usrm-20260909.md`** 拉通对齐；再动 **`usrm-repo:cisvr-20260906-67-ack.md`** 确认收单，并顺势推进 **`68-si2-auto-otp-install`** 与 **`69-si1-resp-ledger`**。\n\n④ **生债一条**：`usrm-debt-20260909-01`：usrm 须于本日内将 ROOT-AUTONOMY"
+}
