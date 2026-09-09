@@ -1,0 +1,40 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T055636Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": "① 何事：cisvr 运行件（63–65）、SI2 自动 OTP 安装指令（68）、SI1 响应账本（69）、OTP 门状态及心跳 knock 的待处理队列。  \n② 与 cfts 主线何干：OTP 门控为 CFTS 主线过阀与访问的咽喉；SI1/SI2 环境状态直接决定主线可用性；账本与 ack 构成主线变更审计链。  \n③ 应动何件：即刻动 **68**（执行 SI2 OTP 自动安装并回写结果），同步动 **69**（核对 SI1 账本一致性），再动 **67-ack** 确认闭环；余件归档备查。  \n④ 生债一条：生「SI1/SI2 双环境 OTP 状态每日自动对账」债一条，防门控漂移影响 CFTS 主线。"
+}
