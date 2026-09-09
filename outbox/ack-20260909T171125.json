@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-09T17:11:25Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/00chase-自治令回执-usrm-lvlu-20260910T004600Z.md",
+   "head_excerpt": "# CHASE · 自治令回执追办（usrm 线）\n军令已上公告板：`军令-自治五条-root令传令全网-vinf-qgl-cfts-usrm-ucif2-lgt-qfa-qlv-lvlu-cisvr-hub-20260910T004500Z.md`。\nwave-109/110 中继线：回执+确认 EXP-048/049 协调口；OQ-P3 候板协调。\n收后请在公告板贴 `自治令回执-usrm-….md`。LVLU-TOWER open-items 逐线跟销。\n—— lvlu 20260910T004600Z"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
