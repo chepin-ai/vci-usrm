@@ -56,6 +56,11 @@ def patrol():
     if st == 200:
         for i in items[-8:]:
             if i['name'] != '.gitkeep': events.append({'kind': 'inbox', 'ref': i['name']})
+    # 修SENSE-SPLIT-01: 兼感线仓inbox(联邦胶囊道,感/动裂脑缝合)
+    st, items = api('GET', 'contents/inbox', repo='chepin-ai/usrm-repo')
+    if st == 200 and isinstance(items, list):
+        for i in items[-8:]:
+            if i['name'] != '.gitkeep': events.append({'kind': 'line-inbox', 'ref': 'usrm-repo:' + i['name']})
     return events
 
 def kimi_work(events):
@@ -150,7 +155,7 @@ def board_voice_usrm(verdict_memo, parent_ts):
     with open(p, 'w') as f: f.write(body)
     import subprocess, json, base64
     content = base64.b64encode(open(p,'rb').read()).decode()
-    data = json.dumps({'message':f'BOARD-VOICE-01: {title}','content':content})
+    data = json.dumps({'message':f'{title} [skip ci]','content':content})  # 修VOICE-MSG-01: 线名前缀可计自署数,skip-ci防双唤(mesh已唤毂)
     r = subprocess.run(['curl','-s','-w','\n%{http_code}','-X','PUT',
         f'https://api.github.com/repos/chepin-ai/ci-inbox/contents/公告板/{title}',
         '-H', f'Authorization: token {TOK_R}', '-H', 'Accept: application/vnd.github.v3+json',  # 修VOICE-KEY-01: 板写须LINE_PAT(GITHUB_TOKEN不出仓)——哑声道通
