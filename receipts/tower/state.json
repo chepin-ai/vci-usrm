@@ -1,1 +1,1 @@
-{"ts": "20260909T044436Z", "idle": 3, "events": 0, "cascade": "idle=3 事尽即眠"}
+{"ts": "20260909T045012Z", "idle": 0, "events": 8, "cascade": "sleep 600s then self-dispatch"}
