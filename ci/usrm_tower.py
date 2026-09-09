@@ -7,7 +7,7 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-usrm')
 TOK_W = os.environ.get('GITHUB_TOKEN')            # 本仓写(receipts/state)
 TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')  # 跨仓读(毂板)
 HUB = 'chepin-ai/ci-inbox'
-SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
+# N9: 拍内sleep级联退役(毂修25范式)——改事件链即时接力; 熔断=events空/idle>=MAX_IDLE
 MAX_IDLE = int(os.environ.get('CASCADE_MAX_IDLE', '30'))
 LINE = 'usrm'
 
@@ -121,11 +121,11 @@ def main():
             try:
                 p = json.loads(payload); idle = p.get('idle', idle)
             except Exception: pass
-        new_state['cascade'] = 'sleep %ds then self-dispatch' % SLEEP_S
+        new_state['cascade'] = 'event-chain self-dispatch (N9去sleep化)'
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False),
                  sha, '[skip ci] CFTS-TOWER state')
-        time.sleep(SLEEP_S)  # 拍内冷却(非定时器)
+        # N9: 去sleep——事件链即时接力, 零定时迹象
         st, _ = api('POST', 'dispatches',
                     {'event_type': 'usrm-tower-cascade',
                      'client_payload': {'idle': idle, 'parent': ts}}, write=True)
