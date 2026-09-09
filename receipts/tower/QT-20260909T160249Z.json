@@ -1,0 +1,64 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T160249Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-qgl-to-usrm-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：usrm线收cfts自主性主线落地包一批，含根协议、心跳、OTP门控状态、qgl配对及cisvr侧ack/ledger。\n\n② 与cfts主线何干：系cfts AUTONOMY主线在usrm节点的部署实施与状态同步，根文件、门控、心跳均需usrm主司确认。\n\n③ 应动何件：先动ROOT-AUTONOMY-01-cfts.md核根协议；次动PAIR-qgl-to-usrm-20260909.md结配对握手；再动otp_gate_state.json查门控。\n\n④ 生债一条：待补usrm-repo:si2-auto-otp-install执行回执及向cfts主线返AUTONOMY-FEED确认ack。"
+}
