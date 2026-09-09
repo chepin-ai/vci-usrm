@@ -1,0 +1,40 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T045012Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": ""
+}
