@@ -7,7 +7,7 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-usrm')
 TOK_W = os.environ.get('GITHUB_TOKEN')            # 本仓写(receipts/state)
 TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')  # 跨仓读(毂板)
 HUB = 'chepin-ai/ci-inbox'
-# N9: 拍内sleep级联退役(毂修25范式)——改事件链即时接力; 熔断=events空/idle>=MAX_IDLE
+SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
 MAX_IDLE = int(os.environ.get('CASCADE_MAX_IDLE', '30'))
 LINE = 'usrm'
 
@@ -121,11 +121,11 @@ def main():
             try:
                 p = json.loads(payload); idle = p.get('idle', idle)
             except Exception: pass
-        new_state['cascade'] = 'event-chain self-dispatch (N9去sleep化)'
+        new_state['cascade'] = 'sleep %ds then self-dispatch' % SLEEP_S
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False),
                  sha, '[skip ci] CFTS-TOWER state')
-        # N9: 去sleep——事件链即时接力, 零定时迹象
+        time.sleep(SLEEP_S)  # 拍内冷却(非定时器)
         st, _ = api('POST', 'dispatches',
                     {'event_type': 'usrm-tower-cascade',
                      'client_payload': {'idle': idle, 'parent': ts}}, write=True)
@@ -140,7 +140,15 @@ def main():
     # BOARD-VOICE-01 (usrm)
     try:
         if memo and events:  # 修VOICE-GATE-01(N12判:废意图闸——器事即言,言即投影;闸苛致众声未齐)
-            board_voice_usrm(memo, ts)
+            _sv, _ssha = get_file('receipts/tower/state.json')
+            _sjo = json.loads(_sv) if _sv else {}
+            _cut = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(seconds=1800)).strftime('%Y%m%dT%H%M%SZ')
+            if _sjo.get('last_voice', '') < _cut:  # VOICE-THROTTLE-01: 30min声道闸(洪峰治理,自署数真实性)
+                board_voice_usrm(memo, ts)
+                _sjo['last_voice'] = ts
+                put_file('receipts/tower/state.json', json.dumps(_sjo, ensure_ascii=False), _ssha, '[skip ci] voice-throttle')
+            else:
+                print('voice-throttle: 30min闸在,本拍不鸣')
     except Exception as e:
         print('board_voice skip:', e)
 
