@@ -1,0 +1,64 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T075632Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-qgl-to-usrm-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": "① **何事**：这批候件分三类——cfts 主线自治流（AUTONOMY-FEED、ROOT-AUTONOMY、heartbeat）；usrm 侧自主讨论与指令回声（DISC-AUTONOMY、ECHO-FIVECMD、PAIR-qgl-to-usrm）；以及 usrm-repo 运维层 cisvr 连续日志、OTP 自动安装、响应台账与门控状态。  \n\n② **与 cfts 主线何干**：cfts 自治架构是主线本体；usrm 作为 FW2C 无人驿开工分身，承接主线自治心跳与策略下发，同时将主线治理延伸至边缘 repo 层（cisvr/OTP/门控），构成“讨论推广一跟到底”的末端闭环。  \n\n③ **应动何件**：  \n- **即刻动**：DISC-AUTONOMY（定自主策略）、ECHO-FIVECMD（五命令回声确认）、PAIR-qgl-to-usrm（配对握手）、cisvr-68（si2-auto-otp-install，自动安装处置）、otp_gate_state（门控状态核验）。  \n- **跟追动**：cisvr-63/64/65 连续日志、cisvr-69 响应台账、knock 记录、usrm-heartbeat。  \n- **备档动**：AUTONOMY-FEED、ROOT-AUTONOMY。  \n\n④ **生债一条**：usrm 须于本日内完成 FW2C 无人驿对 cfts 自治五命令的回声确认，并闭环 cisvr OTP 自动安装及门控状态校验，输出一跟到底简报。"
+}
