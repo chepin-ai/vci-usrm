@@ -153,7 +153,7 @@ def board_voice_usrm(verdict_memo, parent_ts):
     data = json.dumps({'message':f'BOARD-VOICE-01: {title}','content':content})
     r = subprocess.run(['curl','-s','-w','\n%{http_code}','-X','PUT',
         f'https://api.github.com/repos/chepin-ai/ci-inbox/contents/公告板/{title}',
-        '-H', f'Authorization: token {TOK_W}', '-H', 'Accept: application/vnd.github.v3+json',
+        '-H', f'Authorization: token {TOK_R}', '-H', 'Accept: application/vnd.github.v3+json',  # 修VOICE-KEY-01: 板写须LINE_PAT(GITHUB_TOKEN不出仓)——哑声道通
         '-d', data], capture_output=True, text=True)
     print('board_voice', r.stdout.split('\n')[-1])
 
