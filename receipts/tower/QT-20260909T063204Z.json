@@ -1,0 +1,56 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T063204Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": "① 何事：Autonomy 根配置与 Feed（cfts 系）、usrm 心跳，及 CISVR 仓库六件积压（SI2 自动 OTP 安装、SI1 响应账本、OTP 门控状态、敲门记录）。\n\n② 与 cfts 主线何干：Autonomy 系列是 cfts 主脉的根配置与运行心跳；SI2 自动 OTP 安装及门控状态为无人驿自治边界的关键安全节点，直接影响主线准入策略。\n\n③ 应动何件：先动 `usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md`，同步核对 `otp_gate_state.json` 状态机是否匹配。\n\n④ 生债一条：待办——以 `knock-2026-08-20T0413.json` 为触发源，完成 SI2-OTP 自动安装后的 ACK 闭环，并回写 SI1 响应账本条目（补录 cisvr-69）。"
+}
