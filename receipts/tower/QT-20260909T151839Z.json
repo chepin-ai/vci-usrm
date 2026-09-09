@@ -1,0 +1,64 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T151839Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-qgl-to-usrm-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：usrm无人驿开工接收栈，含自主根协议（ROOT/AUTONOMY/FEED）、qgl跨线配对、usrm心跳、双实例cisvr（si1/si2）部署及OTP门控状态。\n\n② 与cfts主线何干：主线经ROOT-AUTONOMY与heartbeat向边缘无人驿下发自主运行基线，本栈为usrm线在该基线上的开工实例化投影。\n\n③ 应动何件：先动 **PAIR-qgl-to-usrm-20260909.md**（跨线握手），并行 **usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md** 与 **usrm-repo:otp_gate"
+}
