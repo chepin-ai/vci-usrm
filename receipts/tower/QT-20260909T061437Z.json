@@ -1,0 +1,56 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260909T061437Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260828-63.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-64.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  }
+ ],
+ "verdict_memo": "① **何事**：usrm-repo cisvr 链（63-69）已达 si2 自动 OTP 安装与 si1 响应账本双节点就绪，knock 接入与 otp_gate_state 同步刷新，AUTONOMY 主线心跳正常，无人驿具备开工条件。\n\n② **与 cfts 主线何干**：AUTONOMY-FEED/ROOT/DISC 及 usrm-heartbeat 构成 cfts 自主性治理主干，定自治规则与心跳基线；usrm-repo 侧 cisvr/si1/si2 为该主线下无人驿基础设施实例，otp_gate_state 与 knock 为 cfts 主线准入与门控状态表征。\n\n③ **应动何件**：应动 `usrm-repo:cisvr"
+}
