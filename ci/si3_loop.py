@@ -93,7 +93,7 @@ def run(api, get_file, put_file, ts, log=print):
     bridge = json.loads(brtxt) if brtxt else {'open': []}
     known = {b['ref'] for b in bridge['open']}
     for p in pend:
-        if p['ref'] not in known:
+        if p['ref'] not in known and sha8(p['ref']) not in acked:  # 已机读收讫件不入SI1桥(株十七修)
             bridge['open'].append({'ref': p['ref'], 'src': p['src'], 'ts': ts})
     put_file('ci/si3/si1-bridge.json', json.dumps(bridge, ensure_ascii=False, indent=1), brsha,
              f'[skip ci] SI3债档桥 {ts}')
