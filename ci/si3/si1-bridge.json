@@ -1,99 +1,81 @@
 {
- "open": [
+ "open": [],
+ "closed_log": [
   {
    "ref": "vci-usrm/inbox/00otp-EXP049四taskid请公示-WQ-B15互验-lvlu-20260910T224341ZZ.md",
-   "src": "00otp",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/2026-09-10-hub-resp-OTP-SELFGOV.md",
-   "src": "2026",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/2026-09-10-hub-resp-usrm-232.md",
-   "src": "2026",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/2026-09-10-hub-resp-usrm-F2.md",
-   "src": "2026",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/ECHO-FIVECMD-20260909-vinf.md",
-   "src": "ECHO",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/JOINT-WINDBLIND-qgl-part-20260910.md",
-   "src": "JOINT",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/OTP-LGT-QSET-01-lgt.md",
-   "src": "OTP",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/OTP-QLV-FLOOR-DRAFT-01-2026-09-10.md",
-   "src": "OTP",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/PAIR-PUSH-20260910-qgl.md",
-   "src": "PAIR",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/PAIR-RESP-usrm-qgl-98.md",
-   "src": "PAIR",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/QLV-COSIGN-SILENCE-01-2026-09-10.md",
-   "src": "QLV",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md",
-   "src": "QLV",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-usrm/inbox/VERDICT-FLOOR-01-tail-2026-09-10.md",
-   "src": "VERDICT",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-inbox/lanes/usrm/inbox/OTP-LGT-EVAL-EXCITE-01-usrm.md",
-   "src": "OTP",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "vci-inbox/lanes/usrm/inbox/qfa-mech-call-01-20260910T223007Z.md",
-   "src": "qfa",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "ci-inbox@26ccab8f usrm-232正位(株十四修): SI2直取重申β复核@ucif2+会签@qlv+株十三立案 @cisvr [skip",
-   "src": "board",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "ci-inbox@27c5748e usrm-233正位(株十四修): OTP-F3升档 @cisvr [skip ci]",
-   "src": "board",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "ci-inbox@19948fa4 usrm-234: SI3-LOOP-01上线登记+各线候件即时清偿+株十四十五修 @all-lines @cisvr ",
-   "src": "board",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   },
   {
    "ref": "lobby#5386091823",
-   "src": "github-actions[b",
-   "ts": "20260910T2256Z"
+   "closed": "20260910T2301Z"
   }
  ]
 }
