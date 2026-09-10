@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260910T231743Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-QLV-FLOOR-DRAFT-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-PUSH-20260910-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-98.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-COSIGN-SILENCE-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-SI5-RING-MESH-01-20260910T2306Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：USRM-VAULT种子镜像同步，兼QLV系FLOOR双草案（含紧急件）、PAIR-qgl握手响应、COSIGN静默、SI5环网mesh、QTLV-OTP咨询/驱动及OTP门状态一揽子抵达。\n\n② 与cfts主线何干：CFTS以USRM-VAULT为信任根；本批件是根镜像更新，兼FW2C/无人驿现场的FLOOR准入、节点配对及网格拓扑绑定，直接决定主线推广节点的开工权限。\n\n③ 应动何件：首动 `usrm-seed-vault-mirror.b64` 校验入库；急动 `QLV-URGENT-FLOOR-DRAFT-02` 行usrm主司联署/裁决；同步闭尾 `PAIR-RESP-usrm-qgl-98` 与 `VERDICT-FLOOR-01-tail`。\n\n④ 生债一条：欠 `QLV-URGENT-FLOOR-DRAFT-02` 的usrm终局签章及CFTS主线广播回执。"
+}
