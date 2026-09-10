@@ -1,0 +1,60 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260910T102838Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-PUSH-20260910-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-98.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：usrm侧自主性收口、vinf五命令回声、与qgl配对推拉（push/resp）及floor-01裁决落尾；vault积存otp门控、si2安装、si1账本及R2U01信标。\n\n② 与cfts主线何干：usrm为cfts末端执行/回执线，主司无人驿门控（otp gate）、pair耦合与verdict层尾部分发，替主线做最后一公里状态固化。\n\n③ 应动何件：即动`PAIR-RESP-usrm-qgl-98.md`回执与`VERDICT-FLOOR-01-tail`签认；顺扫`otp_gate_state.json`及`zzring2...信标R2U01`致qgl之应答。\n\n④ 生债一条：qgl pair终态未闭环，usrm须补发drive-otp回执或pair-close确认，滞债于floor-01 tail。"
+}
