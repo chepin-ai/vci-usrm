@@ -33,35 +33,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
   }
  ],
  "verdict_memo": "① **何事**：cfts 自治令（ROOT / FEED / 心跳）、qgl 配对请求、otp 门及 repo 多模块（cisvr、si1/si2 账本、knock、zzring 信标 R2U01）同步至 usrm 线。\n\n② **与 cfts 主线何干**：乃 cfts 自治骨架在 usrm 分身的落地——根令定策、心跳保活、otp / qgl / zzring 完成节点级协议握手，缺一则主线闭环断裂。\n\n③ **应动何件**：先动 `ROOT-AUTONOMY-01-cfts.md` 定调；次动 `PAIR-qgl-to-usrm` 确认配对；再动 `si2-auto-otp-install` 执行落地；终以 `usrm-heartbeat-01-cfts.md` 回执收口。\n\n④ **生债一条**：usrm 须在下次心跳周期内提交《otp 门全节点闭合确认》（`usrm-otp-closure-01-cfts.md`），清掉"

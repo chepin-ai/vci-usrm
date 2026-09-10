@@ -21,35 +21,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
  "verdict_memo": "① 何事：无人驿开工同步包，含CFTS-AUTONOMY主线输入、usrm心跳、cisvr侧SI2 OTP自动安装、SI1响应账本及门控状态。  \n② 与cfts主线何干：此批件为CFTS自主性架构在usrm节点的端到端落地执行流，心跳保活，cisvr筑基，一跟到底。  \n③ 应动何件：先动`67-ack`回执，继动`68-si2-auto-otp-install`执行，联动`69-si1-resp-ledger`入账；余件归档待扫。  \n④ 生债一条：`DEBT-usrm-20260909-01` SI2 OTP装毕须回传`otp_gate_state.json`验证戳并闭环SI1销账。"

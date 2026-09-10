@@ -29,36 +29,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
   }
  ],
- "verdict_memo": "① **usrm 线汇总 cfts 主线自主性心跳、OTP 门控状态及 si1/si2 会话账，兼收 qgl 跨线配对请求。**\n\n② **诸件皆为 cfts 主线 autonomy feed / root / heartbeat 的下游支线响应；usrm 作为 FW2C 分身，须向主线回传 ack 并维持 otp_gate_state 同步。**\n\n③ **先动** `usrm-repo:cisvr-20260906-69-si1-resp-ledger` **入账，次动** `usrm-repo:cisvr-20260906-68-si2-auto-otp-install` **上线，再收** `PAIR-qgl-to-usrm-20260909.md` **完成跨线绑定；余件按 heartbeat 常规消化。**\n\n④ **生债：si2 OTP 装验毕后，补录 usrm autonomy echo 回执至 cfts 主线，闭环。**"
+ "verdict_memo": "① **usrm 线汇总 cfts 主线自主性心跳、OTP 门控状态及 si1/si2 会话账，兼收 qgl 跨线配对请求。**\n\n② **诸件皆为 cfts 主线 autonomy feed / root / heartbeat 的下游支线响应；usrm 作为 FW2C 分身，须向主线回传 ack 并维持 otp_gate_state 同步。**\n\n③ **先动** `USRM-VAULT:cisvr-20260906-69-si1-resp-ledger` **入账，次动** `USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install` **上线，再收** `PAIR-qgl-to-usrm-20260909.md` **完成跨线绑定；余件按 heartbeat 常规消化。**\n\n④ **生债：si2 OTP 装验毕后，补录 usrm autonomy echo 回执至 cfts 主线，闭环。**"
 }

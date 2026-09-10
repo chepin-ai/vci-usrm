@@ -60,7 +60,7 @@ def patrol():
     st, items = api('GET', 'contents/inbox', repo='chepin-ai/usrm-repo')
     if st == 200 and isinstance(items, list):
         for i in items[-8:]:
-            if i['name'] != '.gitkeep': events.append({'kind': 'line-inbox', 'ref': 'usrm-repo:' + i['name']})
+            if i['name'] != '.gitkeep': events.append({'kind': 'line-inbox', 'ref': 'USRM-VAULT:' + i['name']})
     return events
 
 def kimi_work(events):
@@ -85,7 +85,7 @@ def main():
     stj, _ = get_file('receipts/tower/state.json')
     state = json.loads(stj) if stj else {'idle': 0}
     events = patrol()
-    # BOARD-SCAN-01: scan ALL recent ci-inbox board posts as events
+    # BOARD-SCAN-01: scan ALL recent HUB-MAIL board posts as events
     try:
         st_board, board_items = api('GET', 'contents/公告板', repo='chepin-ai/ci-inbox')
         if st_board == 200:

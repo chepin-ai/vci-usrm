@@ -17,35 +17,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
  "verdict_memo": "① 何事：usrm 无人驿自治根（ROOT-AUTONOMY）与心跳刷新，叠加 cisvr 侧 SI2 自动 OTP 安装、SI1 响应账本、门控状态"

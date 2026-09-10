@@ -29,36 +29,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
   }
  ],
- "verdict_memo": "① **何事**：usrM 线无人驿开工，积压 14 件。核心为三类：CFTS 自主化根配置/心跳/馈入（AUTONOMY、ROOT、heartbeat）、跨节点协议对件（QGL→usrm PAIR、VINF ECHO）、cisvr 仓库 OTP 门控与 SI2 自动安装/ack/ledger。\n\n② **与 cfts 主线何干**：直接挂载 `cfts` 标的件（AUTONOMY-FEED、ROOT-AUTONOMY、heartbeat）是主线向 usrm 节点下发的自主化拓扑与存活基准；`usrm-repo` 系列为 CFTS 接入层（cisvr）的 OTP 门控与实例安装日志；PAIR/ECHO 属于 CFTS 多节点协议对齐与指令回声链路，整体是主线在 usrm 无人驿的落点。\n\n③ **应动何件**（按优先级）：\n- `PAIR-qgl-to-usrm-20260909.md`：跨节点对件，阻塞后续拓扑协商，先 ack/对账。\n- `usrm-heartbeat-01-cfts.md`：上报节点存活，防止主线判定失联。\n- `usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md`：SI2 自动安装，决定新实例接入能力。\n- `usrm-repo:otp_gate_state.json` + `qtlv-1788947010-consult-otp.md`：门控状态与 QTLV 咨询，需一并确认放行条件。\n\n④ **生债一条**：\n`DEBT-usrm-20260909-01`：usrM 无人驿开工首响后，须于当日闭环 QGL PAIR 对账、提交 heartbeat 回执，并输出 cisvr OTP/SI2 安装结果摘要，未完结项不得过夜。"
+ "verdict_memo": "① **何事**：usrM 线无人驿开工，积压 14 件。核心为三类：CFTS 自主化根配置/心跳/馈入（AUTONOMY、ROOT、heartbeat）、跨节点协议对件（QGL→usrm PAIR、VINF ECHO）、cisvr 仓库 OTP 门控与 SI2 自动安装/ack/ledger。\n\n② **与 cfts 主线何干**：直接挂载 `cfts` 标的件（AUTONOMY-FEED、ROOT-AUTONOMY、heartbeat）是主线向 usrm 节点下发的自主化拓扑与存活基准；`USRM-VAULT` 系列为 CFTS 接入层（cisvr）的 OTP 门控与实例安装日志；PAIR/ECHO 属于 CFTS 多节点协议对齐与指令回声链路，整体是主线在 usrm 无人驿的落点。\n\n③ **应动何件**（按优先级）：\n- `PAIR-qgl-to-usrm-20260909.md`：跨节点对件，阻塞后续拓扑协商，先 ack/对账。\n- `usrm-heartbeat-01-cfts.md`：上报节点存活，防止主线判定失联。\n- `USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md`：SI2 自动安装，决定新实例接入能力。\n- `USRM-VAULT:otp_gate_state.json` + `qtlv-1788947010-consult-otp.md`：门控状态与 QTLV 咨询，需一并确认放行条件。\n\n④ **生债一条**：\n`DEBT-usrm-20260909-01`：usrM 无人驿开工首响后，须于当日闭环 QGL PAIR 对账、提交 heartbeat 回执，并输出 cisvr OTP/SI2 安装结果摘要，未完结项不得过夜。"
 }

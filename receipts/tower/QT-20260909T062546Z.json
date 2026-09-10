@@ -21,36 +21,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
- "verdict_memo": "① 何事：cfts AUTONOMY 根/馈/议 3件、usrm 心跳 1件、cisvr 工程序列（63–69）5件、knock/OTP 门控 2件，共12件候件到岗。  \n② 与cfts主线何干：AUTONOMY 系列直接写入 cfts 主线自治层；usrm heartbeat、cisvr 工程、OTP 门控为该层在无人驿的工位执行与体征回显。  \n③ 应动何件：先动 **DISC-AUTONOMY-20260909-usrm.md**（议而决），连动 **usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md**（决而行），并带 **usrm-repo:otp_gate_state"
+ "verdict_memo": "① 何事：cfts AUTONOMY 根/馈/议 3件、usrm 心跳 1件、cisvr 工程序列（63–69）5件、knock/OTP 门控 2件，共12件候件到岗。  \n② 与cfts主线何干：AUTONOMY 系列直接写入 cfts 主线自治层；usrm heartbeat、cisvr 工程、OTP 门控为该层在无人驿的工位执行与体征回显。  \n③ 应动何件：先动 **DISC-AUTONOMY-20260909-usrm.md**（议而决），连动 **USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md**（决而行），并带 **USRM-VAULT:otp_gate_state"
 }

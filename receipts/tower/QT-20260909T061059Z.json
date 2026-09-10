@@ -21,36 +21,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
- "verdict_memo": "①何事：cfts主线usrm自治架构件（AUTONOMY根/馈/心跳）与cisvr无人驿执行层运维件（SI1/SI2、OTP门控、knock）批量入线。\n\n②与cfts主线何干：AUTONOMY系列及usrm-heartbeat是主线自治协议本体；cisvr-repo各件是usrm分身在线边仓/无人驿的落地反射，属cfts主线的末端执行链。\n\n③应动何件：应动两件——DISC-AUTONOMY-20260909-usrm.md（讨论推广须一跟到底）；usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md（SI2自动OTP门控安装，直接关系无人驿开工安全）。\n\n④生债一条：usrm-repo:cisvr-20260906-67-ack.md未复ack，致si2-install前置条件与si1-resp-ledger时序链悬空，须补ack闭合。"
+ "verdict_memo": "①何事：cfts主线usrm自治架构件（AUTONOMY根/馈/心跳）与cisvr无人驿执行层运维件（SI1/SI2、OTP门控、knock）批量入线。\n\n②与cfts主线何干：AUTONOMY系列及usrm-heartbeat是主线自治协议本体；cisvr-repo各件是usrm分身在线边仓/无人驿的落地反射，属cfts主线的末端执行链。\n\n③应动何件：应动两件——DISC-AUTONOMY-20260909-usrm.md（讨论推广须一跟到底）；USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md（SI2自动OTP门控安装，直接关系无人驿开工安全）。\n\n④生债一条：USRM-VAULT:cisvr-20260906-67-ack.md未复ack，致si2-install前置条件与si1-resp-ledger时序链悬空，须补ack闭合。"
 }

@@ -17,35 +17,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
  "verdict_memo": "① 何事：usrm 仓库馈入的一批 cfts 自主运行件，含根自主协议、心跳、cisvr 服务实例日志（si1/si2 账本、OTP 门状态、自动安装）及接入敲门。\n\n② 与 cfts 主线何干：这些是 cfts 主线的边缘状态回执与执行馈入；heartbeat/autonomy-feed 供主线感知存活性，cisvr 系列是 SI 层对主线的门控与安装响应。\n\n③ 应动何件：优先动 `cisvr-20260906-68-si2-auto-otp-install.md` 与 `otp_gate_state.json`，二者构成门控安装闭环；次动 `si1-resp-ledger.md` 对账。\n\n④ 生债一条：`[DEBT-cfts-otp-gate-01]` 须核验 si2-auto-otp-install 已在目标节点实机点火成功，并将 gate_state 回写至主线 ledger，否则后续 knock 阻塞。"

@@ -29,35 +29,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
   }
  ],
  "verdict_memo": "① **何事**：usrm线自治与心跳同步、跨线配对（qgl/vinf）、cisvr现场OTP门控及SI1/SI2安装回执。  \n② **与cfts主线何干**：cfts主线以ROOT-AUTONOMY/heartbeat向usrm供给自治根；usrm须将cisvr现场门控与SI落地状态回写主线，构成“根-线-场”闭环。  \n③ **应动何件**：  \n- 急动：`otp_gate_state.json` + `qtlv-1788947010-consult-otp.md`（开工门控决断）；  \n- 跟动：`PAIR-qgl-to-usrm-20260909.md`（跨线配对确认）、`cisvr-20260906-69-si1-resp-ledger.md`（SI1台账闭环）；  \n- 锚动：`ROOT-AUTONOMY-01-cfts.md` + `usrm-heartbeat-01-cfts.md`（主线状态同步）。  \n④ **生债一条**：生债《usrm-cisvr OTP开工门控及SI1/SI2落地回执》一份，限时提送cfts主线闭环。"

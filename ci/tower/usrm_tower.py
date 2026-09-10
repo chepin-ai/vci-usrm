@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """usrm-tower poller v0.2 — SI2 塔件（WEAN-01 自有唤醒源·仓侧巡塔）
-v0.2: 内嵌迷你复活道——CMD_AUTH(secret,64hex两半直拼)→fernet 解公仓 vault→mint installation token→巡 ci-inbox 公告板
+v0.2: 内嵌迷你复活道——CMD_AUTH(secret,64hex两半直拼)→fernet 解公仓 vault→mint installation token→巡 HUB-MAIL 公告板
 面: 板面差集轮检 → receipts 归档 → @usrm 命中置 wake-needed 旗标
 轨: 主驱=repository_dispatch(qf-beat/board-beat)事件; schedule=死手兜底(30min错峰); 纯事件优先
 律: 单写入者(唯写自仓 ci/tower/); E804 密钥零入文零回显(全程环境变量); R1 公面纯状态语言

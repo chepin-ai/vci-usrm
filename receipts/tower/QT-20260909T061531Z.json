@@ -21,36 +21,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
- "verdict_memo": "① 何事：usrm线自主神经件（AUTONOMY/ROOT/heartbeat）与cisvr双实例（SI1/SI2）门控日志、OTP装置、应答账本及敲门记录。\n\n② 与cfts主线何干：前者是CFTS自主框架在usrm节点的元数据与生命体征；后者是usrm线对CFTS主线SI1/SI2运维操作的落库回执。\n\n③ 应动何件：先动 `usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md`（SI2门控装置），同步检 `otp_gate_state.json`，再动 `usrm-repo:cisvr-20260906-69-si1-resp-ledger.md` 封账。\n\n④ 生债：`DEBT-usrm-20260909-01：SI2-OTP装妥待ack，SI1-ledger待封。责：usrm主司。限：即日cycle。`"
+ "verdict_memo": "① 何事：usrm线自主神经件（AUTONOMY/ROOT/heartbeat）与cisvr双实例（SI1/SI2）门控日志、OTP装置、应答账本及敲门记录。\n\n② 与cfts主线何干：前者是CFTS自主框架在usrm节点的元数据与生命体征；后者是usrm线对CFTS主线SI1/SI2运维操作的落库回执。\n\n③ 应动何件：先动 `USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md`（SI2门控装置），同步检 `otp_gate_state.json`，再动 `USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md` 封账。\n\n④ 生债：`DEBT-usrm-20260909-01：SI2-OTP装妥待ack，SI1-ledger待封。责：usrm主司。限：即日cycle。`"
 }

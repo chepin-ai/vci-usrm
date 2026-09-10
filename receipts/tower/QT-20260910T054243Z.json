@@ -33,35 +33,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
   }
  ],
  "verdict_memo": "① **何事**：usrm-lvlu自治令回执到达，无人驿开工；repo侧累积cisvr SI2-OTP安装、SI1响应账本、OTP门状态及qgl配对信标待处理。\n\n② **与cfts主线何干**：cfts主线（`ROOT-AUTONOMY`/`AUTONOMY-FEED`/`heartbeat`）为自治根脉，usrm线作为lvlu执行层，须将repo技术栈（OTP门、SI安装、账本）回注主线，完成自治闭环。\n\n③ **应动何件**：  \n- 令件：`00chase-自治令回执-usrm-lvlu`  \n- 工位：`cisvr-68`（SI2-OTP自动安装）、`"

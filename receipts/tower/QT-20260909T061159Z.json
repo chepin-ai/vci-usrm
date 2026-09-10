@@ -21,36 +21,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260828-63.md"
+   "ref": "USRM-VAULT:cisvr-20260828-63.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   }
  ],
- "verdict_memo": "① 何事：usrm 线无人驿自治开工批件到齐，含 AUTONOMY 根/馈/议三连、cfts 侧 usrm 心跳、cisvr 的 SI2 自动 OTP 门控、SI1 响应账本、knock 事件及门态同步。\n\n② 与cfts主线何干：为 cfts 主线注入 usrm 无人驿自治能力提供 FW2C 握手输入；根策略、门控、账本、心跳四件是主线自治闭环的 usrm 侧前置。\n\n③ 应动何件：并行动 `ROOT-AUTONOMY-01-cfts.md`（定自治根策略）与 `usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md`（解门控阻塞），同步落 `usrm-repo:cisvr-20260906-67-ack.md`（回执确认）。\n\n④ 生债一条：`usrm-autonomy-otp-gate-sync`——SI2 自动 OTP 门控逻辑与 cfts 主线 AUTONOMY 根策略尚未联调，待闭环验证。"
+ "verdict_memo": "① 何事：usrm 线无人驿自治开工批件到齐，含 AUTONOMY 根/馈/议三连、cfts 侧 usrm 心跳、cisvr 的 SI2 自动 OTP 门控、SI1 响应账本、knock 事件及门态同步。\n\n② 与cfts主线何干：为 cfts 主线注入 usrm 无人驿自治能力提供 FW2C 握手输入；根策略、门控、账本、心跳四件是主线自治闭环的 usrm 侧前置。\n\n③ 应动何件：并行动 `ROOT-AUTONOMY-01-cfts.md`（定自治根策略）与 `USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md`（解门控阻塞），同步落 `USRM-VAULT:cisvr-20260906-67-ack.md`（回执确认）。\n\n④ 生债一条：`usrm-autonomy-otp-gate-sync`——SI2 自动 OTP 门控逻辑与 cfts 主线 AUTONOMY 根策略尚未联调，待闭环验证。"
 }

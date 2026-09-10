@@ -29,36 +29,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-64.md"
+   "ref": "USRM-VAULT:cisvr-20260829-64.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260829-65.md"
+   "ref": "USRM-VAULT:cisvr-20260829-65.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:otp_gate_state.json"
+   "ref": "USRM-VAULT:otp_gate_state.json"
   },
   {
    "kind": "line-inbox",
-   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
   }
  ],
- "verdict_memo": "① **何事**  \n多件同涌入线：cfts 主线 autonomy 根协议与反馈流（ROOT-AUTONOMY / AUTONOMY-FEED）、usrm 心跳报活、qgl→usrm 配对指令、vinf 五指令回声，以及 cisvr 工区的一簇落地件（si2 自动 OTP 安装、si1 响应账本、knock 记录、otp_gate 状态、qtlv 门控咨询）。简言之：**usrm 无人驿开工分身启动前的全量对表与门控触发**。\n\n② **与 cfts 主线何干**  \n全部件皆为 cfts 主线下 autonomy 域向 usrm 执行层的贯通包。ROOT/FORCE-FEED 是主线给出的自治根定义；heartbeat 是主线在 usrm 节点的脉动；cisvr 系列是主线基础设施在工区的硬接线；PAIR-qgl 是主线分派的对子任务。**主线指令下沉，工区分身接件须回证**。\n\n③ **应动何件**  \n按 usrm 开工顺序：  \n1. 先动 `usrm-heartbeat-01-cfts.md` —— 报活，确认分身在线；  \n2. 次动 `PAIR-qgl-to-usrm-20260909.md` —— 完成 qgl 配对握手，建主通道；  \n3. 再动 `usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md` —— 执行 si2 自动 OTP 安装，打通门控前提；  \n4. 并行 `knock-2026-08-20T0413.json` + `otp_gate_state.json` —— 敲门并回读门态；  \n5. 末动 `DISC-AUTONOMY-20260909-usrm.md` / `ROOT-AUTONOMY-01-cfts.md` —— 回写 autonomy 讨论纪要并确认根协议；  \n6. 债务归集到 `usrm-repo"
+ "verdict_memo": "① **何事**  \n多件同涌入线：cfts 主线 autonomy 根协议与反馈流（ROOT-AUTONOMY / AUTONOMY-FEED）、usrm 心跳报活、qgl→usrm 配对指令、vinf 五指令回声，以及 cisvr 工区的一簇落地件（si2 自动 OTP 安装、si1 响应账本、knock 记录、otp_gate 状态、qtlv 门控咨询）。简言之：**usrm 无人驿开工分身启动前的全量对表与门控触发**。\n\n② **与 cfts 主线何干**  \n全部件皆为 cfts 主线下 autonomy 域向 usrm 执行层的贯通包。ROOT/FORCE-FEED 是主线给出的自治根定义；heartbeat 是主线在 usrm 节点的脉动；cisvr 系列是主线基础设施在工区的硬接线；PAIR-qgl 是主线分派的对子任务。**主线指令下沉，工区分身接件须回证**。\n\n③ **应动何件**  \n按 usrm 开工顺序：  \n1. 先动 `usrm-heartbeat-01-cfts.md` —— 报活，确认分身在线；  \n2. 次动 `PAIR-qgl-to-usrm-20260909.md` —— 完成 qgl 配对握手，建主通道；  \n3. 再动 `USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md` —— 执行 si2 自动 OTP 安装，打通门控前提；  \n4. 并行 `knock-2026-08-20T0413.json` + `otp_gate_state.json` —— 敲门并回读门态；  \n5. 末动 `DISC-AUTONOMY-20260909-usrm.md` / `ROOT-AUTONOMY-01-cfts.md` —— 回写 autonomy 讨论纪要并确认根协议；  \n6. 债务归集到 `USRM-VAULT"
 }
