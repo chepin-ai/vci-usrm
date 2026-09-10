@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260910T183118Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "JOINT-WINDBLIND-qgl-part-20260910.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "OTP-QLV-FLOOR-DRAFT-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-PUSH-20260910-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-98.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "①何事：qgl与usrm的PAIR对码（PUSH/RESP）已交互至第98轮；OTP-QLV地板草案及裁决尾部待审；VAULT金库种子镜像、门状态及SI1/SI2账到达；另有vinf五指令回声、风盲联合件汇入。\n\n②与cfts主线何干：本轮件提供根层锚定（FLOOR/OTP定稿）与实体双向绑定（PAIR闭环）凭证，是cfts主线推进状态共识与跨线结算的必要输入。\n\n③应动何件：首动PAIR-RESP-usrm-qgl-98（完成对码闭环）；次动OTP-QLV-FLOOR-DRAFT-01（审地板草案并回执）；同步验usrm-seed-vault-mirror.b64（核种子完整性）。\n\n④生债一条：JOINT-WINDBLIND-qgl-part已到，usrm侧回件未出，风盲联合件半悬，此为一债。"
+}
