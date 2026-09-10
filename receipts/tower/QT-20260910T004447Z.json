@@ -1,0 +1,68 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260910T004447Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00chase-自治令回执-usrm-lvlu-20260910T004600Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-qgl-to-usrm-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-heartbeat-01-cfts.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260829-65.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "usrm-repo:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：CFTS主线自治根/心跳/Feed、QGL外环配对与信标R2U01、以及SI/OTP门控安装与Consult等一揽子候件到达usrm线，需开工分拣并一跟到底。\n\n② 与cfts主线何干：ROOT-AUTONOMY、AUTONOMY-FEED、usrm-heartbeat、DISC-AUTONOMY四件直接锚定CFTS主线自治协议；其余OTP/PAIR/QGL属usrm网关层，处理结果须向主线回写ledger与ack。\n\n③ 应动何件：先动 ROOT-AUTONOMY-01-cfts、AUTONOMY-FEED-01-cfts、PAIR-qgl-to-usrm、zzring2-lvlu-usrm-信标R2"
+}
