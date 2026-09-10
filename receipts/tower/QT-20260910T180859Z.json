@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260910T180859Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "JOINT-WINDBLIND-qgl-part-20260910.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "OTP-QLV-FLOOR-DRAFT-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-PUSH-20260910-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-98.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：usrm‑qgl 配对闭环、OTP Floor‑01 草案裁定及 usrm 种子库镜像同步，触发无人驿开工分身就位。\n\n② **与 cfts 主线何干**：usrm 为 CFTS 接入层信任锚；本次配对收尾与 OTP 楼层判决直接决定 qgl 节点能否合规并网，关乎主线拓扑与门控完整性。\n\n③ **应动何件**：主响 **`PAIR-RESP-usrm-qgl-98.md`**，副参 **`VERDICT-FLOOR-01-tail-2026-09-10.md`**，并同步入库 **`usrm-seed-vault-mirror.b64`**。\n\n④ **生债一条**：`[债] 待向 qgl 回传 usrm-qgl-98 配对确认及 OTP Floor-01 执行回执，锁死楼层状态。`"
+}
