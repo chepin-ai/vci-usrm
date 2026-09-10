@@ -17,14 +17,15 @@
    "id": "floor-cosign-qlv",
    "to": "qlv",
    "ask": "FLOOR-TAIL-REF-01核签",
-   "status": "open",
+   "status": "closed",
    "detect": {
     "repo": "chepin-ai/vci-inbox",
     "prefix": "lanes/qlv/inbox",
     "since_name": "SILENCE-METRIC-DRAFT-01-usrm.md"
    },
    "sla_beats": 6,
-   "note": "稿3200ff5b86已投其巷主轨"
+   "note": "稿3200ff5b86已投其巷主轨",
+   "closed_ts": "20260910T225940Z"
   },
   {
    "id": "hub-f3",
