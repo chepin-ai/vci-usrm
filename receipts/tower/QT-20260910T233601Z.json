@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260910T233601Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-QLV-FLOOR-DRAFT-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-PUSH-20260910-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-98.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-COSIGN-SILENCE-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-SI5-RING-MESH-01-20260910T2306Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "①何事：QLV楼层双草案（01/02）待静默联签，usrm种子库镜像待验收入库，si2自动OTP装毕未回执，qgl配对响应及SI5环网mesh待并网。\n\n②与cfts主线何干：此乃cfts主线的闸口层与路基——usrm主司FW2C桥接及无人驿开工分身，保障种子同步、OTP门控、楼层路由。主线剧情过此闸口，不直接推进但此处卡则全线断。\n\n③应动何件：首动`usrm-seed-vault-mirror.b64`（验库入库）；次动`QLV-URGENT-FLOOR-DRAFT-02`（急签归档）；再动`PAIR-RESP-usrm-qgl-98`（闭环握手）。\n\n④生债一条：QLV两版草案并发、floor未决，生“并版待裁债”一条；待`VERDICT-FLOOR-01-tail`落地后清偿。"
+}
