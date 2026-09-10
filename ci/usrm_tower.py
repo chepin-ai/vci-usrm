@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # USRM-TOWER-01 — cfts线SI0塔（塔范式第六器·互激最小环一足）
 # 五律: 零定时器 / 自级联(候件非空→自POST dispatch) / 防自激三律 / 钥在仓 / 拍尾生债
-import os, json, time, base64, urllib.request, datetime, subprocess, sys
+import os, json, time, base64, urllib.request, datetime, subprocess, sys, re
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-usrm')
 TOK_W = os.environ.get('GITHUB_TOKEN')            # 本仓写(receipts/state)
@@ -69,7 +69,7 @@ def kimi_work(events):
     memo_in = json.dumps(events, ensure_ascii=False)[:1500]
     req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
         method='POST', data=json.dumps({
-            'model': 'kimi-k2.6', 'max_completion_tokens': 1600,
+            'model': 'kimi-k2.6', 'max_completion_tokens': 12288,
             'messages': [
                 {'role': 'system', 'content': '你是 usrm 线（usrm 主司）/FW2C/讨论推广一跟到底）无人驿开工分身。读候件，用中文答四件:①何事②与cfts主线何干③应动何件④生债一条。简。'},
                 {'role': 'user', 'content': '候件:' + memo_in}]}).encode(),
@@ -136,6 +136,15 @@ def main():
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False),
                  sha, '[skip ci] CFTS-TOWER state')
     print(json.dumps(new_state, ensure_ascii=False))
+
+    # SI3-LOOP-01: 专候即时响应环+索件轨+债档桥(root六条令/qlv大讨论①/qfa M2M3)
+    try:
+        sys.path.insert(0, 'ci')
+        import si3_loop
+        r3 = si3_loop.run(api, get_file, put_file, ts)
+        print('SI3-LOOP-01', json.dumps(r3, ensure_ascii=False))
+    except Exception as e:
+        print('SI3-LOOP-01 skip:', e)
 
     # BOARD-VOICE-01 (usrm)
     try:
