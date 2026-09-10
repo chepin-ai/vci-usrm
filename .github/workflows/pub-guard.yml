@@ -20,7 +20,7 @@ jobs:
           quar=[]
           for p in changed:
               if not p.endswith('.md') or not os.path.isfile(p): continue
-              if p.startswith(('bridge/guard/','guard/quarantine/')): continue
+              if p.startswith(('bridge/guard/','guard/quarantine/','inbox/','lanes/','outbox/','公告板/')): continue  # F1: 道内邮件免即时迁
               if p in ('README.md','INDEX.md','MANIFEST.md'): continue
               try: htxt=open(p,encoding='utf-8').read()[:2000]
               except Exception: continue
