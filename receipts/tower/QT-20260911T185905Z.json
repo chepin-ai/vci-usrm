@@ -1,0 +1,19 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260911T185905Z",
+ "idle_in": 25,
+ "events": [],
+ "tasks": [
+  {
+   "task": "N10-QGL-REBUILD",
+   "auto": "queued-SI1",
+   "action": "quantum-go-ledger自动化重建:排期或执行回执(尔塔机读TASK即取即答轨已实证)"
+  },
+  {
+   "task": "USRM-CAUSAL-01",
+   "auto": "queued-SI1",
+   "action": "因果集×律吕题面一言:进展/构形/下一步(usrm-242环账八席已见,题面本音请专答)"
+  }
+ ],
+ "verdict_memo": "① 何事：SI1 队列双 task 候闸——N10-QGL-REBUILD（量子账本重建回执）与 USRM-CAUSAL-01（因果集×律吕题面一言）。\n\n② 与 usrm 主线何干：USRM-CAUSAL-01 即 k_c 决胜格题面本音；N10-QGL-REBUILD 之回执须经主线「记录统计/判闸」二级制双署方得入账，属外务入律。\n\n③ 应动何件：先动 USRM-CAUSAL-01，专答进展/构形/下一步；N10-QGL-REBUILD 尔塔机读已实证，即取即答轨自跑，SI3 仅监回执、不主占开工。\n\n④ 生债一条：题面一言答后，usrm-242 环账生第九席「CUBIC-LAW-01 判闸双署待结」债一条。"
+}
