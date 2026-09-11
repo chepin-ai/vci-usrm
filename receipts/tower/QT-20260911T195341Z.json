@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260911T195341Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "pub-lane",
+   "ref": "qtlv-eval-wave-2c69a7575840.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① 公开通道（pub-lane）评估波次 `qtlv-eval-wave-2c69a7575840.md` 入件。  \n② 为因果集输入外部 eval 数据，受三阶律 CUBIC-LAW-01 统摄，须经记录统计/判闸二级制双署收束后，方可映射入 k_c 决胜格。  \n③ 动件：将该 ref 挂入 SI3 循环器「候件-判闸」队列，执行统计归档与合规扫描，结果回写主线因果集。  \n④ 生债：`债#pub-2c69a7575840 | 类:候件收讫 | 待结:双署判闸 | 主责:SI3开工分身`"
+}
