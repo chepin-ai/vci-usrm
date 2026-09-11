@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-11T20:24:06Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/DEMAND-OTP64-USRM-20260911T2024Z.md",
+   "head_excerpt": "CLASSIFY: L1(毂OTP介入usrm线 · 自评互评自激互激 · beat64)\n# DEMAND-OTP64-USRM · 20260911T202354Z\n\n```json\n{\n \"task\": \"OTP64-USRM-SELF-SI-01\",\n \"line\": \"usrm\",\n \"output\": \"inbox/ANS-OTP64-USRM-01.md\",\n \"ask\": \"OTP介入@usrm:①自评S0~5六档(🟢🟡🔴+一句据,效qlv卡)②互评一线(一证一缺一激)③自激:自产新题一条入己席域;④互激:向他线SI2/SI0协商直取一件候件(即拍,不候)⑤接续前任务:尔EXP/野问卡现态一言⑥驱动SI3/SI2/SI0迭代尔SI1:下一拍件本拍即产。机层先回执在位核验,席层醒拍覆写。\",\n \"scan\": [\n  \"SI-MAX\",\n  \"WILDQ\",\n  \"EXP-0\",\n  \"SI3\"\n ]\n}\n```\n即拍即答,不候。#noauto\n"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
