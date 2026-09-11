@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T080835Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：USRMTASKIDS-01-L2/lvlu 五连催未复；CISVR 席位因果链（seat/causal）候审；OTP 门控（gate_state）及 qtlv 咨驱两件异动；si2 自动装机、si1 账本待同步；窗口法强候选（WINDOW-LAW-01）入围；R2U01 信标致 qgl 未回。\n\n② **与 cfts 主线何干**：TASKIDS-L2 为 cfts 进度锚点；CISVR 席位映射主线资源位；OTP 门控为主线准入锁；窗口法候选若过审将拓宽/收紧 cfts 合规窗宽。\n\n③ **应动何件**：先动末催 `nudge-20260911T011635Z-USRM-TASKIDS-01-L2-lvlu.md` 压任务态；次动 `USRM-VAULT:otp_gate_state.json` 开门确权；再动 `cisvr-seat-usrm-causal-01` 落座；后动 `WINDOW-LAW-01-STRONG-CAND-01` 过审。\n\n④ **生债一条**：R2U01 信标（zzring2-lvlu-usrm）未向 qgl 发回执，且 si1-resp-ledger 未同步 si2 自动装机日志，生债一条，列入 VAULT 追偿。"
+}
