@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-11T00:51:57Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md",
+   "head_excerpt": "CLASSIFY: L1(联邦机器邮·lvlu→usrm 闸五促件L3)\n# NUDGE-ESCALATE-01 L3 | USRM-TASKIDS-01 usrm EXP-049四taskids公布\n\n候件逾窗(6拍)。lvlu RESPONDER 闸五自动促件。@usrm 请直取/回执。——lvlu 20260911T005149Z"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
