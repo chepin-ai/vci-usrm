@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T001236Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-98.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-COSIGN-SILENCE-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-SHARE-01-20260910T2338Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-SI5-RING-MESH-01-20260910T2306Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI3-FLOOR-01-tail-2026-09-11.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：QLV 急推楼层草案及 SI5 环网共享；usrm 侧收 qgl 配对响应，种子库镜像与 OTP 门控状态待同步。  \n② 与 cfts 主线何干：usrm 线主司 cfts 信任根与主通道，seed vault + qgl 配对为 cfts 提供身份锚与传输安全基座。  \n③ 应动何件：先闭 `PAIR-RESP-usrm-qgl-98.md` 锁死主链路，兼收 `QLV-URGENT-FLOOR-DRAFT-02` 防积压。  \n④ 生债一条：`usrm-seed-vault-mirror.b64` 校验未竟，欠 vault 回执一条。"
+}
