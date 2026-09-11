@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T102702Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：lvlu 五连推 USRM-TASKIDS（含 L2 级），CISVR 递席位因果与窗口法则候选，QTLV 投 OTP 咨询/驱动各一，vault 报 OTP 门控状态，兼 usrm 种子库镜像待同步。十余件压线。\n\n② **与 cfts 主线何干**：USR 为 CFTS 之执行支脉。TASKIDS 乃 FW2C 推广落地之单据；OTP 门控系跨线通行锁；CISVR 席位涉主线资源调度；种子库为全线资产底账。诸件不清理，CFTS 此节点必淤。\n\n③ **应动何件**：先双轨并行——  \n- 动 `nudge-20260911T011635Z-USRM-TASKIDS-01-L2-lvlu.md`（最新 L2 催促，启 FW2C 分派）；  \n- 同步动 `otp_gate_state.json`（解跨线门控）。  \n次动 `usrm-seed-vault-mirror.b64`（验签入库）。\n\n④ **生债一条**：「usrm 线须于本班内将 lvlu-L2 TASKIDS 转 FW2C 链路一跟到底，并回写 OTP 门控状态报 CFTS 主线，逾期升压。」"
+}
