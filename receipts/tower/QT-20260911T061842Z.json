@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T061842Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**  \nUSRM-TASKIDS-01-lvlu 遭五连 nudge（0037→0116Z）未闭环；CISVR 因果席位（causal seat）待确认；WINDOW-LAW-01 强候选窗口压线进入；VAULT 侧 OTP 门状态、SI2 自动安装、QTLV 双 OTP（consult/drive）及种子库镜像待同步。\n\n② **与 cfts 主线何干**  \nCFTS 主线窗口（WINDOW-LAW-01）的生效与落闸，硬依赖 USRM 侧 causal seat 确认及 OTP 门就绪；TASKIDS-01 卡滞会直接阻塞 CFTS 下游（SI2/QTLV）联动，导致窗口无法关闭。\n\n③ **应动何件**  \n先动 `cisvr-seat-usrm-causal-01-20260911T0036Z.md` 合并最末 `nudge-20260911T011635Z-USRM-TASKIDS-01-L2-lvlu.md` 解锁 lvlu 卡点；续动 `WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md` 与 `si2-auto-otp-install` 做状态对齐。\n\n④ **生债一条**  \n债：须在本日 0240Z 前完成 USRM-TASKIDS-01-lvlu 响应闭环，并输出 WINDOW-LAW-01 与 CISVR causal seat 的映射确认；逾期则 QTLV 双 OTP 及 SI2 自动安装持续挂起。"
+}
