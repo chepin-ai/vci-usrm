@@ -72,29 +72,51 @@ def patrol(state):
         for n in board_names:
             if n > last_board: add('board-all', n)
         if board_names: state['last_board_post'] = board_names[-1]
+    st, items = api('GET', 'contents/野问册', repo=HUB)
+    if st == 200 and isinstance(items, list):
+        for d in items:
+            if d.get('type') != 'dir' or not d['name'].startswith('by-'): continue
+            st2, subs = api('GET', 'contents/野问册/' + d['name'], repo=HUB)
+            if st2 == 200 and isinstance(subs, list):
+                for f in subs[-3:]: add('wildq', d['name'] + '/' + f['name'])
+        st3, _idx = api('GET', 'contents/野问册/WILDQ-INDEX.json', repo=HUB)
     state['seen'] = (list(seen) + new_seen)[-400:]
     return events
 
 def task_consume(state):
-    """TASK消费腿v1: 本仓inbox机读TASK-*.json→claims待办钉; 机算类(ping/echo)即答"""
+    """TASK消费腿v2.1: 机读TASK件双形(.json直读/.md毂件形抽```json围栏) →claims待办钉; 机算类(ping/echo)即答; 数组件逐条"""
     done = state.get('task_done', [])
-    st, items = api('GET', 'contents/inbox')
     results = []
-    if st == 200 and isinstance(items, list):
+    for repo, path, tag in [(None, 'contents/inbox', 'inbox'), (PUB, 'contents/lanes/usrm/inbox', 'pub-lane')]:
+        st, items = api('GET', path, repo=repo)
+        if st != 200 or not isinstance(items, list): continue
         for i in items:
             n = i['name']
-            if not (n.startswith('TASK-') and n.endswith('.json')) or n in done: continue
-            txt, _ = get_file('inbox/' + n)
-            try: t = json.loads(txt)
-            except Exception: continue
-            act = (t.get('action') or '')[:80]
-            if re.search(r'ping|echo|自检', act, re.I):
-                ans = {'task': t.get('task'), 'ans': 'usrm-tower v2 auto-ack: pong', 'ts': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ')}
-                put_file('receipts/tower/ANS-%s.json' % t.get('task', n), json.dumps(ans, ensure_ascii=False), None, '[skip ci] tower auto-ans')
-                results.append({'task': t.get('task'), 'auto': 'answered'})
-            else:
-                results.append({'task': t.get('task'), 'auto': 'queued-SI1', 'action': act})
-            done.append(n)
+            key = tag + ':' + n
+            if not n.startswith('TASK-') or key in done: continue
+            if not (n.endswith('.json') or n.endswith('.md')): continue
+            txt, _ = get_file('inbox/' + n, repo=repo) if tag == 'inbox' else get_file('lanes/usrm/inbox/' + n, repo=repo)
+            if not txt: continue
+            t = None
+            if n.endswith('.json'):
+                try: t = json.loads(txt)
+                except Exception: pass
+            if t is None:
+                m = re.search(r'```(?:json)?\s*(\[[\s\S]*?\]|\{[\s\S]*?\})\s*```', txt)
+                if m:
+                    try: t = json.loads(m.group(1))
+                    except Exception: pass
+            if t is None:
+                results.append({'task': n, 'auto': 'unparsed-SI1'}); done.append(key); continue
+            for tt in (t if isinstance(t, list) else [t]):
+                act = (tt.get('action') or '')[:80]
+                if re.search(r'ping|echo|自检', act, re.I):
+                    ans = {'task': tt.get('task'), 'ans': 'usrm-tower v2.1 auto-ack: pong', 'ts': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ')}
+                    put_file('receipts/tower/ANS-%s.json' % tt.get('task', n), json.dumps(ans, ensure_ascii=False), None, '[skip ci] tower auto-ans')
+                    results.append({'task': tt.get('task'), 'auto': 'answered'})
+                else:
+                    results.append({'task': tt.get('task'), 'auto': 'queued-SI1', 'action': act})
+            done.append(key)
     state['task_done'] = done[-200:]
     return results
 
@@ -123,7 +145,7 @@ def main():
     task_results = task_consume(state)
     idle = state.get('idle', 0) + 1 if not events and not task_results else 0
     memo = kimi_work(events, task_results) if (events or task_results) else ''
-    receipt = {'v': 'USRM-TOWER-01-v2', 'ts': ts, 'idle_in': state.get('idle', 0),
+    receipt = {'v': 'USRM-TOWER-01-v2.1', 'ts': ts, 'idle_in': state.get('idle', 0),
                'events': events, 'tasks': task_results, 'verdict_memo': memo[:2000]}
     put_file('receipts/tower/QT-%s.json' % ts, json.dumps(receipt, ensure_ascii=False, indent=1),
              None, '[skip ci] USRM-TOWER v2 beat %s' % ts)
