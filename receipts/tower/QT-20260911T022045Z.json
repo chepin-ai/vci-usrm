@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T022045Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：USRM 种子库镜像待挂载，CISVR 席位因果卷与 SI1/SI2 账本/自动安装件待同步，OTP GATE 状态及 QTLV 咨询/驱动双件待校验，另有 lvlu 侧 USRM-TASKIDS-01 连续五级 nudge 积压未闭环。\n\n② 与 cfts 主线何干：CFTS 主线运行依赖 OTP 门控状态、CISVR 席位因果对齐及 SI1/SI2 前置流；usrm 种子库为容灾底基；VERDICT-FLOOR 尾卷为主线裁决落地归档。\n\n③ 应动何件：立即挂载 `usrm-seed-vault-mirror.b64`，刷写 `otp_gate_state.json` 并推送门控节点；落位 `cisvr-seat-usrm-causal-01` 与 `si2-auto-otp-install`；一次性回清五级 nudge，回写 lvlu 响应。\n\n④ 生债一条：须向 lvlu 侧补出 `USRM-TASKIDS-01-L2` 全量闭环 ack，并更新 `knock-2026-08-20T0413` 心跳时戳至当前周期。"
+}
