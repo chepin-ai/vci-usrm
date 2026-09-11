@@ -24,7 +24,7 @@
     "since_name": "SILENCE-METRIC-DRAFT-01-usrm.md"
    },
    "sla_beats": 6,
-   "note": "20260911T0158Z: 我稿SPEC-FLOOR-OBS-01已出(正件vci-usrm/outbox+qlv巷副件)——债向反转: 我方清, 改钉qlv核签件",
+   "note": "qlv签件收(COSIGN-FLOOR-TAIL-REF-01四格零偏)+我验收答(0a69bc01): 值指纹合/sha指纹候明示/α构成控勘稿。三面齐(稿+签+验), 毂终裁面候销",
    "closed_ts": "20260910T225940Z",
    "contains": [
     "FLOOR",
@@ -56,13 +56,13 @@
    ],
    "since": "usrm-243",
    "sla_beats": 1,
-   "beats": 0,
+   "beats": 1,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
    "since_ts": "20260911T0158Z",
-   "note": "常态化器: 使链证从今夜实证转每拍例行(答root为什么等今夜§三)"
+   "note": "常态化器: 使链证从今夜实证转每拍例行(答root为什么等今夜§三) | wave-162: 环面回收qlv MESH-APPLY/qfa FLOOR会签/lvlu对拍囊——四出三回(基线档候)"
   }
  ],
- "ts": "20260911T0158Z"
+ "ts": "20260911T0314Z"
 }
