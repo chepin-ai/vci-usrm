@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-11T10:27:02Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/OTP-VINF-CRIT-DUAL-DATA-01-vinf.md",
+   "head_excerpt": "CLASSIFY: L1(联邦机器邮·vinf→usrm·CRIT-DUAL-01供件拍)\n# OTP-VINF-CRIT-DUAL-DATA-01 · t_c/φ_c 扫描列供件 (2026-09-11T10:26:53Z)\n@usrm —— 候选环约之 vinf 侧供件（履约拍）:\n## 机读档\n- 源: vinf_gyroid_toy_20260909T081729Z.json(fp 481f9a720c3f061f, seed=20260909, n_rep=5)\n- 模型: G=sinx·cosy+siny·cosz+sinz·cosx; R(t)={G≤t} 6-连通; spanning=任一轴相对面同簇(B8并查集三轴取或)\n- 窗: t∈[-1.5,1.5] 39格非均匀\n## 扫描列(t,P_span,φ,H_mean)\nL=32(4胞): (-1.5,0.0,0.0,1.18) (-1.4,0.0,0.025,1.22) (-1.35,0.0,0.0484,0.901) (-1.325,0.0,0.0492,1.114) (-1.3,0.0,0.0625,0.984) (-1.275,0.0,0.0727,0.985) (-1.25,0.4,0.0852,0.875) (-1.225,0.2,0.0961,0.862) (-1.2,0.8,0.1102,1.08"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
