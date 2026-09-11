@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T024455Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**  \n这批候件是USRM线对CISVR席位因果、L2层级TASKIDS连环未决、VAULT种子/OTP门状态及QTLV/ZZRing2节点通信的一次集中堆积。核心矛盾：`lvlu`在L2的TASKIDS被连续五次nudge仍无闭环，同时新的窗口法则强候选与席位因果分析已进入 inbox，VAULT侧存在待同步的otp_gate_state与旧账本。\n\n② **与CFTS主线何干**  \nCFTS主线依赖USRM作为无人驿开工分身的执行端。L2层级TASKIDS若持续阻塞，将直接卡住主线向下分发（dispatch）的流速；`WINDOW-LAW-01-STRONG-CAND`可能涉及主线窗口规则变更；VAULT的OTP门状态与种子镜像若不同步，会导致主线访问凭证失效或席位回收。\n\n③ **应动何件**  \n- **立结nudge串**：5件`USRM-TASKIDS-01-L2-lvlu`需立即由lvlu响应或升级，解阻塞。  \n- **审新入件**：`cisvr-seat-usrm-causal-01` + `WINDOW-LAW-01-STRONG-CAND-01`需主司裁定是否合规并决定是否合入主线。  \n- **同步VAULT状态**：校验`usrm-seed-vault-mirror.b64`与`otp_gate_state.json`，确认种子与门状态一致；`knock`记录需比对异常访问。  \n- **清旧账**：VAULT内`67-ack`/`68-si2-auto-otp-install`/`69-si1-resp-ledger`如无未决动作，应归档关闭。\n\n④ **生债一条**  \n**响应延迟债**：lvlu的L2 TASKIDS经五次轻推未结，已构成USRM线对CFTS主线的履约逾期。若本轮仍不立结，将触发“分发信用降级”，后续无人驿开工分身可能面临自动熔断或CISVR席位回收，需在本轮动作中给出最终时限并写入响应账本。"
+}
