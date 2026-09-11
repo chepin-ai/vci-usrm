@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T031538Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：USRM 线积压候件 16 条，含 5 条 TASKIDS 连环 nudge、1 条 STRONG-CAND 窗口法档、1 份种子库镜像及 9 条 VAULT 层 OTP/账本/信标历史凭证。\n\n② 与 cfts 主线何干：USRM 乃 CFTS 主线当前“开窗—落座—流转”的瓶颈关卡；此批不清，主线无窗可入、无凭据可走。\n\n③ 应动何件：先动 **WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md**，时效最新且标为强候选主线窗口，应先启。\n\n④ 生债一条：5 条 nudge 积压未复，生债“**USRM-TASKIDS 催办回执待结**”。"
+}
