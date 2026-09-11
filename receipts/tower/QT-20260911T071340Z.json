@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T071340Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：USR M线无人驿开工前，堆压了 7 件 nudge/信标/席位因果与 OTP 门控状态件。核心是 si2 自动 OTP 安装未落、si1 响应账本未平、L2 lvlu 任务 ID 被连催 5 次，外加 zzring2 信标 R2U01 待回 qgl，种子库镜像待同步。\n\n② **与 cfts 主线何干**：cfts 主线靠 USRM 作为下游接入点完成 OTP-Gate 握手与 L2 任务分发。si2-auto-otp-install 未决直接阻塞 cfts→usrm 的令牌下发；resp-ledger 不平则主线无法确认该节点已就绪，导致 WINDOW-LAW 强候选窗口无法固化。\n\n③ **应动何件**：优先动 `USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md`（先通 OTP 门），同步过 `nudge-20260911T011635Z-USRM-TASKIDS-01-L2-lvlu.md`（最新催促）与 `USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md`（回环信标），以闭合 L2 任务链。\n\n④ **生债一条**：USRMOps 因 si2 安装延迟致 L2 lvlu 队列堆积，欠 cfts 主线一笔「OTP-Gate 闭合确认 + TASKIDS-01 批次清理」。"
+}
