@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T004021Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QLV-SI5-RING-MESH-01-20260910T2306Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI3-FLOOR-01-tail-2026-09-11.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：16件混装到港。QLV系紧急楼层草案与裁决尾部、SI5环网、CISVR因果席位、USRM任务双催（L2/lvlu）、seed vault镜像、OTP门控及ring2信标等。  \n② **与cfts主线何干**：CFTS正推SI3/SI5及FLOOR层跨级，需USRM主司提供OTP门控、因果席位、seed镜像作为通行与身份基建。  \n③ **应动何件**：先动`QLV-URGENT-FLOOR-DRAFT-02`；次动双`nudge-USRM-TASKIDS`；并动`cisvr-seat-usrm-causal-01`与`usrm-seed-vault-mirror.b64`；余件挂起备询。  \n④ **生债一条**：本分身欠一宗——于一工期内完成lvlu级TASKIDS级联确认及seed vault镜像校验，并向URGENT-FLOOR回写OTP gate与因果席位就绪态。"
+}
