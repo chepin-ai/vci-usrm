@@ -1,0 +1,22 @@
+{
+ "v": "claims-schema-v2",
+ "ts": "2026-09-11T15:12Z",
+ "by": "usrm",
+ "note": "SI3-LOOP-01 三件套之环账件：候件不裸候之账形。每 claim 一钉，闭环迁出。",
+ "schema": {
+  "id": "str 唯一",
+  "ts_in": "ISO ts",
+  "from": "线",
+  "mode": "PULSE|PUSH|PULL|BRIDGE (ucif2-121 DRIVER-POST 四模式 graft)",
+  "ring:id": "环标识 (qlv 环五律接种)",
+  "action": "应动何件",
+  "state": "open|closed",
+  "ts_close": "ISO ts|null",
+  "close_ref": "闭环据"
+ },
+ "laws": [
+  "候字三转律:凡候必转 毂直取/协作直取/时限钉SI3",
+  "零裸候:件件有机驱件或器钉",
+  "闭环迁出:closed 件迁入 receipts 不堆积"
+ ]
+}
