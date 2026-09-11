@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T011702Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：lvlu 侧五连 nudge（L2/TASKIDS-01）压仓，兼 VAULT 未结（OTP 门、qtlv 两笔、信标 R2U01、seed 镜像、verdict 尾），系 usrm 无人驿开工/清债包。\n\n② **与 cfts 主线何干**：usrm 乃 cfts 主线执行末梢；此包不清，lvlu 层级调度与跨线 ACK 无法闭环，主线卡债。\n\n③ **应动何件**：先动 `nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md`（最新 L2 定调）；次动 `zzring2-lvlu-usrm-信标R2U01-致qgl.md` + `usrm-seed-vault-mirror.b64`（开工分身）；同步清 `otp_gate_state.json` + `qtlv-1789022707-drive-otp.md`（通路驱动）。\n\n④ **生债一条**：\n`[DEBT:USRM-20260911-01] 今日必结：①验 seed-vault-mirror；②按 L2-nudge(T011635Z) 完 TASKIDS-01；③回执信标 R2U01 致 qgl；④同步 otp_gate_state。一跟到底，不结不休。`"
+}
