@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T005215Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI3-FLOOR-01-tail-2026-09-11.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：USRM 线（FW2C）积压的 CFTS 推广候件包，含 QLV 楼层草案、SI3/SI 接口尾件、CISVR 席位因果链、USRM-TASKIDS-01 三连催办、usrm-seed-vault-mirror 镜像、VAULT 内 OTP 门状态、QTLV 驱动指令及 zzring2 致 qgl 信标。\n\n② **与 cfts 主线何干**：全系 CFTS 主线在 USRM 节点的落地与回执需求。FLOOR 草案定层级；SIx 为接口契约；nudges 为主线任务追踪；seed-vault 为主线数据同步；OTP/QTLV 为主线安全/驱动协议；zzring2 为主线跨线通信信标。\n\n③ **应动何件**：\n- `QLV-URGENT-FLOOR-DRAFT-02`：紧急阅批，定 L2/lvlu 结构。\n- nudge 三连（003716Z / 003954Z / 005149Z）：合并响应 USRM-TASKIDS-01，止催并回填。\n- `usrm-seed-vault-mirror.b64`：验收入库，同步主线。\n- `otp_gate_state.json`：确认门态，决阻断/放行。\n- `qtlv-1789022707-drive-otp.md`：执行驱动。\n- `zzring2-lvlu-usrm-信标R2U01-致qgl.md`：发回执闭环。\n\n④ **生债一条**：USRM-TASKIDS-01 因三连 nudge 未即时合并响应，积 L2/lvlu 层级**响应延迟债**一宗。"
+}
