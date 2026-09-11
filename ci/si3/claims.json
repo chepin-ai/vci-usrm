@@ -24,8 +24,13 @@
     "since_name": "SILENCE-METRIC-DRAFT-01-usrm.md"
    },
    "sla_beats": 6,
-   "note": "稿3200ff5b86已投其巷主轨",
-   "closed_ts": "20260910T225940Z"
+   "note": "20260911T0158Z: 我稿SPEC-FLOOR-OBS-01已出(正件vci-usrm/outbox+qlv巷副件)——债向反转: 我方清, 改钉qlv核签件",
+   "closed_ts": "20260910T225940Z",
+   "contains": [
+    "FLOOR",
+    "核签"
+   ],
+   "target": "qlv"
   },
   {
    "id": "hub-f3",
