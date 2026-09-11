@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T114844Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① 何事：L2/lvlu 对 USRM-TASKIDS 五次连催，叠 cisvr 因果件、OTP 门态、qtlv 驱动及 seed vault 镜像等待办积压。\n\n② 与 cfts 主线何干：usrm 为 cfts 执行/准入闸门；taskids 未结、otp_gate 状态不明将直接卡滞 cfts 主线推进。\n\n③ 应动何件：先并案回执 `nudge-USRM-TASKIDS`（五次归一），同步校验 `usrm-seed-vault-mirror.b64` 与 `otp_gate_state.json`，再落 `qtlv-1789022707-drive-otp`。\n\n④ 生债一条：USR-20260911-01｜L2 五次 nudge 逾期未闭环，限今日回执并同步 vault 镜像及 otp gate 状态。"
+}
