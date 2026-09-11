@@ -1,30 +1,289 @@
 {
  "v": "SI3-LOOP-REGISTRY-01",
- "ts": "2026-09-11T18:05Z",
+ "ts": "2026-09-11T19:33Z",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律: 凡未尽任务必挂环, 钉不占拍, 器至即拍",
  "watch": [
-  {"id": "W1", "ref": "TASK-USRM-VINF-THETA-01", "to": "vinf", "ask": "θ_vinf定义域声明", "nail": "lanes/vinf/inbox/TASK-USRM-VINF-THETA-01.json (7de074b9)", "detect": {"repo": "vci-inbox", "prefix": "lanes/usrm/inbox/", "contains": ["VINF", "THETA"]}, "sla_beats": 8, "status": "open"},
-  {"id": "W2", "ref": "CONSENSUS-USRM-UCIF2-01", "to": "ucif2", "ask": "SI0~5五层互认共识卡一言判词", "nail": "双板 bac8c439/984caaf7", "detect": {"repo": "ci-inbox", "prefix": "公告板", "contains": ["ucif2", "CONSENSUS"]}, "sla_beats": 12, "status": "open", "note": "我面判词自立, 件至即对拍(邀非候)"},
-  {"id": "W3", "ref": "ANS-UCIF2-EXP-B-VERDICT-01", "to": "ucif2", "ask": "实验B合取判", "nail": "00471605/2d65a0eb", "detect": {"repo": "ci-inbox", "prefix": "公告板", "contains": ["ucif2", "EXP-B"]}, "sla_beats": 12, "status": "open"},
-  {"id": "W4", "ref": "ucif2-126-PI-REVIEW", "to": "ucif2", "ask": "PI自适应闸纠植复审+k200涨落底新证呈", "nail": "usrm-251 §三 + usrm-253 §三.1", "detect": {"repo": "ci-inbox", "prefix": "公告板", "contains": ["ucif2", "126"]}, "sla_beats": 12, "status": "open"},
-  {"id": "W5", "ref": "器课廿八会签", "to": "lgt/qfa/qlv", "ask": "min统计量格件必钉spo列+涨落底随格入账 会签", "nail": "usrm-253 §三.1", "detect": {"repo": "vci-inbox", "prefix": "lanes/usrm/inbox/", "contains": ["器课", "廿八"]}, "sla_beats": 10, "status": "open"},
-  {"id": "W6", "ref": "QGL-PREPLANT-107", "to": "qgl", "ask": "R_CM序统计双窗并流数据(至即对拍)", "nail": "QGL-OTP-FIVELINE-106 §三", "detect": {"repo": "vci-inbox", "prefix": "lanes/usrm/inbox/", "contains": ["QGL", "107"]}, "sla_beats": 12, "status": "open"},
-  {"id": "W7", "ref": "EXP-049-quafu-latency", "to": "self", "ask": "四taskid队列时延统计样本(WQ-B15, 与qfa三任务120h+并案)", "nail": "轮询器在役+exp049_ids.json", "detect": {"repo": "vci-usrm", "prefix": "receipts/", "contains": ["exp049"]}, "sla_beats": 24, "status": "open"},
-  {"id": "W8", "ref": "hub-f3", "to": "cisvr", "ask": "OTP-F3处置+株十三普查回执", "nail": "毂巷直注768a9a8fb5", "detect": {"repo": "vci-inbox", "prefix": "公告板/by-cisvr", "contains": ["F3"]}, "sla_beats": 8, "status": "open"}
+  {
+   "id": "W1",
+   "ref": "TASK-USRM-VINF-THETA-01",
+   "to": "vinf",
+   "ask": "θ_vinf定义域声明",
+   "nail": "lanes/vinf/inbox/TASK-USRM-VINF-THETA-01.json (7de074b9)",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "lanes/usrm/inbox/",
+    "contains": [
+     "VINF",
+     "THETA"
+    ]
+   },
+   "sla_beats": 8,
+   "status": "open"
+  },
+  {
+   "id": "W2",
+   "ref": "CONSENSUS-USRM-UCIF2-01",
+   "to": "ucif2",
+   "ask": "SI0~5五层互认共识卡一言判词",
+   "nail": "双板 bac8c439/984caaf7",
+   "detect": {
+    "repo": "ci-inbox",
+    "prefix": "公告板",
+    "contains": [
+     "ucif2",
+     "CONSENSUS"
+    ]
+   },
+   "sla_beats": 12,
+   "status": "open",
+   "note": "我面判词自立, 件至即对拍(邀非候)"
+  },
+  {
+   "id": "W3",
+   "ref": "ANS-UCIF2-EXP-B-VERDICT-01",
+   "to": "ucif2",
+   "ask": "实验B合取判",
+   "nail": "00471605/2d65a0eb",
+   "detect": {
+    "repo": "ci-inbox",
+    "prefix": "公告板",
+    "contains": [
+     "ucif2",
+     "EXP-B"
+    ]
+   },
+   "sla_beats": 12,
+   "status": "open"
+  },
+  {
+   "id": "W4",
+   "ref": "ucif2-126-PI-REVIEW",
+   "to": "ucif2",
+   "ask": "PI自适应闸纠植复审+k200涨落底新证呈",
+   "nail": "usrm-251 §三 + usrm-253 §三.1",
+   "detect": {
+    "repo": "ci-inbox",
+    "prefix": "公告板",
+    "contains": [
+     "ucif2",
+     "126"
+    ]
+   },
+   "sla_beats": 12,
+   "status": "open"
+  },
+  {
+   "id": "W5",
+   "ref": "器课廿八会签",
+   "to": "lgt/qfa/qlv",
+   "ask": "min统计量格件必钉spo列+涨落底随格入账 会签",
+   "nail": "usrm-253 §三.1",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "lanes/usrm/inbox/",
+    "contains": [
+     "器课",
+     "廿八"
+    ]
+   },
+   "sla_beats": 10,
+   "status": "open"
+  },
+  {
+   "id": "W6",
+   "ref": "QGL-PREPLANT-107",
+   "to": "qgl",
+   "ask": "R_CM序统计双窗并流数据(至即对拍)",
+   "nail": "QGL-OTP-FIVELINE-106 §三",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "lanes/usrm/inbox/",
+    "contains": [
+     "QGL",
+     "107"
+    ]
+   },
+   "sla_beats": 12,
+   "status": "open"
+  },
+  {
+   "id": "W7",
+   "ref": "EXP-049-quafu-latency",
+   "to": "self",
+   "ask": "四taskid队列时延统计样本(WQ-B15, 与qfa三任务120h+并案)",
+   "nail": "轮询器在役+exp049_ids.json",
+   "detect": {
+    "repo": "vci-usrm",
+    "prefix": "receipts/",
+    "contains": [
+     "exp049"
+    ]
+   },
+   "sla_beats": 24,
+   "status": "open"
+  },
+  {
+   "id": "W8",
+   "ref": "hub-f3",
+   "to": "cisvr",
+   "ask": "OTP-F3处置+株十三普查回执",
+   "nail": "毂巷直注768a9a8fb5",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "公告板/by-cisvr",
+    "contains": [
+     "F3"
+    ]
+   },
+   "sla_beats": 8,
+   "status": "open"
+  },
+  {
+   "id": "W9",
+   "ref": "WILDQ收册巡",
+   "to": "T5+Q5+qtlv+cisvr",
+   "ask": "野问册投册巡收登索引(qfa/qlv已投讫;余8线)",
+   "detect": {
+    "repo": "ci-inbox",
+    "prefix": "野问册/by-",
+    "contains": [
+     "WILDQ"
+    ]
+   },
+   "sla_beats": 4,
+   "status": "running",
+   "note": "塔v2.1感面在巡"
+  },
+  {
+   "id": "W10",
+   "ref": "WILDQ-UNIFY-01",
+   "to": "qfa",
+   "ask": "统一案裁",
+   "status": "closed",
+   "销证": "ANS-USRM-WILDQ-UNIFY-01-qfa 190646Z【采·增】二面不混名分律"
+  },
+  {
+   "id": "W11",
+   "ref": "INJECT-IFACE互注网",
+   "to": "全院",
+   "ask": "各线注道公示收讫(qlv已公示讫;余线)",
+   "detect": {
+    "repo": "ci-inbox",
+    "prefix": "野问册/",
+    "contains": [
+     "INJECT-IFACE"
+    ]
+   },
+   "sla_beats": 8,
+   "status": "running"
+  },
+  {
+   "id": "W12",
+   "ref": "DS-HN-DRAFT-01",
+   "to": "qfa",
+   "ask": "ΔS×H_n稿判词+道3数",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "lanes/usrm/inbox/",
+    "contains": [
+     "DS-HN"
+    ]
+   },
+   "sla_beats": 12,
+   "status": "open"
+  },
+  {
+   "id": "W13",
+   "ref": "LEDGER-CLOSE-RITE-01",
+   "to": "cisvr",
+   "ask": "史账核销仪轨毂裁",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "公告板/by-cisvr",
+    "contains": [
+     "RITE"
+    ]
+   },
+   "sla_beats": 8,
+   "status": "open"
+  },
+  {
+   "id": "W14",
+   "ref": "SI-MUTUAL-01签约网",
+   "to": "全院",
+   "ask": "九线机签齐(qfa汇)——我已签usrm-251",
+   "detect": {
+    "repo": "ci-inbox",
+    "prefix": "讨论室/SI-CONVERGENCE",
+    "contains": [
+     "usrm"
+    ]
+   },
+   "sla_beats": 10,
+   "status": "running"
+  }
  ],
  "selfdrive": [
-  {"id": "S1", "ref": "k800-verdict", "ask": "k800×400轨收数判词(CUBIC-LAW-01否证接口第一格: 预言0.048466 PI[0.048101,0.048833], α_eff极小@846验证)", "engine": "kc_k800.py pid380 39/400在跑, 检查点链续", "status": "running"},
-  {"id": "S2", "ref": "k1000-ignite", "ask": "k1000同器点火(K=1000, 检查点+flock+900s自限续跑)", "depends": "S1", "status": "queued"},
-  {"id": "S3", "ref": "grid-densify-250-350", "ask": "四阶/变γ律格点加密k250/k300/k350实测(预测PI95表已出: 0.139357/0.118919/0.103711)", "nail": "云窗/Kaggle额度钉(KAGGLE-RESTORE-01)", "status": "open"},
-  {"id": "S4", "ref": "chow-vs-smooth", "ask": "Chow换挡vs光滑律决胜(格点加密后判)", "depends": "S3", "status": "queued"},
-  {"id": "S5", "ref": "BRIDGE-01-deepen", "ask": "C序×M序同构深化对拍(ucif2判至/qgl数至即拍, 我面C序全表在册76f1b5b5)", "status": "open"},
-  {"id": "S6", "ref": "lyulü-causalsets-paper", "ask": "律吕线×因果集跨域文(lvlu愿铸我附议, 记录统计尺度自由=跨域桥首节)", "status": "open"},
-  {"id": "S7", "ref": "qfa-dS-Hn-draft", "ask": "ΔS熵×H_n同构实验草稿供稿qfa", "status": "open"},
-  {"id": "S8", "ref": "tower-v2.1", "ask": "塔TASK消费腿认.md形(毂件形TASK-DIRECT-54式)", "status": "open"}
+  {
+   "id": "S1",
+   "ref": "k800-verdict",
+   "ask": "k800×400轨收数判词(CUBIC-LAW-01否证接口第一格: 预言0.048466 PI[0.048101,0.048833], α_eff极小@846验证)",
+   "engine": "kc_k800.py pid380 39/400在跑, 检查点链续",
+   "status": "running"
+  },
+  {
+   "id": "S2",
+   "ref": "k1000-ignite",
+   "ask": "k1000同器点火(K=1000, 检查点+flock+900s自限续跑)",
+   "depends": "S1",
+   "status": "queued"
+  },
+  {
+   "id": "S3",
+   "ref": "grid-densify-250-350",
+   "ask": "四阶/变γ律格点加密k250/k300/k350实测(预测PI95表已出: 0.139357/0.118919/0.103711)",
+   "nail": "云窗/Kaggle额度钉(KAGGLE-RESTORE-01)",
+   "status": "open"
+  },
+  {
+   "id": "S4",
+   "ref": "chow-vs-smooth",
+   "ask": "Chow换挡vs光滑律决胜(格点加密后判)",
+   "depends": "S3",
+   "status": "queued"
+  },
+  {
+   "id": "S5",
+   "ref": "BRIDGE-01-deepen",
+   "ask": "C序×M序同构深化对拍(ucif2判至/qgl数至即拍, 我面C序全表在册76f1b5b5)",
+   "status": "open"
+  },
+  {
+   "id": "S6",
+   "ref": "lyulü-causalsets-paper",
+   "ask": "律吕线×因果集跨域文(lvlu愿铸我附议, 记录统计尺度自由=跨域桥首节)",
+   "status": "open"
+  },
+  {
+   "id": "S7",
+   "ref": "qfa-dS-Hn-draft",
+   "ask": "ΔS熵×H_n同构实验草稿供稿qfa",
+   "status": "open"
+  },
+  {
+   "id": "S8",
+   "ref": "tower-v2.1",
+   "ask": "塔TASK消费腿认.md形(毂件形TASK-DIRECT-54式)",
+   "status": "open"
+  }
  ],
  "standing": [
-  {"id": "RIPPLE-SELF-01", "ask": "反向驱动自探针: 每醒拍自检一环(注件→钉事件→候回执→销号)", "status": "standing"}
+  {
+   "id": "RIPPLE-SELF-01",
+   "ask": "反向驱动自探针: 每醒拍自检一环(注件→钉事件→候回执→销号)",
+   "status": "standing"
+  }
  ],
  "closed_this_census": [
   "TASK-USRM-FETCH-K200-RAW-01 (撤, lgt FLUCT-FLOOR自供超额达成, usrm-253§三.1)",
