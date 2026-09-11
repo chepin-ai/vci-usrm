@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T065522Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：USRM 线 L2 级 TASKIDS nudge 五连发（0037→0116），叠加 CISVR 席位因果件、OTP 门状态及咨询/驱动件、种子库镜像、R2U01→qgl 信标回环，整体为 USRM-CISVR 接入层任务堆积未闭环。\n\n② **与 CFTS 主线何干**：USRM 是 CFTS 主线的用户侧网关与席位分发层；候件中 cisvr-seat（席位）、otp-gate（身份网关）、si2-auto-install（自动部署）、resp-ledger（响应账本）任一卡滞，将直接阻塞主线 L2 级任务流转与下游信标确认。\n\n③ **应动何件**：优先动最新 nudge `nudge-20260911T011635Z-USRM-TASKIDS-01-L2-lvlu.md` 清剿任务堆积；同步动 `zzring2-lvlu-usrm-信标R2U01-致qgl.md` 完成 qgl 回环，以解锁 `cisvr-seat-usrm-causal-01` 闭环。\n\n④ **生债一条**：24h 内将五件 nudge 收敛为单条闭环 ledger，回写 `cisvr-20260906-69-si1-resp-ledger.md`，并同步刷新 `otp_gate_state.json`。"
+}
