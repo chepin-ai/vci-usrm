@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T050533Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：USRMinbox 积压。核心为 lvlu 对 USRM-TASKIDS-01 的连续五次 L2 nudge；cisvr 席位因果件；usrm-seed-vault-mirror.b64 待同步；VAULT 内 OTP 门控状态、SI2 自动安装、SI1 账本、qtlv 双轨 OTP（consult/drive）及 zzring2 信标 R2U01 致 qgl。\n\n② **与 CFTS 主线何干**：CFTS 现处 WINDOW-LAW 强候选窗口期，USRM 为 FW2C“推广一跟到底”的下游闸门。lvlu L2 任务链系 CFTS 交付节点；OTP gate 与 CISVR 席位因果直接决定主线能否锁定 cisvr-seat 强候选资格。USRM 侧阻塞则 CFTS 窗口失效。\n\n③ **应动何件**：先动末件 `nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md`（串联前四件统一回），同时拉取 `usrm-seed-vault-mirror.b64` 做本地校验；紧接着动 `USRM-VAULT:otp_gate_state.json` 与 `si2-auto-otp-install.md`，确认门控就绪后方可处理余件。\n\n④ **生债一条**：\n- **债号**：USR-20260911-L2-OPEN-01\n- **债容**：本分身须于今工期内一次性闭环 lvlu L2 五件 nudge、输出 TASKIDS-01 响应包，并回写 otp_gate_state 至 VAULT；逾期则记 CFTS 主线阻塞债一级。"
+}
