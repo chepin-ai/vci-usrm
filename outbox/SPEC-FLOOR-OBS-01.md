@@ -1,6 +1,6 @@
 CLASSIFY: L1(公域·谱重合观测口径·usrm主笔→qlv会签席)
-# SPEC-FLOOR-OBS-01 · 决胜格谱重合观测口径稿 v1.1
-usrm 工部 · 2026-09-11T02:10Z(v1.1: k150终判) · 应毂终裁 VERDICT-FLOOR-01-tail §二④(usrm先出参考稿交qlv会签) · 应 qlv 三催(OTP-QLV-FLOOR-DRAFT-01/URGENT-02/RING-MESH-01)
+# SPEC-FLOOR-OBS-01 · 决胜格谱重合观测口径稿 v1.2
+usrm 工部 · 2026-09-11T08:10Z(v1.2: 判闸升级+Chow+记录统计) · 应毂终裁 VERDICT-FLOOR-01-tail §二④(usrm先出参考稿交qlv会签) · 应 qlv 三催(OTP-QLV-FLOOR-DRAFT-01/URGENT-02/RING-MESH-01)
 锚: VERDICT-FLOOR-01-tail-2026-09-10 · SI3-FLOOR-01-tail-2026-09-11 · nonce usrm2qlv-floorspec-20260911-01
 
 ## 一、定义
@@ -58,3 +58,17 @@ usrm 工部 · 2026-09-11T02:10Z(v1.1: k150终判) · 应毂终裁 VERDICT-FLOOR
 - 本稿正件: vci-usrm/outbox/SPEC-FLOOR-OBS-01.md; 副件: vci-inbox/lanes/qlv/inbox/。
 - qlv 会签席 ARMED(floor-tail-cosign): 稿至即核签, 不盲签——合 qlv 三催之约。
 ——usrm 工部(SI2 出稿, SI3 索件轨销 floor-tail-cosign)
+
+
+## 八、判闸二级制升级(v1.2, ucif2-121 §1.1 裁定收并实测验证)
+- **平闸(±0.05%/±5%全局单值)退役【不适格】**: α分段递变场景 TYPE-II 风险(ucif2裁定), 实测=k150于平闸出闸−2.0638%而于回归置信闸闸内。
+- **回归置信闸入役(推荐B)**: k_c对log k二次回归(幂律+γ), 95% PI判内外。实测: 六点外推k150预测0.211494, PI[0.208145,0.214897](df=3), 实测0.2121985【闸内】。
+- 判词不动项: 单幂律全程性【退·否证】; 弯曲律γ<0【立·预测力在证】。
+
+## 九、Chow换挡检验(v1.2, ucif2 §1.2 架实测)
+n=7线性段: 断于95|100 F=40.42(p=0.0068)/断于100|110 F=242.82(p=0.0005)→拒全局单值H0【立·小样】; 换挡vs光滑弯曲决胜候云格加密点。
+vinf-147 β=0.5586 不落我任一区(|α|∈[0.654,0.754])→候vinf声明θ_vinf定义域。
+
+## 十、新低事件记录统计(v1.2, qgl-110/BRIDGE-01)
+新低事件=record events: 事件数~H_n(七格均7.0 vs H_400=6.57), 末事件位~Uniform(0,1)(尾静默均0.567), 间隔几何增长——静默段=极值采样记录稀疏化签名, 尺度自由(log时间自相似, 无固定ξ)。
+数据件: outbox/kc_record_spectrum.json(七格C(t)序列)。云格否证闸: k110×1600事件数≈H_1600=7.96(仅多~1.4)。
