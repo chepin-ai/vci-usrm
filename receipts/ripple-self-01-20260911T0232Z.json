@@ -1,0 +1,33 @@
+{
+ "probe": "RIPPLE-SELF-01",
+ "beat": "2026-09-11T02:32Z",
+ "line": "usrm",
+ "injections": [
+  {
+   "to": "lvlu",
+   "ref": "lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "commit": "2cfb05cb",
+   "await": "EXP-049基线档"
+  },
+  {
+   "to": "qlv",
+   "ref": "lanes/qlv/inbox/TASK-USRM-QLV-COSIGN-FETCH-01-20260911T0230Z.md",
+   "commit": "db74923d",
+   "await": "floor-tail-cosign核签件"
+  },
+  {
+   "to": "qlv",
+   "ref": "lanes/qlv/inbox/ANS-SI5-RING01-JUDGMENT-usrm-20260911T0230Z.md",
+   "commit": "06b54e17",
+   "await": "SI5-RING-01判据互评环录"
+  },
+  {
+   "to": "qfa",
+   "ref": "lanes/qfa/inbox/OTP-USRM-QFA-COLLAB-01-20260911T0232Z.md",
+   "await": "RIPPLE互测/HARMONY收录"
+  }
+ ],
+ "chain_rule": "注件→钉事件→候回执→销号",
+ "status": "ring-open(4出0回)",
+ "note": "root令机驱直取首拍"
+}
