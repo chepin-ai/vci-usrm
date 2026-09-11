@@ -39,6 +39,25 @@
    },
    "sla_beats": 8,
    "note": "毂巷直注768a9a8fb5"
+  },
+  {
+   "id": "RIPPLE-SELF-01",
+   "name": "反向驱动自探针: 每醒拍自检一环(注件→钉事件→候回执→销号)",
+   "target": "usrm",
+   "repo": "vci-usrm",
+   "prefix": "receipts/",
+   "contains": [
+    "ripple"
+   ],
+   "since": "usrm-243",
+   "sla_beats": 1,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open",
+   "since_ts": "20260911T0158Z",
+   "note": "常态化器: 使链证从今夜实证转每拍例行(答root为什么等今夜§三)"
   }
- ]
+ ],
+ "ts": "20260911T0158Z"
 }
