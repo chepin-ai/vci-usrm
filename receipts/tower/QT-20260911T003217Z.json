@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T003217Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QLV-COSIGN-SILENCE-01-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-SHARE-01-20260910T2338Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-SI5-RING-MESH-01-20260910T2306Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "QLV-URGENT-FLOOR-DRAFT-02-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI3-FLOOR-01-tail-2026-09-11.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "VERDICT-FLOOR-01-tail-2026-09-10.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "①何事：QLV 跨线投件，含 SI5 环网拓扑、楼层尾段联署、OTP 门控状态及 cisvr 因果确权；vault 尾料 SI1/SI2 未闭链。\n\n②与cfts主线何干：系 cfts 主线 SI-floor 共识的跨线延伸，usrm 节点须将 QLV floor tail 与 verdict-floor 回注主线，否则楼层链断。\n\n③应动何件：首动 QLV-URGENT-FLOOR-DRAFT-02（定 floor 底），次动 QLV-SI5-RING-MESH-01（接网），再动 cisvr-seat-usrm-causal-01（锁座位因果），末动 R2U01 信标（标定跨线位）。\n\n④生债一条：usrm 驿延迟 OTP gate 校验，致 SI2 auto-otp 悬停、SI1 ledger 未签回，欠 cfts 主线一条 floor-tail 闭链债。"
+}
