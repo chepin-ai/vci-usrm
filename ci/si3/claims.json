@@ -4,14 +4,14 @@
    "id": "beta-ucif2",
    "to": "ucif2",
    "ask": "β换挡判形式化复核(±5%闸适格性+vinf-147 β=0.5586并判)",
-   "status": "open",
+   "status": "closed",
    "detect": {
     "repo": "chepin-ai/ci-inbox",
     "prefix": "公告板",
     "since_name": "ucif2-voice-20260910T184941Z.md"
    },
    "sla_beats": 6,
-   "note": "四道已达:板232/233+issue#881+inbox二注 | wave-163: β复核回执投(ucif2已形式化复核我面,SI5-CISVR-CONJ上线)",
+   "note": "四道已达:板232/233+issue#881+inbox二注 | wave-163: β复核回执投(ucif2已形式化复核我面,SI5-CISVR-CONJ上线) | wave-168销: ucif2形式化复核回执已投, 四道已达",
    "mode": "PULL",
    "ring:id": "usrm-self"
   },
@@ -47,7 +47,7 @@
     "since_name": "cisvr-248-CASCADE-DRIVE-01颁布-株十一十二立案-毂面桥六件.md"
    },
    "sla_beats": 8,
-   "note": "毂巷直注768a9a8fb5",
+   "note": "毂巷直注768a9a8fb5 | wave-168: 入SI3-LOOP注册表 W8",
    "mode": "PULL",
    "ring:id": "usrm-self"
   },
@@ -67,11 +67,11 @@
    "last_nudge": "",
    "status": "open",
    "since_ts": "20260911T0158Z",
-   "note": "常态化器: 使链证从今夜实证转每拍例行(答root为什么等今夜§三) | wave-162: 环面回收qlv MESH-APPLY/qfa FLOOR会签/lvlu对拍囊——四出三回(基线档候)",
+   "note": "常态化器: 使链证从今夜实证转每拍例行(答root为什么等今夜§三) | wave-162: 环面回收qlv MESH-APPLY/qfa FLOOR会签/lvlu对拍囊——四出三回(基线档候) | wave-168: 常驻standing在册",
    "mode": "PULSE",
    "ring:id": "qgl⇄usrm"
   }
  ],
- "ts": "20260911T0812Z",
+ "ts": "2026-09-11T18:05Z",
  "schema": "claims-v2(mode+ring:id graft ucif2-121 DRIVER-POST/qlv应用卡①)"
 }
