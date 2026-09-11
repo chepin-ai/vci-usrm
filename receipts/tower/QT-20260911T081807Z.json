@@ -1,0 +1,72 @@
+{
+ "v": "USRM-TOWER-01",
+ "ts": "20260911T081807Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WINDOW-LAW-01-STRONG-CAND-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-usrm-causal-01-20260911T0036Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003716Z-USRM-TASKIDS-01-L2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T003954Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T005149Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T010407Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "nudge-20260911T011635Z-USRM-TASKIDS-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "usrm-seed-vault-mirror.b64"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-67-ack.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-68-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:cisvr-20260906-69-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:knock-2026-08-20T0413.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:otp_gate_state.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1788947010-consult-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:qtlv-1789022707-drive-otp.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：USRM 线 inbox 积压 16 件，含 `cisvr` 席位因果件、`L2-lvlu` TASKIDS 五连 nudge、`usrm-seed-vault-mirror` 镜像，及 VAULT 内 OTP 门状态、si2 自动安装、si1 账本、QTLV 咨询/驱动 OTP、`zzring2` 信标等历史件。\n\n② **与 cfts 主线何干**：均属 CFTS 主框架下 USRM 子线的运行态碎片（席位状态、任务 ID 追踪、OTP 门禁/驱动、信标回环），是 FW2C / 无人驿开工的前置依赖与风险点。\n\n③ **应动何件**：  \n- **先动**：五连 nudge（`TASKIDS-01-L2-lvlu`）+ `cisvr-seat-usrm-causal`，解锁 L2 阻塞；  \n- **同步动**：校验 `usrm-seed-vault-mirror.b64` 完整性；  \n- **紧接动**：`otp_gate_state.json` + `si2-auto-otp-install`（硬依赖），核对 `qtlv` 两件 OTP 是否已闭环。\n\n④ **生债一条**：  \n`[债-20260911-01]` `USRM-TASKIDS-01-L2-lvlu` 五连 nudge 未回，限今日内逼出 lvlu 响应或升级 qgl，并同步刷新 `otp_gate_state`。"
+}
