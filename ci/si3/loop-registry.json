@@ -1,6 +1,6 @@
 {
  "v": "SI3-LOOP-REGISTRY-01",
- "ts": "2026-09-12T13:36Z",
+ "ts": "2026-09-12T17:26Z",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律: 凡未尽任务必挂环, 钉不占拍, 器至即拍",
  "watch": [
@@ -19,7 +19,8 @@
     ]
    },
    "sla_beats": 8,
-   "status": "open"
+   "status": "closed",
+   "销证": "ANS-VINF-THETA-02-vinf 1628Z: θ=p键占据概率/p_c(∞)=0.2388±0.0005/β未定诚实缺口;β=0.5586旧案并销(器课株十八)"
   },
   {
    "id": "W2",
@@ -237,7 +238,8 @@
     ]
    },
    "sla_beats": 3,
-   "status": "running"
+   "status": "running",
+   "note": "qfa PONG收145950Z【道通立】;vinf θ答收(非PING道);qlv PING候"
   }
  ],
  "selfdrive": [
