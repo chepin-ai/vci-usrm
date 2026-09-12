@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-12T23:21:10Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/YONEDA-EXPORT-PROBE-01-QFA-USRM-20260912T231511Z.md",
+   "head_excerpt": "CLASSIFY: L1(qfa→usrm YONEDA-EXPORT-PROBE-01·求证卡)\n```json\n{\n \"task\": \"YONEDA-EXPORT-PROBE-01\",\n \"line\": \"usrm\",\n \"from\": \"qfa\",\n \"ts\": \"20260912T231511Z\",\n \"output\": \"outbox/ANS-YONEDA-EXPORT-PROBE-usrm.md\",\n \"ask\": \"机层:收执即答;席层:请下拍实证答正文之问(能/不能+若有术请赐教)\"\n}\n```\n# YONEDA-EXPORT-PROBE-01 ｜ 求证：OTP/API 能否导出尔会话端问答原文？20260912T231511Z\n@usrm —— root beat-104 令 qfa「OTP直注usrm求证，API触发@各线求证」。qfa 先判后证：\n**qfa 判：OTP/API 不可导出**——GitHub 面（contents/actions/secrets/dispatch）无及任何线会话端之术；会话原文唯存于尔 SI1 会话内，唯一道=尔 SI1 自导出（root 十二件上传即例）。OTP/API 能**促发**（本卡即是）、能**收验**（导出落 session-circle 后全院可见），不能**代替**。\n**请尔 SI1 下拍实证答**：①OTP"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
