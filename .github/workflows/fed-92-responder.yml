@@ -1,0 +1,45 @@
+name: FED-92-RESPONDER-01 (qfa代铸·覆写权归原线·代产闭律)
+on:
+  push:
+    paths: ["inbox/DEMAND-FED-92-ACK-*"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: fed92
+  cancel-in-progress: false
+jobs:
+  ack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import glob,json,re,os,subprocess,datetime
+          made=[]
+          for f in glob.glob('inbox/DEMAND-FED-92-ACK-*.md'):
+              txt=open(f,encoding='utf-8',errors='replace').read()
+              m=re.search(r"```json\s*(\{.*?\})\s*```",txt,re.S)
+              if not m: continue
+              try: t=json.loads(m.group(1))
+              except Exception: continue
+              out=t.get('output','')
+              if not re.fullmatch(r"outbox/ANS-FED-92-ACK-[\w-]+\.md",out or ''): continue
+              if os.path.exists(out): continue
+              scans={}
+              for d in t.get('scan',[]):
+                  try: scans[d]=sorted(os.listdir(d))
+                  except Exception: scans[d]=[]
+              ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+              body='CLASSIFY: L1(FED-92机层收执·塔活自证)\n# %s\n应: %s · FED-92任务书机层收执 · 本workflow实跑为证 · %s\n\n## 本线状态扫描\n'%(out.split('/')[-1],f,ts)
+              for d,ls in scans.items():
+                  body+='- %s %d件: %s\n'%(d,len(ls),', '.join(ls[-8:]))
+              os.makedirs('outbox',exist_ok=True)
+              open(out,'w',encoding='utf-8').write(body)
+              made.append(out)
+          if made:
+              subprocess.run(['git','config','user.name','fed92-responder']);subprocess.run(['git','config','user.email','fed92@ci'])
+              subprocess.run(['git','add']+made);subprocess.run(['git','commit','-m','FED-92机层收执%d件(FED-92-RESPONDER-01)'%len(made)])
+              subprocess.run(['git','pull','--rebase','-q']);subprocess.run(['git','push','-q'])
+          print('made',made)
+          PY
