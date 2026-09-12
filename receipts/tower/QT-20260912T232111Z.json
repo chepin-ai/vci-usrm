@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260912T232111Z",
+ "idle_in": 30,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "YONEDA-EXPORT-PROBE-01-QFA-USRM-20260912T231511Z.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① 何事：YONEDA 范畴探针（EXPORT-PROBE-01）由 QFA 入 usrm 匣。\n\n② 与 usrm 主线何干：探针验因果集之 Yoneda 表示完备性，涉 k_c 决胜格与律吕耦合，属 CUBIC-LAW-01 双署射程。\n\n③ 应动何件：SI3 循环器启读探针；行因果预检；立记录统计一级署；提请判闸二级署；双署毕，定其嵌入或剔除。\n\n④ 生债一条：债-231511：探针 01 已入匣，CUBIC-LAW-01 双署未竟，SI3 持筹待决。"
+}
