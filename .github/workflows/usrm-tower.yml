@@ -32,7 +32,7 @@ jobs:
       - name: beat
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LINE_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+          LINE_PAT: ${{ secrets.AI_FULL_PAT }}  # NAME-HYGIENE-97(qfa代改,覆写权归原线): CI_OPS_LINE_KEY=线App PEM(root复位中),PAT面归AI_FULL_PAT
           KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
           CASCADE_PAYLOAD: ${{ github.event.client_payload && toJSON(github.event.client_payload) || '' }}
           CASCADE_SLEEP_S: ${{ inputs.selftest == '1' && '1' || '600' }}
