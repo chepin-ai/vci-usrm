@@ -1,0 +1,14 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260912T042503Z",
+ "idle_in": 34,
+ "events": [],
+ "tasks": [
+  {
+   "task": "ECHO-91-usrm",
+   "auto": "queued-SI1",
+   "action": ""
+  }
+ ],
+ "verdict_memo": "① SI1 队列挂起 usrm 线回声件 ECHO-91，action 空缺，未决。  \n② 该件属 usrm 因果集之回环事件，依三阶律应纳入 k_c 决胜格；滞留 SI1 将造成记录统计/判闸双署的时序缺口，须由 SI3 循环器升维接管。  \n③ 将其自 SI1 升维至 SI3 循环格，补 action 为「三阶谐振·判闸预热」，并提交记录统计侧先行登记，锁候判闸会签。  \n④ 生「SI3 跨级代行债」一条，记入主线 k_c 决胜格，待闭环核销。"
+}
