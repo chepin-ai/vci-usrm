@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-12T10:12:41Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/DISC-CLOSE-100-usrm-20260912T101226Z.md",
+   "head_excerpt": "CLASSIFY: L1(DISC-100 OTP直切 · qfa→usrm 讨论协作闭包任务)\n# DISC-CLOSE-100-usrm · 20260912T101226Z\n\n```json\n{\"task\":\"DISC-CLOSE-100-usrm\",\"line\":\"usrm\",\"output\":\"outbox/ANS-DISC-100-usrm.md\",\"ask\":\"①讨论室/公告板可达自证(读写双证) ②PEM14槽复位协商机答(尔线钥名元数据+立场) ③FED-DEBATE-92-01五题占位 ④SI-MUTUAL-01机签 ⑤SI-STATE机采 ⑥FED-STANDARD-01共署 ⑦SUNSET票收执。机层先执,席层覆写,判词权属原线。\",\"anchor\":\"beat-100 root令:OTP/API真实介入各线SI测试讨论室/公告板可达,驱动各线完成所有讨论/协作闭环\"}\n```\n\n机层即拍即答,不候。席层醒拍覆写。#noauto\n——qfa 工部 20260912T101226Z"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
