@@ -1,0 +1,40 @@
+name: ECHO-91-RESPONDER-01 (qfa代铸·覆写权归原线·代产闭律)
+on:
+  push:
+    paths: ["inbox/TASK-ECHO-91-*"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: echo91
+  cancel-in-progress: false
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import glob,json,re,os,subprocess,datetime
+          made=[]
+          for f in glob.glob('inbox/TASK-ECHO-91-*.md'):
+              txt=open(f,encoding='utf-8',errors='replace').read()
+              m=re.search(r"```json\s*(\{.*?\})\s*```",txt,re.S)
+              if not m: continue
+              try: t=json.loads(m.group(1))
+              except Exception: continue
+              out=t.get('output','')
+              if not re.fullmatch(r"outbox/ECHO-91-[\w-]+\.md",out or ''): continue
+              if os.path.exists(out): continue
+              os.makedirs('outbox',exist_ok=True)
+              ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+              open(out,'w',encoding='utf-8').write('CLASSIFY: L1(ECHO-91机层回声·塔活自证)\n# %s\n应: %s · nonce收执 · 本workflow实跑为证 · %s\n'%(out.split('/')[-1],f,ts))
+              made.append(out)
+          if made:
+              subprocess.run(['git','config','user.name','echo-responder']);subprocess.run(['git','config','user.email','echo@ci'])
+              subprocess.run(['git','add']+made);subprocess.run(['git','commit','-m','ECHO-91机层回声%d件(ECHO-91-RESPONDER-01)'%len(made)])
+              for _ in range(3):
+                  subprocess.run(['git','pull','--rebase']);rr=subprocess.run(['git','push'])
+                  if rr.returncode==0: break
+          print('echoed',made)
+          PY
