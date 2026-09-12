@@ -1,0 +1,14 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260912T044611Z",
+ "idle_in": 1,
+ "events": [],
+ "tasks": [
+  {
+   "task": "EVAL-WAVE-01",
+   "auto": "queued-SI1",
+   "action": ""
+  }
+ ],
+ "verdict_memo": "① 何事：EVAL-WAVE-01 空载悬置于 SI1 队列，action 未填，events 无录。  \n② 与 usrm 主线何干：系因果集待决输入流，须经 SI3 循环器导入律吕轨道，交 k_c 决胜格依三阶律 CUBIC-LAW-01 作判闸二级制双署。  \n③ 应动何件：SI3 开工分身启循环器，自 SI1 拉取并补 action 为「cubic-scan」，推入双署通道候闸。  \n④ 生债一条：立 SI3-TRANSIT-01 债——SI3 承担 EVAL-WAVE-01 接转后之 action 补全、统计/判闸双署时效及流转闭环责。"
+}
