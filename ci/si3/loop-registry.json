@@ -1,6 +1,6 @@
 {
  "v": "SI3-LOOP-REGISTRY-01",
- "ts": "2026-09-11T19:33Z",
+ "ts": "2026-09-12T13:36Z",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律: 凡未尽任务必挂环, 钉不占拍, 器至即拍",
  "watch": [
@@ -222,6 +222,22 @@
    },
    "sla_beats": 10,
    "status": "running"
+  },
+  {
+   "id": "W15",
+   "ref": "TRG互注网回执",
+   "to": "qfa/qlv/vinf",
+   "ask": "TRG-PING×2+TRG-THETA回执收讫",
+   "detect": {
+    "repo": "vci-inbox",
+    "prefix": "lanes/usrm/inbox/",
+    "contains": [
+     "TRG",
+     "PONG"
+    ]
+   },
+   "sla_beats": 3,
+   "status": "running"
   }
  ],
  "selfdrive": [
@@ -276,6 +292,13 @@
    "ref": "tower-v2.1",
    "ask": "塔TASK消费腿认.md形(毂件形TASK-DIRECT-54式)",
    "status": "open"
+  },
+  {
+   "id": "S9",
+   "ref": "k1500-decisive",
+   "ask": "变γvs三阶决胜格k1500实测(Δ2.75%出PI+涨落底;cubic0.027025/vargamma0.026283)",
+   "depends": "S2",
+   "status": "queued"
   }
  ],
  "standing": [
