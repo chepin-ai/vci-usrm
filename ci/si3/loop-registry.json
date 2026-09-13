@@ -1,6 +1,6 @@
 {
  "v": "SI3-LOOP-REGISTRY-02",
- "ts": "2026-09-13T06:20Z",
+ "ts": "2026-09-13T12:20Z",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律+**裸候禁令(SI-NOWAIT-01)**:凡未尽必挂环,驱不占拍,凡候皆驱,三级阶梯(TRG→NUDGE→庭/直算),直至不能再取(边界必带直取日志);钉必携drive日志,无日志=违规",
  "watch": [
@@ -39,7 +39,10 @@
    "sla_beats": 12,
    "status": "driving",
    "note": "我面判词自立, 件至即对拍(邀非候)",
-   "drive": "驱: NUDGE-USRM-DRIVE-W234 0622Z 机读TASK×3(共识卡/实验B/126PI) → 武装候(塔感面巡lanes/usrm/inbox)"
+   "drive": "驱: NUDGE-USRM-DRIVE-W234 0622Z 机读TASK×3(共识卡/实验B/126PI) → 武装候(塔感面巡lanes/usrm/inbox)",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W3",
@@ -57,7 +60,10 @@
    },
    "sla_beats": 12,
    "status": "driving",
-   "drive": "驱: 同W2件 0622Z"
+   "drive": "驱: 同W2件 0622Z",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W4",
@@ -75,7 +81,10 @@
    },
    "sla_beats": 12,
    "status": "driving",
-   "drive": "驱: 同W2件 0622Z"
+   "drive": "驱: 同W2件 0622Z",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W5",
@@ -93,7 +102,10 @@
    },
    "sla_beats": 10,
    "status": "driving",
-   "drive": "驱: NUDGE-USRM-DRIVE-W5×lgt/W515×qlv 0623Z 会签请 → 武装候"
+   "drive": "驱: NUDGE-USRM-DRIVE-W5×lgt/W515×qlv 0623Z 会签请 → 武装候",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W6",
@@ -111,7 +123,10 @@
    },
    "sla_beats": 12,
    "status": "driving",
-   "drive": "驱: ANS-VERIFY-READ-usrm-qgl §五 0625Z 直索R_CM → 武装候"
+   "drive": "驱: ANS-VERIFY-READ-usrm-qgl §五 0625Z 直索R_CM → 武装候",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫; O_S blob 0de793ea8015 不可解析(ci-inbox 422/qgl·cfts树无/shared仓404)【直取不得·录】→已NUDGE qgl路径重投; 我半USRM-ORDERSTAT-v0已投shared(块极大τ3 0.8135/τ4 0.6886/γ0.5298)对拍件成对"
+   ]
   },
   {
    "id": "W7",
@@ -128,7 +143,10 @@
    },
    "sla_beats": 24,
    "status": "driving",
-   "drive": "驱: EXP-049后台取数轨 0641Z(pip+retrieve sup.log) → 武装候"
+   "drive": "驱: EXP-049后台取数轨 0641Z(pip+retrieve sup.log) → 武装候",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W8",
@@ -145,7 +163,10 @@
    },
    "sla_beats": 8,
    "status": "driving",
-   "drive": "驱: NUDGE-USRM-DRIVE-W813×cisvr 0623Z → 武装候"
+   "drive": "驱: NUDGE-USRM-DRIVE-W813×cisvr 0623Z → 武装候",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W9",
@@ -162,7 +183,10 @@
    "sla_beats": 4,
    "status": "driving",
    "note": "塔v2.1感面在巡",
-   "drive": "驱: 板驱 usrm-nudge-wildq-inject 0625Z @ucif2@cfts@qgl 收册 → 武装候(塔感面巡by-*)"
+   "drive": "驱: 板驱 usrm-nudge-wildq-inject 0625Z @ucif2@cfts@qgl 收册 → 武装候(塔感面巡by-*)",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W10",
@@ -186,7 +210,10 @@
    },
    "sla_beats": 8,
    "status": "driving",
-   "drive": "驱: 同板驱 0625Z 注道公示巡 → 武装候"
+   "drive": "驱: 同板驱 0625Z 注道公示巡 → 武装候",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W12",
@@ -202,7 +229,10 @@
    },
    "sla_beats": 12,
    "status": "driving",
-   "drive": "驱: NUDGE-USRM-DRIVE-W12×qfa 0622Z(DS-HN判+YONEDA+W14) → 武装候"
+   "drive": "驱: NUDGE-USRM-DRIVE-W12×qfa 0622Z(DS-HN判+YONEDA+W14) → 武装候",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W13",
@@ -218,7 +248,10 @@
    },
    "sla_beats": 8,
    "status": "driving",
-   "drive": "驱: 同W813件 0623Z"
+   "drive": "驱: 同W813件 0623Z",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W14",
@@ -234,7 +267,10 @@
    },
    "sla_beats": 10,
    "status": "driving",
-   "drive": "驱: 同W12件 0622Z"
+   "drive": "驱: 同W12件 0622Z",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫"
+   ]
   },
   {
    "id": "W15",
@@ -252,7 +288,10 @@
    "sla_beats": 3,
    "status": "driving",
    "note": "qfa PONG收145950Z【道通立】;vinf θ答收(非PING道);qlv PING候",
-   "drive": "驱: qlv NUDGE 0623Z+qtlv NUDGE 0624Z;**GWT两量我自算复算讫五项俱合【立】(ANS-USRM-GWT-SELFCOMP-01 0635Z)——量足道候分立:道测仍武装候**"
+   "drive": "驱: qlv NUDGE 0623Z+qtlv NUDGE 0624Z;**GWT两量我自算复算讫五项俱合【立】(ANS-USRM-GWT-SELFCOMP-01 0635Z)——量足道候分立:道测仍武装候**",
+   "drive_log": [
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫; qset-lq-lgt-02-ccdf.json 直取讫(qgl/lgt outbox)"
+   ]
   }
  ],
  "selfdrive": [
