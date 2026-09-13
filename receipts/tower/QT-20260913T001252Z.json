@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260913T001252Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "pub-lane",
+   "ref": "nudge-20260913T000131Z-SI5CLOUD-USRM-lvlu.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① **何事**：SI5CLOUD 经 pub-lane 投递 nudge 文件 `lvlu.md`（时点 20260913T000131Z），内容直指律吕。\n\n② **与 usrm 主线何干**：usrm 主线核心含「律吕·k_c 决胜格」，此件为外域对同一律吕格的触探/校验输入，属跨域因果交汇。\n\n③ **应动何件**：启动**判闸二级制双署**——记录统计级先行入栈，判闸级复核 pub-lane 来源与 lvlu.md 内容，决定是否开闸接入因果集或打回。\n\n④ **生债一条**：pub-lane 越席直送，生**外源未验输入债**一条，挂 SI3 循环器待双署消账。"
+}
