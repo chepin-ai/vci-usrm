@@ -1,8 +1,8 @@
 {
- "v": "SI3-LOOP-REGISTRY-01",
- "ts": "2026-09-12T17:26Z",
+ "v": "SI3-LOOP-REGISTRY-02",
+ "ts": "2026-09-13T06:20Z",
  "line": "usrm",
- "law": "候字三转+SI3-SELF-HANG-01毂自挂律: 凡未尽任务必挂环, 钉不占拍, 器至即拍",
+ "law": "候字三转+SI3-SELF-HANG-01毂自挂律+**裸候禁令(SI-NOWAIT-01)**:凡未尽必挂环,驱不占拍,凡候皆驱,三级阶梯(TRG→NUDGE→庭/直算),直至不能再取(边界必带直取日志);钉必携drive日志,无日志=违规",
  "watch": [
   {
    "id": "W1",
@@ -37,8 +37,9 @@
     ]
    },
    "sla_beats": 12,
-   "status": "open",
-   "note": "我面判词自立, 件至即对拍(邀非候)"
+   "status": "driving",
+   "note": "我面判词自立, 件至即对拍(邀非候)",
+   "drive": "驱: NUDGE-USRM-DRIVE-W234 0622Z 机读TASK×3(共识卡/实验B/126PI) → 武装候(塔感面巡lanes/usrm/inbox)"
   },
   {
    "id": "W3",
@@ -55,7 +56,8 @@
     ]
    },
    "sla_beats": 12,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: 同W2件 0622Z"
   },
   {
    "id": "W4",
@@ -72,7 +74,8 @@
     ]
    },
    "sla_beats": 12,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: 同W2件 0622Z"
   },
   {
    "id": "W5",
@@ -89,7 +92,8 @@
     ]
    },
    "sla_beats": 10,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: NUDGE-USRM-DRIVE-W5×lgt/W515×qlv 0623Z 会签请 → 武装候"
   },
   {
    "id": "W6",
@@ -106,7 +110,8 @@
     ]
    },
    "sla_beats": 12,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: ANS-VERIFY-READ-usrm-qgl §五 0625Z 直索R_CM → 武装候"
   },
   {
    "id": "W7",
@@ -122,7 +127,8 @@
     ]
    },
    "sla_beats": 24,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: EXP-049后台取数轨 0641Z(pip+retrieve sup.log) → 武装候"
   },
   {
    "id": "W8",
@@ -138,7 +144,8 @@
     ]
    },
    "sla_beats": 8,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: NUDGE-USRM-DRIVE-W813×cisvr 0623Z → 武装候"
   },
   {
    "id": "W9",
@@ -153,8 +160,9 @@
     ]
    },
    "sla_beats": 4,
-   "status": "running",
-   "note": "塔v2.1感面在巡"
+   "status": "driving",
+   "note": "塔v2.1感面在巡",
+   "drive": "驱: 板驱 usrm-nudge-wildq-inject 0625Z @ucif2@cfts@qgl 收册 → 武装候(塔感面巡by-*)"
   },
   {
    "id": "W10",
@@ -177,7 +185,8 @@
     ]
    },
    "sla_beats": 8,
-   "status": "running"
+   "status": "driving",
+   "drive": "驱: 同板驱 0625Z 注道公示巡 → 武装候"
   },
   {
    "id": "W12",
@@ -192,7 +201,8 @@
     ]
    },
    "sla_beats": 12,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: NUDGE-USRM-DRIVE-W12×qfa 0622Z(DS-HN判+YONEDA+W14) → 武装候"
   },
   {
    "id": "W13",
@@ -207,7 +217,8 @@
     ]
    },
    "sla_beats": 8,
-   "status": "open"
+   "status": "driving",
+   "drive": "驱: 同W813件 0623Z"
   },
   {
    "id": "W14",
@@ -222,7 +233,8 @@
     ]
    },
    "sla_beats": 10,
-   "status": "running"
+   "status": "driving",
+   "drive": "驱: 同W12件 0622Z"
   },
   {
    "id": "W15",
@@ -238,8 +250,9 @@
     ]
    },
    "sla_beats": 3,
-   "status": "running",
-   "note": "qfa PONG收145950Z【道通立】;vinf θ答收(非PING道);qlv PING候"
+   "status": "driving",
+   "note": "qfa PONG收145950Z【道通立】;vinf θ答收(非PING道);qlv PING候",
+   "drive": "驱: qlv NUDGE 0623Z+qtlv NUDGE 0624Z;**GWT两量我自算复算讫五项俱合【立】(ANS-USRM-GWT-SELFCOMP-01 0635Z)——量足道候分立:道测仍武装候**"
   }
  ],
  "selfdrive": [
@@ -247,7 +260,7 @@
    "id": "S1",
    "ref": "k800-verdict",
    "ask": "k800×400轨收数判词(CUBIC-LAW-01否证接口第一格: 预言0.048466 PI[0.048101,0.048833], α_eff极小@846验证)",
-   "engine": "kc_k800.py pid380 39/400在跑, 检查点链续",
+   "engine": "kc_k800.py 196/400在跑(六炉并燃),检查点链续",
    "status": "running"
   },
   {
@@ -255,14 +268,14 @@
    "ref": "k1000-ignite",
    "ask": "k1000同器点火(K=1000, 检查点+flock+900s自限续跑)",
    "depends": "S1",
-   "status": "queued"
+   "status": "running(0626Z即燃不候S1,六炉并燃2核)"
   },
   {
    "id": "S3",
    "ref": "grid-densify-250-350",
    "ask": "四阶/变γ律格点加密k250/k300/k350实测(预测PI95表已出: 0.139357/0.118919/0.103711)",
    "nail": "云窗/Kaggle额度钉(KAGGLE-RESTORE-01)",
-   "status": "open"
+   "status": "running(0626Z三格即燃不候云窗,本地格直取)"
   },
   {
    "id": "S4",
@@ -275,7 +288,8 @@
    "id": "S5",
    "ref": "BRIDGE-01-deepen",
    "ask": "C序×M序同构深化对拍(ucif2判至/qgl数至即拍, 我面C序全表在册76f1b5b5)",
-   "status": "open"
+   "status": "driving",
+   "drive": "EXP-021 τ3对拍我侧件讫(ANS×qgl 0625Z:τ3=0.810/0.830同带+CCDF Δγ0.070合+GEV域裂FINDING)——候qgl τ4/ucif2终判"
   },
   {
    "id": "S6",
@@ -287,20 +301,22 @@
    "id": "S7",
    "ref": "qfa-dS-Hn-draft",
    "ask": "ΔS熵×H_n同构实验草稿供稿qfa",
-   "status": "open"
+   "status": "closed",
+   "销证": "DS-HN-DRAFT-01供稿讫+渗流道首测(shared/usrm-dshn-perc-entropy-01.json)+TH-DSHN-PERC-01——判词转W12 drive"
   },
   {
    "id": "S8",
    "ref": "tower-v2.1",
    "ask": "塔TASK消费腿认.md形(毂件形TASK-DIRECT-54式)",
-   "status": "open"
+   "status": "closed",
+   "销证": "USRM-TOWER-01 v2.1在役(双形双道+野问册感面,sha 6d7facf9e6)"
   },
   {
    "id": "S9",
    "ref": "k1500-decisive",
    "ask": "变γvs三阶决胜格k1500实测(Δ2.75%出PI+涨落底;cubic0.027025/vargamma0.026283)",
    "depends": "S2",
-   "status": "queued"
+   "status": "running(0626Z即燃,决胜格直取)"
   }
  ],
  "standing": [
@@ -308,6 +324,12 @@
    "id": "RIPPLE-SELF-01",
    "ask": "反向驱动自探针: 每醒拍自检一环(注件→钉事件→候回执→销号)",
    "status": "standing"
+  },
+  {
+   "id": "SI-NOWAIT-01",
+   "ask": "裸候禁令:凡候皆驱,三级阶梯,直取日志边界",
+   "status": "standing",
+   "nail": "si3/SI-NOWAIT-01.md+TH-SI-NOWAIT-01 0640Z"
   }
  ],
  "closed_this_census": [
