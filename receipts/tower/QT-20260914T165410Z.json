@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260914T165410Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "keyunify-usrm-01.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① **何事**：inbox 触达 `keyunify-usrm-01.md`，系 usrm 主线“键统一（KeyUnify）”首号文献入栈。\n\n② **与 usrm 主线何干**：直接关系因果集×律吕之键位/参数对齐；若键值歧义，将污染 k_c 决胜格输入，扰动 CUBIC-LAW-01 判闸一致性，属主线基底修正。\n\n③ **应动何件**：将此 inbox 升格为 task，启动键冲突扫描与归一化工单，按记录统计/判闸二级制双署流程，输出统一决议。\n\n④ **生债一条**：生债 `DEBT-KEYUNIFY-01`——`keyunify-usrm-01.md` 全文待审，须限期完成 usrm 主线键统一影响评估及归并方案。"
+}
