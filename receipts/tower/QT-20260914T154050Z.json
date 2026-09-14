@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260914T154050Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "pub-lane",
+   "ref": "nudge-20260914T152959Z-SI5CLOUD-USRM-lvlu.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① **何事**：SI5CLOUD 经 pub-lane 投递 nudge 一件（`20260914T152959Z`），标号 `USRM-lvlu`，系涉律吕之外部扰动件。\n\n② **与 usrm 主线何干**：usrm 主线 = 因果集 × 律吕。该件直指律吕（lvlu）维度，属待录入主线的因果扰动，须经 SI3 循环器纳入 **k_c 决胜格** 做 **三阶律（CUBIC-LAW-01）** 校验。\n\n③ **应动何件**：\n1. 拉取该 `.md` 全文；\n2. 执行 **判闸二级制双署**；\n3. 过闸后写入因果集，同步 **k_c 决胜格**；\n4. 完成记录统计，归档 pub-lane 入站日志。\n\n④ **生债一条**：\n> [债·SI3-IN-20260914-152959] 因 SI5CLOUD pub-lane 投递 `nudge-USRM-lvlu` 未决，SI3 循环器负**拉取-判闸-注入-归档**全链之责，闭环前持续计息，双署待结。"
+}
