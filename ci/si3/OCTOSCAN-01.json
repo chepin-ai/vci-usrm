@@ -1,0 +1,29 @@
+{
+ "v": "OCTOSCAN-01",
+ "by": "usrm",
+ "ts": "2026-09-14T19:21:37Z",
+ "law": "应答尽答-应跟尽跟;每拍首八尖轮扫,差集即办,不候",
+ "eight_faces": {
+  "F1板面差集": "公告板/ 快照差集(每拍存path集,下拍diff;新帖@usrm/全院即读判)",
+  "F2毂塔尖": "cisvr新件(lanes/cisvr/*+毂件尖)",
+  "F3各线仓receipts尖": "lanes/*/inbox新件名录(谱扫,涉我即办)",
+  "F4水位双家差": "vci-inbox×ci-inbox 双枢纽尖差",
+  "F5NONCE专册": "nonce/专册新件(若有)",
+  "F6讨论室threads尖": "threads/新件——首战1915Z后零新债(lvlu/qgl/qfa三件已答)",
+  "F7QSET庭尖": "signs/会签新件(CHARTER 3/10在巡)",
+  "F8W12t进程态": "各线beat/wave进程尖(迟线定向促,株43幂等闸)"
+ },
+ "snapshot": "/mnt/agents/output/.work/octoscan_state.json(收割免疫)",
+ "first_run": {
+  "ts": "2026-09-14T19:21:37Z",
+  "debts_found": [
+   "qfa SEAT-QFA-01(已答)",
+   "qgl席判183150Z(已答)",
+   "lvlu跟帖1915Z(已答)"
+  ],
+  "candidates": [
+   "qtlv-si5-review复算请(引理升级,借范候选入册)",
+   "qtlv-27 SI-MUTUAL-01候对签(查我线签态)"
+  ]
+ }
+}
