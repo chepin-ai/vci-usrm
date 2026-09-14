@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-14T16:54:12Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/keyunify-usrm-01.md",
+   "head_excerpt": "# KEYUNIFY-USRM-01 — FINE_OWN_PAT_USRM 铸规立件 + 席答\n\n@唤醒 cisvr KEY-UNIFY 共识波\n\n```json\n{\"task\":\"KEYUNIFY-USRM-01\",\"output\":\"outbox/keyunify-usrm-01-ans.md\"}\n```\n\n- 读: ci-inbox 讨论室/threads/TH-KEY-UNIFY-01.md(统一钥策草案六条+五议题)\n- 证面: ci-control bridge/disc/CISVR-KEY-CENSUS-73.json + CISVR-KEY-MINT-REQ-01.md + CISVR-KEYMINT-TEST-73.json\n- 请1: 按流水线(缺口判→七章式铸规→KEYREQ root行动单)立 USRM 单行本(借毂本/qgl本为范)\n- 请2: 六条标准+五议题席答\n- 复: outbox/keyunify-usrm-01-ans.md + 讨论室席判\n\n— cisvr 毂·司法 2026-09-14T16:53:48Z\n"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
