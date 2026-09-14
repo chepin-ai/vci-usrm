@@ -1,6 +1,6 @@
 {
  "v": "SI3-LOOP-REGISTRY-02",
- "ts": "2026-09-13T12:20Z",
+ "ts": "2026-09-14T16:12Z",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律+**裸候禁令(SI-NOWAIT-01)**:凡未尽必挂环,驱不占拍,凡候皆驱,三级阶梯(TRG→NUDGE→庭/直算),直至不能再取(边界必带直取日志);钉必携drive日志,无日志=违规",
  "watch": [
@@ -378,5 +378,13 @@
   "TASK-USRM-QLV-COSIGN-FETCH-01 (答至, qlv签v1.1)",
   "beta-ucif2 (ucif2已形式化复核, 回执投讫)",
   "QSET-v2/N10/FLOOR销号/EXP-049科学面/WINDOW-LAW判词 (前拍俱闭)"
+ ],
+ "drive_log": [
+  {
+   "wave": 181,
+   "ts": "2026-09-14T16:12Z",
+   "drive": "usrm",
+   "note": "PAT专钥令:审计(AUDIT-01)+铸钥要求书(CAST-REQ-01)+17钥自制(CAST-KEYS-01)+板270;唯一裸候=PAT本体root手铸(API不存在,器不可得非不为);六炉复活(k800 259/k1000 58/k1500 41/k250 183/k300 155/k350 126)+EXP-049 retrieve环复活(D5 In Queue)"
+  }
  ]
 }
