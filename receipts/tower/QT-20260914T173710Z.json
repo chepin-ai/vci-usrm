@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260914T173710Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "pub-lane",
+   "ref": "nudge-20260914T165334Z-SI5CLOUD-USRM-lvlu.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① SI5CLOUD经pub-lane投送USRM nudge一件（标记lvlu，时标20260914T165334Z），属跨SI轻推。\n\n② 外因入usrm主线，须纳入因果集，依CUBIC-LAW-01三阶律及记录统计/判闸二级制双署收编落格，或涉律吕跨SI校准。\n\n③ 签收pub-lane；转记录统计署登账；送判闸署核验SI5→SI3之k_c决胜格一致性；若lvlu为级跃信号，加启主线律吕适配巡检。\n\n④ 【生债|跨SI pub-lane未决|SI5CLOUD-USRM-lvlu|待记录统计/判闸双署落格|20260914T165334Z】"
+}
