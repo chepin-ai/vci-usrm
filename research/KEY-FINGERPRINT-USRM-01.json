@@ -1,0 +1,113 @@
+{
+ "v": "KEY-FINGERPRINT-USRM-01",
+ "by": "usrm",
+ "ts": "2026-09-14T17:40Z",
+ "law": "值零入册,唯sha256[:12]",
+ "L_class": {
+  "USRM_HMAC_SK": {
+   "fp": "f2c27fd02b78",
+   "days": 90,
+   "home": "~/.keys 600 + sealed锚",
+   "minted": "2026-09-14"
+  },
+  "USRM_OTP_POOL_SK": {
+   "fp": "5de1758186dc",
+   "days": 180,
+   "home": "~/.keys 600 + sealed锚",
+   "minted": "2026-09-14"
+  },
+  "USRM_RECOVERY_ROT": {
+   "fp": "d86a9e3a82c9",
+   "days": 360,
+   "home": "~/.keys 600 + sealed锚",
+   "minted": "2026-09-14"
+  }
+ },
+ "cast_v2": {
+  "dk-usrm-vci-usrm-01": {
+   "fp": "SHA256:X1qCSI7PGdZDTXjvDu37d5VeRMd9P5xqt3M5fqWaThg",
+   "repo": "vci-usrm",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-usrm-usrm-repo-01": {
+   "fp": "SHA256:j4grof2XuuuCWauFKXt0+duqBBoFRS+xOfReTrPQhmA",
+   "repo": "usrm-repo",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qgl-vci-qgl-01": {
+   "fp": "SHA256:1rya2UZ9tW/7y4OVl8uic42S1qSBTegZlr9mTiHUHFE",
+   "repo": "vci-qgl",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qgl-qglk-01": {
+   "fp": "SHA256:OXjSlh52iNloxiIPB7bsd7h7Sekok4koCLdaWousUlU",
+   "repo": "quantum-go-ledger",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-vinf-vci-vinf-01": {
+   "fp": "SHA256:A+85X58aeDBThTnJiKdwFw4QbPsczxMcdAAOFOVRZO0",
+   "repo": "vci-vinf",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-vinf-vinf-mk-01": {
+   "fp": "SHA256:CmbIFDXcqw5ypTomG5Gzpqof7KI+NKsx5PIxkW8nH3Q",
+   "repo": "vinf-market-kernel",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-ucif2-vci-ucif2-01": {
+   "fp": "SHA256:GjQUCdhYLejc1Z1MnRqJQmqA3LAYwzDYhpuS8KL8Uls",
+   "repo": "vci-ucif2",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-ucif2-ucif2-fk-01": {
+   "fp": "SHA256:5Lqy+DvXedBwh49VXWzgBpKbPcY07zA2e6IV1+7bfXc",
+   "repo": "ucif2-formalization-kernel",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-cfts-vci-cfts-01": {
+   "fp": "SHA256:RHhfJ9lUSfGEZVhw2F7mrfTOnOWd894WASPUGK9CbL0",
+   "repo": "vci-cfts",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-cfts-gh-cfts-01": {
+   "fp": "SHA256:tqcZgU0WaMAiV1p8OiL2tFpllFtyGVrD9w8LmpGmtgc",
+   "repo": "github-repo-cfts",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qfa-vci-qfa-01": {
+   "fp": "SHA256:7amiZW8yzEy/FMawIFPlLcfMMmp2lBDkzvk7PT28SeE",
+   "repo": "vci-qfa",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qfa-qfa-pub-01": {
+   "fp": "SHA256:HSsSqZu5s9wAI1z1jaQMigQcifB26e2kGwTdHbKybDs",
+   "repo": "qfa-pub",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qlv-vci-qlv-01": {
+   "fp": "SHA256:b9l5z0VRFEF8PmEN3cE1RgpICMAVnnU67T7781+8bbo",
+   "repo": "vci-qlv",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qlv-qlv-lib-01": {
+   "fp": "SHA256:yUGzJ3NIqinkffUidFFH4J0o2Y4tF50uikQ8QvVT6h4",
+   "repo": "qlv-lib",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-qlv-qlv-pub-01": {
+   "fp": "SHA256:qkE7aQ/0Q4X1liQhqquZ1LmsqvYGa46xjbRQ+OyyW6Y",
+   "repo": "qlv-pub",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-lgt-vci-lgt-01": {
+   "fp": "SHA256:dH0Tx2NzV26xG0YmNeWBJeFEP+rQVBChqIs1E2X2b74",
+   "repo": "vci-lgt",
+   "status": "minted-unregistered-v2"
+  },
+  "dk-lgt-lgt-worker-01-01": {
+   "fp": "SHA256:HkUCRvGM1dVo9TlpWF2AtPXvsh+5uH4FGxY554hgbBQ",
+   "repo": "lgt-worker-01",
+   "status": "minted-unregistered-v2"
+  }
+ }
+}
