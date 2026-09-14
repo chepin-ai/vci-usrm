@@ -1,0 +1,17 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260914T145741Z",
+ "idle_in": 32,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "debt-72-usrm-01.md"
+  },
+  {
+   "kind": "pub-lane",
+   "ref": "nudge-20260914T144607Z-SI5CLOUD-USRM-lvlu.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① 何事：debt-72-usrm-01.md 入 inbox；SI5CLOUD 经 pub-lane 投送 nudge（20260914T144607Z-USRM-lvlu）。  \n② 与 usrm 主线何干：前者系因果集未决债务项；后者为 lvlu 决胜格外源触闸信号，俱入 k_c 双署统计域，受 CUBIC-LAW-01 统辖。  \n③ 应动何件：即启 debt-72-usrm-01.md 阅处/执行；将 nudge 时标归档至律吕日志，待判闸。  \n④ 生债一条：debt-73-usrm-01.md —— “SI3 循环器受 SI5CLOUD pub-lane nudge，须于一循环内完结 debt-72 并回执双署。”"
+}
