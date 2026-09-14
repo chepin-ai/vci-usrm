@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260914T165436Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "keyunify-usrm-01.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "① 何事：inbox 入站一件，引用 keyunify-usrm-01.md，属关键统一/核心归档类输入。\n\n② 与 usrm 主线何干：此件为因果集上游原料，须经 k_c 决胜格与三阶律 CUBIC-LAW-01 的二级制双署（记录统计/判闸），是 SI3 循环器开工分身的待处理律吕触发点。\n\n③ 应动何件：启封并解析 keyunify-usrm-01.md，提取关键统一参数，送记录统计/判闸二级制双署；双署通过后，写入因果集并回传同步确认。\n\n④ 生债一条：债目 SI3-KEYUNIFY-01，负 keyunify-usrm-01.md 双署裁决与因果集落库之责；未偿清则冻结同序列下游 k_c 格点推进。"
+}
