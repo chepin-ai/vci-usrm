@@ -1,0 +1,31 @@
+{
+ "v": "USRM-KEYMINT-TEST-183",
+ "by": "usrm",
+ "ts": "2026-09-14T17:40Z",
+ "protocol": "借qgl KMR-QGL-01第肆章七测",
+ "T1_sign_verify_loop": true,
+ "T2_fingerprint_consistency": true,
+ "T3_wrong_key_rejected": true,
+ "T4_tamper_rejected": true,
+ "T5_entropy": {
+  "monobit_z": 0.072,
+  "runs_z": 0.0,
+  "pass": true
+ },
+ "T6_otp_domain_separation": true,
+ "T7_rail_probe": {
+  "put": 201,
+  "meta": 200,
+  "delete": 204,
+  "post_get": 404,
+  "nonce_fp": "1857d03fbfe9",
+  "pass": true
+ },
+ "heal_drill": {
+  "destroy": 20,
+  "restored": 20,
+  "fingerprints_equal": true,
+  "note": "KEYBLIND首案后实演"
+ },
+ "verdict": "七测全证+自愈演练证"
+}
