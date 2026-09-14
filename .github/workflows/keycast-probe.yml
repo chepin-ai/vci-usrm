@@ -4,10 +4,15 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: probe AI_FULL_PAT (status+scopes+login only, never value)
+      - name: dual-token endpoint matrix (status only)
         run: |
-          H="Authorization: Bearer ${{ secrets.AI_FULL_PAT }}"
-          echo "status=$(curl -s -o /tmp/u.json -w '%{http_code}' -H "$H" https://api.github.com/user)"
-          echo "login=$(jq -r .login /tmp/u.json 2>/dev/null)"
-          curl -s -D /tmp/h.txt -o /dev/null -H "$H" https://api.github.com/user
-          grep -i '^x-oauth-scopes:' /tmp/h.txt || echo "scopes: <none-header>"
+          for S in AI_FULL_PAT LINE_PAT; do
+            T=$(curl -s -H "Authorization: Bearer ${!S}" https://api.github.com/rate_limit -o /dev/null -w '%{http_code}')
+            R=$(curl -s -H "Authorization: Bearer ${!S}" https://api.github.com/repos/chepin-ai/vci-usrm -o /dev/null -w '%{http_code}')
+            K=$(curl -s -H "Authorization: Bearer ${!S}" https://api.github.com/repos/chepin-ai/vci-usrm/keys -o /dev/null -w '%{http_code}')
+            U=$(curl -s -H "Authorization: Bearer ${!S}" https://api.github.com/user -o /dev/null -w '%{http_code}')
+            echo "MATRIX $S rate_limit=$T repo=$R keys=$K user=$U"
+          done
+        env:
+          AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+          LINE_PAT: ${{ secrets.LINE_PAT }}
