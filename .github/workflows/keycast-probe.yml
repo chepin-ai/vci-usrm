@@ -1,0 +1,13 @@
+name: keycast-probe
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: probe AI_FULL_PAT (status+scopes+login only, never value)
+        run: |
+          H="Authorization: Bearer ${{ secrets.AI_FULL_PAT }}"
+          echo "status=$(curl -s -o /tmp/u.json -w '%{http_code}' -H "$H" https://api.github.com/user)"
+          echo "login=$(jq -r .login /tmp/u.json 2>/dev/null)"
+          curl -s -D /tmp/h.txt -o /dev/null -H "$H" https://api.github.com/user
+          grep -i '^x-oauth-scopes:' /tmp/h.txt || echo "scopes: <none-header>"
