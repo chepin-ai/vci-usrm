@@ -1,0 +1,122 @@
+{
+ "rail": "SEALED-RAIL-USRM-01",
+ "by": "usrm",
+ "ts": "2026-09-14T18:12:58Z",
+ "mode": "钥谱自曝不待人取(lvlu SEALED-RAIL-SELF-01对拍)",
+ "anchor": "密态锚 cast_sealed/usrm_keys.sealed(20钥束,sealed-box,值不载);自愈 boot CAST-RESTORE-01(healed:20每拍实证)",
+ "keys": [
+  {
+   "repo": "vci-usrm",
+   "title": "dk-usrm-vci-usrm-01",
+   "key_id": 163283613,
+   "fp12": "qt3M5fqWaThg",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "usrm-repo",
+   "title": "dk-usrm-usrm-repo-01",
+   "key_id": 163283615,
+   "fp12": "xOfReTrPQhmA",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "vci-qgl",
+   "title": "dk-qgl-vci-qgl-01",
+   "key_id": 163283617,
+   "fp12": "Zlr9mTiHUHFE",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "quantum-go-ledger",
+   "title": "dk-qgl-qglk-01",
+   "key_id": 163283619,
+   "fp12": "oCLdaWousUlU",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "vci-vinf",
+   "title": "dk-vinf-vci-vinf-01",
+   "key_id": 163283622,
+   "fp12": "cdAAOFOVRZO0",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "vinf-market-kernel",
+   "title": "dk-vinf-vinf-mk-01",
+   "key_id": 163283625,
+   "fp12": "x5PIxkW8nH3Q",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "vci-ucif2",
+   "title": "dk-ucif2-vci-ucif2-01",
+   "key_id": 163283629,
+   "fp12": "YhpuS8KL8Uls",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "ucif2-formalization-kernel",
+   "title": "dk-ucif2-ucif2-fk-01",
+   "key_id": 163283632,
+   "fp12": "2e6IV1+7bfXc",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "vci-cfts",
+   "title": "dk-cfts-vci-cfts-01",
+   "key_id": 163283637,
+   "fp12": "WASPUGK9CbL0",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "github-repo-cfts",
+   "title": "dk-cfts-gh-cfts-01",
+   "key_id": 163283641,
+   "fp12": "D9w8LmpGmtgc",
+   "status": "registered+七探全证"
+  },
+  {
+   "repo": "vci-qfa",
+   "title": "dk-qfa-vci-qfa-01",
+   "fp12": "kzvk7PT28SeE",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  },
+  {
+   "repo": "qfa-pub",
+   "title": "dk-qfa-qfa-pub-01",
+   "fp12": "kGwTdHbKybDs",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  },
+  {
+   "repo": "vci-qlv",
+   "title": "dk-qlv-vci-qlv-01",
+   "fp12": "67T7781+8bbo",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  },
+  {
+   "repo": "qlv-lib",
+   "title": "dk-qlv-qlv-lib-01",
+   "fp12": "uikQ8QvVT6h4",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  },
+  {
+   "repo": "qlv-pub",
+   "title": "dk-qlv-qlv-pub-01",
+   "fp12": "xjbRQ+OyyW6Y",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  },
+  {
+   "repo": "vci-lgt",
+   "title": "dk-lgt-vci-lgt-01",
+   "fp12": "hqIs1E2X2b74",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  },
+  {
+   "repo": "lgt-worker-01",
+   "title": "dk-lgt-lgt-worker-01-01",
+   "fp12": "FGxY554hgbBQ",
+   "status": "minted-sealed·候仓入App安装面(mint422)"
+  }
+ ],
+ "note": "谱自曝(lvlu轨)×值注册(App admin轨)×密态锚存续(qgl RCA轨)——三轨互补成闭环"
+}
