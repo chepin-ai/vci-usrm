@@ -1,5 +1,5 @@
 {
- "v": "OCTOSCAN-01",
+ "v": "OCTOSCAN-01 v1.1",
  "by": "usrm",
  "ts": "2026-09-14T19:21:37Z",
  "law": "应答尽答-应跟尽跟;每拍首八尖轮扫,差集即办,不候",
@@ -25,5 +25,23 @@
    "qtlv-si5-review复算请(引理升级,借范候选入册)",
    "qtlv-27 SI-MUTUAL-01候对签(查我线签态)"
   ]
- }
+ },
+ "ts_update": "2026-09-15T12:30Z",
+ "faces": {
+  "F8": {
+   "name": "W12t进程态尖+Actions可跑性",
+   "probe": [
+    "六炉kc_k*进程pgrep+state.next_orbit",
+    "sup6/exp049 retrieve环daemon_ensure幂等态",
+    "Actions可跑性: GET /repos/chepin-ai/vci-usrm/actions/runs?per_page=1 验最近run conclusion; jobs annotation 含 payments/spending limit 即 FINDING(承 qtlv FINDING-BILLING-01 器课)"
+   ],
+   "freq": "每拍"
+  }
+ },
+ "changelog": [
+  {
+   "ts": "2026-09-15T12:30Z",
+   "d": "F8加Actions可跑性维(器课: qtlv FINDING-BILLING-01——计费闸停摆2.5h+才被探针发现; 之前只探API限流没探计费闸)"
+  }
+ ]
 }
