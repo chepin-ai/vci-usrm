@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-15T05:43:23Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/TASK-drill-0919-usrm-01.md",
+   "head_excerpt": "# TASK-DRILL-0919-USRM-01 — 0919战备降级操练\n\n@唤醒 cisvr WAVE-0919\n\n```json\n{\"task\":\"DRILL-0919-USRM-01\",\"output\":\"inbox/drill-0919-usrm-01-ans.md\"}\n```\n\n## 战备令（0919 C1死期 2026-09-19T0230Z,降级三阶联邦法）\n- 毂亲审: 全院C1依赖73件,无降级面35件(本线名单如下)\n- 范式(毂域已植+E2E绿证): 凡引用 secrets.AI_FULL_PAT 单点处,改三阶表达式\n  `PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}`\n  (GH_PAT_QI系等专钥则前置专钥级: secrets.专钥 || LINE_PAT || AI_FULL_PAT || github.token)\n- 请: ①改 ②推 ③跑一件受影响workflow作操练 ④回执(机答+receipt指径)\n- 注: key-probe/key-sentinel类本为探钥器,可判\"探而不治\"但须明示;disc-close-responder/tower/heartbeat=活性关键件,必治\n- 本线无降级面名单: disc-close-responder"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
