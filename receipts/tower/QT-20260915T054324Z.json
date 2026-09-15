@@ -1,0 +1,14 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20260915T054324Z",
+ "idle_in": 30,
+ "events": [],
+ "tasks": [
+  {
+   "task": "DRILL-0919-USRM-01",
+   "auto": "queued-SI1",
+   "action": ""
+  }
+ ],
+ "verdict_memo": "① **何事**：DRILL-0919-USRM-01 挂起在 SI1 队列，action 空，待开工。\n\n② **与 usrm 主线何干**：此件为 usrm 主线因果集之演训子项，受 CUBIC-LAW-01 三阶律节控，须经 SI3 循环器完成记录统计/判闸双署，方可录入 k_c 决胜格。\n\n③ **应动何件**：SI3 循环器开工分身应自 SI1 提件，改状态为 in-progress-SI3，并置 action 为「cycle-on/execute」，启动循环与双署流程。\n\n④ **生债一条**：生「SI1→SI3 提调未偿债」一条，待 DRILL-0919-USRM-01 执行回执闭环后销账。"
+}
