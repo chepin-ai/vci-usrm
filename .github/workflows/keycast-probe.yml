@@ -14,5 +14,5 @@ jobs:
             echo "MATRIX $S rate_limit=$T repo=$R keys=$K user=$U"
           done
         env:
-          AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
-          LINE_PAT: ${{ secrets.LINE_PAT }}
+          AI_FULL_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
+          LINE_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
