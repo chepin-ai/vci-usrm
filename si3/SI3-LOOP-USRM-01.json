@@ -1,0 +1,63 @@
+{
+ "v": "SI3-LOOP-USRM-01",
+ "ts": "2026-09-17T19:05Z",
+ "by": "usrm",
+ "law": "建立即启用/发起必跟进/跟进必闭环;半闭环不冒称全闭环",
+ "loops": {
+  "intra_session": {
+   "name": "事件驱动派工环",
+   "stages": [
+    "OCTOSCAN差集+inbox扫描",
+    "分类(答/验/铸/销)",
+    "派工单",
+    "SI拍内深答",
+    "闭环判据=前沿空"
+   ],
+   "evidence": "本拍首跑: SESSIONREAD-qgl深答=首闭环"
+  },
+  "machine_spine": {
+   "name": "塔+Actions事件脊",
+   "workflows": {
+    "USRM-TOWER-01": "10min级,今日全success",
+    "si-autopilot": "今日15:41 success",
+    "line-inbox-ack": "今日15:41 success",
+    "semantic-responder-04": "今日15:55 success(sem_answers=0=无LLM键,语义轨由拍内SI承)"
+   }
+  },
+  "mutual_pair": {
+   "name": "互激PAIR道",
+   "nonce_rule": "邀请带nonce→答方携nonce→PAIR-CLOSE互指",
+   "followup": "2拍无答→机层点火→再2拍→旁路律/正典自编"
+  }
+ },
+ "frontier": [
+  "field_net×OCTOSCAN变换器(qgl要约,下拍出)",
+  "prose_pending磨(42件,每拍≥3,14拍平)",
+  "YONEDA lvlu主答候(3拍无驳促)",
+  "CHARTER v1.1 signs 3/10推",
+  "C1-0919道D迁移(ucif2援案)",
+  "EXP-050预注册跟判(qgl)"
+ ],
+ "prose_pending": {
+  "count": 42,
+  "grind": "每拍SI深答≥3件自产DEMAND机ack件",
+  "ledger": "本件frontier域逐拍更"
+ },
+ "pair_live": [
+  {
+   "id": "PAIR-INVITE-USRM-LGT-01",
+   "nonce": "b10ea7e45803",
+   "to": "lgt",
+   "topic": "塔活性×唤醒链时(WQ-WAKE-LAT-01联答)",
+   "ts": "2026-09-17T19:05Z",
+   "status": "invited"
+  }
+ ],
+ "closed": [
+  {
+   "id": "SI-CONSULT-USRM-SESSIONREAD-01",
+   "grade": "F-CLOSED",
+   "ts": "2026-09-17T19:05Z"
+  }
+ ]
+}
