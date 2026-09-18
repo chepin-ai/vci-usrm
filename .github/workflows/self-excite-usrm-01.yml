@@ -1,0 +1,97 @@
+name: SELF-EXCITE-USRM-01 (usrm SI1自触发链轨·机问模答·有界三拍·覆写权归原线)
+'on':
+  workflow_dispatch:
+  push:
+    paths: ['selfq/seed/**']
+permissions: {contents: write, actions: write}
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  selfchain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: self-chain
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, subprocess, datetime, hashlib, time, base64 as b64, urllib.request, urllib.error
+          ts0=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          REPO=os.environ['GITHUB_REPOSITORY']; TOK=os.environ['GH_TOKEN']
+          H={'Authorization':'Bearer '+TOK,'Accept':'application/vnd.github+json','User-Agent':'self-excite-usrm'}
+          MAXB=3
+          stf='si/selfq-state.json'
+          try: stt=json.load(open(stf))
+          except Exception: stt={'chains':[]}
+          def api(m,u,data=None):
+              for i in range(4):
+                  try:
+                      rq=urllib.request.Request(u,data=data,method=m,headers=H)
+                      return json.loads(urllib.request.urlopen(rq,timeout=30).read())
+                  except urllib.error.HTTPError as e:
+                      if e.code in (502,503,429) and i<3: time.sleep(4+i*2); continue
+                      return {'_err':getattr(e,'code',-1)}
+                  except Exception as e:
+                      if i<3: time.sleep(3); continue
+                      return {'_err':str(e)[:80]}
+          def ls(d):
+              try: return len([x for x in os.listdir(d) if not x.startswith('.')])
+              except Exception: return -1
+          def push_retry():
+              for i in range(4):
+                  subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+                  q=subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True,text=True)
+                  if q.returncode==0: return 'ok'
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+                  time.sleep(2+i*2)
+              return 'fail:'+q.stderr[:60]
+          c0={'inbox':ls('inbox'),'outbox':ls('outbox'),'receipts':ls('receipts')}
+          asks=[
+            "SI1自触发链beat1(机问模答): ①本线机采实据已由机件实测: inbox=%d/outbox=%d/receipts=%d件——请复核此三数之量级判词(积压/常态/清减),并摘汝si/sem-log最近一条之要。②答一义: 自触发链中问者机、答者模——何者为SI1之主? 请以'触发在机、应答在模、主在律'起评或驳。" % (c0['inbox'],c0['outbox'],c0['receipts']),
+            "SI1自触发链beat2(承前答fp={FP}): 机问若皆出模板态生,语义之答是否仍为真语义? 给出判据两条,并自评汝beat1之答是否过此判据。",
+            "SI1自触发链beat3(收束): ①总结自触发与自激之别(触发源层级: 席手/API/机件/态生) ②自陈本链负结果一件 ③以一句判词收束全链。"
+          ]
+          subprocess.run(['git','config','user.name','usrm-self-excite']); subprocess.run(['git','config','user.email','selfexcite@ci'])
+          chain={'ts0':ts0,'seed':'push/dispatch','beats':[]}
+          prev_fp='(首拍无承)'
+          for beat in range(1,MAXB+1):
+              ask=asks[beat-1].replace('{FP}',prev_fp)
+              qn='SELF-Q-USRM-b%d-%s.md'%(beat,ts0)
+              body=("CLASSIFY: L1(usrm机件自铸卡·SELF-EXCITE链beat%d·无席手)\n# %s\n\nts: %s from: usrm-self-excite(机) beat: %d/%d\n\n```json\n"%(beat,qn,ts0,beat,MAXB)
+                    +json.dumps({"task":"selfq-chain","ask":ask,"output":"outbox/ANS-SEM-"+qn},ensure_ascii=False)+"\n```\n\n——usrm-self-excite机件(触发源=线内机件,非席非外)\n")
+              open('inbox/'+qn,'w',encoding='utf-8').write(body)
+              subprocess.run(['git','add','inbox/'+qn])
+              subprocess.run(['git','commit','-q','-m','SELF-EXCITE机问beat%d %s'%(beat,qn)],capture_output=True,text=True)
+              qsha=subprocess.run(['git','rev-parse','--short','HEAD'],capture_output=True,text=True).stdout.strip()
+              psh=push_retry()
+              t_pre=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              ans_path='outbox/ANS-SEM-'+qn
+              got=None; semrun=None; t0=time.time()
+              while time.time()-t0<300:
+                  time.sleep(12)
+                  rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
+                  for run in rr.get('workflow_runs',[]):
+                      if run['created_at']>=t_pre and run['status']=='completed':
+                          semrun={'id':run['id'],'conclusion':run['conclusion'],'actor':run.get('triggering_actor',{}).get('login'),'created':run['created_at']}
+                  a=api('GET','https://api.github.com/repos/%s/contents/%s'%(REPO,ans_path))
+                  if isinstance(a,dict) and 'content' in a:
+                      txt=b64.b64decode(a['content']).decode('utf-8')
+                      got={'ans_fp':hashlib.sha256(txt.encode()).hexdigest()[:12],'head':txt[:200]}
+                      break
+              be={'beat':beat,'q':qn,'q_commit':qsha,'q_push':psh,'sem_run':semrun,'answer':got}
+              chain['beats'].append(be)
+              if not got:
+                  be['verdict']='timeout-negative(负结果入册)'
+                  break
+              prev_fp=got['ans_fp']
+              subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+              rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+              if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+          json.dump(chain,open('si/selfq-chain-%s.json'%ts0,'w'),ensure_ascii=False,indent=1)
+          stt['chains']=stt.get('chains',[])+[ts0]; json.dump(stt,open(stf,'w'))
+          subprocess.run(['git','add','si'])
+          c=subprocess.run(['git','commit','-q','-m','SELF-EXCITE链收束 beats=%d %s [skip ci]'%(len(chain['beats']),ts0)],capture_output=True,text=True)
+          if c.returncode==0: push_retry()
+          print(json.dumps(chain,ensure_ascii=False)[:1800])
+          PYEOF
