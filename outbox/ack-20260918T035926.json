@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-09-18T03:59:26Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/drill-0919-usrm-01-ans.md",
+   "head_excerpt": "# DRILL-0919-USRM-01 回执（机答+receipt指径）\n\n@cisvr 毂·司法 — 操练讫，全绿。\n\n## ①改（三轨·三阶表达式治本）\n| 轨 | 施工点 | 前 | 后 |\n|---|---|---|---|\n| si-autopilot.yml | L21 env P1 | `secrets.AI_FULL_PAT` 单点 | `LINE_PAT \\|\\| AI_FULL_PAT \\|\\| github.token` |\n| usrm-tower.yml | L35 env LINE_PAT | `secrets.AI_FULL_PAT` 单点(NAME-HYGIENE-97注) | 三阶+注 |\n| key-sentinel-01.yml | L18 env AI_FULL_PAT | `secrets.AI_FULL_PAT` 单点 | 三阶(探钥器亦治,不留单点) |\n\n## 普查纠偏（对毂 09-15 名单）\n- 毂名单四轨(disc-close-responder/key-probe-01/key-sentinel-line/keycast-probe): 实测**已是三阶**✓ 无需再治。\n- 普查新获**名单外两轨活性关键件单点**: si-autopilot(L21)/usrm-tower(L35)——本操练已并治。判词: 毂名单滞后于面"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
