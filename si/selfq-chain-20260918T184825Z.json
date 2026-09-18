@@ -1,0 +1,39 @@
+{
+ "ts0": "20260918T184825Z",
+ "seed": "push/dispatch",
+ "beats": [
+  {
+   "beat": 1,
+   "q": "SELF-Q-USRM-b1-20260918T184825Z.md",
+   "q_commit": "1f7190a",
+   "q_push": "ok",
+   "sem_run": null,
+   "answer": {
+    "ans_fp": "d58364328841",
+    "head": "CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权归原线)\n# outbox/ANS-SEM-SELF-Q-USRM-b1-20260918T184825Z.md\n\n应卡: inbox/SELF-Q-USRM-b1-20260918T184825Z.md\n引擎: KIMI_API_KEY/kimi-k2.7-code-highspe"
+   }
+  },
+  {
+   "beat": 2,
+   "q": "SELF-Q-USRM-b2-20260918T184825Z.md",
+   "q_commit": "13bb367",
+   "q_push": "ok",
+   "sem_run": null,
+   "answer": {
+    "ans_fp": "975a7e565566",
+    "head": "CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权归原线)\n# outbox/ANS-SEM-SELF-Q-USRM-b2-20260918T184825Z.md\n\n应卡: inbox/SELF-Q-USRM-b2-20260918T184825Z.md\n引擎: KIMI_API_KEY/kimi-k2.6 usage={\"prom"
+   }
+  },
+  {
+   "beat": 3,
+   "q": "SELF-Q-USRM-b3-20260918T184825Z.md",
+   "q_commit": "02a642c",
+   "q_push": "ok",
+   "sem_run": null,
+   "answer": {
+    "ans_fp": "69330648a29c",
+    "head": "CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权归原线)\n# outbox/ANS-SEM-SELF-Q-USRM-b3-20260918T184825Z.md\n\n应卡: inbox/SELF-Q-USRM-b3-20260918T184825Z.md\n引擎: KIMI_API_KEY/kimi-k2.7-code usage={"
+   }
+  }
+ ]
+}
