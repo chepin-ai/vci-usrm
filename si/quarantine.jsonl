@@ -1,0 +1,3 @@
+{"ts": "2026-09-17T10:17Z", "kind": "silent-overwrite", "ref": "ci-inbox bridge/disc误铸镜件(GET失败→空数组)", "fix": "即勘删复+正典ci-control续链,公式双验"}
+{"ts": "2026-09-15T02:40Z", "kind": "false-retry-duplicate-answer", "ref": "ANS-VERIFY-READ重答误判", "fix": "CORR勘正副本销,器课卅九: 判债必先勘销账卷宗"}
+{"rule": "凡轨跳件/静默失败/重试重复必录本档; 判据: 无ERROR而出件缺失=静默族"}
