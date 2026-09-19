@@ -27,3 +27,4 @@
 {"line": "usrm", "ts": "20260919T160339Z", "sem_handled": ["BEACON-DZ-40-usrm-d78bd17e.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260919T162507Z", "sem_handled": ["AUTOEXCITE-F1-k800-verdict-20260919T161032Z.md", "AUTOEXCITE-F2-exp049-outage-20260919T162453Z.md", "AUTOEXCITE-F2-exp049-outage-20260919T162455Z.md"], "sem_answers": 3}
 {"line": "usrm", "ts": "20260919T163724Z", "sem_handled": ["AUTOEXCITE-F2-exp049-outage-20260919T162500Z.md", "AUTOEXCITE-F2-exp049-outage-20260919T162504Z.md", "AUTOEXCITE-F3-naturality-gap-20260919T163716Z.md"], "sem_answers": 3}
+{"line": "usrm", "ts": "20260919T165033Z", "sem_handled": ["AUTOEXCITE-F4-kc-curve-fit-20260919T165025Z.md"], "sem_answers": 1}
