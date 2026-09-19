@@ -2,3 +2,4 @@
 {"ts": "20260919T162455Z", "fid": "F2-exp049-outage", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "ec489704621a"}
 {"ts": "20260919T163716Z", "fid": "F3-naturality-gap", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "b1e5dffd541b"}
 {"ts": "20260919T165025Z", "fid": "F4-kc-curve-fit", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "3cdc151d0494"}
+{"ts": "20260919T180635Z", "fid": "F5-k300-verdict-prep", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "cfc5d574e5f0"}
