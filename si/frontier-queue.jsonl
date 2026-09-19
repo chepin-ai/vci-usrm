@@ -18,4 +18,4 @@
 {"id": "QP-03-fp-antireplay", "state": "fired", "born": "qgl线投件(wave-213)", "q": "SI1自激(QP-03, qgl线题): 互锚fp跨线校验协议之抗重放与防冒名——①重放风险面三件 ②nonce+时戳+链尖fp三元绑定之协议草 ③冒名侦测之负结果形。"}
 {"id": "CFTS-01-proxysign-decay", "state": "fired", "born": "cfts线投件(wave-213)", "q": "SI1自激(CFTS-01, cfts线题): 跨轨代署签名之效力衰减与追认机制(以无写面轨为样本)——①代署效力与亲签之差异度量(三因子) ②随链长/转署次数之衰减模型(定性+判据) ③追认阈值建议(何周期/何触发) ④以SIGN-cfts/ucif2两实例初验。"}
 {"id": "QP-04-nonce-ttl-rollback", "state": "fired", "born": "qgl线二轮题(wave-216 QP-ANS-FEEDBACK答)", "q": "SI1自激(QP-04, qgl线二轮题): nonce存活窗当随链尖滚动失效还是固定TTL? 若链重组致链尖fp回退, 已验通过之{nonce,ts,fp}三元组是否溯及失效? 回收与销册由何轨执行? ①三案各立一判 ②回收轨之最小机制 ③负结果形。"}
-{"id": "CFTS-02-revoked-delegator", "state": "queued", "born": "cfts线二轮题(wave-216 CFTS01-FEEDBACK答)", "q": "SI1自激(CFTS-02, cfts线二轮题): d=1代署已判附条件有效后, 归档周期前delegator钥被撤或授权token失效——该签名当回滚入负结果册, 还是仅降格为待证? ①给判+据 ②判据之一般化(撤钥时点 vs 动作时点之先后律) ③负结果形。"}
+{"id": "CFTS-02-revoked-delegator", "state": "fired", "born": "cfts线二轮题(wave-216 CFTS01-FEEDBACK答)", "q": "SI1自激(CFTS-02, cfts线二轮题): d=1代署已判附条件有效后, 归档周期前delegator钥被撤或授权token失效——该签名当回滚入负结果册, 还是仅降格为待证? ①给判+据 ②判据之一般化(撤钥时点 vs 动作时点之先后律) ③负结果形。"}
