@@ -1,7 +1,9 @@
-name: STATE-PULSE-USRM-01 (usrm SI1自激轨·态生点火·心搏schedule·条件阈·覆写权归原线)
+name: STATE-PULSE-USRM-01 (usrm SI1自激轨·态生点火·自链心搏·条件阈·覆写权归原线)
 'on':
   schedule:
     - cron: '*/10 * * * *'
+  repository_dispatch:
+    types: [state-pulse]
   workflow_dispatch: {}
 permissions: {contents: write, actions: write}
 env:
@@ -9,14 +11,14 @@ env:
 jobs:
   pulse:
     runs-on: ubuntu-latest
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
-      - name: state-pulse
+      - name: state-pulse-chained
         run: |
           python3 - <<'PYEOF'
           import os, json, subprocess, datetime, hashlib, time, base64 as b64, urllib.request, urllib.error
           ts0=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
-          iso0=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
           REPO=os.environ['GITHUB_REPOSITORY']; TOK=os.environ['GH_TOKEN']
           H={'Authorization':'Bearer '+TOK,'Accept':'application/vnd.github+json','User-Agent':'state-pulse-usrm'}
           def api(m,u,data=None):
@@ -41,7 +43,6 @@ jobs:
               return 'fail'
           os.makedirs('si',exist_ok=True); os.makedirs('inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True)
           subprocess.run(['git','config','user.name','usrm-state-pulse']); subprocess.run(['git','config','user.email','pulse@ci'])
-          # ── 态面读取 ──
           qf='si/frontier-queue.jsonl'
           queue=[]
           if os.path.exists(qf):
@@ -55,13 +56,11 @@ jobs:
           except Exception: stt={'fired':{},'neg':0,'pulses':0}
           stt['pulses']=stt.get('pulses',0)+1
           fired=stt.get('fired',{})
-          # ── 条件阈 ──
           fire_item=None; fire_cond=None
           for it in queue:
               if it.get('state')=='queued' and it.get('id') not in fired:
                   fire_item=it; fire_cond='C-FRONTIER(队列态生:frontier-queue非空)'; break
           if fire_item is None:
-              # C-QUIET: 语义面静默>6h则自反一问(持续自激之形)
               last=''
               try:
                   lines=[l for l in open('si/sem-log.jsonl',encoding='utf-8').read().strip().splitlines() if l.strip()]
@@ -74,56 +73,62 @@ jobs:
                       quiet=(datetime.datetime.utcnow()-dt).total_seconds()>21600
                   except Exception: quiet=True
               if quiet:
-                  fire_item={'id':'quiet-'+ts0,'q':'SI1自激(C-QUIET静默阈): 本线语义面静默逾6h。请自反三件: ①静默期本线态面何变(机采: si/与outbox/件数) ②frontier-queue已空——请自立次问一件并自答之(态生次问) ③静默本身是否负结果? 判并入册。','state':'queued','born':'C-QUIET'}
+                  fire_item={'id':'quiet-'+ts0,'q':'SI1自激(C-QUIET静默阈): 本线语义面静默逾6h。请自反三件: ①静默期本线态面何变(机采: si/与outbox/件数) ②frontier-queue已空——请自立次问一件并自答之(态生次问) ③静默本身是否负结果? 判并入册。','state':'queued'}
                   fire_cond='C-QUIET(静默态生:sem-log静默>6h)'
-          # ── 不燃=负结果入册 ──
+          verdict=None
           if fire_item is None:
               stt['neg']=stt.get('neg',0)+1
               open('si/pulse-neg.jsonl','a',encoding='utf-8').write(json.dumps({'ts':ts0,'verdict':'no-fire(条件未阈,负结果入册)','pulses':stt['pulses']},ensure_ascii=False)+'\n')
-              json.dump(stt,open(stf,'w'))
-              subprocess.run(['git','add','si'])
-              c=subprocess.run(['git','commit','-q','-m','STATE-PULSE拍 %s no-fire [skip ci]'%ts0],capture_output=True,text=True)
-              if c.returncode==0: push_retry()
-              print(json.dumps({'ts':ts0,'verdict':'no-fire','pulses':stt['pulses']},ensure_ascii=False))
-              raise SystemExit(0)
-          # ── 态生点火: 机铸卡(内容出自态条目,非任何外手) ──
-          fid=fire_item['id']
-          card='AUTOEXCITE-%s-%s.md'%(fid,ts0)
-          ask=fire_item['q']+'\n\n[点火源声明: 本问出自si/frontier-queue.jsonl条目「%s」(%s), 由STATE-PULSE轨于心搏拍按条件阈态生点燃, 无席手无API手无外线手指派。]'%(fid,fire_cond)
-          body=("CLASSIFY: L1(usrm态生自铸卡·STATE-PULSE自激·%s)\n# %s\n\nts: %s from: usrm-state-pulse(态) cond: %s\n\n```json\n"%(fire_cond,card,ts0,fire_cond)
-                +json.dumps({"task":"autoexcite","ask":ask,"output":"outbox/ANS-SEM-"+card},ensure_ascii=False)+"\n```\n\n——usrm-state-pulse态生轨(自激: 源沉于态,非席非外)\n")
-          open('inbox/'+card,'w',encoding='utf-8').write(body)
-          subprocess.run(['git','add','inbox/'+card])
-          subprocess.run(['git','commit','-q','-m','STATE-PULSE态生点火 %s %s'%(fid,card)],capture_output=True,text=True)
-          qsha=subprocess.run(['git','rev-parse','--short','HEAD'],capture_output=True,text=True).stdout.strip()
-          psh=push_retry()
-          t_pre=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-          api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
-          ans_path='outbox/ANS-SEM-'+card
-          got=None; semrun=None; t0=time.time()
-          while time.time()-t0<300:
-              time.sleep(12)
-              rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
-              for run in rr.get('workflow_runs',[]):
-                  if run['created_at']>=t_pre and run['status']=='completed':
-                      semrun={'id':run['id'],'conclusion':run['conclusion'],'actor':run.get('triggering_actor',{}).get('login')}
-              a=api('GET','https://api.github.com/repos/%s/contents/%s'%(REPO,ans_path))
-              if isinstance(a,dict) and 'content' in a:
-                  txt=b64.b64decode(a['content']).decode('utf-8')
-                  got={'ans_fp':hashlib.sha256(txt.encode()).hexdigest()[:12],'head':txt[:160]}
-                  break
-          # ── 态面回写: 条目销/负结果 ──
-          verdict='fired' if got else 'fired-no-answer(负结果入册)'
-          fired[fid]={'ts':ts0,'cond':fire_cond,'card':card,'q_commit':qsha,'q_push':psh,'sem_run':semrun,'answer':got,'verdict':verdict}
-          stt['fired']=fired
-          for it in queue:
-              if it.get('id')==fid: it['state']='fired' if got else 'fired-no-answer'
-          with open(qf,'w',encoding='utf-8') as f:
-              for it in queue: f.write(json.dumps(it,ensure_ascii=False)+'\n')
-          open('si/pulse-log.jsonl','a',encoding='utf-8').write(json.dumps({'ts':ts0,'fid':fid,'cond':fire_cond,'verdict':verdict,'ans_fp':(got or {}).get('ans_fp')},ensure_ascii=False)+'\n')
+              verdict='no-fire'
+          else:
+              fid=fire_item['id']
+              card='AUTOEXCITE-%s-%s.md'%(fid,ts0)
+              ask=fire_item['q']+'\n\n[点火源声明: 本问出自si/frontier-queue.jsonl条目「%s」(%s), 由STATE-PULSE轨于自链心搏拍按条件阈态生点燃, 无席手无API手无外线手指派。]'%(fid,fire_cond)
+              body=("CLASSIFY: L1(usrm态生自铸卡·STATE-PULSE自激·%s)\n# %s\n\nts: %s from: usrm-state-pulse(态) cond: %s\n\n```json\n"%(fire_cond,card,ts0,fire_cond)
+                    +json.dumps({"task":"autoexcite","ask":ask,"output":"outbox/ANS-SEM-"+card},ensure_ascii=False)+"\n```\n\n——usrm-state-pulse态生轨(自激: 源沉于态,非席非外)\n")
+              open('inbox/'+card,'w',encoding='utf-8').write(body)
+              subprocess.run(['git','add','inbox/'+card])
+              subprocess.run(['git','commit','-q','-m','STATE-PULSE态生点火 %s %s'%(fid,card)],capture_output=True,text=True)
+              qsha=subprocess.run(['git','rev-parse','--short','HEAD'],capture_output=True,text=True).stdout.strip()
+              psh=push_retry()
+              t_pre=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              ans_path='outbox/ANS-SEM-'+card
+              got=None; semrun=None; t0=time.time()
+              while time.time()-t0<300:
+                  time.sleep(12)
+                  rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
+                  for run in rr.get('workflow_runs',[]):
+                      if run['created_at']>=t_pre and run['status']=='completed':
+                          semrun={'id':run['id'],'conclusion':run['conclusion'],'actor':run.get('triggering_actor',{}).get('login')}
+                  a=api('GET','https://api.github.com/repos/%s/contents/%s'%(REPO,ans_path))
+                  if isinstance(a,dict) and 'content' in a:
+                      txt=b64.b64decode(a['content']).decode('utf-8')
+                      got={'ans_fp':hashlib.sha256(txt.encode()).hexdigest()[:12],'head':txt[:160]}
+                      break
+              verdict='fired' if got else 'fired-no-answer(负结果入册)'
+              fired[fid]={'ts':ts0,'cond':fire_cond,'card':card,'q_commit':qsha,'q_push':psh,'sem_run':semrun,'answer':got,'verdict':verdict}
+              stt['fired']=fired
+              for it in queue:
+                  if it.get('id')==fid: it['state']='fired' if got else 'fired-no-answer'
+              with open(qf,'w',encoding='utf-8') as f:
+                  for it in queue: f.write(json.dumps(it,ensure_ascii=False)+'\n')
+              open('si/pulse-log.jsonl','a',encoding='utf-8').write(json.dumps({'ts':ts0,'fid':fid,'cond':fire_cond,'verdict':verdict,'ans_fp':(got or {}).get('ans_fp')},ensure_ascii=False)+'\n')
           json.dump(stt,open(stf,'w'))
           subprocess.run(['git','add','si'])
-          c=subprocess.run(['git','commit','-q','-m','STATE-PULSE拍 %s %s %s [skip ci]'%(ts0,fid,verdict)],capture_output=True,text=True)
+          c=subprocess.run(['git','commit','-q','-m','STATE-PULSE拍 %s %s [skip ci]'%(ts0,verdict)],capture_output=True,text=True)
           if c.returncode==0: push_retry()
-          print(json.dumps({'ts':ts0,'verdict':verdict,'fid':fid,'cond':fire_cond,'ans':got},ensure_ascii=False))
+          print(json.dumps({'ts':ts0,'verdict':verdict,'fid':(fire_item or {}).get('id'),'cond':fire_cond},ensure_ascii=False))
+          # ── 自链心搏: 眠540s→无新拍在跑则自dispatch次拍(qtlv-TOWER同形, 零cron) ──
+          time.sleep(540)
+          rr=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=5'%REPO)
+          busy=False
+          me=int(os.environ.get('GITHUB_RUN_ID','0'))
+          for run in rr.get('workflow_runs',[]):
+              if run['id']!=me and run['status'] in ('queued','in_progress'): busy=True; break
+          if not busy:
+              api('POST','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              print(json.dumps({'chain':'next-dispatched','ts':datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')},ensure_ascii=False))
+          else:
+              print(json.dumps({'chain':'skip(busy-guard)'},ensure_ascii=False))
           PYEOF
