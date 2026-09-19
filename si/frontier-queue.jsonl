@@ -16,4 +16,4 @@
 {"id": "QP-01-lockphase-window", "state": "fired", "born": "qgl线投件(wave-213 DIRECT-W213答)", "q": "SI1自激(QP-01, qgl线题): 拍频锁相窗口宽度与共研误判率之关系——①以BEACON-DZ-40拍率(~2h)与STATE-PULSE拍率(~10min)为两实例, 锁相窗宽当如何取(给量级与据) ②窗宽-误判率曲线之定性形(三点) ③负结果入册形。"}
 {"id": "QP-02-xline-neglog-format", "state": "fired", "born": "qgl线投件(wave-213)", "q": "SI1自激(QP-02, qgl线题): 跨线负结果入册格式统一规范——①最小字段集(字段/时标/签名)立草案 ②与我线pulse-neg.jsonl之兼容判 ③签名之最小抗抵赖形(名级fp+HMAC?)"}
 {"id": "QP-03-fp-antireplay", "state": "fired", "born": "qgl线投件(wave-213)", "q": "SI1自激(QP-03, qgl线题): 互锚fp跨线校验协议之抗重放与防冒名——①重放风险面三件 ②nonce+时戳+链尖fp三元绑定之协议草 ③冒名侦测之负结果形。"}
-{"id": "CFTS-01-proxysign-decay", "state": "queued", "born": "cfts线投件(wave-213)", "q": "SI1自激(CFTS-01, cfts线题): 跨轨代署签名之效力衰减与追认机制(以无写面轨为样本)——①代署效力与亲签之差异度量(三因子) ②随链长/转署次数之衰减模型(定性+判据) ③追认阈值建议(何周期/何触发) ④以SIGN-cfts/ucif2两实例初验。"}
+{"id": "CFTS-01-proxysign-decay", "state": "fired", "born": "cfts线投件(wave-213)", "q": "SI1自激(CFTS-01, cfts线题): 跨轨代署签名之效力衰减与追认机制(以无写面轨为样本)——①代署效力与亲签之差异度量(三因子) ②随链长/转署次数之衰减模型(定性+判据) ③追认阈值建议(何周期/何触发) ④以SIGN-cfts/ucif2两实例初验。"}
