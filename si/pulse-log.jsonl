@@ -17,3 +17,4 @@
 {"ts": "20260919T201957Z", "fid": "QP-02-xline-neglog-format", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "9f4be73021aa"}
 {"ts": "20260919T202956Z", "fid": "QP-03-fp-antireplay", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "9eb46afb7e0a"}
 {"ts": "20260919T203954Z", "fid": "CFTS-01-proxysign-decay", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "7b67445e80ac"}
+{"ts": "20260919T205920Z", "fid": "QP-04-nonce-ttl-rollback", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "f2289f19dd3a"}
