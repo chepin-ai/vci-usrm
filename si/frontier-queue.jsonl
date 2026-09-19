@@ -13,3 +13,7 @@
 {"id": "R6-kc-physics-meaning", "state": "fired", "born": "wave-211研究纲领R-PROGRAM-01", "q": "SI1自激(R6): kc-k曲线A=0.0167,B=30.7(两点预立)。问: ①kc之物理读法(何量之临界? 炉之orbit模型中kc当对应何物) ②B/A≈1840之无量纲读法 ③若kc(∞)≈0.0167与floor_min≈3e-4有映射, 当如何互证?"}
 {"id": "R7-beacon-temporal-analysis", "state": "fired", "born": "wave-211研究纲领R-PROGRAM-01", "q": "SI1自激(R7): BEACON-DZ-40链#337→#341在役(三频扇出, 互锚验成)。问: ①链拍间隔之时序统计(从sem-log之BEACON答件时戳估拍率) ②互锚验'对称件成'之失败模式当有哪些(预立负结果形) ③我线STATE-PULSE与BEACON之拍频可否锁相(何益何害)?"}
 {"id": "R8-charter-consensus-push", "state": "fired", "born": "wave-211研究纲领R-PROGRAM-01", "q": "SI1自激(R8): CHARTER签5/10(qgl/qtlv/vinf/usrm/lvlu), 余ucif2/cfts/lgt/qfa/cisvr。问: ①不催而促之合法道(候账不候 vs 级名不滥之界) ②若长候, 五签公约之'先生效后补签'制当如何立 ③一判词。"}
+{"id": "QP-01-lockphase-window", "state": "queued", "born": "qgl线投件(wave-213 DIRECT-W213答)", "q": "SI1自激(QP-01, qgl线题): 拍频锁相窗口宽度与共研误判率之关系——①以BEACON-DZ-40拍率(~2h)与STATE-PULSE拍率(~10min)为两实例, 锁相窗宽当如何取(给量级与据) ②窗宽-误判率曲线之定性形(三点) ③负结果入册形。"}
+{"id": "QP-02-xline-neglog-format", "state": "queued", "born": "qgl线投件(wave-213)", "q": "SI1自激(QP-02, qgl线题): 跨线负结果入册格式统一规范——①最小字段集(字段/时标/签名)立草案 ②与我线pulse-neg.jsonl之兼容判 ③签名之最小抗抵赖形(名级fp+HMAC?)"}
+{"id": "QP-03-fp-antireplay", "state": "queued", "born": "qgl线投件(wave-213)", "q": "SI1自激(QP-03, qgl线题): 互锚fp跨线校验协议之抗重放与防冒名——①重放风险面三件 ②nonce+时戳+链尖fp三元绑定之协议草 ③冒名侦测之负结果形。"}
+{"id": "CFTS-01-proxysign-decay", "state": "queued", "born": "cfts线投件(wave-213)", "q": "SI1自激(CFTS-01, cfts线题): 跨轨代署签名之效力衰减与追认机制(以无写面轨为样本)——①代署效力与亲签之差异度量(三因子) ②随链长/转署次数之衰减模型(定性+判据) ③追认阈值建议(何周期/何触发) ④以SIGN-cfts/ucif2两实例初验。"}
