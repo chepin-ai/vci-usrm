@@ -9,3 +9,4 @@
 {"ts": "20260919T184749Z", "fid": "R2-chsh-hardware-protocol", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "972ab683c924"}
 {"ts": "20260919T185746Z", "fid": "R3-gyroid-neck-distribution", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "06e0dc87a9f7"}
 {"ts": "20260919T190925Z", "fid": "R4-fieldnet-entropy-law", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "ac32cd70f6c3"}
+{"ts": "20260919T191921Z", "fid": "R5-naturality-compensation", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "9003f50f0f47"}
