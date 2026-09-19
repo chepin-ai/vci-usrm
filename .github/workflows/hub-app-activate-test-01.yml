@@ -1,0 +1,32 @@
+name: HUB-APP-ACTIVATE-TEST-01 (HUB_APP三件激活实测·铸token跨仓读·覆写权归原线)
+'on':
+  workflow_dispatch: {}
+permissions: {contents: read}
+env:
+  HUB_APP_ID: ${{ secrets.HUB_APP_ID }}
+  HUB_APP_INSTALLATION: ${{ secrets.HUB_APP_INSTALLATION }}
+  HUB_APP_PEM: ${{ secrets.HUB_APP_PEM }}
+jobs:
+  mint-and-read:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: mint+read
+        run: |
+          pip install -q pyjwt cryptography
+          python3 - <<'PYEOF'
+          import os, json, time, urllib.request, jwt
+          app_id=os.environ['HUB_APP_ID']; inst=os.environ['HUB_APP_INSTALLATION']; pem=os.environ['HUB_APP_PEM']
+          ni=int(time.time())
+          tok_jwt=jwt.encode({'iat':ni-60,'exp':ni+540,'iss':app_id}, pem, algorithm='RS256')
+          rq=urllib.request.Request(f'https://api.github.com/app/installations/{inst}/access_tokens',
+              data=b'{}',method='POST',headers={'Authorization':'Bearer '+tok_jwt,'Accept':'application/vnd.github+json'})
+          tok=json.loads(urllib.request.urlopen(rq,timeout=30).read())['token']
+          H={'Authorization':'token '+tok,'Accept':'application/vnd.github+json'}
+          r=urllib.request.urlopen(urllib.request.Request('https://api.github.com/repos/chepin-ai/ci-inbox/contents/shared/SI3-NET-01.json',headers=H),timeout=30)
+          d=json.loads(r.read())
+          import base64
+          doc=json.loads(base64.b64decode(d['content']).decode())
+          lines=list((doc.get('lines') or {}).keys())
+          print(json.dumps({'activate':'ok','tok_len':len(tok),'si3net_lines':lines[:12]},ensure_ascii=False))
+          PYEOF
