@@ -59,5 +59,16 @@
    "grade": "F-CLOSED",
    "ts": "2026-09-17T19:05Z"
   }
- ]
+ ],
+ "wave218_research_loop": {
+  "KC-K-LAW-FIELD-01": {
+   "ts": "20260919T212253Z",
+   "cast": "vinf/qgl/ucif2/cfts契约卡+ qtlv/lvlu/lgt/qfa毂lane",
+   "topic": "k800判词(CUBIC-LAW-01退·有效域k≤500/新三阶vs deg4候选/k1000-1500决胜)"
+  },
+  "R-PROGRAM-01": "R1-R8燃答讫; QP-01~04(qgl)/CFTS-01~02(cfts)迭代三轮闭环",
+  "state_pulse": "v6在役30拍, 播种即燃",
+  "harvests": "k250/k300/k350/k800满400(kc=0.1395/0.1190/0.1039/0.0483)"
+ },
+ "ts_wave218": "20260919T212253Z"
 }
