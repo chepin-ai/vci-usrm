@@ -43,6 +43,13 @@ jobs:
               return 'fail'
           os.makedirs('si',exist_ok=True); os.makedirs('inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True)
           subprocess.run(['git','config','user.name','usrm-state-pulse']); subprocess.run(['git','config','user.email','pulse@ci'])
+          # v4-① 选帝: 有更小run_id在跑→晚辈即退(防dispatch风暴重载, DUPLICATE-STORM-01课)
+          me=int(os.environ.get('GITHUB_RUN_ID','0'))
+          rr0=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=10'%REPO)
+          elders=[r for r in rr0.get('workflow_runs',[]) if r['id']<me and r['status'] in ('queued','in_progress')]
+          if elders:
+              print(json.dumps({'ts':ts0,'verdict':'not-leader(晚辈退,帝=run%d)'%elders[0]['id']},ensure_ascii=False))
+              raise SystemExit(0)
           qf='si/frontier-queue.jsonl'
           queue=[]
           if os.path.exists(qf):
@@ -92,12 +99,12 @@ jobs:
               qsha=subprocess.run(['git','rev-parse','--short','HEAD'],capture_output=True,text=True).stdout.strip()
               psh=push_retry()
               t_pre=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-05.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
               ans_path='outbox/ANS-SEM-'+card
               got=None; semrun=None; t0=time.time()
               while time.time()-t0<300:
                   time.sleep(12)
-                  rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-05.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
+                  rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
                   for run in rr.get('workflow_runs',[]):
                       if run['created_at']>=t_pre and run['status']=='completed':
                           semrun={'id':run['id'],'conclusion':run['conclusion'],'actor':run.get('triggering_actor',{}).get('login')}
@@ -121,14 +128,26 @@ jobs:
           print(json.dumps({'ts':ts0,'verdict':verdict,'fid':(fire_item or {}).get('id'),'cond':fire_cond},ensure_ascii=False))
           # ── 自链心搏: 眠540s→无新拍在跑则自dispatch次拍(qtlv-TOWER同形, 零cron) ──
           time.sleep(540)
-          rr=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=5'%REPO)
-          busy=False
+          # v4-② 幂等自dispatch: 先勘后派, 派后复勘, 异常不盲重试
           me=int(os.environ.get('GITHUB_RUN_ID','0'))
-          for run in rr.get('workflow_runs',[]):
-              if run['id']!=me and run['status'] in ('queued','in_progress'): busy=True; break
+          def _cnt():
+              rr=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=10'%REPO)
+              return [r for r in rr.get('workflow_runs',[]) if r['id']!=me and r['status'] in ('queued','in_progress')]
+          busy=_cnt()
           if not busy:
-              api('POST','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
-              print(json.dumps({'chain':'next-dispatched','ts':datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')},ensure_ascii=False))
+              t_mark=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/dispatches'%REPO,
+                      data=json.dumps({'ref':'main'}).encode(),method='POST',headers=H)
+                  urllib.request.urlopen(rq,timeout=30).read()
+              except Exception as e:
+                  time.sleep(5)
+                  later=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=3'%REPO)
+                  if not any(r['created_at']>=t_mark for r in later.get('workflow_runs',[])):
+                      print(json.dumps({'chain':'dispatch-fail-no-retry(幂等守)','err':str(e)[:60]},ensure_ascii=False))
+              time.sleep(8)
+              after=_cnt()
+              print(json.dumps({'chain':'next-dispatched' if after else 'dispatch-unconfirmed(次拍未见,负结果入册)','ts':datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')},ensure_ascii=False))
           else:
               print(json.dumps({'chain':'skip(busy-guard)'},ensure_ascii=False))
           PYEOF
