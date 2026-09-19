@@ -92,12 +92,12 @@ jobs:
               qsha=subprocess.run(['git','rev-parse','--short','HEAD'],capture_output=True,text=True).stdout.strip()
               psh=push_retry()
               t_pre=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-05.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
               ans_path='outbox/ANS-SEM-'+card
               got=None; semrun=None; t0=time.time()
               while time.time()-t0<300:
                   time.sleep(12)
-                  rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
+                  rr=api('GET','https://api.github.com/repos/%s/actions/workflows/semantic-responder-05.yml/runs?event=workflow_dispatch&per_page=3'%REPO)
                   for run in rr.get('workflow_runs',[]):
                       if run['created_at']>=t_pre and run['status']=='completed':
                           semrun={'id':run['id'],'conclusion':run['conclusion'],'actor':run.get('triggering_actor',{}).get('login')}
