@@ -14,3 +14,4 @@
 {"ts": "20260919T193956Z", "fid": "R7-beacon-temporal-analysis", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "f49d774f745e"}
 {"ts": "20260919T194958Z", "fid": "R8-charter-consensus-push", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "fe118205bb10"}
 {"ts": "20260919T200924Z", "fid": "QP-01-lockphase-window", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "04219664fe42"}
+{"ts": "20260919T201957Z", "fid": "QP-02-xline-neglog-format", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "9f4be73021aa"}
