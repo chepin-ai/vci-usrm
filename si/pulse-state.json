@@ -1,0 +1,1 @@
+{"fired": {"F1-k800-verdict": {"ts": "20260919T161032Z", "cond": "C-FRONTIER(\u961f\u5217\u6001\u751f:frontier-queue\u975e\u7a7a)", "card": "AUTOEXCITE-F1-k800-verdict-20260919T161032Z.md", "q_commit": "50b6b58", "q_push": "ok", "sem_run": null, "answer": null, "verdict": "fired-no-answer(\u8d1f\u7ed3\u679c\u5165\u518c)"}}, "neg": 0, "pulses": 1}
