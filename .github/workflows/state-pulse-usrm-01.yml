@@ -47,6 +47,12 @@ jobs:
           me=int(os.environ.get('GITHUB_RUN_ID','0'))
           rr0=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=10'%REPO)
           elders=[r for r in rr0.get('workflow_runs',[]) if r['id']<me and r['status'] in ('queued','in_progress')]
+          _try=0
+          while elders and _try<3:
+              time.sleep(20)
+              rr0=api('GET','https://api.github.com/repos/%s/actions/workflows/state-pulse-usrm-01.yml/runs?per_page=10'%REPO)
+              elders=[r for r in rr0.get('workflow_runs',[]) if r['id']<me and r['status'] in ('queued','in_progress')]
+              _try+=1
           if elders:
               print(json.dumps({'ts':ts0,'verdict':'not-leader(晚辈退,帝=run%d)'%elders[0]['id']},ensure_ascii=False))
               raise SystemExit(0)
