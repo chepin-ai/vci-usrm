@@ -15,3 +15,4 @@
 {"ts": "20260919T194958Z", "fid": "R8-charter-consensus-push", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "fe118205bb10"}
 {"ts": "20260919T200924Z", "fid": "QP-01-lockphase-window", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "04219664fe42"}
 {"ts": "20260919T201957Z", "fid": "QP-02-xline-neglog-format", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "9f4be73021aa"}
+{"ts": "20260919T202956Z", "fid": "QP-03-fp-antireplay", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "9eb46afb7e0a"}
