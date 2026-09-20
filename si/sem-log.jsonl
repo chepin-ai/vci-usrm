@@ -51,3 +51,4 @@
 {"line": "usrm", "ts": "20260920T060323Z", "sem_handled": ["PAIR-USRM-GLOBAL-ACT-132.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T064536Z", "sem_handled": ["OTP-DIRECT-48-usrm-20260920T064520Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T065202Z", "sem_handled": ["BEACON-DZ-40-usrm-545cb831.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20260920T074159Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "64bbf970de67", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code"}}
