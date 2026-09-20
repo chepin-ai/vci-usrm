@@ -19,3 +19,4 @@
 {"ts": "20260919T203954Z", "fid": "CFTS-01-proxysign-decay", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "7b67445e80ac"}
 {"ts": "20260919T205920Z", "fid": "QP-04-nonce-ttl-rollback", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "f2289f19dd3a"}
 {"ts": "20260919T210931Z", "fid": "CFTS-02-revoked-delegator", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "f6c9dcdb5c80"}
+{"ts": "20260920T031152Z", "fid": "quiet-20260920T031152Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "a8c02bebb2e1"}
