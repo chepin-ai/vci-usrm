@@ -40,6 +40,13 @@ jobs:
               return 'fail'
           os.makedirs('si',exist_ok=True); os.makedirs('inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True)
           subprocess.run(['git','config','user.name','usrm-state-excite']); subprocess.run(['git','config','user.email','statex@ci'])
+          # v3-① 选帝(DUPLICATE-STORM-02课): 有更小run_id在跑→晚辈即退
+          me=int(os.environ.get('GITHUB_RUN_ID','0'))
+          rr0=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=10'%REPO)
+          elders=[r for r in rr0.get('workflow_runs',[]) if r['id']<me and r['status'] in ('queued','in_progress')]
+          if elders:
+              print(json.dumps({'ts':ts0,'verdict':'not-leader(晚辈退,帝=run%d)'%elders[0]['id']},ensure_ascii=False))
+              raise SystemExit(0)
           # ── 态面读取 ──
           qf='si/frontier-queue.jsonl'; queue=[]
           if os.path.exists(qf):
@@ -114,6 +121,21 @@ jobs:
               if c.returncode==0: push_retry()
               print(json.dumps({'chain':'capped','gen':gen})); raise SystemExit(0)
           time.sleep(SLEEP)
-          api('POST','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
-          print(json.dumps({'chain':'next-dispatched','gen':gen+1}))
+          # v3-② 幂等自dispatch: 派前勘重, 单次直调不盲试(DUPLICATE-STORM-02课)
+          me=int(os.environ.get('GITHUB_RUN_ID','0'))
+          rr9=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=5'%REPO)
+          dup=[r for r in rr9.get('workflow_runs',[]) if r['id']!=me and r['status'] in ('queued','in_progress')]
+          if dup:
+              print(json.dumps({'chain':'skip(dup-guard, run%d在跑)'%dup[0]['id']},ensure_ascii=False))
+          else:
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/dispatches'%REPO,
+                      data=json.dumps({'ref':'main'}).encode(),method='POST',headers=H)
+                  urllib.request.urlopen(rq,timeout=30).read()
+                  print(json.dumps({'chain':'next-dispatched','gen':gen+1}))
+              except Exception as e:
+                  time.sleep(6)
+                  rr8=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=3'%REPO)
+                  newer=[r for r in rr8.get('workflow_runs',[]) if r['id']>me]
+                  print(json.dumps({'chain':'dispatched-unconfirmed' if newer else 'dispatch-fail(负结果入册)','err':str(e)[:60]},ensure_ascii=False))
           PYEOF
