@@ -59,3 +59,4 @@
 {"line": "usrm", "ts": "20260920T131402Z", "sem_handled": ["AUTOEXCITE-F3-exp049-fallback-20260920T131320Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T131606Z", "sem_handled": ["SELFX2-F4-kc-curve-fit-20260920T131553Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T132730Z", "sem_handled": ["SELFX2-F3-exp049-fallback-20260920T132716Z.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20260920T165738Z", "sem_handled": ["OTP-DIRECT-49-usrm-20260920T165724Z.md"], "sem_answers": 1}
