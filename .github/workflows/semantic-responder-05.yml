@@ -97,6 +97,19 @@ jobs:
                   'ans_fp':hashlib.sha256(r['answer'].encode()).hexdigest()[:12],'ans_head':r['answer'][:300],'tip_seen':tip_seen})
               done.add(nm)
           log={'line':LINE,'ts':ts,'sem_handled':handled,'sem_answers':len(sem)}
+          self_excited=None
+          if not handled:  # inbox无新件→态生自激(SI1自触发支·root令3.132全局激活·vinf轨格)
+              q='态生自激·三格: ①明确结论/责任落点/执行限期/回退条件(诚实缺口登记); ②最小可执行单元/卡点/补丁方案/可验证指标; ③一事一议(附已尝试路径)。'
+              r=llm(q,'SELF-Q自派工(无新增handled,态生自激)')
+              qj={'task':'SELFQ-'+LINE,'line':LINE,'ts':ts,'nonce':hashlib.sha256(ts.encode()).hexdigest()[:12]}
+              body='# SELFQ-%s 自激派工+SI1语义自答\n\n```json\n%s\n```\n\n问: %s\n\n'%(LINE,json.dumps(qj,ensure_ascii=False),q)
+              if r:
+                  body+='引擎: %s/%s usage=%s\n\n%s\n'%(r['engine'],r['model'],json.dumps(r['usage'],ensure_ascii=False),r['answer'])
+                  self_excited={'nonce':qj['nonce'],'engine':r['engine'],'model':r['model']}
+              else:
+                  body+='(LLM道暂闭——诚实缺口)\n'; self_excited={'nonce':qj['nonce'],'engine':None}
+              open('outbox/ANS-SELFQ-%s-%s.md'%(LINE,ts),'w',encoding='utf-8').write(body)
+              log['self_excited']=self_excited
           open('si/sem-log.jsonl','a').write(json.dumps(log,ensure_ascii=False)+'\n')
           stt['done']=sorted(done); json.dump(stt,open(stf,'w'))
           subprocess.run(['git','config','user.name','usrm-sem-responder']); subprocess.run(['git','config','user.email','sem@ci'])
