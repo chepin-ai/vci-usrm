@@ -54,3 +54,4 @@
 {"line": "usrm", "ts": "20260920T074159Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "64bbf970de67", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code"}}
 {"line": "usrm", "ts": "20260920T124344Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "f507a1087bd5", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code-highspeed"}}
 {"line": "usrm", "ts": "20260920T125216Z", "sem_handled": ["AUTOEXCITE-F1-naturality-selfans-20260920T125144Z.md", "SELFX2-F1-naturality-selfans-20260920T124917Z.md"], "sem_answers": 2}
+{"line": "usrm", "ts": "20260920T130355Z", "sem_handled": ["AUTOEXCITE-F2-k800-verdict-prep-20260920T130322Z.md"], "sem_answers": 1}
