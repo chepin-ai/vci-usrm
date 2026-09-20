@@ -81,7 +81,7 @@ jobs:
               subprocess.run(['git','add','inbox/'+card])
               subprocess.run(['git','commit','-q','-m','STATE-EXCITE态生点火 gen%d %s'%(gen,card)],capture_output=True,text=True)
               push_retry()
-              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-05.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
               ans_path='outbox/ANS-SEM-'+card; got=None; t0=time.time()
               while time.time()-t0<300:
                   time.sleep(12)
