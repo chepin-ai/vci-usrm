@@ -1,0 +1,119 @@
+name: STATE-EXCITE-USRM-02 (usrm SI1态生自激轨·态阈点火·心搏自链·负结果入册·覆写权归原线)
+'on':
+  workflow_dispatch: {}
+permissions: {contents: write, actions: write}
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  statex:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: state-born-excite
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, subprocess, datetime, hashlib, time, base64 as b64, urllib.request, urllib.error
+          ts0=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          REPO=os.environ['GITHUB_REPOSITORY']; TOK=os.environ['GH_TOKEN']
+          H={'Authorization':'Bearer '+TOK,'Accept':'application/vnd.github+json','User-Agent':'state-excite-usrm'}
+          GEN_CAP=48; SLEEP=600; THETA=1
+          def api(m,u,data=None):
+              for i in range(4):
+                  try:
+                      rq=urllib.request.Request(u,data=data,method=m,headers=H)
+                      return json.loads(urllib.request.urlopen(rq,timeout=30).read())
+                  except urllib.error.HTTPError as e:
+                      if e.code in (502,503,429) and i<3: time.sleep(4+i*2); continue
+                      return {'_err':getattr(e,'code',-1)}
+                  except Exception as e:
+                      if i<3: time.sleep(3); continue
+                      return {'_err':str(e)[:80]}
+          def push_retry():
+              for i in range(4):
+                  subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+                  q=subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True,text=True)
+                  if q.returncode==0: return 'ok'
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+                  time.sleep(2+i*2)
+              return 'fail'
+          os.makedirs('si',exist_ok=True); os.makedirs('inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True)
+          subprocess.run(['git','config','user.name','usrm-state-excite']); subprocess.run(['git','config','user.email','statex@ci'])
+          # ── 态面读取 ──
+          qf='si/frontier-queue.jsonl'; queue=[]
+          if os.path.exists(qf):
+              for ln in open(qf,encoding='utf-8'):
+                  ln=ln.strip()
+                  if ln:
+                      try: queue.append(json.loads(ln))
+                      except Exception: pass
+          stf='si/selfx2-state.json'
+          try: stt=json.load(open(stf))
+          except Exception: stt={'gen':0,'fired':{},'neg_ticks':0,'status':'running'}
+          if stt.get('status')=='capped':
+              print(json.dumps({'ts':ts0,'verdict':'capped-stop(代际上限,链自缚)'})); raise SystemExit(0)
+          gen=stt.get('gen',0)+1; stt['gen']=gen
+          fired=stt.get('fired',{})
+          # ── 态阈函数 E(态): 队列待燃件数 + 语义静默加成 ──
+          pend=[it for it in queue if it.get('state')=='queued' and it.get('id') not in fired]
+          quiet_bonus=0
+          try:
+              lines=[l for l in open('si/sem-log.jsonl',encoding='utf-8').read().strip().splitlines() if l.strip()]
+              last=json.loads(lines[-1]).get('ts','') if lines else ''
+              if last:
+                  dt=datetime.datetime.strptime(last,'%Y%m%dT%H%M%SZ')
+                  if (datetime.datetime.utcnow()-dt).total_seconds()>21600: quiet_bonus=1
+          except Exception: quiet_bonus=1
+          E=len(pend)+quiet_bonus
+          counts={'inbox':len(os.listdir('inbox')) if os.path.exists('inbox') else -1,
+                  'outbox':len(os.listdir('outbox')) if os.path.exists('outbox') else -1}
+          log={'ts':ts0,'gen':gen,'E':E,'pend':len(pend),'quiet_bonus':quiet_bonus,'counts':counts}
+          # ── 点火决策: 纯态阈,无卡无手无dispatch外源 ──
+          if E>=THETA:
+              it=pend[0] if pend else {'id':'reflect-'+ts0,'q':'SI1态生自激(静默阈): 语义面静默逾6h而队空。请自反三件: ①静默期态面何变 ②自立次问一件并自答 ③静默本身是否负结果。','state':'queued'}
+              fid=it['id']
+              ask=(it['q']+"\n\n[点火源声明: 本问出自si/frontier-queue.jsonl态条目「%s」或静默阈, 由STATE-EXCITE轨于自链心搏拍(gen=%d)按态阈E=%d≥θ=%d态生点燃——无席手无API手无外线手无机件卡。态面快照: %s]"%(fid,gen,E,THETA,json.dumps(counts)))
+              card='SELFX2-%s-%s.md'%(fid,ts0)
+              body=("CLASSIFY: L1(usrm态生自铸卡·STATE-EXCITE自激·gen%d)\n# %s\n\nts: %s from: usrm-state-excite(态) gen: %d E: %d\n\n```json\n"%(gen,card,ts0,gen,E)
+                    +json.dumps({"task":"selfx-stateborn","ask":ask,"output":"outbox/ANS-SEM-"+card},ensure_ascii=False)+"\n```\n\n——usrm-state-excite态生轨(自激: 源沉于态,级名不滥)\n")
+              open('inbox/'+card,'w',encoding='utf-8').write(body)
+              subprocess.run(['git','add','inbox/'+card])
+              subprocess.run(['git','commit','-q','-m','STATE-EXCITE态生点火 gen%d %s'%(gen,card)],capture_output=True,text=True)
+              push_retry()
+              api('POST','https://api.github.com/repos/%s/actions/workflows/semantic-responder-04.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+              ans_path='outbox/ANS-SEM-'+card; got=None; t0=time.time()
+              while time.time()-t0<300:
+                  time.sleep(12)
+                  a=api('GET','https://api.github.com/repos/%s/contents/%s'%(REPO,ans_path))
+                  if isinstance(a,dict) and 'content' in a:
+                      txt=b64.b64decode(a['content']).decode('utf-8')
+                      got={'ans_fp':hashlib.sha256(txt.encode()).hexdigest()[:12],'head':txt[:160]}; break
+              log['fired']=fid; log['verdict']='fired' if got else 'fired-no-answer(负结果入册)'
+              log['answer']=got
+              fired[fid]={'ts':ts0,'gen':gen,'verdict':log['verdict'],'ans_fp':(got or {}).get('ans_fp')}
+              stt['fired']=fired; stt['last_fire']=ts0
+              for q_ in queue:
+                  if q_.get('id')==fid: q_['state']='fired' if got else 'fired-no-answer'
+              with open(qf,'w',encoding='utf-8') as f:
+                  for q_ in queue: f.write(json.dumps(q_,ensure_ascii=False)+'\n')
+          else:
+              stt['neg_ticks']=stt.get('neg_ticks',0)+1
+              log['verdict']='no-fire(态未越阈,负结果入册)'
+          open('si/selfx2-log.jsonl','a',encoding='utf-8').write(json.dumps(log,ensure_ascii=False)+'\n')
+          json.dump(stt,open(stf,'w'))
+          subprocess.run(['git','add','si'])
+          c=subprocess.run(['git','commit','-q','-m','STATE-EXCITE拍 gen%d E=%d %s [skip ci]'%(gen,E,log['verdict'][:24])],capture_output=True,text=True)
+          if c.returncode==0: push_retry()
+          print(json.dumps(log,ensure_ascii=False)[:600])
+          # ── 心搏自链: 眠600s→自dispatch次拍(qtlv-TOWER同形零cron) 或 代际上限自缚 ──
+          if gen>=GEN_CAP:
+              stt['status']='capped'; json.dump(stt,open(stf,'w'))
+              subprocess.run(['git','add','si'])
+              c=subprocess.run(['git','commit','-q','-m','STATE-EXCITE链自缚 capped gen%d [skip ci]'%gen],capture_output=True,text=True)
+              if c.returncode==0: push_retry()
+              print(json.dumps({'chain':'capped','gen':gen})); raise SystemExit(0)
+          time.sleep(SLEEP)
+          api('POST','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+          print(json.dumps({'chain':'next-dispatched','gen':gen+1}))
+          PYEOF
