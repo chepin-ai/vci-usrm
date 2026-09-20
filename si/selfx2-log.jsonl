@@ -22,3 +22,4 @@
 {"ts": "20260920T163118Z", "gen": 22, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 127, "outbox": 212}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20260920T164127Z", "gen": 23, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 127, "outbox": 212}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20260920T165135Z", "gen": 24, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 127, "outbox": 212}, "verdict": "no-fire(态未越阈,负结果入册)"}
+{"ts": "20260920T170145Z", "gen": 25, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 128, "outbox": 214}, "verdict": "no-fire(态未越阈,负结果入册)"}
