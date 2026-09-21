@@ -275,3 +275,4 @@
 {"ts": "20260921T163130Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 303}
 {"ts": "20260921T164100Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 304}
 {"ts": "20260921T165032Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 305}
+{"ts": "20260921T170003Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 306}
