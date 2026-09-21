@@ -25,3 +25,4 @@
 {"ts": "20260920T131320Z", "fid": "F3-exp049-fallback", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "0a2c8faa8e2c"}
 {"ts": "20260920T231207Z", "fid": "quiet-20260920T231207Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "e5505c2cc80a"}
 {"ts": "20260921T051315Z", "fid": "quiet-20260921T051315Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "392b2198eac3"}
+{"ts": "20260921T111539Z", "fid": "quiet-20260921T111539Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "a9185462ac73"}
