@@ -1,0 +1,44 @@
+name: furnace-k1000
+# FURNACE-ON-ACTIONS · wave-209 root令「执行根治」: 炉迁础层, 冻不垮
+# 形: workflow_dispatch唯一触发 + 片末自dispatch续片(GITHUB_TOKEN, 键课wave-206) + concurrency单例 + [skip ci]防push环
+on:
+  workflow_dispatch: {{}}
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: furnace-k1000
+  cancel-in-progress: false
+jobs:
+  burn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {{python-version: '3.12'}}
+      - run: pip install -q numpy scipy
+      - name: check-done
+        id: chk
+        run: |
+          if [ -f ci/furnace/kc3_k1000_done.json ] && grep -q true ci/furnace/kc3_k1000_done.json; then echo "done=yes" >> $GITHUB_OUTPUT; else echo "done=no" >> $GITHUB_OUTPUT; fi
+      - name: burn-chunk
+        if: steps.chk.outputs.done == 'no'
+        run: python ci/furnace/kc_run.py 1000 17000
+      - name: commit-checkpoint
+        if: steps.chk.outputs.done == 'no'
+        run: |
+          git config user.name "usrm-furnace"; git config user.email "usrm-furnace@local"
+          git add ci/furnace/kc3_k1000_state.json ci/furnace/kc3_k1000_floors.jsonl ci/furnace/kc3_k1000_done.json
+          git add ci/furnace/kc_k1000_result.json 2>/dev/null || true
+          git commit -m "furnace-k1000 chunk: $(python3 -c "import json;print(json.load(open('ci/furnace/kc3_k1000_state.json'))['next_orbit'])")/400 [skip ci]" || echo "no-change"
+          git push
+      - name: self-dispatch
+        if: steps.chk.outputs.done == 'no'
+        env:
+          GH_TOKEN: ${{{{ secrets.GITHUB_TOKEN }}}}
+        run: |
+          DONE=$(python3 -c "import json,os;p='ci/furnace/kc3_k1000_done.json';print(json.load(open(p))['done'] if os.path.exists(p) else False)")
+          if [ "$DONE" = "True" ]; then echo "furnace k1000 complete, chain ends"; exit 0; fi
+          sleep 5
+          gh api -X POST repos/${{{{ github.repository }}}}}/actions/workflows/furnace-k1000.yml/dispatches -f ref=main && echo "next-chunk dispatched"
