@@ -369,3 +369,4 @@
 {"ts": "20260922T075725Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 400}
 {"ts": "20260922T080657Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 401}
 {"ts": "20260922T081628Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 402}
+{"ts": "20260922T082600Z", "verdict": "no-fire(条件未阈,负结果入册)", "pulses": 403}
