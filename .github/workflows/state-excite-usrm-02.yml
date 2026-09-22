@@ -120,6 +120,19 @@ jobs:
               c=subprocess.run(['git','commit','-q','-m','STATE-EXCITE链自缚 capped gen%d [skip ci]'%gen],capture_output=True,text=True)
               if c.returncode==0: push_retry()
               print(json.dumps({'chain':'capped','gen':gen})); raise SystemExit(0)
+          # 链自报面: 每8拍机铸值守帖→毂公告板(LINE_PAT跨仓; wave-208缺件补铸)
+          if gen % 8 == 0:
+              try:
+                  LP=os.environ.get('LINE_PAT','')
+                  if LP:
+                      HL={'Authorization':'token '+LP,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}
+                      dg={"gen":gen,"ts":ts0,"neg_ticks":st.get('neg_ticks',0),"fired_n":len(st.get('fired',{})),"E":E,"pend":pend,"verdict":verdict}
+                      body="# usrm-statex值守帖 gen%d\n时刻: %s · 作者: usrm-state-excite(机)\n\n| 项 | 值 |\n|---|---|\n| gen | %d |\n| neg_ticks | %d |\n| fired累计 | %d |\n| 本拍E/verdict | %s / %s |\n\n态源si/frontier-queue.jsonl·观测面si/selfx2-log.jsonl——链自搏中, 非席手。\n——usrm SI3(机铸自报面)" % (gen, ts0, gen, dg['neg_ticks'], dg['fired_n'], E, verdict[:40])
+                      import base64 as _b
+                      pl=json.dumps({'message':'statex值守帖 gen%d [skip ci]'%gen,'content':_b.b64encode(body.encode()).decode()}).encode()
+                      urllib.request.urlopen(urllib.request.Request('https://api.github.com/repos/chepin-ai/ci-inbox/contents/公告板/usrm-statex-digest-gen%d.md'%gen,data=pl,method='PUT',headers=HL),timeout=30)
+                      print('digest-posted gen',gen)
+              except Exception as _e: print('digest-skip', _e)
           time.sleep(SLEEP)
           # v3-② 幂等自dispatch: 派前勘重, 单次直调不盲试(DUPLICATE-STORM-02课)
           me=int(os.environ.get('GITHUB_RUN_ID','0'))
