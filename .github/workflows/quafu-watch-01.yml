@@ -1,0 +1,94 @@
+name: quafu-watch-01
+# EXP-049 自驱闭环(wave-214): 队动自探/务讫自取/S自算/板自报——无人值守硬件事务驱动轨
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '23 */12 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: quafu-watch
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q --index-url https://pypi.org/simple pyquafu
+      - name: watch
+        env:
+          QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+          LINE_PAT: ${{ secrets.LINE_PAT }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, datetime, subprocess, urllib.request, urllib.parse, base64 as B
+          ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+          from quafu import Task, User
+          u = User(api_token=os.environ['QUAFU_KEY'])
+          bks = u.get_available_backends()
+          row = {'ts': ts}
+          for n in ('ScQ-P5','Baihua','ScQ-Sim10'):
+              b = bks.get(n)
+              try:
+                import re
+                s = str(b)
+              except Exception: s='?'
+          # 直取表: get_available_backends 打印表, 属性名随版本变——用 retrieve 勘我4务+表字串捕队深
+          import io, contextlib
+          buf = io.StringIO()
+          with contextlib.redirect_stdout(buf):
+              bks = u.get_available_backends()
+          tbl = buf.getvalue()
+          qd = {}
+          for ln in tbl.splitlines():
+              for n in ('ScQ-P5','Baihua','ScQ-Sim10'):
+                  if ln.strip().startswith(n):
+                      parts = ln.split()
+                      qd[n] = {'status': parts[-2], 'queued': parts[-1]}
+          t = Task(u)
+          IDS = {'AB':'8D32418037EFFE04','ABp':'8D3241902178F453','ApB':'8D32419033F4DB86','ApBp':'8D3241A006FD2B5A'}
+          done = {}
+          for tag, tid in IDS.items():
+              r = t.retrieve(tid)
+              stt = str(r.task_status)
+              if stt == 'Completed' and r.counts:
+                  done[tag] = r.counts
+          row['queue'] = qd; row['hw_done'] = len(done)
+          # 遥测落仓
+          import pathlib
+          pathlib.Path('ci/quafu').mkdir(exist_ok=True)
+          with open('ci/quafu/watch.jsonl','a') as f:
+              f.write(json.dumps(row, ensure_ascii=False)+'\n')
+          verdict = 'HW-HELD'
+          if len(done) == 4:
+              def E(c):
+                  tt = sum(c.values()); return (c.get('00',0)+c.get('11',0)-c.get('01',0)-c.get('10',0))/tt
+              S = E(done['AB'])-E(done['ABp'])+E(done['ApB'])+E(done['ApBp'])
+              verdict = 'HW-DONE S=%.4f' % S
+              json.dump({'S':S,'counts':done,'ts':ts}, open('ci/quafu/EXP049-HW-RESULT.json','w'))
+          row['verdict'] = verdict
+          subprocess.run(['git','config','user.name','usrm-quafu-watch'])
+          subprocess.run(['git','config','user.email','usrm-quafu-watch@users.noreply.github.com'])
+          subprocess.run(['git','add','ci/quafu'])
+          c = subprocess.run(['git','commit','-q','-m','quafu-watch %s done=%d %s [skip ci]'%(ts,len(done),verdict[:24])],capture_output=True,text=True)
+          if c.returncode==0:
+              for i in range(4):
+                  p = subprocess.run(['git','pull','--rebase','-q'],capture_output=True)
+                  q = subprocess.run(['git','push','-q'],capture_output=True)
+                  if q.returncode==0: break
+                  subprocess.run(['git','rebase','--abort'],capture_output=True)
+          print(json.dumps(row, ensure_ascii=False)[:500])
+          # 务讫→板自报
+          if len(done)==4:
+              LP = os.environ.get('LINE_PAT','')
+              if LP:
+                  body = '# EXP-049 硬件成\nS=%.4f counts见vci-usrm/ci/quafu/EXP049-HW-RESULT.json ——quafu-watch(机)' % S
+                  pl = json.dumps({'message':'EXP-049 HW结果 [skip ci]','content':B.b64encode(body.encode()).decode()}).encode()
+                  u2 = 'https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+urllib.parse.quote('公告板/exp049-hw-result.md')
+                  urllib.request.urlopen(urllib.request.Request(u2,data=pl,method='PUT',
+                      headers={'Authorization':'token '+LP,'Accept':'application/vnd.github+json','User-Agent':'quafu-watch'}),timeout=30)
+          PYEOF
