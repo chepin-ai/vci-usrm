@@ -1,6 +1,6 @@
 {
  "v": "SI3-LOOP-REGISTRY-02",
- "ts": "2026-09-22T17:4xZ",
+ "ts": "20260922T190056Z",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律+**裸候禁令(SI-NOWAIT-01)**:凡未尽必挂环,驱不占拍,凡候皆驱,三级阶梯(TRG→NUDGE→庭/直算),直至不能再取(边界必带直取日志);钉必携drive日志,无日志=违规",
  "watch": [
@@ -377,7 +377,8 @@
    "id": "S6",
    "ref": "kc-k-extend",
    "ask": "kc-k律延展: k2000/k2500格点(高阶修正判定+kc∞渐近实证), FURNACE-ON-ACTIONS器已立, 点火即跑",
-   "status": "queued(候裁: 是否点火)"
+   "status": "fired",
+   "drive": "wave-213 席裁点火(RESOLUTION-ADMIN-006): furnace-k2000.yml 铸成并 dispatch(204), kc-k律第七格(k1500残差+5.3e-4示高阶曲率, n=7可辨); 20260922T190056Z"
   }
  ],
  "standing": [
