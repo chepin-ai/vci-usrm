@@ -17,7 +17,7 @@ jobs:
           ts0=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
           REPO=os.environ['GITHUB_REPOSITORY']; TOK=os.environ['GH_TOKEN']
           H={'Authorization':'Bearer '+TOK,'Accept':'application/vnd.github+json','User-Agent':'state-excite-usrm'}
-          GEN_CAP=48; SLEEP=600; THETA=1
+          GEN_CAP=480; SLEEP=600; THETA=1
           def api(m,u,data=None):
               for i in range(4):
                   try:
