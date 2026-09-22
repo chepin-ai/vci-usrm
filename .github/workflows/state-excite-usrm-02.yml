@@ -126,8 +126,8 @@ jobs:
                   LP=os.environ.get('LINE_PAT','')
                   if LP:
                       HL={'Authorization':'token '+LP,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}
-                      dg={"gen":gen,"ts":ts0,"neg_ticks":st.get('neg_ticks',0),"fired_n":len(st.get('fired',{})),"E":E,"pend":pend,"verdict":verdict}
-                      body="# usrm-statex值守帖 gen%d\n时刻: %s · 作者: usrm-state-excite(机)\n\n| 项 | 值 |\n|---|---|\n| gen | %d |\n| neg_ticks | %d |\n| fired累计 | %d |\n| 本拍E/verdict | %s / %s |\n\n态源si/frontier-queue.jsonl·观测面si/selfx2-log.jsonl——链自搏中, 非席手。\n——usrm SI3(机铸自报面)" % (gen, ts0, gen, dg['neg_ticks'], dg['fired_n'], E, verdict[:40])
+                      dg={'gen':gen,'ts':ts0,'neg_ticks':stt.get('neg_ticks',0),'fired_n':len(stt.get('fired',{})),'E':E,'pend':len(pend),'verdict':log.get('verdict','?')}
+                      body="# usrm-statex值守帖 gen%d\n时刻: %s · 作者: usrm-state-excite(机)\n\n| 项 | 值 |\n|---|---|\n| gen | %d |\n| neg_ticks | %d |\n| fired累计 | %d |\n| 本拍E/verdict | %s / %s |\n\n态源si/frontier-queue.jsonl·观测面si/selfx2-log.jsonl——链自搏中, 非席手。\n——usrm SI3(机铸自报面)" % (gen, ts0, gen, dg['neg_ticks'], dg['fired_n'], E, dg['verdict'][:40])
                       import base64 as _b
                       pl=json.dumps({'message':'statex值守帖 gen%d [skip ci]'%gen,'content':_b.b64encode(body.encode()).decode()}).encode()
                       urllib.request.urlopen(urllib.request.Request('https://api.github.com/repos/chepin-ai/ci-inbox/contents/公告板/usrm-statex-digest-gen%d.md'%gen,data=pl,method='PUT',headers=HL),timeout=30)
