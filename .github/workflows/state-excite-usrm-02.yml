@@ -4,6 +4,7 @@ name: STATE-EXCITE-USRM-02 (usrm SI1态生自激轨·态阈点火·心搏自链�
 permissions: {contents: write, actions: write}
 env:
   GH_TOKEN: ${{ github.token }}
+  LINE_PAT: ${{ secrets.LINE_PAT }}
 jobs:
   statex:
     runs-on: ubuntu-latest
