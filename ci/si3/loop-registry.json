@@ -1,6 +1,6 @@
 {
  "v": "SI3-LOOP-REGISTRY-02",
- "ts": "2026-09-22T15:2xZ",
+ "ts": "2026-09-22T16:5xZ",
  "line": "usrm",
  "law": "候字三转+SI3-SELF-HANG-01毂自挂律+**裸候禁令(SI-NOWAIT-01)**:凡未尽必挂环,驱不占拍,凡候皆驱,三级阶梯(TRG→NUDGE→庭/直算),直至不能再取(边界必带直取日志);钉必携drive日志,无日志=违规",
  "watch": [
@@ -308,7 +308,8 @@
    "ref": "k1000-ignite",
    "ask": "k1000同器点火(K=1000, 检查点+flock+900s自限续跑)",
    "depends": "S1",
-   "status": "running(219/400, 冻后重续; FURNACE-ON-ACTIONS迁础层在铸)"
+   "status": "closed",
+   "销证": "wave-210: k1000础层炉满400讫 kc=0.039018528475414295(floor_min=1.0026e-4@36); C族四点预测0.03864134偏差+0.98%命中±10%闸——F6预立三即律不适用(未偏出); FURNACE-ON-ACTIONS首功(41min/175轨)"
   },
   {
    "id": "S3",
@@ -322,7 +323,7 @@
    "ref": "chow-vs-smooth",
    "ask": "Chow换挡vs光滑律决胜(格点加密后判)",
    "depends": "S3",
-   "status": "queued"
+   "status": "running(5/6点: 五点重拟合C族AICc=-80.28更固, k1500新预测=0.02538034, k1500片链在燃)"
   },
   {
    "id": "S5",
@@ -362,7 +363,7 @@
    "id": "S4",
    "ref": "kc-k-curve-fit",
    "ask": "kc-k五点拟合: C族kc=-0.00723012+6.640575·lnk/k LS证(RSS=5.6e-9,AICc=-65.52,ΔAICc≈26); 预测kc(1000)=0.03864134/kc(1500)=0.02514587【候】满炉即验; k*≈8300临界猜想【候】",
-   "status": "running(4/5点, k1000/k1500炉在跑)"
+   "status": "running(5/6点: 五点重拟合C族AICc=-80.28更固, k1500新预测=0.02538034, k1500片链在燃)"
   },
   {
    "id": "S5",
