@@ -44,6 +44,13 @@ jobs:
           me=int(os.environ.get('GITHUB_RUN_ID','0'))
           rr0=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=10'%REPO)
           elders=[r for r in rr0.get('workflow_runs',[]) if r['id']<me and r['status'] in ('queued','in_progress')]
+          # v4: 宽限环(LEADER-RACE课)——前拍dispatch后退出尾窗与晚辈起相叠, 即杀致链死; 候长辈讫(45s×2)仍跑方退
+          for _g in range(2):
+              if not elders: break
+              print(json.dumps({'ts':ts0,'verdict':'grace(候长辈%d讫)'%elders[0]['id']},ensure_ascii=False))
+              time.sleep(45)
+              rr0=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=10'%REPO)
+              elders=[r for r in rr0.get('workflow_runs',[]) if r['id']<me and r['status'] in ('queued','in_progress')]
           if elders:
               print(json.dumps({'ts':ts0,'verdict':'not-leader(晚辈退,帝=run%d)'%elders[0]['id']},ensure_ascii=False))
               raise SystemExit(0)
