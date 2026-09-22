@@ -1,0 +1,1 @@
+{"k": 1000.0, "orbits": 400, "floor_min": 0.00010026045002928554, "argmin": 36, "kc": 0.039018528475414295, "_note": "FURNACE-ON-ACTIONS首片即满(41min/175轨, runner≈14s/轨 vs 沙箱450-900s/轨); push拒收致runner本地commit stranded, 本档值自run日志逐字捕; floors序列由沙箱第二实现再生成互证", "_harvested": "2026-09-22T16:12:09Z run35747878530"}
