@@ -128,6 +128,41 @@ jobs:
               c=subprocess.run(['git','commit','-q','-m','STATE-EXCITE链自缚 capped gen%d [skip ci]'%gen],capture_output=True,text=True)
               if c.returncode==0: push_retry()
               print(json.dumps({'chain':'capped','gen':gen})); raise SystemExit(0)
+          # 直通场: 每拍机铸活态投影 si/FIELD-USRM-01.json + 毂镜 shared/(wave-214 root令「真正令其发挥作用」)
+          try:
+              _kf={}
+              for _p in ('si/selfx2-state.json','si/frontier-queue.jsonl','ci/furnace/kc_k2000_result.json','ci/furnace/kc3_k2000_state.json'):
+                  try:
+                      _kf[_p]=hashlib.sha256(open(_p,'rb').read()).hexdigest()[:12]
+                  except Exception: pass
+              try:
+                  _k2=json.load(open('ci/furnace/kc3_k2000_state.json')); _k2o=_k2.get('next_orbit',0)
+              except Exception: _k2o=None
+              _field={'field':'FIELD-USRM-01','ts':ts0,'gen':gen,'E':E,'verdict':log.get('verdict','?'),
+                      'neg_ticks':stt.get('neg_ticks',0),'fired_n':len(stt.get('fired',{})),
+                      'law':'kc=-0.00638985+6.595464*ln(k)/k (AICc=-89.20, 六点, 二参最小充分)',
+                      'pred':{'k2000':{'value':0.018647,'PI':[0.01678,0.02051],'gate':'±10%'}},
+                      'k2000_orbits':_k2o,'fp':_kf,
+                      'read':'机读活态投影; fp=sha256[:12]绑定; 板帖=人读面, 本件=机读面(板即场之usrm形)'}
+              json.dump(_field, open('si/FIELD-USRM-01.json','w'), ensure_ascii=False, indent=1)
+              subprocess.run(['git','add','si/FIELD-USRM-01.json'])
+              c2=subprocess.run(['git','commit','-q','-m','FIELD-USRM-01 gen%d [skip ci]'%gen],capture_output=True,text=True)
+              if c2.returncode==0: push_retry()
+              LP2=os.environ.get('LINE_PAT','')
+              if LP2:
+                  import urllib.parse as _up
+                  _pl=json.dumps({'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode()}).encode()
+                  _u='https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+_up.quote('shared/FIELD-USRM-01.json')
+                  _cur=None
+                  try:
+                      _r=urllib.request.urlopen(urllib.request.Request(_u,headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json'}),timeout=20)
+                      _cur=json.loads(_r.read()).get('sha')
+                  except Exception: pass
+                  if _cur:
+                      _pl=json.dumps({'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode(),'sha':_cur}).encode()
+                  urllib.request.urlopen(urllib.request.Request(_u,data=_pl,method='PUT',headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}),timeout=30)
+                  print('field-mirrored gen',gen)
+          except Exception as _fe: print('field-skip', _fe)
           # 链自报面: 每8拍机铸值守帖→毂公告板(LINE_PAT跨仓; wave-208缺件补铸)
           if gen % 8 == 0:
               try:
