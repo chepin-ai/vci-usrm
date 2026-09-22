@@ -33,7 +33,9 @@ jobs:
           git add ci/furnace/kc3_k1000_state.json ci/furnace/kc3_k1000_floors.jsonl ci/furnace/kc3_k1000_done.json
           git add ci/furnace/kc_k1000_result.json 2>/dev/null || true
           git commit -m "furnace-k1000 chunk advance [skip ci]" || echo "no-change"
-          git push
+          for i in 1 2 3 4; do
+            git pull --rebase && git push && break || { git rebase --abort 2>/dev/null; sleep $((i*3)); }
+          done
       - name: self-dispatch
         if: steps.chk.outputs.done == 'no'
         env:
