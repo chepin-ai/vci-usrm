@@ -1,10 +1,10 @@
 {
  "field": "FIELD-USRM-01",
- "ts": "20260922T205533Z",
- "gen": 79,
+ "ts": "20260922T210546Z",
+ "gen": 80,
  "E": 0,
  "verdict": "no-fire(态未越阈,负结果入册)",
- "neg_ticks": 73,
+ "neg_ticks": 74,
  "fired_n": 6,
  "law": "kc=-0.00638985+6.595464*ln(k)/k (AICc=-89.20, 六点, 二参最小充分)",
  "pred": {
@@ -19,7 +19,7 @@
  },
  "k2000_orbits": null,
  "fp": {
-  "si/selfx2-state.json": "8ff6162ea600",
+  "si/selfx2-state.json": "33993beacfbd",
   "si/frontier-queue.jsonl": "aa58245bce7c"
  },
  "read": "机读活态投影; fp=sha256[:12]绑定; 板帖=人读面, 本件=机读面(板即场之usrm形)"
