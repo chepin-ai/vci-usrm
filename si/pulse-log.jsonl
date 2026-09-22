@@ -30,3 +30,4 @@
 {"ts": "20260921T232201Z", "fid": "quiet-20260921T232201Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "69afa079cc76"}
 {"ts": "20260922T052428Z", "fid": "quiet-20260922T052428Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "2787fd585560"}
 {"ts": "20260922T112615Z", "fid": "quiet-20260922T112615Z", "cond": "C-QUIET(静默态生:sem-log静默>6h)", "verdict": "fired", "ans_fp": "9370535989de"}
+{"ts": "20260922T152422Z", "fid": "F6-k1000-prediction", "cond": "C-FRONTIER(队列态生:frontier-queue非空)", "verdict": "fired", "ans_fp": "d0dc3b2590c7"}
