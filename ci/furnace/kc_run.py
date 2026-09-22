@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """kc_run.py — FURNACE-ON-ACTIONS 跑器: 仓内checkpoint续跑, 时间预算片, 未完标记
 用法: python ci/furnace/kc_run.py <K> <预算秒>"""
-import json, os, sys, time
+import json, os, sys, time, subprocess
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 from scipy.integrate import solve_ivp
@@ -29,6 +29,12 @@ for i in range(i0, CAP):
     y = sol.y[:, -1]
     fj.write(json.dumps({"orb": i, "floor": fmin})+"\n"); fj.flush(); os.fsync(fj.fileno())
     json.dump({"k": K, "next_orbit": i+1, "y_hex12": [float.hex(v) for v in y], "floors": floors}, open(ST, "w"))
+    if (i+1) % 20 == 0:
+        subprocess.run(["git","config","user.name","usrm-furnace"],check=False)
+        subprocess.run(["git","config","user.email","usrm-furnace@local"],check=False)
+        subprocess.run(["git","add",ST,JL],check=False)
+        subprocess.run(["git","commit","-m",f"furnace-k{int(K)} in-chunk {i+1}/400 [skip ci]"],check=False)
+        subprocess.run(["git","push"],check=False)
     if time.time()-t0 > BUDGET:
         print(f"chunk-end@{i+1} budget-hit", flush=True)
         json.dump({"done": False}, open(f"ci/furnace/kc3_k{int(K)}_done.json", "w"))
