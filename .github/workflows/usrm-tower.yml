@@ -14,6 +14,8 @@ on:
         description: 'selftest=1 干跑(不级联)'
         required: false
         default: '0'
+  schedule:
+    - cron: '41 */6 * * *'  # beat90毂修: 自醒链断保底锚(事件饿殍55h实证·器障株法·保底非死手,无事件即眠)
 concurrency:
   group: ${{ github.event_name == 'repository_dispatch' && 'usrm-tower-chain' || 'usrm-tower-edge' }}
   cancel-in-progress: ${{ github.event_name != 'repository_dispatch' }}
