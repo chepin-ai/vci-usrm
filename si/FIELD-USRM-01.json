@@ -1,10 +1,10 @@
 {
  "field": "FIELD-USRM-01",
- "ts": "20260923T005053Z",
- "gen": 102,
+ "ts": "20260923T010105Z",
+ "gen": 103,
  "E": 0,
  "verdict": "no-fire(态未越阈,负结果入册)",
- "neg_ticks": 95,
+ "neg_ticks": 96,
  "fired_n": 7,
  "law": "kc=-0.00638985+6.595464*ln(k)/k (AICc=-89.20, 六点, 二参最小充分)",
  "pred": {
@@ -19,7 +19,7 @@
  },
  "k2000_orbits": 400,
  "fp": {
-  "si/selfx2-state.json": "15552a88f560",
+  "si/selfx2-state.json": "2be0906b7438",
   "si/frontier-queue.jsonl": "aa58245bce7c",
   "ci/furnace/kc_k2000_result.json": "b3b4d6f33b04",
   "ci/furnace/kc3_k2000_state.json": "a99b94229342"
