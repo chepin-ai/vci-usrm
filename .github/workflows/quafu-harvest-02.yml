@@ -1,0 +1,55 @@
+name: QUAFU-HARVEST-02 (cisvr毂·真机收割轨v2·watchlist驱动·即完即收·有变方落·静默即合法)
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: poll-watchlist
+        env:
+          QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,time,hashlib,urllib.request,urllib.parse
+          TOK=os.environ.get("QUAFU_KEY","").strip()
+          API="https://quafu.baqis.ac.cn/"
+          def post(path,data):
+              r=urllib.request.Request(API+path,data=urllib.parse.urlencode(data).encode(),
+                  headers={"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8","api_token":TOK},method="POST")
+              try: return json.load(urllib.request.urlopen(r,timeout=45))
+              except Exception as e: return {"_err":str(e)[:100]}
+          wl=json.load(open("weave/quafu/watchlist.json"))
+          os.makedirs("receipts/quafu",exist_ok=True)
+          ts=time.strftime("%Y%m%dT%H%M%SZ",time.gmtime())
+          st=json.load(open("weave/quafu/status.json")) if os.path.exists("weave/quafu/status.json") else {"jobs":{}}
+          st["ts"]=ts; changed=0
+          for j in wl.get("jobs",[]):
+              jid=j["job_id"]; nm=j.get("note","?")
+              if st["jobs"].get(jid,{}).get("state")=="harvested": continue
+              r=post("qbackend/scq_task_recall/",{"task_id":jid})
+              res=r.get("res") or r.get("results") or r.get("raw")
+              if res and res not in ("{}","",None):
+                  safe={kk:vv for kk,vv in r.items() if kk.lower() not in ("api_token","token")}
+                  json.dump(safe,open("receipts/quafu/RUN-"+nm+"-"+jid+".json","w"),ensure_ascii=False,indent=1)
+                  st["jobs"][jid]={"state":"harvested","ts":ts,"note":nm}
+                  changed+=1; print("HARVESTED",nm,jid)
+              else:
+                  st["jobs"][jid]={"state":"pending","ts":ts,"note":nm}
+          json.dump(st,open("weave/quafu/status.json","w"),ensure_ascii=False,indent=1)
+          print("changed",changed,"ts",ts)
+          open(".changed","w").write(str(changed))
+          PYEOF
+      - name: commit-on-change-only
+        if: always()
+        run: |
+          [ "$(cat .changed 2>/dev/null || echo 0)" = "0" ] && echo "no change, silent" && exit 0
+          git config user.name "quafu-harvest"; git config user.email "harvest@vci-usrm.local"
+          git add weave/quafu receipts/quafu
+          git diff --cached --quiet && exit 0
+          git commit -m "QUAFU-HARVEST-02 change [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 3; done
