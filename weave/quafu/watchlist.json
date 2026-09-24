@@ -1,0 +1,66 @@
+{
+ "v": "QUAFU-WATCH-02",
+ "ts": "2026-09-24T15:36:21Z",
+ "jobs": [
+  {
+   "job_id": "8E6127E015189AA6",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-000"
+  },
+  {
+   "job_id": "8E61280013FE83E5",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-001"
+  },
+  {
+   "job_id": "8E612810352A8CCD",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-010"
+  },
+  {
+   "job_id": "8E61283018EF220E",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-011"
+  },
+  {
+   "job_id": "8E612850089BCBEE",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-100"
+  },
+  {
+   "job_id": "8E6128702B8455CA",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-101"
+  },
+  {
+   "job_id": "8E6128902737D732",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-110"
+  },
+  {
+   "job_id": "8E6128B00D6E33B1",
+   "chip": "ScQ-P5",
+   "note": "FRAC01-111"
+  },
+  {
+   "job_id": "8E6128C02C2135EE",
+   "chip": "ScQ-P5",
+   "note": "CHSH2-AB"
+  },
+  {
+   "job_id": "8E6128F0066D3BB0",
+   "chip": "ScQ-P5",
+   "note": "CHSH2-ABp"
+  },
+  {
+   "job_id": "8E6129002B01104B",
+   "chip": "ScQ-P5",
+   "note": "CHSH2-ApB"
+  },
+  {
+   "job_id": "8E612920190C5E66",
+   "chip": "ScQ-P5",
+   "note": "CHSH2-ApBp"
+  }
+ ]
+}
