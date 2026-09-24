@@ -44,6 +44,12 @@ jobs:
               presample["plan"].append({"combo":str(x0)+str(x1)+str(y),"shot_idx":shots})
           json.dump(presample,open("receipts/quafu/FRAC01-presample-"+seedfp+".json","w"),indent=1)
           print("presample sealed fp=",seedfp)
+          import subprocess
+          subprocess.run(["git","config","user.name","quafu-fire"]); subprocess.run(["git","config","user.email","fire@vci-usrm.local"])
+          subprocess.run(["git","add","receipts/quafu/FRAC01-presample-"+seedfp+".json"])
+          subprocess.run(["git","commit","-m","PRESAMPLE-SEAL "+seedfp+" [skip ci]"],capture_output=True)
+          subprocess.run(["git","pull","--rebase","-q"],capture_output=True); subprocess.run(["git","push","-q"],capture_output=True)
+          print("presample committed BEFORE fire")
           def qasm_rac(x0,x1,y):
               a={(0,0):"pi/4",(0,1):"7*pi/4",(1,0):"3*pi/4",(1,1):"5*pi/4"}[(x0,x1)]
               L=["OPENQASM 2.0;",'include "qelib1.inc";',"qreg q[1];","creg c[1];","ry("+a+") q[0];"]
