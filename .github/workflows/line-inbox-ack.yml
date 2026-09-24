@@ -38,4 +38,4 @@ jobs:
           PYEOF
           git config user.name "line-inbox-ack"; git config user.email "ack@ci-os.local"
           git add outbox/
-          if git diff --cached --quiet; then echo no-change; else git commit -m "inbox收执 $(date -u +%H:%M:%SZ) [skip ci]"; BR=$(git rev-parse --abbrev-ref HEAD); git pull --rebase -q origin "$BR"; git push -q origin HEAD:"$BR"; fi
+          if git diff --cached --quiet; then echo no-change; else git commit -m "inbox收执 $(date -u +%H:%M:%SZ) [skip ci]"; BR=$(git rev-parse --abbrev-ref HEAD); for i in 1 2 3; do git pull --rebase -q origin "$BR" && git push -q origin HEAD:"$BR" && break || sleep 3; done; fi
