@@ -1,0 +1,116 @@
+name: QUAFU-FIRE-01 (cisvr毂·真机双联试·F-RAC-01+CHSH复核·闸3发射轨·预注册在案)
+on:
+  workflow_dispatch:
+    inputs:
+      chip: {description: 'ScQ-P5 / Baihua / ScQ-Sim10', default: 'ScQ-P5'}
+permissions:
+  contents: write
+jobs:
+  fire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: fire-and-poll
+        env:
+          QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+          CHIP: ${{ github.event.inputs.chip || 'ScQ-P5' }}
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,time,hashlib,urllib.request,urllib.parse,math
+          TOK=os.environ["QUAFU_KEY"].strip(); CHIP=os.environ["CHIP"]
+          API="https://quafu.baqis.ac.cn/"
+          def post(path,data):
+              r=urllib.request.Request(API+path,data=urllib.parse.urlencode(data).encode(),
+                  headers={"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8","api_token":TOK},method="POST")
+              try: return json.load(urllib.request.urlopen(r,timeout=60))
+              except urllib.error.HTTPError as e: return {"_http":e.code,"_body":e.read().decode()[:150]}
+              except Exception as e: return {"_err":str(e)[:120]}
+          os.makedirs("receipts/quafu",exist_ok=True)
+          ts=time.strftime("%Y%m%dT%H%M%SZ",time.gmtime())
+          # 0) chip id resolve
+          bl=post("qbackend/get_backends/",{})
+          chips={x.get("system_name"):x for x in bl.get("data",[])} if isinstance(bl,dict) and bl.get("data") else {}
+          sid=(chips.get(CHIP) or {}).get("system_id")
+          if sid is None:
+              print("CHIP_NOT_FOUND",CHIP,list(chips.keys())); raise SystemExit(1)
+          print("chip",CHIP,"system_id",sid,"status",(chips.get(CHIP) or {}).get("status"))
+          # 1) drand种子 → 抽样表先封(N=40: 8电路×5发,位抽签)
+          dz=json.load(urllib.request.urlopen("https://api.drand.sh/52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971/public/latest",timeout=30))
+          seed=dz["randomness"]; seedfp=hashlib.sha256(seed.encode()).hexdigest()[:12]
+          rng=int(seed,16)
+          presample={"seed_round":dz["round"],"seed_fp":seedfp,"ts":ts,"plan":[]}
+          combos=[(x0,x1,y) for x0 in (0,1) for x1 in (0,1) for y in (0,1)]
+          for ci,(x0,x1,y) in enumerate(combos):
+              shots=sorted((rng>>(ci*40+j*6))%200 for j in range(5))
+              presample["plan"].append({"combo":f"{x0}{x1}{y}","shot_idx":shots})
+          json.dump(presample,open(f"receipts/quafu/FRAC01-presample-{seedfp}.json","w"),indent=1)
+          print("presample sealed fp=",seedfp)
+          # 2) QRAC 8电路 + CHSH 4电路(EXP-049原电路复核)
+          def qasm_rac(x0,x1,y):
+              a={(0,0):"pi/4",(0,1):"7*pi/4",(1,0):"3*pi/4",(1,1):"5*pi/4"}[(x0,x1)]
+              q="OPENQASM 2.0;
+include \"qelib1.inc\";
+qreg q[1];
+creg c[1];
+"
+              q+=f"ry({a}) q[0];
+"+("h q[0];
+" if y else "")+"measure q[0] -> c[0];
+"
+              return q
+          CHSH={"AB":-0.7853981633974483,"ABp":-2.356194490192345,"ApB":-1.5707963267948966,"ApBp":None}
+          def qasm_chsh(k):
+              rotA={"AB":0,"ABp":0,"ApB":-1.5707963267948966,"ApBp":-1.5707963267948966}[k]
+              rotB={"AB":-0.7853981633974483,"ABp":-2.356194490192345,"ApB":-0.7853981633974483,"ApBp":-2.356194490192345}[k]
+              q="OPENQASM 2.0;
+include \"qelib1.inc\";
+qreg q[2];
+creg c[2];
+h q[0];
+cx q[0],q[1];
+"
+              if rotA: q+=f"ry({rotA}) q[0];
+"
+              q+=f"ry({rotB}) q[1];
+barrier q[0],q[1];
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+"
+              return q
+          ids={}
+          for (x0,x1,y) in combos:
+              nm=f"FRAC01-{x0}{x1}{y}"
+              d=post("qbackend/scq_kit_asyc/",{"qtasm":qasm_rac(x0,x1,y),"shots":200,"qubits":1,"scan":0,"tomo":0,
+                  "selected_server":sid,"compile":1,"priority":2,"task_name":nm,"pyquafu_version":"hand-0.1","runtime_job_id":""})
+              ids[nm]=d.get("task_id") or d
+              print(nm,ids[nm] if isinstance(ids[nm],str) else json.dumps(d)[:100]); time.sleep(0.5)
+          for k in CHSH:
+              nm=f"CHSH2-{k}"
+              d=post("qbackend/scq_kit_asyc/",{"qtasm":qasm_chsh(k),"shots":400,"qubits":2,"scan":0,"tomo":0,
+                  "selected_server":sid,"compile":1,"priority":2,"task_name":nm,"pyquafu_version":"hand-0.1","runtime_job_id":""})
+              ids[nm]=d.get("task_id") or d
+              print(nm,ids[nm] if isinstance(ids[nm],str) else json.dumps(d)[:100]); time.sleep(0.5)
+          json.dump({"ts":ts,"chip":CHIP,"sid":sid,"ids":ids,"seed_fp":seedfp},open("receipts/quafu/FRAC01-FIRE-"+ts+".json","w"),indent=1)
+          # 3) 轮询回收(≤30min)
+          deadline=time.time()+1800; done={}
+          while time.time()<deadline and len(done)<len(ids):
+              for nm,tid in ids.items():
+                  if nm in done or not isinstance(tid,str): continue
+                  r=post("qbackend/scq_task_recall/",{"task_id":tid})
+                  res=r.get("res") or r.get("results") or r.get("raw")
+                  if res and res not in ("{}","",None):
+                      safe={kk:vv for kk,vv in r.items() if kk.lower() not in ("api_token","token")}
+                      json.dump(safe,open(f"receipts/quafu/RUN-{nm}-{tid}.json","w"),ensure_ascii=False,indent=1)
+                      done[nm]=tid; print("DONE",nm,tid)
+              if len(done)<len(ids): time.sleep(30)
+          print("completed",len(done),"/",len(ids))
+          json.dump({"ts":time.strftime('%Y%m%dT%H%M%SZ',time.gmtime()),"done":done,"pending":{k:v for k,v in ids.items() if k not in done}},open("receipts/quafu/FRAC01-COLLECT-"+ts+".json","w"),indent=1)
+          PYEOF
+      - name: commit
+        run: |
+          git config user.name "quafu-fire"; git config user.email "fire@vci-usrm.local"
+          git add receipts/quafu
+          git diff --cached --quiet && exit 0
+          git commit -m "QUAFU-FIRE-01 ${{ github.event.inputs.chip || 'ScQ-P5' }} [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 3; done
