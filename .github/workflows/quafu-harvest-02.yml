@@ -26,7 +26,8 @@ jobs:
           wl=json.load(open("weave/quafu/watchlist.json"))
           os.makedirs("receipts/quafu",exist_ok=True)
           ts=time.strftime("%Y%m%dT%H%M%SZ",time.gmtime())
-          st=json.load(open("weave/quafu/status.json")) if os.path.exists("weave/quafu/status.json") else {"jobs":{}}
+          st=json.load(open("weave/quafu/status.json")) if os.path.exists("weave/quafu/status.json") else {}
+          st.setdefault("jobs",{})
           st["ts"]=ts; changed=0
           for j in wl.get("jobs",[]):
               jid=j["job_id"]; nm=j.get("note","?")
