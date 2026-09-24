@@ -77,6 +77,10 @@ jobs:
               ids[nm]=d.get("task_id") or d
               print(nm,ids[nm] if isinstance(ids[nm],str) else json.dumps(d)[:100]); time.sleep(0.5)
           json.dump({"ts":ts,"chip":CHIP,"sid":sid,"ids":ids,"seed_fp":seedfp},open("receipts/quafu/FRAC01-FIRE-"+ts+".json","w"),indent=1)
+          subprocess.run(["git","add","receipts/quafu/FRAC01-FIRE-"+ts+".json"])
+          subprocess.run(["git","commit","-m","FIRE-IDS "+ts+" [skip ci]"],capture_output=True)
+          subprocess.run(["git","pull","--rebase","-q"],capture_output=True); subprocess.run(["git","push","-q"],capture_output=True)
+          print("fire-ids committed BEFORE poll")
           deadline=time.time()+1800; done={}
           while time.time()<deadline and len(done)<len([v for v in ids.values() if isinstance(v,str)]):
               for nm,tid in ids.items():
