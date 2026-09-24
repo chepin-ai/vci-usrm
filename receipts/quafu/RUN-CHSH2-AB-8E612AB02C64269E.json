@@ -1,0 +1,10 @@
+{
+ "input_q2c": null,
+ "measure": "{8: 0, 9: 1}",
+ "openqasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[10];\ncreg c[2];\nh q[8];\ncx q[8],q[9];\nry(-0.7853981633974483) q[9];\nbarrier q[8],q[9];\nmeasure q[8] -> c[0];\nmeasure q[9] -> c[1];\n",
+ "raw": "{\"00\": 169, \"01\": 21, \"10\": 39, \"11\": 171}",
+ "res": "{\"00\": 169, \"01\": 21, \"10\": 39, \"11\": 171}",
+ "status": 2,
+ "task_id": "8E612AB02C64269E",
+ "task_name": "CHSH2-AB"
+}

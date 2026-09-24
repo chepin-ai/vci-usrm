@@ -1,0 +1,10 @@
+{
+ "input_q2c": null,
+ "measure": "{0: 0}",
+ "openqasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[10];\ncreg c[1];\nry(2.356194490192345) q[0];\nbarrier q[0];\nmeasure q[0] -> c[0];\n",
+ "raw": "{\"0\": 37, \"1\": 163}",
+ "res": "{\"0\": 37, \"1\": 163}",
+ "status": 2,
+ "task_id": "8E612A3002A76D92",
+ "task_name": "FRAC01-100"
+}
