@@ -1,0 +1,61 @@
+name: QUAFU-HARVEST-01 (cisvr毂·真机收割轨·EXP-049回收+FRAC-01待命·钥值永不打印)
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'harvest=回收EXP-049 | frac01=F-RAC-01真机N=40 | probe=握手锚测'
+        default: 'harvest'
+permissions:
+  contents: write
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: quafu-harvest
+        env:
+          QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,time,hashlib,urllib.request,urllib.parse,math
+          TOK=os.environ.get("QUAFU_KEY","").strip()
+          API="https://quafu.baqis.ac.cn/"
+          def post(path,data):
+              r=urllib.request.Request(API+path,data=urllib.parse.urlencode(data).encode(),
+                  headers={"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8","api_token":TOK},method="POST")
+              try: return json.load(urllib.request.urlopen(r,timeout=60))
+              except urllib.error.HTTPError as e: return {"_http":e.code,"_body":e.read().decode()[:150]}
+              except Exception as e: return {"_err":str(e)[:120]}
+          os.makedirs("weave/quafu",exist_ok=True); os.makedirs("receipts/quafu",exist_ok=True)
+          ts=time.strftime("%Y%m%dT%H%M%SZ",time.gmtime())
+          out={"ts":ts,"token_len":len(TOK)}
+          # 锚测: get_backends握手(名级)
+          b=post("qbackend/get_backends/",{})
+          if isinstance(b,dict) and b.get("data"):
+              out["backends"]=[{"name":x.get("system_name"),"q":x.get("qubit_num"),"status":x.get("status"),"queue":x.get("task_in_queue")} for x in b["data"]]
+              out["handshake"]="OK"
+          else:
+              out["handshake"]="FAIL"; out["handshake_detail"]={k:v for k,v in (b.items() if isinstance(b,dict) else []) if k in ("code","status","_http","_err")}
+          # 回收EXP-049×4+探针
+          TIDS={"AB":"8D32418037EFFE04","ABp":"8D3241902178F453","ApB":"8D32419033F4DB86","ApBp":"8D3241A006FD2B5A","PROBE":"8CA608102028586C"}
+          rec={}
+          for k,tid in TIDS.items():
+              r=post("qbackend/scq_task_recall/",{"task_id":tid})
+              rec[k]=r
+              print(f"[{k}] keys:",sorted(r.keys())[:12] if isinstance(r,dict) else type(r))
+          # 只落安全字段(状态/计数/时间),滤掉任何可能回显token之键
+              if isinstance(r,dict):
+                  safe={kk:vv for kk,vv in r.items() if kk.lower() not in ("api_token","token","user")}
+                  json.dump(safe,open(f"receipts/quafu/EXP049-{k}-{tid}.json","w"),ensure_ascii=False,indent=1)
+                  rec[k]={"status":r.get("status") or r.get("task_status"),"has_results":bool(r.get("results") or r.get("counts") or r.get("res"))}
+          out["recall"]=rec
+          json.dump(out,open("weave/quafu/status.json","w"),ensure_ascii=False,indent=1)
+          print("HARVEST",json.dumps({k:(v if k!="recall" else rec) for k,v in out.items()},ensure_ascii=False)[:600])
+          PYEOF
+      - name: commit
+        run: |
+          git config user.name "quafu-harvest"; git config user.email "harvest@vci-usrm.local"
+          git add weave/quafu receipts/quafu
+          git diff --cached --quiet && exit 0
+          git commit -m "QUAFU-HARVEST-01 ${{ github.event.inputs.mode || 'harvest' }} [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 3; done
