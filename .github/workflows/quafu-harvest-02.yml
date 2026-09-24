@@ -54,3 +54,55 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "QUAFU-HARVEST-02 change [skip ci]"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 3; done
+      - name: anchor-link (收顶播·vinf双签锚轨)
+        if: always()
+        env:
+          HUB_APP_PEM: ${{ secrets.HUB_APP_PEM }}
+          HUB_APP_ID: ${{ secrets.HUB_APP_ID }}
+          HUB_APP_INSTALLATION: ${{ secrets.HUB_APP_INSTALLATION }}
+        run: |
+          [ "$(cat .changed 2>/dev/null || echo 0)" = "0" ] && exit 0
+          pip -q install pyjwt cryptography 2>/dev/null || true
+          python3 - <<'PYEOF'
+          import os,json,time,hashlib,urllib.request,glob
+          if not os.path.exists("weave/quafu/anchor-chain.jsonl"):
+              open("weave/quafu/anchor-chain.jsonl","w").write("")
+          lines=open("weave/quafu/anchor-chain.jsonl").read().strip().splitlines()
+          prev=json.loads(lines[-1])["tip"] if lines else "0"*12
+          runs=sorted(glob.glob("receipts/quafu/RUN-*.json"))
+          ev=[]
+          for f in runs:
+              h=hashlib.sha256(open(f,"rb").read()).hexdigest()[:12]
+              ev.append({"file":f.split("/")[-1],"fp":h})
+          evfp=hashlib.sha256(json.dumps(ev,sort_keys=True).encode()).hexdigest()[:12]
+          ts=time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime())
+          tip=hashlib.sha256((prev+evfp).encode()).hexdigest()[:12]
+          rec={"ts":ts,"prev":prev,"ev_fp":evfp,"tip":tip,"n_evidence":len(ev)}
+          open("weave/quafu/anchor-chain.jsonl","a").write(json.dumps(rec,ensure_ascii=False)+chr(10))
+          print("ANCHOR-TIP",tip,"n=",len(ev))
+          # 播: hub IT→vinf双签锚卡+SELF-EXCITE-03 dispatch
+          try:
+              import jwt
+              now=int(time.time())
+              tk=jwt.encode({"iat":now-60,"exp":now+480,"iss":os.environ["HUB_APP_ID"]},os.environ["HUB_APP_PEM"],algorithm="RS256")
+              h={"Authorization":"Bearer "+tk,"Accept":"application/vnd.github+json","Content-Type":"application/json"}
+              r=urllib.request.Request("https://api.github.com/app/installations/"+os.environ["HUB_APP_INSTALLATION"]+"/access_tokens",data=b"{}",headers=h,method="POST")
+              it=json.load(urllib.request.urlopen(r,timeout=30))["token"]
+              hh={"Authorization":"Bearer "+it,"Accept":"application/vnd.github+json","Content-Type":"application/json"}
+              import base64
+              card={"ask":"收割即锚互签请:usrm哨兵收成,锚尖="+tip+",证据包fp="+evfp+",件数="+str(len(ev))+"。请依外据双签锚v2互签(回签即节拍进,否决/超时即临锚冻结)。位格申报,限200字。","from":"usrm-sentinel","tip":tip,"ts":ts}
+              body="CLASSIFY: L1(usrm哨兵·收割即锚·双签互验请)\n\n# ANCHOR-WITNESS-"+tip+" \| "+ts+"\n\n```json\n"+json.dumps(card,ensure_ascii=False)+"\n```\n\n—— usrm QUAFU-HARVEST-02 哨兵自动件 #noauto\n"
+              enc=base64.b64encode(body.encode()).decode()
+              r=urllib.request.Request("https://api.github.com/repos/chepin-ai/vci-vinf/contents/lanes/vinf/inbox/ANCHOR-WITNESS-"+tip+".md",
+                  data=json.dumps({"message":"ANCHOR-WITNESS "+tip+" (sentinel auto)","content":enc}).encode(),headers=hh,method="PUT")
+              print("witness card",urllib.request.urlopen(r,timeout=30).status)
+              r=urllib.request.Request("https://api.github.com/repos/chepin-ai/vci-vinf/actions/workflows/360681779/dispatches",
+                  data=json.dumps({"ref":"main"}).encode(),headers=hh,method="POST")
+              print("vinf dispatch",urllib.request.urlopen(r,timeout=30).status)
+          except Exception as e:
+              print("anchor-link broadcast fail:",str(e)[:150])
+          PYEOF
+          git add weave/quafu/anchor-chain.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "ANCHOR-CHAIN tip [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 3; done
