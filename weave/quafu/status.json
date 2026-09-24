@@ -1,0 +1,125 @@
+{
+ "ts": "20260924T145755Z",
+ "token_len": 119,
+ "backends": [
+  {
+   "name": "ScQ-P10",
+   "q": null,
+   "status": "Offline",
+   "queue": null
+  },
+  {
+   "name": "ScQ-P18",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "Baiwang",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "ScQ-P102",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "ScQ-Sim10",
+   "q": null,
+   "status": "Online",
+   "queue": null
+  },
+  {
+   "name": "Miaofeng",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "Dongling",
+   "q": null,
+   "status": "Offline",
+   "queue": null
+  },
+  {
+   "name": "Haituo",
+   "q": null,
+   "status": "Offline",
+   "queue": null
+  },
+  {
+   "name": "Baihua",
+   "q": null,
+   "status": "Online",
+   "queue": null
+  },
+  {
+   "name": "Yunmeng",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "Xiang",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "ScQ-TEST",
+   "q": null,
+   "status": "Offline",
+   "queue": null
+  },
+  {
+   "name": "ScQ-P21",
+   "q": null,
+   "status": "Offline",
+   "queue": null
+  },
+  {
+   "name": "ScQ-Sim",
+   "q": null,
+   "status": "Obsolete",
+   "queue": null
+  },
+  {
+   "name": "ScQ-P3",
+   "q": null,
+   "status": "Offline",
+   "queue": null
+  },
+  {
+   "name": "ScQ-P5",
+   "q": null,
+   "status": "Online",
+   "queue": null
+  }
+ ],
+ "handshake": "OK",
+ "recall": {
+  "AB": {
+   "status": null,
+   "has_results": true
+  },
+  "ABp": {
+   "status": null,
+   "has_results": true
+  },
+  "ApB": {
+   "status": null,
+   "has_results": true
+  },
+  "ApBp": {
+   "status": null,
+   "has_results": true
+  },
+  "PROBE": {
+   "status": null,
+   "has_results": true
+  }
+ }
+}

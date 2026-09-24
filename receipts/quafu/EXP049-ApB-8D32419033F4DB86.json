@@ -1,0 +1,10 @@
+{
+ "input_q2c": null,
+ "measure": "{0: 0, 1: 1}",
+ "openqasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[5];\ncreg c[2];\nh q[0];\ncx q[0],q[1];\nry(-1.5707963267948966) q[0];\nry(-0.7853981633974483) q[1];\nbarrier q[0],q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\n",
+ "raw": "{}",
+ "res": "{}",
+ "status": 0,
+ "task_id": "8D32419033F4DB86",
+ "task_name": "EXP049-CHSH-ApB"
+}
