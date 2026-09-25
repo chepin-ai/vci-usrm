@@ -1,0 +1,52 @@
+name: key-sync-01
+# 联邦密钥中继塔 · 公域驱动私域共识的一部分:满仓公域塔向缺口仓再密封分发
+# 律:名值分离 · 事件驱动(零schedule) · 幂等 · 值绝不落文本
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [key-sync]
+permissions:
+  contents: write
+concurrency: key-sync-01
+timeout-minutes: 20
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+        SYNC_PAT: ${{ secrets.AI_FULL_PAT }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BLUEQUBIT_GMAIL: ${{ secrets.BLUEQUBIT_GMAIL }}
+        BLUEQUBIT_PW: ${{ secrets.BLUEQUBIT_PW }}
+        CF_ACCOUNT_API_TOKEN: ${{ secrets.CF_ACCOUNT_API_TOKEN }}
+        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CF_R2_USER_ACCESS_KEY_ID: ${{ secrets.CF_R2_USER_ACCESS_KEY_ID }}
+        CF_R2_USER_SECRET_ACCESS_KEY: ${{ secrets.CF_R2_USER_SECRET_ACCESS_KEY }}
+        CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+        FORMAFLOW_CMD_AUTH: ${{ secrets.FORMAFLOW_CMD_AUTH }}
+        GH_TOTP_SEED: ${{ secrets.GH_TOTP_SEED }}
+        IBMID_PW: ${{ secrets.IBMID_PW }}
+        IBM_TOTP_SECRET: ${{ secrets.IBM_TOTP_SECRET }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        OTP_PHONE: ${{ secrets.OTP_PHONE }}
+        QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+        SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+        SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        LONGCAT_AK_N1: ${{ secrets.LONGCAT_AK_N1 }}
+        LONGCAT_AK_N2: ${{ secrets.LONGCAT_AK_N2 }}
+        LONGCAT_AK_N3: ${{ secrets.LONGCAT_AK_N3 }}
+        LONGCAT_AK_N4: ${{ secrets.LONGCAT_AK_N4 }}
+        LONGCAT_AK_N5: ${{ secrets.LONGCAT_AK_N5 }}
+        LONGCAT_SK_N4: ${{ secrets.LONGCAT_SK_N4 }}
+        LONGCAT_SK_N5: ${{ secrets.LONGCAT_SK_N5 }}
+        NODE_SK_N4: ${{ secrets.NODE_SK_N4 }}
+        NODE_SK_N5: ${{ secrets.NODE_SK_N5 }}
+        MS_TOTP_SEED_V2: ${{ secrets.MS_TOTP_SEED_V2 }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 中继·再密封分发（值仅经内存）
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/chepin-ai/vci-usrm.git
+          pip install -q pynacl
+          python3 ci/key_sync.py
