@@ -1,8 +1,7 @@
 # 【轨面生死册】本轨2026-09-22退役(disabled): STATE-EXCITE-USRM-02独尊——双轨共读frontier-queue致竞态(F6被本轨燃, statex gen50转F7); 史面留档不删。
 name: STATE-PULSE-USRM-01 (usrm SI1自激轨·态生点火·自链心搏·条件阈·覆写权归原线)
 'on':
-  schedule:
-    - cron: '*/10 * * * *'
+  # EVENT-DRIVEN sweep R7: schedule removed per 零定时律 (PIVOT-01) · was: - cron: '*/10 * * * *'
   repository_dispatch:
     types: [state-pulse]
   workflow_dispatch: {}
