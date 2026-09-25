@@ -2,8 +2,7 @@ name: quafu-watch-01
 # EXP-049 自驱闭环(wave-214): 队动自探/务讫自取/S自算/板自报——无人值守硬件事务驱动轨
 on:
   workflow_dispatch: {}
-  schedule:
-    - cron: '23 */12 * * *'
+  # EVENT-DRIVEN sweep R7: schedule removed per 零定时律 (PIVOT-01) · was: - cron: '23 */12 * * *'
 permissions:
   contents: write
 concurrency:
