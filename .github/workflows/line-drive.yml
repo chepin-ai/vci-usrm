@@ -1,4 +1,5 @@
 # LINE-DRIVE-01 · 公域CI通道驱动私域CI（系统共识执行件: 私域零Actions依赖, 不受私域计费锁限制）
+# rev2: 复验push触发(首跑疑为runner供给瞬时故障)
 # 纯事件驱动: 零 schedule。repository_dispatch=联邦接力/自唤链; workflow_dispatch=手动; push=塔件落地。
 name: line-drive
 on:
