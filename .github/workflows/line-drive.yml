@@ -1,5 +1,4 @@
 # LINE-DRIVE-01 · 公域CI通道驱动私域CI（系统共识执行件: 私域零Actions依赖, 不受私域计费锁限制）
-# rev2: 复验push触发(首跑疑为runner供给瞬时故障)
 # 纯事件驱动: 零 schedule。repository_dispatch=联邦接力/自唤链; workflow_dispatch=手动; push=塔件落地。
 name: line-drive
 on:
@@ -28,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: line-drive（公域驱动私域: 读私域inbox→收执→回写私域outbox→落账→自唤）
+      - name: line-drive·公域驱动私域·读私域inbox→收执→回写私域outbox→落账→自唤
         env:
           LINE: usrm
           LINE_REPOS: usrm-repo
