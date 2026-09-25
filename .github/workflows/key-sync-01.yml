@@ -8,10 +8,10 @@ on:
 permissions:
   contents: write
 concurrency: key-sync-01
-timeout-minutes: 20
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:
         SYNC_PAT: ${{ secrets.AI_FULL_PAT }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
