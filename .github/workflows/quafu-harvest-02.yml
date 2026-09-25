@@ -1,7 +1,6 @@
 name: QUAFU-HARVEST-02 (cisvr毂·真机收割轨v2·watchlist驱动·即完即收·有变方落·静默即合法)
 on:
-  schedule:
-    - cron: '*/20 * * * *'
+  # EVENT-DRIVEN sweep R7: schedule removed per 零定时律 (PIVOT-01) · was: - cron: '*/20 * * * *'
   workflow_dispatch: {}
 permissions:
   contents: write
