@@ -9,7 +9,7 @@ jobs:
   harvest:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: poll-watchlist
         env:
           QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
@@ -36,8 +36,20 @@ jobs:
               res=r.get("res") or r.get("results") or r.get("raw")
               if res and res not in ("{}","",None):
                   safe={kk:vv for kk,vv in r.items() if kk.lower() not in ("api_token","token")}
+                  # R5-裁-3/裁-4+cfts融合+usrm最小diff: provenance降级时戳律
+                  pts=r.get("platform_ts")
+                  if pts is None and isinstance(r.get("raw"),dict): pts=r["raw"].get("platform_ts")
+                  wlfp=hashlib.sha256(open("weave/quafu/watchlist.json","rb").read()).hexdigest()[:16]
+                  if pts:
+                      prov={"provenance":"PLATFORM","platform_ts":pts}
+                  elif ts:
+                      prov={"provenance":"SI1-DERIVED","si1_recv_ts":ts,"R4-hard-tol":"N/A @SI1-DERIVED"}
+                  else:
+                      prov={"provenance":"HONESTY-GAP: P5-TS-MISS"}
+                  prov.update({"src_node":"quafu-harvest-02","anchor_fp":wlfp,"slot_idx":ts,"degrade_flag":("" if pts else "R3")})
+                  safe["_prov"]=prov
                   json.dump(safe,open("receipts/quafu/RUN-"+nm+"-"+jid+".json","w"),ensure_ascii=False,indent=1)
-                  st["jobs"][jid]={"state":"harvested","ts":ts,"note":nm}
+                  st["jobs"][jid]={"state":"harvested","ts":ts,"note":nm,"prov":prov["provenance"]}
                   changed+=1; print("HARVESTED",nm,jid)
               else:
                   st["jobs"][jid]={"state":"pending","ts":ts,"note":nm}
