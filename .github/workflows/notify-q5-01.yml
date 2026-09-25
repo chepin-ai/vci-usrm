@@ -1,0 +1,21 @@
+name: notify-q5-01
+# 跨域通报摆渡 · QI_PAT仅经runner内存 · 事件驱动(零schedule)
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [notify-q5]
+permissions:
+  contents: write
+concurrency: notify-q5-01
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+        QI_PAT: ${{ secrets.QI_PAT || secrets.GH_PAT_QI_FULL }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 摆渡·Q5域通报（值仅经内存）
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/chepin-ai/vci-usrm.git
+          python3 ci/notify_q5.py
