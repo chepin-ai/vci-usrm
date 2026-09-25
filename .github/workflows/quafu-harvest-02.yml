@@ -69,6 +69,7 @@ jobs:
               open("weave/quafu/anchor-chain.jsonl","w").write("")
           lines=open("weave/quafu/anchor-chain.jsonl").read().strip().splitlines()
           prev=json.loads(lines[-1])["tip"] if lines else "0"*12
+          prev64=(json.loads(lines[-1]).get("tip64") or "0"*64) if lines else "0"*64
           runs=sorted(glob.glob("receipts/quafu/RUN-*.json"))
           ev=[]
           for f in runs:
@@ -77,9 +78,20 @@ jobs:
           evfp=hashlib.sha256(json.dumps(ev,sort_keys=True).encode()).hexdigest()[:12]
           ts=time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime())
           tip=hashlib.sha256((prev+evfp).encode()).hexdigest()[:12]
-          rec={"ts":ts,"prev":prev,"ev_fp":evfp,"tip":tip,"n_evidence":len(ev)}
+          # usrm SealV1并轨: epoch=UTC日序, seq=链高, root=证据Merkle根(简并:逐叶折叠)
+          import struct
+          leaves=[bytes.fromhex(hashlib.sha256(open(f,"rb").read()).hexdigest()) for f in runs]
+          root=b"\x00"*32
+          for lf in leaves: root=hashlib.sha256(root+lf).digest()
+          epoch=int(time.time())//86400
+          seqn=len(lines)+1
+          tse=int(time.time())
+          seal_payload=struct.pack(">Q",epoch)+struct.pack(">Q",seqn)+root+struct.pack(">I",len(leaves))+bytes.fromhex(prev64)+struct.pack(">Q",tse)
+          tip64=hashlib.sha3_256(seal_payload).hexdigest() if hasattr(hashlib,"sha3_256") else hashlib.sha256(seal_payload).hexdigest()
+          rec={"ts":ts,"prev":prev,"ev_fp":evfp,"tip":tip,"n_evidence":len(ev),
+               "seal_v1":{"epoch":epoch,"seq":seqn,"root_hash":root.hex(),"leaf_count":len(leaves),"prev_hash":prev64,"ts_epoch":tse,"tip64":tip64,"fmt":"usrm-SealV1-并轨毂链"}}
           open("weave/quafu/anchor-chain.jsonl","a").write(json.dumps(rec,ensure_ascii=False)+chr(10))
-          print("ANCHOR-TIP",tip,"n=",len(ev))
+          print("ANCHOR-TIP",tip,"seal64",tip64[:12],"n=",len(ev))
           # 播: hub IT→vinf双签锚卡+SELF-EXCITE-03 dispatch
           try:
               import jwt
