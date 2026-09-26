@@ -1,0 +1,52 @@
+name: plant-q5-inbox
+# 跨域探针注入器 · 向Q5域仓inbox写入DRIVE测试报文 · 名值分离(QI_PAT仅运行时env) · 事件驱动(零schedule) · 幂等(同内容重写)
+on:
+  workflow_dispatch:
+    inputs:
+      repos_csv:
+        description: 逗号分隔Q5仓名(短名)
+        required: true
+      tag:
+        description: 探针标签(文件名/内容nonce)
+        required: true
+permissions:
+  contents: write
+concurrency: plant-q5-inbox
+jobs:
+  plant:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      QIKEY: ${{ secrets.QI_PAT || secrets.GH_PAT_QI_FULL }}
+      IN_REPOS: ${{ inputs.repos_csv }}
+      IN_TAG: ${{ inputs.tag }}
+    steps:
+      - name: plant probes
+        run: |
+          python3 - <<'PYEOF'
+          import os,base64,json,time,urllib.request,urllib.error
+          KEY=os.environ["QIKEY"]; TAG=os.environ["IN_TAG"]
+          repos=[r.strip() for r in os.environ["IN_REPOS"].split(",") if r.strip()]
+          def gh(path,method="GET",data=None):
+              req=urllib.request.Request("https://api.github.com"+path,
+                  data=json.dumps(data).encode() if data is not None else None,
+                  headers={"Authorization":f"token {KEY}","Accept":"application/vnd.github+json"},method=method)
+              try:
+                  r=urllib.request.urlopen(req,timeout=25); return r.status,json.loads(r.read() or b"{}")
+              except urllib.error.HTTPError as e: return e.code,{}
+              except Exception: return None,{}
+          ok=0
+          for rp in repos:
+              path=f"inbox/DRIVE-R10-{TAG}-{rp}.md"
+              body=f"CLASSIFY: L1\n# DRIVE-R10 跨域驱动探针\n\ntag: {TAG}\ntarget: chepin-qi/{rp}\n艶元: LINE-DRIVE-02 跨域密钥路由首轮贯通测试\n要求: 请驱动塔读取本报文并回执ack至outbox。\n"
+              content=base64.b64encode(body.encode()).decode()
+              s,b=gh(f"/repos/chepin-qi/{rp}/contents/{path}")
+              d={"message":f"DRIVE-R10 probe {TAG}","content":content}
+              if s==200 and isinstance(b,dict) and b.get("sha"): d["sha"]=b["sha"]
+              s2,_=gh(f"/repos/chepin-qi/{rp}/contents/{path}","PUT",d)
+              print(rp,"PLANT",s2,flush=True)
+              if s2 in (200,201): ok+=1
+              time.sleep(2)
+          print(f"PLANTED {ok}/{len(repos)}")
+          if ok==0: raise SystemExit(1)
+          PYEOF
