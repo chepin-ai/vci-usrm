@@ -27,6 +27,8 @@ jobs:
     timeout-minutes: 20
     env:
         SYNC_PAT: ${{ secrets.AI_FULL_PAT }}
+        AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+        FED_PAT: ${{ secrets.FED_PAT }}
         IN_NAMES: ${{ inputs.names_csv }}
         IN_TARGETS: ${{ inputs.targets_csv }}
         IN_RENAME: ${{ inputs.rename_json }}
