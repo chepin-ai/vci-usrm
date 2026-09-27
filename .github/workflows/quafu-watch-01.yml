@@ -91,3 +91,27 @@ jobs:
                   urllib.request.urlopen(urllib.request.Request(u2,data=pl,method='PUT',
                       headers={'Authorization':'token '+LP,'Accept':'application/vnd.github+json','User-Agent':'quafu-watch'}),timeout=30)
           PYEOF
+          # ── 链活看门狗(wave-217, 链死4.2天无人知课): statex末拍>30min且status=running→复臂dispatch ──
+          python3 - <<'PYEOF2'
+          import os, json, datetime, urllib.request
+          H = {'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'chain-watchdog'}
+          def api(m,u,data=None):
+              r = urllib.request.Request(u,data=data,method=m,headers=H)
+              return json.loads(urllib.request.urlopen(r,timeout=30).read())
+          stt = api('GET','https://api.github.com/repos/chepin-ai/vci-usrm/contents/si/selfx2-state.json')
+          import base64 as B
+          st = json.loads(B.b64decode(stt['content']).decode())
+          print('chain gen', st.get('gen'), 'status', st.get('status'))
+          lg = api('GET','https://api.github.com/repos/chepin-ai/vci-usrm/contents/si/selfx2-log.jsonl')
+          last = json.loads(B.b64decode(lg['content']).decode().strip().split('\n')[-1])
+          lt = datetime.datetime.strptime(last['ts'],'%Y%m%dT%H%M%SZ').replace(tzinfo=datetime.timezone.utc)
+          age = (datetime.datetime.now(datetime.timezone.utc)-lt).total_seconds()
+          print('last beat age', int(age), 's')
+          runs = api('GET','https://api.github.com/repos/chepin-ai/vci-usrm/actions/workflows/state-excite-usrm-02.yml/runs?per_page=3')
+          alive = [r for r in runs['workflow_runs'] if r['status'] in ('queued','in_progress')]
+          if age > 1800 and st.get('status')=='running' and not alive:
+              api('POST','https://api.github.com/repos/chepin-ai/vci-usrm/actions/workflows/state-excite-usrm-02.yml/dispatches',data=json.dumps({'ref':'main'}).encode())
+              print(json.dumps({'watchdog':'REVIVED chain (age %ds)'%age}))
+          else:
+              print(json.dumps({'watchdog':'ok(no-action)','alive':len(alive)}))
+          PYEOF2
