@@ -1,0 +1,35 @@
+name: QI-SPECTRUM-PROBE (chepin-qi全仓权限谱·名级输出)
+'on':
+  workflow_dispatch:
+permissions:
+  contents: write
+env:
+  GH_PAT_QI_FULL: ${{ secrets.GH_PAT_QI_FULL }}
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PYEOF'
+          import os,json,urllib.request,urllib.error,datetime,subprocess
+          tok=os.environ.get('GH_PAT_QI_FULL','').strip()
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          def gh(m,u):
+              r=urllib.request.Request('https://api.github.com'+u,method=m,headers={'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json','User-Agent':'spec-probe'})
+              try: resp=urllib.request.urlopen(r,timeout=20); return resp.status,json.loads(resp.read() or b'{}')
+              except urllib.error.HTTPError as e: return e.code,{}
+              except Exception as e: return 599,{}
+          repos=['vci-qfa','vci-qlv','vci-lgt','vci-qtlv','vci-lvlu','vci-usrm','vci-cfts','vci-qgl','vci-ucif2','vci-vinf','vci-inbox','ci-inbox','ci-control','ci-bus','isu-unified-framework']
+          out={}
+          for rp in repos:
+              s,d=gh('GET','/repos/chepin-ai/'+rp)
+              p=(d.get('permissions') or {}) if s==200 else {}
+              out[rp]=('R' if p.get('pull') else '-')+('W' if p.get('push') else '-')+('A' if p.get('admin') else '-') if s==200 else 'NA'+str(s)
+          print('SPECTRUM',json.dumps(out,ensure_ascii=False))
+          os.makedirs('receipts',exist_ok=True)
+          json.dump({'ts':ts,'spectrum':out},open('receipts/QI-SPECTRUM-'+ts+'.json','w'),ensure_ascii=False,indent=1)
+          subprocess.run(['git','config','user.name','usrm-spec']); subprocess.run(['git','config','user.email','sp@ci'])
+          subprocess.run(['git','add','receipts']); subprocess.run(['git','commit','-m','QI spectrum '+ts],capture_output=True)
+          subprocess.run(['git','pull','--rebase','-q','origin','main'],capture_output=True); subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True)
+          PYEOF
