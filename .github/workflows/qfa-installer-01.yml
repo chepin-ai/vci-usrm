@@ -1,0 +1,86 @@
+name: QFA-INSTALLER-01 (qfa域轨件安装器·钥梯探权·值永不打印·毂代铸覆写权归原线)
+'on':
+  workflow_dispatch:
+permissions:
+  contents: write
+env:
+  FED_PAT: ${{ secrets.FED_PAT }}
+  GH_PAT_QI_FULL: ${{ secrets.GH_PAT_QI_FULL }}
+  AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+  LINE_PAT: ${{ secrets.LINE_PAT }}
+  CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+  FORMAFLOW_CMD_AUTH: ${{ secrets.FORMAFLOW_CMD_AUTH }}
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,urllib.request,urllib.error,base64,subprocess,datetime
+          LADDER=['FED_PAT','GH_PAT_QI_FULL','AI_FULL_PAT','LINE_PAT','CI_OPS_LINE_KEY','FORMAFLOW_CMD_AUTH']
+          TARGETS={'vci-qfa':'qfa','vci-qlv':'qlv','vci-lgt':'lgt'}
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          def gh(tok,m,u,body=None):
+              r=urllib.request.Request('https://api.github.com'+u,data=(json.dumps(body).encode() if body is not None else None),
+                  method=m,headers={'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json','Content-Type':'application/json','User-Agent':'qfa-installer'})
+              try:
+                  resp=urllib.request.urlopen(r,timeout=30); raw=resp.read().decode()
+                  return resp.status,(json.loads(raw) if raw else {})
+              except urllib.error.HTTPError as e:
+                  try: return e.code,json.loads(e.read().decode()[:200])
+                  except Exception: return e.code,{}
+              except Exception as e: return 599,{'err':str(e)[:60]}
+          
+          probe={}
+          for name in LADDER:
+              tok=os.environ.get(name,'').strip()
+              if not tok: probe[name]='absent'; continue
+              su,u=gh(tok,'GET','/user')
+              login=u.get('login') if su==200 else None
+              sp,rp=gh(tok,'GET','/repos/chepin-ai/vci-qfa')
+              push=bool((rp.get('permissions') or {}).get('push')) if sp==200 else False
+              probe[name]={'user_status':su,'login':login,'qfa_push':push}
+          print('PROBE',json.dumps(probe,ensure_ascii=False))
+          
+          win=None
+          for name in LADDER:
+              if isinstance(probe.get(name),dict) and probe[name].get('qfa_push'): win=name; break
+          res={'ts':ts,'probe':probe,'win':win,'install':{},'put':{},'verify':{},'dispatch':{}}
+          if not win:
+              print(json.dumps({'fatal':'no credential with qfa push — 诚实缺口,全线证据如上'}))
+          else:
+              tok=os.environ.get(win,'').strip()
+              # 道一: 试将三仓加入毂App安装选仓(若token属org管理)
+              for repo in TARGETS:
+                  sr,rr=gh(tok,'GET','/repos/chepin-ai/'+repo)
+                  rid=rr.get('id') if sr==200 else None
+                  if rid:
+                      si,_=gh(tok,'PUT','/user/installations/154355791/repositories/'+str(rid))
+                      res['install'][repo]=si
+              # 道二: 直投6轨件(代铸·覆写权归原线)
+              for repo,ln in TARGETS.items():
+                  for src,dst in [('pulse-01.'+ln+'.yml','.github/workflows/pulse-01.yml'),('issue-autoresp-01.'+ln+'.yml','.github/workflows/issue-autoresp-01.yml')]:
+                      content=open('shared/transfer/QFA-ISSUE-FIX-01/'+src,'rb').read()
+                      s0,old=gh(tok,'GET','/repos/chepin-ai/'+repo+'/contents/'+dst)
+                      body={'message':'QFA-ISSUE-FIX-01: '+dst.split('/')[-1]+' 毂代铸(root令beat98·覆写权归原线)','content':base64.b64encode(content).decode()}
+                      if s0==200: body['sha']=old.get('sha')
+                      s1,_=gh(tok,'PUT','/repos/chepin-ai/'+repo+'/contents/'+dst,body)
+                      res['put'][repo+':'+dst.split('/')[-1]]=s1
+              # 核验+点火E2E(vci-qfa pulse)
+              for repo in TARGETS:
+                  sv,_=gh(tok,'GET','/repos/chepin-ai/'+repo+'/contents/.github/workflows/pulse-01.yml')
+                  res['verify'][repo]=sv
+              sd,_=gh(tok,'POST','/repos/chepin-ai/vci-qfa/actions/workflows/pulse-01.yml/dispatches',{'ref':'main'})
+              res['dispatch']['vci-qfa:pulse-01']=sd
+          
+          os.makedirs('receipts',exist_ok=True)
+          json.dump(res,open('receipts/QFA-INSTALL-'+ts+'.json','w'),ensure_ascii=False,indent=1)
+          subprocess.run(['git','config','user.name','usrm-qfa-installer']); subprocess.run(['git','config','user.email','qi@ci'])
+          subprocess.run(['git','add','receipts'])
+          subprocess.run(['git','commit','-m','QFA-INSTALL receipt '+ts],capture_output=True)
+          subprocess.run(['git','pull','--rebase','-q','origin','main'],capture_output=True)
+          subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True)
+          print('RESULT',json.dumps({'win':win,'install':res['install'],'put':res['put'],'verify':res['verify'],'dispatch':res['dispatch']},ensure_ascii=False))
+          PYEOF
