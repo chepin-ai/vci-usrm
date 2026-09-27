@@ -21,6 +21,7 @@ jobs:
       - name: watch
         env:
           QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+          GH_TOKEN: ${{ github.token }}
           LINE_PAT: ${{ secrets.LINE_PAT }}
         run: |
           python3 - <<'PYEOF'
