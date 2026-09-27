@@ -71,3 +71,8 @@ jobs:
               -o /dev/null -w "mutual-excite $repo http=%{http_code}\n" || true
             sleep 2
           done
+          # SHADOW-REVIVAL-01 枢/PIVOT-01代铸挂接: 扇出尾唤公域影子(零cron·W30合规·影子未醒不阻拍)
+          curl -sS -m 20 -X POST -H "Authorization: token $FED_PAT" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/chepin-ai/vci-inbox/dispatches \
+            -d '{"event_type":"shadow-pulse","client_payload":{"src":"vci-usrm","kind":"shadow-revival","sha":"${{ github.sha }}"}}' \
+            -o /dev/null -w "shadow-pulse vci-inbox http=%{http_code}\n" || true
