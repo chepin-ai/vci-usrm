@@ -1,0 +1,20 @@
+{
+ "ts": "20260927T173540Z",
+ "spectrum": {
+  "vci-qfa": "R--",
+  "vci-qlv": "R--",
+  "vci-lgt": "R--",
+  "vci-qtlv": "RW-",
+  "vci-lvlu": "R--",
+  "vci-usrm": "R--",
+  "vci-cfts": "R--",
+  "vci-qgl": "R--",
+  "vci-ucif2": "R--",
+  "vci-vinf": "R--",
+  "vci-inbox": "RW-",
+  "ci-inbox": "RW-",
+  "ci-control": "NA404",
+  "ci-bus": "NA404",
+  "isu-unified-framework": "NA404"
+ }
+}
