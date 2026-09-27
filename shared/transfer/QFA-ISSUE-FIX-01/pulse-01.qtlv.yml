@@ -117,7 +117,9 @@ jobs:
           else:
               print(json.dumps({'honest_gap':'no-hub-IT, push will not trigger SR-05'}))
           subprocess.run(['git','config','user.name',LINE+'-pulse']); subprocess.run(['git','config','user.email','pulse@ci'])
-          subprocess.run(['git','add','si',INBOX])
+          os.makedirs('receipts',exist_ok=True)
+          json.dump({'line':LINE,'ts':ts,'pulse_n':st['pulse_n'],'delta':bool(delta),'made':made,'tip':tip,'seq':seq,'it':bool(IT)},open('receipts/PULSE-RECEIPT-'+ts+'.json','w'),ensure_ascii=False)
+          subprocess.run(['git','add','si','receipts',INBOX])
           c=subprocess.run(['git','commit','-m','PULSE-01 '+ts+' n='+str(st['pulse_n'])+' delta='+str(bool(delta))],capture_output=True,text=True)
           push='skip(no-change)'
           if c.returncode==0:
