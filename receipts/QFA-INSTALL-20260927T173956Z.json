@@ -1,0 +1,50 @@
+{
+ "ts": "20260927T173956Z",
+ "probe": {
+  "FED_PAT": {
+   "user_status": 403,
+   "login": null,
+   "qfa_push": false
+  },
+  "GH_PAT_QI_FULL": {
+   "user_status": 200,
+   "login": "chepin-qi",
+   "qfa_push": true
+  },
+  "AI_FULL_PAT": {
+   "user_status": 403,
+   "login": null,
+   "qfa_push": false
+  },
+  "LINE_PAT": {
+   "user_status": 403,
+   "login": null,
+   "qfa_push": false
+  },
+  "CI_OPS_LINE_KEY": {
+   "user_status": 403,
+   "login": null,
+   "qfa_push": false
+  },
+  "FORMAFLOW_CMD_AUTH": {
+   "user_status": 401,
+   "login": null,
+   "qfa_push": false
+  }
+ },
+ "win": "GH_PAT_QI_FULL",
+ "install": {
+  "vci-qtlv": 403
+ },
+ "put": {
+  "vci-qtlv:pulse-01.yml": 201,
+  "vci-qtlv:issue-autoresp-01.yml": 201,
+  "vci-qtlv:semantic-responder-05.yml": 200
+ },
+ "verify": {
+  "vci-qtlv": 200
+ },
+ "dispatch": {
+  "vci-qtlv:pulse-01": 204
+ }
+}
