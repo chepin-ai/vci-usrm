@@ -103,6 +103,15 @@ jobs:
                       resp=urllib.request.urlopen(rq2,timeout=30); peer_res=resp.status
                   except Exception as e: peer_res='fail:'+str(e)[:60]
           
+          # HARVEST-CHAIN-01: 每4拍链驱P5收割哨兵(事件律合规,豁免道)
+          if st['pulse_n']%4==0 and IT:
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-usrm/actions/workflows/quafu-harvest-02.yml/dispatches',
+                      data=json.dumps({'ref':'main'}).encode(),method='POST',
+                      headers={'Authorization':'Bearer '+IT,'Accept':'application/vnd.github+json'})
+                  hc=urllib.request.urlopen(rq,timeout=20).status
+              except Exception as e: hc='fail:'+str(e)[:50]
+              print(json.dumps({'harvest_chain':hc}))
           json.dump(st,open(stf,'w'),ensure_ascii=False)
           # 推送须以hub App IT为凭证——GITHUB_TOKEN推送不触发下游workflow(环防律),SR-05依赖push事件
           if not IT:
