@@ -375,3 +375,4 @@
 {"ts": "20260929T032732Z", "gen": 375, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 169, "outbox": 274}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20260929T033745Z", "gen": 376, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 169, "outbox": 274}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20260929T034759Z", "gen": 377, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 169, "outbox": 274}, "verdict": "no-fire(态未越阈,负结果入册)"}
+{"ts": "20260929T035812Z", "gen": 378, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 169, "outbox": 274}, "verdict": "no-fire(态未越阈,负结果入册)"}
