@@ -1,0 +1,38 @@
+name: QUAFU-PROBE-01
+# 令牌谱探针(四问闸·名级输出,状态分类不回显值) beat101
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: probe
+        env:
+          QUAFU_KEY: ${{ secrets.QUAFU_KEY }}
+          QUAFU_TOKEN: ${{ secrets.QUAFU_TOKEN }}
+          QUAFU_API_TOKEN: ${{ secrets.QUAFU_API_TOKEN }}
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,urllib.request,urllib.parse
+          API="https://quafu.baqis.ac.cn/"
+          wl=json.load(open("weave/quafu/watchlist.json"))
+          tid=wl["jobs"][0]["job_id"]
+          def probe(name,tok):
+              if not tok: return name+": ABSENT"
+              d=urllib.parse.urlencode({"task_id":tid}).encode()
+              r=urllib.request.Request(API+"qbackend/scq_task_recall/",data=d,
+                  headers={"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8","api_token":tok},method="POST")
+              try:
+                  resp=json.load(urllib.request.urlopen(r,timeout=40))
+                  res=resp.get("res") or resp.get("results") or resp.get("raw")
+                  cls="HAS-RES" if res and res not in ("{}","",None) else "EMPTY/QUEUED"
+                  return name+": 200 "+cls+" keys="+",".join(sorted(k for k in resp.keys() if 'token' not in k.lower())[:6])
+              except urllib.error.HTTPError as e: return name+f": HTTP {e.code}"
+              except Exception as e: return name+": ERR "+str(e)[:60]
+          out=[probe(n,os.environ.get(n,"")) for n in ["QUAFU_KEY","QUAFU_TOKEN","QUAFU_API_TOKEN"]]
+          print(json.dumps({"probe_task":tid,"results":out},ensure_ascii=False))
+          PYEOF
