@@ -138,12 +138,26 @@ jobs:
               try:
                   _k2=json.load(open('ci/furnace/kc3_k2000_state.json')); _k2o=_k2.get('next_orbit',0)
               except Exception: _k2o=None
+              # H2 ATTENTION-SCHEMA-USRM-01(wave-219): 自场加注意力分配+下拍预测+上拍审判(AST缺口可证伪化, persistence律起步)
+              try:
+                  _prev=json.load(open('si/FIELD-USRM-01.json'))
+                  _pp=_prev.get('attention',{}).get('pred_next')
+                  _sc=None
+                  if _pp is not None:
+                      _act=log.get('verdict','').startswith('fired')
+                      _sc={'pred_fire':_pp.get('fire'),'actual_fire':_act,'hit':_pp.get('fire')==_act,
+                           'pred_E':_pp.get('E'),'actual_E':E}
+              except Exception: _sc=None
+              _att={'alloc':{'fired':log.get('fired') or None,'E':E,'pend':len(pend)},
+                    'pred_next':{'E':E,'fire':E>=THETA,'rule':'persistence(E持恒,命中率跨拍可稽)'},
+                    'prev_pred_score':_sc}
               _field={'field':'FIELD-USRM-01','ts':ts0,'gen':gen,'E':E,'verdict':log.get('verdict','?'),
                       'neg_ticks':stt.get('neg_ticks',0),'fired_n':len(stt.get('fired',{})),
-                      'law':'kc=-0.00638985+6.595464*ln(k)/k (AICc=-89.20, 六点, 二参最小充分)',
-                      'pred':{'k2000':{'value':0.018647,'PI':[0.01678,0.02051],'gate':'±10%'}},
+                      'law':'kc=-0.00025+0.78086*lnk/k+34.94879/k-1082.97/k^2 (M4a九点, ΔAICc=0.6简并首, M3 Δ25.6出局)',
+                      'pred':{'k5000':{'value_M4a':0.008024,'value_M4b':0.008053,'value_M3':0.007509,'gate':'破M4闸±3%; M3分离6.4%复证'}},
+                      'attention':_att,
                       'k2000_orbits':_k2o,'fp':_kf,
-                      'read':'机读活态投影; fp=sha256[:12]绑定; 板帖=人读面, 本件=机读面(板即场之usrm形)'}
+                      'read':'机读活态投影; fp=sha256[:12]绑定; 板帖=人读面, 本件=机读面(板即场之usrm形); attention=AST注意力模式雏形(H2, wave-219铸)'}
               json.dump(_field, open('si/FIELD-USRM-01.json','w'), ensure_ascii=False, indent=1)
               subprocess.run(['git','add','si/FIELD-USRM-01.json'])
               c2=subprocess.run(['git','commit','-q','-m','FIELD-USRM-01 gen%d [skip ci]'%gen],capture_output=True,text=True)
