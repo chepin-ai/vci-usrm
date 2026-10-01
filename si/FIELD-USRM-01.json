@@ -1,10 +1,10 @@
 {
  "field": "FIELD-USRM-01",
- "ts": "20261001T182654Z",
- "gen": 686,
+ "ts": "20261001T183740Z",
+ "gen": 687,
  "E": 0,
  "verdict": "no-fire(态未越阈,负结果入册)",
- "neg_ticks": 670,
+ "neg_ticks": 671,
  "fired_n": 16,
  "law": "kc=-0.00025+0.78086*lnk/k+34.94879/k-1082.97/k^2 (M4a九点, ΔAICc=0.6简并首, M3 Δ25.6出局)",
  "pred": {
@@ -36,7 +36,7 @@
  },
  "k2000_orbits": 400,
  "fp": {
-  "si/selfx2-state.json": "e1949b4515ed",
+  "si/selfx2-state.json": "7bbd758e1678",
   "si/frontier-queue.jsonl": "aa58245bce7c",
   "ci/furnace/kc_k2000_result.json": "b3b4d6f33b04",
   "ci/furnace/kc3_k2000_state.json": "a99b94229342"
