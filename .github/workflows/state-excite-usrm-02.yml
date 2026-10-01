@@ -176,6 +176,12 @@ jobs:
                       urllib.request.urlopen(urllib.request.Request('https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+urllib.parse.quote('公告板/usrm-statex-digest-gen%d.md'%gen),data=pl,method='PUT',headers=HL),timeout=30)
                       print('digest-posted gen',gen)
               except Exception as _e: print('digest-skip', _e)
+          # 事件驱动哨(wave-219): quafu-watch排程死证(09-26T02:17Z排程末拍后4.5天零拍)→每72拍(=12h)由本链代dispatch, watch本体不动
+          if gen % 72 == 0:
+              try:
+                  api('POST','https://api.github.com/repos/%s/actions/workflows/quafu-watch-01.yml/dispatches'%REPO,data=json.dumps({'ref':'main'}).encode())
+                  print(json.dumps({'quafu_watch':'event-dispatched','gen':gen}))
+              except Exception as _e: print('quafu-watch-dispatch-skip', _e)
           time.sleep(SLEEP)
           # v3-② 幂等自dispatch: 派前勘重, 单次直调不盲试(DUPLICATE-STORM-02课)
           me=int(os.environ.get('GITHUB_RUN_ID','0'))
