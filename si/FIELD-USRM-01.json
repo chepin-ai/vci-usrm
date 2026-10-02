@@ -1,10 +1,10 @@
 {
  "field": "FIELD-USRM-01",
- "ts": "20261002T011205Z",
- "gen": 725,
- "E": 1,
- "verdict": "fired",
- "neg_ticks": 708,
+ "ts": "20261002T012246Z",
+ "gen": 726,
+ "E": 0,
+ "verdict": "no-fire(态未越阈,负结果入册)",
+ "neg_ticks": 709,
  "fired_n": 17,
  "law": "kc=-0.00025+0.78086*lnk/k+34.94879/k-1082.97/k^2 (M4a九点, ΔAICc=0.6简并首, M3 Δ25.6出局)",
  "pred": {
@@ -17,26 +17,26 @@
  },
  "attention": {
   "alloc": {
-   "fired": "reflect-20261002T011205Z",
-   "E": 1,
+   "fired": null,
+   "E": 0,
    "pend": 0
   },
   "pred_next": {
-   "E": 1,
-   "fire": true,
+   "E": 0,
+   "fire": false,
    "rule": "persistence(E持恒,命中率跨拍可稽)"
   },
   "prev_pred_score": {
-   "pred_fire": false,
-   "actual_fire": true,
+   "pred_fire": true,
+   "actual_fire": false,
    "hit": false,
-   "pred_E": 0,
-   "actual_E": 1
+   "pred_E": 1,
+   "actual_E": 0
   }
  },
  "k2000_orbits": 400,
  "fp": {
-  "si/selfx2-state.json": "2c783839c358",
+  "si/selfx2-state.json": "3a563d613ec3",
   "si/frontier-queue.jsonl": "aa58245bce7c",
   "ci/furnace/kc_k2000_result.json": "b3b4d6f33b04",
   "ci/furnace/kc3_k2000_state.json": "a99b94229342"
