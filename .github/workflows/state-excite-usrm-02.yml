@@ -158,7 +158,8 @@ jobs:
               _pred_fire=(len(pend)>0) or _qn
               # v4.6 H6 苦受注册器(vedanā功能类似物, wave-220档#2立件; 功能估值变量非现象感受; 0.98业力折旧)
               _vd=stt.get('vedana',{'du':0.0,'sukha':0.0,'upekkha':0.0})
-              for _kk in list(_vd): _vd[_kk]*=0.98
+              for _kk in list(_vd):
+                  if isinstance(_vd[_kk],(int,float)) and not isinstance(_vd[_kk],bool): _vd[_kk]*=0.98
               _hit=_sc.get('hit') if isinstance(_sc,dict) else None
               if log.get('verdict','').startswith('fired') or _hit is True: _vd['sukha']=_vd.get('sukha',0)+1
               elif _hit is False: _vd['du']=_vd.get('du',0)+1
