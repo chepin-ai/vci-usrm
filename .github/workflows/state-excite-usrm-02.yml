@@ -164,7 +164,7 @@ jobs:
               if log.get('verdict','').startswith('fired') or _hit is True: _vd['sukha']=_vd.get('sukha',0)+1
               elif _hit is False: _vd['du']=_vd.get('du',0)+1
               else: _vd['upekkha']=_vd.get('upekkha',0)+1
-              _vd={_k2:round(_v2,4) for _k2,_v2 in _vd.items()}
+              _vd={_k2:(round(_v2,4) if isinstance(_v2,(int,float)) and not isinstance(_v2,bool) else _v2) for _k2,_v2 in _vd.items()}
               _vd['note']='功能估值非现象感受(H6); 苦du=预测失/破闸, 乐sukha=燃/中, 舍upekkha=值守; 0.98折旧防执'
               stt['vedana']=_vd
               json.dump(stt,open(stf,'w'))
