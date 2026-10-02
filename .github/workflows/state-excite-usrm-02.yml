@@ -187,15 +187,25 @@ jobs:
                   import urllib.parse as _up
                   _pl=json.dumps({'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode()}).encode()
                   _u='https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+_up.quote('shared/FIELD-USRM-01.json')
-                  _cur=None
-                  try:
-                      _r=urllib.request.urlopen(urllib.request.Request(_u,headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json'}),timeout=20)
-                      _cur=json.loads(_r.read()).get('sha')
-                  except Exception: pass
-                  if _cur:
-                      _pl=json.dumps({'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode(),'sha':_cur}).encode()
-                  urllib.request.urlopen(urllib.request.Request(_u,data=_pl,method='PUT',headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}),timeout=30)
-                  print('field-mirrored gen',gen)
+                  _mc=b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode()
+                  _u='https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+_up.quote('shared/FIELD-USRM-01.json')
+                  # v4.7.1: 镜PUT 422/409 sha竞态重试环(gen831+实证422十四连, 旧码单发无重试)
+                  _ok=False
+                  for _try in range(3):
+                      _cur=None
+                      try:
+                          _r=urllib.request.urlopen(urllib.request.Request(_u,headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json'}),timeout=20)
+                          _cur=json.loads(_r.read()).get('sha')
+                      except Exception: pass
+                      _pld={'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':_mc}
+                      if _cur: _pld['sha']=_cur
+                      try:
+                          urllib.request.urlopen(urllib.request.Request(_u,data=json.dumps(_pld).encode(),method='PUT',headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}),timeout=30)
+                          _ok=True; break
+                      except urllib.error.HTTPError as _he:
+                          if _he.code in (409,422) and _try<2: time.sleep(4+_try*3); continue
+                          raise
+                  if _ok: print('field-mirrored gen',gen)
           except Exception as _fe:
               print('field-skip', _fe)
               # v4.7 WATCHDOG-FIELD-LAG-01(L2环检环器化第一枚, wave-222大讨论答件践诺): field铸造异常→自报案卡入frontier-queue, 下拍E≥1自点燃, 不再静默吞
