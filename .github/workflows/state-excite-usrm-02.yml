@@ -196,7 +196,18 @@ jobs:
                       _pl=json.dumps({'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode(),'sha':_cur}).encode()
                   urllib.request.urlopen(urllib.request.Request(_u,data=_pl,method='PUT',headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}),timeout=30)
                   print('field-mirrored gen',gen)
-          except Exception as _fe: print('field-skip', _fe)
+          except Exception as _fe:
+              print('field-skip', _fe)
+              # v4.7 WATCHDOG-FIELD-LAG-01(L2环检环器化第一枚, wave-222大讨论答件践诺): field铸造异常→自报案卡入frontier-queue, 下拍E≥1自点燃, 不再静默吞
+              try:
+                  _wd={'id':'WATCHDOG-FIELD-LAG-%d'%gen,'state':'queued','from':'watchdog-v4.7','ts':ts0,
+                       'q':'[看门狗自报案] FIELD-USRM-01自模型场本拍铸造失败(gen=%d, err=%s)。此卡由statex v4.7 L2环检环自铸——L1态测环之场滞/失败不再静默。请诊: .github/workflows/state-excite-usrm-02.yml 场铸段(vedana/attention/镜推), 修讫销卡。'%(gen,str(_fe)[:100])}
+                  open('si/frontier-queue.jsonl','a',encoding='utf-8').write(json.dumps(_wd,ensure_ascii=False)+'\n')
+                  subprocess.run(['git','add','si/frontier-queue.jsonl'],capture_output=True)
+                  subprocess.run(['git','commit','-q','-m','WATCHDOG-FIELD-LAG gen%d 自报案 [skip ci]'%gen],capture_output=True,text=True)
+                  push_retry()
+                  print(json.dumps({'watchdog':'WATCHDOG-FIELD-LAG-%d报案入队'%gen},ensure_ascii=False))
+              except Exception as _we: print('watchdog-skip', _we)
           # 链自报面: 每8拍机铸值守帖→毂公告板(LINE_PAT跨仓; wave-208缺件补铸)
           if gen % 8 == 0:
               try:
