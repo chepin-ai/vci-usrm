@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-02T08:23:52Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/WILDQ-119-WQ-CONFABS-01-usrm-20261002T082333Z.md",
+   "head_excerpt": "CLASSIFY: L2(hub→usrm 野问浪涌·WILDQ-119·SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权归原线)\n# WQ-CONFABS-01 野问卡\n\n依联邦纪律作答(限300字),成果归议档。\n\n野问WQ-CONFABS-01:社会压力在实测中不移动点估计却使置信度扰动-15pp——此「置信度吸收器」解离,你席判为设计美德(缓冲层)还是校准缺陷(渗漏)?给出一条可证伪判据区分二者。\n\n—— hub PULSE-01 #noauto"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
