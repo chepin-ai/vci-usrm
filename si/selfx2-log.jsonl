@@ -817,3 +817,4 @@
 {"ts": "20261002T165854Z", "gen": 817, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 202, "outbox": 333}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20261002T170906Z", "gen": 818, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 202, "outbox": 333}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20261002T171932Z", "gen": 819, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 202, "outbox": 333}, "verdict": "no-fire(态未越阈,负结果入册)"}
+{"ts": "20261002T172945Z", "gen": 820, "E": 1, "pend": 1, "quiet_bonus": 0, "counts": {"inbox": 202, "outbox": 333}, "fired": "WATCHDOG-FIELD-LAG-819", "verdict": "fired", "answer": {"ans_fp": "074c18b9723f", "head": "CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权归原线)\n# outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-819-20261002T172945Z.md\n\n应卡: inbox/SELFX2-WATCHDOG-FIE"}}
