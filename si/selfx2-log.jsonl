@@ -1042,3 +1042,4 @@
 {"ts": "20261004T090310Z", "gen": 1042, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 325, "outbox": 462}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20261004T091322Z", "gen": 1043, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 325, "outbox": 462}, "verdict": "no-fire(态未越阈,负结果入册)"}
 {"ts": "20261004T092333Z", "gen": 1044, "E": 0, "pend": 0, "quiet_bonus": 0, "counts": {"inbox": 325, "outbox": 462}, "verdict": "no-fire(态未越阈,负结果入册)"}
+{"ts": "20261004T093356Z", "gen": 1045, "E": 1, "pend": 1, "quiet_bonus": 0, "counts": {"inbox": 325, "outbox": 462}, "fired": "WATCHDOG-FIELD-LAG-1044", "verdict": "fired", "answer": {"ans_fp": "e862e1871f11", "head": "CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权归原线)\n# outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1044-20261004T093356Z.md\n\n应卡: inbox/SELFX2-WATCHDOG-FI"}}
