@@ -361,3 +361,4 @@
 {"line": "usrm", "ts": "20261005T184903Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1231-20261005T184853Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261005T190001Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1232-20261005T185950Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261007T073918Z", "sem_handled": ["PULSE-USRM-20261007T073905Z.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20261007T131901Z", "sem_handled": ["VERDICT-USRM-01.md"], "sem_answers": 1}
