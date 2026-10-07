@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20261007T155009Z",
+ "idle_in": 156,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "〈RED〉-CONSULT-USRM-01.md"
+  }
+ ],
+ "tasks": [],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
