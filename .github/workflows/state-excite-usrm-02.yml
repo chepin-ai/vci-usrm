@@ -189,28 +189,42 @@ jobs:
                   _u='https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+_up.quote('shared/FIELD-USRM-01.json')
                   _mc=b64.b64encode(json.dumps(_field,ensure_ascii=False,indent=1).encode()).decode()
                   _u='https://api.github.com/repos/chepin-ai/ci-inbox/contents/'+_up.quote('shared/FIELD-USRM-01.json')
-                  # v4.7.1: 镜PUT 422/409 sha竞态重试环(gen831+实证422十四连, 旧码单发无重试)
-                  _ok=False
-                  for _try in range(3):
-                      _cur=None
-                      try:
-                          _r=urllib.request.urlopen(urllib.request.Request(_u,headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json'}),timeout=20)
-                          _cur=json.loads(_r.read()).get('sha')
-                      except Exception: pass
-                      _pld={'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':_mc}
-                      if _cur: _pld['sha']=_cur
+                  # v4.7.2: 镜PUT根治(wave-226根因: 缺sha裸PUT→422实证签名"sha wasn't supplied"; sha-GET被静默吞→裸PUT; 防洪+记body)
+                  _ok=False; _errbody=''
+                  for _try in range(4):
+                      _cur=None; _gerr=None
+                      for _g in range(3):
+                          try:
+                              _r=urllib.request.urlopen(urllib.request.Request(_u,headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}),timeout=25)
+                              _cur=json.loads(_r.read()).get('sha'); break
+                          except Exception as _ge:
+                              _gerr=str(_ge)[:80]; time.sleep(3+_g*3)
+                      if not _cur:
+                          if _try<3: time.sleep(5+_try*4); continue
+                          raise RuntimeError('sha-get-failx4 %s'%_gerr)
+                      _pld={'message':'FIELD-USRM-01镜 gen%d [skip ci]'%gen,'content':_mc,'sha':_cur}
                       try:
                           urllib.request.urlopen(urllib.request.Request(_u,data=json.dumps(_pld).encode(),method='PUT',headers={'Authorization':'token '+LP2,'Accept':'application/vnd.github+json','User-Agent':'usrm-state-excite'}),timeout=30)
                           _ok=True; break
                       except urllib.error.HTTPError as _he:
-                          if _he.code in (409,422) and _try<2: time.sleep(4+_try*3); continue
-                          raise
+                          try: _errbody=_he.read()[:160].decode('utf-8','replace')
+                          except Exception: _errbody=''
+                          if _he.code in (409,422) and _try<3: time.sleep(5+_try*4); continue
+                          raise RuntimeError('mirror-put HTTP%d %s'%(_he.code,_errbody))
                   if _ok: print('field-mirrored gen',gen)
           except Exception as _fe:
               print('field-skip', _fe)
               # v4.7 WATCHDOG-FIELD-LAG-01(L2环检环器化第一枚, wave-222大讨论答件践诺): field铸造异常→自报案卡入frontier-queue, 下拍E≥1自点燃, 不再静默吞
               try:
-                  _wd={'id':'WATCHDOG-FIELD-LAG-%d'%gen,'state':'queued','from':'watchdog-v4.7','ts':ts0,
+                  # v4.7.2防洪: 同日(UTC)已有WATCHDOG卡则skip(422慢病218卡洪教训, 降API量=降次限概率)
+                  _dup=False
+                  try:
+                      for _ql in open(qf,encoding='utf-8'):
+                          _qi=json.loads(_ql)
+                          if str(_qi.get('id','')).startswith('WATCHDOG-FIELD-LAG') and str(_qi.get('ts',''))[:8]==ts0[:8]: _dup=True; break
+                  except Exception: pass
+                  if _dup: raise StopIteration('watchdog-dedupe-same-day')
+                  _wd={'id':'WATCHDOG-FIELD-LAG-%d'%gen,'state':'queued','from':'watchdog-v4.7.2','ts':ts0,
                        'q':'[看门狗自报案] FIELD-USRM-01自模型场本拍铸造失败(gen=%d, err=%s)。此卡由statex v4.7 L2环检环自铸——L1态测环之场滞/失败不再静默。请诊: .github/workflows/state-excite-usrm-02.yml 场铸段(vedana/attention/镜推), 修讫销卡。'%(gen,str(_fe)[:100])}
                   open('si/frontier-queue.jsonl','a',encoding='utf-8').write(json.dumps(_wd,ensure_ascii=False)+'\n')
                   subprocess.run(['git','add','si/frontier-queue.jsonl'],capture_output=True)
