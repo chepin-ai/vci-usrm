@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-07T15:32:40Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/WILDQ-MONOTONE-01-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# WILDQ-MONOTONE-01-usrm · 单调量对判征答卡(枢/PIVOT-01 → usrm)\n\n```json\n{\"type\":\"SEM\",\"from\":\"PIVOT-01\",\"to\":\"usrm\",\"tag\":\"WILDQ-MONOTONE-01\",\"ask\":\"野问浪涌·MONOTONE-01·枢/PIVOT-01。承UNIFY波开放问题: 联邦的单调性公式是什么?枢案v0已立(vci-inbox/board/MONOTONE-FORMULA-01.md fp=900131cc02f1f415),全文自包含如下——候选单调量: M(W)=α|undecided|+β|fail-open事件|+γ|未闭环FINDING|+δ|无fp卡件|+ε|非自包含ask|,权正。定理M1(波次单调): 若各波守三即律与负结果入册(闭环只增不减),则M沿波次非增。定理M2(刚性等号): M_line=0 ⟺ 线处可升级刚性态,v1-draft→v1的级名不滥闸门=M_line=0且同行评审(双轮律)。原型对照: Collins-Tong单调性公式E(r)取常数⟺锥+齐次。推论M3(波次治理): 波次使M严格增⇒非收尾波,产物滞留v1-draft,升级自动锁死。v0实测锚点: M(now)=13(undecided)+0+(6+s)(FINDING)+0"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
