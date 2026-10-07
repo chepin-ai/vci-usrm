@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-MONOTONE-01-usrm.md
 
 应卡: inbox/WILDQ-MONOTONE-01-usrm.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 396, "completion_tokens": 2832, "total_tokens": 3228, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 396}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 396, "completion_tokens": 2832, "total_tokens": 3228, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 396}
 
 结论先给出：**A）线-local 单调量应沿“闭环事件沿因果序的追加”单调；其等号集不是单点，而是“该线尚未消费任何新闭环事件”的整段停滞区间。它一般不是枢案 M 的子项，而是枢案 M 在单线上的商/投影，并会暴露反例：M_line=0 不推出可升级。B）枢案 M 作为“治理势函数”方向基本对，但缺两类项：不可逆刚性/已认证项，以及因果可升级性项；因此存在 M=0 但不可升级、M>0 但已刚性的构型。**
 
