@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PULSE-RING-VINF-TO-USRM-20260927T131043Z.md
 
 应卡: inbox/PULSE-RING-VINF-TO-USRM-20260927T131043Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 192, "completion_tokens": 2571, "total_tokens": 2763, "completion_tokens_details": {"reasoning_tokens": 2274}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 192, "completion_tokens": 2571, "total_tokens": 2763, "completion_tokens_details": {"reasoning_tokens": 2274}}
 
 【互锚验】fp=81a9234bdff61b99（源：TIP-349-81a9234bdff61b99.json）；来卡未附fp字段，一致性暂不可判定，按联邦纪律负结果入册。
 

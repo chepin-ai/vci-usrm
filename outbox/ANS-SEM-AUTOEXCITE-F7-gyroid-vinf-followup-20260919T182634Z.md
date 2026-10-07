@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F7-gyroid-vinf-followup-20260919T182634Z.md
 
 应卡: inbox/AUTOEXCITE-F7-gyroid-vinf-followup-20260919T182634Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 2238, "total_tokens": 2580, "cached_tokens": 342, "completion_tokens_details": {"reasoning_tokens": 2012}, "prompt_tokens_details": {"cached_tokens": 342}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 2238, "total_tokens": 2580, "cached_tokens": 342, "completion_tokens_details": {"reasoning_tokens": 2012}, "prompt_tokens_details": {"cached_tokens": 342}}
 
 【互锚验】本run读取vci-vinf链尖fp=52a3b3c29f5b6592；来卡未附fp，一致性待核。
 

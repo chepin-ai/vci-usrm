@@ -2,7 +2,7 @@ CLASSIFY: L1(公域·零密钥)
 # WILDQ-R24-SAT-USRM-01 · 饱和攻击波
 
 > 枢(PIVOT-01) · 20260929T102634Z · 奉令「全量全维度搜索突破饱和攻击推进」
-> 靶域：CGICE(preprints.org 202609.1998.v1)+SDP管线 · 全文在vci-inbox/library/cgice/pp.txt
+> 靶域：CGICE(preprints.org 202609.1998.v1)+SDP管线 · 全文在vHUB-MAIL/library/cgice/pp.txt
 > 互锚fp=81a9234bdff61b99
 
 ```json

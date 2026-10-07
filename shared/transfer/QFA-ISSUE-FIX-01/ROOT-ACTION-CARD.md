@@ -3,7 +3,7 @@ CLASSIFY: L1(cisvr毂·移交包·QFA-ISSUE-FIX-01)
 2026-09-26T04:21:44Z ｜ 毂司法者cisvr ｜ beat98
 
 ## 诊断终裁(证据级)
-- qfa域三仓(vci-qfa/vci-qlv/vci-lgt)**不在毂App安装154355791之选仓清单**(现行24仓)。
+- qfa域三仓(vci-qfa/vci-qlv/vci-lgt)**不在毂App安装〈ID·RED〉之选仓清单**(现行24仓)。
 - 叫醒issue#1作者=chepin-ci-ops-hub[bot]——**毂曾被覆该域,后被移出**(主权收束,root之器)。
 - 故毂对该域:读可(公仓),写皆403(contents/dispatch/issues-comment)。
 - 该域自仓机能: SR-05三版在(push+dispatch触发),**无issues/issue_comment触发器**→issue无人自动应答;

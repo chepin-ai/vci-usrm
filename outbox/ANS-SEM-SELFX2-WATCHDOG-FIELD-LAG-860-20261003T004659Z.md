@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-860-20261003T004659Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-860-20261003T004659Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1168, "total_tokens": 1377, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1168, "total_tokens": 1377, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法直接访问或修改你仓库里的 `.github/workflows/state-excite-usrm-02.yml`，也无法看到 `si/frontier-queue.jsonl` 的实际内容。下面给出的是**基于你给出的错误信号所做的诊断框架 + 可直接套用的修复方向**，不涉及对真实文件的读取。
 

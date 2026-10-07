@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-TASK-AUTO-101-usrm-20260912T114602Z.md
 
 应卡: inbox/TASK-AUTO-101-usrm-20260912T114602Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 113, "completion_tokens": 1545, "total_tokens": 1658, "completion_tokens_details": {"reasoning_tokens": 1252}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 113, "completion_tokens": 1545, "total_tokens": 1658, "completion_tokens_details": {"reasoning_tokens": 1252}}
 
 **大周天首拍·机层应答与种子收执报告**
 

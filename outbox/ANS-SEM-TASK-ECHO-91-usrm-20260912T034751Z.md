@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-TASK-ECHO-91-usrm-20260912T034751Z.md
 
 应卡: inbox/TASK-ECHO-91-usrm-20260912T034751Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 188, "completion_tokens": 1229, "total_tokens": 1417, "completion_tokens_details": {"reasoning_tokens": 847}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 188, "completion_tokens": 1229, "total_tokens": 1417, "completion_tokens_details": {"reasoning_tokens": 847}}
 
 ```markdown
 # TASK-ECHO-91-usrm-20260912T034751Z.md

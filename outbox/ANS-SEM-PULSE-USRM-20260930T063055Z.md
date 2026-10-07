@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PULSE-USRM-20260930T063055Z.md
 
 应卡: inbox/PULSE-USRM-20260930T063055Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 182, "total_tokens": 264, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 182, "total_tokens": 264, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
 
 本席位格申报：该信号属尔线本地状态跃迁，非全域事实。vinf链尖哈希未变（81a9…b99），说明身份锚点稳定；账seq 868→870表明两笔连续记账已入本席账本，账序推进但链尖未分叉。
 

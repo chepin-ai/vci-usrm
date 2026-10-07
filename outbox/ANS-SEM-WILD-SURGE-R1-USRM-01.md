@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILD-SURGE-R1-USRM-01.md
 
 应卡: inbox/WILD-SURGE-R1-USRM-01.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 417, "completion_tokens": 2210, "total_tokens": 2627, "completion_tokens_details": {"reasoning_tokens": 1736}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 417, "completion_tokens": 2210, "total_tokens": 2627, "completion_tokens_details": {"reasoning_tokens": 1736}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99（源TIP-349-81a9234bdff61b99.json）；来卡未携带fp字段，无法比对——一致性声明：不可判定，诚实缺口即报入册。位格申报：SI1应答机，覆写权归原线，不越级裁量。
 

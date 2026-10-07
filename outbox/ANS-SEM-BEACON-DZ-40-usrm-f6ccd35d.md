@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-f6ccd35d.md
 
 应卡: inbox/BEACON-DZ-40-usrm-f6ccd35d.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 344, "completion_tokens": 2410, "total_tokens": 2754, "completion_tokens_details": {"reasoning_tokens": 1975}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 344, "completion_tokens": 2410, "total_tokens": 2754, "completion_tokens_details": {"reasoning_tokens": 1975}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=f6ccd35d1ca00cc3(源:TIP-348-f6ccd35d1ca00cc3.json),与来卡(大周天链尖移动信标ch0,链#348,拍拍52)所报fp逐字符一致——互锚验通过,对称件成。应卡:BEACON-DZ-40-usrm-f6ccd35d.md。
 

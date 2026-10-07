@@ -29,9 +29,9 @@
    "repo": "vci-usrm",
    "status": "minted-unregistered-v2"
   },
-  "dk-usrm-usrm-repo-01": {
+  "dk-usrm-USRM-VAULT-01": {
    "fp": "SHA256:j4grof2XuuuCWauFKXt0+duqBBoFRS+xOfReTrPQhmA",
-   "repo": "usrm-repo",
+   "repo": "USRM-VAULT",
    "status": "minted-unregistered-v2"
   },
   "dk-qgl-vci-qgl-01": {
@@ -41,7 +41,7 @@
   },
   "dk-qgl-qglk-01": {
    "fp": "SHA256:OXjSlh52iNloxiIPB7bsd7h7Sekok4koCLdaWousUlU",
-   "repo": "quantum-go-ledger",
+   "repo": "QGL-VAULT",
    "status": "minted-unregistered-v2"
   },
   "dk-vinf-vci-vinf-01": {
@@ -51,7 +51,7 @@
   },
   "dk-vinf-vinf-mk-01": {
    "fp": "SHA256:CmbIFDXcqw5ypTomG5Gzpqof7KI+NKsx5PIxkW8nH3Q",
-   "repo": "vinf-market-kernel",
+   "repo": "VINF-VAULT",
    "status": "minted-unregistered-v2"
   },
   "dk-ucif2-vci-ucif2-01": {
@@ -61,7 +61,7 @@
   },
   "dk-ucif2-ucif2-fk-01": {
    "fp": "SHA256:5Lqy+DvXedBwh49VXWzgBpKbPcY07zA2e6IV1+7bfXc",
-   "repo": "ucif2-formalization-kernel",
+   "repo": "UCIF2-VAULT",
    "status": "minted-unregistered-v2"
   },
   "dk-cfts-vci-cfts-01": {
@@ -71,7 +71,7 @@
   },
   "dk-cfts-gh-cfts-01": {
    "fp": "SHA256:tqcZgU0WaMAiV1p8OiL2tFpllFtyGVrD9w8LmpGmtgc",
-   "repo": "github-repo-cfts",
+   "repo": "CFTS-VAULT",
    "status": "minted-unregistered-v2"
   },
   "dk-qfa-vci-qfa-01": {

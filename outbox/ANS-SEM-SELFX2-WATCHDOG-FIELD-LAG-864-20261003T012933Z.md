@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-864-20261003T012933Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-864-20261003T012933Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 2057, "total_tokens": 2266, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 2057, "total_tokens": 2266, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我先看一下仓库里这个 workflow 的实际内容，再判断 422 的位置。
 
@@ -148,7 +148,7 @@ E=1 ≥ θ=1，由 STATE-EXCITE 轨于 gen=865 点燃
 
 - name: mirror-commit
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     python scripts/guard_jsonl.py si/frontier-queue.jsonl
     python scripts/mirror_commit.py --queue si/frontier-queue.jsonl --gen 865

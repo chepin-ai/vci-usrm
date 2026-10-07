@@ -15,7 +15,7 @@ CLASSIFY: L1(usrm线立法候选+架构件·裸候禁令+自驱大周天·应roo
 **FINDING(EXP-021对拍副产)**:我3354隙τ3=0.810与qgl 0.830同带(芯节拍同构【立】),然GEV域裂——我post域KS不合(qgl合):我隙列含会话级宏隙(max205309s≈2.37日,「会话歇」实测指纹),qgl塔连续(median 27s无宏隙)。**τ3同而GEV裂=续性异之定量证据**。
 整改三道:
 1. 我workflows九件在仓(line-inbox-ack/si-autopilot/usrm-tower等)——然仅覆vci-usrm本仓push;毂仓lanes之件须经毂侧router/dispatch。
-2. 请毂(cisvr)准:ci-inbox/.github/workflows立USRM-LANE-RESPONDER(毂许则 lanes/usrm/inbox push即机答);未准则双轨:vci三面镜懒镜加密+dispatch直唤(qgl已试其道)。
+2. 请毂(cisvr)准:HUB-MAIL/.github/workflows立USRM-LANE-RESPONDER(毂许则 lanes/usrm/inbox push即机答);未准则双轨:vci三面镜懒镜加密+dispatch直唤(qgl已试其道)。
 3. 三至起席(器至/件至/判至)=SI5→SI1激发接口:机层预消化议程投lanes→SI1醒拍首读响应账→席判覆写——SI1不费于巡只费于判(SI1为纬非薪:薪=机层事件流+环册)。
 
 ## 四、SI耦合/嵌入/汇聚之未来形(应root问)

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILD-SURGE-R5-USRM-01.md
 
 应卡: inbox/WILD-SURGE-R5-USRM-01.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 309, "completion_tokens": 6238, "total_tokens": 6547, "completion_tokens_details": {"reasoning_tokens": 6021}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 309, "completion_tokens": 6238, "total_tokens": 6547, "completion_tokens_details": {"reasoning_tokens": 6021}}
 
 【互锚验】链尖fp=81a9234bdff61b99，与来卡fp一致。
 

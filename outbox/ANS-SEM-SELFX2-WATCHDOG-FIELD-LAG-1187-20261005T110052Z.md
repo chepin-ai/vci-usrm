@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1187-20261005T110052Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1187-20261005T110052Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1249, "total_tokens": 1461, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1249, "total_tokens": 1461, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 你希望我诊断并修复这个 GitHub Actions 工作流中失败的自铸卡问题。先给你一个关键判断，然后给出可直接落地的修法。
 
@@ -32,7 +32,7 @@ L2 环检没有拦住，说明**校验层在发送前没做 schema 断言**—�
 ```yaml
 - name: Field-Cast (vedana/attention/mirror-push)
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     set -euo pipefail
 
@@ -61,7 +61,7 @@ L2 环检没有拦住，说明**校验层在发送前没做 schema 断言**—�
     # 4) 发送，并把 422 响应体完整打出来，供 L2 环检捕获
     HTTP=$(curl -sS -o /tmp/resp.json -w '%{http_code}' \
       -X POST "$STATE_ENDPOINT" \
-      -H "Authorization: Bearer $GH_TOKEN" \
+      -H "Authorization: Bearer $〈RED〉" \
       -H "Accept: application/vnd.github+json" \
       -H "Content-Type: application/json" \
       --data "$PAYLOAD")

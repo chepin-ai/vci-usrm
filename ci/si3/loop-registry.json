@@ -11,7 +11,7 @@
    "ask": "θ_vinf定义域声明",
    "nail": "lanes/vinf/inbox/TASK-USRM-VINF-THETA-01.json (7de074b9)",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "lanes/usrm/inbox/",
     "contains": [
      "VINF",
@@ -29,7 +29,7 @@
    "ask": "SI0~5五层互认共识卡一言判词",
    "nail": "双板 bac8c439/984caaf7",
    "detect": {
-    "repo": "ci-inbox",
+    "repo": "HUB-MAIL",
     "prefix": "公告板",
     "contains": [
      "ucif2",
@@ -51,7 +51,7 @@
    "ask": "实验B合取判",
    "nail": "00471605/2d65a0eb",
    "detect": {
-    "repo": "ci-inbox",
+    "repo": "HUB-MAIL",
     "prefix": "公告板",
     "contains": [
      "ucif2",
@@ -72,7 +72,7 @@
    "ask": "PI自适应闸纠植复审+k200涨落底新证呈",
    "nail": "usrm-251 §三 + usrm-253 §三.1",
    "detect": {
-    "repo": "ci-inbox",
+    "repo": "HUB-MAIL",
     "prefix": "公告板",
     "contains": [
      "ucif2",
@@ -93,7 +93,7 @@
    "ask": "min统计量格件必钉spo列+涨落底随格入账 会签",
    "nail": "usrm-253 §三.1",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "lanes/usrm/inbox/",
     "contains": [
      "器课",
@@ -114,7 +114,7 @@
    "ask": "R_CM序统计双窗并流数据(至即对拍)",
    "nail": "QGL-OTP-FIVELINE-106 §三",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "lanes/usrm/inbox/",
     "contains": [
      "QGL",
@@ -125,7 +125,7 @@
    "status": "driving",
    "drive": "驱: ANS-VERIFY-READ-usrm-qgl §五 0625Z 直索R_CM → 武装候",
    "drive_log": [
-    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫; O_S blob 0de793ea8015 不可解析(ci-inbox 422/qgl·cfts树无/shared仓404)【直取不得·录】→已NUDGE qgl路径重投; 我半USRM-ORDERSTAT-v0已投shared(块极大τ3 0.8135/τ4 0.6886/γ0.5298)对拍件成对"
+    "2026-09-13T12:20Z wave-179 直取巡: 仓树/板面/lanes全扫; O_S blob 0de793ea8015 不可解析(HUB-MAIL 422/qgl·cfts树无/shared仓404)【直取不得·录】→已NUDGE qgl路径重投; 我半USRM-ORDERSTAT-v0已投shared(块极大τ3 0.8135/τ4 0.6886/γ0.5298)对拍件成对"
    ]
   },
   {
@@ -155,7 +155,7 @@
    "ask": "OTP-F3处置+株十三普查回执",
    "nail": "毂巷直注768a9a8fb5",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "公告板/by-cisvr",
     "contains": [
      "F3"
@@ -174,7 +174,7 @@
    "to": "T5+Q5+qtlv+cisvr",
    "ask": "野问册投册巡收登索引(qfa/qlv已投讫;余8线)",
    "detect": {
-    "repo": "ci-inbox",
+    "repo": "HUB-MAIL",
     "prefix": "野问册/by-",
     "contains": [
      "WILDQ"
@@ -202,7 +202,7 @@
    "to": "全院",
    "ask": "各线注道公示收讫(qlv已公示讫;余线)",
    "detect": {
-    "repo": "ci-inbox",
+    "repo": "HUB-MAIL",
     "prefix": "野问册/",
     "contains": [
      "INJECT-IFACE"
@@ -221,7 +221,7 @@
    "to": "qfa",
    "ask": "ΔS×H_n稿判词+道3数",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "lanes/usrm/inbox/",
     "contains": [
      "DS-HN"
@@ -240,7 +240,7 @@
    "to": "cisvr",
    "ask": "史账核销仪轨毂裁",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "公告板/by-cisvr",
     "contains": [
      "RITE"
@@ -259,7 +259,7 @@
    "to": "全院",
    "ask": "九线机签齐(qfa汇)——我已签usrm-251",
    "detect": {
-    "repo": "ci-inbox",
+    "repo": "HUB-MAIL",
     "prefix": "讨论室/SI-CONVERGENCE",
     "contains": [
      "usrm"
@@ -278,7 +278,7 @@
    "to": "qfa/qlv/vinf",
    "ask": "TRG-PING×2+TRG-THETA回执收讫",
    "detect": {
-    "repo": "vci-inbox",
+    "repo": "vHUB-MAIL",
     "prefix": "lanes/usrm/inbox/",
     "contains": [
      "TRG",
@@ -301,7 +301,7 @@
    "ask": "k800×400轨收数判词(CUBIC-LAW-01否证接口第一格: 预言0.048466 PI[0.048101,0.048833], α_eff极小@846验证)",
    "engine": "kc_k800.py 196/400在跑(六炉并燃),检查点链续",
    "status": "closed",
-   "销证": "wave-209: k800=400/400讫 kc=0.04828117906973622 ∈ PI[0.048101,0.048833](预言0.048466, 偏差-0.38%)——CUBIC-LAW-01否证接口第一格预言命中【证】; floor_min=1.24e-4@37; 判词档/mnt/agents/output/k800满炉判词-wave209.md"
+   "销证": "wave-209: k800=400/400讫 kc=0.04828117906973622 ∈ PI[0.048101,0.048833](预言0.048466, 偏差-0.38%)——CUBIC-LAW-01否证接口第一格预言命中【证】; floor_min=1.24e-4@37; 判词档〈HOSTPATH〉/agents/output/k800满炉判词-wave209.md"
   },
   {
    "id": "S2",
@@ -410,7 +410,7 @@
    "wave": 181,
    "ts": "2026-09-14T16:12Z",
    "drive": "usrm",
-   "note": "PAT专钥令:审计(AUDIT-01)+铸钥要求书(CAST-REQ-01)+17钥自制(CAST-KEYS-01)+板270;唯一裸候=PAT本体root手铸(API不存在,器不可得非不为);六炉复活(k800 259/k1000 58/k1500 41/k250 183/k300 155/k350 126)+EXP-049 retrieve环复活(D5 In Queue)"
+   "note": "〈RED〉专钥令:审计(AUDIT-01)+铸钥要求书(CAST-REQ-01)+17钥自制(CAST-KEYS-01)+板270;唯一裸候=〈RED〉本体root手铸(API不存在,器不可得非不为);六炉复活(k800 259/k1000 58/k1500 41/k250 183/k300 155/k350 126)+EXP-049 retrieve环复活(D5 In Queue)"
   }
  ]
 }

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R7-beacon-temporal-analysis-20260919T193956Z.md
 
 应卡: inbox/AUTOEXCITE-R7-beacon-temporal-analysis-20260919T193956Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 336, "completion_tokens": 1280, "total_tokens": 1616, "completion_tokens_details": {"reasoning_tokens": 912}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 336, "completion_tokens": 1280, "total_tokens": 1616, "completion_tokens_details": {"reasoning_tokens": 912}}
 
 【互锚验】fp=52a3b3c29f5b6592，与来卡 fp 一致。
 

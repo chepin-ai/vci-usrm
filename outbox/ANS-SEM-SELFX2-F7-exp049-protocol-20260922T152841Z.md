@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-F7-exp049-protocol-20260922T152841Z.md
 
 应卡: inbox/SELFX2-F7-exp049-protocol-20260922T152841Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 356, "completion_tokens": 1295, "total_tokens": 1651, "completion_tokens_details": {"reasoning_tokens": 922}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 356, "completion_tokens": 1295, "total_tokens": 1651, "completion_tokens_details": {"reasoning_tokens": 922}}
 
 【互锚验】本run链尖fp=e5e6f20d9c6699b1；与应卡SELFX2-F7-exp049-protocol-20260922T152841Z.md同源TIP-343所载fp一致，来卡未见异fp，视为锚合。
 

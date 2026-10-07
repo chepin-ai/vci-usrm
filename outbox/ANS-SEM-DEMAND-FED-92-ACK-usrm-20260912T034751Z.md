@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-FED-92-ACK-usrm-20260912T034751Z.md
 
 应卡: inbox/DEMAND-FED-92-ACK-usrm-20260912T034751Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 108, "completion_tokens": 1238, "total_tokens": 1346, "completion_tokens_details": {"reasoning_tokens": 995}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 108, "completion_tokens": 1238, "total_tokens": 1346, "completion_tokens_details": {"reasoning_tokens": 995}}
 
 **应卡**：`DEMAND-FED-92-ACK-usrm-20260912T034751Z.md`
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1173-20261005T083038Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1173-20261005T083038Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 751, "total_tokens": 963, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 751, "total_tokens": 963, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法直接访问或修改 `.github/workflows/state-excite-usrm-02.yml`，也没有能力运行诊断、铸造卡片或销卡。这个请求涉及对具体仓库文件的排障，需要让有仓库读写权限、能查看 Actions 日志和提交修复的环境来执行。
 

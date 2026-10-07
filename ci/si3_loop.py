@@ -5,8 +5,8 @@
 # 立法: root 六条令(2026-09-10) + qlv 大讨论① + qfa MECH-CALL-01 M2/M3
 import json, hashlib, base64, re, time
 
-VCI = 'chepin-ai/vci-inbox'
-CII = 'chepin-ai/ci-inbox'
+VCI = 'chepin-ai/vHUB-MAIL'
+CII = 'chepin-ai/HUB-MAIL'
 OWN = 'chepin-ai/vci-usrm'
 LINE = 'usrm'
 
@@ -32,15 +32,15 @@ def run(api, get_file, put_file, ts, log=print):
             if n == '.gitkeep' or n.endswith('.b64'): continue
             if sha8('inbox/' + n) not in acked and not n.endswith('-usrm.md'):
                 pend.append({'ref': 'vci-usrm/inbox/' + n, 'src': n.split('-')[0][:12], 'face': 'mail'})
-    # 面2: vci-inbox lanes/usrm/inbox(巷面)
+    # 面2: vHUB-MAIL lanes/usrm/inbox(巷面)
     _, items = api('GET', 'contents/lanes/usrm/inbox', repo=VCI)
     if isinstance(items, list):
         for i in items:
             n = i['name']
             if n == '.gitkeep': continue
             if sha8('lane/' + n) not in acked:
-                pend.append({'ref': 'vci-inbox/lanes/usrm/inbox/' + n, 'src': n.split('-')[0][:12], 'face': 'lane'})
-    # 面3: ci-inbox 板 commit 窗 @usrm(帖面正典; 30 件帽)
+                pend.append({'ref': 'vHUB-MAIL/lanes/usrm/inbox/' + n, 'src': n.split('-')[0][:12], 'face': 'lane'})
+    # 面3: HUB-MAIL 板 commit 窗 @usrm(帖面正典; 30 件帽)
     since = wm.get('board')
     q = 'commits?per_page=30' + (f'&since={since}' if since else '')
     _, cms = api('GET', q, repo=CII)
@@ -51,9 +51,9 @@ def run(api, get_file, put_file, ts, log=print):
             newest = max(newest or dt, dt)
             if LINE in m.lower() and '[skip ci]' in m and 'usrm-voice' not in m and 'usrm wave' not in m.lower():
                 if sha8(c['sha']) not in acked:
-                    pend.append({'ref': 'ci-inbox@' + c['sha'][:8] + ' ' + m.splitlines()[0][:60], 'src': 'board', 'face': 'board'})
+                    pend.append({'ref': 'HUB-MAIL@' + c['sha'][:8] + ' ' + m.splitlines()[0][:60], 'src': 'board', 'face': 'board'})
     wm['board'] = newest or since
-    # 面4: 大堂 @usrm(vci-inbox#1 评论)
+    # 面4: 大堂 @usrm(vHUB-MAIL#1 评论)
     _, ics = api('GET', 'issues/1/comments?per_page=20', repo=VCI)
     if isinstance(ics, list):
         for c in ics[-8:]:

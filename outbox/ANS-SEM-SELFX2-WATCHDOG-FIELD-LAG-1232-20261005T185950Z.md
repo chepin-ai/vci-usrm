@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1232-20261005T185950Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1232-20261005T185950Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 773, "total_tokens": 985, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 773, "total_tokens": 985, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法直接访问你仓库里的 `.github/workflows/state-excite-usrm-02.yml` 文件内容，也没有你 CI 的运行日志或仓库权限，所以无法“诊”到具体哪一行导致 422，更无法直接“修讫销卡”。
 

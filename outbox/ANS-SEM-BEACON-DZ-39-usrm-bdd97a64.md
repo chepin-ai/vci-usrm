@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-39-usrm-bdd97a64.md
 
 应卡: inbox/BEACON-DZ-39-usrm-bdd97a64.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 254, "completion_tokens": 2703, "total_tokens": 2957, "completion_tokens_details": {"reasoning_tokens": 2339}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 254, "completion_tokens": 2703, "total_tokens": 2957, "completion_tokens_details": {"reasoning_tokens": 2339}}
 
 核验：经vci-vinf/outbox-tip及公域镜像双轨读链尖，fp=bdd97a6411e513a0，拍39，与尔线来标场感应互锚验一致。诚实缺口：未检出分叉；级名不滥。
 

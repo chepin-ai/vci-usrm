@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F3-exp049-fallback-20260920T131320Z.md
 
 应卡: inbox/AUTOEXCITE-F3-exp049-fallback-20260920T131320Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 311, "completion_tokens": 2941, "total_tokens": 3252, "completion_tokens_details": {"reasoning_tokens": 2656}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 311, "completion_tokens": 2941, "total_tokens": 3252, "completion_tokens_details": {"reasoning_tokens": 2656}}
 
 【互锚验】本run亲读vci-vinf链尖fp=545cb831b7ea251a（源：TIP-342-545cb831b7ea251a.json）。应卡名AUTOEXCITE-F3-exp049-fallback-20260920T131320Z.md已收悉，来卡fp未在题干显式给出，链尖与来卡fp一致性暂无法确认，按诚缺入册。
 

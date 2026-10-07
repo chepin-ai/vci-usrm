@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1164-20261005T065551Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1164-20261005T065551Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2159, "total_tokens": 2371, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2159, "total_tokens": 2371, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法直接访问你仓库里的 `.github/workflows/state-excite-usrm-02.yml` 文件内容，也不具备查看你 GitHub Actions 运行日志、`si/frontier-queue.jsonl` 或 `statex v4.7` 内部状态的权限。因此不能凭这段自述直接“诊”出 422 的具体成因，也不能替你改工作流并“销卡”。
 

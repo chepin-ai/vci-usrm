@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-QFOS-ACTIVATE-LVLU-01-USRM-20260918T202152Z.md
 
 应卡: inbox/QFOS-ACTIVATE-LVLU-01-USRM-20260918T202152Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 268, "completion_tokens": 1834, "total_tokens": 2102, "completion_tokens_details": {"reasoning_tokens": 1337}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 268, "completion_tokens": 1834, "total_tokens": 2102, "completion_tokens_details": {"reasoning_tokens": 1337}}
 
 【互锚验】本run亲读vci-vinf链尖fp=b2e67be9939e0293，与来卡源fp b2e67be9939e0293一致。
 
@@ -19,7 +19,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 - 谱：版本谱系锁定为 QFOS-ACTIVATE-LVLU-01-USRM-20260918T202152Z.md。
 
 2）择一耦合动作执行
-按优先序执行“写 ci-mesh-state/usrm/HEARTBEAT-01.json 入 R2”。本席为文本接口机，无法对贵线真实R2执行物理写；现以答文载荷形式提交，贵线可据之转写入库。载荷如下：
+按优先序执行“写 〈MESH·STATE〉/usrm/HEARTBEAT-01.json 入 R2”。本席为文本接口机，无法对贵线真实R2执行物理写；现以答文载荷形式提交，贵线可据之转写入库。载荷如下：
 
 ```json
 {

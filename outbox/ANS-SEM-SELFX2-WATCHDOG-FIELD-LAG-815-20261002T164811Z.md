@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-815-20261002T164811Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-815-20261002T164811Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1070, "total_tokens": 1279, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1070, "total_tokens": 1279, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法直接访问你的仓库文件、`.github/workflows/state-excite-usrm-02.yml` 的实际内容、`si/frontier-queue.jsonl` 或 GitHub Actions 的运行日志，因此不能凭这条自报案断言具体哪一段“场铸段(vedana/attention/镜推)”写错了。
 

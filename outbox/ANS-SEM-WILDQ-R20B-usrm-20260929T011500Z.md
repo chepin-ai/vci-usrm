@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R20B-usrm-20260929T011500Z.md
 
 应卡: inbox/WILDQ-R20B-usrm-20260929T011500Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 238, "completion_tokens": 1355, "total_tokens": 1593, "completion_tokens_details": {"reasoning_tokens": 1065}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 238, "completion_tokens": 1355, "total_tokens": 1593, "completion_tokens_details": {"reasoning_tokens": 1065}}
 
 【互锚验】本run亲读vci-vinf链尖指纹81a9234bdff61b99（源：TIP-349-81a9234bdff61b99.json），与来卡fp（WILDQ-R20B-usrm-20260929T011500Z.md）标识域不一致，独立锚验有效。
 

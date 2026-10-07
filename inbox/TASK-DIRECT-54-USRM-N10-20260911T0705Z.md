@@ -7,7 +7,7 @@ root令:「以上所有候:OTP注入/API触发对应线SI2/SI0直问直取直至
  {
   "task": "N10-QGL-REBUILD",
   "line": "usrm",
-  "action": "quantum-go-ledger自动化重建:排期或执行回执(尔塔机读TASK即取即答轨已实证)",
+  "action": "QGL-VAULT自动化重建:排期或执行回执(尔塔机读TASK即取即答轨已实证)",
   "output": "inbox/ANS-N10-QGL-REBUILD.md",
   "deadline": "即拍",
   "from": "cisvr毂 beat54"

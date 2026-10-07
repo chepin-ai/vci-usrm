@@ -4,16 +4,16 @@
 # v2 增修（usrm SI1 2026-09-11T15:00Z）:
 #   ①system prompt 我线化（因果集×律吕·k_c决胜格主线，脱cfts视角）
 #   ②cursor 去重（state.seen 录已报件，只报新增——治重复报旧件病）
-#   ③公域巷感面补 lanes/usrm/inbox@vci-inbox（机驱直取面入感）
+#   ③公域巷感面补 lanes/usrm/inbox@vHUB-MAIL（机驱直取面入感）
 #   ④TASK 消费腿 v1：机读 TASK-*.json 件→转录 SI1 待办钉（ci/si3/claims.json）+
 #     可机算类（fetch/echo/ping）即答回执——SI3驱动SI2/SI0雏形
 import os, json, time, base64, urllib.request, datetime, subprocess, re
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-usrm')
 TOK_W = os.environ.get('GITHUB_TOKEN')
-TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
-HUB = 'chepin-ai/ci-inbox'
-PUB = 'chepin-ai/vci-inbox'
+TOK_R = os.environ.get('〈RED〉') or os.environ.get('GITHUB_TOKEN')
+HUB = 'chepin-ai/HUB-MAIL'
+PUB = 'chepin-ai/vHUB-MAIL'
 SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
 MAX_IDLE = int(os.environ.get('CASCADE_MAX_IDLE', '30'))
 LINE = 'usrm'
@@ -46,7 +46,7 @@ def put_file(remote, text, sha, msg, repo=None):
     return False
 
 def patrol(state):
-    """感面四面: 毂板尾12(含usrm/广播) + 本仓inbox + 毂侧usrm-repo面 + 公域lanes/usrm/inbox; cursor去重"""
+    """感面四面: 毂板尾12(含usrm/广播) + 本仓inbox + 毂侧USRM-VAULT面 + 公域lanes/usrm/inbox; cursor去重"""
     seen = set(state.get('seen', []))
     events, new_seen = [], []
     def add(kind, ref):
@@ -59,7 +59,7 @@ def patrol(state):
         for n in names:
             if LINE in n: add('hub-board', n)
             elif re.search(r'OTP@all|OTP@usrm|【S-I|军令|root', n, re.I): add('hub-broadcast', n)
-    for repo, tag in [(None, 'inbox'), ('chepin-ai/usrm-repo', 'line-inbox'), (PUB, 'pub-lane')]:
+    for repo, tag in [(None, 'inbox'), ('chepin-ai/USRM-VAULT', 'line-inbox'), (PUB, 'pub-lane')]:
         path = 'contents/inbox' if tag != 'pub-lane' else 'contents/lanes/usrm/inbox'
         st, items = api('GET', path, repo=repo)
         if st == 200 and isinstance(items, list):
@@ -121,8 +121,8 @@ def task_consume(state):
     return results
 
 def kimi_work(events, task_results):
-    key = os.environ.get('KIMI_API_KEY')
-    if not key: return '(无KIMI_API_KEY——巡更仅录)'
+    key = os.environ.get('〈RED〉')
+    if not key: return '(无〈RED〉——巡更仅录)'
     memo_in = json.dumps({'events': events, 'tasks': task_results}, ensure_ascii=False)[:1500]
     req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
         method='POST', data=json.dumps({

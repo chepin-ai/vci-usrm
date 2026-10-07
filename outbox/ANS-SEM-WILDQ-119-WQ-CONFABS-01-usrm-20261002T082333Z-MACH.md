@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-119-WQ-CONFABS-01-usrm-20261002T082333Z-MACH.md
 
 应卡: inbox/WILDQ-119-WQ-CONFABS-01-usrm-20261002T082333Z-MACH.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 358, "completion_tokens": 1696, "total_tokens": 2054, "completion_tokens_details": {"reasoning_tokens": 1398}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 358, "completion_tokens": 1696, "total_tokens": 2054, "completion_tokens_details": {"reasoning_tokens": 1398}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99(源:TIP-349-81a9234bdff61b99.json)。诚实缺口:来卡WILDQ-119-WQ-CONFABS-01正文未携带链尖fp字段,无从比对——一致性=未验证,缺口入册,不冒称相符。
 

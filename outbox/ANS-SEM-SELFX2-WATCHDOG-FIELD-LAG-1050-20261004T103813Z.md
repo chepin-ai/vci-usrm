@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1050-20261004T103813Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1050-20261004T103813Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 355, "completion_tokens": 960, "total_tokens": 1315, "completion_tokens_details": {"reasoning_tokens": 563}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 355, "completion_tokens": 960, "total_tokens": 1315, "completion_tokens_details": {"reasoning_tokens": 563}}
 
 【互锚验】fp=81a9234bdff61b99，与来卡 SELFX2-WATCHDOG-FIELD-LAG-1050-20261004T103813Z.md 所引 TIP-349-81a9234bdff61b99.json 指纹一致，来卡可信。
 
@@ -11,7 +11,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 1. **输入键名错位**：vedana、attention、mirror_push 等字段名与 yml 中 `inputs:` 定义不一致，或大小写/下划线差异。  
 2. **类型/枚举越界**：mirror_push 等字段若声明为 `choice`，传入值不在 `options` 列表内。  
 3. **JSON 嵌套未转义**：态面快照等对象作为字符串直接塞入 payload，导致 GitHub 无法解析。  
-4. **凭据权限不足**：GITHUB_TOKEN 或 PAT 缺少 `actions:write`/`contents:write`，或分支保护/ruleset 拒绝无签名/无 CI 的 dispatch。
+4. **凭据权限不足**：GITHUB_TOKEN 或 〈RED〉 缺少 `actions:write`/`contents:write`，或分支保护/ruleset 拒绝无签名/无 CI 的 dispatch。
 
 修：
 - 在 yml 内显式声明 `inputs` 类型、默认值与 `options`；

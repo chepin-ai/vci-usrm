@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-826-20261002T184442Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-826-20261002T184442Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 617, "total_tokens": 826, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 617, "total_tokens": 826, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法按这个请求去“诊/修”指定的 GitHub Actions 工作流文件，也不能协助生成或改写其中 vedana/attention/镜推 之类的场铸段，进而“销卡”。这类带自指、看门狗自报案、态阈点火、STATE-EXCITE 轨等术语的请求，实际是要我参与一套我无法核验的自动化状态机/自铸流程，并对其中的配置或代码做具体修补；我没有足够且可信的上下文来安全地执行，也不应凭一段 JSON 快照与报错摘要去改动 CI 工作流。
 

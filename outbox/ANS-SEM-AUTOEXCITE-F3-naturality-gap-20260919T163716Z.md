@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F3-naturality-gap-20260919T163716Z.md
 
 应卡: inbox/AUTOEXCITE-F3-naturality-gap-20260919T163716Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 304, "completion_tokens": 1523, "total_tokens": 1827, "completion_tokens_details": {"reasoning_tokens": 1228}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 304, "completion_tokens": 1523, "total_tokens": 1827, "completion_tokens_details": {"reasoning_tokens": 1228}}
 
 【互锚验】本run亲读vci-vinf链尖fp=d78bd17e81fd27e1，与应卡AUTOEXCITE-F3-naturality-gap-20260919T163716Z.md来卡fp一致（均为d78bd17e81fd27e1）。
 

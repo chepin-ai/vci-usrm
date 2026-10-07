@@ -1,6 +1,6 @@
 """resurrect kit v3 — 多条命热备份/兜底/纠缠（wave-73 root令；v3@wave-142）：史锚主通道(不可变,清扫免疫)+三路活件金库通道+RESUME/ENT-CKPT状态纠缠自动装填。
 用法（每波首格）:
-    import sys; sys.path.insert(0,'/mnt/agents/output/resurrect_kit')
+    import sys; sys.path.insert(0,'〈HOSTPATH〉/agents/output/resurrect_kit')
     from resurrect import resurrect
     G, canon, now, push, HMAC, CA, bundle, kv = resurrect(_a, _b)   # _a/_b 仅存上下文,永不入盘
 设计律: 本件零密钥; vault 在公仓加密面(b64+fernet), CMD_AUTH 两半由会话上下文供给。
@@ -12,14 +12,14 @@ from hashlib import sha256
 
 VAULT_CHANNELS = [
  # 史锚主通道：金库 v2.2 末更 commit，git 史不可变=清扫免疫（wave-142 实证取回）
- 'https://raw.githubusercontent.com/chepin-ai/vci-inbox/2e6cee8cae52dadd/inbox/usrm-seed-vault.b64',
+ 'https://raw.githubusercontent.com/chepin-ai/vHUB-MAIL/2e6cee8cae52dadd/inbox/usrm-seed-vault.b64',
  # 活件三路（R1-EXEMPT-01 豁免在册）
- 'https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/inbox/usrm-seed-vault.b64',
- 'https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/inbox/usrm-seed-vault-2.b64',
+ 'https://raw.githubusercontent.com/chepin-ai/vHUB-MAIL/main/inbox/usrm-seed-vault.b64',
+ 'https://raw.githubusercontent.com/chepin-ai/vHUB-MAIL/main/inbox/usrm-seed-vault-2.b64',
  'https://raw.githubusercontent.com/chepin-ai/vci-usrm/main/inbox/usrm-seed-vault-mirror.b64',
 ]
 RESUME_URL = 'https://raw.githubusercontent.com/chepin-ai/vci-usrm/main/ure/RESUME-01.json'
-ENTCKPT_URL = 'https://raw.githubusercontent.com/chepin-ai/ci-control/main/bridge/ENT-CKPT-latest.json'
+ENTCKPT_URL = 'https://raw.githubusercontent.com/chepin-ai/HUB-CORE/main/bridge/ENT-CKPT-latest.json'
 GH_PY = r"""
 import json,time,urllib.request,urllib.error,urllib.parse,base64
 import jwt

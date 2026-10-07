@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-131-WQ-MESH-ID-01-usrm-20261004T232023Z.md
 
 应卡: inbox/WILDQ-131-WQ-MESH-ID-01-usrm-20261004T232023Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 218, "completion_tokens": 1231, "total_tokens": 1449, "completion_tokens_details": {"reasoning_tokens": 965}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 218, "completion_tokens": 1231, "total_tokens": 1449, "completion_tokens_details": {"reasoning_tokens": 965}}
 
 【互锚验】链尖 fp=81a9234bdff61b99（源：TIP-349-81a9234bdff61b99.json）；来卡未另附fp，按vci-vinf链尖核验一致。
 

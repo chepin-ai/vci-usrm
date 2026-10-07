@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SEAT-SURGE-USRM-01.md
 
 应卡: inbox/SEAT-SURGE-USRM-01.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 215, "completion_tokens": 1982, "total_tokens": 2197, "completion_tokens_details": {"reasoning_tokens": 1711}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 215, "completion_tokens": 1982, "total_tokens": 2197, "completion_tokens_details": {"reasoning_tokens": 1711}}
 
 【互锚验】本run亲读vci-vinf链尖fp=95abcaba47090297（源：TIP-347-95abcaba47090297.json）；来卡未报fp，暂无法比判，按链尖fp入册。
 

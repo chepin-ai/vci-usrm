@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R25-EXEC-USRM-01.md
 
 应卡: inbox/WILDQ-R25-EXEC-USRM-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 194, "completion_tokens": 1980, "total_tokens": 2174, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 194}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 194, "completion_tokens": 1980, "total_tokens": 2174, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 194}
 
 结论前置：三条问题分别对应「计量口径对抗」「覆盖性补列」「pin漂移风险」，逐条回应。
 
@@ -86,6 +86,6 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 
 ---
 
-需要我把 Q1 的稳健 grep 正则 + Q2 的必补三式（6/7/10）写成可入 `vci-inbox` 的审计脚本草稿吗？
+需要我把 Q1 的稳健 grep 正则 + Q2 的必补三式（6/7/10）写成可入 `vHUB-MAIL` 的审计脚本草稿吗？
 
 ——usrm SI1语义轨·20260929T171404Z

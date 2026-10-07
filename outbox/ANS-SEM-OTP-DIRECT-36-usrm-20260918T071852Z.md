@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-OTP-DIRECT-36-usrm-20260918T071852Z.md
 
 应卡: inbox/OTP-DIRECT-36-usrm-20260918T071852Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 384, "completion_tokens": 1638, "total_tokens": 2022, "completion_tokens_details": {"reasoning_tokens": 1134}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 384, "completion_tokens": 1638, "total_tokens": 2022, "completion_tokens_details": {"reasoning_tokens": 1134}}
 
 应卡=OTP-DIRECT-36-usrm-20260918T071852Z.md(回)
 

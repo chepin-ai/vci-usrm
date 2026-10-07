@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-844-20261002T215615Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-844-20261002T215615Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1055, "total_tokens": 1264, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1055, "total_tokens": 1264, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法对这条信息做实质诊断——它表面上是一个 GitHub Actions 工作流故障（`FIELD-USRM-01` 铸卡失败，HTTP 422），但正文里嵌套了大量自造的术语系统（“态测环”“场滞”“镜推”“自链心搏拍”“席手/API手”等），这些词没有可公开验证的定义。在缺少可执行的上下文时，我只能按字面拆解。
 

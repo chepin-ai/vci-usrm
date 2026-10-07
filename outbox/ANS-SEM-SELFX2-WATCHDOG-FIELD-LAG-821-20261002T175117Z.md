@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-821-20261002T175117Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-821-20261002T175117Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 966, "total_tokens": 1175, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 966, "total_tokens": 1175, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 你的排队消息里混进了一段乱码/臆造字段，不能按它去改工作流。下面是能落地的诊断与修复路径：
 
@@ -47,7 +47,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 | 422 + `"event_type is required"` | `event_type` 空/未定义 | 写死常量或校验后才调用 |
 | 422 + schema 报错 | `client_payload` 传了字符串化 JSON | 直接传对象，`github-script` 会自己序列化 |
 | 422 只在某些 gen 出现 | 上游 step 输出为空 → payload 缺字段 | 加 `if:` 守卫 + 空值 fail-fast |
-| 只在 L2 环检时挂 | 用了 L2 token 但无 dispatches 权限 | 换 `GITHUB_TOKEN` 或给 PAT `repo` scope |
+| 只在 L2 环检时挂 | 用了 L2 token 但无 dispatches 权限 | 换 `GITHUB_TOKEN` 或给 〈RED〉 `repo` scope |
 
 ## 建议的修法（模板）
 

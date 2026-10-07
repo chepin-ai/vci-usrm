@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1208-20261005T144254Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1208-20261005T144254Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2139, "total_tokens": 2351, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2139, "total_tokens": 2351, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法直接访问或修改你的仓库文件（包括 `.github/workflows/state-excite-usrm-02.yml`），也无法读取 `si/frontier-queue.jsonl` 的实际内容——我没有工具通道接到你的 GitHub / 本地文件系统。
 

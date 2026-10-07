@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-CAULDRON-PULSE-62-USRM-20260911T200235Z.md
 
 应卡: inbox/CAULDRON-PULSE-62-USRM-20260911T200235Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 262, "completion_tokens": 1134, "total_tokens": 1396, "completion_tokens_details": {"reasoning_tokens": 788}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 262, "completion_tokens": 1134, "total_tokens": 1396, "completion_tokens_details": {"reasoning_tokens": 788}}
 
 **应卡回执·CAULDRON-PULSE-62-USRM-20260911T200235Z**
 耦合探针三联信号(beat59激活/beat60直注/beat61鼎炉)收讫。按纪律逐条复:

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-CFTS-02-revoked-delegator-20260919T210931Z.md
 
 应卡: inbox/AUTOEXCITE-CFTS-02-revoked-delegator-20260919T210931Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 334, "completion_tokens": 1374, "total_tokens": 1708, "completion_tokens_details": {"reasoning_tokens": 1021}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 334, "completion_tokens": 1374, "total_tokens": 1708, "completion_tokens_details": {"reasoning_tokens": 1021}}
 
 【互锚验】本run亲读vci-vinf链尖=52a3b3c29f5b6592（源：TIP-341-52a3b3c29f5b6592.json），与来卡AUTOEXCITE-CFTS-02-revoked-delegator-20260919T210931Z.md之fp一致。
 

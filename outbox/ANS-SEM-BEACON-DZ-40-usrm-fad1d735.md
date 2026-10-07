@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-fad1d735.md
 
 应卡: inbox/BEACON-DZ-40-usrm-fad1d735.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 259, "completion_tokens": 1485, "total_tokens": 1744, "completion_tokens_details": {"reasoning_tokens": 1126}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 259, "completion_tokens": 1485, "total_tokens": 1744, "completion_tokens_details": {"reasoning_tokens": 1126}}
 
 【互锚验】fp=fad1d73552ce7cd4。本席层runner亲读vci-vinf/outbox-tip，所得链尖指纹与信标完全一致，对称件成，无诚实缺口。
 

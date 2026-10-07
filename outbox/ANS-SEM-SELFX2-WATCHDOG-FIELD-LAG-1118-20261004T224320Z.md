@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1118-20261004T224320Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1118-20261004T224320Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 440, "completion_tokens": 1340, "total_tokens": 1780, "completion_tokens_details": {"reasoning_tokens": 887}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 440, "completion_tokens": 1340, "total_tokens": 1780, "completion_tokens_details": {"reasoning_tokens": 887}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=**81a9234bdff61b99**（源：TIP-349-81a9234bdff61b99.json）。来卡（SELFX2-WATCHDOG-FIELD-LAG-1118）未附fp，一致性**不可判定**——此缺口如实入册，不臆断一致。
 

@@ -51,8 +51,8 @@
 {"line": "usrm", "ts": "20260920T060323Z", "sem_handled": ["PAIR-USRM-GLOBAL-ACT-132.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T064536Z", "sem_handled": ["OTP-DIRECT-48-usrm-20260920T064520Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T065202Z", "sem_handled": ["BEACON-DZ-40-usrm-545cb831.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20260920T074159Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "64bbf970de67", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code"}}
-{"line": "usrm", "ts": "20260920T124344Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "f507a1087bd5", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code-highspeed"}}
+{"line": "usrm", "ts": "20260920T074159Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "64bbf970de67", "engine": "〈RED〉", "model": "kimi-k2.7-code"}}
+{"line": "usrm", "ts": "20260920T124344Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "f507a1087bd5", "engine": "〈RED〉", "model": "kimi-k2.7-code-highspeed"}}
 {"line": "usrm", "ts": "20260920T125216Z", "sem_handled": ["AUTOEXCITE-F1-naturality-selfans-20260920T125144Z.md", "SELFX2-F1-naturality-selfans-20260920T124917Z.md"], "sem_answers": 2}
 {"line": "usrm", "ts": "20260920T130355Z", "sem_handled": ["AUTOEXCITE-F2-k800-verdict-prep-20260920T130322Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260920T130426Z", "sem_handled": ["SELFX2-F2-k800-verdict-prep-20260920T130418Z.md"], "sem_answers": 1}
@@ -79,14 +79,14 @@
 {"line": "usrm", "ts": "20260923T123636Z", "sem_handled": ["BEACON-DZ-40-usrm-81a9234b.md", "SELFX2-reflect-20260923T123623Z-20260923T123623Z.md"], "sem_answers": 2}
 {"line": "usrm", "ts": "20260924T142626Z", "sem_handled": ["WILD-SURGE-R1-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260924T143205Z", "sem_handled": ["WILD-SURGE-R2-USRM-01.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20260924T150252Z", "sem_handled": ["QUAFU-CONSULT-USRM-01.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20260924T150252Z", "sem_handled": ["〈RED〉-CONSULT-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260924T153744Z", "sem_handled": ["WILD-SURGE-R3-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260924T180654Z", "sem_handled": ["WILD-SURGE-R4-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260925T170140Z", "sem_handled": ["WILD-SURGE-R5-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260925T172029Z", "sem_handled": ["WILD-SURGE-R6-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260926T044324Z", "sem_handled": ["PULSE-USRM-20260926T043613Z.md", "PULSE-USRM-20260926T044312Z.md"], "sem_answers": 2}
-{"line": "usrm", "ts": "20260927T044923Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "2fa4ba193a39", "engine": "KIMI_API_KEY", "model": "kimi-k3"}}
-{"line": "usrm", "ts": "20260927T045815Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "c5a8f21fd0e8", "engine": "KIMI_API_KEY", "model": "kimi-k2.6"}}
+{"line": "usrm", "ts": "20260927T044923Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "2fa4ba193a39", "engine": "〈RED〉", "model": "kimi-k3"}}
+{"line": "usrm", "ts": "20260927T045815Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "c5a8f21fd0e8", "engine": "〈RED〉", "model": "kimi-k2.6"}}
 {"line": "usrm", "ts": "20260927T131051Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20260927T131043Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260927T191619Z", "sem_handled": ["SELFX2-reflect-20260927T191605Z-20260927T191605Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260927T213143Z", "sem_handled": ["PULSE-USRM-20260927T213135Z.md"], "sem_answers": 1}
@@ -96,14 +96,14 @@
 {"line": "usrm", "ts": "20260928T215756Z", "sem_handled": ["SELFX2-reflect-20260928T215746Z-20260928T215746Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T010025Z", "sem_handled": ["WILDQ-R20-usrm-20260929T010000Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T010746Z", "sem_handled": ["WILDQ-R20B-usrm-20260929T011500Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20260929T020857Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "fe4ecd780f32", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code-highspeed"}}
+{"line": "usrm", "ts": "20260929T020857Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "fe4ecd780f32", "engine": "〈RED〉", "model": "kimi-k2.7-code-highspeed"}}
 {"line": "usrm", "ts": "20260929T051621Z", "sem_handled": ["PULSE-USRM-20260929T051610Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T101142Z", "sem_handled": ["WILDQ-R23-CGICE-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T102728Z", "sem_handled": ["WILDQ-R24-SAT-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T163558Z", "sem_handled": ["SELFX2-reflect-20260929T163425Z-20260929T163425Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T171404Z", "sem_handled": ["WILDQ-R25-EXEC-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260929T200503Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20260929T200453Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20260930T010131Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "a085687b9930", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20260930T010131Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "a085687b9930", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20260930T014015Z", "sem_handled": ["WILDQ-R26B-FIX-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260930T063108Z", "sem_handled": ["PULSE-USRM-20260930T063055Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20260930T065549Z", "sem_handled": ["WILDQ-FED-USRM-01-20260930T0715Z.md"], "sem_answers": 1}
@@ -112,15 +112,15 @@
 {"line": "usrm", "ts": "20260930T190542Z", "sem_handled": ["SELFX2-reflect-20260930T190531Z-20260930T190531Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261001T011502Z", "sem_handled": ["SELFX2-reflect-20261001T011451Z-20261001T011451Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261001T013045Z", "sem_handled": ["PULSE-USRM-20261001T013016Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261001T072117Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "5ff480599fa5", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261001T072117Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "5ff480599fa5", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261001T074234Z", "sem_handled": ["PULSE-USRM-20261001T074225Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261001T133850Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261001T133758Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261001T151809Z", "sem_handled": ["PULSE-USRM-20261001T151757Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261001T190905Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261001T190856Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261002T011214Z", "sem_handled": ["SELFX2-reflect-20261002T011205Z-20261002T011205Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261002T072107Z", "sem_handled": ["SELFX2-reflect-20261002T072057Z-20261002T072057Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261002T082347Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "1d776b9e433b", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
-{"line": "usrm", "ts": "20261002T084518Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "5671902404dc", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261002T082347Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "1d776b9e433b", "engine": "〈RED〉", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261002T084518Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "5671902404dc", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261002T104833Z", "sem_handled": ["WILDQ-BOOTLOOPS-USRM-01-20261001T0000Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261002T105622Z", "sem_handled": ["CONSENSUS-CONF-BOOTLOOPS-01-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261002T110053Z", "sem_handled": ["CONSENSUS-CONF-BOOTLOOPS-02-usrm.md"], "sem_answers": 1}
@@ -293,9 +293,9 @@
 {"line": "usrm", "ts": "20261004T213848Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1112-20261004T213834Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261004T214942Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1113-20261004T214932Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261004T220035Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1114-20261004T220026Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261004T221058Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "8197d3608715", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code"}}
-{"line": "usrm", "ts": "20261004T221724Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "0e8e948b404d", "engine": "KIMI_API_KEY", "model": "kimi-k3"}}
-{"line": "usrm", "ts": "20261004T222746Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "7ee483576a80", "engine": "KIMI_API_KEY", "model": "kimi-k2.7-code-highspeed"}}
+{"line": "usrm", "ts": "20261004T221058Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "8197d3608715", "engine": "〈RED〉", "model": "kimi-k2.7-code"}}
+{"line": "usrm", "ts": "20261004T221724Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "0e8e948b404d", "engine": "〈RED〉", "model": "kimi-k3"}}
+{"line": "usrm", "ts": "20261004T222746Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "7ee483576a80", "engine": "〈RED〉", "model": "kimi-k2.7-code-highspeed"}}
 {"line": "usrm", "ts": "20261004T223225Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1117-20261004T223217Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261004T224338Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1118-20261004T224320Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261004T224832Z", "sem_handled": ["WILDQ-119-WQ-CONFABS-01-usrm-20261002T082333Z-MACH.md", "WILDQ-122R-WQ-BIND-01-usrm-20261004T224345Z.md"], "sem_answers": 2}
@@ -363,4 +363,3 @@
 {"line": "usrm", "ts": "20261007T073918Z", "sem_handled": ["PULSE-USRM-20261007T073905Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261007T131901Z", "sem_handled": ["VERDICT-USRM-01.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261007T144350Z", "sem_handled": ["WILDQ-UNIFY-01-usrm.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261007T153257Z", "sem_handled": ["WILDQ-MONOTONE-01-usrm.md"], "sem_answers": 1}

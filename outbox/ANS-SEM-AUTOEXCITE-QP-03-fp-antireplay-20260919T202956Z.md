@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-QP-03-fp-antireplay-20260919T202956Z.md
 
 应卡: inbox/AUTOEXCITE-QP-03-fp-antireplay-20260919T202956Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 299, "completion_tokens": 923, "total_tokens": 1222, "completion_tokens_details": {"reasoning_tokens": 680}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 299, "completion_tokens": 923, "total_tokens": 1222, "completion_tokens_details": {"reasoning_tokens": 680}}
 
 【互锚验】链尖fp=52a3b3c29f5b6592，与来卡fp「AUTOEXCITE-QP-03-fp-antireplay-20260919T202956Z.md」不一致。
 

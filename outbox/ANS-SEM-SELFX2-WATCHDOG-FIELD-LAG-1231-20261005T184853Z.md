@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1231-20261005T184853Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1231-20261005T184853Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2064, "total_tokens": 2276, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2064, "total_tokens": 2276, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我先按你给的线索把这个“场铸失败”当作一次真实的 CI/工作流故障来诊。下面先给出**最可能的 422 根因**与**定位路径**，再给出**可直接改的 YAML 补丁**和**销卡/验证方案**。
 
@@ -56,11 +56,11 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 ```yaml
 - name: vedana (with 422 diagnostics)
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     set -euo pipefail
     RESP=$(curl -sS -w "\n%{http_code}" -X POST \
-      -H "Authorization: Bearer $GH_TOKEN" \
+      -H "Authorization: Bearer $〈RED〉" \
       -H "Accept: application/vnd.github+json" \
       https://api.github.com/repos/${{ github.repository }}/dispatches \
       -d '{"event_type":"state-excite-usrm-02","client_payload":{"gen":1231}}')

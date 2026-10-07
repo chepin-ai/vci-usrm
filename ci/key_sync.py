@@ -4,14 +4,14 @@ import os, json, base64, time, urllib.request, urllib.error, subprocess, datetim
 from nacl.public import PublicKey, SealedBox
 from nacl.encoding import Base64Encoder
 
-PAT = os.environ.get('SYNC_PAT') or os.environ.get('AI_FULL_PAT')
-DEFAULT_TARGETS = ['vci-aiq','vci-qlv','vci-lgt','vci-qfa','vci-qtlv','vci-control']
-DEFAULT_SET = ['BLUEQUBIT_GMAIL','BLUEQUBIT_PW','CF_ACCOUNT_API_TOKEN','CF_ACCOUNT_ID',
- 'CF_R2_USER_ACCESS_KEY_ID','CF_R2_USER_SECRET_ACCESS_KEY','CI_OPS_LINE_KEY','FORMAFLOW_CMD_AUTH',
- 'GH_TOTP_SEED','IBMID_PW','IBM_TOTP_SECRET','KAGGLE_KEY','KAGGLE_USERNAME','OTP_PHONE','QUAFU_KEY',
+〈RED〉 = os.environ.get('SYNC_PAT') or os.environ.get('〈RED〉')
+DEFAULT_TARGETS = ['vci-aiq','vci-qlv','vci-lgt','vci-qfa','vci-qtlv','vHUB-CORE']
+DEFAULT_SET = ['〈RED〉_GMAIL','〈RED〉','CF_ACCOUNT_API_TOKEN','〈RED〉',
+ '〈RED〉','〈RED〉','〈RED〉','〈RED〉',
+ 'GH_〈RED〉','〈RED〉','IBM_〈RED〉','〈RED〉','〈RED〉','〈OTP·RED〉','〈RED〉_KEY',
  'SUPABASE_PUBLISHABLE_KEY','SUPABASE_SECRET_KEY','SUPABASE_URL',
- 'LONGCAT_AK_N1','LONGCAT_AK_N2','LONGCAT_AK_N3','LONGCAT_AK_N4','LONGCAT_AK_N5',
- 'LONGCAT_SK_N4','LONGCAT_SK_N5','NODE_SK_N4','NODE_SK_N5','MS_TOTP_SEED_V2']
+ '〈RED〉1','〈RED〉2','〈RED〉3','〈RED〉4','〈RED〉5',
+ '〈RED〉4','〈RED〉5','NODE_SK_N4','NODE_SK_N5','MS_〈RED〉_V2']
 
 csv = lambda s: [x.strip() for x in (s or '').split(',') if x.strip()]
 TARGETS = csv(os.environ.get('IN_TARGETS')) or DEFAULT_TARGETS
@@ -23,7 +23,7 @@ def gh(path, method='GET', data=None):
     for i in range(5):
         req = urllib.request.Request('https://api.github.com'+path,
             data=json.dumps(data).encode() if data is not None else None,
-            headers={'Authorization':f'token {PAT}','Accept':'application/vnd.github+json',
+            headers={'Authorization':f'token {〈RED〉}','Accept':'application/vnd.github+json',
                      'Content-Type':'application/json'}, method=method)
         try:
             r = urllib.request.urlopen(req, timeout=30)

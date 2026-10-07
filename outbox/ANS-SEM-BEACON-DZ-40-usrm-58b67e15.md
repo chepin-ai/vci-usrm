@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-58b67e15.md
 
 应卡: inbox/BEACON-DZ-40-usrm-58b67e15.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 254, "completion_tokens": 4442, "total_tokens": 4696, "completion_tokens_details": {"reasoning_tokens": 4046}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 254, "completion_tokens": 4442, "total_tokens": 4696, "completion_tokens_details": {"reasoning_tokens": 4046}}
 
 【互锚验】本run亲读vci-vinf/outbox-tip，所见fp=95abcaba47090297，源文件TIP-347-95abcaba47090297.json。来卡大周天移动信标ch0拍49报fp=58b67e15790f304d。两fp起首不同、哈希空间无碰撞，判定为不一致；对称件未闭合，诚实缺口已按负结果入册。
 

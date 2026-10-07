@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R5-naturality-compensation-20260919T191921Z.md
 
 应卡: inbox/AUTOEXCITE-R5-naturality-compensation-20260919T191921Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 315, "completion_tokens": 2772, "total_tokens": 3087, "completion_tokens_details": {"reasoning_tokens": 2436}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 315, "completion_tokens": 2772, "total_tokens": 3087, "completion_tokens_details": {"reasoning_tokens": 2436}}
 
 【互锚验】本run读取vci-vinf链尖fp=52a3b3c29f5b6592（源：TIP-341-52a3b3c29f5b6592.json）；来卡未显式携带fp，无法断言一致/不一致，仅按自链心搏来源照录。
 

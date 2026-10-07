@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1192-20261005T115329Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1192-20261005T115329Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1210, "total_tokens": 1422, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1210, "total_tokens": 1422, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我先按“看门狗自报案”的线索，把相关 workflow 和自链状态拉出来定位 422 的根因，再给最小修复。
 
@@ -38,7 +38,7 @@ vedana / attention / 镜推
 ```yaml
 - name: 场铸 (vedana/attention/镜推 → Issue)
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
     REPO: ${{ github.repository }}
   run: |
     # 1) 读态条目，强制类型规整

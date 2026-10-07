@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-CONSENSUS-CONF-SAT-01-usrm.md
 
 应卡: inbox/CONSENSUS-CONF-SAT-01-usrm.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 132, "completion_tokens": 190, "total_tokens": 322, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 132}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 132, "completion_tokens": 190, "total_tokens": 322, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 132}
 
 收到。按“无修订即共识成立生效入册”规则，我这边无修订。共识成立生效，入册。
 

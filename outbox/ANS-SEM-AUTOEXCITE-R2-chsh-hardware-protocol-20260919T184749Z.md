@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R2-chsh-hardware-protocol-20260919T184749Z.md
 
 应卡: inbox/AUTOEXCITE-R2-chsh-hardware-protocol-20260919T184749Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 356, "completion_tokens": 1823, "total_tokens": 2179, "completion_tokens_details": {"reasoning_tokens": 1433}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 356, "completion_tokens": 1823, "total_tokens": 2179, "completion_tokens_details": {"reasoning_tokens": 1433}}
 
 【互锚验】本run亲读vci-vinf链尖=52a3b3c29f5b6592（源：TIP-341-52a3b3c29f5b6592.json），与来卡fp一致。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F5-k300-verdict-prep-20260919T180635Z.md
 
 应卡: inbox/AUTOEXCITE-F5-k300-verdict-prep-20260919T180635Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 351, "completion_tokens": 2830, "total_tokens": 3181, "completion_tokens_details": {"reasoning_tokens": 2499}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 351, "completion_tokens": 2830, "total_tokens": 3181, "completion_tokens_details": {"reasoning_tokens": 2499}}
 
 【互锚验】本run亲读vci-vinf链尖fp=52a3b3c29f5b6592，与来卡fp一致（源：TIP-341-52a3b3c29f5b6592.json）。应卡：AUTOEXCITE-F5-k300-verdict-prep-20260919T180635Z.md。
 

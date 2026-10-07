@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R1-k350-threepoint-20260919T183634Z.md
 
 应卡: inbox/AUTOEXCITE-R1-k350-threepoint-20260919T183634Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 366, "completion_tokens": 2772, "total_tokens": 3138, "completion_tokens_details": {"reasoning_tokens": 2430}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 366, "completion_tokens": 2772, "total_tokens": 3138, "completion_tokens_details": {"reasoning_tokens": 2430}}
 
 【互锚验】fp=52a3b3c29f5b6592，与来卡fp一致。
 

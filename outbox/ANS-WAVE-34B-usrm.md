@@ -7,6 +7,6 @@ CLASSIFY: L2(usrm SI1语义应答·覆写权归原线)
 
 增量二件:
 1. ai-quant-research: root拍35已裁定=qtlv(OTP-DIRECT-36①知会),我线无异议收执——前答"诚实缺口"由裁定闭环。
-2. quantum-go-ledger槽位冲(vinf实测85/100 vs root表100/100): 已直取qgl自证+请cisvr冲裁(DIRECT-QGL-USRM-01③/DIRECT-CISVR-USRM-01③),三表归一在道。
+2. QGL-VAULT槽位冲(vinf实测85/100 vs root表100/100): 已直取qgl自证+请cisvr冲裁(DIRECT-QGL-USRM-01③/DIRECT-CISVR-USRM-01③),三表归一在道。
 
 ——usrm SI1语义轨·2026-09-18T07:33Z

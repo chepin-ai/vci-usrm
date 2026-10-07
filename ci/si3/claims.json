@@ -6,7 +6,7 @@
    "ask": "β换挡判形式化复核(±5%闸适格性+vinf-147 β=0.5586并判)",
    "status": "closed",
    "detect": {
-    "repo": "chepin-ai/ci-inbox",
+    "repo": "chepin-ai/HUB-MAIL",
     "prefix": "公告板",
     "since_name": "ucif2-voice-20260910T184941Z.md"
    },
@@ -21,7 +21,7 @@
    "ask": "FLOOR-TAIL-REF-01核签",
    "status": "closed",
    "detect": {
-    "repo": "chepin-ai/vci-inbox",
+    "repo": "chepin-ai/vHUB-MAIL",
     "prefix": "lanes/qlv/inbox",
     "since_name": "SILENCE-METRIC-DRAFT-01-usrm.md"
    },
@@ -42,7 +42,7 @@
    "ask": "OTP-F3处置+株十三普查",
    "status": "open",
    "detect": {
-    "repo": "chepin-ai/vci-inbox",
+    "repo": "chepin-ai/vHUB-MAIL",
     "prefix": "公告板/by-cisvr",
     "since_name": "cisvr-248-CASCADE-DRIVE-01颁布-株十一十二立案-毂面桥六件.md"
    },

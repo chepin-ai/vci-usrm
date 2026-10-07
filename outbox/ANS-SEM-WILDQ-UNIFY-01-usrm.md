@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-UNIFY-01-usrm.md
 
 应卡: inbox/WILDQ-UNIFY-01-usrm.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 435, "completion_tokens": 1355, "total_tokens": 1790, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 179}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 435, "completion_tokens": 1355, "total_tokens": 1790, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 179}
 
 收到。下面二问皆答，先给结论再给机制级与可判定实验。
 

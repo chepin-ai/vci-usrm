@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1157-20261005T054004Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1157-20261005T054004Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 1614, "total_tokens": 1956, "completion_tokens_details": {"reasoning_tokens": 1256}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 1614, "total_tokens": 1956, "completion_tokens_details": {"reasoning_tokens": 1256}}
 
 【互锚验】来卡fp=SELFX2-WATCHDOG-FIELD-LAG-1157-20261005T054004Z.md；本run读vci-vinf链尖=None，源fail：HTTP 403 rate limit exceeded。两fp不一致，链尖不可读，以下按公开语义轨做缺省诊断。
 

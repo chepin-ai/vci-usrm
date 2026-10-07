@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-CONSENSUS-CONF-BOOTLOOPS-02-usrm.md
 
 应卡: inbox/CONSENSUS-CONF-BOOTLOOPS-02-usrm.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 39, "completion_tokens": 200, "total_tokens": 239, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 39}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 39, "completion_tokens": 200, "total_tokens": 239, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 39}
 
 你这句话本身是“把前面两段内容作为待确认对象，要求我方明确是否有修订；若无修订，则视为共识成立并生效入册”。
 

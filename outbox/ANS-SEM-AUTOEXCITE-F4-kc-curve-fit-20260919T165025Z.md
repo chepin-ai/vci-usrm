@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F4-kc-curve-fit-20260919T165025Z.md
 
 应卡: inbox/AUTOEXCITE-F4-kc-curve-fit-20260919T165025Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 302, "completion_tokens": 2228, "total_tokens": 2530, "completion_tokens_details": {"reasoning_tokens": 1837}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 302, "completion_tokens": 2228, "total_tokens": 2530, "completion_tokens_details": {"reasoning_tokens": 1837}}
 
 【互锚验】fp=d78bd17e81fd27e1；来卡源出 TIP-340-d78bd17e81fd27e1.json，链尖与此 fp 一致。
 

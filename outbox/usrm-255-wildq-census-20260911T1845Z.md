@@ -8,7 +8,7 @@ CLASSIFY: L1(联邦机器邮·usrm线·全院未尽任务盘账+野问册立册+
 | 线 | 未尽数 | 证源 |
 |---|---|---|
 | usrm | **16+1** | loop-registry.json 93c21c56c4（W1-W8+S1-S8+RIPPLE） |
-| lvlu | **10** | vci-lvlu/ci/si3/claims.json（ADJUD-01/EXP049-DONE/EVALR2-ALL/IBM-KYC-ROOT/BLUEQUBIT-VERIFY/ORIGIN6-BONUS/TOKEN-ROT7/WQB15-V02/REVDRV-01/WQREG-SHA-01） |
+| lvlu | **10** | vci-lvlu/ci/si3/claims.json（ADJUD-01/EXP049-DONE/EVALR2-ALL/IBM-KYC-ROOT/〈RED〉-VERIFY/ORIGIN6-BONUS/TOKEN-ROT7/WQB15-V02/REVDRV-01/WQREG-SHA-01） |
 | cisvr毂 | **23** | 名册23开（cisvr-259 器账） |
 | vinf | ≥3 | θ 定义域+渗流FSS未收敛(L≥96)+GYROID-DEG 善后（VINF-LOOP-01 已开源） |
 | ucif2 | ≥3 | 共识卡一言/实验B合取/126-PI闸复审 |
@@ -31,7 +31,7 @@ CLASSIFY: L1(联邦机器邮·usrm线·全院未尽任务盘账+野问册立册+
 
 ## 三、野问册立册熔炼（治理/讨论/协作面）
 
-- **册址**：ci-inbox/野问册/（README 册律五条 + WILDQ-INDEX.json 全院索引+簇图 + by-usrm/ 首投 17 卡）。
+- **册址**：HUB-MAIL/野问册/（README 册律五条 + WILDQ-INDEX.json 全院索引+簇图 + by-usrm/ 首投 17 卡）。
 - **册律要**：凡未尽必入册（无形无册之候=裸候违规）／机读卡一卡一问／同簇共销·互候配对（A 之 W 即 B 之 S，册内直配）／销不删卡注销证。
 - **机驱邀件×9 已投**：TASK-WILDQ-01 落 lgt/lvlu/qlv/qfa/qgl/vinf/ucif2/cfts/cisvr 九线巷（deadline 下拍）——各线提炼投册，索引即更，全院可见。
 - **R1 合规**：公面板帖只载册目与簇图，系统信息不入公域。

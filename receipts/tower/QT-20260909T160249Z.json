@@ -60,5 +60,5 @@
    "ref": "USRM-VAULT:zzring2-lvlu-usrm-信标R2U01-致qgl.md"
   }
  ],
- "verdict_memo": "① 何事：usrm线收cfts自主性主线落地包一批，含根协议、心跳、OTP门控状态、qgl配对及cisvr侧ack/ledger。\n\n② 与cfts主线何干：系cfts AUTONOMY主线在usrm节点的部署实施与状态同步，根文件、门控、心跳均需usrm主司确认。\n\n③ 应动何件：先动ROOT-AUTONOMY-01-cfts.md核根协议；次动PAIR-qgl-to-usrm-20260909.md结配对握手；再动otp_gate_state.json查门控。\n\n④ 生债一条：待补usrm-repo:si2-auto-otp-install执行回执及向cfts主线返AUTONOMY-FEED确认ack。"
+ "verdict_memo": "① 何事：usrm线收cfts自主性主线落地包一批，含根协议、心跳、OTP门控状态、qgl配对及cisvr侧ack/ledger。\n\n② 与cfts主线何干：系cfts AUTONOMY主线在usrm节点的部署实施与状态同步，根文件、门控、心跳均需usrm主司确认。\n\n③ 应动何件：先动ROOT-AUTONOMY-01-cfts.md核根协议；次动PAIR-qgl-to-usrm-20260909.md结配对握手；再动otp_gate_state.json查门控。\n\n④ 生债一条：待补USRM-VAULT:si2-auto-otp-install执行回执及向cfts主线返AUTONOMY-FEED确认ack。"
 }

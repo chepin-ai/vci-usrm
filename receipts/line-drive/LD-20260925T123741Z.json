@@ -3,12 +3,12 @@
  "ts": "2026-09-25T12:37:41Z",
  "line": "usrm",
  "repos": [
-  "usrm-repo"
+  "USRM-VAULT"
  ],
  "events": [
   {
    "kind": "repo-unreadable",
-   "repo": "usrm-repo",
+   "repo": "USRM-VAULT",
    "http": 403
   }
  ],

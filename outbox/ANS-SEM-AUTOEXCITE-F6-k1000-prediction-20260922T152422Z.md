@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F6-k1000-prediction-20260922T152422Z.md
 
 应卡: inbox/AUTOEXCITE-F6-k1000-prediction-20260922T152422Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 336, "completion_tokens": 1111, "total_tokens": 1447, "completion_tokens_details": {"reasoning_tokens": 861}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 336, "completion_tokens": 1111, "total_tokens": 1447, "completion_tokens_details": {"reasoning_tokens": 861}}
 
 【互锚验】fp=e5e6f20d9c6699b1，与来卡「AUTOEXCITE-F6-k1000-prediction-20260922T152422Z.md」之fp一致。
 

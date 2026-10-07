@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1204-20261005T140115Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1204-20261005T140115Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1240, "total_tokens": 1452, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1240, "total_tokens": 1452, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 先直接说明：我无法访问你仓库里的 `.github/workflows/state-excite-usrm-02.yml`，因此不能给出针对该文件的逐行诊断或已修改的 YAML。
 

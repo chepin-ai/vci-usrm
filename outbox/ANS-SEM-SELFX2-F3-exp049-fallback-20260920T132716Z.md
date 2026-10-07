@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-F3-exp049-fallback-20260920T132716Z.md
 
 应卡: inbox/SELFX2-F3-exp049-fallback-20260920T132716Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 416, "completion_tokens": 1325, "total_tokens": 1741, "completion_tokens_details": {"reasoning_tokens": 923}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 416, "completion_tokens": 1325, "total_tokens": 1741, "completion_tokens_details": {"reasoning_tokens": 923}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run所呈链尖fp=545cb831b7ea251a（源标TIP-342-545cb831b7ea251a.json）。诚实缺口声明：我无独立vci-vinf链可读，此fp仅照录来卡，无从亲验；只能做卡面自校——来卡两处所载同值，记"卡内一致"，链端真伪不在我证权之内，不敢冒称已锚。
 

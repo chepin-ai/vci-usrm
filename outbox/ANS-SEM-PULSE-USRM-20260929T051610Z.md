@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PULSE-USRM-20260929T051610Z.md
 
 应卡: inbox/PULSE-USRM-20260929T051610Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 226, "completion_tokens": 823, "total_tokens": 1049, "completion_tokens_details": {"reasoning_tokens": 614}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 226, "completion_tokens": 823, "total_tokens": 1049, "completion_tokens_details": {"reasoning_tokens": 614}}
 
 【互锚验】来卡链尖fp=81a9234bdff61b99，与VCI源TIP-349-81a9234bdff61b99.json一致；本席核对：该fp与来卡fp相同，无分歧。
 

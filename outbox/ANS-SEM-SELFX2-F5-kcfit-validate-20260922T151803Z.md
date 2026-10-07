@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-F5-kcfit-validate-20260922T151803Z.md
 
 应卡: inbox/SELFX2-F5-kcfit-validate-20260922T151803Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 400, "completion_tokens": 1349, "total_tokens": 1749, "completion_tokens_details": {"reasoning_tokens": 1056}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 400, "completion_tokens": 1349, "total_tokens": 1749, "completion_tokens_details": {"reasoning_tokens": 1056}}
 
 【互锚验】链尖 fp=e5e6f20d9c6699b1；与来卡 SELFX2-F5-kcfit-validate-20260922T151803Z.md 所载 fp 一致（同源 TIP-343-e5e6f20d9c6699b1.json），可继续。
 

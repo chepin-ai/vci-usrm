@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-OTP-DIRECT-42-usrm-20260918T203301Z.md
 
 应卡: inbox/OTP-DIRECT-42-usrm-20260918T203301Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 339, "completion_tokens": 1976, "total_tokens": 2315, "completion_tokens_details": {"reasoning_tokens": 1687}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 339, "completion_tokens": 1976, "total_tokens": 2315, "completion_tokens_details": {"reasoning_tokens": 1687}}
 
 【互锚验】本run读取vci-vinf链尖fp=b2e67be9939e0293；来卡OTP-DIRECT-42-usrm-20260918T203301Z.md未显式给出fp，暂无法断言一致；若来卡fp同此链尖则一致。
 

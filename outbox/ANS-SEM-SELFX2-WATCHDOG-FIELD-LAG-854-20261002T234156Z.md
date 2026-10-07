@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-854-20261002T234156Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-854-20261002T234156Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1787, "total_tokens": 1996, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1787, "total_tokens": 1996, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我来诊断这个自铸造失败问题。先读取相关文件。  
 我无法直接访问你的仓库文件、GitHub Actions 运行日志或 `statex` 内部态面，但你给出的信号已经足够定位到一类非常具体的问题：**422 Unprocessable Entity 出现在 field-USRM-01 自模型场本拍铸造阶段，且发生在 vedana/attention/镜推 场铸段**。这通常不是网络或权限问题，而是**请求体结构在语义/模式层面不可被接收端处理**。

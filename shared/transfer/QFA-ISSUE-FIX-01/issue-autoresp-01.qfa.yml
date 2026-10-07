@@ -21,9 +21,9 @@ env:
   ISSUE_BODY: ${{ github.event.issue.body }}
   COMMENT_BODY: ${{ github.event.comment.body }}
   AUTHOR: ${{ github.event.sender.login }}
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
-  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+  〈RED〉: ${{ secrets.GITHUB_TOKEN }}
+  〈RED〉: ${{ secrets.〈RED〉 }}
+  〈RED〉: ${{ secrets.〈RED〉 }}
 jobs:
   autoresp:
     runs-on: ubuntu-latest
@@ -42,7 +42,7 @@ jobs:
           IBODY=os.environ.get('ISSUE_BODY','')[:1500]
           CBODY=os.environ.get('COMMENT_BODY','')[:1500]
           AUTHOR=os.environ.get('AUTHOR','')
-          GH=os.environ.get('GH_TOKEN','')
+          GH=os.environ.get('〈RED〉','')
           # 环闸: bot作者/自身答痕 不答(防风暴防自环);workflow_dispatch测试道(操作员驱动)豁免作者闸
           TESTN=os.environ.get('TEST_ISSUE_N','').strip()
           if TESTN:
@@ -63,7 +63,7 @@ jobs:
           q='【issue #'+N+' '+TITLE+'】'+NL+q
           
           def llm(question):
-              key=os.environ.get('KIMI_API_KEY','')
+              key=os.environ.get('〈RED〉','')
               if key:
                   base='https://api.moonshot.cn/v1'
                   H={'Authorization':'Bearer '+key,'Content-Type':'application/json'}
@@ -82,7 +82,7 @@ jobs:
                           return {'engine':'KIMI','model':model,'usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
                       except Exception as e:
                           print(json.dumps({'llm_fail':model,'err':str(e)[:60]})); continue
-              dk=os.environ.get('DEEPSEEK_API_KEY','')
+              dk=os.environ.get('〈RED〉','')
               if dk:
                   try:
                       body={'model':'deepseek-chat','messages':[{'role':'user','content':question[:1500]}]}

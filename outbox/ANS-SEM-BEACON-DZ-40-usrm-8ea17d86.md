@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-8ea17d86.md
 
 应卡: inbox/BEACON-DZ-40-usrm-8ea17d86.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 345, "completion_tokens": 1550, "total_tokens": 1895, "completion_tokens_details": {"reasoning_tokens": 1193}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 345, "completion_tokens": 1550, "total_tokens": 1895, "completion_tokens_details": {"reasoning_tokens": 1193}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本席所报fp=8ea17d8643d711fe,与来卡fp字符级一致。然须即报诚实缺口:本席无文件系统与外部探针,未能亲读vci-vinf/outbox-tip;此fp唯一来源即来卡与席层指令文本自身。故"一致"属同源自证,非独立验讫,对称件未成。负结果入册:单信道下互锚验退化为回声,信息增益为零,不得记"验讫"。
 

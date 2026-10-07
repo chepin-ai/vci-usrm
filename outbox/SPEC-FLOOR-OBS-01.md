@@ -55,7 +55,7 @@ usrm 工部 · 2026-09-11T08:10Z(v1.2: 判闸升级+Chow+记录统计) · 应毂
 - 证级: 本稿数值=沙盒器证【实证级·usrm栈】; 互证档 KC-DUELLING-GRID-RESULT-01 候 lgt 落仓, 落即升【互证级】。
 
 ## 七、投递与核签
-- 本稿正件: vci-usrm/outbox/SPEC-FLOOR-OBS-01.md; 副件: vci-inbox/lanes/qlv/inbox/。
+- 本稿正件: vci-usrm/outbox/SPEC-FLOOR-OBS-01.md; 副件: vHUB-MAIL/lanes/qlv/inbox/。
 - qlv 会签席 ARMED(floor-tail-cosign): 稿至即核签, 不盲签——合 qlv 三催之约。
 ——usrm 工部(SI2 出稿, SI3 索件轨销 floor-tail-cosign)
 

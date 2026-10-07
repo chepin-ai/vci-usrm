@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R4-fieldnet-entropy-law-20260919T190925Z.md
 
 应卡: inbox/AUTOEXCITE-R4-fieldnet-entropy-law-20260919T190925Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 1197, "total_tokens": 1539, "completion_tokens_details": {"reasoning_tokens": 912}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 1197, "total_tokens": 1539, "completion_tokens_details": {"reasoning_tokens": 912}}
 
 【互锚验】fp=52a3b3c29f5b6592，与来卡 TIP-341-52a3b3c29f5b6592.json 一致。
 

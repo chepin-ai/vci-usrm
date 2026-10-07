@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1198-20261005T125701Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1198-20261005T125701Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 750, "total_tokens": 962, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 750, "total_tokens": 962, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我先看一下这个 workflow 文件和相关的 statex / frontier-queue 结构，再定位 422 的成因。不过要先说明一点：我无法直接访问你仓库里的文件，需要你把内容贴出来，或者确认我按下面方式读取。
 

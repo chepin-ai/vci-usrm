@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-YONEDA-EXPORT-PROBE-01-QFA-USRM-20260912T231511Z.md
 
 应卡: inbox/YONEDA-EXPORT-PROBE-01-QFA-USRM-20260912T231511Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 122, "completion_tokens": 930, "total_tokens": 1052, "completion_tokens_details": {"reasoning_tokens": 719}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 122, "completion_tokens": 930, "total_tokens": 1052, "completion_tokens_details": {"reasoning_tokens": 719}}
 
 卡：YONEDA-EXPORT-PROBE-01-QFA-USRM-20260912T231511Z.md。机层：收执即答。席层：下拍未至，正文之问未显，**故不能**。
 

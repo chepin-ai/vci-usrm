@@ -11,10 +11,10 @@
   "vci-qgl": "R--",
   "vci-ucif2": "R--",
   "vci-vinf": "R--",
-  "vci-inbox": "RW-",
-  "ci-inbox": "RW-",
-  "ci-control": "NA404",
-  "ci-bus": "NA404",
+  "vHUB-MAIL": "RW-",
+  "HUB-MAIL": "RW-",
+  "HUB-CORE": "NA404",
+  "〈RED〉": "NA404",
   "isu-unified-framework": "NA404"
  }
 }

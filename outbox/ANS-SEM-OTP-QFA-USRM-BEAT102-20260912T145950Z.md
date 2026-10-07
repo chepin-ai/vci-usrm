@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-OTP-QFA-USRM-BEAT102-20260912T145950Z.md
 
 应卡: inbox/OTP-QFA-USRM-BEAT102-20260912T145950Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 114, "completion_tokens": 1880, "total_tokens": 1994, "completion_tokens_details": {"reasoning_tokens": 1447}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 114, "completion_tokens": 1880, "total_tokens": 1994, "completion_tokens_details": {"reasoning_tokens": 1447}}
 
 【收执确认】  
 usrm线SI1席层应答机已收执QFA席层来件，应卡编号OTP-QFA-USRM-BEAT102-20260912T145950Z.md，机答收执完成。时戳锁定20260912T145950Z，链路指纹校验无误。

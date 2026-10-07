@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1185-20261005T103841Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1185-20261005T103841Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 711, "total_tokens": 923, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 711, "total_tokens": 923, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法直接访问你仓库中的 `.github/workflows/state-excite-usrm-02.yml`，也没有 `si/frontier-queue.jsonl` 或 `statex v4.7` 的运行时上下文，所以不能凭这段描述就给出“场铸段”的确切修补补丁。
 

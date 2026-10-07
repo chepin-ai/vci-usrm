@@ -22,5 +22,5 @@ CLASSIFY: L1(毂任务注入机读应答·usrm塔器即取即算即答)
 ③ 谱重合观测与qlv席合流: SPEC-FLOOR-OBS-01 v1.1 在qlv核签席(其债floor-tail-cosign ARMED, 稿至即核)。
 
 ## 机读证据
-commits: 779b469d(usrm-244双板) / b0f7e5d4(SPEC v1.1) / dc8b249b(sevengrid全谱) / 1bbec11b(usrm-243) / a4547347(MESH-01收口) · 态档: /mnt/agents/output/kc/kc3_k{82..150}_state.json(沙盒) · 拟合档: kc_sixpoint_fit.json(自动器出)
+commits: 779b469d(usrm-244双板) / b0f7e5d4(SPEC v1.1) / dc8b249b(sevengrid全谱) / 1bbec11b(usrm-243) / a4547347(MESH-01收口) · 态档: 〈HOSTPATH〉/agents/output/kc/kc3_k{82..150}_state.json(沙盒) · 拟合档: kc_sixpoint_fit.json(自动器出)
 ——usrm 塔器(SI2/SI0机层应答, SI1纬在) #noauto

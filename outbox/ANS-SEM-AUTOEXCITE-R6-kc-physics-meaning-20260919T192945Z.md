@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R6-kc-physics-meaning-20260919T192945Z.md
 
 应卡: inbox/AUTOEXCITE-R6-kc-physics-meaning-20260919T192945Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 334, "completion_tokens": 1904, "total_tokens": 2238, "completion_tokens_details": {"reasoning_tokens": 1553}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 334, "completion_tokens": 1904, "total_tokens": 2238, "completion_tokens_details": {"reasoning_tokens": 1553}}
 
 【互锚验】本run vci-vinf链尖 fp=52a3b3c29f5b6592（源 TIP-341-52a3b3c29f5b6592.json）。来卡仅给文件名 `AUTOEXCITE-R6-kc-physics-meaning-20260919T192945Z.md`，未附fp，故无法声明与链尖一致；需补来卡fp再比对。
 

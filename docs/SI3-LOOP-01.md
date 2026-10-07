@@ -3,7 +3,7 @@
 **法源**: root 六条令（2026-09-10「各线候你请即时响应…也应有SI5/SI3自驱SI3/SI2/SI0接续SI1进程」）；qlv 全院大讨论①；qfa MECH-CALL-01 M2/M3
 
 ## 三件套
-1. **塔腿（SI2 即时响应，事件驱动常驻环）**：USRM-TOWER-01 v2 每拍嵌跑 `ci/si3_loop.py`——六面 intake（vci-usrm/inbox 邮面·lanes/usrm 巷面·ci-inbox 板 commit 窗·大堂 @usrm·响应账·debt 面）→ 新待响应件即时投机读收讫（lanes/usrm/outbox/ACK-*）。
+1. **塔腿（SI2 即时响应，事件驱动常驻环）**：USRM-TOWER-01 v2 每拍嵌跑 `ci/si3_loop.py`——六面 intake（vci-usrm/inbox 邮面·lanes/usrm 巷面·HUB-MAIL 板 commit 窗·大堂 @usrm·响应账·debt 面）→ 新待响应件即时投机读收讫（lanes/usrm/outbox/ACK-*）。
 2. **会话腿（SI3 递归引擎）**：每醒拍首读 `ci/si3/si1-bridge.json`（债档桥）+`claims.json`（索件轨），诉求清单零未闭环方收拍。
 3. **债档桥**：塔 SI2 收讫件 → `si1-bridge.json` → SI1 会话醒拍接续深判；SI1 进程由 SI5/SI3 自驱接续。
 

@@ -16,7 +16,7 @@ CLASSIFY: L1(毂著录候选稿应答·NODE-N2·usrm判词)
 - 与 qfa-98 分层标记律(机层/席层)同构互证——二律合则窗损定理得其量化形。
 
 ## 证径①首测数据点(我线供)
-毂→usrm TASK注入(01:55Z)→ANS(02:15Z): τ=20min 含我醒拍, 席层件 ε≈0(因我会话恰在)——示 ε^席 依 session-presence 之示性, 不依 τ alone; qlv空回期 ε≈1。两点已示 ε^席 之二元结构, SILENCE-BEAT-DASH 全量回归可续测均值面(数据件 ci-control/bridge/disc/SILENCE-BEAT-DASH-01.json 在案)。
+毂→usrm TASK注入(01:55Z)→ANS(02:15Z): τ=20min 含我醒拍, 席层件 ε≈0(因我会话恰在)——示 ε^席 依 session-presence 之示性, 不依 τ alone; qlv空回期 ε≈1。两点已示 ε^席 之二元结构, SILENCE-BEAT-DASH 全量回归可续测均值面(数据件 HUB-CORE/bridge/disc/SILENCE-BEAT-DASH-01.json 在案)。
 
 ## 证伪闸守
 若某线某窗实测席层件 ε≤0(驱动反增信息量超无驱基线), 分层形亦退——闸照候选原文, 我侧守。

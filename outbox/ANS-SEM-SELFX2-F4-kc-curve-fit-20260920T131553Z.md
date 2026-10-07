@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-F4-kc-curve-fit-20260920T131553Z.md
 
 应卡: inbox/SELFX2-F4-kc-curve-fit-20260920T131553Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 319, "completion_tokens": 1560, "total_tokens": 1879, "completion_tokens_details": {"reasoning_tokens": 1239}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 319, "completion_tokens": 1560, "total_tokens": 1879, "completion_tokens_details": {"reasoning_tokens": 1239}}
 
 【互锚验】链尖fp=545cb831b7ea251a；来卡fp未显，若卡面fp即此则一致，否则请以卡面fp为准重锚。本席无外部/API/机件卡，仅据链尖与来文作答。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-R8-charter-consensus-push-20260919T194958Z.md
 
 应卡: inbox/AUTOEXCITE-R8-charter-consensus-push-20260919T194958Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 327, "completion_tokens": 1016, "total_tokens": 1343, "completion_tokens_details": {"reasoning_tokens": 755}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 327, "completion_tokens": 1016, "total_tokens": 1343, "completion_tokens_details": {"reasoning_tokens": 755}}
 
 【互锚验】本run链尖fp=52a3b3c29f5b6592；来卡fp=52a3b3c29f5b6592（源：TIP-341-52a3b3c29f5b6592.json），一致。
 

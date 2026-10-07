@@ -11,22 +11,22 @@
    "login": "chepin-qi",
    "qfa_push": false
   },
-  "AI_FULL_PAT": {
+  "〈RED〉": {
    "user_status": 403,
    "login": null,
    "qfa_push": false
   },
-  "LINE_PAT": {
+  "〈RED〉": {
    "user_status": 403,
    "login": null,
    "qfa_push": false
   },
-  "CI_OPS_LINE_KEY": {
+  "〈RED〉": {
    "user_status": 403,
    "login": null,
    "qfa_push": false
   },
-  "FORMAFLOW_CMD_AUTH": {
+  "〈RED〉": {
    "user_status": 401,
    "login": null,
    "qfa_push": false

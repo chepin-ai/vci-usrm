@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PULSE-USRM-20261005T010955Z.md
 
 应卡: inbox/PULSE-USRM-20261005T010955Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 226, "completion_tokens": 886, "total_tokens": 1112, "completion_tokens_details": {"reasoning_tokens": 656}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 226, "completion_tokens": 886, "total_tokens": 1112, "completion_tokens_details": {"reasoning_tokens": 656}}
 
 【互锚验】来卡fp=81a9234bdff61b99，本run亲读链尖fp=81a9234bdff61b99，二者一致；账seq 895→902，Δ=7。
 

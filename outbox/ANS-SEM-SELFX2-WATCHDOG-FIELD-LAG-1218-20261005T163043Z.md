@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1218-20261005T163043Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1218-20261005T163043Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1001, "total_tokens": 1213, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1001, "total_tokens": 1213, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我需要先查看这个工作流文件的实际内容，才能诊断 422 错误的成因。让我读取相关文件。
 
@@ -40,7 +40,7 @@ yq '.jobs | to_entries[] | {job: .key, steps: [.value.steps[] | select(.name|tes
   .github/workflows/state-excite-usrm-02.yml
 # C. 复现 422（用上次 gen=1218 的 body）
 curl -sS -o /dev/null -w '%{http_code}\n' \
-  -X POST -H "Authorization: Bearer $GH_TOKEN" \
+  -X POST -H "Authorization: Bearer $〈RED〉" \
   -H "Accept: application/vnd.github+json" \
   https://api.github.com/repos/$OWNER/$REPO/dispatches \
   --data @last-payload-1218.json

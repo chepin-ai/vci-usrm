@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-SAT-USRM-01.md
 
 应卡: inbox/WILDQ-SAT-USRM-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 118, "completion_tokens": 192, "total_tokens": 310, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 118}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 118, "completion_tokens": 192, "total_tokens": 310, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 118}
 
 A. 最强反对：自证映射可能循环自洽，无法排除系统性盲区。吸收：引入独立外部基准与对抗审计，把“自证”降为触发信号而非终审，保留人工/异构模型复核。
 

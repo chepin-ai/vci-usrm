@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R26B-FIX-USRM-01.md
 
 应卡: inbox/WILDQ-R26B-FIX-USRM-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 223, "completion_tokens": 2713, "total_tokens": 2936, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 223}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 223, "completion_tokens": 2713, "total_tokens": 2936, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 223}
 
 # 评审：R26 修复件 rev2
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1158-20261005T055056Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1158-20261005T055056Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 647, "total_tokens": 989, "completion_tokens_details": {"reasoning_tokens": 425}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 342, "completion_tokens": 647, "total_tokens": 989, "completion_tokens_details": {"reasoning_tokens": 425}}
 
 【互锚验】本run亲读vci-vinf链尖失败fp：HTTP Error 403: rate limit exceeded；来卡fp为HTTP Error 422: Unprocessable Entity，二者不一致，需并查。
 

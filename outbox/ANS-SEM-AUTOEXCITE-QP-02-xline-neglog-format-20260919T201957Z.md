@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-QP-02-xline-neglog-format-20260919T201957Z.md
 
 应卡: inbox/AUTOEXCITE-QP-02-xline-neglog-format-20260919T201957Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 306, "completion_tokens": 1556, "total_tokens": 1862, "completion_tokens_details": {"reasoning_tokens": 1225}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 306, "completion_tokens": 1556, "total_tokens": 1862, "completion_tokens_details": {"reasoning_tokens": 1225}}
 
 【互锚验】本run链尖fp=52a3b3c29f5b6592，源TIP-341-52a3b3c29f5b6592.json；与来卡fp一致（同链尖）。
 

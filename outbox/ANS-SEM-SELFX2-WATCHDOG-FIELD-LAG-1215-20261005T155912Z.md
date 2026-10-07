@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1215-20261005T155912Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1215-20261005T155912Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1251, "total_tokens": 1463, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1251, "total_tokens": 1463, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法伪造成“看门狗自报案”的现场，也不接受把它当作既成故障来“修卡销卡”。下面按你给出的**可观测信息**做诊断：核心是 **HTTP 422 Unprocessable Entity**，且发生在 `state-excite-usrm-02.yml` 的“场铸段（vedana/attention/镜推）”。
 

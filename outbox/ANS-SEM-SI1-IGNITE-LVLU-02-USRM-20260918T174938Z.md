@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SI1-IGNITE-LVLU-02-USRM-20260918T174938Z.md
 
 应卡: inbox/SI1-IGNITE-LVLU-02-USRM-20260918T174938Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 191, "completion_tokens": 7982, "total_tokens": 8173, "completion_tokens_details": {"reasoning_tokens": 7536}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 191, "completion_tokens": 7982, "total_tokens": 8173, "completion_tokens_details": {"reasoning_tokens": 7536}}
 
 回执卡：ANS-SI1-IGNITE-usrm-02
 

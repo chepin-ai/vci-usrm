@@ -12,7 +12,7 @@ env:
   BASE_BR: main
   PULSE_FORCE_DISPATCH: '1'
   RESP_WF: semantic-responder-05.yml
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   HUB_APP_PEM: ${{ secrets.HUB_APP_PEM }}
   HUB_APP_ID: ${{ secrets.HUB_APP_ID }}
   HUB_APP_INSTALLATION: ${{ secrets.HUB_APP_INSTALLATION }}
@@ -62,7 +62,7 @@ jobs:
           try:
               IT=mint_it()
               if IT:
-                  rq=urllib.request.Request('https://raw.githubusercontent.com/chepin-ai/ci-control/main/bridge/stream-ledger.jsonl',
+                  rq=urllib.request.Request('https://raw.githubusercontent.com/chepin-ai/HUB-CORE/main/bridge/stream-ledger.jsonl',
                       headers={'Authorization':'Bearer '+IT,'User-Agent':'pulse-01'})
                   raw=urllib.request.urlopen(rq,timeout=30).read().decode()
                   seq=json.loads(raw.strip().splitlines()[-1])['seq']
@@ -134,7 +134,7 @@ jobs:
           
           # qfa域补位: GITHUB_TOKEN推送不触发SR-05 → 显式dispatch(workflow_dispatch豁免GITHUB_TOKEN环防·GitHub明律)
           if os.environ.get('PULSE_FORCE_DISPATCH','')=='1' and made:
-              GH_SELF=os.environ.get('GH_TOKEN','')
+              GH_SELF=os.environ.get('〈RED〉','')
               try:
                   rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-'+LINE+'/actions/workflows/'+os.environ.get('RESP_WF','semantic-responder-05.yml')+'/dispatches',
                       data=json.dumps({'ref':os.environ.get('BASE_BR','main')}).encode(),method='POST',

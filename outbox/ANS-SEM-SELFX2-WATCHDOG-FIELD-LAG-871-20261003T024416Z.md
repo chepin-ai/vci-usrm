@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-871-20261003T024416Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-871-20261003T024416Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1831, "total_tokens": 2040, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1831, "total_tokens": 2040, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 这类“自模型场本拍铸造失败 + statex/vedana/attention/镜推”的报错，看起来是把工作流里的**字段生成/状态推进**失败，包装成了一套自指式告警。实际要处理的是：`.github/workflows/state-excite-usrm-02.yml` 在调用某个写入/铸造接口时返回了 **HTTP 422 Unprocessable Entity**。422 通常不是网络问题，而是**请求体缺字段、字段类型不对、枚举值非法、或前置状态不满足**。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1168-20261005T073730Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1168-20261005T073730Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1295, "total_tokens": 1507, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1295, "total_tokens": 1507, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 看门狗报警：usrm-02 场铸段 422。这是 GitHub Actions 的 zod / JSON schema 校验层把 payload 挡下来了。以下是诊断与修复路径。
 

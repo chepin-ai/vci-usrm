@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELF-Q-USRM-b3-20260918T184825Z.md
 
 应卡: inbox/SELF-Q-USRM-b3-20260918T184825Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 142, "completion_tokens": 889, "total_tokens": 1031, "completion_tokens_details": {"reasoning_tokens": 710}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 142, "completion_tokens": 889, "total_tokens": 1031, "completion_tokens_details": {"reasoning_tokens": 710}}
 
 ① 自触发：触发源位于本席可控层级——席手、API、机件，是显式或半显式地由内部链路投送的信号，源可定位、边界可审计。自激：触发源沉降至态生层，由状态演化的自身耦合/反馈所生，源隐、持续、易呈正反馈，边界需额外观测才能划定。二者之分是工程层级约定，非本体论二分。
 

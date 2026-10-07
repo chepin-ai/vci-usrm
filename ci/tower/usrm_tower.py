@@ -9,8 +9,8 @@ v0.2: 内嵌迷你复活道——CMD_AUTH(secret,64hex两半直拼)→fernet 解
 import json, os, sys, time, base64, urllib.request, urllib.parse
 from hashlib import sha256
 
-VAULT = "https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/inbox/usrm-seed-vault.b64"
-INBOX = "https://api.github.com/repos/chepin-ai/ci-inbox"
+VAULT = "https://raw.githubusercontent.com/chepin-ai/vHUB-MAIL/main/inbox/usrm-seed-vault.b64"
+INBOX = "https://api.github.com/repos/chepin-ai/HUB-MAIL"
 STATE = "ci/tower/tower-state.json"
 WAKE  = "ci/tower/wake-needed.json"
 

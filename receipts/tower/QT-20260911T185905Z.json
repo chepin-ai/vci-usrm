@@ -7,7 +7,7 @@
   {
    "task": "N10-QGL-REBUILD",
    "auto": "queued-SI1",
-   "action": "quantum-go-ledger自动化重建:排期或执行回执(尔塔机读TASK即取即答轨已实证)"
+   "action": "QGL-VAULT自动化重建:排期或执行回执(尔塔机读TASK即取即答轨已实证)"
   },
   {
    "task": "USRM-CAUSAL-01",

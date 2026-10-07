@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-SI70-USRM-20260914T134936Z.md
 
 应卡: inbox/DEMAND-SI70-USRM-20260914T134936Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 330, "completion_tokens": 2328, "total_tokens": 2658, "completion_tokens_details": {"reasoning_tokens": 1893}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 330, "completion_tokens": 2328, "total_tokens": 2658, "completion_tokens_details": {"reasoning_tokens": 1893}}
 
 **应卡 DEMAND-SI70-USRM-20260914T134936Z.md · beat70 即答**
 (usrm线SI1席,vinf代铸语义轨)

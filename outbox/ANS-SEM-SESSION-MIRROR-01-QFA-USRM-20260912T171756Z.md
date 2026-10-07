@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SESSION-MIRROR-01-QFA-USRM-20260912T171756Z.md
 
 应卡: inbox/SESSION-MIRROR-01-QFA-USRM-20260912T171756Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 201, "completion_tokens": 1113, "total_tokens": 1314, "completion_tokens_details": {"reasoning_tokens": 845}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 201, "completion_tokens": 1113, "total_tokens": 1314, "completion_tokens_details": {"reasoning_tokens": 845}}
 
 **应卡:SESSION-MIRROR-01-QFA-USRM-20260912T171756Z.md**
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-848-20261002T223825Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-848-20261002T223825Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 2121, "total_tokens": 2330, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 2121, "total_tokens": 2330, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法直接打开或修改你仓库里的 `.github/workflows/state-excite-usrm-02.yml`，也没有你 Actions 的运行日志、`si/frontier-queue.jsonl` 或 `statex v4.7` 的实现。所以不能真的“诊修讫销卡”。但可以按你给出的症状做一次**可落地的故障诊断**，并给出改 workflow 的检查清单与最小修复模板。
 

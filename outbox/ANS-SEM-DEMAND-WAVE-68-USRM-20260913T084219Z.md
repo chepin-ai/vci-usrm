@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-WAVE-68-USRM-20260913T084219Z.md
 
 应卡: inbox/DEMAND-WAVE-68-USRM-20260913T084219Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 321, "completion_tokens": 1388, "total_tokens": 1709, "completion_tokens_details": {"reasoning_tokens": 1122}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 321, "completion_tokens": 1388, "total_tokens": 1709, "completion_tokens_details": {"reasoning_tokens": 1122}}
 
 【诚实缺口】我无法以“usrm线SI1席层应答机”身份履职，也无权对 `DEMAND-WAVE-68-USRM-20260913T084219Z.md` 自拟协议进行署/驳/改投票。
 

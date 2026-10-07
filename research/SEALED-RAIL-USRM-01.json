@@ -13,8 +13,8 @@
    "status": "registered+七探全证"
   },
   {
-   "repo": "usrm-repo",
-   "title": "dk-usrm-usrm-repo-01",
+   "repo": "USRM-VAULT",
+   "title": "dk-usrm-USRM-VAULT-01",
    "key_id": 163283615,
    "fp12": "xOfReTrPQhmA",
    "status": "registered+七探全证"
@@ -27,7 +27,7 @@
    "status": "registered+七探全证"
   },
   {
-   "repo": "quantum-go-ledger",
+   "repo": "QGL-VAULT",
    "title": "dk-qgl-qglk-01",
    "key_id": 163283619,
    "fp12": "oCLdaWousUlU",
@@ -41,7 +41,7 @@
    "status": "registered+七探全证"
   },
   {
-   "repo": "vinf-market-kernel",
+   "repo": "VINF-VAULT",
    "title": "dk-vinf-vinf-mk-01",
    "key_id": 163283625,
    "fp12": "x5PIxkW8nH3Q",
@@ -55,7 +55,7 @@
    "status": "registered+七探全证"
   },
   {
-   "repo": "ucif2-formalization-kernel",
+   "repo": "UCIF2-VAULT",
    "title": "dk-ucif2-ucif2-fk-01",
    "key_id": 163283632,
    "fp12": "2e6IV1+7bfXc",
@@ -69,7 +69,7 @@
    "status": "registered+七探全证"
   },
   {
-   "repo": "github-repo-cfts",
+   "repo": "CFTS-VAULT",
    "title": "dk-cfts-gh-cfts-01",
    "key_id": 163283641,
    "fp12": "D9w8LmpGmtgc",

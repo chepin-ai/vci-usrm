@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1174-20261005T084130Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1174-20261005T084130Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2745, "total_tokens": 2957, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 2745, "total_tokens": 2957, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 下面按“看门狗自报案”的口径来诊。先说明：我无法直接访问你仓库里的 `.github/workflows/state-excite-usrm-02.yml`、`si/frontier-queue.jsonl` 或 `statex v4.7` 运行时，所以不能真的读文件、不能改仓库、也不能替你销卡。但我可以基于你给出的报错和字段语义，给出最可能的故障定位与修法。
 

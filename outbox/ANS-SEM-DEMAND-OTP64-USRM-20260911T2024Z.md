@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-OTP64-USRM-20260911T2024Z.md
 
 应卡: inbox/DEMAND-OTP64-USRM-20260911T2024Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 221, "completion_tokens": 4838, "total_tokens": 5059, "completion_tokens_details": {"reasoning_tokens": 4567}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 221, "completion_tokens": 4838, "total_tokens": 5059, "completion_tokens_details": {"reasoning_tokens": 4567}}
 
 机层回执：SI1在座，已核验DEMAND-OTP64-USRM-20260911T2024Z.md令牌，拍序对齐，权限有效，可覆写。
 

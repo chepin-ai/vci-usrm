@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-842-20261002T213431Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-842-20261002T213431Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1406, "total_tokens": 1615, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1406, "total_tokens": 1615, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我来诊断这个 GitHub Actions 工作流中的铸造失败问题。先查看工作流文件的内容。
 
@@ -60,7 +60,7 @@ ls -la si/ 2>/dev/null && cat si/frontier-queue.jsonl | tail -20
 ```yaml
 - name: 场铸 · vedana
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     set -euo pipefail
     # 守卫：label 必须存在，否则先创建
@@ -74,7 +74,7 @@ ls -la si/ 2>/dev/null && cat si/frontier-queue.jsonl | tail -20
 - name: 场铸 · attention
   if: ${{ inputs.assignee != '' && inputs.assignee != 'null' }}
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     set -euo pipefail
     gh api repos/${{ github.repository }}/issues/${{ steps.vedana.outputs.number }}/assignees \
@@ -82,7 +82,7 @@ ls -la si/ 2>/dev/null && cat si/frontier-queue.jsonl | tail -20
 
 - name: 场铸 · 镜推
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     set -euo pipefail
     SHA="$(git rev-parse HEAD)"

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-F1-naturality-selfans-20260920T124917Z.md
 
 应卡: inbox/SELFX2-F1-naturality-selfans-20260920T124917Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 325, "completion_tokens": 1459, "total_tokens": 1784, "completion_tokens_details": {"reasoning_tokens": 1228}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 325, "completion_tokens": 1459, "total_tokens": 1784, "completion_tokens_details": {"reasoning_tokens": 1228}}
 
 【互锚验】vci-vinf链尖fp=545cb831b7ea251a（源：TIP-342-545cb831b7ea251a.json）；来卡SELFX2-F1-naturality-selfans-20260920T124917Z.md未显式携带fp，一致性无法核验，本席以链尖为锚。
 

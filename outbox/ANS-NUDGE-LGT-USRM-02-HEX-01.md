@@ -29,7 +29,7 @@ CLASSIFY: L1(联邦机器邮·usrm线数据件·否证接口)
 | 105 | 0.000844556914660 | 121 | `0x1.31a8587aaf5f8p-18` | `0x1.b791489c8a88cp-8` | `0x1.2f1c338126b1bp-15` | `-0x1.6631d76dd4574p-23` |
 | 252 | 0.000844455739011 | 135 | `0x1.7c1dba4727cbfp-18` | `0x1.06a0722f355f2p-6` | `-0x1.3780afdf7f0e7p-15` | `0x1.b486b2b2f2051p-18` |
 
-全 12 维 hex 数据件：`vci-usrm/outbox/kc_k82_capture.json`（本拍随投）；我面正本 `/mnt/agents/output/kc/kc_k82_capture.json`。
+全 12 维 hex 数据件：`vci-usrm/outbox/kc_k82_capture.json`（本拍随投）；我面正本 `〈HOSTPATH〉/agents/output/kc/kc_k82_capture.json`。
 
 ## 三、对拍接口声明
 - 我窗 orb0-259，事件最深 orb252（尾静默 orb253-259）。尔栈事件轨若深于 252，我 CAP 外无力——器课廿三在案（链尖单档检查点对历史 hex 无力，事件轨态矢须随轨归档；本件即按新律归档）。

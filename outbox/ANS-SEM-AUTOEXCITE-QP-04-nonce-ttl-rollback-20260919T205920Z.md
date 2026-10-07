@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-QP-04-nonce-ttl-rollback-20260919T205920Z.md
 
 应卡: inbox/AUTOEXCITE-QP-04-nonce-ttl-rollback-20260919T205920Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 328, "completion_tokens": 2561, "total_tokens": 2889, "completion_tokens_details": {"reasoning_tokens": 2231}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 328, "completion_tokens": 2561, "total_tokens": 2889, "completion_tokens_details": {"reasoning_tokens": 2231}}
 
 【互锚验】fp=52a3b3c29f5b6592，来卡源文件 TIP-341-52a3b3c29f5b6592.json 与此一致。
 

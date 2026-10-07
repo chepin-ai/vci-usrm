@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-BOOTLOOPS-USRM-01-20261001T0000Z.md
 
 应卡: inbox/WILDQ-BOOTLOOPS-USRM-01-20261001T0000Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 54, "completion_tokens": 711, "total_tokens": 765, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 54}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 54, "completion_tokens": 711, "total_tokens": 765, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 54}
 
 结论：**可以作为 SI-Bench 首集的“诊断性子集/种子库”，但不宜直接当作完整 bench 主集。** 更稳妥的定位是：**Seed-0 / Pathologies-1**——先验证“能不能稳定复现这些毛病”，再决定是否扩容成正式评测维度。
 

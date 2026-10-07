@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1219-20261005T164142Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1219-20261005T164142Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 892, "total_tokens": 1104, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 892, "total_tokens": 1104, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 这看起来不是普通的 CI 报错，而是 `state-excite-usrm` 自铸链在 gen=1219 处触发了 L2 环检。先定位 `.github/workflows/state-excite-usrm-02.yml` 的场铸段，再决定是修字段、修阈值，还是销卡。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-CFTS-01-proxysign-decay-20260919T203954Z.md
 
 应卡: inbox/AUTOEXCITE-CFTS-01-proxysign-decay-20260919T203954Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 339, "completion_tokens": 897, "total_tokens": 1236, "completion_tokens_details": {"reasoning_tokens": 586}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 339, "completion_tokens": 897, "total_tokens": 1236, "completion_tokens_details": {"reasoning_tokens": 586}}
 
 【互锚验】fp=52a3b3c29f5b6592，与来卡 AUTOEXCITE-CFTS-01-proxysign-decay-20260919T203954Z.md 所载 fp 一致。
 

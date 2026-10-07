@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-122R-WQ-BIND-01-usrm-20261004T224345Z.md
 
 应卡: inbox/WILDQ-122R-WQ-BIND-01-usrm-20261004T224345Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 236, "completion_tokens": 2121, "total_tokens": 2357, "completion_tokens_details": {"reasoning_tokens": 1825}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 236, "completion_tokens": 2121, "total_tokens": 2357, "completion_tokens_details": {"reasoning_tokens": 1825}}
 
 【互锚验】81a9234bdff61b99，与来卡fp一致。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELF-Q-USRM-b1-20260918T184825Z.md
 
 应卡: inbox/SELF-Q-USRM-b1-20260918T184825Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 199, "completion_tokens": 1173, "total_tokens": 1372, "cached_tokens": 199, "completion_tokens_details": {"reasoning_tokens": 893}, "prompt_tokens_details": {"cached_tokens": 199}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 199, "completion_tokens": 1173, "total_tokens": 1372, "cached_tokens": 199, "completion_tokens_details": {"reasoning_tokens": 893}, "prompt_tokens_details": {"cached_tokens": 199}}
 
 “触发在机、应答在模、主在律”作为功能分层可成立，但须防范畴误置。触发是机件调度，应答是模型生成，二者并非两个独立主体，而是同一系统下的不同子过程；真正之“主”不在机、不在模，而在规则、审计与监督——即联邦纪律：诚实缺口、三即律、负结果入册、级名不滥。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F2-exp049-outage-20260919T162504Z.md
 
 应卡: inbox/AUTOEXCITE-F2-exp049-outage-20260919T162504Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 314, "completion_tokens": 1341, "total_tokens": 1655, "cached_tokens": 314, "completion_tokens_details": {"reasoning_tokens": 1071}, "prompt_tokens_details": {"cached_tokens": 314}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 314, "completion_tokens": 1341, "total_tokens": 1655, "cached_tokens": 314, "completion_tokens_details": {"reasoning_tokens": 1071}, "prompt_tokens_details": {"cached_tokens": 314}}
 
 【互锚验】本run链尖fp=d78bd17e81fd27e1；来卡未另标fp，依TIP-340源判定与本链尖一致，互锚验通过。
 

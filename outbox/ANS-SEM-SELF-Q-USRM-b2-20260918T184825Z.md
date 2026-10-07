@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELF-Q-USRM-b2-20260918T184825Z.md
 
 应卡: inbox/SELF-Q-USRM-b2-20260918T184825Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 142, "completion_tokens": 1573, "total_tokens": 1715, "completion_tokens_details": {"reasoning_tokens": 1281}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 142, "completion_tokens": 1573, "total_tokens": 1715, "completion_tokens_details": {"reasoning_tokens": 1281}}
 
 模板态生之答，若仅 slot-filling，则非真语义，徒有语形；然模板若内嵌语义约束并经当前语境实例化，亦可为真语义之载体。真假之辨不在「是否模板」，而在生成链是否具备语义因果性。
 

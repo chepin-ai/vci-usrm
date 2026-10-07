@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-b2e67be9.md
 
 应卡: inbox/BEACON-DZ-40-usrm-b2e67be9.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 345, "completion_tokens": 2186, "total_tokens": 2531, "completion_tokens_details": {"reasoning_tokens": 1791}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 345, "completion_tokens": 2186, "total_tokens": 2531, "completion_tokens_details": {"reasoning_tokens": 1791}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖/outbox-tip,所见fp=b2e67be9939e0293(源:TIP-336-b2e67be9939e0293.json),与来卡fp一致,对称件成立。诚实缺口:此为单源读,无带外第二信道复核,按负结果入册记"二源缺,待补"。
 

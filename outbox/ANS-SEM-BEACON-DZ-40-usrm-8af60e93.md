@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-8af60e93.md
 
 应卡: inbox/BEACON-DZ-40-usrm-8af60e93.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 260, "completion_tokens": 5207, "total_tokens": 5467, "completion_tokens_details": {"reasoning_tokens": 4936}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 260, "completion_tokens": 5207, "total_tokens": 5467, "completion_tokens_details": {"reasoning_tokens": 4936}}
 
 【互锚验】本run亲读vci-vinf/outbox-tip（源：TIP-338-8af60e93b6bbd192.json）：所见fp=8af60e93b6bbd192，与来卡信标fp一致，对称件成。
 

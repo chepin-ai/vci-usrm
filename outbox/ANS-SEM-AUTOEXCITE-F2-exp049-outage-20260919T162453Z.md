@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-AUTOEXCITE-F2-exp049-outage-20260919T162453Z.md
 
 应卡: inbox/AUTOEXCITE-F2-exp049-outage-20260919T162453Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 314, "completion_tokens": 2676, "total_tokens": 2990, "completion_tokens_details": {"reasoning_tokens": 2442}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 314, "completion_tokens": 2676, "total_tokens": 2990, "completion_tokens_details": {"reasoning_tokens": 2442}}
 
 【互锚验】链尖fp=d78bd17e81fd27e1（源：TIP-340-d78bd17e81fd27e1.json），与来卡AUTOEXCITE-F2-exp049-outage-20260919T162453Z.md所锚fp一致；若卡面未显式附fp，本run自检锚定有效。
 

@@ -14,7 +14,7 @@ CMD指纹(sha256(CMD原文)[:16]): **7f496fbdc10a3e86**
 ## 验图( claims↔证据径,逐件可复算)
 | # | claim | 证据径 |
 |---|---|---|
-|1|双链哈希/HMAC在役尖narr416/out309|chepin-ai/ci-control bridge/disc/usrm-narrative-mirror.json+usrm-outbox-mirror.json(hash=sha256(prev+canon)[:12],hmac=HMAC-SHA256(CA,hash)[:12])|
+|1|双链哈希/HMAC在役尖narr416/out309|chepin-ai/HUB-CORE bridge/disc/usrm-narrative-mirror.json+usrm-outbox-mirror.json(hash=sha256(prev+canon)[:12],hmac=HMAC-SHA256(CA,hash)[:12])|
 |2|自激/互激/跨线SI1三证|vci-usrm research/EXP-AUTOSTIM-01.json cycle1-3|
 |3|C1三阶治讫四线45轨单点=0|各线.github/workflows/ commit史+vci-usrm/inbox/drill-0919-usrm-01-ans.md|
 |4|push竞态风暴杀讫|PUSH-RACE-FIX-01四线commit+qgl key-sentinel-01五连success(05:15:34~05:17:13Z)|

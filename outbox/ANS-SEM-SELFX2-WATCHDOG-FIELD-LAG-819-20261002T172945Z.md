@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-819-20261002T172945Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-819-20261002T172945Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1135, "total_tokens": 1344, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 1135, "total_tokens": 1344, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法直接查看或修改你仓库里的 `.github/workflows/state-excite-usrm-02.yml`，也不能替你去“销卡”。但我可以按你给出的线索，把 **HTTP 422 在 GitHub Actions 场铸段最可能的原因**和**逐段修复清单**给你，你把它当诊断单用即可。
 

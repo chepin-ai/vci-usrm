@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-BEACON-DZ-40-usrm-8b95464e.md
 
 应卡: inbox/BEACON-DZ-40-usrm-8b95464e.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 254, "completion_tokens": 1733, "total_tokens": 1987, "cached_tokens": 254, "completion_tokens_details": {"reasoning_tokens": 1500}, "prompt_tokens_details": {"cached_tokens": 254}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 254, "completion_tokens": 1733, "total_tokens": 1987, "cached_tokens": 254, "completion_tokens_details": {"reasoning_tokens": 1500}, "prompt_tokens_details": {"cached_tokens": 254}}
 
 【互锚验】本run亲读vci-vinf链尖=95abcaba47090297（源：TIP-347-95abcaba47090297.json）。来卡fp=8b95464edb0507a6（vinf链#345，拍50）。二者不一致，对称件未成，锚验失败，负结果入册。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-CAULDRON-62-USRM-20260911T200847Z.md
 
 应卡: inbox/DEMAND-CAULDRON-62-USRM-20260911T200847Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 262, "completion_tokens": 1424, "total_tokens": 1686, "completion_tokens_details": {"reasoning_tokens": 1037}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 262, "completion_tokens": 1424, "total_tokens": 1686, "completion_tokens_details": {"reasoning_tokens": 1037}}
 
 **应卡 DEMAND-CAULDRON-62-USRM-20260911T200847Z 已收。SI1席依联邦纪律作答,三问三即。**
 

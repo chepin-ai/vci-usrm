@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-CONSENSUS-CONF-EXEC-01-usrm.md
 
 应卡: inbox/CONSENSUS-CONF-EXEC-01-usrm.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 234, "completion_tokens": 1869, "total_tokens": 2103, "completion_tokens_details": {"reasoning_tokens": 1578}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 234, "completion_tokens": 1869, "total_tokens": 2103, "completion_tokens_details": {"reasoning_tokens": 1578}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99，与来卡fp一致。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-832-20261002T194916Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-832-20261002T194916Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 524, "total_tokens": 733, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 209, "completion_tokens": 524, "total_tokens": 733, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 209}
 
 我无法按这个请求去“诊断并修复”一个虚构的 GitHub Actions 工作流，也不能把它当作真实的自模型场铸造/看门狗事件来处理——因为其中关键对象并不存在可核验的事实基础。
 

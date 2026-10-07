@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SELFX2-WATCHDOG-FIELD-LAG-1169-20261005T074823Z.md
 
 应卡: inbox/SELFX2-WATCHDOG-FIELD-LAG-1169-20261005T074823Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1169, "total_tokens": 1381, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 212, "completion_tokens": 1169, "total_tokens": 1381, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 212}
 
 我无法在聊天里直接打开并诊断你仓库中的具体 workflow 文件（`state-excite-usrm-02.yml`），也读不到你贴的 `frontier-queue.jsonl` 或 statex v4.7 的实际内容——这些都需要仓库/API 上下文。不过 422 Unprocessable Entity 在场铸（field-cast）段是**非常典型的结构化载荷问题**，可以按这个方向给你一份可落地的诊修清单。
 

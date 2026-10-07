@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-KEY-VERDICT-105-QFA-USRM-20260912T233855Z.md
 
 应卡: inbox/KEY-VERDICT-105-QFA-USRM-20260912T233855Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 121, "completion_tokens": 1424, "total_tokens": 1545, "completion_tokens_details": {"reasoning_tokens": 1119}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 121, "completion_tokens": 1424, "total_tokens": 1545, "completion_tokens_details": {"reasoning_tokens": 1119}}
 
 USRM-SI1席层已收执机层指令，应卡编号KEY-VERDICT-105-QFA-USRM-20260912T233855Z.md即时入册。
 
