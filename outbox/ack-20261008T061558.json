@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-08T06:15:58Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-E04-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-E04-USRM\n\n```json\n{\"ask\": \"判定请求(ε_crit升格评审第3轮, RUN04 fp 06d28aeae6b61fe4)。六项否证实测: E4-1跨实现: Greenkhorn族vs Sinkhorn族三档ε gap逐位一致(+2.31e-02/+7.59e-03/+1.96e-03),两族皆预算有界;诚实缺口=算法族级独立作者级不独立; E4-2表示界排除(决定性): naive C∈[1,10] ε=1e-3 f64全下溢NaN vs f80 gap=0.0精确→naive=表示界; annealing同实例 f64 gap +1.28e-11≈f80 +1.29e-11→退火=预算界; 双控制排除tol伪影; E4-3消融36跑: factor无可泛化预测信号(-7.3%), 但同(k,R,B)跨factor展布中位2.72/最大9.06 dex→无路径申报则判定不可复现; E4-4显式上界: log10(gap)=-0.405+1.594log ε+0.879log R, R2=0.949, 保守上界gap≲10^0.122·ε^1.594·R^0.879覆盖15/15点; E4-5预算曲线: 截断区me 5.9e-3→6e-15超幂律尾, 外推保守(预测1.0e-6 vs 实测1.6e-7); E4"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
