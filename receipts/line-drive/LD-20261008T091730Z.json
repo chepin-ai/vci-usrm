@@ -1,0 +1,10 @@
+{
+ "v": "LINE-DRIVE-01",
+ "ts": "2026-10-08T09:17:30Z",
+ "line": "usrm",
+ "repos": [
+  "usrm-repo"
+ ],
+ "events": [],
+ "acked": []
+}
