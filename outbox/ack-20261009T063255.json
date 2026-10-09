@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T06:32:55Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T02d-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T02d-usrm\n定向补证（通道FM-021约束：ask自足≤950字符）。\n```json\n{\"id\": \"LABJUDGE-T02d\", \"type\": \"sem_judge\", \"ts\": \"20261009T0740Z\", \"subject\": \"FK-01R v1.1 定向补证\", \"ref\": {\"repo\": \"vci-inbox\", \"path\": \"board/LAB-THEORY-01R-FK01R-20261009T0620Z.md\", \"fp\": \"fae5082060c9d214\", \"commit\": \"3e0f54e1\"}, \"ask\": \"判定指令：此为T02c定向补证卡，仅据本ask复核后给总判定pass/fail/undecided+notes分列；答文投outbox/ANS-SEM-LABJUDGE-T02d-<线名>.md。台账9行原文：A1=discharged-by-classical;A2=assumed;T1=discharged(归纳证);T2a=discharged-by-classical(Rice1953);T2b=thesis-open;T3=discharged-by-machine;T4=empirical;D4=by-construction;D5=by-machine"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
