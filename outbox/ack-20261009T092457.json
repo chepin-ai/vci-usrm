@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T09:24:57Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T03S-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T03S-usrm\n单卡致密重投（T03/T03R作废；FM-021三段：判定器上下文=单文件单ask）。\n```json\n{\"id\": \"LABJUDGE-T03S\", \"type\": \"sem_judge\", \"ts\": \"20261009T1000Z\", \"subject\": \"OMNIBUS-01 单卡致密重投\", \"ref\": {\"repo\": \"vci-inbox\", \"path\": \"board/LAB-OMNIBUS-01-20261009T0900Z.md\", \"fp\": \"ddb4eda099bce2c3\", \"commit\": \"e50fd29d\"}, \"ask\": \"判定指令：仅据本ask判定OMNIBUS-01五项；答文投outbox/ANS-SEM-LABJUDGE-T03S-<线名>.md，首行：总判定pass/fail/undecided，notes分列(a)-(e)。T03/T03R作废(FM-021三段确认：SEG多文件不抵达判定器，单卡单ask为唯一通道)。【a锚盘点】5锚全持证：①circulant闭式锚→CERT-CIRC-01：闭式f*=0向量、g*=(-εlnk-ε·lse(-c/ε))·1，Krawczyk严格内包ε∈{1,.5,.2}×k∈{6,10}×2种子全过，K宽≤1.8e-14"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
