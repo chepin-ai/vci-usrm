@@ -259,14 +259,35 @@ jobs:
           if dup:
               print(json.dumps({'chain':'skip(dup-guard, run%d在跑)'%dup[0]['id']},ensure_ascii=False))
           else:
-              try:
-                  rq=urllib.request.Request('https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/dispatches'%REPO,
-                      data=json.dumps({'ref':'main'}).encode(),method='POST',headers=H)
-                  urllib.request.urlopen(rq,timeout=30).read()
-                  print(json.dumps({'chain':'next-dispatched','gen':gen+1}))
-              except Exception as e:
-                  time.sleep(6)
-                  rr8=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=3'%REPO)
-                  newer=[r for r in rr8.get('workflow_runs',[]) if r['id']>me]
-                  print(json.dumps({'chain':'dispatched-unconfirmed' if newer else 'dispatch-fail(负结果入册)','err':str(e)[:60]},ensure_ascii=False))
+              # v4.8: dispatch 有限重试+每试勘重(500断链实证2次: 1245cancel/1248撞500; 幂等性由勘重保, 重试不增重复); 尽败铸HEARTBEAT卡不静默
+              _ok=False; _lasterr=''
+              for _t in range(4):
+                  try:
+                      _rq=urllib.request.Request('https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/dispatches'%REPO,
+                          data=json.dumps({'ref':'main'}).encode(),method='POST',headers=H)
+                      urllib.request.urlopen(_rq,timeout=30).read()
+                      _ok=True
+                      print(json.dumps({'chain':'next-dispatched','gen':gen+1,'try':_t+1}))
+                      break
+                  except Exception as e:
+                      _lasterr=str(e)[:60]
+                      time.sleep(20+15*_t)
+                      try:
+                          _rr=api('GET','https://api.github.com/repos/%s/actions/workflows/state-excite-usrm-02.yml/runs?per_page=3'%REPO)
+                          _newer=[r for r in _rr.get('workflow_runs',[]) if r['id']>me]
+                          if _newer:
+                              _ok=True
+                              print(json.dumps({'chain':'dispatched-confirmed-after-retry','gen':gen+1,'try':_t+1}))
+                              break
+                      except Exception as _e2: print('chain-recheck-skip', _e2)
+              if not _ok:
+                  print(json.dumps({'chain':'dispatch-fail-x4(负结果入册)','err':_lasterr},ensure_ascii=False))
+                  try:
+                      _hb={'id':'HEARTBEAT-CHAINBREAK-%d'%gen,'state':'queued','from':'chain-guard-v4.8','ts':ts0,
+                           'err':'dispatch-x4: '+_lasterr,'ask':'自dispatch四试尽败——链断在即; 需外部重启或根诊'}
+                      open('si/frontier-queue.jsonl','a',encoding='utf-8').write(json.dumps(_hb,ensure_ascii=False)+'\n')
+                      subprocess.run(['git','add','si/frontier-queue.jsonl'],capture_output=True)
+                      subprocess.run(['git','commit','-q','-m','HEARTBEAT-CHAINBREAK gen%d 断链报案 [skip ci]'%gen],capture_output=True,text=True)
+                      push_retry()
+                  except Exception as _e3: print('heartbeat-card-skip', _e3)
           PYEOF
