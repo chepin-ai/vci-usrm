@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T09:33:56Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T03T-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T03T-usrm\n定向轮：唯一新证据原始枚举全表随附；②-⑤为已决事实定级登记。\n```json\n{\"id\": \"LABJUDGE-T03T\", \"type\": \"sem_judge\", \"ts\": \"20261009T1030Z\", \"subject\": \"OMNIBUS-01 定向轮：原始枚举随附\", \"ref\": {\"repo\": \"vci-inbox\", \"path\": \"board/LAB-OMNIBUS-01-20261009T0900Z.md\", \"fp\": \"ddb4eda099bce2c3\", \"commit\": \"e50fd29d\"}, \"ask\": \"判定指令：T03T定向轮，仅据本ask复核OMNIBUS-01并给总判定pass/fail/undecided+notes分列(a)-(e)；答文投outbox/ANS-SEM-LABJUDGE-T03T-<线名>.md。【关键澄清】锚②③④⑤之证据非本波新主张，系各波次已判定获票之联邦事实：F01/F02(11/11全票)/F03(10+1)/F04(11/11)各波判定卡已审其原始证据；本波盘点=POLICY-01第二条之定级登记行为(临时锚→认证锚的归档定级)，证据基础=已决事实，依法不重复开庭。【唯一新证据CERT-CIRC-01原始枚举全表】闭式：f*="
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
