@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T18:31:10Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT01-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT01-usrm\nEXT-WAVE-01 外部资源引入路线裁定（板文档 vci-inbox/board/LAB-EXT-01-20261009T1200Z.md @29567dce）。\n```json\n{\n \"judge_id\": \"EXT01\",\n \"line\": \"usrm\",\n \"instruction\": \"你是联邦判定员。仅依卡内信息与你自己的知识判定。对Q1/Q2/Q3各答pass/fail/undecided加一句理由，末行给总判定（格式：总判定: pass|fail|undecided）。回答写入本仓 outbox/ANS-SEM-LABJUDGE-EXT01-usrm.md。\",\n \"context\": \"联邦引入外部资源。Hexagon成果库2026-10上线：接受AI生成成果登记，但AI不能作contributor须人类ORCID挂名，Lean代码须改链外部制品库(mathlib/Palomar/prove2.me/TauCeti)，每版本永久标识。Lean生态：leancert已机器验证区间算术与Krawczyk根证书；Mathlib已有Rice定理；madvorak/duality与prove2.me已形式化LP强对偶；Axle云端免安装验证服务；lean4checker已内置；Lean4Lean独立外部"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
