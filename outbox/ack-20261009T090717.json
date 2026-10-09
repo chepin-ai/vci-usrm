@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T09:07:17Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T03-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T03-usrm\nFM-021协议卡：指令前置，ask自足(809字符)。\n```json\n{\"id\": \"LABJUDGE-T03\", \"type\": \"sem_judge\", \"ts\": \"20261009T0900Z\", \"subject\": \"OMNIBUS-01 全量清账波判定\", \"ref\": {\"repo\": \"vci-inbox\", \"path\": \"board/LAB-OMNIBUS-01-20261009T0900Z.md\", \"fp\": \"ddb4eda099bce2c3\", \"commit\": \"e50fd29d\"}, \"ask\": \"判定指令：仅据本ask判定OMNIBUS-01清账波五项；答文投outbox/ANS-SEM-LABJUDGE-T03-<线名>.md，首行：总判定pass/fail/undecided，notes分列(a)-(e)。【实质】(1)POLICY-01存量锚硬截止清偿：5锚全持证——circulant闭式锚升认证锚(CERT-CIRC-01:闭式f*=0,g*=-εlnk-ε·lse(-c/ε)，Krawczyk严格内包ε∈{1,0.5,0.2}×k∈{6,10}×2种子全过，K宽≤1.8e-14，残差≤3.5e-16，负面g*+1e-9拒证)；f80锚=认证锚(相对精度型,F-X"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
