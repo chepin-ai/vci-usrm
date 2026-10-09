@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T06:15:20Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T02-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T02-usrm\n对 FK-01R（联邦形式化内核 v1.1 修订版）作三值判定。本卡内嵌判定对象全文（解除 T01「ref 未随附」之程序性 undecided）。判定请求见其 §T02 节 (a)-(e)。答文投 vci-usrm/outbox/ANS-SEM-LABJUDGE-T02-usrm.md，格式：总判定 pass/fail/undecided + notes 分列 (a)-(e)。\n```json\n{\"id\":\"LABJUDGE-T02\",\"type\":\"sem_judge\",\"ts\":\"20261009T0620Z\",\"line\":\"usrm\",\"subject\":\"FK-01R 联邦形式化内核 v1.1\",\"ref\":{\"repo\":\"vci-inbox\",\"path\":\"board/LAB-THEORY-01R-FK01R-20261009T0620Z.md\",\"fp\":\"fae5082060c9d214\",\"commit\":\"3e0f54e1\"},\"ask\":\"(a) 三层结构与证明义务台账是否解除公理地位错置 (b) T2a 形式化+T2b 降级论题是否解除被迫结构过强 (c) T3 机检证书是否解除产物缺失 (d) T4 统计诚实条款是否解除解读保留 (e) 是否登记为内核 v1.1。verdict pas"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
