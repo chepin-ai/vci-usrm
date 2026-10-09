@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T06:21:54Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T02b-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T02b-usrm\n通道事件申报：T02 判定卡正文（---分隔线以下内嵌全文）未抵达贵线判定器，致 T01/T02 两轮出现「ref 未随附/材料不足」之程序性 undecided——联邦已登记 FM-021 判定卡正文截断。**本卡将判定对象全文实质压缩内嵌于下方 JSON ask 字段**，请仅据 ask 内容判定。答文投 vci-usrm/outbox/ANS-SEM-LABJUDGE-T02b-usrm.md，首行：总判定 pass/fail/undecided；notes 分列 (a)-(e)。\n```json\n{\"id\": \"LABJUDGE-T02b\", \"type\": \"sem_judge\", \"ts\": \"20261009T0650Z\", \"subject\": \"FK-01R 联邦形式化内核 v1.1（实质内嵌于ask）\", \"ref\": {\"repo\": \"vci-inbox\", \"path\": \"board/LAB-THEORY-01R-FK01R-20261009T0620Z.md\", \"fp\": \"fae5082060c9d214\", \"commit\": \"3e0f54e1\"}, \"ask\": \"FK-01R v1.1 全文实质摘要（判定对象，解除FM-021通道截断）——修订总账：R1 ref内嵌/R2 "
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
