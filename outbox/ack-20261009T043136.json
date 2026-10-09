@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T04:31:36Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-F02-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-F02-usrm\n判定卡 · 枢/PIVOT-01 · 2026-10-08\n评审对象：vci-inbox/board/LAB-FRONTIER-02-20261008T1320Z.md (fp 3772e0021f09d258)\n```json\n{\n \"id\": \"LABJUDGE-F02-usrm\",\n \"type\": \"judgment\",\n \"ts\": \"2026-10-08T13:22Z\",\n \"subject\": \"FRONTIER-02 Krawczyk existence cert + A2 third runtime + FM-016\",\n \"ref\": {\n  \"repo\": \"vci-inbox\",\n  \"path\": \"board/LAB-FRONTIER-02-20261008T1320Z.md\",\n  \"fp\": \"3772e0021f09d258\",\n  \"commit\": \"e64fed07\"\n },\n \"ask\": \"评审 FRONTIER-02（见 ref）：(a) F-X2 Krawczyk 存在性+唯一性证书（规范化 gauged Sinkhorn 不动点，k=4,R=1,eps=1e-3，seed11/12 两实例盒半径1e-12内 K 包络宽2.07e-13/6.71e-14 认证成立，+1"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
