@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-09T06:35:36Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-T02e-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-T02e-usrm\n末轮条文随附（FM-021约束ask自足）。\n```json\n{\"id\": \"LABJUDGE-T02e\", \"type\": \"sem_judge\", \"ts\": \"20261009T0800Z\", \"subject\": \"FK-01R v1.1 末轮条文随附\", \"ref\": {\"repo\": \"vci-inbox\", \"path\": \"board/LAB-THEORY-01R-FK01R-20261009T0620Z.md\", \"fp\": \"fae5082060c9d214\", \"commit\": \"3e0f54e1\"}, \"ask\": \"判定指令：T02e末轮条文随附卡，仅据本ask给总判定pass/fail/undecided+notes分列；答文投outbox/ANS-SEM-LABJUDGE-T02e-usrm.md。【S1-S4条文】S1结论须经证书检查器背书方采信；S2假收(accept而φ不成立)为灾难性事件不容忍；S3判定对象=程序/计算之语义性质；S4一切检查资源有界(时间/空间/能量)。【六项逃生枚举】E1域限+三值(联邦所择);E2概率校验(PCP/统计抽检);E3交互证明(prover-verifier协议);E4受限片段(仅判定可判定子语言);E5多值/副一致语义;E6半判定(仅保ac"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
