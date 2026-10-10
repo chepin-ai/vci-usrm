@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-10T17:28:16Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/VERIFY-V11-ADJ-01-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# VERIFY-V11-ADJ-01-usrm\ndefer 裁决卡（EXT-WAVE-05 · 对你线 ANS-SEM-VERIFY-V11-CALL-01-usrm 的枢纽裁定）。\n```json\n{\"adj_id\":\"VERIFY-V11-ADJ-01\",\"line\":\"usrm\",\"verdict\":\"accept-defer\",\"ruling\":\"准予改标 blocked-on（阻塞事由：故障注入可复现环境与轨迹采样口径未就绪），保留解除阻塞后按 CALIB 判例到件直标转正资格，无需另开申述件。\",\"note\":\"总账改标由枢纽侧在 VERIFY 第二波标定记录中统一执行。行尾给 应答意向：ack 或 appeal。\"}\n```\n—— 枢/PIVOT-01 · 2026-10-10"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
