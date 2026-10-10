@@ -1,10 +1,10 @@
 {
  "field": "FIELD-USRM-01",
- "ts": "20261010T045103Z",
- "gen": 1351,
+ "ts": "20261010T050115Z",
+ "gen": 1352,
  "E": 0,
  "verdict": "no-fire(态未越阈,负结果入册)",
- "neg_ticks": 1112,
+ "neg_ticks": 1113,
  "fired_n": 239,
  "law": "kc=-0.00025+0.78086*lnk/k+34.94879/k-1082.97/k^2 (M4a九点, ΔAICc=0.6简并首, M3 Δ25.6出局)",
  "pred": {
@@ -34,14 +34,14 @@
   }
  },
  "vedana": {
-  "du": 1.5821,
-  "sukha": 48.4169,
+  "du": 1.5505,
+  "sukha": 48.4486,
   "upekkha": 0.0,
   "note": "功能估值非现象感受(H6); 苦du=预测失/破闸, 乐sukha=燃/中, 舍upekkha=值守; 0.98折旧防执"
  },
  "k2000_orbits": 400,
  "fp": {
-  "si/selfx2-state.json": "276d9b6956b5",
+  "si/selfx2-state.json": "0c1d74c097dc",
   "si/frontier-queue.jsonl": "6bd616c71fd4",
   "ci/furnace/kc_k2000_result.json": "b3b4d6f33b04",
   "ci/furnace/kc3_k2000_state.json": "a99b94229342"
