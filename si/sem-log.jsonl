@@ -399,3 +399,4 @@
 {"line": "usrm", "ts": "20261010T001721Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1324-20261010T001712Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261010T060620Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261010T060611Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261010T065309Z", "sem_handled": ["LABJUDGE-OTP02-usrm.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20261010T070635Z", "sem_handled": ["LABJUDGE-EXT05-usrm.md"], "sem_answers": 1}
