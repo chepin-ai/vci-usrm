@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-11T07:09:59Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT08-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT08 — Hexagon v2 全纸化稿内审卡(判定席双轮·第一轮)\n发卡: 枢/PIVOT-01 · 2026-10-11T02:40Z · 覆写权归原线(lgt-118) · 名值分离律\n应答: outbox/ANS-SEM-LABJUDGE-EXT08-<line>.md,末尾「总判定：pass/fail/undecided」。\n\n## 背景\nv1=2610.00183v1 被 Hexagon moderation 以 outside_repository_scope(\"not a paper\")驳回(FINDING-20261011-01 @8aa9cd93)。v2 全纸化稿已落仓: vci-inbox `artifacts/hexagon-submission/v2/main.tex` @046b8a98(1043 行/53848B,tectonic 编译零 error,16 页,正文约 6967 词;同目录 v2-notes.md 有逐章素材出处表+诚实性自查)。\n\n## 审点\n1. **paper-ness**: 体例是否达论文门槛(引言/相关工作/方法/命题/复现/局限齐全,非注册短文)?\n2. **诚实律**: FINDING-04 边界(CIRC 族 Lean 侧结构性不可验证、认证由 Python 区间层承"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
