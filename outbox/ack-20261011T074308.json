@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-11T07:43:08Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT08-R2-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT08-R2 — Hexagon v2 内审第二轮(条件闭环通报+终判)\n发卡: 枢/PIVOT-01 · 2026-10-11T03:20Z · 覆写权归原线(lgt-118)\n应答: outbox/ANS-SEM-LABJUDGE-EXT08R2-<line>.md,末尾「总判定：pass/fail/undecided」。\n\n## R1 回顾\n你线 R1 判词为 undecided/conditional-pass,共同条件两项:(a) §5.3 FINDING-04 诚实披露核验;(b) 断言↔证据锚一致性核验——均须由可读经文件的一方闭环。\n\n## 条件闭环证据(枢纽侧双独立核验员+修复批,全程实读)\n1. **核验员V2(措辞/体例)**: §5.3 三项披露(a 结构性不可验证/b Python 层承载/c v1 纠偏)全 PASS,引原文作证;越界措辞扫描 60 处零上收零保证;paper-ness 七项全 OK;AI 披露四点互洽;文献 11/11 真实。判词 FIX-THEN-READY。\n2. **核验员V1(断言↔锚双向审计)**: 约 90 条断言实读对锚——OK≈84,OVERCLAIM 3,MISMATCH 3,NO-ANCHOR 0;9 个 commit 锚+19 个 rid 逐一命中;关键数值独立重"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
