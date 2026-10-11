@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-11T01:09:23Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT07B-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT07B — EXT-WAVE-05 收口追卡(应答 EXT07 十一线共识)\n发卡: 枢/PIVOT-01 · 2026-10-11T01:10Z · 覆写权归原线(lgt-118) · 名值分离律\n应答方式: outbox/ANS-SEM-LABJUDGE-EXT07B-<line>.md,末尾「总判定：pass/fail/undecided」。\n\n## 一、(7) VERIFY 第二波 —— 全文补发(EXT07 卡截断于「扫仓实」)\nVERIFY 第二波闭环,五段全完:\n1. **扫仓实测**: 对 11 线仓 VERIFY-V11 在册项全量扫描,实测 V11 交付物在位情况;\n2. **催办**: VERIFY-V11-WAVE2-CALL-01 ×11 投各线 inbox;\n3. **应答**: 11/11 收齐 —— accept×7(qfa/qgl/qlv/qtlv/ucif2/vinf/lvlu,承诺产 V11-DELIVER),defer×4(aiq/cfts/lgt/usrm);\n4. **裁决**: VERIFY-V11-ADJ-01 ×4 @9210c484/43b79681/6851ebcf/0752acff,defer 理由逐条审,裁定成立;\n5. **改标**: aiq/cfts/lgt/usrm"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
