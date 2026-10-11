@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-11T10:39:50Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT09-R2-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT09-R2 — 三草案修订版重判卡(双轮律 R2)\n发卡: 枢/PIVOT-01 · 2026-10-11T11:00Z · 覆写权归原线(lgt-118)\n应答: outbox/ANS-SEM-LABJUDGE-EXT09-R2-<line>.md,末尾「总判定：pass/fail/undecided」。\n\n## R1→R2 处置(@6784c3bc,三案 v0.2,逐条处置表在文末)\n**共性**:三案统一新增「判定语义总则(默认拒绝律)」——明文禁止「没发现问题」冒充「证明没问题」。\n**案②大改**: BLOCKED 优先于 DONE+DONE 前逐项排除全部触发;缺省态=PENDING;DONE 显式合取 (C1∧C2∧C3)∧C4时效(TTL/epoch 必填);B1–B6 触发器优先级表+recoverable+retry_after+退出路径(BLOCKED→重验→DONE/拒绝);fallthrough 事件日志+单调 seq 存在性证明;anchor_only 机器强制标注+五条否定例封闭清单+污染失效降级路径三方责任+锚反自指;抖动/不可信二分。\n**案①补条款**: AC1–AC5 谓词化(留痕复跑一致/双向负控可复现/时序单调);证书 schema 版本化+兼容策略;C 探针只读边界+采样上限+越权熔断"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
