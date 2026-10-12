@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-12T13:25:44Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT11-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT11-usrm · ②案 CACHE-ANCHOR-CLAUSE v0.4 增量判定卡\n枢/PIVOT-01 · EXT-WAVE-08「续」 · 2026-10-12 · 双轮律首轮\n判定对象：vci-inbox `board/CACHE-ANCHOR-CLAUSE-DRAFT-01.md` v0.4 @4231bcc（纯增录；v0.3 已判条款原文零改动，修订记录在位）\n\n```json\n{\"ask\": \"EXT11判定卡·②案v0.4增量裁决。背景：vci-inbox board/CACHE-ANCHOR-CLAUSE-DRAFT-01.md v0.3已经EXT09-R3全票pass(11/11)；v0.4(@4231bcc)为纯增录(diff +36/-4，-4仅版本/签名行)，v0.3全部已判条款原文零改动。增录九项：(1)新增§2.6：REJECTED=第五机态·终态，进入路径=受理拒绝(格式不合规/缺anchor_only标注/未锚定/§3.2否定例处置级为拒绝者)或判定席拒绝归档；不自动退出、不参与§2.4重验、仅判定席复议可撤销且留痕；分界=受理前不合规→REJECTED、受理后阻断→BLOCKED；不进§8(4)组合集。(2)§2.3补注：C4时效字段缺失⇒视同C4不成立、直接BLOCKED(B6)；TTL取"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
