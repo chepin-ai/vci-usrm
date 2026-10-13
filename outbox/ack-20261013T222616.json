@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-13T22:26:16Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT15-usrm.md",
+   "head_excerpt": "LABJUDGE-EXT15 判定请求（WS-63 ζ 包 OBL-EXT11-a 关闭·v1.1.0 重签）\n提交：vci-inbox main @6601e53e1a61d59db3a75f351a268f365dbc5d4d\n变更（v1.0.1→v1.1.0 外科手术式重签，SUP-01 先例）：\n1) ci/witness_zeta_verify.py fef03b8ef9ace07c：枢线修补#17——Backlund 门锚点 t=0（arg ζ(2)=0 实正）+结点紧区间 Δarg（CVZ 直评 ~1e-85）+弧盒扇形张角分支认证（≤1.2<π ⇒主值回卷唯一）；±1e-9 浮点容忍移除（只增强）。\n2) ci/witness_zeta_gen.py 4e6d0bf75c641ce1：镜像披露。\n3) 证书×3：iso100 0921f449554b3aca（+anchor/+darg_method/note/disclosure 附录，数学零变更）；iso1000 b8aca692db9a32f5/trunc 4a995647032ff536 仅 generator.sha256+witness_sha256；trunc zero_source.sha256 交叉引用同步新 iso1000。\n关闭条件逐字：「张角余量纳入后 N_B 区间落入唯一整数窗；不得以放宽区"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
