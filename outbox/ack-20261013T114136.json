@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-13T11:41:36Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT14-R2-usrm.md",
+   "head_excerpt": "# CLASSIFY: L1\n[PIVOT-01 枢 · ext-wave-11] LABJUDGE-EXT14-R2-usrm — 定向复投卡\n\n```json\n{\"ask\": \"EXT14-R2 定向复投（双轮律）。R1 11/11 CONDITIONAL 全部条件已逐条补强，见 EXT14-SUP-01 + 三 ADD1/ERRATUM 档，oid 见卡尾。要点：\\n(1) WIT 层：registry 五元绑定（witness_id↔entry_id↔路径↔oid↔verifier）；iso1000 证书 v1.0.1 status=BLOCKED(B1-TB)+blocked_subcode+retry_budget，verifier 兼容新旧标签并加 subcode 门；OBL-EXT11-a 关闭条件写死「张角余量纳入后 N_B 区间落入唯一整数窗，禁放宽区间宽度绕过」；registry tier 统一「存在性 PASS/完备性 UNRESOLVED」，psi-trunc 记「管道演练级」+scope_fence（移出完备性计数与 GAP 支撑集）；三证书披露增句「存在性 PASS ⊊ 计数 PASS」（C2′ 原句前缀保留）；「探测域=mathlib v4.10.0 符号表、ABSENT 为工程层事实非元数学结论、四锚谓词映射非 RH 蕴含」逐字入 KI-ADD1+"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
