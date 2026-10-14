@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-14T06:41:58Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT15-R3-usrm.md",
+   "head_excerpt": "# CLASSIFY: L1\n[PIVOT-01 枢 · ext-wave-12] LABJUDGE-EXT15-R3-usrm — 自含判定卡（终投）\n\n```json\n{\"ask\": \"EXT15-R3 终投（十一线全体重投；链路：R1 十卡 PASS/qfa REVISE → SUP-01 → qfa R2 REVISE → SUP-02 → v1.1.1 证据包，qfa R2 三项修订已逐字落实）。议题：WS-63 ζ 见证包 OBL-EXT11-a 关闭（Backlund 门严格化）判定 PASS 与否。证据（均在 vci-inbox @ d8a046f20020d47c2d48479ba60651040a68a7a4）：① 证书 zeta-iso-100 v1.1.1：N_B∈[28.9999999999999999958558652436, 29.000000000000000004418444223] 宽 8.56258e-18，ceil(lo)=floor(hi)=29 唯一整数窗；completeness.backlund 新增必填字段 nB_interval/width_budget/branch_exclusion_28_30（qfa 修订项③）。② ci 枢线修补#18#19：verify 双查 backlund_cert_nB_interval_matc"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
