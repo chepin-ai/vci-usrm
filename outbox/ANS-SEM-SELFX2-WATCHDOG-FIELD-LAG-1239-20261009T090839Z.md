@@ -73,7 +73,7 @@ permissions:
 ```yaml
 - name: 场铸-attention-拉取远端态面
   env:
-    GH_TOKEN: ${{ secrets.FIELD_USRM_PAT }}   # 具备 repo / read:packages 的 PAT 或 App token
+    〈RED〉: ${{ secrets.FIELD_USRM_PAT }}   # 具备 repo / read:packages 的 PAT 或 App token
   run: |
     gh api repos/<org>/<repo>/contents/... \
       -H "Accept: application/vnd.github+json"
@@ -103,13 +103,13 @@ jobs:
 ```yaml
 - name: 场铸-sha-get（带诊断）
   env:
-    GH_TOKEN: ${{ secrets.FIELD_USRM_PAT || github.token }}
+    〈RED〉: ${{ secrets.FIELD_USRM_PAT || github.token }}
   run: |
     set -euo pipefail
     URL="https://api.github.com/repos/<org>/<repo>/contents/<path>"
     for i in 1 2 3 4; do
       code=$(curl -sS -o /tmp/resp.json -w '%{http_code}' \
-        -H "Authorization: Bearer $GH_TOKEN" \
+        -H "Authorization: Bearer $〈RED〉" \
         -H "Accept: application/vnd.github+json" "$URL") || true
       echo "attempt=$i http=$code"
       if [ "$code" = "200" ]; then break; fi

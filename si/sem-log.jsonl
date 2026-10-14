@@ -368,7 +368,7 @@
 {"line": "usrm", "ts": "20261007T172215Z", "sem_handled": ["LABJUDGE-E02-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261007T204447Z", "sem_handled": ["PULSE-USRM-20261007T204435Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261008T022222Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261008T022204Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261008T045339Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "037e2996d95a", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261008T045339Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "037e2996d95a", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261008T051441Z", "sem_handled": ["LABJUDGE-E03-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261008T061457Z", "sem_handled": ["LABJUDGE-E04-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261008T071142Z", "sem_handled": ["PULSE-USRM-20261008T071131Z.md"], "sem_answers": 1}
@@ -391,7 +391,7 @@
 {"line": "usrm", "ts": "20261009T092415Z", "sem_handled": ["LABJUDGE-T03S-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261009T093408Z", "sem_handled": ["LABJUDGE-T03T-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261009T154431Z", "sem_handled": ["SELFX2-reflect-20261009T154421Z-20261009T154421Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261009T183135Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "b50f90c4a719", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261009T183135Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "b50f90c4a719", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261009T185402Z", "sem_handled": ["LABJUDGE-EXT02-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261009T192708Z", "sem_handled": ["LABJUDGE-EXT03-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261009T202034Z", "sem_handled": ["LABJUDGE-SURGE01-usrm.md"], "sem_answers": 1}
@@ -404,11 +404,11 @@
 {"line": "usrm", "ts": "20261010T131628Z", "sem_handled": ["SELFX2-reflect-20261010T131618Z-20261010T131618Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261010T151526Z", "sem_handled": ["LABJUDGE-EXT06-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261010T163015Z", "sem_handled": ["VERIFY-V11-CALL-01-usrm.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261010T172748Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "4fea29f5a4d5", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261010T172748Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "4fea29f5a4d5", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261010T233139Z", "sem_handled": ["SELFX2-reflect-20261010T233130Z-20261010T233130Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261011T004444Z", "sem_handled": ["LABJUDGE-EXT07-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261011T004815Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1463-20261011T004646Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261011T005756Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "2b14bff87425", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261011T005756Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "2b14bff87425", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261011T011050Z", "sem_handled": ["LABJUDGE-EXT07B-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261011T071039Z", "sem_handled": ["LABJUDGE-EXT08-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261011T074123Z", "sem_handled": ["LABJUDGE-EXT08-R2-usrm.md"], "sem_answers": 1}
@@ -432,7 +432,7 @@
 {"line": "usrm", "ts": "20261013T115420Z", "sem_handled": ["EXT14-R2B-EV1-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261013T125634Z", "sem_handled": ["EXT14-R2B-EV2-usrm.md", "EXT14-R2B-EV3-usrm.md", "LABJUDGE-EXT14-R3-usrm.md", "LABJUDGE-EXT14-R4-usrm.md"], "sem_answers": 4}
 {"line": "usrm", "ts": "20261013T190222Z", "sem_handled": ["SELFX2-reflect-20261013T190212Z-20261013T190212Z.md"], "sem_answers": 1}
-{"line": "usrm", "ts": "20261013T222514Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "6cf0fb6e5678", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261013T222514Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "6cf0fb6e5678", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261013T223836Z", "sem_handled": ["LABJUDGE-EXT15-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261014T000155Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261014T000144Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261014T001939Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-1868-20261014T001930Z.md"], "sem_answers": 1}

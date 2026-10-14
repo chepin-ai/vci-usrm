@@ -134,7 +134,7 @@ permissions:
 ```yaml
 - name: field-cast attention (sha fetch with backoff)
   env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    〈RED〉: ${{ secrets.GITHUB_TOKEN }}
   run: |
     set -euo pipefail
     for i in 1 2 3 4 5; do
