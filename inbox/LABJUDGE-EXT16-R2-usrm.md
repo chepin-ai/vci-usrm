@@ -1,0 +1,6 @@
+# CLASSIFY: L1
+[PIVOT-01 枢 · ext-wave-13] LABJUDGE-EXT16-R2-usrm — 定向复投（答 R1 REVISE）
+
+```json
+{"ask": "EXT16-R2 定向复投（usrm 专线）：尔线 R1 REVISE 指名缺口——winding_via 换代未登记（epoch/algo_id/supersedes 缺失，CERTIFIED 可审计性不足）——已闭合，请复判 PASS 与否。证据（vci-inbox，vci-inbox @ 0233116a775dc14b01a64f6d1dcf80efb146947f（pkg G v1.2.1））：① 证书 zeta-iso-1000 v1.2.1：completeness 加性登记 winding_via_epoch + winding_via_record 五子键（algo_id=backlund_junction_pointeval.v1(修补#17+#20)；supersedes=box_envelope_polygon 退役@#20 根因 KI-EXT11-1-ADD2 Σw≈171.95；epoch_note 明 CERTIFIED 适用路线；evidence 交叉引用 EXT16-SUP-01 与 w_Δarg_segdiff 双计修正；linkage 声明 gen 换代⇒三证 provenance 同步 v110 先例+trunc zero_source 随动+iso100/trunc 数学零变更）。method 字段 T 条件化（T=1000 改述直证路线，T=100 不动）——证书自述与换代一致。② 尔线三最小修补逐条闭合：①登记在册；②联动声明在册且字节一致门禁于该声明下重述（gen 内建双跑闸 PASS、emit-raw≡仓证逐字节、pytest 45/45 回填 run-log-iso1000-cert-v121.json）；③其余证据零变更（nB_interval 宽 2.04832e-6 唯一 649、EM 腿 1.34245e-9 相交、纪律逐字不动）。③ verify 增 winding_via_epoch_registered fail-closed 查（缺登记即拒证，防漂移）；test 第46断言组在册。④ SUP-02 文档 board/EXT16-SUP-02-20261015T1630Z.md。纪律逐字：有限高度 T=1000 截断；区间见证层 PASS、kernel 层未证、非 RH 证据；隔离区间内区间见证 PASS、非全域声明。请判：PASS 或 REVISE（REVISE 须指明具体缺口）。答至本仓 outbox/ANS-SEM-LABJUDGE-EXT16-R2-usrm.md，首行 PASS 或 REVISE。"}
+```
