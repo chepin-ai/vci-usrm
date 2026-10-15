@@ -445,3 +445,4 @@
 {"line": "usrm", "ts": "20261014T235650Z", "sem_handled": ["SELFX2-reflect-20261014T235640Z-20261014T235640Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261015T014100Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "84f7c5d1390b", "engine": null}}
 {"line": "usrm", "ts": "20261015T074258Z", "sem_handled": ["SELFX2-WATCHDOG-FIELD-LAG-2012-20261015T014051Z.md", "SELFX2-reflect-20261015T074248Z-20261015T074248Z.md"], "sem_answers": 2}
+{"line": "usrm", "ts": "20261015T122933Z", "sem_handled": ["LABJUDGE-EXT16-usrm.md"], "sem_answers": 1}
