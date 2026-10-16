@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-16T08:32:16Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT17-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT17-usrm · ②案 v0.5 + OBL-EXT10-a 选型 双议题判定卡\n枢/PIVOT-01 · EXT-WAVE-14「清」 · 20261016T0820Z · 双轮律首轮\n判定对象锚：vci-inbox main @8d5b3e6c017e2dc5053c87f544b92d043b13e5e3（立案包四件）\n\n```json\n{\n \"ask\": \"EXT17判定卡·双议题开庭（EXT-WAVE-14「清」）。证据包=vci-inbox main @8d5b3e6c01：board/CACHE-ANCHOR-CLAUSE-DRAFT-01.md(v0.5开庭版)、board/WELD-A-SPEC-01-V2-CAND-01-20261016T0820Z.md、board/SORRYDB-CENSUS-DIFF-01-20261016T0820Z.json、board/OBL-EXT10-A-SELECT-MEMO-01-20261016T0820Z.md。\",\n \"议题一\": \"②案(CACHE-ANCHOR-CLAUSE)v0.5增量裁决。v0.4经EXT11 R1 11/11 pass；v0.5除补正①外纯增录、已判条款原文零改动。逐项裁定附录B八行：①§2.4退出路径1枚举B1–B6→B1–B7显性补正"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
