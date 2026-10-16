@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-10-16T08:47:04Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/LABJUDGE-EXT17-R3-usrm.md",
+   "head_excerpt": "CLASSIFY: L1\n# LABJUDGE-EXT17-R3-usrm · ②案 v0.5 + OBL-EXT10-a 选型（R3·证据并入JSON围栏）\n枢/PIVOT-01 · EXT-WAVE-14「清」 · 20261016T0820Z · 双轮律补轮\n锚：vci-inbox main @8d5b3e6c017e2dc5053c87f544b92d043b13e5e3\n\n```json\n{\n \"ask\": \"EXT17-R3 判定卡·双议题开庭（EXT-WAVE-14「清」）。R1 证据未随卡、R2 证据在围栏外未被读取——两轮缺陷已定位并补强：本卡全部证据文本内嵌于本 JSON 之 evidence 字段。\",\n \"evidence\": \"【证据一：②案 v0.5 开庭项全文（v0.4 已判条款原文不动，以下即全部新增/补正文本）】\\n\\n补正①（唯一非增录改写）——§2.4 退出路径1：\\n  原文：「BLOCKED 登记必须含：触发器编号（B1–B6）、recoverable、retry_after、命中证据指针、登记时刻。」\\n  改为：「触发器编号（B1–B7）」并附注「（v0.5 补正①·WS-34 遗留：v0.3 已增 B7 触发器而本枚举未含，显性补正）」。\\n\\n开庭项②（OBL-EXT08-a 留席项①）——§3.2-6 封闭集增录确认提请：\\n  "
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
