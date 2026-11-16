@@ -501,3 +501,4 @@
 {"line": "usrm", "ts": "20261113T054043Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261113T054035Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261113T133846Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261113T133838Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261115T113941Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261115T113930Z.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20261116T205349Z", "sem_handled": ["PULSE-USRM-20261116T205333Z.md"], "sem_answers": 1}
