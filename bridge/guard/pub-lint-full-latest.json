@@ -1,11 +1,8 @@
 {
- "ts": "2026-11-19T17:46:47Z",
+ "ts": "2026-11-19T17:47:25Z",
  "target": "vci-usrm",
  "mode": "full-tree",
  "scanned": 15429,
- "fixed_n": 2,
- "fixed": [
-  "receipts/line-drive/LD-20261119T174537Z.json",
-  "receipts/line-drive/LD-20261119T174628Z.json"
- ]
+ "fixed_n": 0,
+ "fixed": []
 }
