@@ -11,7 +11,7 @@ import os, json, time, base64, urllib.request, datetime, subprocess, re
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-usrm')
 TOK_W = os.environ.get('GITHUB_TOKEN')
-TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
+TOK_R = os.environ.get('〈RED〉') or os.environ.get('GITHUB_TOKEN')
 HUB = 'chepin-ai/vci-inbox'
 PUB = 'chepin-ai/vci-inbox'
 SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
@@ -121,7 +121,7 @@ def task_consume(state):
     return results
 
 def kimi_work(events, task_results):
-    key = os.environ.get('KIMI_API_KEY')
+    key = os.environ.get('〈RED〉')
     if not key: return '(无KIMI_API_KEY——巡更仅录)'
     memo_in = json.dumps({'events': events, 'tasks': task_results}, ensure_ascii=False)[:1500]
     req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
