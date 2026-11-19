@@ -1,0 +1,13 @@
+{
+ "v": "USRM-TOWER-01-v2.1",
+ "ts": "20261119T154711Z",
+ "idle_in": 321,
+ "events": [],
+ "tasks": [
+  {
+   "task": "BEAT170-GLOBAL-SURGE-01-USRM-RELAY-01",
+   "auto": "answered"
+  }
+ ],
+ "verdict_memo": "(kimi_work 未达: HTTPError)"
+}
