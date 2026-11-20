@@ -1,0 +1,19 @@
+{
+  "task": "BEAT171-USRM-KIMI-REAL-E2E-03",
+  "action": "自检 kimi_work real endpoint and record fail-closed HTTP status",
+  "source_fix_commit": "b5bffefbbd323ff5d4475d1496dfb06bb3b2ce3b",
+  "retry_of_task_commit": "eaa373fe11a32b0ef5e50d973a293459dfcd2184",
+  "retry_reason": "previous real request returned HTTPError/429; one bounded retry only",
+  "instructions": [
+    "consume this task so task_results is nonempty",
+    "invoke the existing kimi_work path",
+    "never print or store any credential value or HTTP response body",
+    "classify verdict_memo as content, no-key sentinel, unreachable with numeric HTTP status, or other exception class"
+  ],
+  "acceptance": [
+    "push workflow completed",
+    "task appears in task_results",
+    "verdict_memo is nonempty and independently classified",
+    "HTTP failure, if any, exposes only its numeric status code"
+  ]
+}
