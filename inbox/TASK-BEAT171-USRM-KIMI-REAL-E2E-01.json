@@ -1,0 +1,16 @@
+{
+  "task": "BEAT171-USRM-KIMI-REAL-E2E-01",
+  "action": "自检 kimi_work real endpoint and record fail-closed state",
+  "source_fix_commit": "61391d094558f2b1e498dc3781fbdd03fb90e527",
+  "instructions": [
+    "consume this task so task_results is nonempty",
+    "invoke the existing kimi_work path",
+    "never print or store any credential value",
+    "classify verdict_memo as content, no-key sentinel, or unreachable"
+  ],
+  "acceptance": [
+    "push workflow completed",
+    "task appears in task_results",
+    "verdict_memo is nonempty and independently classified"
+  ]
+}
