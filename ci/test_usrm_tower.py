@@ -6,14 +6,22 @@ import importlib.util, io, json, os, sys, urllib.error
 HERE = os.path.dirname(os.path.abspath(__file__))
 spec = importlib.util.spec_from_file_location('usrm_tower', os.path.join(HERE, 'usrm_tower.py'))
 m = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(m)
 
 DUMMY = 'dummy-not-a-real-key'  # 假值,仅验名不验值
+LINE_DUMMY = 'dummy-line-not-a-real-key'
+GITHUB_DUMMY = 'dummy-github-not-a-real-key'
+_saved_env = {k: os.environ.get(k) for k in ('LINE_PAT', 'GITHUB_TOKEN')}
+os.environ['LINE_PAT'] = LINE_DUMMY
+os.environ['GITHUB_TOKEN'] = GITHUB_DUMMY
+spec.loader.exec_module(m)
+check_line_pat_binding = m.TOK_R == LINE_DUMMY
 fails = []
 
 def check(name, cond):
     print(('PASS ' if cond else 'FAIL ') + name)
     if not cond: fails.append(name)
+
+check('LINE_PAT 读取绑定', check_line_pat_binding)
 
 class FakeResp:
     def __init__(self, payload): self.payload = payload
@@ -48,13 +56,15 @@ check('成功道候件入体', 'TASK-X.json' in json.dumps(captured.get('body', 
 
 # 3) HTTP 错(如401/404) → 未达支记 HTTPError, 不抛不穿
 def fake_urlopen_http(req, timeout=None):
-    raise urllib.error.HTTPError(req.full_url, 401, 'Unauthorized', {}, io.BytesIO(b'{}'))
+    raise urllib.error.HTTPError(req.full_url, 401, 'Unauthorized', {}, io.BytesIO(b'secret-response-body-must-not-leak'))
 m.urllib.request.urlopen = fake_urlopen_http
 try:
     r = m.kimi_work([{'kind': 'k', 'ref': 'r'}], [])
 finally:
     m.urllib.request.urlopen = orig
-check('HTTP错失败关闭', r == '(kimi_work 未达: HTTPError)')
+check('HTTP错失败关闭并记录状态码', r == '(kimi_work 未达: HTTPError/401)')
+check('HTTP错不记录响应体', 'secret-response-body-must-not-leak' not in r)
+check('HTTP错不记录凭证值', DUMMY not in r)
 
 # 4) 超时/网络错 → 未达支记 TimeoutError
 def fake_urlopen_to(req, timeout=None):
@@ -67,5 +77,8 @@ finally:
 os.environ.pop('KIMI_API_KEY', None)
 check('超时失败关闭', r == '(kimi_work 未达: TimeoutError)')
 
-print('KAT: %d pass, %d fail' % (4 + 3 + 1 - len(fails) + 0, len(fails)))
+for k, v in _saved_env.items():
+    if v is None: os.environ.pop(k, None)
+    else: os.environ[k] = v
+print('KAT: %d pass, %d fail' % (11 - len(fails), len(fails)))
 sys.exit(1 if fails else 0)

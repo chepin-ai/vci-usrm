@@ -7,11 +7,11 @@
 #   ③公域巷感面补 lanes/usrm/inbox@vHUB-MAIL（机驱直取面入感）
 #   ④TASK 消费腿 v1：机读 TASK-*.json 件→转录 SI1 待办钉（ci/si3/claims.json）+
 #     可机算类（fetch/echo/ping）即答回执——SI3驱动SI2/SI0雏形
-import os, json, time, base64, urllib.request, datetime, subprocess, re
+import os, json, time, base64, urllib.request, urllib.error, datetime, subprocess, re
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-usrm')
 TOK_W = os.environ.get('GITHUB_TOKEN')
-TOK_R = os.environ.get('〈RED〉') or os.environ.get('GITHUB_TOKEN')
+TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
 HUB = 'chepin-ai/HUB-MAIL'
 PUB = 'chepin-ai/vHUB-MAIL'
 SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
@@ -134,6 +134,8 @@ def kimi_work(events, task_results):
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
             return json.loads(r.read())['choices'][0]['message']['content']
+    except urllib.error.HTTPError as e:
+        return f'(kimi_work 未达: HTTPError/{e.code})'
     except Exception as e:
         return f'(kimi_work 未达: {e.__class__.__name__})'
 
