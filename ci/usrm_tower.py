@@ -121,7 +121,7 @@ def task_consume(state):
     return results
 
 def kimi_work(events, task_results):
-    key = os.environ.get('〈RED〉')
+    key = os.environ.get('KIMI_API_KEY')
     if not key: return '(无KIMI_API_KEY——巡更仅录)'
     memo_in = json.dumps({'events': events, 'tasks': task_results}, ensure_ascii=False)[:1500]
     req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
