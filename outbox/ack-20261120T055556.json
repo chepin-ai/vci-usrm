@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-11-20T05:55:56Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/TASK-BEAT171-USRM-KIMI-REAL-E2E-03.json",
+   "head_excerpt": "{\n  \"task\": \"BEAT171-USRM-KIMI-REAL-E2E-03\",\n  \"action\": \"自检 kimi_work real endpoint and record fail-closed HTTP status\",\n  \"source_fix_commit\": \"b5bffefbbd323ff5d4475d1496dfb06bb3b2ce3b\",\n  \"retry_of_task_commit\": \"eaa373fe11a32b0ef5e50d973a293459dfcd2184\",\n  \"retry_reason\": \"previous real request returned HTTPError/429; one bounded retry only\",\n  \"instructions\": [\n    \"consume this task so task_results is nonempty\",\n    \"invoke the existing kimi_work path\",\n    \"never print or store any credential value or HTTP response body\",\n    \"classify verdict_memo as content, no-key sentinel, unreachab"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
