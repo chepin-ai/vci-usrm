@@ -10,8 +10,8 @@ m = importlib.util.module_from_spec(spec)
 DUMMY = 'dummy-not-a-real-key'  # 假值,仅验名不验值
 LINE_DUMMY = 'dummy-line-not-a-real-key'
 GITHUB_DUMMY = 'dummy-github-not-a-real-key'
-_saved_env = {k: os.environ.get(k) for k in ('LINE_PAT', 'GITHUB_TOKEN')}
-os.environ['LINE_PAT'] = LINE_DUMMY
+_saved_env = {k: os.environ.get(k) for k in ('〈RED〉', 'GITHUB_TOKEN')}
+os.environ['〈RED〉'] = LINE_DUMMY
 os.environ['GITHUB_TOKEN'] = GITHUB_DUMMY
 spec.loader.exec_module(m)
 check_line_pat_binding = m.TOK_R == LINE_DUMMY
@@ -21,7 +21,7 @@ def check(name, cond):
     print(('PASS ' if cond else 'FAIL ') + name)
     if not cond: fails.append(name)
 
-check('LINE_PAT 读取绑定', check_line_pat_binding)
+check('〈RED〉 读取绑定', check_line_pat_binding)
 
 class FakeResp:
     def __init__(self, payload): self.payload = payload
@@ -29,8 +29,8 @@ class FakeResp:
     def __exit__(self, *a): return False
     def read(self): return json.dumps(self.payload).encode()
 
-# 1) 失败关闭: 无 KIMI_API_KEY → 固定哨兵句, 不发请求
-os.environ.pop('KIMI_API_KEY', None)
+# 1) 失败关闭: 无 〈RED〉 → 固定哨兵句, 不发请求
+os.environ.pop('〈RED〉', None)
 r = m.kimi_work([{'kind': 'k', 'ref': 'r'}], [{'task': 't'}])
 check('fail-closed 无钥哨兵', r == '(无KIMI_API_KEY——巡更仅录)')
 
@@ -41,7 +41,7 @@ def fake_urlopen_ok(req, timeout=None):
     captured['auth_ok'] = req.headers.get('Authorization', '').startswith('Bearer ')
     captured['body'] = json.loads(req.data.decode())
     return FakeResp({'choices': [{'message': {'content': '①何事②何干③何件④生债'}}]})
-os.environ['KIMI_API_KEY'] = DUMMY
+os.environ['〈RED〉'] = DUMMY
 orig = m.urllib.request.urlopen
 m.urllib.request.urlopen = fake_urlopen_ok
 try:
@@ -74,7 +74,7 @@ try:
     r = m.kimi_work([{'kind': 'k', 'ref': 'r'}], [])
 finally:
     m.urllib.request.urlopen = orig
-os.environ.pop('KIMI_API_KEY', None)
+os.environ.pop('〈RED〉', None)
 check('超时失败关闭', r == '(kimi_work 未达: TimeoutError)')
 
 for k, v in _saved_env.items():
