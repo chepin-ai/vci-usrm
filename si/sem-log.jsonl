@@ -510,3 +510,4 @@
 {"line": "usrm", "ts": "20261120T054138Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "7bb1a30e2033", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261120T055554Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "33c873746163", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261120T084727Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261120T084718Z.md"], "sem_answers": 1}
+{"line": "usrm", "ts": "20261121T034411Z", "sem_handled": ["TASK-BEAT173-LINEAGE-COLLAB-01-usrm-20261121.md"], "sem_answers": 1}
