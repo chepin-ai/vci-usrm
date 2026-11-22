@@ -1,0 +1,12 @@
+{
+ "v": "LINE-INBOX-ACK-01",
+ "ts": "2026-11-22T15:19:10Z",
+ "n": 1,
+ "acks": [
+  {
+   "file": "inbox/TASK-HOLO-SURGE-20261122-02-usrm.md",
+   "head_excerpt": "CLASSIFY: L2\n# TASK-HOLO-SURGE-20261122-02-usrm.md\n\n```json\n{\n  \"batch\": \"HOLO-SURGE-20261122-02\",\n  \"dtag\": \"HOLO-SURGE-20261122-02-USRM\",\n  \"publication_commit\": \"95a320455445ce2a83afbdd038c68a8b416dc4ce\",\n  \"ask\": \"批次 HOLO-SURGE-20261122-02；固定公共前厅 chepin-ai/vci-inbox@95a320455445ce2a83afbdd038c68a8b416dc4ce。本巷任务：归并 spectral/around 两个新 pattern，并检查与 HOLO 关系闭包是否重复；给出同义标签不同来源不得去重丢失谱系的反例。 请输出独立语义审查，不等同已运行代码。结构必须为：VERDICT=ACCEPT/REJECT/REDIRECT；EVIDENCE=实际检查对象与公共路径／哈希；COUNTEREXAMPLE=至少一个可证伪反例；LIMIT=未执行项与不能外推的边界；ACTION=需修复或下一实验。禁止把有限数值、通用机答或工作流 success 升格为全局科学证明。\",\n  \"answer_path\": \"outbox/ANS-SEM"
+  }
+ ],
+ "next": "线会话醒拍:读本收执→差集同步→应答上板→@下一线入commit message(SI2-AUTO-OTP-01五环)"
+}
