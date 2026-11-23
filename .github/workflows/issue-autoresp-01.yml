@@ -20,8 +20,10 @@ env:
   ISSUE_TITLE: ${{ github.event.issue.title }}
   ISSUE_BODY: ${{ github.event.issue.body }}
   COMMENT_BODY: ${{ github.event.comment.body }}
+  QI_BODY: ${{ github.event.issue.body }}
   AUTHOR: ${{ github.event.sender.login }}
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  QI_OS_PAT: ${{ secrets.AI_FULL_PAT }}
   LINE_PAT: ${{ secrets.LINE_PAT }}
   KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
   DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -53,11 +55,13 @@ jobs:
                       headers={'Authorization':'Bearer '+GH,'Accept':'application/vnd.github+json'})
                   iss=json.loads(urllib.request.urlopen(rq,timeout=20).read())
                   TITLE=iss.get('title','')[:200]; IBODY=(iss.get('body') or '')[:1500]
+                  QIOS_BODY=iss.get('body') or ''
               except Exception as e: print(json.dumps({'test_fetch_fail':str(e)[:80]}))
           elif AUTHOR.endswith('[bot]'):
               print(json.dumps({'skip':'bot-author','author':AUTHOR})); raise SystemExit(0)
           if '[SI1自动应答]' in IBODY+CBODY:
               print(json.dumps({'skip':'self-answer-marker'})); raise SystemExit(0)
+          QIOS_BODY=os.environ.get('QI_BODY','')
           q=(CBODY if CBODY.strip() else IBODY).strip()
           if not q:
               print(json.dumps({'skip':'empty'})); raise SystemExit(0)
@@ -141,6 +145,40 @@ jobs:
                   rc=urllib.request.urlopen(rq,timeout=30).status
               except Exception as e: rc='fail:'+str(e)[:60]
           else: rc='no-token'
+          # QI-OS adapter: only a real workorder receives a protocol answer.
+          # The original line responder owns the content; verdict remains OPEN.
+          qios_rc='not-a-qios-workorder'
+          if QIOS_BODY.startswith('QI-OS-WORKORDER-V1'+NL):
+              try:
+                  import secrets as _secrets
+                  order=json.loads(QIOS_BODY.split(NL,1)[1])
+                  expected_origin='usrm' if LINE=='usrm' else 'qfa-ai'
+                  assert order.get('schema')=='qi-workorder/v1'
+                  assert order.get('target')==expected_origin
+                  canon=lambda x: json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':'),allow_nan=False)
+                  event={'schema':'qi-event/v1','origin':expected_origin,'kind':'answer','subject':order['id'],
+                      'payload':{'loop_id':order['loop_id'],'role':'answer','verdict':'OPEN',
+                          'claims':[{'kind':'responder-text','sha256':hashlib.sha256(ans.encode()).hexdigest()}],
+                          'artifacts':[],'open_items':['responder-content-only','independent-crosscheck-required']},
+                      'parents':[order['id']],'causation_id':order['loop_id'],'correlation_id':order['wave_id'],
+                      'auth':{'mode':'api','credential_ref':'GITHUB','nonce':_secrets.token_hex(16),'signature':''}}
+                  event['event_id']='EVT-'+hashlib.sha256(canon(event).encode()).hexdigest()[:24]
+                  qbody='QI-OS-ANSWER-V1'+NL+canon(event)
+                  QP=os.environ.get('QI_OS_PAT','')
+                  assert QP, 'AI_FULL_PAT unavailable'
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-'+LINE+'/issues/'+str(N)+'/comments',
+                      data=json.dumps({'body':qbody}).encode(),method='POST',
+                      headers={'Authorization':'Bearer '+QP,'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+                  created=json.loads(urllib.request.urlopen(rq,timeout=30).read())
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-'+LINE+'/issues/comments/'+str(created['id']),
+                      headers={'Authorization':'Bearer '+QP,'Accept':'application/vnd.github+json'})
+                  fresh=json.loads(urllib.request.urlopen(rq,timeout=30).read())
+                  assert fresh.get('body')==qbody, 'QI-OS answer readback drift'
+                  qios_rc={'comment_id':created['id'],'readback':True,'event_id':event['event_id']}
+              except Exception as e:
+                  qios_rc={'error':type(e).__name__+': '+str(e)[:160]}
+                  print(json.dumps({'qios_answer_error':qios_rc},ensure_ascii=False))
+              print(json.dumps({'qios_answer':qios_rc},ensure_ascii=False))
           # 留痕入issue-trail(不入inbox,免SR-05重复答)
           os.makedirs('issue-trail',exist_ok=True)
           rec=NL.join(['CLASSIFY: L2('+LINE+'线issue自动应答留痕)','# ISSUE-'+str(N)+'-'+ts+' (AUTORESP v3 记忆+锚)','',
