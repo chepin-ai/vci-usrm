@@ -47,6 +47,10 @@ jobs:
           QIOS_BODY=os.environ.get('QI_BODY','')
           AUTHOR=os.environ.get('AUTHOR','')
           GH=os.environ.get('GH_TOKEN','')
+          # Protocol answers and administrative non-answers are terminal inputs,
+          # never fresh questions. This closes the authenticated-actor feedback loop.
+          if 'QI-OS-ANSWER-V1' in CBODY or CBODY.startswith('[ADMIN][NON-ANSWER]'):
+              print(json.dumps({'skip':'qios-answer-or-admin-feedback'})); raise SystemExit(0)
           # 环闸: bot作者/自身答痕 不答(防风暴防自环);workflow_dispatch测试道(操作员驱动)豁免作者闸
           TESTN=os.environ.get('TEST_ISSUE_N','').strip()
           if TESTN:
