@@ -516,3 +516,4 @@
 {"line": "usrm", "ts": "20261122T151849Z", "sem_handled": ["TASK-HOLO-SURGE-20261122-02-usrm.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261122T212430Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261122T212417Z.md"], "sem_answers": 1}
 {"line": "usrm", "ts": "20261123T094016Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "e384f7ff304d", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261123T094626Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "7b810d54138a", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
