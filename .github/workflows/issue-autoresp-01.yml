@@ -44,6 +44,7 @@ jobs:
           TITLE=os.environ.get('ISSUE_TITLE','')[:200]
           IBODY=os.environ.get('ISSUE_BODY','')[:1500]
           CBODY=os.environ.get('COMMENT_BODY','')[:1500]
+          QIOS_BODY=os.environ.get('QI_BODY','')
           AUTHOR=os.environ.get('AUTHOR','')
           GH=os.environ.get('GH_TOKEN','')
           # 环闸: bot作者/自身答痕 不答(防风暴防自环);workflow_dispatch测试道(操作员驱动)豁免作者闸
@@ -61,7 +62,6 @@ jobs:
               print(json.dumps({'skip':'bot-author','author':AUTHOR})); raise SystemExit(0)
           if '[SI1自动应答]' in IBODY+CBODY:
               print(json.dumps({'skip':'self-answer-marker'})); raise SystemExit(0)
-          QIOS_BODY=os.environ.get('QI_BODY','')
           q=(CBODY if CBODY.strip() else IBODY).strip()
           if not q:
               print(json.dumps({'skip':'empty'})); raise SystemExit(0)
