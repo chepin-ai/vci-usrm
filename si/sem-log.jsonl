@@ -520,3 +520,4 @@
 {"line": "usrm", "ts": "20261123T100822Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "ee2da5b2c3c9", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261123T103430Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "af885229c446", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
 {"line": "usrm", "ts": "20261123T105432Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "00ab5e547914", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "usrm", "ts": "20261125T210015Z", "sem_handled": ["PULSE-RING-VINF-TO-USRM-20261125T210006Z.md"], "sem_answers": 1}
